@@ -1,0 +1,79 @@
+const navToggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector("#site-nav");
+
+if (navToggle && nav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
+document.querySelectorAll(".quote-form").forEach((form) => {
+  const status = form.querySelector(".form-status");
+  const submit = form.querySelector('button[type="submit"]');
+  const validateField = (field) => {
+    const label = field.closest("label");
+    if (!label) return true;
+    const valid = field.checkValidity();
+    label.classList.toggle("is-invalid", !valid);
+    return valid;
+  };
+
+  form.querySelectorAll("input, textarea, select").forEach((field) => {
+    if (field.name === "website") return;
+    field.addEventListener("blur", () => validateField(field));
+    field.addEventListener("input", () => {
+      if (field.closest("label")?.classList.contains("is-invalid")) validateField(field);
+    });
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const honey = form.querySelector('[name="website"]');
+    if (honey && honey.value.trim()) {
+      return;
+    }
+
+    const fields = [...form.querySelectorAll("input, textarea, select")].filter((field) => field.name !== "website");
+    const isValid = fields.map(validateField).every(Boolean);
+    if (!isValid) {
+      if (status) {
+        status.textContent = "Please complete all required fields before submitting.";
+        status.className = "form-status error";
+      }
+      return;
+    }
+
+    if (submit) {
+      submit.disabled = true;
+      submit.textContent = "Submitting...";
+    }
+
+    const data = Object.fromEntries(new FormData(form).entries());
+    const payload = {
+      ...data,
+      context: form.dataset.context || "General inquiry",
+      submittedAt: new Date().toISOString(),
+    };
+
+    try {
+      const existing = JSON.parse(localStorage.getItem("nutranexaInquiries") || "[]");
+      existing.push(payload);
+      localStorage.setItem("nutranexaInquiries", JSON.stringify(existing.slice(-20)));
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "lead_form_submit", product_interest: payload.Interest || payload["Product Interest"] || payload.context });
+    } catch (error) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "lead_form_submit" });
+    }
+
+    if (status) {
+      status.textContent = "Submitted successfully. Redirecting to the confirmation page...";
+      status.className = "form-status success";
+    }
+
+    setTimeout(() => {
+      window.location.href = "/thank-you/";
+    }, 700);
+  });
+});

@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.vercel/
+public/
+qa/
+extracted/
+outputs/
+assets/source/
+.DS_Store
+npm-debug.log*
