@@ -2,7 +2,7 @@
 import path from "node:path";
 
 const root = path.resolve(".");
-const siteUrl = "https://www.nutranexa.com";
+const siteUrl = "https://nutranexaps.com";
 const phone = "400-138-0635";
 const salesEmail = "wh1007209170@gmail.com";
 const whatsapp = "+8613645700210";
