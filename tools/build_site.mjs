@@ -596,7 +596,7 @@ function organizationJson() {
     alternateName: ["Nutranexa", "Baianrui"],
     url: siteUrl,
     logo: `${siteUrl}/assets/images/logo-nutranexa.webp`,
-    contactPoint: [{ "@type": "ContactPoint", telephone: phone, email: salesEmail, contactType: "sales", areaServed: "Worldwide", availableLanguage: ["English", "Chinese"] }],
+    contactPoint: [{ "@type": "ContactPoint", telephone: phone, email: salesEmail, contactType: "sales", areaServed: ["Europe", "North America", "Worldwide"], availableLanguage: ["English", "Chinese"] }],
     address: { "@type": "PostalAddress", streetAddress: address, addressCountry: "CN" },
     foundingDate: "2013",
   };
@@ -927,7 +927,7 @@ function homePage() {
   const body = `${hero({
     eyebrow: "Phosphatidylserine and functional food ingredients",
     title: "Phosphatidylserine Manufacturer for Global Ingredient Buyers",
-    text: "Source phosphatidylserine and related functional food ingredients from Nutranexa, a biotechnology manufacturer with factory proof, R&D cooperation, and document support.",
+    text: "Source phosphatidylserine and related functional food ingredients from Nutranexa, a biotechnology manufacturer serving ingredient buyers primarily in Europe and North America.",
     image: "/assets/images/brand-product-lab.webp",
   })}
   ${psBenefitsSection("home")}
@@ -937,7 +937,7 @@ function homePage() {
   </section>
   <section class="split-section">
     <div>${sectionIntro("Manufacturing proof", "Factory evidence for supplier evaluation", "Review the campus, cleanroom, equipment, and production context before requesting samples, specifications, or a bulk quotation.")}
-      <ul class="check-list"><li>110,000+ m2 production campus</li><li>Production equipment and cleanroom images available</li><li>CPHI exhibition and R&D cooperation information</li><li>Document files available for sales confirmation</li></ul>
+      <ul class="check-list"><li>110,000+ m2 production campus</li><li>Primary export markets in Europe and North America</li><li>Production equipment and cleanroom images available</li><li>CPHI exhibition and R&D cooperation information</li><li>Document files available for sales confirmation</li></ul>
       <a class="button secondary" href="/manufacturing/">Review manufacturing capability</a>
     </div>
     <img class="section-photo" src="/assets/images/equipment-workshop-01.webp" alt="Nutranexa production workshop equipment" loading="lazy">
@@ -1224,15 +1224,15 @@ function aboutPage() {
   const body = `${hero({
     eyebrow: "About Nutranexa",
     title: "Biotechnology Manufacturer Focused on New Food Ingredients",
-    text: "Shandong Baianrui Biopharmaceutical Co., Ltd. was founded in 2013 and operates a 110,000+ m2 campus in Yanggu County, Liaocheng, Shandong.",
+    text: "Shandong Baianrui Biopharmaceutical Co., Ltd. was founded in 2013, operates a 110,000+ m2 campus, and primarily serves export markets in Europe and North America.",
     image: "/assets/images/factory-campus.webp",
     cta: "Contact Sales",
     secondary: "View Manufacturing",
   })}
-  <section class="detail-grid"><div><h2>Company profile</h2><p>Nutranexa integrates R&D, production, and sales of new food ingredients, health food ingredients, and food additives. The company positions phosphatidylserine as a lead product and uses verified factory and product materials to support buyer evaluation.</p></div><div><h2>Mission</h2><p>Provide healthy, safe, and effective functional food and dietary supplement ingredients while supporting biotechnology industry development and customer product needs.</p></div></section>`;
+  <section class="detail-grid"><div><h2>Company profile</h2><p>Nutranexa integrates R&D, production, and sales of new food ingredients, health food ingredients, and food additives. The company positions phosphatidylserine as a lead product and uses verified factory and product materials to support buyer evaluation.</p></div><div><h2>Primary export markets</h2><p>Nutranexa primarily serves B2B ingredient buyers in Europe and North America, with product documents and commercial details reviewed according to the destination market and quoted product.</p></div><div><h2>Mission</h2><p>Provide healthy, safe, and effective functional food and dietary supplement ingredients while supporting biotechnology industry development and customer product needs.</p></div></section>`;
   return layout({
     title: "About Nutranexa | Shandong Baianrui Biopharmaceutical",
-    description: "Learn about Nutranexa, a biotechnology manufacturer supplying phosphatidylserine and functional food ingredients for global B2B buyers.",
+    description: "Learn about Nutranexa, a biotechnology manufacturer supplying phosphatidylserine and functional food ingredients primarily to B2B buyers in Europe and North America.",
     route: "/about/",
     image: "/assets/images/factory-campus.webp",
     schema: [breadcrumbJson([["Home", "/"], ["About", "/about/"]])],
