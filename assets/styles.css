@@ -646,6 +646,11 @@ section,
   box-shadow: var(--shadow);
 }
 
+.product-packaging .section-photo,
+.packaging-proof .section-photo {
+  object-position: center 58%;
+}
+
 .check-list {
   padding: 0;
   margin: 0 0 24px;

@@ -134,16 +134,19 @@ const products = [
     cta: "Request a Quote",
     inquirySource: "General PS",
     inquiryAssay: "To be confirmed",
+    moq: "25 kg",
+    packaging: "25 kg net per drum",
     quick:
       "Phosphatidylserine (PS) is a functional food ingredient produced from natural lecithin and L-serine through bio-enzymatic conversion. Nutranexa supplies bulk PS ingredients for supplement manufacturers, ingredient distributors, nutrition brands, and functional food developers.",
     source: "Natural lecithin and L-serine; source-specific options include soy and sunflower PS.",
     applications: ["Dietary supplement tablets", "Soft and hard capsules", "Milk powder formulas", "Dairy beverages", "Functional food applications"],
     proof: ["Founded in 2013", "110,000+ m2 production campus", "Cooperation with East China University of Science and Technology", "PS production license obtained by the end of 2015"],
-    docs: ["Specification: Available upon request", "COA samples: PS 20% sunflower and PS 50% samples available for buyer review", "Certificate files: Halal, Kosher, food production license, FDA food facility registration document supplied"],
+    docs: ["Specification: Available upon request", "COA samples: PS 20% sunflower and PS 50% samples available for buyer review", "Bulk packaging: 25 kg net per drum; MOQ 25 kg", "Certificate files: Halal, Kosher, food production license, FDA food facility registration document supplied"],
     faqs: [
       ["What is phosphatidylserine used for in B2B formulations?", "It is used as a functional food and dietary supplement ingredient in formats such as tablets, capsules, milk powder, dairy drinks, and health food applications."],
       ["Can Nutranexa provide PS from different ingredient sources?", "Nutranexa offers soy phosphatidylserine and sunflower phosphatidylserine options. Final specifications should be confirmed before quotation."],
       ["Are specifications and COA available?", "Yes. Buyers can request current specifications, COA samples, and certificate files from the sales team before quotation or shipment."],
+      ["What is the MOQ and packing size for phosphatidylserine?", "The MOQ is 25 kg. Standard bulk packing is 25 kg net per drum, so one drum meets the minimum order quantity."],
     ],
   },
   {
@@ -158,16 +161,19 @@ const products = [
     cta: "Request Specs",
     inquirySource: "Soy",
     inquiryAssay: "To be confirmed",
+    moq: "25 kg",
+    packaging: "25 kg net per drum",
     quick:
       "Soy phosphatidylserine is a PS ingredient made from soy lecithin and L-serine through bio-enzymatic conversion. It is suitable for buyers seeking a soy-source ingredient for supplements, nutrition powders, dairy formulas, and functional food product development.",
     source: "Soy lecithin and L-serine; exact PS content and particle specifications to be confirmed.",
     applications: ["Nutrition powders", "Tablet and capsule products", "Functional dairy formulas", "Private-label supplement development"],
     proof: ["Lead PS product focus", "Production equipment visibility", "R&D cooperation information available", "Quality control details available for buyer review"],
-    docs: ["Specification: Available upon request", "COA sample: Current soy-source COA to be confirmed; reference PS samples are available for buyer review", "Packaging options: To be confirmed before quotation"],
+    docs: ["Specification: Available upon request", "COA sample: Current soy-source COA to be confirmed; reference PS samples are available for buyer review", "Bulk packaging: 25 kg net per drum; MOQ 25 kg"],
     faqs: [
       ["Who should request soy PS specifications?", "Ingredient importers, dietary supplement manufacturers, and food brands comparing source, content, and application fit should request specifications."],
       ["Is soy PS different from sunflower PS?", "Yes. They differ by ingredient source and buyer preference. Use the comparison article and request current specifications before purchasing."],
       ["Can I ask for application support?", "Yes. Use the quote form and include application, annual quantity, and required document needs."],
+      ["What is the MOQ for soy phosphatidylserine?", "The MOQ is 25 kg, packed as 25 kg net per drum. Confirm the required drum quantity and shipment destination when requesting a quote."],
     ],
   },
   {
@@ -182,16 +188,19 @@ const products = [
     cta: "Request a Quote",
     inquirySource: "Sunflower",
     inquiryAssay: "20%",
+    moq: "25 kg",
+    packaging: "25 kg net per drum",
     quick:
       "Sunflower phosphatidylserine is a source-specific PS ingredient for buyers who prefer a sunflower-origin option. Nutranexa supplies sunflower PS for B2B supplement, nutrition, and functional food projects, with current specifications and documents confirmed through sales.",
     source: "Sunflower-source ingredient base; final content, carrier, and test documents to be confirmed.",
     applications: ["Non-soy positioning", "Supplement capsules", "Functional food formulas", "Brand formulations requiring source differentiation"],
     proof: ["Product imagery available", "Manufacturing information available", "Quality and R&D details available", "Document request support prepared"],
-    docs: ["Specification: Available upon request", "COA sample: PS 20% sunflower sample available for review", "Certificate files: Halal, Kosher, and production documents supplied for buyer review"],
+    docs: ["Specification: Available upon request", "COA sample: PS 20% sunflower sample available for review", "Bulk packaging: 25 kg net per drum; MOQ 25 kg", "Certificate files: Halal, Kosher, and production documents supplied for buyer review"],
     faqs: [
       ["Why choose sunflower PS?", "Some brands prefer sunflower-source ingredients for positioning or formulation reasons. Buyers should confirm exact specs before quoting."],
       ["Can Nutranexa support supplement applications?", "Nutranexa supports PS ingredient discussions for dietary supplement and functional food applications without making medical treatment claims."],
       ["What details should I send for quotation?", "Share country, product format, application, annual quantity, and document requirements."],
+      ["What is the MOQ for sunflower phosphatidylserine?", "The MOQ is 25 kg, packed as 25 kg net per drum. Final shipment and labeling details are confirmed with the quotation."],
     ],
   },
   {
@@ -627,6 +636,10 @@ function productJson(product, route) {
     manufacturer: { "@type": "Organization", name: "Shandong Baianrui Biopharmaceutical Co., Ltd." },
     category: "Functional food ingredient",
     url: urlFor(route),
+    ...(product.moq ? { additionalProperty: [
+      { "@type": "PropertyValue", name: "Minimum order quantity", value: product.moq },
+      { "@type": "PropertyValue", name: "Bulk packaging", value: product.packaging },
+    ] } : {}),
   };
 }
 
@@ -797,7 +810,7 @@ function quoteForm(context = "General inquiry") {
     <label>Source Preference <select name="Source Preference"><option value="">Select or confirm later</option><option>General PS</option><option>Soy</option><option>Sunflower</option><option>Soybean-derived</option><option>Other / Not sure</option></select></label>
     <label>Target Assay <select name="Target Assay"><option value="">Select or confirm later</option><option>20%</option><option>50%</option><option>To be confirmed</option><option>Other</option><option>Not applicable</option></select></label>
     <label>Application <input name="Application" placeholder="Capsule, powder, functional food"></label>
-    <label>Annual Quantity <input name="Annual Quantity" placeholder="Estimated yearly demand"></label>
+    <label>Annual Quantity <input name="Annual Quantity" placeholder="MOQ 25 kg; enter estimated yearly demand"></label>
     <label>Documents Needed <select name="Documents Needed"><option value="">Select</option><option>Specification</option><option>COA sample</option><option>TDS / SDS</option><option>Certificates</option><option>Allergen / GMO statements</option><option>Multiple documents</option></select></label>
     <label>Sample Needed <select name="Sample Needed"><option value="">Select</option><option>Yes</option><option>No</option><option>Discuss first</option></select></label>
     <label class="form-full">Message <textarea required name="Message" rows="4" placeholder="Tell us the specification, source preference, documents, and timeline you need."></textarea></label>
@@ -842,10 +855,22 @@ function documentsRequestSection(product) {
     ["TDS / SDS", "Availability and current version to be confirmed by sales", "TDS / SDS"],
     ["Certificates", "Request current files and verify product scope and validity", "Certificates"],
     ["Allergen / GMO statements", "Request source-specific statements; do not infer status", "Allergen / GMO statements"],
-    ["Packaging and shipment", "MOQ, packaging, lead time, and shipment details to be confirmed", "Multiple documents"],
+    ["Packaging and shipment", product.moq ? `MOQ ${product.moq}; ${product.packaging}. Lead time and shipment details are confirmed with the quotation.` : "MOQ, packaging, lead time, and shipment details to be confirmed", "Multiple documents"],
   ];
   return `<section class="documents-request">${sectionIntro("Document workflow", "Request the files needed for supplier approval", "Choose the relevant document path and send the exact source, target assay, application, and destination market for faster review.")}
     <div class="document-status-grid">${items.map(([title, text, request]) => `<article><h3>${esc(title)}</h3><p>${esc(text)}</p><a href="${href(request)}">Request ${esc(title)}</a></article>`).join("")}</div>
+  </section>`;
+}
+
+function packagingSection(product) {
+  if (!product.moq || !product.packaging) return "";
+  const inquiry = productInquiryHref(product, "Packaging and quotation");
+  return `<section class="split-section product-packaging">
+    <div>${sectionIntro("MOQ and bulk packaging", "One 25 kg drum meets the minimum order quantity", `The MOQ for ${product.name} is ${product.moq}. Standard bulk packing is ${product.packaging}. Final labels, inner packing, palletizing, and export shipment details are confirmed before order.`)}
+      <ul class="check-list"><li>Minimum order quantity: ${esc(product.moq)}</li><li>Net weight: ${esc(product.packaging)}</li><li>Request a quotation by required drum quantity</li><li>Confirm destination-market labels and shipping details before dispatch</li></ul>
+      <a class="button secondary" href="${inquiry}">Request Packaging Quote</a>
+    </div>
+    <img class="section-photo" src="/assets/images/ps-25kg-drum-packaging.webp" width="960" height="1280" alt="Nutranexa phosphatidylserine packed in 25 kg drums during warehouse preparation" loading="lazy">
   </section>`;
 }
 
@@ -1102,6 +1127,7 @@ function productPage(product) {
         <div><h2>Manufacturing capability</h2><ul class="check-list">${product.proof.map((item) => `<li>${esc(item)}</li>`).join("")}</ul><a href="/manufacturing/">View manufacturing proof</a></div>
         <div><h2>Available documents</h2><ul class="check-list">${product.docs.map((item) => `<li>${esc(item)}</li>`).join("")}</ul><a href="/quality-rd/">Review Quality & R&D</a></div>
       </div>
+      ${packagingSection(product)}
       <section class="split-section product-quality">
         <div>${sectionIntro("Quality control", "Request current product documents", "Ask the sales team for the latest specification, COA, and certificate files that match your product source, batch, and destination market.")}
           <a class="button secondary" href="/resources/documents-for-ps-ingredients/">See document checklist</a>
@@ -1183,6 +1209,13 @@ function manufacturingPage() {
     </div>
   </section>
   ${manufacturingProcessSection()}
+  <section class="split-section packaging-proof">
+    <div>${sectionIntro("Bulk packaging", "25 kg per drum with a 25 kg MOQ", "For phosphatidylserine products, one 25 kg drum meets the minimum order quantity. Final labels, inner packing, palletizing, and export shipping requirements are confirmed before order.")}
+      <ul class="check-list"><li>MOQ: 25 kg</li><li>Net weight: 25 kg per drum</li><li>Warehouse and packing preparation image available</li><li>Shipment details confirmed according to destination and order quantity</li></ul>
+      <a class="button secondary" href="/contact/?product=Phosphatidylserine%20%28PS%29&documents=Packaging%20and%20quotation">Request packaging details</a>
+    </div>
+    <img class="section-photo" src="/assets/images/ps-25kg-drum-packaging.webp" width="960" height="1280" alt="Phosphatidylserine 25 kg drums prepared in the Nutranexa warehouse" loading="lazy">
+  </section>
   <section class="detail-grid"><div><h2>Buyer confidence points</h2><ul class="check-list"><li>110,000+ m2 production campus</li><li>Factory, equipment, and cleanroom imagery available</li><li>PS-focused production context</li><li>Product document requests available before purchase</li></ul></div><div><h2>Confirm before purchase</h2><ul class="check-list"><li>Current specifications</li><li>COA sample or current batch COA</li><li>Certificate scope and validity</li><li>Export packaging and MOQ details</li></ul></div></section>`;
   return layout({
     title: "Manufacturing Capability | Nutranexa PS Ingredient Factory",
@@ -1290,7 +1323,7 @@ function inquiryPage() {
       <label>Source Preference <select name="Source Preference"><option value="">Select or confirm later</option><option>General PS</option><option>Soy</option><option>Sunflower</option><option>Soybean-derived</option><option>Other / Not sure</option></select></label>
       <label>Target Assay <select name="Target Assay"><option value="">Select or confirm later</option><option>20%</option><option>50%</option><option>To be confirmed</option><option>Other</option><option>Not applicable</option></select></label>
       <label>Application <input name="Application" placeholder="Capsules, tablets, powder, functional food..."></label>
-      <label>Annual Quantity <input name="Annual Quantity" placeholder="Estimated yearly demand"></label>
+      <label>Annual Quantity <input name="Annual Quantity" placeholder="MOQ 25 kg; enter estimated yearly demand"></label>
       <label>Documents Needed <select name="Documents Needed"><option value="">Select</option><option>Specification</option><option>COA sample</option><option>TDS / SDS</option><option>Certificates</option><option>Allergen / GMO statements</option><option>Multiple documents</option></select></label>
       <label>Sample Needed <select name="Sample Needed"><option value="">Select</option><option>Yes</option><option>No</option><option>Discuss first</option></select></label>
       <label class="full">Message <textarea name="Message" rows="5" placeholder="Tell us your application, target specification, annual quantity, required documents, and shipment timeline."></textarea></label>
