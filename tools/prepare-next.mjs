@@ -10,6 +10,7 @@ const pageDirectories = [
   "benefits",
   "contact",
   "manufacturing",
+  "news",
   "privacy",
   "products",
   "quality-rd",

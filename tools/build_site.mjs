@@ -7,6 +7,7 @@ const phone = "400-138-0635";
 const salesEmail = "wh1007209170@gmail.com";
 const whatsapp = "+8613645700210";
 const address = "Yunhe West Road, Shizilou District, Yanggu County, Liaocheng City, Shandong Province, P.R. China";
+const newsItems = JSON.parse(await fs.readFile(path.join(root, "content", "news.json"), "utf8"));
 
 const nav = [
   ["Home", "/"],
@@ -16,6 +17,7 @@ const nav = [
   ["Manufacturing", "/manufacturing/"],
   ["Quality & R&D", "/quality-rd/"],
   ["Resources", "/resources/"],
+  ["News", "/news/"],
   ["About", "/about/"],
   ["Contact", "/contact/"],
 ];
@@ -115,6 +117,7 @@ const megaNav = [
       },
     ],
   },
+  { label: "News", href: "/news/" },
   { label: "About", href: "/about/" },
   { label: "Contact", href: "/contact/" },
 ];
@@ -757,6 +760,7 @@ function footer() {
       <a href="/applications/functional-foods/">Functional Foods</a>
       <a href="/manufacturing/">Manufacturing</a>
       <a href="/quality-rd/">Quality & R&D</a>
+      <a href="/news/">News</a>
     </div>
     <div>
       <h2>Contact</h2>
@@ -1356,6 +1360,83 @@ function resourcesHub() {
   });
 }
 
+function newsPage() {
+  const items = [...newsItems]
+    .sort((a, b) => b.published.localeCompare(a.published))
+    .map((item) => `<article class="news-card">
+      <div class="news-meta"><time datetime="${esc(item.published)}">${esc(item.displayDate)}</time><span>${esc(item.byline)}</span></div>
+      <h2><a href="/news/${esc(item.slug)}/">${esc(item.headline)}</a></h2>
+      <a class="news-source-link" href="/news/${esc(item.slug)}/">Read article</a>
+    </article>`).join("");
+  const itemList = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: newsItems.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.headline,
+      url: urlFor(`/news/${item.slug}/`),
+    })),
+  };
+  const body = `<section class="page-hero compact"><p class="eyebrow">Industry news</p><h1>Phosphatidylserine and Supplement Industry News</h1><p>Concise factual reports with every source listed on the article page.</p></section>
+  <section class="news-section"><div class="news-grid">${items}</div></section>`;
+  return layout({
+    title: "Phosphatidylserine Industry News | Nutranexa",
+    description: "Read original-source phosphatidylserine, phospholipid, dietary supplement, and functional ingredient industry headlines.",
+    route: "/news/",
+    schema: [breadcrumbJson([["Home", "/"], ["News", "/news/"]]), itemList],
+    body,
+  });
+}
+
+function newsArticlePage(article) {
+  const route = `/news/${article.slug}/`;
+  const toc = article.sections.map((section) => `<li><a href="#${esc(section.id)}">${esc(section.heading)}</a></li>`).join("");
+  const sections = article.sections.map((section) => `<section id="${esc(section.id)}"><h2>${esc(section.heading)}</h2>${section.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}</section>`).join("");
+  const sources = article.sources.map((source) => `<li><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title)}</a></li>`).join("");
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: article.headline,
+    description: article.description,
+    datePublished: article.published,
+    dateModified: article.published,
+    author: { "@type": "Organization", name: article.byline },
+    publisher: { "@type": "Organization", name: "Nutranexa", logo: { "@type": "ImageObject", url: `${siteUrl}/assets/images/logo-nutranexa.webp` } },
+    image: `${siteUrl}${article.featuredImage}`,
+    mainEntityOfPage: urlFor(route),
+  };
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${esc(article.headline)} | Nutranexa News</title>
+  <meta name="description" content="${esc(article.description)}">
+  <link rel="canonical" href="${urlFor(route)}">
+  <meta name="robots" content="index,follow">
+  <script type="application/ld+json">${JSON.stringify(schema)}</script>
+</head>
+<body>
+  <header>
+    <h1>${esc(article.headline)}</h1>
+    <p>By ${esc(article.byline)} | <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p>
+  </header>
+  <figure>
+    <img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="100%" loading="eager">
+    <figcaption><a href="${esc(article.imageCreditUrl)}" target="_blank" rel="noopener noreferrer">${esc(article.imageCredit)}</a></figcaption>
+  </figure>
+  <nav aria-label="Table of contents">
+    <h2>Table of Contents</h2>
+    <ul>${toc}<li><a href="#sources">Sources</a></li></ul>
+  </nav>
+  <main>${sections}
+    <section id="sources"><h2>Sources</h2><ul>${sources}</ul></section>
+  </main>
+</body>
+</html>`;
+}
+
 function articlePage(article) {
   const route = `/resources/${article.slug}/`;
   const body = `<article class="article-page">
@@ -1407,6 +1488,8 @@ await add("/manufacturing/", manufacturingPage());
 await add("/quality-rd/", qualityPage());
 await add("/about/", aboutPage());
 await add("/contact/", contactPage());
+await add("/news/", newsPage());
+for (const article of newsItems) await add(`/news/${article.slug}/`, newsArticlePage(article));
 await add("/resources/", resourcesHub());
 for (const article of articles) await add(`/resources/${article.slug}/`, articlePage(article));
 await add("/thank-you/", thankYouPage());
