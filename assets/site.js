@@ -8,6 +8,42 @@ if (navToggle && nav) {
   });
 }
 
+const megaItems = [...document.querySelectorAll(".has-mega")];
+
+const closeMegaMenus = (except) => {
+  megaItems.forEach((item) => {
+    if (item === except) return;
+    item.classList.remove("is-open");
+    item.querySelector(":scope > .nav-link")?.setAttribute("aria-expanded", "false");
+  });
+};
+
+megaItems.forEach((item) => {
+  const trigger = item.querySelector(":scope > .nav-link");
+  if (!trigger) return;
+
+  trigger.setAttribute("aria-haspopup", "true");
+  trigger.setAttribute("aria-expanded", "false");
+
+  trigger.addEventListener("click", (event) => {
+    const needsTapToggle = window.matchMedia("(hover: none) and (min-width: 861px)").matches;
+    if (!needsTapToggle || item.classList.contains("is-open")) return;
+
+    event.preventDefault();
+    closeMegaMenus(item);
+    item.classList.add("is-open");
+    trigger.setAttribute("aria-expanded", "true");
+  });
+});
+
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".has-mega")) closeMegaMenus();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMegaMenus();
+});
+
 document.querySelectorAll(".quote-form").forEach((form) => {
   const status = form.querySelector(".form-status");
   const submit = form.querySelector('button[type="submit"]');

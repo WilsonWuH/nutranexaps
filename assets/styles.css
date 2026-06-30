@@ -159,15 +159,30 @@ section,
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  max-height: calc(100vh - 94px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
 }
 
 .has-mega:hover .mega-panel,
-.has-mega:focus-within .mega-panel {
+.has-mega:focus-within .mega-panel,
+.has-mega.is-open .mega-panel {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: translateX(-50%) translateY(0);
+}
+
+@media (min-width: 861px) {
+  .has-mega::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -12px;
+    width: calc(100% + 24px);
+    height: 28px;
+  }
 }
 
 .mega-inner {
