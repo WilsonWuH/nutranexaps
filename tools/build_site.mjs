@@ -18,7 +18,6 @@ const nav = [
   ["Resources", "/resources/"],
   ["About", "/about/"],
   ["Contact", "/contact/"],
-  ["Inquiry", "/inquiry/"],
 ];
 
 const megaNav = [
@@ -118,7 +117,6 @@ const megaNav = [
   },
   { label: "About", href: "/about/" },
   { label: "Contact", href: "/contact/" },
-  { label: "Inquiry", href: "/inquiry/" },
 ];
 
 const products = [
@@ -1274,7 +1272,7 @@ function aboutPage() {
 }
 
 function contactPage() {
-  const body = `<section class="page-hero compact"><p class="eyebrow">Contact sales</p><h1>Request a Quote or Product Documents</h1><p>Send product interest, target application, annual quantity, and document needs. You can contact sales by email, WhatsApp, phone, or the inquiry form.</p></section>
+  const body = `<section class="page-hero compact"><p class="eyebrow">Contact sales</p><h1>Request a Quote or Product Documents</h1><p>Send product interest, target application, annual quantity, and document needs. You can contact sales by email, WhatsApp, phone, or the contact form.</p></section>
   <section class="contact-layout">
     ${contactDetailsCard("Nutranexa / Shandong Baianrui Biopharmaceutical")}
     ${quoteForm("General quote request")}
@@ -1409,7 +1407,6 @@ await add("/manufacturing/", manufacturingPage());
 await add("/quality-rd/", qualityPage());
 await add("/about/", aboutPage());
 await add("/contact/", contactPage());
-await add("/inquiry/", inquiryPage());
 await add("/resources/", resourcesHub());
 for (const article of articles) await add(`/resources/${article.slug}/`, articlePage(article));
 await add("/thank-you/", thankYouPage());

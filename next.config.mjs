@@ -19,6 +19,9 @@ function collectHtmlRewrites(directory, base = "") {
 
 const nextConfig = {
   trailingSlash: true,
+  async redirects() {
+    return [{ source: "/inquiry", destination: "/contact/", permanent: true }];
+  },
   async rewrites() {
     return {
       beforeFiles: collectHtmlRewrites(path.join(process.cwd(), "public", "site")),
