@@ -132,6 +132,8 @@ const products = [
     image: "/assets/images/brand-product-lab.webp",
     imageAlt: "Nutranexa phosphatidylserine ingredient samples in a branded laboratory",
     cta: "Request a Quote",
+    inquirySource: "General PS",
+    inquiryAssay: "To be confirmed",
     quick:
       "Phosphatidylserine (PS) is a functional food ingredient produced from natural lecithin and L-serine through bio-enzymatic conversion. Nutranexa supplies bulk PS ingredients for supplement manufacturers, ingredient distributors, nutrition brands, and functional food developers.",
     source: "Natural lecithin and L-serine; source-specific options include soy and sunflower PS.",
@@ -154,12 +156,14 @@ const products = [
     image: "/assets/images/product-soy-ps.webp",
     imageAlt: "Soy phosphatidylserine powder product in a clean ingredient bowl",
     cta: "Request Specs",
+    inquirySource: "Soy",
+    inquiryAssay: "To be confirmed",
     quick:
       "Soy phosphatidylserine is a PS ingredient made from soy lecithin and L-serine through bio-enzymatic conversion. It is suitable for buyers seeking a soy-source ingredient for supplements, nutrition powders, dairy formulas, and functional food product development.",
     source: "Soy lecithin and L-serine; exact PS content and particle specifications to be confirmed.",
     applications: ["Nutrition powders", "Tablet and capsule products", "Functional dairy formulas", "Private-label supplement development"],
     proof: ["Lead PS product focus", "Production equipment visibility", "R&D cooperation information available", "Quality control details available for buyer review"],
-    docs: ["Specification: Available upon request", "COA sample: PS 20% sunflower sample available for review", "Packaging options: To be confirmed before quotation"],
+    docs: ["Specification: Available upon request", "COA sample: Current soy-source COA to be confirmed; reference PS samples are available for buyer review", "Packaging options: To be confirmed before quotation"],
     faqs: [
       ["Who should request soy PS specifications?", "Ingredient importers, dietary supplement manufacturers, and food brands comparing source, content, and application fit should request specifications."],
       ["Is soy PS different from sunflower PS?", "Yes. They differ by ingredient source and buyer preference. Use the comparison article and request current specifications before purchasing."],
@@ -176,12 +180,14 @@ const products = [
     image: "/assets/images/product-sunflower-ps.webp",
     imageAlt: "Sunflower phosphatidylserine powder product in a black bowl with sunflower seeds",
     cta: "Request a Quote",
+    inquirySource: "Sunflower",
+    inquiryAssay: "20%",
     quick:
       "Sunflower phosphatidylserine is a source-specific PS ingredient for buyers who prefer a sunflower-origin option. Nutranexa supplies sunflower PS for B2B supplement, nutrition, and functional food projects, with current specifications and documents confirmed through sales.",
     source: "Sunflower-source ingredient base; final content, carrier, and test documents to be confirmed.",
     applications: ["Non-soy positioning", "Supplement capsules", "Functional food formulas", "Brand formulations requiring source differentiation"],
     proof: ["Product imagery available", "Manufacturing information available", "Quality and R&D details available", "Document request support prepared"],
-    docs: ["Specification: Available upon request", "COA sample: PS 50% sample available for review where relevant", "Certificate files: Halal, Kosher, and production documents supplied for buyer review"],
+    docs: ["Specification: Available upon request", "COA sample: PS 20% sunflower sample available for review", "Certificate files: Halal, Kosher, and production documents supplied for buyer review"],
     faqs: [
       ["Why choose sunflower PS?", "Some brands prefer sunflower-source ingredients for positioning or formulation reasons. Buyers should confirm exact specs before quoting."],
       ["Can Nutranexa support supplement applications?", "Nutranexa supports PS ingredient discussions for dietary supplement and functional food applications without making medical treatment claims."],
@@ -198,6 +204,8 @@ const products = [
     image: "/assets/images/product-ssp.webp",
     imageAlt: "Soluble soybean polysaccharide powder in a product bowl with soybeans",
     cta: "Request a Quote",
+    inquirySource: "Soybean-derived",
+    inquiryAssay: "Not applicable",
     quick:
       "Soluble soybean polysaccharide is a functional food ingredient in Nutranexa's product range. It supports buyers who need application discussion, supplier capability review, document availability, and quotation support before sampling or bulk purchase.",
     source: "Soybean-derived ingredient; technical specifications to be confirmed.",
@@ -219,6 +227,12 @@ const applications = [
     description: "Plan PS ingredient sourcing for tablets, soft capsules, hard capsules, powders, and supplement formats.",
     image: "/assets/images/dietary-supplement-application.webp",
     points: ["Tablet and capsule formulas", "Powder product development", "Source and content comparison", "Specification and COA requests"],
+    formats: [
+      ["Hard capsules", "Confirm particle profile, bulk density, flow, fill weight, source, and target PS assay before a production trial."],
+      ["Tablets", "Evaluate compressibility, excipient compatibility, disintegration, color stability, and assay uniformity in the finished formula."],
+      ["Soft capsules", "Confirm the quoted PS form, carrier system, oxidation control, compatibility, and storage requirements with technical documents."],
+      ["Powder blends", "Test dispersibility, taste, caking, blend uniformity, moisture control, and packaging under the intended process conditions."],
+    ],
   },
   {
     slug: "functional-foods",
@@ -226,6 +240,12 @@ const applications = [
     description: "Evaluate PS and functional food ingredient options for milk powder, dairy drinks, nutrition products, and health food concepts.",
     image: "/assets/images/functional-food-application.webp",
     points: ["Milk powder and nutrition formulas", "Dairy beverage applications", "Functional food ingredient positioning", "Compliance-aware content and document workflow"],
+    formats: [
+      ["Milk powder", "Evaluate blend uniformity, moisture exposure, flavor impact, target assay, serving format, and shelf-life conditions."],
+      ["Dairy drinks", "Run bench tests for dispersion, sedimentation, heat treatment, pH, sensory impact, and processing losses."],
+      ["Nutrition powders", "Confirm carrier compatibility, caking control, serving size, packaging barrier, and assay verification in the final blend."],
+      ["Functional food concepts", "Define the target country, permitted positioning, process conditions, source preference, and required document package."],
+    ],
   },
 ];
 
@@ -301,6 +321,63 @@ const coaSamples = [
       ["Salmonella", "Not detected"],
     ],
   },
+];
+
+const psSpecificationMatrix = [
+  {
+    product: "PS 20% Sunflower",
+    source: "Sunflower lecithin",
+    assay: ">= 20 g/100g",
+    appearance: "Light to brown yellow powder",
+    moisture: "<= 2.0 g/100g",
+    peroxide: "<= 2.5 mmol/kg",
+    acetone: ">= 95.0 g/100g",
+    density: ">= 0.40 g/ml",
+    shelfLife: "24 months",
+    status: "Sample COA available",
+  },
+  {
+    product: "PS 50%",
+    source: "Confirm for quoted product",
+    assay: "50-60 g/100g",
+    appearance: "Light to brown yellow powder",
+    moisture: "<= 2.0 g/100g",
+    peroxide: "<= 2.5 mmol/kg",
+    acetone: ">= 95.0 g/100g",
+    density: "To be confirmed",
+    shelfLife: "24 months",
+    status: "Sample COA available",
+  },
+  {
+    product: "Soy Phosphatidylserine",
+    source: "Soy lecithin",
+    assay: "Confirm current options",
+    appearance: "Confirm current specification",
+    moisture: "Confirm current specification",
+    peroxide: "Confirm current specification",
+    acetone: "Confirm current specification",
+    density: "Confirm current specification",
+    shelfLife: "To be confirmed",
+    status: "Request current specification",
+  },
+];
+
+const manufacturingSteps = [
+  ["1", "Raw material confirmation", "Confirm lecithin source, L-serine, supplier documents, and incoming quality requirements."],
+  ["2", "Bio-enzymatic conversion", "Use controlled processing to produce PS from the confirmed ingredient base; commercial process details remain confidential."],
+  ["3", "Separation and purification", "Control impurities and process consistency according to the product specification and internal procedures."],
+  ["4", "Drying, sieving, and blending", "Prepare the required powder profile and batch uniformity before final quality testing."],
+  ["5", "Final QC and release", "Review assay, moisture, peroxide value, insoluble matter, heavy metals, and microbiology as applicable."],
+  ["6", "Packaging and shipment review", "Confirm packaging, labels, batch documents, storage, and shipment requirements before dispatch."],
+];
+
+const qualityDocumentGroups = [
+  ["Company identity", "Business License", "Company registration and legal-entity review."],
+  ["Production scope", "Food Production License / Item Details", "Confirm validity, product scope, and applicability to the quoted product."],
+  ["Product and batch", "Specification / Current Batch COA", "Match the exact source, target assay, batch, and destination-market requirements."],
+  ["Market review", "Halal / Kosher / Facility Registration", "Request current copies and verify scope; facility registration is not product endorsement."],
+  ["Technical support", "TDS / SDS", "Availability and current version must be confirmed with sales."],
+  ["Label support", "Allergen / GMO Statements", "Request source-specific statements; do not infer allergen-free status from source alone."],
 ];
 
 const psBenefitItems = [
@@ -683,7 +760,7 @@ function footer() {
 </footer>`;
 }
 
-function hero({ eyebrow, title, text, image, cta = "Request a Quote", secondary = "View Products" }) {
+function hero({ eyebrow, title, text, image, cta = "Request a Quote", secondary = "View Products", contactHref = "/contact/" }) {
   return `<section class="hero">
   <div class="hero-media"><img src="${image}" alt="" loading="eager"></div>
   <div class="hero-content">
@@ -691,7 +768,7 @@ function hero({ eyebrow, title, text, image, cta = "Request a Quote", secondary 
     <h1>${esc(title)}</h1>
     <p>${esc(text)}</p>
     <div class="hero-actions">
-      <a class="button primary" href="/contact/">${cta}</a>
+      <a class="button primary" href="${contactHref}">${cta}</a>
       <a class="button secondary" href="/products/">${secondary}</a>
     </div>
     <dl class="proof-strip">
@@ -717,13 +794,77 @@ function quoteForm(context = "General inquiry") {
     <label>Country / Region <input required name="Country" autocomplete="country-name"></label>
     <label>Company Type <select required name="Company Type"><option value="">Select</option><option>Importer / Distributor</option><option>Supplement Manufacturer</option><option>Food Brand</option><option>OEM / ODM Factory</option><option>Other</option></select></label>
     <label>Product Interest <input required name="Interest" value="${esc(context)}"></label>
+    <label>Source Preference <select name="Source Preference"><option value="">Select or confirm later</option><option>General PS</option><option>Soy</option><option>Sunflower</option><option>Soybean-derived</option><option>Other / Not sure</option></select></label>
+    <label>Target Assay <select name="Target Assay"><option value="">Select or confirm later</option><option>20%</option><option>50%</option><option>To be confirmed</option><option>Other</option><option>Not applicable</option></select></label>
     <label>Application <input name="Application" placeholder="Capsule, powder, functional food"></label>
     <label>Annual Quantity <input name="Annual Quantity" placeholder="Estimated yearly demand"></label>
-    <label>Message <textarea required name="Message" rows="4" placeholder="Tell us the specification, source preference, documents, and timeline you need."></textarea></label>
+    <label>Documents Needed <select name="Documents Needed"><option value="">Select</option><option>Specification</option><option>COA sample</option><option>TDS / SDS</option><option>Certificates</option><option>Allergen / GMO statements</option><option>Multiple documents</option></select></label>
+    <label>Sample Needed <select name="Sample Needed"><option value="">Select</option><option>Yes</option><option>No</option><option>Discuss first</option></select></label>
+    <label class="form-full">Message <textarea required name="Message" rows="4" placeholder="Tell us the specification, source preference, documents, and timeline you need."></textarea></label>
   </div>
   <button class="button primary" type="submit">Submit Inquiry</button>
   <p class="form-note">Your inquiry will be prepared for sales follow-up. You can also email ${salesEmail} or contact us on WhatsApp ${whatsapp}.</p>
 </form>`;
+}
+
+function productInquiryHref(product, documents = "") {
+  const params = new URLSearchParams({
+    product: product.name,
+    source: product.inquirySource || "",
+    assay: product.inquiryAssay || "",
+  });
+  if (documents) params.set("documents", documents);
+  return `/contact/?${params.toString()}`;
+}
+
+function sourceSelectorSection() {
+  return `<section class="source-selector">${sectionIntro("Choose a source", "Compare soy and sunflower phosphatidylserine", "Use source preference, label planning, target assay, and document needs to choose the right product route. Final specifications must match the quoted product and batch.")}
+    <div class="source-choice-grid">
+      <article class="source-choice"><img src="/assets/images/product-soy-ps.webp" alt="Soy phosphatidylserine powder source option" loading="lazy"><div><p class="eyebrow">Soy-source PS</p><h3>Soy Phosphatidylserine</h3><p>For buyers evaluating soy lecithin-derived PS across capsules, tablets, powders, and nutrition formulas.</p><ul><li>Confirm current assay options</li><li>Request source-specific allergen documents</li><li>Match the COA to the quoted product</li></ul><a href="/products/soy-phosphatidylserine/">Review Soy PS</a></div></article>
+      <article class="source-choice"><img src="/assets/images/product-sunflower-ps.webp" alt="Sunflower phosphatidylserine powder source option" loading="lazy"><div><p class="eyebrow">Sunflower-source PS</p><h3>Sunflower Phosphatidylserine</h3><p>For buyers who prefer sunflower-origin positioning and need a clearly documented source route.</p><ul><li>PS 20% sunflower sample COA available</li><li>Do not infer allergen-free status without documents</li><li>Confirm target assay and application</li></ul><a href="/products/sunflower-phosphatidylserine/">Review Sunflower PS</a></div></article>
+    </div>
+  </section>`;
+}
+
+function specificationMatrix() {
+  const rows = psSpecificationMatrix.map((item) => `<tr><th scope="row">${esc(item.product)}</th><td>${esc(item.source)}</td><td>${esc(item.assay)}</td><td>${esc(item.appearance)}</td><td>${esc(item.moisture)}</td><td>${esc(item.peroxide)}</td><td>${esc(item.acetone)}</td><td>${esc(item.density)}</td><td>${esc(item.shelfLife)}</td><td><span class="status-tag">${esc(item.status)}</span></td></tr>`).join("");
+  return `<section class="spec-section">${sectionIntro("Source and assay matrix", "Compare PS options before requesting a quotation", "The values below are specification limits shown in supplied sample COAs or are clearly marked for confirmation. Sample COA results are batch-specific and are not permanent sales guarantees.")}
+    <div class="spec-table-wrap"><table class="spec-table"><thead><tr><th>Product</th><th>Source</th><th>Target PS assay</th><th>Appearance</th><th>Moisture</th><th>Peroxide</th><th>Acetone insoluble</th><th>Bulk density</th><th>Shelf life</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <div class="section-actions"><a class="button primary" href="/contact/?product=Phosphatidylserine+%28PS%29&documents=Specification">Request Current Specification</a><a class="button secondary" href="/contact/?product=Phosphatidylserine+%28PS%29&documents=COA+sample">Request COA Sample</a></div>
+  </section>`;
+}
+
+function documentsRequestSection(product) {
+  const href = (documents) => productInquiryHref(product, documents);
+  const items = [
+    ["COA sample", product.slug === "sunflower-phosphatidylserine" ? "PS 20% sunflower sample available" : product.slug === "phosphatidylserine" ? "PS 20% sunflower and PS 50% samples available" : "Reference samples available; exact source must be confirmed", "COA sample"],
+    ["Current specification", "Request the version matching source, target assay, and quoted product", "Specification"],
+    ["TDS / SDS", "Availability and current version to be confirmed by sales", "TDS / SDS"],
+    ["Certificates", "Request current files and verify product scope and validity", "Certificates"],
+    ["Allergen / GMO statements", "Request source-specific statements; do not infer status", "Allergen / GMO statements"],
+    ["Packaging and shipment", "MOQ, packaging, lead time, and shipment details to be confirmed", "Multiple documents"],
+  ];
+  return `<section class="documents-request">${sectionIntro("Document workflow", "Request the files needed for supplier approval", "Choose the relevant document path and send the exact source, target assay, application, and destination market for faster review.")}
+    <div class="document-status-grid">${items.map(([title, text, request]) => `<article><h3>${esc(title)}</h3><p>${esc(text)}</p><a href="${href(request)}">Request ${esc(title)}</a></article>`).join("")}</div>
+  </section>`;
+}
+
+function applicationFormatSection(app) {
+  return `<section class="application-formats">${sectionIntro("Format-level evaluation", "Plan the tests before requesting a production quote", "These are buyer evaluation points, not fixed formulation instructions. Confirm the exact product specification and run tests under the intended process conditions.")}
+    <div class="application-format-grid">${app.formats.map(([title, text]) => `<article><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`).join("")}</div>
+  </section>`;
+}
+
+function manufacturingProcessSection() {
+  return `<section class="manufacturing-process">${sectionIntro("Process and QC overview", "A document-led route from raw materials to shipment", "This high-level workflow supports supplier evaluation without disclosing confidential parameters. Product-specific procedures should be confirmed during technical review.")}
+    <ol class="process-flow">${manufacturingSteps.map(([number, title, text]) => `<li><span>${number}</span><div><h3>${esc(title)}</h3><p>${esc(text)}</p></div></li>`).join("")}</ol>
+  </section>`;
+}
+
+function qualityDocumentWorkflow() {
+  return `<section class="quality-workflow">${sectionIntro("Buyer document workflow", "Organize files by approval purpose", "Request current copies for the exact product and destination market. Validity, scope, and product applicability should be checked before purchase or shipment.")}
+    <div class="quality-group-grid">${qualityDocumentGroups.map(([group, title, text]) => `<article><p class="eyebrow">${esc(group)}</p><h3>${esc(title)}</h3><p>${esc(text)}</p><a href="/contact/?documents=${encodeURIComponent(title)}">Request current copy</a></article>`).join("")}</div>
+  </section>`;
 }
 
 function contactDetailsCard(title = "Sales contact") {
@@ -790,6 +931,7 @@ function homePage() {
     image: "/assets/images/brand-product-lab.webp",
   })}
   ${psBenefitsSection("home")}
+  ${sourceSelectorSection()}
   <section>${sectionIntro("Core products", "Phosphatidylserine and related food ingredients", "Compare source options, application fit, available documents, and quotation requirements before selecting an ingredient.")}
     <div class="card-grid">${products.map(productCard).join("")}</div>
   </section>
@@ -845,7 +987,7 @@ function advisorCard(product) {
         <li>Application and quotation follow-up</li>
       </ul>
       <div class="advisor-actions">
-        <a class="button primary" href="/contact/">Request a Quote</a>
+        <a class="button primary" href="${productInquiryHref(product)}">Request Source & Assay</a>
         <a class="button secondary" href="/resources/documents-for-ps-ingredients/">Document checklist</a>
       </div>
     </div>
@@ -947,11 +1089,13 @@ function productPage(product) {
     image: product.image,
     cta: product.cta,
     secondary: "Compare applications",
+    contactHref: productInquiryHref(product),
   })}
   ${product.slug === "phosphatidylserine" ? psBenefitsSection() : ""}
   <section class="product-template">
     <div class="product-main">
       <div class="quick-answer product-quick"><p class="eyebrow">Quick Answer</p><h2>What is ${esc(product.name)} and who is it for?</h2><p>${esc(product.quick)}</p></div>
+      ${product.slug === "phosphatidylserine" ? specificationMatrix() : ""}
       <div class="detail-grid product-detail-grid">
         <div><h2>Product overview</h2><p>${esc(product.description)}</p><h3>Source and ingredient base</h3><p>${esc(product.source)}</p></div>
         <div><h2>Applications</h2><ul class="check-list">${product.applications.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
@@ -964,6 +1108,7 @@ function productPage(product) {
         </div>
         <img class="section-photo" src="/assets/images/quality-document-review.webp" alt="Nutranexa quality document review and COA request workflow" loading="lazy">
       </section>
+      ${documentsRequestSection(product)}
       <section class="product-faq">${sectionIntro("FAQ", "Common buyer questions", "These answers are written for sourcing and application evaluation without medical treatment claims.")}
         <div class="faq-list">${product.faqs.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
       </section>
@@ -1010,6 +1155,7 @@ function applicationPage(app) {
   <section>${sectionIntro("Application checklist", "What to prepare before quotation", "A clear brief helps sales respond with the most relevant source and document path.")}
     <div class="feature-grid">${app.points.map((point) => `<div class="feature"><h3>${esc(point)}</h3><p>Confirm current product specifications, application fit, and compliance needs with the sales team.</p></div>`).join("")}</div>
   </section>
+  ${applicationFormatSection(app)}
   <section class="link-panel"><a href="/products/phosphatidylserine/">Phosphatidylserine</a><a href="/products/soy-phosphatidylserine/">Soy PS</a><a href="/products/sunflower-phosphatidylserine/">Sunflower PS</a><a href="/quality-rd/">Quality & R&D</a></section>
   <section class="form-panel"><div>${sectionIntro("Talk to sales", "Request application support", "Include application details and document needs for a faster reply.")}</div>${quoteForm(app.title)}</section>`;
   return layout({
@@ -1036,6 +1182,7 @@ function manufacturingPage() {
       ${["factory-campus.webp", "factory-building.webp", "factory-gate.webp", "equipment-workshop-01.webp", "equipment-workshop-03.webp", "equipment-cleanroom-workshop.webp"].map((img) => `<img src="/assets/images/${img}" alt="Nutranexa manufacturing and factory visual proof" loading="lazy">`).join("")}
     </div>
   </section>
+  ${manufacturingProcessSection()}
   <section class="detail-grid"><div><h2>Buyer confidence points</h2><ul class="check-list"><li>110,000+ m2 production campus</li><li>Factory, equipment, and cleanroom imagery available</li><li>PS-focused production context</li><li>Product document requests available before purchase</li></ul></div><div><h2>Confirm before purchase</h2><ul class="check-list"><li>Current specifications</li><li>COA sample or current batch COA</li><li>Certificate scope and validity</li><li>Export packaging and MOQ details</li></ul></div></section>`;
   return layout({
     title: "Manufacturing Capability | Nutranexa PS Ingredient Factory",
@@ -1060,6 +1207,7 @@ function qualityPage() {
     <div class="feature-grid"><div class="feature"><h3>R&D cooperation</h3><p>Nutranexa references cooperation with East China University of Science and Technology for PS development.</p></div><div class="feature"><h3>Production license reference</h3><p>PS obtained production license by the end of 2015 according to company materials.</p></div><div class="feature"><h3>Quality visibility</h3><p>Factory, cleanroom, lab, and equipment images support buyer evaluation.</p></div></div>
   </section>
   <section>${sectionIntro("Document proof", "Certificates and registration files for buyer review", "Use these files as preliminary review materials. Current validity, scope, and product applicability should be confirmed before purchase or shipment.")}${documentCards()}</section>
+  ${qualityDocumentWorkflow()}
   <section class="coa-section">${sectionIntro("COA samples", "PS 20% and 50% batch-specific sample data", "The COA samples show analysis items commonly reviewed by buyers, including assay, moisture, peroxide value, heavy metals, microbiology, and Salmonella.")}${coaSampleTables()}</section>
   <section class="split-section"><div><h2>Documents to request</h2><ul class="check-list"><li>Specification sheet</li><li>COA sample or current batch COA</li><li>Food production license and item details</li><li>Halal / Kosher files where market requires them</li><li>Packaging and storage information</li><li>Market-specific compliance files where relevant</li></ul></div><img class="section-photo" src="/assets/images/quality-document-review.webp" alt="Nutranexa specification review and COA request support" loading="lazy"></section>`;
   return layout({
@@ -1139,6 +1287,12 @@ function inquiryPage() {
       <label>Company Name <input name="Company Name" autocomplete="organization" placeholder="Company or organization"></label>
       <label>Country / Region <input name="Country" autocomplete="country-name" placeholder="United States, Germany, Brazil..."></label>
       <label>Product Requirement <input name="Product Requirement" placeholder="PS powder, Soy PS, Sunflower PS, SSP..."></label>
+      <label>Source Preference <select name="Source Preference"><option value="">Select or confirm later</option><option>General PS</option><option>Soy</option><option>Sunflower</option><option>Soybean-derived</option><option>Other / Not sure</option></select></label>
+      <label>Target Assay <select name="Target Assay"><option value="">Select or confirm later</option><option>20%</option><option>50%</option><option>To be confirmed</option><option>Other</option><option>Not applicable</option></select></label>
+      <label>Application <input name="Application" placeholder="Capsules, tablets, powder, functional food..."></label>
+      <label>Annual Quantity <input name="Annual Quantity" placeholder="Estimated yearly demand"></label>
+      <label>Documents Needed <select name="Documents Needed"><option value="">Select</option><option>Specification</option><option>COA sample</option><option>TDS / SDS</option><option>Certificates</option><option>Allergen / GMO statements</option><option>Multiple documents</option></select></label>
+      <label>Sample Needed <select name="Sample Needed"><option value="">Select</option><option>Yes</option><option>No</option><option>Discuss first</option></select></label>
       <label class="full">Message <textarea name="Message" rows="5" placeholder="Tell us your application, target specification, annual quantity, required documents, and shipment timeline."></textarea></label>
     </div>
     <div class="inquiry-form-actions">
@@ -1202,7 +1356,7 @@ function privacyPage() {
 async function write(route, html) {
   const file = routeToFile(route);
   await fs.mkdir(path.dirname(file), { recursive: true });
-  await fs.writeFile(file, html, "utf8");
+  await fs.writeFile(file, html.replace(/[ \t]+$/gm, ""), "utf8");
 }
 
 const routes = [];

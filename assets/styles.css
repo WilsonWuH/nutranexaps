@@ -451,6 +451,181 @@ section,
   color: var(--muted);
 }
 
+.source-selector,
+.application-formats,
+.quality-workflow {
+  background: var(--soft);
+}
+
+.source-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.source-choice {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.72fr) minmax(0, 1.28fr);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+
+.source-choice img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+.source-choice > div {
+  padding: 26px;
+}
+
+.source-choice ul {
+  margin: 18px 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.spec-section {
+  padding: 34px 0;
+}
+
+.spec-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+
+.spec-table {
+  width: 100%;
+  min-width: 1380px;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.spec-table th,
+.spec-table td {
+  padding: 13px 14px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.spec-table thead th {
+  color: white;
+  background: var(--green-dark);
+}
+
+.spec-table tbody th {
+  min-width: 170px;
+  color: var(--green-dark);
+  background: rgba(31, 122, 76, 0.05);
+}
+
+.status-tag {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid rgba(31, 122, 76, 0.24);
+  border-radius: 5px;
+  color: var(--green-dark);
+  background: rgba(31, 122, 76, 0.08);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.document-status-grid,
+.quality-group-grid,
+.application-format-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.documents-request {
+  padding: 34px 0;
+}
+
+.application-format-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.document-status-grid article,
+.quality-group-grid article,
+.application-format-grid article {
+  padding: 22px;
+  border-top: 3px solid var(--gold);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  border-radius: 6px;
+  background: white;
+}
+
+.document-status-grid p,
+.quality-group-grid p,
+.application-format-grid p {
+  color: var(--muted);
+}
+
+.manufacturing-process {
+  background: white;
+}
+
+.process-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.process-flow li {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 14px;
+  padding: 24px 20px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.process-flow li:nth-child(3n) {
+  border-right: 0;
+}
+
+.process-flow li > span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: white;
+  background: var(--green);
+  font-weight: 900;
+}
+
+.process-flow h3 {
+  font-size: 1rem;
+}
+
+.process-flow p {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .split-section,
 .contact-layout {
   display: grid;
@@ -821,6 +996,10 @@ summary {
   gap: 14px;
 }
 
+.form-grid .form-full {
+  grid-column: 1 / -1;
+}
+
 label {
   display: grid;
   gap: 6px;
@@ -958,6 +1137,7 @@ textarea {
 }
 
 .inquiry-grid input,
+.inquiry-grid select,
 .inquiry-grid textarea {
   border-color: rgba(229, 174, 45, 0.28);
   color: #ffffff;
@@ -970,6 +1150,7 @@ textarea {
 }
 
 .inquiry-grid input:focus,
+.inquiry-grid select:focus,
 .inquiry-grid textarea:focus {
   outline: 2px solid rgba(240, 193, 67, 0.54);
   border-color: #f0c143;
@@ -1254,8 +1435,20 @@ textarea {
   .gallery,
   .document-grid,
   .coa-grid,
+  .document-status-grid,
+  .quality-group-grid,
+  .application-format-grid,
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .source-choice {
+    grid-template-columns: 1fr;
+  }
+
+  .source-choice img {
+    min-height: 240px;
+    max-height: 300px;
   }
 }
 
@@ -1434,8 +1627,21 @@ textarea {
   .gallery,
   .document-grid,
   .coa-grid,
+  .source-choice-grid,
+  .document-status-grid,
+  .quality-group-grid,
+  .application-format-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .process-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .process-flow li,
+  .process-flow li:nth-child(3n) {
+    border-right: 0;
   }
 
   .cta-band {

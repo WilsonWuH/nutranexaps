@@ -44,7 +44,35 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeMegaMenus();
 });
 
+const inquiryParams = new URLSearchParams(window.location.search);
+const inquiryPrefill = {
+  product: inquiryParams.get("product"),
+  source: inquiryParams.get("source"),
+  assay: inquiryParams.get("assay"),
+  documents: inquiryParams.get("documents"),
+  sample: inquiryParams.get("sample"),
+};
+
+const setFormValue = (form, name, value) => {
+  if (!value) return;
+  const field = form.elements.namedItem(name);
+  if (!field || field instanceof RadioNodeList) return;
+
+  if (field.tagName === "SELECT" && ![...field.options].some((option) => option.value === value)) {
+    field.add(new Option(value, value));
+  }
+  field.value = value;
+};
+
 document.querySelectorAll(".quote-form").forEach((form) => {
+  setFormValue(form, "Product Interest", inquiryPrefill.product);
+  setFormValue(form, "Interest", inquiryPrefill.product);
+  setFormValue(form, "Product Requirement", inquiryPrefill.product);
+  setFormValue(form, "Source Preference", inquiryPrefill.source);
+  setFormValue(form, "Target Assay", inquiryPrefill.assay);
+  setFormValue(form, "Documents Needed", inquiryPrefill.documents);
+  setFormValue(form, "Sample Needed", inquiryPrefill.sample);
+
   const status = form.querySelector(".form-status");
   const submit = form.querySelector('button[type="submit"]');
   const validateField = (field) => {
