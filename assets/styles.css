@@ -840,13 +840,15 @@ section,
   color: rgba(255, 255, 255, 0.76);
 }
 
-.company-video-player {
+.company-video-player,
+.manufacturing-video {
   width: 100%;
   max-width: 1180px;
   margin: 0;
 }
 
-.company-video-player video {
+.company-video-player video,
+.manufacturing-video video {
   display: block;
   width: 100%;
   height: auto;
@@ -857,10 +859,29 @@ section,
   object-fit: cover;
 }
 
-.company-video-player figcaption {
+.company-video-player figcaption,
+.manufacturing-video figcaption {
   margin-top: 12px;
   color: rgba(255, 255, 255, 0.62);
   font-size: 0.88rem;
+}
+
+.manufacturing-proof-section {
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  gap: 52px;
+}
+
+.manufacturing-video {
+  align-self: center;
+}
+
+.manufacturing-video video {
+  border-color: rgba(19, 83, 53, 0.18);
+  box-shadow: 0 20px 48px rgba(16, 45, 33, 0.14);
+}
+
+.manufacturing-video figcaption {
+  color: var(--muted);
 }
 
 .quick-answer {

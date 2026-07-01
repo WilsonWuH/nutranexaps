@@ -854,16 +854,20 @@ function sectionIntro(label, title, text) {
   return `<div class="section-intro"><p class="eyebrow">${esc(label)}</p><h2>${esc(title)}</h2><p>${esc(text)}</p></div>`;
 }
 
+function companyVideoPlayer(className = "company-video-player") {
+  return `<figure class="${esc(className)}">
+    <video controls playsinline preload="metadata" poster="/assets/images/nutranexa-company-video-poster.webp" width="1280" height="720" aria-label="Nutranexa company and manufacturing introduction video">
+      <source src="/assets/video/nutranexa-company-profile.mp4" type="video/mp4">
+      Your browser does not support HTML5 video. <a href="/assets/video/nutranexa-company-profile.mp4">Open the company film</a>.
+    </video>
+    <figcaption>A closer look at our campus, production workshops, R&D facilities, and ingredient products.</figcaption>
+  </figure>`;
+}
+
 function companyVideoSection() {
   return `<section class="company-video-section" aria-labelledby="company-video-title">
     <div class="company-video-copy"><p class="eyebrow">Company film</p><h2 id="company-video-title">Inside Nutranexa: from R&D to ingredient production</h2><p>Tour the Nutranexa campus, production workshops, processing equipment, laboratory facilities, and phosphatidylserine product presentation.</p></div>
-    <figure class="company-video-player">
-      <video controls playsinline preload="metadata" poster="/assets/images/nutranexa-company-video-poster.webp" width="1280" height="720" aria-label="Nutranexa company and manufacturing introduction video">
-        <source src="/assets/video/nutranexa-company-profile.mp4" type="video/mp4">
-        Your browser does not support HTML5 video. <a href="/assets/video/nutranexa-company-profile.mp4">Open the company film</a>.
-      </video>
-      <figcaption>Nutranexa company profile: campus, production, R&D, quality facilities, and ingredient products.</figcaption>
-    </figure>
+    ${companyVideoPlayer()}
   </section>`;
 }
 
@@ -1055,15 +1059,14 @@ function homePage() {
   <section>${sectionIntro("Core products", "Phosphatidylserine and related food ingredients", "Compare source options, application fit, available documents, and quotation requirements before selecting an ingredient.")}
     <div class="card-grid">${products.map(productCard).join("")}</div>
   </section>
-  <section class="split-section">
-    <div>${sectionIntro("Manufacturing proof", "Factory evidence for supplier evaluation", "Review the campus, cleanroom, equipment, and production context before requesting samples, specifications, or a bulk quotation.")}
-      <ul class="check-list"><li>110,000+ m2 production campus</li><li>Primary export markets in Europe and North America</li><li>Production equipment and cleanroom images available</li><li>CPHI exhibition and R&D cooperation information</li><li>Document files available for sales confirmation</li></ul>
-      <a class="button secondary" href="/manufacturing/">Review manufacturing capability</a>
+  <section id="manufacturing-proof" class="split-section manufacturing-proof-section">
+    <div>${sectionIntro("Our manufacturing", "Integrated manufacturing, R&D, and quality control", "Nutranexa operates an integrated production campus built around functional food ingredients, with dedicated workshops, R&D facilities, and quality-control capabilities.")}
+      <ul class="check-list"><li>110,000+ m2 integrated manufacturing campus</li><li>Dedicated phosphatidylserine production capability</li><li>Controlled workshops and stainless-steel processing equipment</li><li>In-house R&D and quality-control facilities</li><li>Export supply experience across Europe and North America</li></ul>
+      <a class="button secondary" href="/manufacturing/">Explore our manufacturing</a>
     </div>
-    <img class="section-photo" src="/assets/images/equipment-workshop-01.webp" alt="Nutranexa production workshop equipment" loading="lazy">
+    ${companyVideoPlayer("manufacturing-video")}
   </section>
-  ${companyVideoSection()}
-  <section>${sectionIntro("Application paths", "Explore PS applications for product development", "Review supplement and functional food application routes, then share your formulation needs, target market, and required documents with sales.")}
+  <section>${sectionIntro("Application opportunities", "PS applications across supplements and functional foods", "Phosphatidylserine can be evaluated for capsules, tablets, nutrition powders, dairy beverages, and other functional food concepts.")}
     <div class="card-grid">${applications.map((app) => `<article class="item-card"><img src="${app.image}" alt="${esc(app.title)}" loading="lazy"><div><h3>${esc(app.title)}</h3><p>${esc(app.description)}</p><a href="/applications/${app.slug}/">Explore application</a></div></article>`).join("")}</div>
   </section>
   <section class="cta-band">
