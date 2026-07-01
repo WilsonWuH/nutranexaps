@@ -143,6 +143,9 @@ const products = [
     applications: ["Dietary supplement tablets", "Soft and hard capsules", "Milk powder formulas", "Dairy beverages", "Functional food applications"],
     proof: ["Founded in 2013", "110,000+ m2 production campus", "Cooperation with East China University of Science and Technology", "PS production license obtained by the end of 2015"],
     docs: ["Specification: Available upon request", "COA samples: PS 20% sunflower and PS 50% samples available for buyer review", "Bulk packaging: 25 kg net per drum; MOQ 25 kg", "Certificate files: Halal, Kosher, food production license, FDA food facility registration document supplied"],
+    downloads: [
+      ["PS 20% English Specification", "/assets/documents/phosphatidylserine-20-specification.docx", "DOCX"],
+    ],
     faqs: [
       ["What is phosphatidylserine used for in B2B formulations?", "It is used as a functional food and dietary supplement ingredient in formats such as tablets, capsules, milk powder, dairy drinks, and health food applications."],
       ["Can Nutranexa provide PS from different ingredient sources?", "Nutranexa offers soy phosphatidylserine and sunflower phosphatidylserine options. Final specifications should be confirmed before quotation."],
@@ -169,7 +172,22 @@ const products = [
     source: "Soy lecithin and L-serine; exact PS content and particle specifications to be confirmed.",
     applications: ["Nutrition powders", "Tablet and capsule products", "Functional dairy formulas", "Private-label supplement development"],
     proof: ["Lead PS product focus", "Production equipment visibility", "R&D cooperation information available", "Quality control details available for buyer review"],
-    docs: ["Specification: Available upon request", "COA sample: Current soy-source COA to be confirmed; reference PS samples are available for buyer review", "Bulk packaging: 25 kg net per drum; MOQ 25 kg"],
+    docs: ["English PS 20% specification: Available for download", "COA sample: Current soy-source COA to be confirmed; reference PS samples are available for buyer review", "Bulk packaging: 25 kg net per drum; MOQ 25 kg"],
+    downloads: [
+      ["PS 20% English Specification", "/assets/documents/phosphatidylserine-20-specification.docx", "DOCX"],
+    ],
+    specification: [
+      ["Ingredient base", "Soybean lecithin and L-serine"],
+      ["PS content", ">= 20%"],
+      ["Appearance", "Fine powder; light to brown yellow"],
+      ["Moisture", "<= 2.0 g/100g"],
+      ["Acetone insoluble", ">= 95 g/100g"],
+      ["Residual n-hexane", "<= 25 mg/kg"],
+      ["Total plate count", "<= 1,000 CFU/g"],
+      ["Salmonella", "Negative / 25g"],
+      ["Storage", "Cool, dry, and protected from light"],
+      ["Document shelf life", "12 months"],
+    ],
     faqs: [
       ["Who should request soy PS specifications?", "Ingredient importers, dietary supplement manufacturers, and food brands comparing source, content, and application fit should request specifications."],
       ["Is soy PS different from sunflower PS?", "Yes. They differ by ingredient source and buyer preference. Use the comparison article and request current specifications before purchasing."],
@@ -196,7 +214,7 @@ const products = [
     source: "Sunflower-source ingredient base; final content, carrier, and test documents to be confirmed.",
     applications: ["Non-soy positioning", "Supplement capsules", "Functional food formulas", "Brand formulations requiring source differentiation"],
     proof: ["Product imagery available", "Manufacturing information available", "Quality and R&D details available", "Document request support prepared"],
-    docs: ["Specification: Available upon request", "COA sample: PS 20% sunflower sample available for review", "Bulk packaging: 25 kg net per drum; MOQ 25 kg", "Certificate files: Halal, Kosher, and production documents supplied for buyer review"],
+    docs: ["Specification: Available upon request", "COA samples: PS 20% and PS 50% sunflower samples available for review", "Bulk packaging: 25 kg net per drum; MOQ 25 kg", "Certificate files: Halal, Kosher, and production documents supplied for buyer review"],
     faqs: [
       ["Why choose sunflower PS?", "Some brands prefer sunflower-source ingredients for positioning or formulation reasons. Buyers should confirm exact specs before quoting."],
       ["Can Nutranexa support supplement applications?", "Nutranexa supports PS ingredient discussions for dietary supplement and functional food applications without making medical treatment claims."],
@@ -216,12 +234,30 @@ const products = [
     cta: "Request a Quote",
     inquirySource: "Soybean-derived",
     inquiryAssay: "Not applicable",
+    packaging: "20 kg net per bag",
     quick:
-      "Soluble soybean polysaccharide is a functional food ingredient in Nutranexa's product range. It supports buyers who need application discussion, supplier capability review, document availability, and quotation support before sampling or bulk purchase.",
-    source: "Soybean-derived ingredient; technical specifications to be confirmed.",
-    applications: ["Food ingredient formulations", "Functional food development", "Beverage and powder applications to be verified", "Distributor product portfolio expansion"],
-    proof: ["Part of the Nutranexa ingredient portfolio", "Factory images available", "Quality control information available", "Document request support prepared"],
-    docs: ["Specification: To be confirmed", "COA: To be confirmed", "Application notes: To be confirmed"],
+      "Soluble soybean polysaccharide is a water-soluble dietary fiber and food additive used in food and beverage formulation. The supplied TJ-110 specification describes a low-viscosity powder for acid protein beverage stabilization and related applications.",
+    source: "Produced from soybean dietary fiber powder by pretreatment, enzymatic hydrolysis, separation, sterilization, and drying, according to the supplied manufacturer specification.",
+    applications: ["Acid protein beverages", "Food and beverage stabilization", "Water-soluble dietary fiber formulations", "Powder and functional food applications"],
+    proof: ["English manufacturer specification supplied", "GB 1886.322-2021 implementation standard stated", "Quality indicators and microbiological limits documented", "20 kg packaging and 24-month shelf life stated"],
+    docs: ["English factory specification: Available for download", "COA: Request the current batch document", "Self-owned manufacturing entity shown on specification: Shandong Juyuan Biotechnology Co., Ltd."],
+    downloads: [
+      ["Soluble Soybean Polysaccharide Specification", "/assets/documents/soluble-soybean-polysaccharide-specification.pdf", "PDF"],
+    ],
+    specification: [
+      ["Product model", "TJ-110"],
+      ["Implementation standard", "GB 1886.322-2021"],
+      ["Soluble polysaccharide", ">= 60.0%"],
+      ["Moisture", "<= 7.0%"],
+      ["Protein", "<= 8.0%"],
+      ["Ash", "<= 10.0%"],
+      ["Viscosity", "<= 200 mPa.s (10% aqueous solution, 20 +/- 0.5 C)"],
+      ["pH", "5.5 +/- 1.0 (1% aqueous solution)"],
+      ["Total plate count", "<= 500 CFU/g"],
+      ["Packaging", "20 kg net per bag"],
+      ["Shelf life", "24 months in a cool, dry place"],
+    ],
+    supplierNote: "The downloadable specification is issued by Shandong Juyuan Biotechnology Co., Ltd., a self-owned manufacturing entity in the supplied company materials. Confirm the current controlled specification, batch COA, and destination-market requirements before purchase.",
     faqs: [
       ["Is soluble soybean polysaccharide a main product?", "It is included in Nutranexa's product center and supports the broader functional food ingredient portfolio."],
       ["Are application details available?", "Application details should be confirmed with the sales team and technical documents before use."],
@@ -326,6 +362,25 @@ const coaSamples = [
       ["Moisture", "0.89 g/100g; standard <= 2.0"],
       ["Peroxide value", "1.05 mmol/kg; standard <= 2.5"],
       ["Acetone insoluble", "98.1 g/100g; standard >= 95.0"],
+      ["Pb / As / Hg", "Not detected"],
+      ["Cd", "<0.003 mg/kg"],
+      ["Salmonella", "Not detected"],
+    ],
+  },
+  {
+    title: "PS 50% Sunflower COA Sample",
+    image: "/assets/images/doc-coa-ps-50-sunflower.webp",
+    rows: [
+      ["Product", "Phosphatidylserine (Sunflower)"],
+      ["Product model", "PP501"],
+      ["Lot No.", "C01520251002"],
+      ["Manufacture / test date", "Oct 11, 2025"],
+      ["Report date", "Oct 16, 2025"],
+      ["Test basis", "QB/T 5821-2023"],
+      ["Phosphatidylserine", "54.2 g/100g; standard >= 50"],
+      ["Moisture", "0.69 g/100g; standard <= 2.0"],
+      ["Peroxide value", "0.85 mmol/kg; standard <= 2.5"],
+      ["Acetone insoluble", "98.2 g/100g; standard >= 95.0"],
       ["Pb / As / Hg", "Not detected"],
       ["Cd", "<0.003 mg/kg"],
       ["Salmonella", "Not detected"],
@@ -799,7 +854,7 @@ function sectionIntro(label, title, text) {
   return `<div class="section-intro"><p class="eyebrow">${esc(label)}</p><h2>${esc(title)}</h2><p>${esc(text)}</p></div>`;
 }
 
-function quoteForm(context = "General inquiry") {
+function quoteForm(context = "General inquiry", quantityHint = "MOQ 25 kg; enter estimated yearly demand") {
   return `<form class="quote-form" data-context="${esc(context)}" action="/thank-you/">
   <input type="hidden" name="Product Interest" value="${esc(context)}">
   <label class="hidden-field">Company website <input name="website" tabindex="-1" autocomplete="off"></label>
@@ -812,7 +867,7 @@ function quoteForm(context = "General inquiry") {
     <label>Source Preference <select name="Source Preference"><option value="">Select or confirm later</option><option>General PS</option><option>Soy</option><option>Sunflower</option><option>Soybean-derived</option><option>Other / Not sure</option></select></label>
     <label>Target Assay <select name="Target Assay"><option value="">Select or confirm later</option><option>20%</option><option>50%</option><option>To be confirmed</option><option>Other</option><option>Not applicable</option></select></label>
     <label>Application <input name="Application" placeholder="Capsule, powder, functional food"></label>
-    <label>Annual Quantity <input name="Annual Quantity" placeholder="MOQ 25 kg; enter estimated yearly demand"></label>
+    <label>Annual Quantity <input name="Annual Quantity" placeholder="${esc(quantityHint)}"></label>
     <label>Documents Needed <select name="Documents Needed"><option value="">Select</option><option>Specification</option><option>COA sample</option><option>TDS / SDS</option><option>Certificates</option><option>Allergen / GMO statements</option><option>Multiple documents</option></select></label>
     <label>Sample Needed <select name="Sample Needed"><option value="">Select</option><option>Yes</option><option>No</option><option>Discuss first</option></select></label>
     <label class="form-full">Message <textarea required name="Message" rows="4" placeholder="Tell us the specification, source preference, documents, and timeline you need."></textarea></label>
@@ -836,7 +891,7 @@ function sourceSelectorSection() {
   return `<section class="source-selector">${sectionIntro("Choose a source", "Compare soy and sunflower phosphatidylserine", "Use source preference, label planning, target assay, and document needs to choose the right product route. Final specifications must match the quoted product and batch.")}
     <div class="source-choice-grid">
       <article class="source-choice"><img src="/assets/images/product-soy-ps.webp" alt="Soy phosphatidylserine powder source option" loading="lazy"><div><p class="eyebrow">Soy-source PS</p><h3>Soy Phosphatidylserine</h3><p>For buyers evaluating soy lecithin-derived PS across capsules, tablets, powders, and nutrition formulas.</p><ul><li>Confirm current assay options</li><li>Request source-specific allergen documents</li><li>Match the COA to the quoted product</li></ul><a href="/products/soy-phosphatidylserine/">Review Soy PS</a></div></article>
-      <article class="source-choice"><img src="/assets/images/product-sunflower-ps.webp" alt="Sunflower phosphatidylserine powder source option" loading="lazy"><div><p class="eyebrow">Sunflower-source PS</p><h3>Sunflower Phosphatidylserine</h3><p>For buyers who prefer sunflower-origin positioning and need a clearly documented source route.</p><ul><li>PS 20% sunflower sample COA available</li><li>Do not infer allergen-free status without documents</li><li>Confirm target assay and application</li></ul><a href="/products/sunflower-phosphatidylserine/">Review Sunflower PS</a></div></article>
+      <article class="source-choice"><img src="/assets/images/product-sunflower-ps.webp" alt="Sunflower phosphatidylserine powder source option" loading="lazy"><div><p class="eyebrow">Sunflower-source PS</p><h3>Sunflower Phosphatidylserine</h3><p>For buyers who prefer sunflower-origin positioning and need a clearly documented source route.</p><ul><li>PS 20% and 50% sunflower sample COAs available</li><li>Do not infer allergen-free status without documents</li><li>Confirm target assay and application</li></ul><a href="/products/sunflower-phosphatidylserine/">Review Sunflower PS</a></div></article>
     </div>
   </section>`;
 }
@@ -849,11 +904,36 @@ function specificationMatrix() {
   </section>`;
 }
 
+function technicalSpecificationSection(product) {
+  if (!product.specification?.length) return "";
+  return `<section class="technical-specification">${sectionIntro("Technical specification", `${product.name} supplied specification highlights`, "These values summarize the supplied English specification. Confirm the current signed version, batch COA, test methods, and destination-market requirements before purchase or formulation use.")}
+    <dl class="technical-spec-grid">${product.specification.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl>
+    ${product.supplierNote ? `<p class="document-caution"><strong>Document scope:</strong> ${esc(product.supplierNote)}</p>` : ""}
+  </section>`;
+}
+
+function downloadableDocuments(product) {
+  if (!product.downloads?.length) return "";
+  return `<section class="download-library">${sectionIntro("Technical downloads", "Review supplied product documents", "Download the supplied files for preliminary evaluation. Ask sales for the latest controlled copy and current batch documents before placing an order.")}
+    <div class="download-grid">${product.downloads.map(([title, href, format]) => `<a class="download-card" href="${href}" download><span class="download-format">${esc(format)}</span><span><strong>${esc(title)}</strong><small>Download supplied file</small></span><span aria-hidden="true">&#8595;</span></a>`).join("")}</div>
+  </section>`;
+}
+
+function technicalDownloadLibrary() {
+  const files = [
+    ["PS 20% English Specification", "/assets/documents/phosphatidylserine-20-specification.docx", "DOCX", "Phosphatidylserine"],
+    ["Soluble Soybean Polysaccharide Specification", "/assets/documents/soluble-soybean-polysaccharide-specification.pdf", "PDF", "Self-owned factory specification"],
+  ];
+  return `<section class="download-library">${sectionIntro("Technical downloads", "Specifications available for preliminary buyer review", "These supplied files support initial evaluation. Request a current controlled version and matching batch COA before purchase or shipment.")}
+    <div class="download-grid">${files.map(([title, href, format, note]) => `<a class="download-card" href="${href}" download><span class="download-format">${esc(format)}</span><span><strong>${esc(title)}</strong><small>${esc(note)}</small></span><span aria-hidden="true">&#8595;</span></a>`).join("")}</div>
+  </section>`;
+}
+
 function documentsRequestSection(product) {
   const href = (documents) => productInquiryHref(product, documents);
   const items = [
-    ["COA sample", product.slug === "sunflower-phosphatidylserine" ? "PS 20% sunflower sample available" : product.slug === "phosphatidylserine" ? "PS 20% sunflower and PS 50% samples available" : "Reference samples available; exact source must be confirmed", "COA sample"],
-    ["Current specification", "Request the version matching source, target assay, and quoted product", "Specification"],
+    ["COA sample", product.slug === "sunflower-phosphatidylserine" ? "PS 20% and 50% sunflower samples available" : product.slug === "phosphatidylserine" ? "PS 20% sunflower, PS 50%, and PS 50% sunflower samples available" : product.slug === "soluble-soybean-polysaccharide" ? "Request the current batch COA matching TJ-110" : "Reference samples available; exact source must be confirmed", "COA sample"],
+    ["Current specification", product.downloads?.length ? "English specification available below; request the latest controlled version for approval" : "Request the version matching source, target assay, and quoted product", "Specification"],
     ["TDS / SDS", "Availability and current version to be confirmed by sales", "TDS / SDS"],
     ["Certificates", "Request current files and verify product scope and validity", "Certificates"],
     ["Allergen / GMO statements", "Request source-specific statements; do not infer status", "Allergen / GMO statements"],
@@ -902,8 +982,8 @@ function documentCards(limit = documentProof.length) {
   return `<div class="document-grid">${documentProof.slice(0, limit).map((doc) => `<article class="document-card"><img src="${doc.image}" alt="${esc(doc.title)} document sample" loading="lazy"><div><h3>${esc(doc.title)}</h3><p>${esc(doc.text)}</p></div></article>`).join("")}</div>`;
 }
 
-function coaSampleTables() {
-  return `<div class="coa-grid">${coaSamples.map((sample) => `<article class="coa-card"><img src="${sample.image}" alt="${esc(sample.title)}" loading="lazy"><div><h3>${esc(sample.title)}</h3><table><tbody>${sample.rows.map(([label, value]) => `<tr><th>${esc(label)}</th><td>${esc(value)}</td></tr>`).join("")}</tbody></table><p class="form-note">Sample COA data is batch-specific. Current batch COA should be confirmed before quotation or shipment.</p></div></article>`).join("")}</div>`;
+function coaSampleTables(samples = coaSamples) {
+  return `<div class="coa-grid">${samples.map((sample) => `<article class="coa-card"><a class="coa-image-link" href="${sample.image}" target="_blank" rel="noopener"><img src="${sample.image}" alt="${esc(sample.title)}" loading="lazy"></a><div><h3>${esc(sample.title)}</h3><table><tbody>${sample.rows.map(([label, value]) => `<tr><th>${esc(label)}</th><td>${esc(value)}</td></tr>`).join("")}</tbody></table><p class="form-note">Sample COA data is batch-specific. Current batch COA should be confirmed before quotation or shipment.</p><a class="document-link" href="${sample.image}" target="_blank" rel="noopener">View full COA sample</a></div></article>`).join("")}</div>`;
 }
 
 function productCard(product) {
@@ -1123,6 +1203,7 @@ function productPage(product) {
     <div class="product-main">
       <div class="quick-answer product-quick"><p class="eyebrow">Quick Answer</p><h2>What is ${esc(product.name)} and who is it for?</h2><p>${esc(product.quick)}</p></div>
       ${product.slug === "phosphatidylserine" ? specificationMatrix() : ""}
+      ${technicalSpecificationSection(product)}
       <div class="detail-grid product-detail-grid">
         <div><h2>Product overview</h2><p>${esc(product.description)}</p><h3>Source and ingredient base</h3><p>${esc(product.source)}</p></div>
         <div><h2>Applications</h2><ul class="check-list">${product.applications.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
@@ -1137,14 +1218,16 @@ function productPage(product) {
         <img class="section-photo" src="/assets/images/quality-document-review.webp" alt="Nutranexa quality document review and COA request workflow" loading="lazy">
       </section>
       ${documentsRequestSection(product)}
+      ${downloadableDocuments(product)}
       <section class="product-faq">${sectionIntro("FAQ", "Common buyer questions", "These answers are written for sourcing and application evaluation without medical treatment claims.")}
         <div class="faq-list">${product.faqs.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
       </section>
       ${product.slug === "phosphatidylserine" ? `<section class="coa-section">${sectionIntro("COA samples", "PS 20% and 50% sample COA highlights", "Sample COA files support buyer evaluation. Final batch COA, specification, and certificate files should be confirmed before quotation or shipment.")}${coaSampleTables()}</section>` : ""}
+      ${product.slug === "sunflower-phosphatidylserine" ? `<section class="coa-section">${sectionIntro("Sunflower PS documents", "PS 20% and 50% sunflower COA samples", "These source-specific samples help buyers compare assay and common quality indicators. Request the current batch COA before purchase or shipment.")}${coaSampleTables(coaSamples.filter((sample) => sample.title.includes("Sunflower")))}</section>` : ""}
     </div>
     ${advisorCard(product)}
   </section>
-  <section class="form-panel"><div>${sectionIntro("Request quotation", `Talk to sales about ${product.name}`, "Include target market, product format, annual quantity, and document requirements so the team can confirm current availability.")}</div>${quoteForm(product.name)}</section>`;
+  <section class="form-panel"><div>${sectionIntro("Request quotation", `Talk to sales about ${product.name}`, "Include target market, product format, annual quantity, and document requirements so the team can confirm current availability.")}</div>${quoteForm(product.name, product.moq ? `MOQ ${product.moq}; enter estimated yearly demand` : "Enter estimated yearly demand")}</section>`;
   return layout({
     title: productSeoTitle(product),
     description: product.description,
@@ -1242,6 +1325,7 @@ function qualityPage() {
     <div class="feature-grid"><div class="feature"><h3>R&D cooperation</h3><p>Nutranexa references cooperation with East China University of Science and Technology for PS development.</p></div><div class="feature"><h3>Production license reference</h3><p>PS obtained production license by the end of 2015 according to company materials.</p></div><div class="feature"><h3>Quality visibility</h3><p>Factory, cleanroom, lab, and equipment images support buyer evaluation.</p></div></div>
   </section>
   <section>${sectionIntro("Document proof", "Certificates and registration files for buyer review", "Use these files as preliminary review materials. Current validity, scope, and product applicability should be confirmed before purchase or shipment.")}${documentCards()}</section>
+  ${technicalDownloadLibrary()}
   ${qualityDocumentWorkflow()}
   <section class="coa-section">${sectionIntro("COA samples", "PS 20% and 50% batch-specific sample data", "The COA samples show analysis items commonly reviewed by buyers, including assay, moisture, peroxide value, heavy metals, microbiology, and Salmonella.")}${coaSampleTables()}</section>
   <section class="split-section"><div><h2>Documents to request</h2><ul class="check-list"><li>Specification sheet</li><li>COA sample or current batch COA</li><li>Food production license and item details</li><li>Halal / Kosher files where market requires them</li><li>Packaging and storage information</li><li>Market-specific compliance files where relevant</li></ul></div><img class="section-photo" src="/assets/images/quality-document-review.webp" alt="Nutranexa specification review and COA request support" loading="lazy"></section>`;

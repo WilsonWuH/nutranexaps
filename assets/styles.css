@@ -557,6 +557,98 @@ section,
   padding: 34px 0;
 }
 
+.product-main .technical-specification,
+.product-main .download-library {
+  padding: 34px 0;
+}
+
+.technical-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+
+.technical-spec-grid > div {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.8fr) minmax(0, 1.2fr);
+  gap: 16px;
+  padding: 15px 18px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.technical-spec-grid dt,
+.technical-spec-grid dd {
+  margin: 0;
+}
+
+.technical-spec-grid dt {
+  color: var(--green-dark);
+  font-weight: 800;
+}
+
+.technical-spec-grid dd {
+  color: var(--muted);
+}
+
+.document-caution {
+  margin: 18px 0 0;
+  padding: 14px 16px;
+  border-left: 4px solid var(--gold);
+  color: var(--muted);
+  background: #fffaf0;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.download-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  min-height: 86px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: white;
+  box-shadow: 0 10px 24px rgba(20, 38, 29, 0.06);
+}
+
+.download-card:hover {
+  border-color: rgba(31, 122, 76, 0.45);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.download-card > span:nth-child(2) {
+  display: grid;
+  gap: 4px;
+}
+
+.download-card small {
+  color: var(--muted);
+}
+
+.download-format {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 42px;
+  border-radius: 6px;
+  color: white;
+  background: var(--green-dark);
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
 .application-format-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1678,6 +1770,18 @@ textarea {
   background: var(--soft);
 }
 
+.coa-image-link {
+  display: block;
+  background: var(--soft);
+}
+
+.document-link {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--green-dark);
+  font-weight: 800;
+}
+
 .document-card > div,
 .coa-card > div {
   padding: 20px;
@@ -1844,6 +1948,8 @@ textarea {
   .gallery,
   .document-grid,
   .coa-grid,
+  .technical-spec-grid,
+  .download-grid,
   .document-status-grid,
   .quality-group-grid,
   .application-format-grid,
@@ -2037,12 +2143,20 @@ textarea {
   .gallery,
   .document-grid,
   .coa-grid,
+  .technical-spec-grid,
+  .download-grid,
   .source-choice-grid,
   .document-status-grid,
   .quality-group-grid,
   .application-format-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .technical-spec-grid > div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    border-right: 0;
   }
 
   .process-flow {
