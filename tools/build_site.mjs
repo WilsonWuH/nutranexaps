@@ -854,6 +854,19 @@ function sectionIntro(label, title, text) {
   return `<div class="section-intro"><p class="eyebrow">${esc(label)}</p><h2>${esc(title)}</h2><p>${esc(text)}</p></div>`;
 }
 
+function companyVideoSection() {
+  return `<section class="company-video-section" aria-labelledby="company-video-title">
+    <div class="company-video-copy"><p class="eyebrow">Company film</p><h2 id="company-video-title">Inside Nutranexa: from R&D to ingredient production</h2><p>Tour the Nutranexa campus, production workshops, processing equipment, laboratory facilities, and phosphatidylserine product presentation.</p></div>
+    <figure class="company-video-player">
+      <video controls playsinline preload="metadata" poster="/assets/images/nutranexa-company-video-poster.webp" width="1280" height="720" aria-label="Nutranexa company and manufacturing introduction video">
+        <source src="/assets/video/nutranexa-company-profile.mp4" type="video/mp4">
+        Your browser does not support HTML5 video. <a href="/assets/video/nutranexa-company-profile.mp4">Open the company film</a>.
+      </video>
+      <figcaption>Nutranexa company profile: campus, production, R&D, quality facilities, and ingredient products.</figcaption>
+    </figure>
+  </section>`;
+}
+
 function quoteForm(context = "General inquiry", quantityHint = "MOQ 25 kg; enter estimated yearly demand") {
   return `<form class="quote-form" data-context="${esc(context)}" action="/thank-you/">
   <input type="hidden" name="Product Interest" value="${esc(context)}">
@@ -1049,6 +1062,7 @@ function homePage() {
     </div>
     <img class="section-photo" src="/assets/images/equipment-workshop-01.webp" alt="Nutranexa production workshop equipment" loading="lazy">
   </section>
+  ${companyVideoSection()}
   <section>${sectionIntro("Application paths", "Explore PS applications for product development", "Review supplement and functional food application routes, then share your formulation needs, target market, and required documents with sales.")}
     <div class="card-grid">${applications.map((app) => `<article class="item-card"><img src="${app.image}" alt="${esc(app.title)}" loading="lazy"><div><h3>${esc(app.title)}</h3><p>${esc(app.description)}</p><a href="/applications/${app.slug}/">Explore application</a></div></article>`).join("")}</div>
   </section>
@@ -1348,6 +1362,7 @@ function aboutPage() {
     cta: "Contact Sales",
     secondary: "View Manufacturing",
   })}
+  ${companyVideoSection()}
   <section class="detail-grid"><div><h2>Company profile</h2><p>Nutranexa integrates R&D, production, and sales of new food ingredients, health food ingredients, and food additives. The company positions phosphatidylserine as a lead product and uses verified factory and product materials to support buyer evaluation.</p></div><div><h2>Primary export markets</h2><p>Nutranexa primarily serves B2B ingredient buyers in Europe and North America, with product documents and commercial details reviewed according to the destination market and quoted product.</p></div><div><h2>Mission</h2><p>Provide healthy, safe, and effective functional food and dietary supplement ingredients while supporting biotechnology industry development and customer product needs.</p></div></section>`;
   return layout({
     title: "About Nutranexa | Shandong Baianrui Biopharmaceutical",
