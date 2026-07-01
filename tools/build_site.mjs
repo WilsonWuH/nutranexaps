@@ -1,4 +1,4 @@
-﻿import fs from "node:fs/promises";
+import fs from "node:fs/promises";
 import path from "node:path";
 
 const root = path.resolve(".");
@@ -1360,14 +1360,25 @@ function resourcesHub() {
   });
 }
 
+function newsCategory(article) {
+  const text = `${article.headline} ${article.description}`.toLowerCase();
+  if (/study|trial|research|journal|clinical/.test(text)) return "Research";
+  if (/fda|efsa|regulat|guidance|compliance|dshea|law/.test(text)) return "Regulation";
+  if (/launch|formula|product|introduc|debut/.test(text)) return "Product Launch";
+  return "Ingredient Market";
+}
+
 function newsPage() {
-  const items = [...newsItems]
-    .sort((a, b) => b.published.localeCompare(a.published))
-    .map((item) => `<article class="news-card">
-      <div class="news-meta"><time datetime="${esc(item.published)}">${esc(item.displayDate)}</time><span>${esc(item.byline)}</span></div>
+  const sortedNews = [...newsItems].sort((a, b) => b.published.localeCompare(a.published));
+  const latest = sortedNews[0];
+  const categories = [...new Set(sortedNews.map(newsCategory))];
+  const cards = sortedNews.map((item) => `<article class="news-card">
+      <div class="news-meta"><span>${esc(newsCategory(item))}</span><time datetime="${esc(item.published)}">${esc(item.displayDate)}</time></div>
       <h2><a href="/news/${esc(item.slug)}/">${esc(item.headline)}</a></h2>
-      <a class="news-source-link" href="/news/${esc(item.slug)}/">Read article</a>
+      <p>${esc(item.description)}</p>
+      <a class="news-source-link" href="/news/${esc(item.slug)}/">Read report</a>
     </article>`).join("");
+  const headlineList = sortedNews.slice(0, 10).map((item, index) => `<li><a href="/news/${esc(item.slug)}/"><span>${index + 1}</span>${esc(item.headline)}</a></li>`).join("");
   const itemList = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -1378,11 +1389,27 @@ function newsPage() {
       url: urlFor(`/news/${item.slug}/`),
     })),
   };
-  const body = `<section class="page-hero compact"><p class="eyebrow">Industry news</p><h1>Phosphatidylserine and Supplement Industry News</h1><p>Concise factual reports with every source listed on the article page.</p></section>
-  <section class="news-section"><div class="news-grid">${items}</div></section>`;
+  const body = `<section class="page-hero compact news-hero"><p class="eyebrow">Ingredient intelligence</p><h1>Phosphatidylserine Industry News</h1><p>Source-led reporting on PS product launches, research, regulation, phospholipids, and functional ingredient markets.</p>
+    <div class="news-hero-facts"><span>${sortedNews.length} published report${sortedNews.length === 1 ? "" : "s"}</span><span>Sources listed on every article</span><span>Updated daily</span></div>
+  </section>
+  <section class="news-briefing" id="latest">
+    <div class="news-date-band"><span>Latest briefing</span><time datetime="${esc(latest.published)}">${esc(latest.displayDate)}</time></div>
+    <nav class="news-category-tabs" aria-label="News categories"><a href="#latest">Latest</a>${categories.map((category) => `<a href="#archive">${esc(category)}</a>`).join("")}</nav>
+    <div class="news-briefing-grid">
+      <article class="news-featured">
+        <img src="${esc(latest.featuredImage)}" alt="${esc(latest.featuredAlt)}" width="1200" height="1800" loading="eager">
+        <div><p class="eyebrow">${esc(newsCategory(latest))}</p><h2><a href="/news/${esc(latest.slug)}/">${esc(latest.headline)}</a></h2><p>${esc(latest.description)}</p><a class="button primary" href="/news/${esc(latest.slug)}/">Read latest report</a></div>
+      </article>
+      <aside class="news-headline-summary" aria-label="Latest news headlines"><p class="eyebrow">Quick scan</p><h2>Latest headlines</h2><ol>${headlineList}</ol></aside>
+    </div>
+  </section>
+  <section class="news-section" id="archive">${sectionIntro("News archive", "Browse all PS and ingredient reports", "Reports are ordered by publication date. Each article separates factual reporting from its cited sources.")}
+    <div class="news-grid">${cards}</div>
+  </section>
+  <section class="cta-band"><div><p class="eyebrow">Product sourcing</p><h2>Need PS specifications behind a market project?</h2><p>Share the source, target assay, application, annual quantity, and required documents with Nutranexa sales.</p></div><a class="button light" href="/contact/">Contact Sales</a></section>`;
   return layout({
     title: "Phosphatidylserine Industry News | Nutranexa",
-    description: "Read original-source phosphatidylserine, phospholipid, dietary supplement, and functional ingredient industry headlines.",
+    description: "Source-led phosphatidylserine, phospholipid, dietary supplement, and functional ingredient industry reporting.",
     route: "/news/",
     schema: [breadcrumbJson([["Home", "/"], ["News", "/news/"]]), itemList],
     body,
@@ -1406,35 +1433,23 @@ function newsArticlePage(article) {
     image: `${siteUrl}${article.featuredImage}`,
     mainEntityOfPage: urlFor(route),
   };
-  return `<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${esc(article.headline)} | Nutranexa News</title>
-  <meta name="description" content="${esc(article.description)}">
-  <link rel="canonical" href="${urlFor(route)}">
-  <meta name="robots" content="index,follow">
-  <script type="application/ld+json">${JSON.stringify(schema)}</script>
-</head>
-<body>
-  <header>
-    <h1>${esc(article.headline)}</h1>
-    <p>By ${esc(article.byline)} | <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p>
-  </header>
-  <figure>
-    <img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="100%" loading="eager">
-    <figcaption><a href="${esc(article.imageCreditUrl)}" target="_blank" rel="noopener noreferrer">${esc(article.imageCredit)}</a></figcaption>
-  </figure>
-  <nav aria-label="Table of contents">
-    <h2>Table of Contents</h2>
-    <ul>${toc}<li><a href="#sources">Sources</a></li></ul>
-  </nav>
-  <main>${sections}
-    <section id="sources"><h2>Sources</h2><ul>${sources}</ul></section>
-  </main>
-</body>
-</html>`;
+  const body = `<article class="news-article">
+    <header class="news-article-header"><a class="news-back-link" href="/news/">Back to News</a><p class="eyebrow">${esc(newsCategory(article))}</p><h1>${esc(article.headline)}</h1><p class="news-byline">By ${esc(article.byline)} <span aria-hidden="true">|</span> <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p><p class="news-deck">${esc(article.description)}</p></header>
+    <figure class="news-article-figure"><img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="1200" height="1800" loading="eager"><figcaption><a href="${esc(article.imageCreditUrl)}" target="_blank" rel="noopener noreferrer">${esc(article.imageCredit)}</a></figcaption></figure>
+    <div class="news-article-layout">
+      <nav class="news-article-toc" aria-label="Table of contents"><p class="eyebrow">On this page</p><h2>Table of Contents</h2><ul>${toc}<li><a href="#sources">Sources</a></li></ul></nav>
+      <div class="news-article-body">${sections}<section id="sources" class="news-sources"><h2>Sources</h2><ul>${sources}</ul></section><p class="news-editorial-note">This report summarizes cited public information. Third-party products and organizations do not endorse Nutranexa.</p></div>
+    </div>
+  </article>
+  <section class="cta-band"><div><p class="eyebrow">Discuss a PS project</p><h2>Request source, assay, packaging, and document details.</h2><p>Nutranexa supplies soy and sunflower phosphatidylserine for B2B supplement and functional food projects.</p></div><a class="button light" href="/contact/?product=Phosphatidylserine%20%28PS%29">Contact Sales</a></section>`;
+  return layout({
+    title: `${article.headline} | Nutranexa News`,
+    description: article.description,
+    route,
+    image: article.featuredImage,
+    schema: [breadcrumbJson([["Home", "/"], ["News", "/news/"], [article.headline, route]]), schema],
+    body,
+  });
 }
 
 function articlePage(article) {
