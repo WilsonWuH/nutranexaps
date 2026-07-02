@@ -1326,6 +1326,19 @@ function manufacturingPage() {
     </div>
     <img class="section-photo" src="/assets/images/ps-25kg-drum-packaging.webp" width="960" height="1280" alt="Phosphatidylserine 25 kg drums prepared in the Nutranexa warehouse" loading="lazy">
   </section>
+  <section class="dispatch-proof">
+    ${sectionIntro("Dispatch proof", "Drum loading and palletized shipment preparation", "These operational photos show ingredient drums staged for vehicle loading and palletized drums protected with stretch wrapping at a logistics loading area. Final pallet pattern, labels, and transport arrangements are confirmed for each order.")}
+    <div class="dispatch-gallery">
+      <figure>
+        <img class="dispatch-photo dispatch-photo-portrait" src="/assets/images/shipment-drums-local-dispatch.webp" width="900" height="1600" alt="Ingredient drums staged beside a vehicle for dispatch" loading="lazy">
+        <figcaption>Drums staged for vehicle loading during dispatch preparation.</figcaption>
+      </figure>
+      <figure>
+        <img class="dispatch-photo" src="/assets/images/shipment-palletized-drums-loading-bay.webp" width="1400" height="1050" alt="Palletized ingredient drums stretch wrapped at a logistics loading bay" loading="lazy">
+        <figcaption>Palletized drums stretch wrapped for handling at the loading area.</figcaption>
+      </figure>
+    </div>
+  </section>
   <section class="detail-grid"><div><h2>Buyer confidence points</h2><ul class="check-list"><li>110,000+ m2 production campus</li><li>Factory, equipment, and cleanroom imagery available</li><li>PS-focused production context</li><li>Product document requests available before purchase</li></ul></div><div><h2>Confirm before purchase</h2><ul class="check-list"><li>Current specifications</li><li>COA sample or current batch COA</li><li>Certificate scope and validity</li><li>Export packaging and MOQ details</li></ul></div></section>`;
   return layout({
     title: "Manufacturing Capability | Nutranexa PS Ingredient Factory",

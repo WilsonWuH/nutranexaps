@@ -747,6 +747,39 @@ section,
   object-position: center 58%;
 }
 
+.dispatch-proof {
+  background: white;
+}
+
+.dispatch-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.dispatch-gallery figure {
+  margin: 0;
+}
+
+.dispatch-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.dispatch-photo-portrait {
+  object-position: center 48%;
+}
+
+.dispatch-gallery figcaption {
+  padding-top: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .check-list {
   padding: 0;
   margin: 0 0 24px;
@@ -2218,6 +2251,7 @@ textarea {
   .document-status-grid,
   .quality-group-grid,
   .application-format-grid,
+  .dispatch-gallery,
   .footer-grid {
     grid-template-columns: 1fr;
   }
