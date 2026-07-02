@@ -84,7 +84,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
   };
 
   form.querySelectorAll("input, textarea, select").forEach((field) => {
-    if (field.name === "website") return;
+    if (field.name === "_honey") return;
     field.addEventListener("blur", () => validateField(field));
     field.addEventListener("input", () => {
       if (field.closest("label")?.classList.contains("is-invalid")) validateField(field);
@@ -93,12 +93,12 @@ document.querySelectorAll(".quote-form").forEach((form) => {
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const honey = form.querySelector('[name="website"]');
+    const honey = form.querySelector('[name="_honey"]');
     if (honey && honey.value.trim()) {
       return;
     }
 
-    const fields = [...form.querySelectorAll("input, textarea, select")].filter((field) => field.name !== "website");
+    const fields = [...form.querySelectorAll("input, textarea, select")].filter((field) => field.name !== "_honey");
     const isValid = fields.map(validateField).every(Boolean);
     if (!isValid) {
       if (status) {
@@ -118,18 +118,26 @@ document.querySelectorAll(".quote-form").forEach((form) => {
       ...data,
       context: form.dataset.context || "General inquiry",
       submittedAt: new Date().toISOString(),
+      name: data.Name || "Website visitor",
+      email: data.Email || "",
+      phone: data.Phone || "",
+      message: data.Message || "No additional message provided.",
+      _subject: `[Nutranexa Inquiry] ${data.Interest || data["Product Interest"] || data["Product Requirement"] || "General inquiry"} - ${data.Name || "Website visitor"}`,
+      _template: "table",
+      _captcha: "false",
+      _url: "https://nutranexaps.com/contact/",
     };
 
     try {
-      const response = await fetch("/api/inquiry/", {
+      const response = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
       });
       const result = await response.json().catch(() => ({}));
 
-      if (!response.ok || !result.ok) {
-        throw new Error(result.error || "We could not send your inquiry. Please try again.");
+      if (!response.ok || String(result.success) !== "true") {
+        throw new Error("We could not send your inquiry. Please email us directly or contact us on WhatsApp.");
       }
 
       window.dataLayer = window.dataLayer || [];

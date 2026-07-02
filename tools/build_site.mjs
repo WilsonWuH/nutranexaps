@@ -872,9 +872,14 @@ function companyVideoSection() {
 }
 
 function quoteForm(context = "General inquiry", quantityHint = "MOQ 25 kg; enter estimated yearly demand") {
-  return `<form class="quote-form" data-context="${esc(context)}" action="/api/inquiry/" method="post">
+  return `<form class="quote-form" data-context="${esc(context)}" action="https://formsubmit.co/wh1007209170@gmail.com" method="post">
   <input type="hidden" name="Product Interest" value="${esc(context)}">
-  <label class="hidden-field">Company website <input name="website" tabindex="-1" autocomplete="off"></label>
+  <input type="hidden" name="_subject" value="New Nutranexa Website Inquiry">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://nutranexaps.com/thank-you/">
+  <input type="hidden" name="_url" value="https://nutranexaps.com/contact/">
+  <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
   <div class="form-grid">
     <label>Name <input required name="Name" autocomplete="name"></label>
     <label>Email <input required type="email" name="Email" autocomplete="email"></label>
@@ -1414,9 +1419,14 @@ function inquiryPage() {
       </ul>
     </div>
   </div>
-  <form class="inquiry-form quote-form" data-context="Dedicated B2B inquiry page" action="/api/inquiry/" method="post" novalidate>
+  <form class="inquiry-form quote-form" data-context="Dedicated B2B inquiry page" action="https://formsubmit.co/wh1007209170@gmail.com" method="post" novalidate>
     <input type="hidden" name="Lead Source" value="Inquiry Page">
-    <label class="hidden-field">Company website <input name="website" tabindex="-1" autocomplete="off"></label>
+    <input type="hidden" name="_subject" value="New Nutranexa Website Inquiry">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://nutranexaps.com/thank-you/">
+    <input type="hidden" name="_url" value="https://nutranexaps.com/contact/">
+    <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
     <div class="required-note"><span>*</span> Required fields</div>
     <div class="inquiry-grid">
       <label>Name <span>*</span><input required name="Name" autocomplete="name" placeholder="Your full name"><small>Please enter your name.</small></label>
