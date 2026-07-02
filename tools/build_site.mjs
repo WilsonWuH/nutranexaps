@@ -975,7 +975,7 @@ function packagingSection(product) {
       <ul class="check-list"><li>Minimum order quantity: ${esc(product.moq)}</li><li>Net weight: ${esc(product.packaging)}</li><li>Request a quotation by required drum quantity</li><li>Confirm destination-market labels and shipping details before dispatch</li></ul>
       <a class="button secondary" href="${inquiry}">Request Packaging Quote</a>
     </div>
-    <img class="section-photo" src="/assets/images/ps-25kg-drum-packaging.webp" width="960" height="1280" alt="Nutranexa phosphatidylserine packed in 25 kg drums during warehouse preparation" loading="lazy">
+    <img class="section-photo" src="/assets/images/ps-25kg-drum-packaging-clean.webp" width="960" height="1280" alt="Nutranexa phosphatidylserine packed in 25 kg drums in a clean dispatch preparation area" loading="lazy">
   </section>`;
 }
 
@@ -1315,7 +1315,7 @@ function manufacturingPage() {
   })}
   <section>${sectionIntro("Factory evidence", "Manufacturing information for buyer confidence", "Review facility images and production context while confirming product-specific documents with the sales team.")}
     <div class="gallery">
-      ${["factory-campus.webp", "factory-building.webp", "factory-gate.webp", "equipment-workshop-01.webp", "equipment-workshop-03.webp", "equipment-cleanroom-workshop.webp"].map((img) => `<img src="/assets/images/${img}" alt="Nutranexa manufacturing and factory visual proof" loading="lazy">`).join("")}
+      ${["factory-campus.webp", "factory-building.webp", "equipment-workshop-02.webp", "equipment-workshop-01.webp", "equipment-workshop-03.webp", "equipment-cleanroom-workshop.webp"].map((img) => `<img src="/assets/images/${img}" alt="Nutranexa manufacturing and factory visual proof" loading="lazy">`).join("")}
     </div>
   </section>
   ${manufacturingProcessSection()}
@@ -1324,7 +1324,7 @@ function manufacturingPage() {
       <ul class="check-list"><li>MOQ: 25 kg</li><li>Net weight: 25 kg per drum</li><li>Warehouse and packing preparation image available</li><li>Shipment details confirmed according to destination and order quantity</li></ul>
       <a class="button secondary" href="/contact/?product=Phosphatidylserine%20%28PS%29&documents=Packaging%20and%20quotation">Request packaging details</a>
     </div>
-    <img class="section-photo" src="/assets/images/ps-25kg-drum-packaging.webp" width="960" height="1280" alt="Phosphatidylserine 25 kg drums prepared in the Nutranexa warehouse" loading="lazy">
+    <img class="section-photo" src="/assets/images/ps-25kg-drum-packaging-clean.webp" width="960" height="1280" alt="Phosphatidylserine 25 kg drums prepared in a clean Nutranexa dispatch area" loading="lazy">
   </section>
   <section class="dispatch-proof">
     ${sectionIntro("Dispatch proof", "Drum loading and palletized shipment preparation", "These operational photos show ingredient drums staged for vehicle loading and palletized drums protected with stretch wrapping at a logistics loading area. Final pallet pattern, labels, and transport arrangements are confirmed for each order.")}
