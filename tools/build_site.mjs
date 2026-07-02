@@ -830,8 +830,8 @@ function footer() {
 </footer>`;
 }
 
-function hero({ eyebrow, title, text, image, cta = "Request a Quote", secondary = "View Products", contactHref = "/contact/" }) {
-  return `<section class="hero">
+function hero({ eyebrow, title, text, image, cta = "Request a Quote", secondary = "View Products", contactHref = "/contact/", secondaryHref = "/products/", heroClass = "" }) {
+  return `<section class="hero${heroClass ? ` ${esc(heroClass)}` : ""}">
   <div class="hero-media"><img src="${image}" alt="" loading="eager"></div>
   <div class="hero-content">
     <p class="eyebrow">${esc(eyebrow)}</p>
@@ -839,7 +839,7 @@ function hero({ eyebrow, title, text, image, cta = "Request a Quote", secondary 
     <p>${esc(text)}</p>
     <div class="hero-actions">
       <a class="button primary" href="${contactHref}">${cta}</a>
-      <a class="button secondary" href="/products/">${secondary}</a>
+      <a class="button secondary" href="${secondaryHref}">${secondary}</a>
     </div>
     <dl class="proof-strip">
       <div><dt>2013</dt><dd>Founded</dd></div>
@@ -1307,9 +1307,11 @@ function manufacturingPage() {
     eyebrow: "Manufacturing",
     title: "Factory, Cleanroom, and Equipment Proof for Ingredient Buyers",
     text: "Nutranexa presents factory campus, cleanroom production, workshop equipment, and packaging support information for buyer evaluation.",
-    image: "/assets/images/factory-aerial.webp",
+    image: "/assets/images/factory-campus.webp",
     cta: "Request Factory Details",
     secondary: "View Quality & R&D",
+    secondaryHref: "/quality-rd/",
+    heroClass: "manufacturing-hero",
   })}
   <section>${sectionIntro("Factory evidence", "Manufacturing information for buyer confidence", "Review facility images and production context while confirming product-specific documents with the sales team.")}
     <div class="gallery">
@@ -1329,7 +1331,7 @@ function manufacturingPage() {
     title: "Manufacturing Capability | Nutranexa PS Ingredient Factory",
     description: "View Nutranexa factory campus, cleanroom, equipment, and production context for phosphatidylserine and functional food ingredients.",
     route: "/manufacturing/",
-    image: "/assets/images/factory-aerial.webp",
+    image: "/assets/images/factory-campus.webp",
     schema: [breadcrumbJson([["Home", "/"], ["Manufacturing", "/manufacturing/"]])],
     body,
   });

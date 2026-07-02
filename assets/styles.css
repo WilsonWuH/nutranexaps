@@ -313,6 +313,10 @@ section,
   object-fit: cover;
 }
 
+.manufacturing-hero .hero-media img {
+  object-position: center 42%;
+}
+
 .hero-media::after {
   content: "";
   position: absolute;
