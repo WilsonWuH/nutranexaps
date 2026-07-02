@@ -112,7 +112,7 @@
   <main id="main"><section class="page-hero compact"><p class="eyebrow">Contact sales</p><h1>Request a Quote or Product Documents</h1><p>Send product interest, target application, annual quantity, and document needs. You can contact sales by email, WhatsApp, phone, or the contact form.</p></section>
   <section class="contact-layout">
     <div class="contact-card contact-details-card"><h2>Nutranexa / Shandong Baianrui Biopharmaceutical</h2><p><strong>Email:</strong> <a href="mailto:wh1007209170@gmail.com">wh1007209170@gmail.com</a></p><p><strong>WhatsApp:</strong> <a href="https://wa.me/8613645700210">+8613645700210</a></p><p><strong>Phone:</strong> 400-138-0635</p><p><strong>Address:</strong> Yunhe West Road, Shizilou District, Yanggu County, Liaocheng City, Shandong Province, P.R. China</p><p><strong>Website:</strong> www.nutranexa.cn</p></div>
-    <form class="quote-form" data-context="General quote request" action="/thank-you/">
+    <form class="quote-form" data-context="General quote request" action="/api/inquiry/" method="post">
   <input type="hidden" name="Product Interest" value="General quote request">
   <label class="hidden-field">Company website <input name="website" tabindex="-1" autocomplete="off"></label>
   <div class="form-grid">
@@ -130,6 +130,7 @@
     <label class="form-full">Message <textarea required name="Message" rows="4" placeholder="Tell us the specification, source preference, documents, and timeline you need."></textarea></label>
   </div>
   <button class="button primary" type="submit">Submit Inquiry</button>
+  <p class="form-status" role="status" aria-live="polite">Complete the required fields, then submit your request.</p>
   <p class="form-note">Your inquiry will be prepared for sales follow-up. You can also email wh1007209170@gmail.com or contact us on WhatsApp +8613645700210.</p>
 </form>
   </section></main>

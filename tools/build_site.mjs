@@ -872,7 +872,7 @@ function companyVideoSection() {
 }
 
 function quoteForm(context = "General inquiry", quantityHint = "MOQ 25 kg; enter estimated yearly demand") {
-  return `<form class="quote-form" data-context="${esc(context)}" action="/thank-you/">
+  return `<form class="quote-form" data-context="${esc(context)}" action="/api/inquiry/" method="post">
   <input type="hidden" name="Product Interest" value="${esc(context)}">
   <label class="hidden-field">Company website <input name="website" tabindex="-1" autocomplete="off"></label>
   <div class="form-grid">
@@ -890,6 +890,7 @@ function quoteForm(context = "General inquiry", quantityHint = "MOQ 25 kg; enter
     <label class="form-full">Message <textarea required name="Message" rows="4" placeholder="Tell us the specification, source preference, documents, and timeline you need."></textarea></label>
   </div>
   <button class="button primary" type="submit">Submit Inquiry</button>
+  <p class="form-status" role="status" aria-live="polite">Complete the required fields, then submit your request.</p>
   <p class="form-note">Your inquiry will be prepared for sales follow-up. You can also email ${salesEmail} or contact us on WhatsApp ${whatsapp}.</p>
 </form>`;
 }
@@ -1413,7 +1414,7 @@ function inquiryPage() {
       </ul>
     </div>
   </div>
-  <form class="inquiry-form quote-form" data-context="Dedicated B2B inquiry page" action="/thank-you/" novalidate>
+  <form class="inquiry-form quote-form" data-context="Dedicated B2B inquiry page" action="/api/inquiry/" method="post" novalidate>
     <input type="hidden" name="Lead Source" value="Inquiry Page">
     <label class="hidden-field">Company website <input name="website" tabindex="-1" autocomplete="off"></label>
     <div class="required-note"><span>*</span> Required fields</div>

@@ -91,7 +91,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
     });
   });
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const honey = form.querySelector('[name="website"]');
     if (honey && honey.value.trim()) {
@@ -121,14 +121,29 @@ document.querySelectorAll(".quote-form").forEach((form) => {
     };
 
     try {
-      const existing = JSON.parse(localStorage.getItem("nutranexaInquiries") || "[]");
-      existing.push(payload);
-      localStorage.setItem("nutranexaInquiries", JSON.stringify(existing.slice(-20)));
+      const response = await fetch("/api/inquiry/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok || !result.ok) {
+        throw new Error(result.error || "We could not send your inquiry. Please try again.");
+      }
+
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: "lead_form_submit", product_interest: payload.Interest || payload["Product Interest"] || payload.context });
     } catch (error) {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: "lead_form_submit" });
+      if (submit) {
+        submit.disabled = false;
+        submit.textContent = "Submit Inquiry";
+      }
+      if (status) {
+        status.textContent = error instanceof Error ? error.message : "We could not send your inquiry. Please try again.";
+        status.className = "form-status error";
+      }
+      return;
     }
 
     if (status) {
@@ -138,6 +153,6 @@ document.querySelectorAll(".quote-form").forEach((form) => {
 
     setTimeout(() => {
       window.location.href = "/thank-you/";
-    }, 700);
+    }, 900);
   });
 });

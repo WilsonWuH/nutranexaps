@@ -145,7 +145,7 @@
   </div>
 </article></div>
   </section>
-  <section class="form-panel"><div><div class="section-intro"><p class="eyebrow">Quote support</p><h2>Send one inquiry for multiple products</h2><p>Use the product interest field to list PS, soy PS, sunflower PS, and soluble soybean polysaccharide requirements.</p></div></div><form class="quote-form" data-context="Multiple products" action="/thank-you/">
+  <section class="form-panel"><div><div class="section-intro"><p class="eyebrow">Quote support</p><h2>Send one inquiry for multiple products</h2><p>Use the product interest field to list PS, soy PS, sunflower PS, and soluble soybean polysaccharide requirements.</p></div></div><form class="quote-form" data-context="Multiple products" action="/api/inquiry/" method="post">
   <input type="hidden" name="Product Interest" value="Multiple products">
   <label class="hidden-field">Company website <input name="website" tabindex="-1" autocomplete="off"></label>
   <div class="form-grid">
@@ -163,6 +163,7 @@
     <label class="form-full">Message <textarea required name="Message" rows="4" placeholder="Tell us the specification, source preference, documents, and timeline you need."></textarea></label>
   </div>
   <button class="button primary" type="submit">Submit Inquiry</button>
+  <p class="form-status" role="status" aria-live="polite">Complete the required fields, then submit your request.</p>
   <p class="form-note">Your inquiry will be prepared for sales follow-up. You can also email wh1007209170@gmail.com or contact us on WhatsApp +8613645700210.</p>
 </form></section></main>
   <footer class="site-footer">
