@@ -105,6 +105,7 @@ const megaNav = [
           ["Phosphatidylserine Guide", "/resources/phosphatidylserine-guide/", "Buyer guide for PS sourcing questions"],
           ["Choose a PS Supplier", "/resources/choose-phosphatidylserine-supplier/", "Supplier evaluation checklist"],
           ["Documents for PS Ingredients", "/resources/documents-for-ps-ingredients/", "Spec, COA and certificate request list"],
+          ["Supply & Delivery Evidence", "/cases/", "Factory, packaging and dispatch project evidence"],
         ],
       },
       {
@@ -815,6 +816,7 @@ function footer() {
       <a href="/applications/functional-foods/">Functional Foods</a>
       <a href="/manufacturing/">Manufacturing</a>
       <a href="/quality-rd/">Quality & R&D</a>
+      <a href="/cases/">Cases & Projects</a>
       <a href="/news/">News</a>
     </div>
     <div>
@@ -1350,6 +1352,46 @@ function manufacturingPage() {
   });
 }
 
+function casesPage() {
+  const body = `${hero({
+    eyebrow: "Cases & Projects",
+    title: "Supply, Packaging, and Delivery Evidence for Ingredient Buyers",
+    text: "Review representative factory, packaging, and dispatch records used to support phosphatidylserine sourcing projects. Customer identities and confidential order details are not published.",
+    image: "/assets/images/shipment-palletized-drums-loading-bay.webp",
+    cta: "Discuss Your Requirements",
+    secondary: "View Manufacturing",
+    secondaryHref: "/manufacturing/",
+  })}
+  <section>${sectionIntro("Project evidence", "From product confirmation to dispatch preparation", "Each sourcing project is confirmed against the requested product source, assay, documents, packaging, destination, and order quantity before shipment.")}
+    <div class="feature-grid">
+      <article class="feature"><h2>Product and document review</h2><p>Sales confirms the requested PS source and assay, then coordinates available specifications, COA samples, packaging information, and applicable certificate files.</p></article>
+      <article class="feature"><h2>25 kg drum preparation</h2><p>Phosphatidylserine products are supplied with a 25 kg MOQ. One 25 kg drum meets the minimum order quantity, subject to final product and quotation confirmation.</p></article>
+      <article class="feature"><h2>Dispatch coordination</h2><p>Labels, pallet pattern, stretch wrapping, delivery destination, and transport arrangements are checked according to the confirmed order.</p></article>
+    </div>
+  </section>
+  <section class="split-section">
+    <div>${sectionIntro("Packaging project", "Bulk drums prepared for shipment", "Operational photos show drums staged for handling and palletized loads protected for transport. Final packing details may vary by destination and order quantity.")}
+      <ul class="check-list"><li>MOQ: 25 kg</li><li>Net weight: 25 kg per drum</li><li>Batch and label details confirmed before dispatch</li><li>Current documents available through the sales team</li></ul>
+    </div>
+    <img class="section-photo" src="/assets/images/shipment-drums-local-dispatch.webp" alt="Ingredient drums prepared for a Nutranexa delivery project" loading="lazy">
+  </section>
+  <section>${sectionIntro("Delivery evidence", "Palletized ingredient shipments", "These images document representative shipment preparation without disclosing customer identities, prices, or confidential order information.")}
+    <div class="dispatch-gallery">
+      <figure><img class="dispatch-photo" src="/assets/images/shipment-palletized-drums-loading-bay.webp" alt="Palletized ingredient drums prepared at a loading bay" loading="lazy"><figcaption>Palletized drums protected for loading and handling.</figcaption></figure>
+      <figure><img class="dispatch-photo dispatch-photo-portrait" src="/assets/images/ps-25kg-drum-packaging-clean.webp" alt="Phosphatidylserine 25 kg drum packaging in a clean dispatch area" loading="lazy"><figcaption>Representative 25 kg drum packing preparation.</figcaption></figure>
+    </div>
+  </section>
+  <section class="cta-band"><div><p class="eyebrow">Your project</p><h2>Send the product, assay, destination, and annual quantity</h2><p>Nutranexa can reply with the relevant sourcing path, available documents, MOQ, packaging, and quotation discussion points.</p></div><a class="button primary" href="/contact/">Send Your Requirements</a></section>`;
+  return layout({
+    title: "Cases & Projects | Nutranexa PS Supply and Delivery Evidence",
+    description: "Review Nutranexa phosphatidylserine supply, 25 kg drum packaging, palletized shipment, and dispatch project evidence for B2B ingredient buyers.",
+    route: "/cases/",
+    image: "/assets/images/shipment-palletized-drums-loading-bay.webp",
+    schema: [breadcrumbJson([["Home", "/"], ["Cases & Projects", "/cases/"]])],
+    body,
+  });
+}
+
 function qualityPage() {
   const body = `${hero({
     eyebrow: "Quality & R&D",
@@ -1628,6 +1670,7 @@ for (const item of psBenefitItems) await add(`/benefits/${item.slug}/`, benefitP
 await add("/applications/", applicationsHub());
 for (const app of applications) await add(`/applications/${app.slug}/`, applicationPage(app));
 await add("/manufacturing/", manufacturingPage());
+await add("/cases/", casesPage());
 await add("/quality-rd/", qualityPage());
 await add("/about/", aboutPage());
 await add("/contact/", contactPage());

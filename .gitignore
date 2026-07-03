@@ -9,3 +9,9 @@ assets/source/
 .DS_Store
 npm-debug.log*
 .env*
+/en/
+/es/
+/ru/
+/ar/
+/fr/
+/pt/

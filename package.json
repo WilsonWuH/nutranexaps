@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node tools/prepare-next.mjs && next dev",
-    "build": "node tools/prepare-next.mjs && next build",
+    "generate": "node tools/build_site.mjs && node tools/localize_site.mjs",
+    "i18n:extract": "node tools/build_site.mjs && node tools/extract_i18n.mjs",
+    "i18n:translate": "node tools/generate_translations.mjs",
+    "i18n:verify": "node tools/verify_i18n.mjs",
+    "dev": "npm run generate && node tools/prepare-next.mjs && next dev",
+    "build": "npm run generate && node tools/prepare-next.mjs && next build",
     "start": "next start"
   },
   "dependencies": {
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
+  },
+  "devDependencies": {
+    "cheerio": "^1.1.2"
   }
 }

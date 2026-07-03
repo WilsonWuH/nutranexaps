@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { locales } from "./i18n/config.mjs";
 
 function collectHtmlRewrites(directory, base = "") {
   if (!fs.existsSync(directory)) return [];
@@ -20,7 +21,14 @@ function collectHtmlRewrites(directory, base = "") {
 const nextConfig = {
   trailingSlash: true,
   async redirects() {
-    return [{ source: "/inquiry", destination: "/contact/", permanent: true }];
+    const localizedPrefixes = new Set(locales.map((locale) => `/${locale.code}`));
+    const englishRoutes = collectHtmlRewrites(path.join(process.cwd(), "public", "site"))
+      .map((rewrite) => rewrite.source)
+      .filter((source) => ![...localizedPrefixes].some((prefix) => source === prefix || source.startsWith(`${prefix}/`)));
+    return [
+      { source: "/inquiry", destination: "/en/contact/", permanent: true },
+      ...englishRoutes.map((source) => ({ source, destination: source === "/" ? "/en/" : `/en${source}/`, permanent: true })),
+    ];
   },
   async rewrites() {
     return {

@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { locales } from "../i18n/config.mjs";
 
 const root = process.cwd();
 const publicDir = path.join(root, "public");
@@ -8,6 +9,7 @@ const pageDirectories = [
   "about",
   "applications",
   "benefits",
+  "cases",
   "contact",
   "manufacturing",
   "news",
@@ -16,6 +18,7 @@ const pageDirectories = [
   "quality-rd",
   "resources",
   "thank-you",
+  ...locales.map((locale) => locale.code),
 ];
 
 await fs.rm(publicDir, { recursive: true, force: true });

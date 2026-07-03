@@ -1,5 +1,12 @@
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector("#site-nav");
+const uiMessages = window.NUTRANEXA_I18N || {
+  required: "Please complete all required fields before submitting.",
+  submitting: "Submitting...",
+  sendError: "We could not send your inquiry. Please email us directly or contact us on WhatsApp.",
+  retryError: "We could not send your inquiry. Please try again.",
+  success: "Submitted successfully. Redirecting to the confirmation page...",
+};
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
@@ -41,7 +48,16 @@ document.addEventListener("click", (event) => {
 });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closeMegaMenus();
+  if (event.key === "Escape") {
+    closeMegaMenus();
+    document.querySelectorAll(".language-switcher[open]").forEach((switcher) => switcher.removeAttribute("open"));
+  }
+});
+
+document.addEventListener("click", (event) => {
+  document.querySelectorAll(".language-switcher[open]").forEach((switcher) => {
+    if (!switcher.contains(event.target)) switcher.removeAttribute("open");
+  });
 });
 
 const inquiryParams = new URLSearchParams(window.location.search);
@@ -75,6 +91,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
 
   const status = form.querySelector(".form-status");
   const submit = form.querySelector('button[type="submit"]');
+  if (submit) submit.dataset.originalText = submit.textContent.trim();
   const validateField = (field) => {
     const label = field.closest("label");
     if (!label) return true;
@@ -102,7 +119,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
     const isValid = fields.map(validateField).every(Boolean);
     if (!isValid) {
       if (status) {
-        status.textContent = "Please complete all required fields before submitting.";
+        status.textContent = uiMessages.required;
         status.className = "form-status error";
       }
       return;
@@ -110,7 +127,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
 
     if (submit) {
       submit.disabled = true;
-      submit.textContent = "Submitting...";
+      submit.textContent = uiMessages.submitting;
     }
 
     const data = Object.fromEntries(new FormData(form).entries());
@@ -125,7 +142,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
       _subject: `[Nutranexa Inquiry] ${data.Interest || data["Product Interest"] || data["Product Requirement"] || "General inquiry"} - ${data.Name || "Website visitor"}`,
       _template: "table",
       _captcha: "false",
-      _url: "https://nutranexaps.com/contact/",
+      _url: data._url || "https://nutranexaps.com/contact/",
     };
 
     try {
@@ -137,7 +154,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
       const result = await response.json().catch(() => ({}));
 
       if (!response.ok || String(result.success) !== "true") {
-        throw new Error("We could not send your inquiry. Please email us directly or contact us on WhatsApp.");
+        throw new Error(uiMessages.sendError);
       }
 
       window.dataLayer = window.dataLayer || [];
@@ -145,22 +162,23 @@ document.querySelectorAll(".quote-form").forEach((form) => {
     } catch (error) {
       if (submit) {
         submit.disabled = false;
-        submit.textContent = "Submit Inquiry";
+        submit.textContent = submit.dataset.originalText || "Submit Inquiry";
       }
       if (status) {
-        status.textContent = error instanceof Error ? error.message : "We could not send your inquiry. Please try again.";
+        status.textContent = error instanceof Error ? error.message : uiMessages.retryError;
         status.className = "form-status error";
       }
       return;
     }
 
     if (status) {
-      status.textContent = "Submitted successfully. Redirecting to the confirmation page...";
+      status.textContent = uiMessages.success;
       status.className = "form-status success";
     }
 
     setTimeout(() => {
-      window.location.href = "/thank-you/";
+      const locale = document.documentElement.lang || "en";
+      window.location.href = `/${locale}/thank-you/`;
     }, 900);
   });
 });
