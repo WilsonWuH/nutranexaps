@@ -534,6 +534,8 @@ const articles = [
     slug: "what-is-phosphatidylserine",
     title: "What Is Phosphatidylserine?",
     description: "A B2B overview of phosphatidylserine as a functional food ingredient for supplement and nutrition product buyers.",
+    image: "/assets/images/resource-what-is-phosphatidylserine.webp",
+    imageAlt: "Phosphatidylserine powder beside a phospholipid bilayer model in a food science laboratory",
     body: [
       "Phosphatidylserine, often shortened to PS, is a phospholipid ingredient used in functional food and dietary supplement applications. For B2B buyers, the most important sourcing questions are source, specification, document availability, manufacturing capability, and application fit.",
       "Nutranexa positions PS as a lead product developed through cooperation with East China University of Science and Technology. The ingredient is described as being made from natural lecithin and L-serine through bio-enzymatic conversion.",
@@ -544,6 +546,8 @@ const articles = [
     slug: "soy-vs-sunflower-phosphatidylserine",
     title: "Soy Phosphatidylserine vs Sunflower Phosphatidylserine",
     description: "Compare soy-source and sunflower-source PS options for formulation and sourcing decisions.",
+    image: "/assets/images/resource-soy-vs-sunflower-ps.webp",
+    imageAlt: "Soy and sunflower phosphatidylserine powder samples shown with their separate source materials",
     body: [
       "Soy phosphatidylserine and sunflower phosphatidylserine are source-specific PS options. The right choice depends on formulation preference, brand positioning, regional buyer expectations, and available technical documents.",
       "Soy PS is often evaluated by buyers who accept soy-derived ingredients and want a conventional source path. Sunflower PS can be relevant when a brand prefers a non-soy source position.",
@@ -554,6 +558,8 @@ const articles = [
     slug: "choose-phosphatidylserine-supplier",
     title: "How to Choose a Phosphatidylserine Supplier",
     description: "A sourcing checklist for importers and manufacturers evaluating PS ingredient suppliers.",
+    image: "/assets/images/resource-choose-ps-supplier.webp",
+    imageAlt: "Ingredient buyer and quality specialist reviewing a phosphatidylserine sample at a manufacturing site",
     body: [
       "A phosphatidylserine supplier should be evaluated on manufacturing capability, quality control, product document readiness, source transparency, and responsiveness to application questions.",
       "Useful proof points include factory imagery, R&D cooperation, production license information, equipment visibility, and clear product information that avoids unsupported claims.",
@@ -564,6 +570,8 @@ const articles = [
     slug: "phosphatidylserine-dietary-supplements",
     title: "Phosphatidylserine Applications in Dietary Supplements",
     description: "How B2B buyers can evaluate PS for tablets, capsules, powders, and supplement ingredient portfolios.",
+    image: "/assets/images/resource-ps-dietary-supplements.webp",
+    imageAlt: "Phosphatidylserine powder arranged with capsule softgel tablet and powder supplement formats",
     body: [
       "PS can be evaluated for supplement formats such as tablets, soft capsules, hard capsules, and nutrition powders. The final use should be checked against regional regulations and verified technical documents.",
       "For sourcing, buyers should define product format, target market, annual quantity, and document requirements before requesting a quote.",
@@ -574,6 +582,8 @@ const articles = [
     slug: "documents-for-ps-ingredients",
     title: "What Documents Should Buyers Request for PS Ingredients?",
     description: "A practical document checklist for phosphatidylserine ingredient sourcing.",
+    image: "/assets/images/resource-ps-documents-checklist.webp",
+    imageAlt: "Technical document review desk with a phosphatidylserine sample and quality records",
     body: [
       "For PS ingredient sourcing, buyers commonly request specification sheets, COA, production license evidence, packaging information, test methods, and any market-specific compliance documents.",
       "Documents should be current, tied to the exact product being quoted, and reviewed before samples or bulk purchase.",
@@ -584,6 +594,8 @@ const articles = [
     slug: "phosphatidylserine-powder-specifications",
     title: "Phosphatidylserine Powder: Common Specifications to Confirm",
     description: "Specification questions buyers should clarify before sourcing PS powder.",
+    image: "/assets/images/resource-ps-powder-specifications.webp",
+    imageAlt: "Phosphatidylserine powder undergoing laboratory balance moisture and particle size checks",
     body: [
       "When sourcing PS powder, buyers should confirm PS content, source, carrier, particle properties, packaging size, shelf life, storage, test method, and COA format.",
       "Specification needs vary by application. A capsule manufacturer may care about flow and content, while a powder formula buyer may also need solubility and blending details.",
@@ -594,6 +606,8 @@ const articles = [
     slug: "functional-food-ingredient-manufacturing",
     title: "Functional Food Ingredient Manufacturing: What Buyers Should Check",
     description: "A factory and quality checklist for buyers sourcing functional food ingredients from China.",
+    image: "/assets/images/resource-functional-food-manufacturing.webp",
+    imageAlt: "Clean functional food ingredient manufacturing hall with stainless steel process equipment",
     body: [
       "Functional food ingredient buyers should review production capability, quality control, R&D support, documented processes, and visible factory evidence.",
       "Nutranexa provides factory campus, equipment, cleanroom, and R&D-related imagery for supplier capability review.",
@@ -604,6 +618,8 @@ const articles = [
     slug: "soluble-soybean-polysaccharide-uses",
     title: "Soluble Soybean Polysaccharide: Uses and Supplier Considerations",
     description: "A B2B introduction to soluble soybean polysaccharide sourcing and application questions.",
+    image: "/assets/images/resource-soluble-soybean-polysaccharide-uses.webp",
+    imageAlt: "Soluble soybean polysaccharide powder used in beverage and emulsion application testing",
     body: [
       "Soluble soybean polysaccharide is part of Nutranexa's functional food ingredient product range. Buyers should evaluate application fit, specification details, and document availability before sourcing.",
       "Useful sourcing questions include ingredient source, specification, packaging, target application, annual demand, and whether technical support is available.",
@@ -614,6 +630,8 @@ const articles = [
     slug: "phosphatidylserine-guide",
     title: "Phosphatidylserine Guide for Ingredient Buyers",
     description: "A buyer-focused guide covering PS definition, sources, applications, documents, and supplier evaluation.",
+    image: "/assets/images/resource-phosphatidylserine-buyers-guide.webp",
+    imageAlt: "Global phosphatidylserine sourcing guide with source samples documents factory and shipping context",
     body: [
       "This guide summarizes phosphatidylserine for importers, distributors, supplement manufacturers, and functional food brands. PS is a functional food ingredient commonly evaluated by source, specification, documents, and supplier capability.",
       "Nutranexa's PS product line includes soy phosphatidylserine and sunflower phosphatidylserine. Buyers should compare source preference, formulation requirements, and document needs before quotation.",
@@ -706,6 +724,7 @@ function articleJson(article, route) {
     "@type": "Article",
     headline: article.title,
     description: article.description,
+    image: `${siteUrl}${article.image}`,
     author: { "@type": "Organization", name: "Nutranexa" },
     publisher: { "@type": "Organization", name: "Nutranexa", logo: { "@type": "ImageObject", url: `${siteUrl}/assets/images/logo-nutranexa.webp` } },
     mainEntityOfPage: urlFor(route),
@@ -1024,10 +1043,7 @@ function productCard(product) {
 }
 
 function articleImage(article) {
-  if (article.slug.includes("dietary") || article.slug.includes("supplement")) return "/assets/images/dietary-supplement-application.webp";
-  if (article.slug.includes("functional") || article.slug.includes("soluble-soybean")) return "/assets/images/functional-food-application.webp";
-  if (article.slug.includes("document") || article.slug.includes("supplier") || article.slug.includes("specification")) return "/assets/images/quality-document-review.webp";
-  return "/assets/images/brand-product-lab.webp";
+  return article.image;
 }
 
 function productSeoTitle(product) {
@@ -1519,7 +1535,7 @@ function inquiryPage() {
 function resourcesHub() {
   const body = `<section class="page-hero compact"><p class="eyebrow">Resources</p><h1>Phosphatidylserine Sourcing Guides</h1><p>Use these articles to compare product options, prepare document requests, and evaluate suppliers before contacting sales.</p></section>
   <section>${sectionIntro("Buyer guides", "Read practical PS sourcing articles", "The resource hub connects product selection, document review, application decisions, and supplier evaluation topics.")}
-    <div class="article-grid">${articles.map((article) => `<article class="article-card article-card-media"><img src="${articleImage(article)}" alt="${esc(article.title)} visual for ingredient buyers" loading="lazy"><div><p class="eyebrow">${article.pillar ? "Pillar guide" : "Article"}</p><h3>${esc(article.title)}</h3><p>${esc(article.description)}</p><a href="/resources/${article.slug}/">Read article</a></div></article>`).join("")}</div>
+    <div class="article-grid">${articles.map((article) => `<article class="article-card article-card-media"><img src="${articleImage(article)}" alt="${esc(article.imageAlt)}" width="1536" height="1024" loading="lazy"><div><p class="eyebrow">${article.pillar ? "Pillar guide" : "Article"}</p><h3>${esc(article.title)}</h3><p>${esc(article.description)}</p><a href="/resources/${article.slug}/">Read article</a></div></article>`).join("")}</div>
   </section>`;
   return layout({
     title: "Resources | Phosphatidylserine Sourcing Guides | Nutranexa",
@@ -1625,7 +1641,7 @@ function newsArticlePage(article) {
 function articlePage(article) {
   const route = `/resources/${article.slug}/`;
   const body = `<article class="article-page">
-  <header><p class="eyebrow">${article.pillar ? "Pillar guide" : "Resource article"}</p><h1>${esc(article.title)}</h1><p>${esc(article.description)}</p><div class="article-actions"><a class="button secondary" href="/products/phosphatidylserine/">View PS Products</a><a class="button primary" href="/contact/">Request Specifications</a></div><img class="article-hero-image" src="${articleImage(article)}" alt="${esc(article.title)} B2B resource visual" loading="lazy"></header>
+  <header><p class="eyebrow">${article.pillar ? "Pillar guide" : "Resource article"}</p><h1>${esc(article.title)}</h1><p>${esc(article.description)}</p><div class="article-actions"><a class="button secondary" href="/products/phosphatidylserine/">View PS Products</a><a class="button primary" href="/contact/">Request Specifications</a></div><img class="article-hero-image" src="${articleImage(article)}" alt="${esc(article.imageAlt)}" width="1536" height="1024" loading="eager"></header>
   <div class="article-body">${article.body.map((para, index) => `${index === 1 ? '<aside class="inline-cta"><strong>Need current specifications?</strong><a href="/contact/">Request Specifications</a></aside>' : ""}<p>${esc(para)}</p>`).join("")}
   <h2>Recommended next steps</h2><ul><li>Review the <a href="/products/phosphatidylserine/">Phosphatidylserine product page</a>.</li><li>Compare <a href="/products/soy-phosphatidylserine/">Soy PS</a> and <a href="/products/sunflower-phosphatidylserine/">Sunflower PS</a>.</li><li>Check <a href="/manufacturing/">manufacturing proof</a> and <a href="/quality-rd/">Quality & R&D</a>.</li></ul>
   <div class="bottom-cta"><h2>Contact sales for product documents</h2><p>Share source preference, application, country, and annual quantity.</p><a class="button primary" href="/contact/">Contact Sales</a></div></div>

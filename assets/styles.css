@@ -2198,7 +2198,7 @@ textarea {
   }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1320px) {
   .nav-shell {
     grid-template-columns: auto minmax(0, 1fr) auto;
   }
