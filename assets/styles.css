@@ -2084,6 +2084,42 @@ textarea {
   margin-top: 32px;
 }
 
+.article-body h3 {
+  margin-top: 24px;
+  font-size: 1.2rem;
+}
+
+.article-date {
+  font-size: 0.9rem;
+}
+
+.article-table-wrap {
+  max-width: 100%;
+  margin: 24px 0;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.article-table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+}
+
+.article-table-wrap th,
+.article-table-wrap td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-table-wrap th {
+  color: var(--ink);
+  background: var(--soft);
+}
+
 .inline-cta,
 .bottom-cta {
   padding: 22px;

@@ -529,7 +529,168 @@ const psBenefitItems = [
   },
 ];
 
-const articles = [
+const promotedArticleVisuals = {
+  "phosphatidylserine-rfq-checklist-importers": "Procurement manager preparing a structured phosphatidylserine RFQ with product sample, source options, quantity, and document checklist",
+  "phosphatidylserine-pre-shipment-inspection-checklist": "Quality inspector checking sealed phosphatidylserine drums, labels, packing list, and shipment release records before dispatch",
+  "phosphatidylserine-coa-specification-certificate-review": "Quality assurance reviewer comparing a phosphatidylserine specification, certificate of analysis, and supporting document set",
+  "phosphatidylserine-moq-packaging-lead-time": "Bulk phosphatidylserine order planning desk with one 25 kilogram drum, packaging plan, calendar, and logistics schedule",
+  "soy-vs-sunflower-phosphatidylserine-supplier-selection": "Buyer comparison workspace showing separate soy and sunflower phosphatidylserine samples with supplier evaluation records",
+  "phosphatidylserine-repeat-order-document-review": "Repeat-order change control review with current and previous phosphatidylserine specifications, batch records, and packaging references",
+  "phosphatidylserine-sample-evaluation-bulk-approval": "Formulation and quality team evaluating a phosphatidylserine sample before approving commercial bulk supply",
+  "soluble-soybean-polysaccharide-supplier-selection": "Soluble soybean polysaccharide application trial with beverage samples, powder dispersion, specification, and supplier review notes",
+  "phosphatidylserine-functional-food-applications": "Functional food development bench with phosphatidylserine powder, nutrition beverage prototypes, and application review records",
+  "phosphatidylserine-incoming-inspection-warehouse-release": "Warehouse receiving team inspecting phosphatidylserine drums, lot labels, delivery records, and quarantine status before release",
+  "phosphatidylserine-supplier-onboarding": "Cross-functional procurement and quality meeting reviewing a new phosphatidylserine supplier onboarding file",
+  "phosphatidylserine-contract-manufacturer-handoff": "Private-label team handing a phosphatidylserine technical package to a contract manufacturing production specialist",
+  "sunflower-phosphatidylserine-supplier-document-review": "European supplement buyer reviewing sunflower phosphatidylserine source documents beside a powder sample and sunflower seeds",
+  "phosphatidylserine-annual-supplier-review": "Annual phosphatidylserine supplier review meeting with scorecard, specification revisions, COA records, and source samples",
+};
+
+const promotedSeoTitles = {
+  "phosphatidylserine-rfq-checklist-importers": "PS RFQ Checklist for Importers | Nutranexa",
+  "phosphatidylserine-pre-shipment-inspection-checklist": "PS Pre-Shipment Inspection Checklist | Nutranexa",
+  "phosphatidylserine-coa-specification-certificate-review": "Phosphatidylserine COA Review Guide | Nutranexa",
+  "phosphatidylserine-moq-packaging-lead-time": "PS MOQ, Packaging & Lead-Time Guide | Nutranexa",
+  "soy-vs-sunflower-phosphatidylserine-supplier-selection": "Soy vs Sunflower PS Supplier Selection | Nutranexa",
+  "phosphatidylserine-repeat-order-document-review": "PS Repeat-Order Document Review | Nutranexa",
+  "phosphatidylserine-sample-evaluation-bulk-approval": "PS Sample Evaluation Checklist | Nutranexa",
+  "soluble-soybean-polysaccharide-supplier-selection": "Soluble Soybean Polysaccharide Supplier Guide | Nutranexa",
+  "phosphatidylserine-functional-food-applications": "PS Functional Food Applications Guide | Nutranexa",
+  "phosphatidylserine-incoming-inspection-warehouse-release": "PS Incoming Inspection Checklist | Nutranexa",
+  "phosphatidylserine-supplier-onboarding": "Phosphatidylserine Supplier Onboarding | Nutranexa",
+  "phosphatidylserine-contract-manufacturer-handoff": "PS Contract Manufacturer Handoff | Nutranexa",
+  "sunflower-phosphatidylserine-supplier-document-review": "Sunflower PS Document Review for Europe | Nutranexa",
+  "phosphatidylserine-annual-supplier-review": "PS Annual Supplier Review | Nutranexa",
+};
+
+function conciseMeta(value) {
+  if (value.length <= 160) return value;
+  return `${value.slice(0, 157).replace(/\s+\S*$/, "").replace(/[,.\s]+$/, "")}.`;
+}
+
+function metaValue(markdown, label) {
+  const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return markdown.match(new RegExp(`^[-*] ${escaped}:\\s*([^\\r\\n]+)`, "mi"))?.[1]?.replace(/`/g, "").trim() || "";
+}
+
+function inlineMarkdown(value) {
+  return esc(value)
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/`([^`]+)`/g, "<code>$1</code>");
+}
+
+function markdownTable(lines, start) {
+  if (!lines[start]?.includes("|") || !/^\s*\|?\s*:?-{3,}/.test(lines[start + 1] || "")) return null;
+  const cells = (line) => line.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim());
+  const headings = cells(lines[start]);
+  const rows = [];
+  let index = start + 2;
+  while (index < lines.length && lines[index].includes("|") && lines[index].trim()) {
+    rows.push(cells(lines[index]));
+    index += 1;
+  }
+  return {
+    next: index,
+    html: `<div class="article-table-wrap"><table><thead><tr>${headings.map((cell) => `<th>${inlineMarkdown(cell)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${inlineMarkdown(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`,
+  };
+}
+
+function renderResourceMarkdown(markdown) {
+  const start = markdown.indexOf("## Introduction");
+  if (start < 0) return "";
+  const stopMarkers = ["## CTA", "## Image Planning", "## Popup / CTA Plan", "## Internal Linking Suggestions"];
+  const stops = stopMarkers.map((marker) => markdown.indexOf(marker, start + 1)).filter((index) => index > start);
+  const content = markdown.slice(start, stops.length ? Math.min(...stops) : markdown.length);
+  const lines = content.split(/\r?\n/);
+  const html = [];
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i].trim();
+    if (!line || line === "---") { i += 1; continue; }
+    if (/^## (Introduction|Main Content)$/i.test(line)) { i += 1; continue; }
+    const table = markdownTable(lines, i);
+    if (table) { html.push(table.html); i = table.next; continue; }
+    const heading = line.match(/^(##|###)\s+(.+)$/);
+    if (heading) {
+      const level = heading[1] === "##" ? 2 : 3;
+      html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`);
+      i += 1;
+      continue;
+    }
+    const unordered = line.match(/^[-*]\s+(.+)$/);
+    if (unordered) {
+      const items = [];
+      while (i < lines.length) {
+        const match = lines[i].trim().match(/^[-*]\s+(.+)$/);
+        if (!match) break;
+        items.push(`<li>${inlineMarkdown(match[1])}</li>`);
+        i += 1;
+      }
+      html.push(`<ul>${items.join("")}</ul>`);
+      continue;
+    }
+    const ordered = line.match(/^\d+\.\s+(.+)$/);
+    if (ordered) {
+      const items = [];
+      while (i < lines.length) {
+        const match = lines[i].trim().match(/^\d+\.\s+(.+)$/);
+        if (!match) break;
+        items.push(`<li>${inlineMarkdown(match[1])}</li>`);
+        i += 1;
+      }
+      html.push(`<ol>${items.join("")}</ol>`);
+      continue;
+    }
+    const paragraph = [line];
+    i += 1;
+    while (i < lines.length) {
+      const next = lines[i].trim();
+      if (!next || /^(##|###)\s+/.test(next) || /^[-*]\s+/.test(next) || /^\d+\.\s+/.test(next) || markdownTable(lines, i)) break;
+      paragraph.push(next);
+      i += 1;
+    }
+    html.push(`<p>${inlineMarkdown(paragraph.join(" "))}</p>`);
+  }
+  return html.join("\n");
+}
+
+function extractResourceFaqs(markdown) {
+  const faqStart = markdown.search(/^## FAQ\s*$/mi);
+  if (faqStart < 0) return [];
+  const faqBlock = markdown.slice(faqStart + markdown.slice(faqStart).indexOf("\n") + 1);
+  const nextH2 = faqBlock.search(/^## (?!#)/m);
+  const section = nextH2 >= 0 ? faqBlock.slice(0, nextH2) : faqBlock;
+  return [...section.matchAll(/^###\s+(.+)\r?\n([\s\S]*?)(?=^###\s+|(?![\s\S]))/gm)].map((match) => {
+    const answer = match[2].replace(/^[-*]\s+/gm, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_`#]/g, "").replace(/\s+/g, " ").trim();
+    return [match[1].trim(), answer];
+  }).filter(([, answer]) => answer);
+}
+
+async function loadPromotedArticles() {
+  const directory = path.join(root, "content", "resources");
+  const names = (await fs.readdir(directory)).filter((name) => name.endsWith(".md")).sort().reverse();
+  return Promise.all(names.map(async (name) => {
+    const markdown = await fs.readFile(path.join(directory, name), "utf8");
+    const route = metaValue(markdown, "URL Slug");
+    const slug = route.replace(/^\/resources\//, "").replace(/\/$/, "");
+    const title = metaValue(markdown, "H1") || metaValue(markdown, "SEO Title");
+    return {
+      slug,
+      title,
+      seoTitle: promotedSeoTitles[slug] || metaValue(markdown, "SEO Title"),
+      description: conciseMeta(metaValue(markdown, "Meta Description")),
+      primaryKeyword: metaValue(markdown, "Primary Keyword"),
+      published: name.slice(0, 10),
+      image: `/assets/images/resource-${slug}.webp`,
+      imageAlt: promotedArticleVisuals[slug] || `${title} guide for ingredient buyers`,
+      contentHtml: renderResourceMarkdown(markdown),
+      faqs: extractResourceFaqs(markdown),
+    };
+  }));
+}
+
+const evergreenArticles = [
   {
     slug: "what-is-phosphatidylserine",
     title: "What Is Phosphatidylserine?",
@@ -642,6 +803,9 @@ const articles = [
   },
 ];
 
+const promotedArticles = await loadPromotedArticles();
+const articles = [...promotedArticles, ...evergreenArticles];
+
 function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
 }
@@ -728,6 +892,20 @@ function articleJson(article, route) {
     author: { "@type": "Organization", name: "Nutranexa" },
     publisher: { "@type": "Organization", name: "Nutranexa", logo: { "@type": "ImageObject", url: `${siteUrl}/assets/images/logo-nutranexa.webp` } },
     mainEntityOfPage: urlFor(route),
+    ...(article.published ? { datePublished: article.published, dateModified: article.published } : {}),
+  };
+}
+
+function resourceFaqJson(article) {
+  if (!article.faqs?.length) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: article.faqs.map(([question, answer]) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
   };
 }
 
@@ -1068,7 +1246,7 @@ function articleSeoTitle(article) {
     "soluble-soybean-polysaccharide-uses": "Soluble Soybean Polysaccharide Uses | Nutranexa",
     "phosphatidylserine-guide": "Phosphatidylserine Sourcing Guide | Nutranexa",
   };
-  return titles[article.slug] || `${article.title} | Nutranexa`;
+  return article.seoTitle || titles[article.slug] || `${article.title} | Nutranexa`;
 }
 
 function homePage() {
@@ -1640,9 +1818,11 @@ function newsArticlePage(article) {
 
 function articlePage(article) {
   const route = `/resources/${article.slug}/`;
+  const articleContent = article.contentHtml || article.body.map((para, index) => `${index === 1 ? '<aside class="inline-cta"><strong>Need current specifications?</strong><a href="/contact/">Request Specifications</a></aside>' : ""}<p>${esc(para)}</p>`).join("");
+  const schemas = [breadcrumbJson([["Home", "/"], ["Resources", "/resources/"], [article.title, route]]), articleJson(article, route), resourceFaqJson(article)].filter(Boolean);
   const body = `<article class="article-page">
-  <header><p class="eyebrow">${article.pillar ? "Pillar guide" : "Resource article"}</p><h1>${esc(article.title)}</h1><p>${esc(article.description)}</p><div class="article-actions"><a class="button secondary" href="/products/phosphatidylserine/">View PS Products</a><a class="button primary" href="/contact/">Request Specifications</a></div><img class="article-hero-image" src="${articleImage(article)}" alt="${esc(article.imageAlt)}" width="1536" height="1024" loading="eager"></header>
-  <div class="article-body">${article.body.map((para, index) => `${index === 1 ? '<aside class="inline-cta"><strong>Need current specifications?</strong><a href="/contact/">Request Specifications</a></aside>' : ""}<p>${esc(para)}</p>`).join("")}
+  <header><p class="eyebrow">${article.pillar ? "Pillar guide" : "Resource article"}</p><h1>${esc(article.title)}</h1><p>${esc(article.description)}</p>${article.published ? `<p class="article-date">Published <time datetime="${esc(article.published)}">${esc(new Date(`${article.published}T00:00:00Z`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }))}</time></p>` : ""}<div class="article-actions"><a class="button secondary" href="/products/phosphatidylserine/">View PS Products</a><a class="button primary" href="/contact/">Request Specifications</a></div><img class="article-hero-image" src="${articleImage(article)}" alt="${esc(article.imageAlt)}" width="1536" height="1024" loading="eager"></header>
+  <div class="article-body">${articleContent}
   <h2>Recommended next steps</h2><ul><li>Review the <a href="/products/phosphatidylserine/">Phosphatidylserine product page</a>.</li><li>Compare <a href="/products/soy-phosphatidylserine/">Soy PS</a> and <a href="/products/sunflower-phosphatidylserine/">Sunflower PS</a>.</li><li>Check <a href="/manufacturing/">manufacturing proof</a> and <a href="/quality-rd/">Quality & R&D</a>.</li></ul>
   <div class="bottom-cta"><h2>Contact sales for product documents</h2><p>Share source preference, application, country, and annual quantity.</p><a class="button primary" href="/contact/">Contact Sales</a></div></div>
 </article>`;
@@ -1651,7 +1831,7 @@ function articlePage(article) {
     description: article.description,
     route,
     image: articleImage(article),
-    schema: [breadcrumbJson([["Home", "/"], ["Resources", "/resources/"], [article.title, route]]), articleJson(article, route)],
+    schema: schemas,
     body,
   });
 }
