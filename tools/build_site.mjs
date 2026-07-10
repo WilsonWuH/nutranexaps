@@ -544,6 +544,10 @@ const promotedArticleVisuals = {
   "phosphatidylserine-contract-manufacturer-handoff": "Private-label team handing a phosphatidylserine technical package to a contract manufacturing production specialist",
   "sunflower-phosphatidylserine-supplier-document-review": "European supplement buyer reviewing sunflower phosphatidylserine source documents beside a powder sample and sunflower seeds",
   "phosphatidylserine-annual-supplier-review": "Annual phosphatidylserine supplier review meeting with scorecard, specification revisions, COA records, and source samples",
+  "soya-phosphatidylserine-labeling-europe": "European supplement labeling review with soy phosphatidylserine sample, soybeans, blank package mockups, and compliance tools",
+  "phosphatidylserine-lot-traceability-checklist": "Phosphatidylserine lot traceability review with sealed drums, barcode scanning tools, and shipment release documents",
+  "phosphatidylserine-distributor-document-pack": "North American phosphatidylserine distributor preparing a customer document pack with source-specific files, sealed drum, shipping carton, and warehouse backdrop",
+  "sunflower-phosphatidylserine-europe-source-change": "Top-down Europe-focused procurement review comparing soya and sunflower phosphatidylserine source folders, blank change-control notes, soybeans, and sunflower seeds",
 };
 
 const promotedSeoTitles = {
@@ -561,6 +565,9 @@ const promotedSeoTitles = {
   "phosphatidylserine-contract-manufacturer-handoff": "PS Contract Manufacturer Handoff | Nutranexa",
   "sunflower-phosphatidylserine-supplier-document-review": "Sunflower PS Document Review for Europe | Nutranexa",
   "phosphatidylserine-annual-supplier-review": "PS Annual Supplier Review | Nutranexa",
+  "soya-phosphatidylserine-labeling-europe": "Soya Phosphatidylserine Labeling for Europe | Nutranexa",
+  "phosphatidylserine-lot-traceability-checklist": "PS Lot Traceability Checklist | Nutranexa",
+  "sunflower-phosphatidylserine-europe-source-change": "Can Sunflower PS Replace Soya PS in Europe? | Nutranexa",
 };
 
 function conciseMeta(value) {
@@ -952,6 +959,38 @@ function layout({ title, description, route, body, schema = [], image = "/assets
   <main id="main">${body}</main>
   ${footer()}
   <script src="/assets/site.js" defer></script>
+</body>
+</html>`;
+}
+
+function plainNewsArticleLayout({ title, description, route, body, schema = [], image }) {
+  const canonical = urlFor(route);
+  const allSchema = [organizationJson(), websiteJson(), ...schema];
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${esc(title)}</title>
+  <meta name="description" content="${esc(description)}">
+  <link rel="canonical" href="${canonical}">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="${canonical}">
+  <meta property="og:image" content="${siteUrl}${image}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1800">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(title)}">
+  <meta name="twitter:description" content="${esc(description)}">
+  <meta name="twitter:image" content="${siteUrl}${image}">
+  <link rel="icon" href="/assets/images/logo-nutranexa-icon.png">
+  <script type="application/ld+json">${JSON.stringify(allSchema)}</script>
+</head>
+<body>
+${body}
 </body>
 </html>`;
 }
@@ -1794,19 +1833,37 @@ function newsArticlePage(article) {
     dateModified: article.published,
     author: { "@type": "Organization", name: article.byline },
     publisher: { "@type": "Organization", name: "Nutranexa", logo: { "@type": "ImageObject", url: `${siteUrl}/assets/images/logo-nutranexa.webp` } },
-    image: `${siteUrl}${article.featuredImage}`,
+    image: {
+      "@type": "ImageObject",
+      url: `${siteUrl}${article.featuredImage}`,
+      width: 1200,
+      height: 1800,
+    },
     mainEntityOfPage: urlFor(route),
   };
-  const body = `<article class="news-article">
-    <header class="news-article-header"><a class="news-back-link" href="/news/">Back to News</a><p class="eyebrow">${esc(newsCategory(article))}</p><h1>${esc(article.headline)}</h1><p class="news-byline">By ${esc(article.byline)} <span aria-hidden="true">|</span> <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p><p class="news-deck">${esc(article.description)}</p></header>
-    <figure class="news-article-figure"><img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="1200" height="1800" loading="eager"><figcaption><a href="${esc(article.imageCreditUrl)}" target="_blank" rel="noopener noreferrer">${esc(article.imageCredit)}</a></figcaption></figure>
-    <div class="news-article-layout">
-      <nav class="news-article-toc" aria-label="Table of contents"><p class="eyebrow">On this page</p><h2>Table of Contents</h2><ul>${toc}<li><a href="#sources">Sources</a></li></ul></nav>
-      <div class="news-article-body">${sections}<section id="sources" class="news-sources"><h2>Sources</h2><ul>${sources}</ul></section><p class="news-editorial-note">This report summarizes cited public information. Third-party products and organizations do not endorse Nutranexa.</p></div>
-    </div>
-  </article>
-  <section class="cta-band"><div><p class="eyebrow">Discuss a PS project</p><h2>Request source, assay, packaging, and document details.</h2><p>Nutranexa supplies soy and sunflower phosphatidylserine for B2B supplement and functional food projects.</p></div><a class="button light" href="/contact/?product=Phosphatidylserine%20%28PS%29">Contact Sales</a></section>`;
-  return layout({
+  const body = `<article>
+  <p><a href="/news/">Back to News</a></p>
+  <header>
+    <h1>${esc(article.headline)}</h1>
+    <p>By ${esc(article.byline)} | <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p>
+    <p>${esc(article.description)}</p>
+  </header>
+  <figure>
+    <img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="300" height="450" loading="eager">
+    <figcaption><a href="${esc(article.imageCreditUrl)}" target="_blank" rel="noopener noreferrer">${esc(article.imageCredit)}</a></figcaption>
+  </figure>
+  <nav aria-label="Table of contents">
+    <h2>Table of Contents</h2>
+    <ul>${toc}<li><a href="#sources">Sources</a></li></ul>
+  </nav>
+  ${sections}
+  <section id="sources">
+    <h2>Sources</h2>
+    <ul>${sources}</ul>
+  </section>
+  <p>This report summarizes cited public information. Third-party products and organizations do not endorse Nutranexa.</p>
+</article>`;
+  return plainNewsArticleLayout({
     title: `${article.headline} | Nutranexa News`,
     description: article.description,
     route,
