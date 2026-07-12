@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "node ../../tools/build_market_sites.mjs kr-site",
+    "dev": "node ../../tools/build_market_sites.mjs kr-site"
+  }
+}
