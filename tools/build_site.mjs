@@ -548,6 +548,9 @@ const promotedArticleVisuals = {
   "phosphatidylserine-lot-traceability-checklist": "Phosphatidylserine lot traceability review with sealed drums, barcode scanning tools, and shipment release documents",
   "phosphatidylserine-distributor-document-pack": "North American phosphatidylserine distributor preparing a customer document pack with source-specific files, sealed drum, shipping carton, and warehouse backdrop",
   "sunflower-phosphatidylserine-europe-source-change": "Top-down Europe-focused procurement review comparing soya and sunflower phosphatidylserine source folders, blank change-control notes, soybeans, and sunflower seeds",
+  "phosphatidylserine-heavy-metals-review-europe": "European quality-control review of phosphatidylserine heavy-metals data with sample dish, elemental-analysis lab tools, and blank compliance notes",
+  "phosphatidylserine-supplier-coa-qualification-us": "US contract manufacturer reviewing phosphatidylserine incoming approval with retain samples, sealed drum, and identity-testing tools",
+  "phosphatidylserine-allergen-statement-us-eu": "Side-angle quality and regulatory review of soy and sunflower phosphatidylserine source samples, blank allergen checklist cards, and a sealed bulk drum in a daylight office",
 };
 
 const promotedSeoTitles = {
@@ -568,6 +571,9 @@ const promotedSeoTitles = {
   "soya-phosphatidylserine-labeling-europe": "Soya Phosphatidylserine Labeling for Europe | Nutranexa",
   "phosphatidylserine-lot-traceability-checklist": "PS Lot Traceability Checklist | Nutranexa",
   "sunflower-phosphatidylserine-europe-source-change": "Can Sunflower PS Replace Soya PS in Europe? | Nutranexa",
+  "phosphatidylserine-heavy-metals-review-europe": "PS Heavy Metals Review for Europe | Nutranexa",
+  "phosphatidylserine-supplier-coa-qualification-us": "Can US Manufacturers Rely on a PS Supplier COA? | Nutranexa",
+  "phosphatidylserine-allergen-statement-us-eu": "Phosphatidylserine Allergen Statement Checklist | Nutranexa",
 };
 
 function conciseMeta(value) {
