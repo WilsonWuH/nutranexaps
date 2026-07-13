@@ -38,8 +38,8 @@ await page.screenshot({ path: path.join(outDir, "home-mobile.png"), fullPage: tr
 await page.goto(base + "/contact/", { waitUntil: "networkidle" });
 await page.fill('input[name="Name"]', "Test Buyer");
 await page.fill('input[name="Email"]', "buyer@example.com");
+await page.fill('input[name="Phone"]', "+1 555 123 4567");
 await page.fill('input[name="Country"]', "United States");
-await page.selectOption('select[name="Company Type"]', "Importer / Distributor");
 await page.fill('input[name="Interest"]', "Phosphatidylserine (PS)");
 await page.fill('textarea[name="Message"]', "Please send current specification and quotation.");
 await Promise.all([page.waitForURL("**/thank-you/", { timeout: 10000 }), page.click('button[type="submit"]')]);

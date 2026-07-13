@@ -1124,7 +1124,7 @@ function companyVideoSection() {
   </section>`;
 }
 
-function quoteForm(context = "General inquiry", quantityHint = "MOQ 25 kg; enter estimated yearly demand") {
+function quoteForm(context = "General inquiry") {
   return `<form class="quote-form" data-context="${esc(context)}" action="https://formsubmit.co/wh1007209170@gmail.com" method="post">
   <input type="hidden" name="Product Interest" value="${esc(context)}">
   <input type="hidden" name="_subject" value="New Nutranexa Website Inquiry">
@@ -1136,19 +1136,14 @@ function quoteForm(context = "General inquiry", quantityHint = "MOQ 25 kg; enter
   <div class="form-grid">
     <label>Name <input required name="Name" autocomplete="name"></label>
     <label>Email <input required type="email" name="Email" autocomplete="email"></label>
-    <label>Country / Region <input required name="Country" autocomplete="country-name"></label>
-    <label>Company Type <select required name="Company Type"><option value="">Select</option><option>Importer / Distributor</option><option>Supplement Manufacturer</option><option>Food Brand</option><option>OEM / ODM Factory</option><option>Other</option></select></label>
-    <label>Product Interest <input required name="Interest" value="${esc(context)}"></label>
-    <label>Source Preference <select name="Source Preference"><option value="">Select or confirm later</option><option>General PS</option><option>Soy</option><option>Sunflower</option><option>Soybean-derived</option><option>Other / Not sure</option></select></label>
-    <label>Target Assay <select name="Target Assay"><option value="">Select or confirm later</option><option>20%</option><option>50%</option><option>To be confirmed</option><option>Other</option><option>Not applicable</option></select></label>
-    <label>Application <input name="Application" placeholder="Capsule, powder, functional food"></label>
-    <label>Annual Quantity <input name="Annual Quantity" placeholder="${esc(quantityHint)}"></label>
-    <label>Documents Needed <select name="Documents Needed"><option value="">Select</option><option>Specification</option><option>COA sample</option><option>TDS / SDS</option><option>Certificates</option><option>Allergen / GMO statements</option><option>Multiple documents</option></select></label>
-    <label>Sample Needed <select name="Sample Needed"><option value="">Select</option><option>Yes</option><option>No</option><option>Discuss first</option></select></label>
-    <label class="form-full">Message <textarea required name="Message" rows="4" placeholder="Tell us the specification, source preference, documents, and timeline you need."></textarea></label>
+    <label>Phone <input required type="tel" name="Phone" autocomplete="tel" inputmode="tel" pattern="^\\+?[0-9\\s().-]{7,24}$" placeholder="+1 555 123 4567"></label>
+    <label>Company <input name="Company" autocomplete="organization" placeholder="Company name"></label>
+    <label>Country / Region <input name="Country" autocomplete="country-name" placeholder="United States, Germany, Brazil..."></label>
+    <label>Product Interest <input name="Interest" value="${esc(context)}" placeholder="PS powder, Soy PS, Sunflower PS..."></label>
+    <label class="form-full">Message <textarea name="Message" rows="4" placeholder="Tell us your product requirement, specification, quantity, or documents needed."></textarea></label>
   </div>
   <button class="button primary" type="submit">Submit Inquiry</button>
-  <p class="form-status" role="status" aria-live="polite">Complete the required fields, then submit your request.</p>
+  <p class="form-status" role="status" aria-live="polite">Name, email, and phone are required.</p>
   <p class="form-note">Your inquiry will be prepared for sales follow-up. You can also email ${salesEmail} or contact us on WhatsApp ${whatsapp}.</p>
 </form>`;
 }
@@ -1737,16 +1732,10 @@ function inquiryPage() {
       <label>Name <span>*</span><input required name="Name" autocomplete="name" placeholder="Your full name"><small>Please enter your name.</small></label>
       <label>Email <span>*</span><input required type="email" name="Email" autocomplete="email" placeholder="name@company.com"><small>Please enter a valid business email.</small></label>
       <label>Phone <span>*</span><input required type="tel" name="Phone" autocomplete="tel" inputmode="tel" pattern="^\\+?[0-9\\s().-]{7,24}$" placeholder="+1 555 123 4567"><small>Please include a valid phone number with country code if possible.</small></label>
-      <label>Company Name <input name="Company Name" autocomplete="organization" placeholder="Company or organization"></label>
+      <label>Company <input name="Company" autocomplete="organization" placeholder="Company or organization"></label>
       <label>Country / Region <input name="Country" autocomplete="country-name" placeholder="United States, Germany, Brazil..."></label>
-      <label>Product Requirement <input name="Product Requirement" placeholder="PS powder, Soy PS, Sunflower PS, SSP..."></label>
-      <label>Source Preference <select name="Source Preference"><option value="">Select or confirm later</option><option>General PS</option><option>Soy</option><option>Sunflower</option><option>Soybean-derived</option><option>Other / Not sure</option></select></label>
-      <label>Target Assay <select name="Target Assay"><option value="">Select or confirm later</option><option>20%</option><option>50%</option><option>To be confirmed</option><option>Other</option><option>Not applicable</option></select></label>
-      <label>Application <input name="Application" placeholder="Capsules, tablets, powder, functional food..."></label>
-      <label>Annual Quantity <input name="Annual Quantity" placeholder="MOQ 25 kg; enter estimated yearly demand"></label>
-      <label>Documents Needed <select name="Documents Needed"><option value="">Select</option><option>Specification</option><option>COA sample</option><option>TDS / SDS</option><option>Certificates</option><option>Allergen / GMO statements</option><option>Multiple documents</option></select></label>
-      <label>Sample Needed <select name="Sample Needed"><option value="">Select</option><option>Yes</option><option>No</option><option>Discuss first</option></select></label>
-      <label class="full">Message <textarea name="Message" rows="5" placeholder="Tell us your application, target specification, annual quantity, required documents, and shipment timeline."></textarea></label>
+      <label>Product Interest <input name="Interest" placeholder="PS powder, Soy PS, Sunflower PS, SSP..."></label>
+      <label class="full">Message <textarea name="Message" rows="5" placeholder="Tell us your product requirement, specification, quantity, documents, or timeline."></textarea></label>
     </div>
     <div class="inquiry-form-actions">
       <button class="button inquiry-submit" type="submit">Submit Inquiry</button>
@@ -1905,7 +1894,7 @@ function thankYouPage() {
 }
 
 function privacyPage() {
-  const body = `<section class="article-page"><header><p class="eyebrow">Privacy</p><h1>Privacy Policy</h1><p>This policy explains how Nutranexa handles B2B inquiry information.</p></header><div class="article-body"><p>Nutranexa collects information submitted through inquiry forms, including name, email, phone, country, company type, product interest, application, annual quantity, and message content. The information is used to respond to B2B product, document, sample, and quotation requests.</p><p>Inquiry information may be reviewed by sales and technical staff so the team can confirm product source, specification, available documents, packaging, and shipment discussion points.</p><p>For privacy-related requests, contact ${salesEmail}.</p></div></section>`;
+  const body = `<section class="article-page"><header><p class="eyebrow">Privacy</p><h1>Privacy Policy</h1><p>This policy explains how Nutranexa handles B2B inquiry information.</p></header><div class="article-body"><p>Nutranexa collects information submitted through inquiry forms, including name, email, phone, company, country, product interest, and message content. The information is used to respond to B2B product, document, sample, and quotation requests.</p><p>Inquiry information may be reviewed by sales and technical staff so the team can confirm product source, specification, available documents, packaging, and shipment discussion points.</p><p>For privacy-related requests, contact ${salesEmail}.</p></div></section>`;
   return layout({ title: "Privacy Policy | Nutranexa", description: "Learn how Nutranexa handles B2B inquiry information submitted through the website.", route: "/privacy/", schema: [breadcrumbJson([["Home", "/"], ["Privacy", "/privacy/"]])], body });
 }
 

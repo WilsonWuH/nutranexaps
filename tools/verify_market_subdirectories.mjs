@@ -54,8 +54,11 @@ for (const site of Object.values(sites)) {
     }
     if (page.type === "form") {
       const names = new Set($("form [name]").map((_, el) => $(el).attr("name")).get());
-      for (const field of ["Name","Company","Country","Email","WhatsApp","Requested Product","Requested Assay","Application","Estimated Quantity","Sample Required","Documents Required","Message","Privacy Consent","Language","Locale","Source Page","Landing Page","Referrer","UTM Source","UTM Medium","UTM Campaign","_honey"]) {
+      for (const field of ["Name","Email","Phone","Company","Country","Requested Product","Message","Language","Locale","Source Page","Landing Page","Referrer","UTM Source","UTM Medium","UTM Campaign","_honey"]) {
         if (!names.has(field)) fail(site.locale, page.route, `missing form field ${field}`);
+      }
+      for (const field of ["Name","Email","Phone"]) {
+        if (!$(`form [name="${field}"]`).attr("required")) fail(site.locale, page.route, `${field} should be required`);
       }
       if ($("form").attr("action") !== "/api/inquiry") fail(site.locale, page.route, "form does not use server endpoint");
     }

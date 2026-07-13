@@ -34,11 +34,10 @@ export async function POST(request) {
 
   const locale = clean(body.Locale, 5);
   const name = clean(body.Name, 200);
-  const company = clean(body.Company, 300);
-  const country = clean(body.Country, 120);
   const email = clean(body.Email, 254);
-  const consent = clean(body["Privacy Consent"], 10);
-  if (!name || !company || !country || consent !== "Yes" || !validEmail(email) || !["ko", "tr"].includes(locale)) {
+  const phone = clean(body.Phone, 60);
+  const validPhone = /^\+?[0-9\s().-]{7,24}$/.test(phone);
+  if (!name || !validEmail(email) || !validPhone || !["ko", "tr"].includes(locale)) {
     return Response.json({ success: false, error: "validation_failed" }, { status: 400 });
   }
 
