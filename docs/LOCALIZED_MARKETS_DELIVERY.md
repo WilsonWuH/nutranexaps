@@ -68,8 +68,8 @@
 ## Naver 配置
 
 1. 已获取并配置 Naver Search Advisor 所有权验证 meta。
-2. 发布后在 Search Advisor 完成所有权确认。
-3. 提交 `https://nutranexaps.com/sitemap-ko.xml`。
+2. 已于 2026-07-13 在 Search Advisor 完成所有权确认。
+3. 已提交 `https://nutranexaps.com/sitemap-ko.xml`（Naver 登记时间：2026-07-13 23:04:57，Asia/Shanghai）。
 4. 检查 `/ko/` 抓取、canonical、移动端与 robots 状态。
 5. 后续围绕供应商选择、来源比较、COA/规格书和样品评估维护 Naver Blog 内容，并链接到对应韩语落地页。
 
@@ -83,7 +83,7 @@
 
 ## 已知问题与 TODO
 
-- TODO：将当前构建发布到生产站后完成 Naver 所有权确认和 sitemap 提交。
+- 已完成生产部署、Naver 所有权确认和韩语 sitemap 提交。
 - 已配置 KakaoTalk ID `wilsonps1`，韩语站支持一键复制并记录 `kakao_click`。
 - TODO：提供 GA4/GTM ID。
 - TODO：确认 CRM 接口或 webhook；当前已支持邮件通知。
