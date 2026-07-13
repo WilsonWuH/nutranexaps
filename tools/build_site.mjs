@@ -549,8 +549,12 @@ const promotedArticleVisuals = {
   "phosphatidylserine-distributor-document-pack": "North American phosphatidylserine distributor preparing a customer document pack with source-specific files, sealed drum, shipping carton, and warehouse backdrop",
   "sunflower-phosphatidylserine-europe-source-change": "Top-down Europe-focused procurement review comparing soya and sunflower phosphatidylserine source folders, blank change-control notes, soybeans, and sunflower seeds",
   "phosphatidylserine-heavy-metals-review-europe": "European quality-control review of phosphatidylserine heavy-metals data with sample dish, elemental-analysis lab tools, and blank compliance notes",
+  "phosphatidylserine-microbiological-review-europe": "European quality specialist reviewing phosphatidylserine microbiological release data beside sterile petri dishes, sealed ingredient drum, and blank QA records",
   "phosphatidylserine-supplier-coa-qualification-us": "US contract manufacturer reviewing phosphatidylserine incoming approval with retain samples, sealed drum, and identity-testing tools",
   "phosphatidylserine-allergen-statement-us-eu": "Side-angle quality and regulatory review of soy and sunflower phosphatidylserine source samples, blank allergen checklist cards, and a sealed bulk drum in a daylight office",
+  "phosphatidylserine-gmo-statement-us-eu": "Cross-border phosphatidylserine GMO statement review with soy and sunflower source samples, blank declaration cards, and a sealed 25 kilogram drum in a procurement office",
+  "phosphatidylserine-canada-nhp-vs-supplemented-food": "Canadian phosphatidylserine route review showing a capsule bottle dossier beside a supplemented-food can mockup, soy sample dish, and blank compliance cards on a regulatory desk",
+  "phosphatidylserine-shelf-life-storage-review-us-eu": "Cross-border phosphatidylserine shelf-life review with a sealed 25 kilogram drum, temperature logger, humidity monitor, pallet wrap sample, and blank storage-control cards in a warehouse office",
 };
 
 const promotedSeoTitles = {
@@ -572,8 +576,11 @@ const promotedSeoTitles = {
   "phosphatidylserine-lot-traceability-checklist": "PS Lot Traceability Checklist | Nutranexa",
   "sunflower-phosphatidylserine-europe-source-change": "Can Sunflower PS Replace Soya PS in Europe? | Nutranexa",
   "phosphatidylserine-heavy-metals-review-europe": "PS Heavy Metals Review for Europe | Nutranexa",
+  "phosphatidylserine-microbiological-review-europe": "PS Microbiological Review for Europe | Nutranexa",
   "phosphatidylserine-supplier-coa-qualification-us": "Can US Manufacturers Rely on a PS Supplier COA? | Nutranexa",
   "phosphatidylserine-allergen-statement-us-eu": "Phosphatidylserine Allergen Statement Checklist | Nutranexa",
+  "phosphatidylserine-canada-nhp-vs-supplemented-food": "Phosphatidylserine Canada Checklist: NHP vs Supplemented Food | Nutranexa",
+  "phosphatidylserine-shelf-life-storage-review-us-eu": "PS Shelf-Life & Storage Review | Nutranexa",
 };
 
 function conciseMeta(value) {
@@ -933,6 +940,7 @@ function layout({ title, description, route, body, schema = [], image = "/assets
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
+  <meta name="naver-site-verification" content="c6d0c699471e32f496c25af5be8693ab4c4580e8">
   <link rel="canonical" href="${canonical}">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="${esc(title)}">
@@ -979,6 +987,7 @@ function plainNewsArticleLayout({ title, description, route, body, schema = [], 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
+  <meta name="naver-site-verification" content="c6d0c699471e32f496c25af5be8693ab4c4580e8">
   <link rel="canonical" href="${canonical}">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="${esc(title)}">

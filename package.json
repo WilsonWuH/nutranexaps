@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "generate": "node tools/build_site.mjs && node tools/localize_site.mjs",
+    "generate": "node tools/build_site.mjs && node tools/localize_site.mjs && node tools/build_market_subdirectories.mjs",
     "i18n:extract": "node tools/build_site.mjs && node tools/extract_i18n.mjs",
     "i18n:translate": "node tools/generate_translations.mjs",
     "i18n:verify": "node tools/verify_i18n.mjs",
+    "verify:markets": "node tools/verify_market_subdirectories.mjs",
+    "verify:markets:browser": "node tools/verify_market_browser.mjs",
     "dev": "npm run generate && node tools/prepare-next.mjs && next dev",
     "build": "npm run generate && node tools/prepare-next.mjs && next build",
     "start": "next start"
@@ -17,6 +19,11 @@
     "react-dom": "latest"
   },
   "devDependencies": {
-    "cheerio": "^1.1.2"
+    "cheerio": "^1.1.2",
+    "playwright": "^1.61.1",
+    "playwright-core": "^1.61.1"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
   }
 }

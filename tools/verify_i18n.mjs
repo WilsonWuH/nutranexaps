@@ -1,12 +1,19 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { load } from "cheerio";
-import { localePath, locales } from "../i18n/config.mjs";
+import { defaultLocale, localePath, locales } from "../i18n/config.mjs";
+import { marketRoutes } from "../config/locales/markets.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://nutranexaps.com";
 const manifest = JSON.parse(await fs.readFile(path.join(root, "i18n", "routes.json"), "utf8"));
 const errors = [];
+const marketRouteSet = new Set(marketRoutes);
+
+function publicLocalePath(locale, route) {
+  const normalized = route === "/" ? "/" : `/${route.replace(/^\/+|\/+$/g, "")}/`;
+  return locale === defaultLocale ? normalized : localePath(locale, normalized);
+}
 
 for (const locale of locales) {
   const dictionary = JSON.parse(await fs.readFile(path.join(root, "i18n", "messages", `${locale.code}.json`), "utf8"));
@@ -24,14 +31,15 @@ for (const locale of locales) {
       continue;
     }
     const $ = load(html);
-    const expectedUrl = `${siteUrl}${localePath(locale.code, route)}`;
+    const expectedUrl = `${siteUrl}${publicLocalePath(locale.code, route)}`;
     if ($("html").attr("lang") !== locale.code) errors.push(`${locale.code}${route}: incorrect html lang`);
     if ($("html").attr("dir") !== locale.dir) errors.push(`${locale.code}${route}: incorrect text direction`);
     if ($("title").text().trim().length < 8) errors.push(`${locale.code}${route}: SEO title is missing`);
     if (!$("meta[name='description']").attr("content")?.trim()) errors.push(`${locale.code}${route}: meta description is missing`);
     if ($("h1").length !== 1) errors.push(`${locale.code}${route}: expected one H1, found ${$("h1").length}`);
     if ($("link[rel='canonical']").attr("href") !== expectedUrl) errors.push(`${locale.code}${route}: canonical is incorrect`);
-    if ($("link[rel='alternate'][hreflang]").length !== locales.length + 1) errors.push(`${locale.code}${route}: hreflang set is incomplete`);
+    const expectedHreflangs = locales.length + 1 + (marketRouteSet.has(route) ? 2 : 0);
+    if ($("link[rel='alternate'][hreflang]").length !== expectedHreflangs) errors.push(`${locale.code}${route}: hreflang set is incomplete`);
     if (!$(".language-switcher").length) errors.push(`${locale.code}${route}: language switcher is missing`);
     $("img").each((_, image) => {
       if ($(image).attr("alt") === undefined) errors.push(`${locale.code}${route}: image without alt attribute`);
@@ -39,11 +47,15 @@ for (const locale of locales) {
   }
 }
 
-const sitemap = await fs.readFile(path.join(root, "sitemap.xml"), "utf8");
+const sitemapIndex = await fs.readFile(path.join(root, "sitemap.xml"), "utf8");
+const sitemap = await fs.readFile(path.join(root, "sitemap-existing-locales.xml"), "utf8");
 const expectedUrls = manifest.routes.length * locales.length;
 const actualUrls = (sitemap.match(/<url>/g) || []).length;
 if (actualUrls !== expectedUrls) errors.push(`sitemap: expected ${expectedUrls} URLs, found ${actualUrls}`);
 if (!sitemap.includes('hreflang="x-default"')) errors.push("sitemap: x-default hreflang is missing");
+for (const name of ["sitemap-en.xml", "sitemap-ko.xml", "sitemap-tr.xml", "sitemap-existing-locales.xml"]) {
+  if (!sitemapIndex.includes(name)) errors.push(`sitemap index: ${name} is missing`);
+}
 
 if (errors.length) {
   console.error(errors.join("\n"));

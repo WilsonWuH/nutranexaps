@@ -3,11 +3,13 @@ import path from "node:path";
 import { load } from "cheerio";
 import { defaultLocale, localeConfig, localePath, locales, runtimeMessages } from "../i18n/config.mjs";
 import { translationOverrides } from "../i18n/overrides.mjs";
+import { marketRoutes } from "../config/locales/markets.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://nutranexaps.com";
-const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "assets", "i18n"]);
+const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "assets", "i18n", "apps", "config", "content", "docs", "qa", "tmp", "ko", "tr"]);
 const localeCodes = new Set(locales.map((locale) => locale.code));
+const marketRouteSet = new Set(marketRoutes);
 
 function normalize(value) {
   return String(value || "").replace(/\s+/g, " ").trim();
@@ -36,6 +38,11 @@ function outputPath(locale, route) {
   return path.join(root, locale, ...parts, "index.html");
 }
 
+function publicLocalePath(locale, route) {
+  const normalized = route === "/" ? "/" : `/${route.replace(/^\/+|\/+$/g, "")}/`;
+  return locale === defaultLocale ? normalized : localePath(locale, normalized);
+}
+
 function localizeInternalPath(value, locale) {
   if (!value || !value.startsWith("/") || value.startsWith("//")) return value;
   if (/^\/(assets|api)(\/|$)/.test(value)) return value;
@@ -50,7 +57,7 @@ function localizeAbsoluteUrl(value, locale) {
   try {
     const url = new URL(value);
     if (url.origin !== siteUrl || /^\/assets\//.test(url.pathname)) return value;
-    url.pathname = localePath(locale, url.pathname);
+    url.pathname = publicLocalePath(locale, url.pathname);
     return url.toString();
   } catch {
     return value;
@@ -83,23 +90,29 @@ function translateSchema(value, messages, locale, key = "") {
 
 function languageSwitcher(locale, route) {
   const current = localeConfig(locale);
-  const links = locales
-    .map((item) => `<a href="${localePath(item.code, route)}" lang="${item.code}" dir="${item.dir}"${item.code === locale ? ' aria-current="page"' : ""}><span>${item.code.toUpperCase()}</span>${item.nativeLabel}</a>`)
-    .join("");
+  const standardLinks = locales.map((item) => `<a href="${publicLocalePath(item.code, route)}" lang="${item.code}" dir="${item.dir}"${item.code === locale ? ' aria-current="page"' : ""}><span>${item.code.toUpperCase()}</span>${item.nativeLabel}</a>`);
+  const marketLinks = [
+    `<a href="${marketRouteSet.has(route) ? `/ko${route}` : "/ko/"}" lang="ko"><span>KO</span>한국어</a>`,
+    `<a href="${marketRouteSet.has(route) ? `/tr${route}` : "/tr/"}" lang="tr"><span>TR</span>Türkçe</a>`,
+  ];
+  const links = [...standardLinks, ...marketLinks].join("");
   return `<details class="language-switcher"><summary aria-label="${current.switcherLabel}"><span class="language-code">${locale.toUpperCase()}</span><span class="language-name">${current.nativeLabel}</span></summary><div class="language-menu">${links}</div></details>`;
 }
 
 function alternateLinks(route) {
-  return [
-    ...locales.map((locale) => `<link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${localePath(locale.code, route)}">`),
-    `<link rel="alternate" hreflang="x-default" href="${siteUrl}${localePath(defaultLocale, route)}">`,
-  ].join("\n  ");
+  const links = locales.map((locale) => `<link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${publicLocalePath(locale.code, route)}">`);
+  if (marketRouteSet.has(route)) {
+    links.push(`<link rel="alternate" hreflang="ko" href="${siteUrl}/ko${route}">`);
+    links.push(`<link rel="alternate" hreflang="tr" href="${siteUrl}/tr${route}">`);
+  }
+  links.push(`<link rel="alternate" hreflang="x-default" href="${siteUrl}${publicLocalePath(defaultLocale, route)}">`);
+  return links.join("\n  ");
 }
 
 function localizeHtml(html, locale, route, messages, { compatibility = false } = {}) {
   const config = localeConfig(locale);
   const $ = load(html, { decodeEntities: false });
-  const localizedRoute = localePath(locale, route);
+  const localizedRoute = publicLocalePath(locale, route);
   const localizedCanonical = `${siteUrl}${localizedRoute}`;
 
   $("html").attr("lang", locale).attr("dir", config.dir);
@@ -150,7 +163,9 @@ function localizeHtml(html, locale, route, messages, { compatibility = false } =
   }
 
   $(".language-switcher").remove();
-  $(".nav-cta").before(languageSwitcher(locale, route));
+  const switcher = languageSwitcher(locale, route);
+  if ($(".nav-cta").length) $(".nav-cta").first().before(switcher);
+  else if ($("header").length) $("header").first().append(switcher);
   $("script[src='/assets/site.js']").before(`<script>window.NUTRANEXA_I18N=${JSON.stringify(runtimeMessages[locale])};</script>`);
   $("[data-i18n-skip]").removeAttr("data-i18n-skip");
   return $.html();
@@ -179,11 +194,15 @@ for (const page of pages) {
 const sitemapEntries = [];
 for (const route of routes) {
   const alternates = [
-    ...locales.map((locale) => `    <xhtml:link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${localePath(locale.code, route)}"/>`),
-    `    <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl}${localePath(defaultLocale, route)}"/>`,
+    ...locales.map((locale) => `    <xhtml:link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${publicLocalePath(locale.code, route)}"/>`),
+    ...(marketRouteSet.has(route) ? [
+      `    <xhtml:link rel="alternate" hreflang="ko" href="${siteUrl}/ko${route}"/>`,
+      `    <xhtml:link rel="alternate" hreflang="tr" href="${siteUrl}/tr${route}"/>`,
+    ] : []),
+    `    <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl}${publicLocalePath(defaultLocale, route)}"/>`,
   ].join("\n");
   for (const locale of locales) {
-    sitemapEntries.push(`  <url>\n    <loc>${siteUrl}${localePath(locale.code, route)}</loc>\n${alternates}\n  </url>`);
+    sitemapEntries.push(`  <url>\n    <loc>${siteUrl}${publicLocalePath(locale.code, route)}</loc>\n${alternates}\n  </url>`);
   }
 }
 

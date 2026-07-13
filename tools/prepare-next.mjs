@@ -19,6 +19,8 @@ const pageDirectories = [
   "resources",
   "thank-you",
   ...locales.map((locale) => locale.code),
+  "ko",
+  "tr",
 ];
 
 await fs.rm(publicDir, { recursive: true, force: true });
@@ -31,7 +33,8 @@ for (const directory of pageDirectories) {
   await fs.cp(path.join(root, directory), path.join(siteDir, directory), { recursive: true });
 }
 
-for (const file of ["robots.txt", "sitemap.xml"]) {
+const rootFiles = await fs.readdir(root);
+for (const file of rootFiles.filter((name) => name === "robots.txt" || /^sitemap(?:-[a-z-]+)?\.xml$/.test(name))) {
   await fs.copyFile(path.join(root, file), path.join(publicDir, file));
 }
 
