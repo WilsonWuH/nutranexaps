@@ -1788,15 +1788,17 @@ function newsCategory(article) {
 
 function newsPage() {
   const sortedNews = [...newsItems].sort((a, b) => b.published.localeCompare(a.published));
-  const latest = sortedNews[0];
-  const categories = [...new Set(sortedNews.map(newsCategory))];
-  const cards = sortedNews.map((item) => `<article class="news-card">
-      <div class="news-meta"><span>${esc(newsCategory(item))}</span><time datetime="${esc(item.published)}">${esc(item.displayDate)}</time></div>
-      <h2><a href="/news/${esc(item.slug)}/">${esc(item.headline)}</a></h2>
-      <p>${esc(item.description)}</p>
-      <a class="news-source-link" href="/news/${esc(item.slug)}/">Read report</a>
+  const cards = sortedNews.map((item) => `<article class="news-brief-card">
+      <a class="news-brief-thumb" href="/news/${esc(item.slug)}/" aria-label="Read ${esc(item.headline)}">
+        <img src="${esc(item.featuredImage)}" alt="${esc(item.featuredAlt)}" width="420" height="260" loading="lazy">
+      </a>
+      <div class="news-brief-content">
+        <div class="news-meta"><span>${esc(newsCategory(item))}</span><time datetime="${esc(item.published)}">${esc(item.displayDate)}</time></div>
+        <h2><a href="/news/${esc(item.slug)}/">${esc(item.headline)}</a></h2>
+        <p>${esc(item.description)}</p>
+        <a class="news-source-link" href="/news/${esc(item.slug)}/">Read full story and sources</a>
+      </div>
     </article>`).join("");
-  const headlineList = sortedNews.slice(0, 10).map((item, index) => `<li><a href="/news/${esc(item.slug)}/"><span>${index + 1}</span>${esc(item.headline)}</a></li>`).join("");
   const itemList = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -1807,22 +1809,11 @@ function newsPage() {
       url: urlFor(`/news/${item.slug}/`),
     })),
   };
-  const body = `<section class="page-hero compact news-hero"><p class="eyebrow">Ingredient intelligence</p><h1>Phosphatidylserine Industry News</h1><p>Source-led reporting on PS product launches, research, regulation, phospholipids, and functional ingredient markets.</p>
+  const body = `<section class="page-hero compact news-hero"><p class="eyebrow">Ingredient news</p><h1>Phosphatidylserine Industry News</h1><p>Short, source-led updates on PS, phospholipids, supplement regulation, research, and functional ingredient markets.</p>
     <div class="news-hero-facts"><span>${sortedNews.length} published report${sortedNews.length === 1 ? "" : "s"}</span><span>Sources listed on every article</span><span>Updated daily</span></div>
   </section>
-  <section class="news-briefing" id="latest">
-    <div class="news-date-band"><span>Latest briefing</span><time datetime="${esc(latest.published)}">${esc(latest.displayDate)}</time></div>
-    <nav class="news-category-tabs" aria-label="News categories"><a href="#latest">Latest</a>${categories.map((category) => `<a href="#archive">${esc(category)}</a>`).join("")}</nav>
-    <div class="news-briefing-grid">
-      <article class="news-featured">
-        <img src="${esc(latest.featuredImage)}" alt="${esc(latest.featuredAlt)}" width="1200" height="1800" loading="eager">
-        <div><p class="eyebrow">${esc(newsCategory(latest))}</p><h2><a href="/news/${esc(latest.slug)}/">${esc(latest.headline)}</a></h2><p>${esc(latest.description)}</p><a class="button primary" href="/news/${esc(latest.slug)}/">Read latest report</a></div>
-      </article>
-      <aside class="news-headline-summary" aria-label="Latest news headlines"><p class="eyebrow">Quick scan</p><h2>Latest headlines</h2><ol>${headlineList}</ol></aside>
-    </div>
-  </section>
-  <section class="news-section" id="archive">${sectionIntro("News archive", "Browse all PS and ingredient reports", "Reports are ordered by publication date. Each article separates factual reporting from its cited sources.")}
-    <div class="news-grid">${cards}</div>
+  <section class="news-section" id="archive">${sectionIntro("News briefs", "Scan titles, summaries, and sources quickly", "Each brief links to a full article with sectioned details and source links for verification.")}
+    <div class="news-brief-list">${cards}</div>
   </section>
   <section class="cta-band"><div><p class="eyebrow">Product sourcing</p><h2>Need PS specifications behind a market project?</h2><p>Share the source, target assay, application, annual quantity, and required documents with Nutranexa sales.</p></div><a class="button light" href="/contact/">Contact Sales</a></section>`;
   return layout({
