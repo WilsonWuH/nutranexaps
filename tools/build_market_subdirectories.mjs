@@ -20,6 +20,10 @@ function pageFile(locale, route) {
   return path.join(root, locale, ...parts, "index.html");
 }
 
+function whatsappButton() {
+  return `<a class="whatsapp-float" href="https://wa.me/${company.whatsapp.replace(/\D/g, "")}" target="_blank" rel="noopener noreferrer" aria-label="Contact Nutranexa on WhatsApp"><span>WhatsApp</span><strong>${esc(company.whatsapp)}</strong></a>`;
+}
+
 function alternateLinks(page) {
   const links = ["ko", "tr"].map((locale) => `<link rel="alternate" hreflang="${locale}" href="${canonical(locale, page.route)}">`);
   const englishRoute = englishRouteMap.get(page.route);
@@ -147,7 +151,7 @@ function pageBody(site, page) {
 }
 
 function render(site, page) {
-  return `<!doctype html><html lang="${site.locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(page.title)}</title><meta name="description" content="${esc(page.description)}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical(site.locale, page.route)}">${alternateLinks(page)}<meta property="og:title" content="${esc(page.title)}"><meta property="og:description" content="${esc(page.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical(site.locale, page.route)}"><meta property="og:locale" content="${site.ogLocale}"><meta property="og:image" content="${siteOrigin}/assets/images/${page.image || "hero-ps-ingredients.webp"}"><link rel="icon" href="/assets/images/logo-nutranexa-icon.png"><link rel="stylesheet" href="/assets/market.css">${schema(site, page)}<!-- TODO: Add Naver Search Advisor verification meta after the client provides the token. --></head><body data-page-language="${site.locale}" data-page-locale="${site.locale}">${header(site, page)}<main id="main">${pageBody(site, page)}</main>${footer(site)}<script src="/assets/market.js" defer></script></body></html>`;
+  return `<!doctype html><html lang="${site.locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(page.title)}</title><meta name="description" content="${esc(page.description)}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical(site.locale, page.route)}">${alternateLinks(page)}<meta property="og:title" content="${esc(page.title)}"><meta property="og:description" content="${esc(page.description)}"><meta property="og:type" content="website"><meta property="og:url" content="${canonical(site.locale, page.route)}"><meta property="og:locale" content="${site.ogLocale}"><meta property="og:image" content="${siteOrigin}/assets/images/${page.image || "hero-ps-ingredients.webp"}"><link rel="icon" href="/assets/images/logo-nutranexa-icon.png"><link rel="stylesheet" href="/assets/market.css">${schema(site, page)}<!-- TODO: Add Naver Search Advisor verification meta after the client provides the token. --></head><body data-page-language="${site.locale}" data-page-locale="${site.locale}">${header(site, page)}<main id="main">${pageBody(site, page)}</main>${footer(site)}${whatsappButton()}<script src="/assets/market.js" defer></script></body></html>`;
 }
 
 async function writeSites() {

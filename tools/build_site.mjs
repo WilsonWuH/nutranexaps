@@ -9,6 +9,10 @@ const whatsapp = "+8613645700210";
 const address = "Yunhe West Road, Shizilou District, Yanggu County, Liaocheng City, Shandong Province, P.R. China";
 const newsItems = JSON.parse(await fs.readFile(path.join(root, "content", "news.json"), "utf8"));
 
+function whatsappButton() {
+  return `<a class="whatsapp-float" href="https://wa.me/${whatsapp.replace(/\D/g, "")}" target="_blank" rel="noopener noreferrer" aria-label="Contact Nutranexa on WhatsApp"><span>WhatsApp</span><strong>${whatsapp}</strong></a>`;
+}
+
 const nav = [
   ["Home", "/"],
   ["Products", "/products/"],
@@ -972,6 +976,7 @@ function layout({ title, description, route, body, schema = [], image = "/assets
   </header>
   <main id="main">${body}</main>
   ${footer()}
+  ${whatsappButton()}
   <script src="/assets/site.js" defer></script>
 </body>
 </html>`;
@@ -1002,10 +1007,12 @@ function plainNewsArticleLayout({ title, description, route, body, schema = [], 
   <meta name="twitter:description" content="${esc(description)}">
   <meta name="twitter:image" content="${siteUrl}${image}">
   <link rel="icon" href="/assets/images/logo-nutranexa-icon.png">
+  <link rel="stylesheet" href="/assets/styles.css">
   <script type="application/ld+json">${JSON.stringify(allSchema)}</script>
 </head>
 <body>
 ${body}
+${whatsappButton()}
 </body>
 </html>`;
 }
@@ -1816,7 +1823,6 @@ function newsPage() {
 
 function newsArticlePage(article) {
   const route = `/news/${article.slug}/`;
-  const toc = article.sections.map((section) => `<li><a href="#${esc(section.id)}">${esc(section.heading)}</a></li>`).join("");
   const sections = article.sections.map((section) => `<section id="${esc(section.id)}"><h2>${esc(section.heading)}</h2>${section.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}</section>`).join("");
   const sources = article.sources.map((source) => `<li><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title)}</a></li>`).join("");
   const schema = {
@@ -1836,27 +1842,25 @@ function newsArticlePage(article) {
     },
     mainEntityOfPage: urlFor(route),
   };
-  const body = `<article>
-  <p><a href="/news/">Back to News</a></p>
-  <header>
+  const body = `<article class="news-article simple-news-article">
+  <header class="news-article-header">
+    <a class="news-back-link" href="/news/">Back to News</a>
+    <p class="eyebrow">Ingredient news</p>
     <h1>${esc(article.headline)}</h1>
-    <p>By ${esc(article.byline)} | <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p>
-    <p>${esc(article.description)}</p>
+    <p class="news-byline">By ${esc(article.byline)} <span>/</span> <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p>
+    <p class="news-deck">${esc(article.description)}</p>
   </header>
-  <figure>
-    <img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="300" height="450" loading="eager">
+  <figure class="news-article-figure">
+    <img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="1200" height="800" loading="eager">
     <figcaption><a href="${esc(article.imageCreditUrl)}" target="_blank" rel="noopener noreferrer">${esc(article.imageCredit)}</a></figcaption>
   </figure>
-  <nav aria-label="Table of contents">
-    <h2>Table of Contents</h2>
-    <ul>${toc}<li><a href="#sources">Sources</a></li></ul>
-  </nav>
+  <div class="news-article-body">
   ${sections}
-  <section id="sources">
+  <section class="news-sources" id="sources">
     <h2>Sources</h2>
     <ul>${sources}</ul>
   </section>
-  <p>This report summarizes cited public information. Third-party products and organizations do not endorse Nutranexa.</p>
+  </div>
 </article>`;
   return plainNewsArticleLayout({
     title: `${article.headline} | Nutranexa News`,
