@@ -982,7 +982,7 @@ function layout({ title, description, route, body, schema = [], image = "/assets
 </html>`;
 }
 
-function plainNewsArticleLayout({ title, description, route, body, schema = [], image }) {
+function plainNewsArticleLayout({ title, description, route, body, schema = [], image, imageAlt = "" }) {
   const canonical = urlFor(route);
   const allSchema = [organizationJson(), websiteJson(), ...schema];
   return `<!doctype html>
@@ -1000,19 +1000,19 @@ function plainNewsArticleLayout({ title, description, route, body, schema = [], 
   <meta property="og:type" content="article">
   <meta property="og:url" content="${canonical}">
   <meta property="og:image" content="${siteUrl}${image}">
+  <meta property="og:image:alt" content="${esc(imageAlt)}">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="1800">
+  <meta property="og:image:height" content="800">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(description)}">
   <meta name="twitter:image" content="${siteUrl}${image}">
+  <meta name="twitter:image:alt" content="${esc(imageAlt)}">
   <link rel="icon" href="/assets/images/logo-nutranexa-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css">
   <script type="application/ld+json">${JSON.stringify(allSchema)}</script>
 </head>
 <body>
 ${body}
-${whatsappButton()}
 </body>
 </html>`;
 }
@@ -1798,7 +1798,7 @@ function newsPage() {
   const itemList = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    itemListElement: newsItems.map((item, index) => ({
+    itemListElement: sortedNews.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: item.headline,
@@ -1822,6 +1822,10 @@ function newsPage() {
 }
 
 function newsArticlePage(article) {
+  const toc = article.sections
+    .map((section) => `<li><a href="#${esc(section.id)}">${esc(section.heading)}</a></li>`)
+    .concat('<li><a href="#sources">Sources</a></li>')
+    .join("");
   const route = `/news/${article.slug}/`;
   const sections = article.sections.map((section) => `<section id="${esc(section.id)}"><h2>${esc(section.heading)}</h2>${section.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}</section>`).join("");
   const sources = article.sources.map((source) => `<li><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title)}</a></li>`).join("");
@@ -1838,25 +1842,29 @@ function newsArticlePage(article) {
       "@type": "ImageObject",
       url: `${siteUrl}${article.featuredImage}`,
       width: 1200,
-      height: 1800,
+      height: 800,
     },
     mainEntityOfPage: urlFor(route),
   };
-  const body = `<article class="news-article simple-news-article">
-  <header class="news-article-header">
-    <a class="news-back-link" href="/news/">Back to News</a>
-    <p class="eyebrow">Ingredient news</p>
+  const body = `<article>
+  <header>
+    <p><a href="/news/">Back to News</a></p>
+    <p>Ingredient news</p>
     <h1>${esc(article.headline)}</h1>
-    <p class="news-byline">By ${esc(article.byline)} <span>/</span> <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p>
-    <p class="news-deck">${esc(article.description)}</p>
+    <p>By ${esc(article.byline)} / <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p>
+    <p>${esc(article.description)}</p>
   </header>
-  <figure class="news-article-figure">
-    <img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="1200" height="800" loading="eager">
-    <figcaption><a href="${esc(article.imageCreditUrl)}" target="_blank" rel="noopener noreferrer">${esc(article.imageCredit)}</a></figcaption>
-  </figure>
-  <div class="news-article-body">
+  <p>
+    <img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="372" height="248" loading="eager">
+  </p>
+  <p><a href="${esc(article.imageCreditUrl)}" target="_blank" rel="noopener noreferrer">${esc(article.imageCredit)}</a></p>
+  <nav aria-labelledby="table-of-contents">
+    <h2 id="table-of-contents">Table of Contents</h2>
+    <ul>${toc}</ul>
+  </nav>
+  <div>
   ${sections}
-  <section class="news-sources" id="sources">
+  <section id="sources">
     <h2>Sources</h2>
     <ul>${sources}</ul>
   </section>
@@ -1867,6 +1875,7 @@ function newsArticlePage(article) {
     description: article.description,
     route,
     image: article.featuredImage,
+    imageAlt: article.featuredAlt,
     schema: [breadcrumbJson([["Home", "/"], ["News", "/news/"], [article.headline, route]]), schema],
     body,
   });

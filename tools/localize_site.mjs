@@ -163,9 +163,12 @@ function localizeHtml(html, locale, route, messages, { compatibility = false } =
   }
 
   $(".language-switcher").remove();
-  const switcher = languageSwitcher(locale, route);
-  if ($(".nav-cta").length) $(".nav-cta").first().before(switcher);
-  else if ($("header").length) $("header").first().append(switcher);
+  const isPlainNewsArticle = route.startsWith("/news/") && route !== "/news/";
+  if (!isPlainNewsArticle) {
+    const switcher = languageSwitcher(locale, route);
+    if ($(".nav-cta").length) $(".nav-cta").first().before(switcher);
+    else if ($("header").length) $("header").first().append(switcher);
+  }
   $("script[src='/assets/site.js']").before(`<script>window.NUTRANEXA_I18N=${JSON.stringify(runtimeMessages[locale])};</script>`);
   $("[data-i18n-skip]").removeAttr("data-i18n-skip");
   return $.html();
