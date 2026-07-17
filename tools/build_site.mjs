@@ -559,6 +559,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-gmo-statement-us-eu": "Cross-border phosphatidylserine GMO statement review with soy and sunflower source samples, blank declaration cards, and a sealed 25 kilogram drum in a procurement office",
   "phosphatidylserine-canada-nhp-vs-supplemented-food": "Canadian phosphatidylserine route review showing a capsule bottle dossier beside a supplemented-food can mockup, soy sample dish, and blank compliance cards on a regulatory desk",
   "phosphatidylserine-shelf-life-storage-review-us-eu": "Cross-border phosphatidylserine shelf-life review with a sealed 25 kilogram drum, temperature logger, humidity monitor, pallet wrap sample, and blank storage-control cards in a warehouse office",
+  "phosphatidylserine-irradiation-statement-us-eu": "Cross-border phosphatidylserine irradiation-status review with a sealed 25 kilogram drum, amber dosimeter tags, blank compliance cards, and QA reviewers in a daylight technical office",
 };
 
 const promotedSeoTitles = {
@@ -693,7 +694,18 @@ function extractResourceFaqs(markdown) {
 
 async function loadPromotedArticles() {
   const directory = path.join(root, "content", "resources");
-  const names = (await fs.readdir(directory)).filter((name) => name.endsWith(".md")).sort().reverse();
+  const entries = (await fs.readdir(directory))
+    .filter((name) => name.endsWith(".md"))
+    .map(async (name) => ({ name, stat: await fs.stat(path.join(directory, name)) }));
+  const names = (await Promise.all(entries))
+    .sort((a, b) => {
+      const dateCompare = b.name.slice(0, 10).localeCompare(a.name.slice(0, 10));
+      if (dateCompare !== 0) return dateCompare;
+      const mtimeCompare = b.stat.mtimeMs - a.stat.mtimeMs;
+      if (mtimeCompare !== 0) return mtimeCompare;
+      return b.name.localeCompare(a.name);
+    })
+    .map(({ name }) => name);
   return Promise.all(names.map(async (name) => {
     const markdown = await fs.readFile(path.join(directory, name), "utf8");
     const route = metaValue(markdown, "URL Slug");
