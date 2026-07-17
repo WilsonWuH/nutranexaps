@@ -1012,7 +1012,9 @@ function plainNewsArticleLayout({ title, description, route, body, schema = [], 
   <script type="application/ld+json">${JSON.stringify(allSchema)}</script>
 </head>
 <body>
+<main>
 ${body}
+</main>
 </body>
 </html>`;
 }
@@ -1851,24 +1853,20 @@ function newsArticlePage(article) {
     <p><a href="/news/">Back to News</a></p>
     <p>Ingredient news</p>
     <h1>${esc(article.headline)}</h1>
-    <p>By ${esc(article.byline)} / <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p>
+    <p>By ${esc(article.byline)} | <time datetime="${esc(article.published)}">${esc(article.displayDate)}</time></p>
     <p>${esc(article.description)}</p>
   </header>
-  <p>
-    <img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="372" height="248" loading="eager">
-  </p>
+  <p><img src="${esc(article.featuredImage)}" alt="${esc(article.featuredAlt)}" width="360" height="240" loading="eager"></p>
   <p><a href="${esc(article.imageCreditUrl)}" target="_blank" rel="noopener noreferrer">${esc(article.imageCredit)}</a></p>
-  <nav aria-labelledby="table-of-contents">
-    <h2 id="table-of-contents">Table of Contents</h2>
+  <nav aria-label="Table of contents">
+    <h2>Table of contents</h2>
     <ul>${toc}</ul>
   </nav>
-  <div>
   ${sections}
   <section id="sources">
     <h2>Sources</h2>
     <ul>${sources}</ul>
   </section>
-  </div>
 </article>`;
   return plainNewsArticleLayout({
     title: `${article.headline} | Nutranexa News`,
