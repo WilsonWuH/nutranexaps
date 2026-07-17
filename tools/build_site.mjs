@@ -560,6 +560,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-canada-nhp-vs-supplemented-food": "Canadian phosphatidylserine route review showing a capsule bottle dossier beside a supplemented-food can mockup, soy sample dish, and blank compliance cards on a regulatory desk",
   "phosphatidylserine-shelf-life-storage-review-us-eu": "Cross-border phosphatidylserine shelf-life review with a sealed 25 kilogram drum, temperature logger, humidity monitor, pallet wrap sample, and blank storage-control cards in a warehouse office",
   "phosphatidylserine-irradiation-statement-us-eu": "Cross-border phosphatidylserine irradiation-status review with a sealed 25 kilogram drum, amber dosimeter tags, blank compliance cards, and QA reviewers in a daylight technical office",
+  "phosphatidylserine-proposition-65-statement-us": "California-facing phosphatidylserine compliance review with a sealed 25 kilogram drum, elemental-analysis display, amber supplement bottle mockup, and QA-procurement team aligning exposure assumptions in a daylight office",
 };
 
 const promotedSeoTitles = {
@@ -586,6 +587,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-allergen-statement-us-eu": "Phosphatidylserine Allergen Statement Checklist | Nutranexa",
   "phosphatidylserine-canada-nhp-vs-supplemented-food": "Phosphatidylserine Canada Checklist: NHP vs Supplemented Food | Nutranexa",
   "phosphatidylserine-shelf-life-storage-review-us-eu": "PS Shelf-Life & Storage Review | Nutranexa",
+  "phosphatidylserine-proposition-65-statement-us": "PS Proposition 65 Statement Review for US Brands | Nutranexa",
 };
 
 function conciseMeta(value) {
