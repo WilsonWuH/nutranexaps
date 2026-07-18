@@ -562,6 +562,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-irradiation-statement-us-eu": "Cross-border phosphatidylserine irradiation-status review with a sealed 25 kilogram drum, amber dosimeter tags, blank compliance cards, and QA reviewers in a daylight technical office",
   "phosphatidylserine-proposition-65-statement-us": "California-facing phosphatidylserine compliance review with a sealed 25 kilogram drum, elemental-analysis display, amber supplement bottle mockup, and QA-procurement team aligning exposure assumptions in a daylight office",
   "phosphatidylserine-gluten-free-statement-us-eu": "Cross-border phosphatidylserine gluten-free review with a sealed 25 kilogram drum, a phosphatidylserine powder dish, wheat and barley grain cues kept outside the approval area, and blank QA cards in a daylight technical office",
+  "phosphatidylserine-supplement-facts-label-us": "U.S. supplement label review with a blank amber bottle, clean Supplement Facts layout placeholder, soy and sunflower route cues, a phosphatidylserine powder dish, and a sealed drum edge in a daylight regulatory office",
 };
 
 const promotedSeoTitles = {
@@ -590,6 +591,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-shelf-life-storage-review-us-eu": "PS Shelf-Life & Storage Review | Nutranexa",
   "phosphatidylserine-proposition-65-statement-us": "PS Proposition 65 Statement Review for US Brands | Nutranexa",
   "phosphatidylserine-gluten-free-statement-us-eu": "PS Gluten-Free Statement Review | Nutranexa",
+  "phosphatidylserine-supplement-facts-label-us": "PS Supplement Facts Label Review for US Brands | Nutranexa",
 };
 
 function conciseMeta(value) {
