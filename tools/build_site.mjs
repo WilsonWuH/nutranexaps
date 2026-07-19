@@ -563,6 +563,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-proposition-65-statement-us": "California-facing phosphatidylserine compliance review with a sealed 25 kilogram drum, elemental-analysis display, amber supplement bottle mockup, and QA-procurement team aligning exposure assumptions in a daylight office",
   "phosphatidylserine-gluten-free-statement-us-eu": "Cross-border phosphatidylserine gluten-free review with a sealed 25 kilogram drum, a phosphatidylserine powder dish, wheat and barley grain cues kept outside the approval area, and blank QA cards in a daylight technical office",
   "phosphatidylserine-supplement-facts-label-us": "U.S. supplement label review with a blank amber bottle, clean Supplement Facts layout placeholder, soy and sunflower route cues, a phosphatidylserine powder dish, and a sealed drum edge in a daylight regulatory office",
+  "phosphatidylserine-sds-review-us-eu": "Cross-border phosphatidylserine SDS review at a warehouse handoff desk with a sealed 25 kilogram drum, white powder dish, blank section-divider tabs, barcode scanner, safety glasses, and a soft-focus loading bay",
 };
 
 const promotedSeoTitles = {
@@ -592,6 +593,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-proposition-65-statement-us": "PS Proposition 65 Statement Review for US Brands | Nutranexa",
   "phosphatidylserine-gluten-free-statement-us-eu": "PS Gluten-Free Statement Review | Nutranexa",
   "phosphatidylserine-supplement-facts-label-us": "PS Supplement Facts Label Review for US Brands | Nutranexa",
+  "phosphatidylserine-sds-review-us-eu": "PS SDS Review for US and EU Buyers | Nutranexa",
 };
 
 function conciseMeta(value) {
