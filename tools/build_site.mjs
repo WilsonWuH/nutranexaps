@@ -1328,12 +1328,35 @@ function articleSeoTitle(article) {
 }
 
 function homePage() {
+  const claimIcons = [
+    ["GMP", "/assets/images/claims/claim-gmp.webp"],
+    ["Kosher", "/assets/images/claims/claim-kosher.webp"],
+    ["Halal", "/assets/images/claims/claim-halal.webp"],
+    ["ISO", "/assets/images/claims/claim-iso.webp"],
+    ["FDA", "/assets/images/claims/claim-fda.webp"],
+    ["FSSC 22000", "/assets/images/claims/claim-fssc-22000.webp"],
+    ["Heavy Metals Compliant", "/assets/images/claims/claim-heavy-metals.webp"],
+    ["US Big 9 / EU 14 Allergens", "/assets/images/claims/claim-allergens.webp"],
+  ];
+  const claimIconItems = claimIcons
+    .map(([label, image]) => `<li class="claim-icon-card"><img src="${image}" alt="" width="160" height="160" loading="eager"><span>${esc(label)}</span></li>`)
+    .join("");
+  const claimIconMarquee = `<section class="claim-marquee" aria-labelledby="claim-marquee-title">
+    <div class="claim-marquee-intro"><p class="eyebrow">Quality &amp; compliance</p><h2 id="claim-marquee-title">Selected certification and product-assurance references</h2><p>Current certificate validity, scope, and product applicability should be confirmed before purchase or shipment.</p></div>
+    <div class="claim-marquee-window">
+      <div class="claim-marquee-track">
+        <ul class="claim-icon-list">${claimIconItems}</ul>
+        <ul class="claim-icon-list" aria-hidden="true">${claimIconItems}</ul>
+      </div>
+    </div>
+  </section>`;
   const body = `${hero({
     eyebrow: "Phosphatidylserine and functional food ingredients",
     title: "Phosphatidylserine Manufacturer for Global Ingredient Buyers",
     text: "Source phosphatidylserine and related functional food ingredients from Nutranexa, a biotechnology manufacturer serving ingredient buyers primarily in Europe and North America.",
     image: "/assets/images/brand-product-lab.webp",
   })}
+  ${claimIconMarquee}
   ${psBenefitsSection("home")}
   ${sourceSelectorSection()}
   <section>${sectionIntro("Core products", "Phosphatidylserine and related food ingredients", "Compare source options, application fit, available documents, and quotation requirements before selecting an ingredient.")}
