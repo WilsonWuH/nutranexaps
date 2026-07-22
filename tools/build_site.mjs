@@ -564,6 +564,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-gluten-free-statement-us-eu": "Cross-border phosphatidylserine gluten-free review with a sealed 25 kilogram drum, a phosphatidylserine powder dish, wheat and barley grain cues kept outside the approval area, and blank QA cards in a daylight technical office",
   "phosphatidylserine-supplement-facts-label-us": "U.S. supplement label review with a blank amber bottle, clean Supplement Facts layout placeholder, soy and sunflower route cues, a phosphatidylserine powder dish, and a sealed drum edge in a daylight regulatory office",
   "phosphatidylserine-sds-review-us-eu": "Cross-border phosphatidylserine SDS review at a warehouse handoff desk with a sealed 25 kilogram drum, white powder dish, blank section-divider tabs, barcode scanner, safety glasses, and a soft-focus loading bay",
+  "phosphatidylserine-eu-customs-clearance-checklist": "European phosphatidylserine customs-clearance preparation with a sealed 25 kilogram drum, powder and source samples, barcode scanner, scale, and a visual classification-to-import-control route board beside a morning container terminal",
 };
 
 const promotedSeoTitles = {
