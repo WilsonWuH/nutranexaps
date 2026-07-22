@@ -1046,6 +1046,104 @@ html[dir="rtl"] .proof-strip dt {
   color: var(--muted);
 }
 
+.claim-marquee {
+  overflow: hidden;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(13, 107, 67, 0.08), transparent 28%),
+    #ffffff;
+}
+
+.claim-marquee-intro {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(420px, 1.4fr);
+  column-gap: 54px;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+.claim-marquee-intro .eyebrow {
+  grid-column: 1 / -1;
+}
+
+.claim-marquee-intro h2 {
+  max-width: 680px;
+  margin: 0;
+  font-size: clamp(1.65rem, 2.8vw, 2.7rem);
+  line-height: 1.15;
+}
+
+.claim-marquee-intro > p:last-child {
+  max-width: 660px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.claim-marquee-window {
+  width: calc(100% + 12vw);
+  margin-left: -6vw;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+}
+
+.claim-marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: claim-marquee-scroll 34s linear infinite;
+}
+
+.claim-marquee-window:hover .claim-marquee-track,
+.claim-marquee-window:focus-within .claim-marquee-track {
+  animation-play-state: paused;
+}
+
+.claim-icon-list {
+  display: flex;
+  flex: none;
+  gap: 18px;
+  margin: 0;
+  padding: 0 18px 0 0;
+  list-style: none;
+}
+
+.claim-icon-card {
+  display: grid;
+  grid-template-rows: 118px auto;
+  place-items: center;
+  width: 184px;
+  min-height: 174px;
+  padding: 15px 14px 13px;
+  border: 1px solid rgba(13, 107, 67, 0.16);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12px 34px rgba(8, 42, 29, 0.08);
+}
+
+.claim-icon-card img {
+  display: block;
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+}
+
+.claim-icon-card span {
+  color: var(--deep);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+}
+
+@keyframes claim-marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .quick-answer {
   margin: 64px 6vw 0;
   padding: 34px;
@@ -2554,6 +2652,32 @@ textarea {
     font-size: 1rem;
   }
 
+  .claim-marquee {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .claim-marquee-intro {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .claim-marquee-window {
+    width: calc(100% + 10vw);
+    margin-left: -5vw;
+  }
+
+  .claim-icon-card {
+    grid-template-rows: 94px auto;
+    width: 154px;
+    min-height: 148px;
+  }
+
+  .claim-icon-card img {
+    width: 90px;
+    height: 90px;
+  }
+
   .eyebrow {
     font-size: 0.72rem;
     letter-spacing: 0.04em;
@@ -2657,6 +2781,22 @@ textarea {
   .cta-band {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .claim-marquee-track {
+    animation: none;
+  }
+
+  .claim-marquee-window {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .claim-icon-list[aria-hidden="true"] {
+    display: none;
   }
 }
 
