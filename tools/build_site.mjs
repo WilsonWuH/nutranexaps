@@ -565,6 +565,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-supplement-facts-label-us": "U.S. supplement label review with a blank amber bottle, clean Supplement Facts layout placeholder, soy and sunflower route cues, a phosphatidylserine powder dish, and a sealed drum edge in a daylight regulatory office",
   "phosphatidylserine-sds-review-us-eu": "Cross-border phosphatidylserine SDS review at a warehouse handoff desk with a sealed 25 kilogram drum, white powder dish, blank section-divider tabs, barcode scanner, safety glasses, and a soft-focus loading bay",
   "phosphatidylserine-eu-customs-clearance-checklist": "European phosphatidylserine customs-clearance preparation with a sealed 25 kilogram drum, powder and source samples, barcode scanner, scale, and a visual classification-to-import-control route board beside a morning container terminal",
+  "phosphatidylserine-health-claims-europe": "European supplement regulatory and formulation team reviewing health-claim placement on blank phosphatidylserine packaging with green, amber, and red decision tiles in a morning design studio",
 };
 
 const promotedSeoTitles = {
@@ -595,6 +596,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-gluten-free-statement-us-eu": "PS Gluten-Free Statement Review | Nutranexa",
   "phosphatidylserine-supplement-facts-label-us": "PS Supplement Facts Label Review for US Brands | Nutranexa",
   "phosphatidylserine-sds-review-us-eu": "PS SDS Review for US and EU Buyers | Nutranexa",
+  "phosphatidylserine-health-claims-europe": "Phosphatidylserine Health Claims Europe | Nutranexa",
 };
 
 function conciseMeta(value) {
