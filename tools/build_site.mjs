@@ -568,6 +568,12 @@ const promotedArticleVisuals = {
   "phosphatidylserine-health-claims-europe": "European supplement regulatory and formulation team reviewing health-claim placement on blank phosphatidylserine packaging with green, amber, and red decision tiles in a morning design studio",
   "phosphatidylserine-ndi-review-us": "U.S. supplement premarket review desk with a sealed 25 kilogram phosphatidylserine drum, soy and sunflower source trays, a powder dish, three blank evidence lanes, and an abstract 75-day launch timeline in late-afternoon light",
   "phosphatidylserine-dioxin-pcb-testing-europe": "Representative phosphatidylserine lot sampling with three powder increments, a composite amber sample jar, analytical vials, and confirmatory dioxin and PCB laboratory instrumentation",
+  "phosphatidylserine-pesticide-residue-review-europe": "European phosphatidylserine pesticide-residue review with separate soy and sunflower source trays, a PS powder sample, multi-residue vials, and blank release-decision cards",
+  "soluble-soybean-polysaccharide-acidified-beverage-pilot": "Acidified protein beverage pilot with four stability samples, soluble soybean polysaccharide powder, a homogenizer, pH probe, and centrifuge tubes",
+  "phosphatidylserine-fsvp-importer-checklist-us": "U.S. phosphatidylserine FSVP review with a sealed ingredient drum, PS powder, a supplier-to-entry workflow, barcode scanner, and blank hazard cards",
+  "phosphatidylserine-pah-testing-europe": "European phosphatidylserine PAH review with an amber-glass powder sample, foil-wrapped retain, four analytical vials, and chromatography equipment",
+  "phosphatidylserine-flowability-blend-uniformity-pilot": "Phosphatidylserine capsule-production pilot with a powder flow funnel, three spatial blend samples, a scale, scoop, and capsule filling plate",
+  "phosphatidylserine-gras-scope-review-us": "U.S. phosphatidylserine GRAS scope review with soy and sunflower sources, PS powder, blank scope tiles, and unbranded beverage, bar, and cereal prototypes",
 };
 
 const promotedSeoTitles = {
@@ -601,6 +607,12 @@ const promotedSeoTitles = {
   "phosphatidylserine-health-claims-europe": "Phosphatidylserine Health Claims Europe | Nutranexa",
   "phosphatidylserine-ndi-review-us": "Phosphatidylserine NDI Review for US Supplement Brands | Nutranexa",
   "phosphatidylserine-dioxin-pcb-testing-europe": "PS Dioxin & PCB Testing for Europe | Nutranexa",
+  "phosphatidylserine-pesticide-residue-review-europe": "PS Pesticide Residue Review Europe | Nutranexa",
+  "soluble-soybean-polysaccharide-acidified-beverage-pilot": "SSPS Acidified Beverage Pilot Guide | Nutranexa",
+  "phosphatidylserine-fsvp-importer-checklist-us": "PS FSVP Importer Checklist for the US | Nutranexa",
+  "phosphatidylserine-pah-testing-europe": "PS PAH Testing for Europe | Nutranexa",
+  "phosphatidylserine-flowability-blend-uniformity-pilot": "PS Flow & Blend Uniformity Pilot | Nutranexa",
+  "phosphatidylserine-gras-scope-review-us": "PS GRAS Scope Review for US Foods | Nutranexa",
 };
 
 function conciseMeta(value) {
