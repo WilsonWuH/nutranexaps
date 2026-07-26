@@ -3,6 +3,7 @@
 ## Publishing Note
 
 - Date: 2026-07-26
+- Published At: 2026-07-26T10:59:00Z
 - Automation: Nutranexa SEO Publish 1 - Europe Morning
 - Content goal: Publish one English B2B SEO/GEO/AIO resource for European supplement manufacturers, contract manufacturers, formulation teams, procurement teams, and quality teams that need to convert a phosphatidylserine ingredient assay into a controlled production-batch input.
 - Topic selection note: This is the day's first distinct European topic. Existing resources cover COA review, supplier qualification, Supplement Facts, European health claims, flowability and blend-uniformity pilots, sample approval, and contract-manufacturer handoff. None provides an assay-to-batch mass-balance workflow that connects the exact PS source, specification basis, current lot evidence, label declaration, process adjustment, finished-product testing, and reconciliation.

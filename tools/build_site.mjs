@@ -727,18 +727,22 @@ async function loadPromotedArticles() {
   const directory = path.join(root, "content", "resources");
   const entries = (await fs.readdir(directory))
     .filter((name) => name.endsWith(".md"))
-    .map(async (name) => ({ name, stat: await fs.stat(path.join(directory, name)) }));
+    .map(async (name) => {
+      const markdown = await fs.readFile(path.join(directory, name), "utf8");
+      return {
+        name,
+        markdown,
+        publishedAt: metaValue(markdown, "Published At") || `${name.slice(0, 10)}T00:00:00Z`,
+      };
+    });
   const names = (await Promise.all(entries))
     .sort((a, b) => {
-      const dateCompare = b.name.slice(0, 10).localeCompare(a.name.slice(0, 10));
-      if (dateCompare !== 0) return dateCompare;
-      const mtimeCompare = b.stat.mtimeMs - a.stat.mtimeMs;
-      if (mtimeCompare !== 0) return mtimeCompare;
+      const publishedCompare = b.publishedAt.localeCompare(a.publishedAt);
+      if (publishedCompare !== 0) return publishedCompare;
       return b.name.localeCompare(a.name);
     })
-    .map(({ name }) => name);
-  return Promise.all(names.map(async (name) => {
-    const markdown = await fs.readFile(path.join(directory, name), "utf8");
+    .map(({ name, markdown }) => ({ name, markdown }));
+  return Promise.all(names.map(async ({ name, markdown }) => {
     const route = metaValue(markdown, "URL Slug");
     const slug = route.replace(/^\/resources\//, "").replace(/\/$/, "");
     const title = metaValue(markdown, "H1") || metaValue(markdown, "SEO Title");
