@@ -575,6 +575,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-flowability-blend-uniformity-pilot": "Phosphatidylserine capsule-production pilot with a powder flow funnel, three spatial blend samples, a scale, scoop, and capsule filling plate",
   "phosphatidylserine-gras-scope-review-us": "U.S. phosphatidylserine GRAS scope review with soy and sunflower sources, PS powder, blank scope tiles, and unbranded beverage, bar, and cereal prototypes",
   "phosphatidylserine-customer-questionnaire-control-us-canada": "North American phosphatidylserine questionnaire-control desk with a sealed 25 kilogram drum edge, PS powder dish, soy and sunflower source trays, blank answer cards, barcode labels, and separate QA, regulatory, and sales folders",
+  "phosphatidylserine-assay-batch-calculation-europe": "Top-down European supplement formulation bench showing two phosphatidylserine powder quantities, a blank precision scale, mass-balance tiles, a mixing vessel, and a capsule-filling tray",
 };
 
 const promotedSeoTitles = {
@@ -615,6 +616,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-flowability-blend-uniformity-pilot": "PS Flow & Blend Uniformity Pilot | Nutranexa",
   "phosphatidylserine-gras-scope-review-us": "PS GRAS Scope Review for US Foods | Nutranexa",
   "phosphatidylserine-customer-questionnaire-control-us-canada": "PS Customer Questionnaire Control for US and Canada Buyers | Nutranexa",
+  "phosphatidylserine-assay-batch-calculation-europe": "PS Assay-to-Batch Calculation for Europe | Nutranexa",
 };
 
 function conciseMeta(value) {
