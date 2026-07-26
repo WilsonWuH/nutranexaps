@@ -90,6 +90,11 @@ export async function POST(request) {
     });
     const result = await upstream.json().catch(() => ({}));
     if (!upstream.ok || String(result.success) !== "true") {
+      console.warn("Inquiry delivery rejected", {
+        status: upstream.status,
+        success: String(result.success ?? ""),
+        message: clean(result.message, 300),
+      });
       return Response.json({ success: false, error: "delivery_failed" }, { status: 502 });
     }
     return Response.json({ success: true });
