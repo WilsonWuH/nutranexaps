@@ -154,17 +154,21 @@ document.querySelectorAll(".quote-form").forEach((form) => {
       name: data.Name || "Website visitor",
       email: data.Email || "",
       message: data.Message || "No additional message provided.",
+      _subject: `[Nutranexa B2B Inquiry] ${data["Product Interest"] || data.Interest || data.Application || "PS ingredient request"} - ${data.Name || "Website visitor"}`,
+      _template: "table",
+      _captcha: "false",
+      _url: window.location.href,
     };
 
     try {
-      const response = await fetch("/api/inquiry", {
+      const response = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
       });
       const result = await response.json().catch(() => ({}));
 
-      if (!response.ok || result.success !== true) {
+      if (!response.ok || String(result.success) !== "true") {
         throw new Error(uiMessages.sendError);
       }
 
