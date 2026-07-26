@@ -17,6 +17,7 @@ const pageDirectories = [
   "products",
   "quality-rd",
   "resources",
+  "science",
   "thank-you",
   ...locales.map((locale) => locale.code),
   "ko",

@@ -4,10 +4,10 @@ import path from "node:path";
 const root = path.resolve(".");
 const siteUrl = "https://nutranexaps.com";
 const phone = "400-138-0635";
-const salesEmail = "wh1007209170@gmail.com";
 const whatsapp = "+8613645700210";
 const address = "Yunhe West Road, Shizilou District, Yanggu County, Liaocheng City, Shandong Province, P.R. China";
 const newsItems = JSON.parse(await fs.readFile(path.join(root, "content", "news.json"), "utf8"));
+const researchItems = JSON.parse(await fs.readFile(path.join(root, "content", "research.json"), "utf8"));
 
 function whatsappButton() {
   return `<a class="whatsapp-float" href="https://wa.me/${whatsapp.replace(/\D/g, "")}" target="_blank" rel="noopener noreferrer" aria-label="Contact Nutranexa on WhatsApp"><span>WhatsApp</span><strong>${whatsapp}</strong></a>`;
@@ -27,28 +27,30 @@ const nav = [
 ];
 
 const megaNav = [
-  { label: "Home", href: "/" },
   {
     label: "Products",
     href: "/products/",
     columns: [
       {
-        title: "Core PS Ingredients",
+        title: "By Purity",
         links: [
-          ["Phosphatidylserine (PS)", "/products/phosphatidylserine/", "Core product page for PS ingredient buyers"],
-          ["Soy Phosphatidylserine", "/products/soy-phosphatidylserine/", "Soy-source PS for supplement formulas"],
-          ["Sunflower Phosphatidylserine", "/products/sunflower-phosphatidylserine/", "Sunflower-source option for non-soy positioning"],
+          ["PS 20%", "/products/phosphatidylserine-20/", "Flexible entry grade for nutrition formulations"],
+          ["PS 50%", "/products/phosphatidylserine-50/", "Higher assay option for concentrated concepts"],
+          ["PS 70%", "/products/phosphatidylserine-70/", "Premium high-purity grade for advanced formulations"],
         ],
       },
       {
-        title: "Related Ingredient",
-        links: [["Soluble Soybean Polysaccharide", "/products/soluble-soybean-polysaccharide/", "Functional food ingredient portfolio support"]],
+        title: "By Source",
+        links: [
+          ["Soy-Derived PS", "/products/soy-phosphatidylserine/", "Established source route with document support"],
+          ["Sunflower-Derived PS", "/products/sunflower-phosphatidylserine/", "Source option for differentiated market positioning"],
+        ],
       },
       {
-        title: "Buyer Actions",
+        title: "Compare & Select",
         links: [
-          ["Request Specifications", "/contact/", "Ask for specs, COA and certificate files"],
-          ["Review Manufacturing", "/manufacturing/", "Factory campus, cleanroom and equipment proof"],
+          ["Compare PS Grades", "/resources/phosphatidylserine-powder-specifications/", "Review assay, source, and document considerations"],
+          ["Request Specifications", "/contact/", "Ask for current specifications and sample COA"],
         ],
       },
     ],
@@ -58,47 +60,66 @@ const megaNav = [
     href: "/applications/",
     columns: [
       {
-        title: "Use Cases",
+        title: "Health & Nutrition",
         links: [
-          ["Dietary Supplements", "/applications/dietary-supplements/", "Capsules, tablets and powder formats"],
-          ["Functional Foods", "/applications/functional-foods/", "Milk powder, dairy drinks and nutrition formulas"],
+          ["Cognitive Health", "/applications/cognitive-health/", "Ingredient concepts designed for cognitive wellness"],
+          ["Memory Support", "/applications/memory-support/", "Compliant formulation and positioning context"],
+          ["Healthy Aging", "/applications/healthy-aging/", "Nutrition concepts for healthy aging portfolios"],
+          ["Sports Nutrition", "/applications/sports-nutrition/", "Powder, capsule, and active-lifestyle format planning"],
         ],
       },
       {
-        title: "Support Pages",
+        title: "Food & Supplements",
         links: [
-          ["Quality & R&D", "/quality-rd/", "R&D cooperation and quality-control workflow"],
-          ["Contact Sales", "/contact/", "Share application and annual quantity"],
+          ["Functional Foods", "/applications/functional-foods/", "Food, beverage, and nutrition formula development"],
+          ["Dietary Supplements", "/applications/dietary-supplements/", "Capsule, tablet, and powder applications"],
+          ["Application Guidance", "/contact/", "Discuss process and format requirements"],
         ],
       },
     ],
   },
   {
-    label: "Benefits",
-    href: "/benefits/",
+    label: "Science",
+    href: "/science/",
     columns: [
       {
-        title: "PS Value Areas",
+        title: "PS Fundamentals",
         links: [
-          ["Cognitive wellness", "/benefits/cognitive-wellness/", "PS value area for wellness concepts"],
-          ["Brain health positioning", "/benefits/brain-health-positioning/", "Compliant phospholipid nutrition education"],
-          ["Natural source options", "/benefits/natural-source-options/", "Soy-source and sunflower-source PS comparison"],
-          ["Supplement formats", "/benefits/supplement-formats/", "Capsules, tablets, powders, and nutrition blends"],
-          ["Functional foods", "/benefits/functional-foods/", "Milk powder, dairy drinks, and nutrition concepts"],
+          ["What Is Phosphatidylserine?", "/resources/what-is-phosphatidylserine/", "A practical introduction for ingredient buyers"],
+          ["How PS Works", "/science/how-ps-works/", "Phospholipid structure and compliant mechanism education"],
+          ["Research Library", "/science/research-library/", "Structured, source-linked scientific publications"],
         ],
       },
       {
-        title: "Related Pages",
+        title: "Technical Support",
         links: [
-          ["Dietary Supplements", "/applications/dietary-supplements/", "Supplement format planning"],
-          ["Functional Foods", "/applications/functional-foods/", "Food and beverage application discussion"],
-          ["Request Application Support", "/contact/", "Share your product plan with sales"],
+          ["Formulation Support", "/science/formulation-support/", "Discuss application, source, and target assay"],
+          ["Quality & R&D", "/quality-rd/", "Review R&D and quality-control capability"],
         ],
       },
     ],
   },
-  { label: "Manufacturing", href: "/manufacturing/" },
-  { label: "Quality & R&D", href: "/quality-rd/" },
+  {
+    label: "Quality",
+    href: "/quality-rd/",
+    columns: [
+      {
+        title: "Manufacturing & Control",
+        links: [
+          ["Manufacturing", "/manufacturing/", "Integrated production and controlled workshops"],
+          ["Quality Control", "/quality-rd/", "Testing and release workflow"],
+          ["Testing", "/quality-rd/", "Analytical and batch-review capability"],
+        ],
+      },
+      {
+        title: "Documentation",
+        links: [
+          ["COA / TDS / MSDS", "/resources/documents-for-ps-ingredients/", "Technical files for buyer qualification"],
+          ["Request Current Copies", "/contact/", "Match documents to the quoted product and batch"],
+        ],
+      },
+    ],
+  },
   {
     label: "Resources",
     href: "/resources/",
@@ -122,8 +143,7 @@ const megaNav = [
       },
     ],
   },
-  { label: "News", href: "/news/" },
-  { label: "About", href: "/about/" },
+  { label: "About Us", href: "/about/" },
   { label: "Contact", href: "/contact/" },
 ];
 
@@ -277,6 +297,7 @@ const applications = [
     title: "Phosphatidylserine Applications in Dietary Supplements",
     description: "Plan PS ingredient sourcing for tablets, soft capsules, hard capsules, powders, and supplement formats.",
     image: "/assets/images/dietary-supplement-application.webp",
+    legacy: true,
     points: ["Tablet and capsule formulas", "Powder product development", "Source and content comparison", "Specification and COA requests"],
     formats: [
       ["Hard capsules", "Confirm particle profile, bulk density, flow, fill weight, source, and target PS assay before a production trial."],
@@ -286,10 +307,73 @@ const applications = [
     ],
   },
   {
+    slug: "cognitive-health",
+    title: "Phosphatidylserine for Cognitive Health",
+    seoTitle: "Cognitive Health PS Ingredient | Nutranexa",
+    description: "Science-informed soy- and sunflower-derived PS ingredient solutions for brain health, mental performance, and cognitive wellness formulations.",
+    image: "/assets/images/hero-ps-innovation-v2.png",
+    tags: ["Brain Health Formulas", "Mental Performance Products", "Healthy Aging Nutrition"],
+    points: ["Cell membrane structure", "Neuronal communication research", "Flexible formulation options", "Cognitive and healthy-aging research interest"],
+    formats: [
+      ["Capsules", "Confirm source, target assay, particle profile, fill weight, and excipient compatibility before scale-up."],
+      ["Tablets", "Evaluate compressibility, disintegration, color stability, and finished-product assay uniformity."],
+      ["Powder blends", "Test dispersibility, taste, caking, moisture control, and blend uniformity in the intended formula."],
+      ["Sachets", "Confirm serving weight, barrier packaging, flavor impact, and stability under intended storage conditions."],
+      ["Functional nutrition products", "Suitability should be confirmed through formulation, processing, and stability testing."],
+    ],
+  },
+  {
+    slug: "memory-support",
+    title: "Phosphatidylserine for Memory Support Formulations",
+    seoTitle: "PS for Memory Support Formulas | Nutranexa",
+    description: "PS ingredient options for memory-focused formulas, daily cognitive products, student nutrition, professional performance, and healthy-aging concepts.",
+    image: "/assets/images/news-lecithin-memory-muscle-study-2025.webp",
+    tags: ["Daily Cognitive Products", "Student Nutrition", "Healthy Aging Support"],
+    points: ["Memory-focused formula positioning", "Daily cognitive nutrition concepts", "Source and grade selection", "Compliance-aware communication"],
+    formats: [
+      ["Capsules", "Define the target serving format, PS grade, source preference, and documentation required for the market."],
+      ["Tablets", "Confirm processing suitability and finished-product testing with the contract manufacturer."],
+      ["Powder blends", "Evaluate sensory impact, uniformity, and moisture protection in the complete formula."],
+      ["Sachets", "Use formulation and stability testing to confirm serving format and shelf-life assumptions."],
+    ],
+  },
+  {
+    slug: "healthy-aging",
+    title: "Phosphatidylserine Solutions for Healthy Aging",
+    seoTitle: "Phosphatidylserine Solutions for Healthy Aging | Nutranexa",
+    description: "Plant-derived PS solutions for 50+ nutrition, active aging, cognitive wellness, and senior nutrition product development.",
+    image: "/assets/images/news-mfgm-phospholipid-cognition-trial-2025.webp",
+    tags: ["50+ Nutrition", "Active Aging", "Cognitive Wellness"],
+    points: ["Healthy-aging market opportunity", "Phospholipid research context", "Source and purity options", "Technical document support"],
+    formats: [
+      ["Capsules", "Use source and grade selection to balance serving format, positioning, and document requirements."],
+      ["Tablets", "Confirm compressibility, disintegration, and stability in the finished senior-nutrition formula."],
+      ["Powder blends", "Evaluate taste, blend uniformity, serving size, and barrier packaging."],
+      ["Functional nutrition products", "Confirm processing compatibility and target-market requirements before commercialization."],
+    ],
+  },
+  {
+    slug: "sports-nutrition",
+    title: "Phosphatidylserine for Sports Nutrition and Active Lifestyles",
+    seoTitle: "Phosphatidylserine for Sports Nutrition | Nutranexa",
+    description: "PS ingredient solutions for active-lifestyle, exercise-nutrition, mental-performance, and recovery-formula concepts.",
+    image: "/assets/images/dietary-supplement-application.webp",
+    tags: ["Active Lifestyle", "Exercise Nutrition", "Mental Performance"],
+    points: ["Studied in exercise-related nutrition research", "Active-lifestyle product concepts", "Mental-performance formulation context", "Source and grade selection"],
+    formats: [
+      ["Capsules", "Confirm serving design, source, target assay, and compatibility with the complete active-nutrition formula."],
+      ["Tablets", "Evaluate processing and stability with all active ingredients and excipients."],
+      ["Powder blends", "Test taste, dispersibility, caking, and assay uniformity under intended processing conditions."],
+      ["Sachets", "Confirm moisture barrier, serving weight, sensory profile, and shelf-life through finished-product testing."],
+    ],
+  },
+  {
     slug: "functional-foods",
-    title: "PS Ingredient for Functional Food Applications",
-    description: "Evaluate PS and functional food ingredient options for milk powder, dairy drinks, nutrition products, and health food concepts.",
+    title: "Phosphatidylserine for Functional Food Innovation",
+    seoTitle: "PS for Functional Food Innovation | Nutranexa",
+    description: "Evaluate PS formats, processing, stability, and technical support for powder blends, sachets, nutrition mixes, and functional food concepts.",
     image: "/assets/images/functional-food-application.webp",
+    tags: ["Powder Blends", "Sachets", "Nutrition Mixes"],
     points: ["Milk powder and nutrition formulas", "Dairy beverage applications", "Functional food ingredient positioning", "Compliance-aware content and document workflow"],
     formats: [
       ["Milk powder", "Evaluate blend uniformity, moisture exposure, flavor impact, target assay, serving format, and shelf-life conditions."],
@@ -297,6 +381,78 @@ const applications = [
       ["Nutrition powders", "Confirm carrier compatibility, caking control, serving size, packaging barrier, and assay verification in the final blend."],
       ["Functional food concepts", "Define the target country, permitted positioning, process conditions, source preference, and required document package."],
     ],
+  },
+];
+
+const psGrades = [
+  {
+    slug: "phosphatidylserine-20",
+    name: "Phosphatidylserine 20%",
+    shortName: "PS 20%",
+    badge: "Flexible Grade",
+    positioning: "Value-focused nutrition",
+    description: "A cost-efficient phosphatidylserine option designed for daily nutrition products, powder blends, and value-focused formulations.",
+    image: "/assets/images/product-soy-ps.webp",
+    source: "Soy or sunflower source; confirm the quoted route",
+    appearance: "Fine powder; light to brown yellow",
+    content: ">= 20% according to the supplied PS 20% specification",
+    highlights: ["Soy or sunflower source", "Flexible formulation option", "Technical documentation available"],
+    applications: ["Cognitive health", "Healthy aging", "Powder blends", "Functional nutrition"],
+    downloads: [["PS 20% English Specification", "/assets/documents/phosphatidylserine-20-specification.docx", "DOCX"]],
+  },
+  {
+    slug: "phosphatidylserine-50",
+    name: "Phosphatidylserine 50%",
+    shortName: "PS 50%",
+    badge: "Most Popular",
+    positioning: "Mainstream cognitive products",
+    description: "A balanced purity grade for mainstream cognitive health supplements, capsules, and tablet formulations.",
+    image: "/assets/images/brand-product-lab.webp",
+    source: "Soy or sunflower source; confirm the quoted route",
+    appearance: "Confirm against the current controlled specification",
+    content: "Target 50% grade; confirm against the current controlled specification",
+    highlights: ["Soy or sunflower source", "Mainstream supplement application", "Complete technical support"],
+    applications: ["Cognitive health", "Memory support", "Healthy aging", "Capsules and tablets"],
+    downloads: [],
+  },
+  {
+    slug: "phosphatidylserine-70",
+    name: "Phosphatidylserine 70%",
+    shortName: "PS 70%",
+    badge: "Premium Grade",
+    positioning: "Premium formulations",
+    description: "A high-purity solution for premium cognitive health, healthy aging, and advanced nutrition concepts.",
+    image: "/assets/images/product-sunflower-ps.webp",
+    source: "Soy or sunflower source; confirm current availability",
+    appearance: "Light to brown yellow powder; the supplied batch result is yellow powder",
+    content: ">= 70%; supplied batch sample result: 72.9 g/100g",
+    highlights: ["Premium positioning", "High-concentration option", "Technical documentation available"],
+    applications: ["Premium cognitive health", "Healthy aging", "Advanced nutrition", "Compact dosage formats"],
+    downloads: [],
+    coa: {
+      title: "PS 70% COA Batch Sample",
+      image: "/assets/images/doc-coa-ps-70.webp",
+      note: "This buyer-supplied COA is a batch-specific sample. It does not identify soy or sunflower source. Request the current batch COA and source statement for each order.",
+      rows: [
+        ["Product model", "PP701"],
+        ["Lot number", "C00120260604"],
+        ["Manufacture date", "June 7, 2026"],
+        ["Report date", "June 12, 2026"],
+        ["Test basis", "QB/T 5821-2023"],
+        ["Shelf life", "24 months"],
+        ["Color / appearance", "Yellow / powder"],
+        ["Moisture", "0.59 g/100g; standard <= 2.0"],
+        ["Phosphatidylserine", "72.9 g/100g; standard >= 70"],
+        ["Peroxide value", "0.39 mmol/kg; standard <= 2.5"],
+        ["Acetone insoluble", "99.0 g/100g; standard >= 95.0"],
+        ["Lead / arsenic / mercury", "Not detected"],
+        ["Cadmium", "< 0.003 mg/kg; standard <= 1"],
+        ["Total plate count", "< 10 CFU/g; standard <= 1,000"],
+        ["Coliforms", "< 10 CFU/g; standard <= 10"],
+        ["Molds and yeasts", "< 10 CFU/g; standard <= 50"],
+        ["Salmonella", "Not detected / 25g"],
+      ],
+    },
   },
 ];
 
@@ -330,6 +486,11 @@ const documentProof = [
     title: "Halal Certificate",
     text: "Halal certificate document supplied for phosphatidylserine under Nutranexa / Shushi brand reference, valid Dec 26, 2024 to Dec 26, 2027.",
     image: "/assets/images/doc-halal-certificate.webp",
+  },
+  {
+    title: "PS 70% COA Batch Sample",
+    text: "Buyer-supplied batch COA for model PP701, lot C00120260604, reporting 72.9 g/100g phosphatidylserine. The source route is not stated on the sample.",
+    image: "/assets/images/doc-coa-ps-70.webp",
   },
 ];
 
@@ -915,7 +1076,7 @@ function organizationJson() {
     alternateName: ["Nutranexa", "Baianrui"],
     url: siteUrl,
     logo: `${siteUrl}/assets/images/logo-nutranexa.webp`,
-    contactPoint: [{ "@type": "ContactPoint", telephone: phone, email: salesEmail, contactType: "sales", areaServed: ["Europe", "North America", "Worldwide"], availableLanguage: ["English", "Chinese"] }],
+    contactPoint: [{ "@type": "ContactPoint", telephone: phone, contactType: "sales", areaServed: ["Europe", "North America", "Worldwide"], availableLanguage: ["English", "Chinese"] }],
     address: { "@type": "PostalAddress", streetAddress: address, addressCountry: "CN" },
     foundingDate: "2013",
   };
@@ -999,6 +1160,10 @@ function layout({ title, description, route, body, schema = [], image = "/assets
   <meta property="og:type" content="website">
   <meta property="og:url" content="${canonical}">
   <meta property="og:image" content="${siteUrl}${image}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(title)}">
+  <meta name="twitter:description" content="${esc(description)}">
+  <meta name="twitter:image" content="${siteUrl}${image}">
   <link rel="icon" href="/assets/images/logo-nutranexa-icon.png">
   <link rel="stylesheet" href="/assets/styles.css">
   <script type="application/ld+json">${JSON.stringify(allSchema)}</script>
@@ -1018,7 +1183,7 @@ function layout({ title, description, route, body, schema = [], image = "/assets
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         ${renderMegaNav(active)}
       </nav>
-      <a class="nav-cta" href="/contact/">Request a Quote</a>
+      <a class="nav-cta" href="/contact/">Request Specification</a>
     </div>
   </header>
   <main id="main">${body}</main>
@@ -1084,7 +1249,7 @@ function renderMegaNav(active) {
           <div class="mega-inner">
             <div class="mega-feature">
               <p class="eyebrow">${item.label}</p>
-              <h2>${item.label === "Products" ? "Source PS ingredients with clear buyer paths." : item.label === "Applications" ? "Connect ingredients to compliant applications." : "Build buyer trust before the inquiry."}</h2>
+              <h2>${item.label === "Products" ? "Source PS ingredients with clear buyer paths." : item.label === "Applications" ? "Connect ingredients to compliant applications." : item.label === "Science" ? "Turn phospholipid science into practical formulation decisions." : item.label === "Quality" ? "Qualify products with manufacturing and document confidence." : "Build buyer trust before the inquiry."}</h2>
               <a href="${item.href}">View ${item.label}</a>
             </div>
             ${item.columns
@@ -1119,20 +1284,19 @@ function footer() {
     </div>
     <div>
       <h2>Buyer Paths</h2>
-      <a href="/applications/dietary-supplements/">Dietary Supplements</a>
+      <a href="/applications/cognitive-health/">Cognitive Health</a>
+      <a href="/applications/healthy-aging/">Healthy Aging</a>
+      <a href="/applications/sports-nutrition/">Sports Nutrition</a>
       <a href="/applications/functional-foods/">Functional Foods</a>
-      <a href="/manufacturing/">Manufacturing</a>
+      <a href="/science/research-library/">Research Library</a>
       <a href="/quality-rd/">Quality & R&D</a>
-      <a href="/cases/">Cases & Projects</a>
-      <a href="/news/">News</a>
     </div>
     <div>
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:${salesEmail}">${salesEmail}</a></p>
       <p>WhatsApp: <a href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a></p>
       <p>Phone: ${phone}</p>
       <p>${address}</p>
-      <a class="footer-button" href="/contact/">Contact Sales</a>
+      <a class="footer-button" href="/contact/">Request Specification &amp; COA</a>
       <a href="/privacy/">Privacy Policy</a>
     </div>
   </div>
@@ -1181,26 +1345,27 @@ function companyVideoSection() {
 }
 
 function quoteForm(context = "General inquiry") {
-  return `<form class="quote-form" data-context="${esc(context)}" action="https://formsubmit.co/wh1007209170@gmail.com" method="post">
+  return `<form class="quote-form" data-context="${esc(context)}" action="/api/inquiry" method="post">
   <input type="hidden" name="Product Interest" value="${esc(context)}">
-  <input type="hidden" name="_subject" value="New Nutranexa Website Inquiry">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://nutranexaps.com/thank-you/">
-  <input type="hidden" name="_url" value="https://nutranexaps.com/contact/">
+  <input type="hidden" name="Locale" value="en">
+  <input type="hidden" name="Form Started" value="">
   <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
   <div class="form-grid">
-    <label>Name <input required name="Name" autocomplete="name"></label>
-    <label>Email <input required type="email" name="Email" autocomplete="email"></label>
-    <label>Phone <input required type="tel" name="Phone" autocomplete="tel" inputmode="tel" pattern="^\\+?[0-9\\s().-]{7,24}$" placeholder="+1 555 123 4567"></label>
-    <label>Company <input name="Company" autocomplete="organization" placeholder="Company name"></label>
-    <label>Country / Region <input name="Country" autocomplete="country-name" placeholder="United States, Germany, Brazil..."></label>
-    <label>Product Interest <input name="Interest" value="${esc(context)}" placeholder="PS powder, Soy PS, Sunflower PS..."></label>
-    <label class="form-full">Message <textarea name="Message" rows="4" placeholder="Tell us your product requirement, specification, quantity, or documents needed."></textarea></label>
+    <label>Name *<input required name="Name" autocomplete="name"></label>
+    <label>Business Email *<input required type="email" name="Email" autocomplete="email"></label>
+    <label>Company *<input required name="Company" autocomplete="organization" placeholder="Company name"></label>
+    <label>Country *<input required name="Country" autocomplete="country-name" placeholder="United States, Germany, Korea..."></label>
+    <label>Application <select name="Application"><option value="">Select application</option><option>Cognitive Health</option><option>Memory Support</option><option>Healthy Aging</option><option>Sports Nutrition</option><option>Functional Foods</option><option>Other</option></select></label>
+    <label>Preferred Source <select name="Source Preference"><option value="">No preference yet</option><option>Soy</option><option>Sunflower</option><option>Need recommendation</option></select></label>
+    <label>Required PS Grade <select name="Target Assay"><option value="">Need recommendation</option><option>20%</option><option>50%</option><option>70%</option><option>Other / customized</option></select></label>
+    <label>Estimated Annual Volume <input name="Estimated Annual Volume" placeholder="e.g. 500 kg / year"></label>
+    <fieldset class="form-full document-choice"><legend>Required Documents</legend><label><input type="checkbox" name="Documents Needed" value="Specification"> Specification</label><label><input type="checkbox" name="Documents Needed" value="COA"> COA</label><label><input type="checkbox" name="Documents Needed" value="TDS"> TDS</label><label><input type="checkbox" name="Documents Needed" value="MSDS"> MSDS</label><label><input type="checkbox" name="Documents Needed" value="Allergen Information"> Allergen Information</label></fieldset>
+    <label class="form-full">Message <textarea name="Message" rows="4" placeholder="Tell us about your formulation, target market, timeline, or technical questions."></textarea></label>
+    <label class="form-full consent-field"><input required type="checkbox" name="Consent" value="Yes"> <span>I agree that Nutranexa may use this information to respond to my B2B inquiry. *</span></label>
   </div>
-  <button class="button primary" type="submit">Submit Inquiry</button>
-  <p class="form-status" role="status" aria-live="polite">Name, email, and phone are required.</p>
-  <p class="form-note">Your inquiry will be prepared for sales follow-up. You can also email ${salesEmail} or contact us on WhatsApp ${whatsapp}.</p>
+  <button class="button primary" type="submit">Request Specification &amp; COA</button>
+  <p class="form-status" role="status" aria-live="polite">Name, business email, company, country, and consent are required.</p>
+  <p class="form-note">Your information is used only to respond to this B2B product and technical-document request.</p>
 </form>`;
 }
 
@@ -1284,7 +1449,7 @@ function packagingSection(product) {
 }
 
 function applicationFormatSection(app) {
-  return `<section class="application-formats">${sectionIntro("Format-level evaluation", "Plan the tests before requesting a production quote", "These are buyer evaluation points, not fixed formulation instructions. Confirm the exact product specification and run tests under the intended process conditions.")}
+  return `<section class="application-formats">${sectionIntro("Product formats", "Compatible Product Formats", "Capsules, tablets, powder blends, sachets, and selected functional nutrition products can be evaluated. Suitability for beverage systems should be confirmed through formulation and stability testing.")}
     <div class="application-format-grid">${app.formats.map(([title, text]) => `<article><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`).join("")}</div>
   </section>`;
 }
@@ -1302,7 +1467,7 @@ function qualityDocumentWorkflow() {
 }
 
 function contactDetailsCard(title = "Sales contact") {
-  return `<div class="contact-card contact-details-card"><h2>${esc(title)}</h2><p><strong>Email:</strong> <a href="mailto:${salesEmail}">${salesEmail}</a></p><p><strong>WhatsApp:</strong> <a href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a></p><p><strong>Phone:</strong> ${phone}</p><p><strong>Address:</strong> ${address}</p><p><strong>Website:</strong> www.nutranexa.cn</p></div>`;
+  return `<div class="contact-card contact-details-card"><h2>${esc(title)}</h2><p><strong>Technical response:</strong> Use the secure inquiry form to request specifications, COA, TDS, MSDS, and application support.</p><p><strong>WhatsApp:</strong> <a href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a></p><p><strong>Phone:</strong> ${phone}</p><p><strong>Address:</strong> ${address}</p><p><strong>Website:</strong> www.nutranexa.cn</p></div>`;
 }
 
 function documentCards(limit = documentProof.length) {
@@ -1356,58 +1521,127 @@ function articleSeoTitle(article) {
 
 function homePage() {
   const claimIcons = [
-    ["GMP", "/assets/images/claims/claim-gmp.webp"],
     ["Kosher", "/assets/images/claims/claim-kosher.webp"],
     ["Halal", "/assets/images/claims/claim-halal.webp"],
-    ["ISO", "/assets/images/claims/claim-iso.webp"],
-    ["FDA", "/assets/images/claims/claim-fda.webp"],
-    ["FSSC 22000", "/assets/images/claims/claim-fssc-22000.webp"],
-    ["Heavy Metals Compliant", "/assets/images/claims/claim-heavy-metals.webp"],
-    ["US Big 9 / EU 14 Allergens", "/assets/images/claims/claim-allergens.webp"],
   ];
   const claimIconItems = claimIcons
     .map(([label, image]) => `<li class="claim-icon-card"><img src="${image}" alt="" width="160" height="160" loading="eager"><span>${esc(label)}</span></li>`)
     .join("");
-  const claimIconMarquee = `<section class="claim-marquee" aria-labelledby="claim-marquee-title">
-    <div class="claim-marquee-intro"><p class="eyebrow">Quality &amp; compliance</p><h2 id="claim-marquee-title">Selected certification and product-assurance references</h2><p>Current certificate validity, scope, and product applicability should be confirmed before purchase or shipment.</p></div>
-    <div class="claim-marquee-window">
-      <div class="claim-marquee-track">
-        <ul class="claim-icon-list">${claimIconItems}</ul>
-        <ul class="claim-icon-list" aria-hidden="true">${claimIconItems}</ul>
+  const body = `<section class="home-hero">
+    <div class="home-hero-copy">
+      <p class="eyebrow">Premium PS ingredient solutions</p>
+      <h1>Premium Phosphatidylserine Ingredients <span>for Cognitive Health Innovation</span></h1>
+      <p class="home-hero-lead">High-quality soy- and sunflower-derived phosphatidylserine in flexible purity grades for nutraceutical, functional food, and healthy aging formulations.</p>
+      <ul class="hero-benefit-tags" aria-label="Key product benefits">
+        <li>Soy &amp; Sunflower Sources</li>
+        <li>20%, 50% &amp; 70% PS Grades</li>
+        <li>Technical Documentation Support</li>
+      </ul>
+      <div class="hero-actions">
+        <a class="button primary" href="/contact/">Request Specification &amp; COA</a>
+        <a class="button secondary" href="#product-solutions">Explore PS Solutions</a>
       </div>
     </div>
-  </section>`;
-  const body = `${hero({
-    eyebrow: "Phosphatidylserine and functional food ingredients",
-    title: "Phosphatidylserine Manufacturer for Global Ingredient Buyers",
-    text: "Source phosphatidylserine and related functional food ingredients from Nutranexa, a biotechnology manufacturer serving ingredient buyers primarily in Europe and North America.",
-    image: "/assets/images/brand-product-lab.webp",
-  })}
-  ${claimIconMarquee}
-  ${psBenefitsSection("home")}
-  ${sourceSelectorSection()}
-  <section>${sectionIntro("Core products", "Phosphatidylserine and related food ingredients", "Compare source options, application fit, available documents, and quotation requirements before selecting an ingredient.")}
-    <div class="card-grid">${products.map(productCard).join("")}</div>
-  </section>
-  <section id="manufacturing-proof" class="split-section manufacturing-proof-section">
-    <div>${sectionIntro("Our manufacturing", "Integrated manufacturing, R&D, and quality control", "Nutranexa operates an integrated production campus built around functional food ingredients, with dedicated workshops, R&D facilities, and quality-control capabilities.")}
-      <ul class="check-list"><li>110,000+ m2 integrated manufacturing campus</li><li>Dedicated phosphatidylserine production capability</li><li>Controlled workshops and stainless-steel processing equipment</li><li>In-house R&D and quality-control facilities</li><li>Export supply experience across Europe and North America</li></ul>
-      <a class="button secondary" href="/manufacturing/">Explore our manufacturing</a>
+    <div class="home-hero-visual">
+      <img src="/assets/images/hero-ps-innovation-v2.png" alt="Light blue neural network, molecular structure, and fine light-yellow phosphatidylserine powder" width="1680" height="945" loading="eager">
+      <div class="hero-visual-note"><span>PS</span><p><strong>Formulation-ready options</strong><br>Source, purity, and documents aligned to your project.</p></div>
     </div>
-    ${companyVideoPlayer("manufacturing-video")}
   </section>
-  <section>${sectionIntro("Application opportunities", "PS applications across supplements and functional foods", "Phosphatidylserine can be evaluated for capsules, tablets, nutrition powders, dairy beverages, and other functional food concepts.")}
-    <div class="card-grid">${applications.map((app) => `<article class="item-card"><img src="${app.image}" alt="${esc(app.title)}" loading="lazy"><div><h3>${esc(app.title)}</h3><p>${esc(app.description)}</p><a href="/applications/${app.slug}/">Explore application</a></div></article>`).join("")}</div>
+
+  <section class="trust-strip" aria-label="Nutranexa buyer support">
+    <article><span class="trust-icon">20–70</span><div><h2>Flexible PS Grades</h2><p>Multiple purity options</p></div></article>
+    <article><span class="trust-icon">S / SF</span><div><h2>Soy &amp; Sunflower Options</h2><p>Different market positioning</p></div></article>
+    <article><span class="trust-icon">DOC</span><div><h2>Technical Documents</h2><p>COA / TDS / MSDS</p></div></article>
+    <article><span class="trust-icon">B2B</span><div><h2>Global B2B Supply</h2><p>Professional ingredient service</p></div></article>
   </section>
-  <section class="cta-band">
-    <div><p class="eyebrow">Sourcing support</p><h2>Request PS specifications, source details, and quotation support.</h2><p>Share your country, application, annual quantity, and document needs. The sales team can confirm current specifications before purchase.</p></div>
-    <a class="button light" href="/contact/">Request a Quote</a>
+
+  <section id="product-solutions" class="home-section product-solutions">
+    ${sectionIntro("Product solutions", "Choose the right PS route for your formulation", "Compare target purity and source preference, then confirm the current specification, COA, and application fit with our technical team.")}
+    <div class="grade-grid">
+      ${psGrades.map((grade, index) => `<article class="grade-card${index === 1 ? " grade-card-featured" : ""}">
+        <div class="grade-card-media"><img src="${grade.image}" alt="${esc(grade.name)} light-yellow powder ingredient" loading="lazy">${grade.badge ? `<span>${esc(grade.badge)}</span>` : ""}</div>
+        <p class="grade-kicker">${esc(grade.positioning)}</p><h3>${esc(grade.name)}</h3><p>${esc(grade.description)}</p>
+        <ul>${grade.highlights.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
+        <a class="button secondary" href="/products/${grade.slug}/">View ${esc(grade.shortName)}</a>
+      </article>`).join("")}
+    </div>
+    <div class="source-bar">
+      <div><img src="/assets/images/product-soy-ps.webp" alt="Fine light-yellow soy-derived phosphatidylserine powder" loading="lazy"><span><small>Source option</small><strong>Soy-Derived PS</strong></span></div>
+      <div><img src="/assets/images/product-sunflower-ps.webp" alt="Fine light-yellow sunflower-derived phosphatidylserine powder" loading="lazy"><span><small>Source option</small><strong>Sunflower-Derived PS</strong></span></div>
+      <a href="/resources/soy-vs-sunflower-phosphatidylserine/">Compare source options &rarr;</a>
+    </div>
+  </section>
+
+  <section class="home-section applications-showcase">
+    ${sectionIntro("Applications", "Built for modern cognitive and functional nutrition concepts", "Nutranexa supports product developers with source selection, technical documentation, and application-focused ingredient guidance.")}
+    <div class="application-grid">
+      <a href="/applications/cognitive-health/"><span>01</span><h3>Cognitive Health</h3><p>PS ingredient solutions for brain health, mental performance, and cognitive wellness formulations.</p></a>
+      <a href="/applications/memory-support/"><span>02</span><h3>Memory Support</h3><p>Ingredient planning for memory-focused formulas and daily cognitive products.</p></a>
+      <a href="/applications/healthy-aging/"><span>03</span><h3>Healthy Aging</h3><p>PS solutions for 50+ nutrition, active aging, and cognitive wellness concepts.</p></a>
+      <a href="/applications/sports-nutrition/"><span>04</span><h3>Sports Nutrition</h3><p>Active-lifestyle, exercise-nutrition, and mental-performance formulation paths.</p></a>
+      <a href="/applications/functional-foods/"><span>05</span><h3>Functional Foods</h3><p>Food, beverage, dairy, and nutrition formula support.</p></a>
+    </div>
+  </section>
+
+  <section class="home-section why-nutranexa">
+    <div class="why-copy">${sectionIntro("Why Nutranexa", "Why Formulators Choose Nutranexa PS", "International buyers need consistent products, clear documentation, responsive technical communication, and a partner who understands how PS moves from specification to finished formulation.")}
+      <a class="text-link" href="/about/">Meet Nutranexa &rarr;</a>
+    </div>
+    <div class="capability-grid">
+      <article><span>01</span><h3>Soy &amp; Sunflower PS Solutions</h3><p>Multiple sources for different formulation requirements, labeling needs, and market positioning.</p></article>
+      <article><span>02</span><h3>Customized Purity Solutions</h3><p>20%, 50%, and 70% PS grades designed for different product concepts and supplement positioning.</p></article>
+      <article><span>03</span><h3>Technical &amp; Scientific Support</h3><p>Support for product selection, technical documents, and application guidance.</p></article>
+      <article><span>04</span><h3>Quality-Focused Supply</h3><p>Clear specifications, batch documentation, and professional B2B ingredient service.</p></article>
+    </div>
+  </section>
+
+  <section class="home-section science-section">
+    <div class="science-visual"><img src="/assets/images/proof-rd-quality.webp" alt="Nutranexa research and quality team working in a clean laboratory" loading="lazy"><div><strong>Science-led</strong><span>Ingredient decisions</span></div></div>
+    <div class="science-copy">${sectionIntro("Science & research", "Science Behind Phosphatidylserine", "Explore the structure, biological role, and research areas associated with phosphatidylserine. Our science center helps formulators evaluate application potential without converting research into medical claims.")}
+      <div class="science-links">
+        <a href="/resources/what-is-phosphatidylserine/"><span>01</span><div><strong>What is Phosphatidylserine?</strong><small>Understand the ingredient and sourcing context.</small></div></a>
+        <a href="/science/how-ps-works/"><span>02</span><div><strong>How PS Works</strong><small>Review compliant phospholipid structure and mechanism education.</small></div></a>
+        <a href="/science/research-library/"><span>03</span><div><strong>Research Library</strong><small>Browse structured, source-linked scientific publications.</small></div></a>
+        <a href="/science/formulation-support/"><span>04</span><div><strong>Formulation Support</strong><small>Discuss your format, target assay, and process.</small></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section quality-docs">
+    <div class="quality-heading">${sectionIntro("Quality documentation", "Quality Information Buyers Can Review", "Request current, product-specific specifications, batch COA, technical files, and manufacturing information for supplier qualification and shipment release.")}
+      <a class="button secondary" href="/resources/documents-for-ps-ingredients/">View document guidance</a>
+    </div>
+    <div class="document-support-grid">
+      <article><span>COA</span><h3>Certificate of Analysis</h3><p>Batch-specific test results for buyer and quality review.</p></article>
+      <article><span>TDS</span><h3>Technical Data Sheet</h3><p>Product properties, specification context, and handling information.</p></article>
+      <article><span>MSDS</span><h3>Safety Data Sheet</h3><p>Safety, handling, storage, and transport information.</p></article>
+      <article><span>TECH</span><h3>Technical Consultation</h3><p>Application-focused discussion before sampling or scale-up.</p></article>
+    </div>
+    <div class="quality-claims" aria-label="Selected certification and product assurance references">
+      <p>Selected quality &amp; compliance references</p>
+      <div class="claim-marquee-window"><div class="claim-marquee-track"><ul class="claim-icon-list">${claimIconItems}</ul><ul class="claim-icon-list" aria-hidden="true">${claimIconItems}</ul></div></div>
+      <small>Current certificate validity, scope, and product applicability should be confirmed before purchase or shipment.</small>
+    </div>
+  </section>
+
+  <section class="home-section resource-section">
+    ${sectionIntro("Resources", "Practical guidance for PS ingredient buyers", "Use our buyer resources to compare sources, prepare document requests, and make a more confident supplier decision.")}
+    <div class="resource-feature-grid">
+      <a href="/resources/phosphatidylserine-guide/"><img src="/assets/images/resource-phosphatidylserine-buyers-guide.webp" alt="Phosphatidylserine buyer guide" loading="lazy"><div><span>Buying guide</span><h3>PS Buying Guide</h3><p>A practical framework for source, assay, specification, and supplier review.</p></div></a>
+      <a href="/resources/documents-for-ps-ingredients/"><img src="/assets/images/quality-document-review.webp" alt="Technical document review for phosphatidylserine sourcing" loading="lazy"><div><span>Technical downloads</span><h3>Document Checklist</h3><p>Prepare the files needed for qualification and commercial handoff.</p></div></a>
+      <a href="/resources/soy-vs-sunflower-phosphatidylserine/"><img src="/assets/images/resource-soy-vs-sunflower-ps.webp" alt="Soy and sunflower phosphatidylserine source comparison" loading="lazy"><div><span>Source comparison</span><h3>Soy vs Sunflower PS</h3><p>Compare positioning, documentation, and formulation considerations.</p></div></a>
+    </div>
+  </section>
+
+  <section class="home-final-cta">
+    <div><p class="eyebrow">Start a technical conversation</p><h2>Build your next cognitive health formulation with confidence.</h2><p>Tell us your market, application, preferred source, target purity, and document needs. Our team will help define the right PS ingredient route.</p></div>
+    <div class="final-cta-actions"><a class="button light" href="/contact/">Request Specification &amp; COA</a><a href="/products/phosphatidylserine/">Explore PS Solutions &rarr;</a></div>
   </section>`;
   return layout({
-    title: "Phosphatidylserine Manufacturer | Nutranexa PS Ingredient Supplier",
-    description: "Source phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide from Nutranexa for supplements and functional food applications.",
+    title: "Premium Phosphatidylserine Ingredients | Nutranexa",
+    description: "Premium soy- and sunflower-derived phosphatidylserine in 20%, 50%, and 70% grades with technical documentation and formulation support.",
     route: "/",
-    image: "/assets/images/brand-product-lab.webp",
+    image: "/assets/images/og-nutranexa-premium-ps-v2.png",
     schema: [breadcrumbJson([["Home", "/"]])],
     body,
   });
@@ -1415,6 +1649,9 @@ function homePage() {
 
 function productsHub() {
   const body = `<section class="page-hero compact"><p class="eyebrow">Products</p><h1>Bulk Functional Food Ingredients for Global Buyers</h1><p>Start with phosphatidylserine, then compare soy-source, sunflower-source, and related functional food ingredient options.</p></section>
+  <section class="grade-hub">${sectionIntro("PS purity grades", "Phosphatidylserine 20%, 50%, and 70%", "Select a target grade for product positioning, then confirm source availability, the current controlled specification, and batch documentation.")}
+    <div class="grade-grid">${psGrades.map((grade) => `<article class="grade-card"><div class="grade-card-media"><img src="${grade.image}" alt="${esc(grade.name)} powder" loading="lazy"><span>${esc(grade.badge)}</span></div><p class="grade-kicker">${esc(grade.positioning)}</p><h3>${esc(grade.name)}</h3><p>${esc(grade.description)}</p><a class="button secondary" href="/products/${grade.slug}/">View ${esc(grade.shortName)}</a></article>`).join("")}</div>
+  </section>
   <section>${sectionIntro("Product portfolio", "Compare Nutranexa ingredient options", "Review product source, application fit, available documents, and quote requirements from one place.")}
     <div class="card-grid">${products.map(productCard).join("")}</div>
   </section>
@@ -1585,10 +1822,58 @@ function productPage(product) {
   });
 }
 
+function psGradePage(grade) {
+  const route = `/products/${grade.slug}/`;
+  const controlledSpecNote = grade.slug === "phosphatidylserine-20"
+    ? "The PS 20% values below come from the supplied English specification. Request the latest controlled copy before purchase."
+    : "Only values supported by the supplied batch or controlled documents are shown. Request the current product specification before formulation or purchase.";
+  const gradeFaqs = [
+    [`Can ${grade.shortName} be supplied from soy or sunflower?`, "Source availability must be confirmed for the quoted grade. Request a source statement and product-specific documents before approval."],
+    [`Which documents are available for ${grade.shortName}?`, "Buyers can request the current specification, batch COA, TDS, MSDS, allergen information, and applicable certificates. Availability and scope must be confirmed."],
+    ["Can this grade be used in beverages?", "Suitability for beverage systems should be confirmed through formulation, processing, and stability testing. The website does not claim universal beverage solubility."],
+  ];
+  const body = `<section class="product-grade-hero">
+    <div><p class="eyebrow">${esc(grade.badge)}</p><h1>${esc(grade.name)} Powder</h1><p>Plant-derived phosphatidylserine ingredient for nutraceutical and functional nutrition formulations.</p><ul class="application-tags"><li>${esc(grade.source)}</li><li>${esc(grade.positioning)}</li><li>Technical documents on request</li></ul><div class="hero-actions"><a class="button primary" href="/contact/?product=${encodeURIComponent(grade.name)}&assay=${encodeURIComponent(grade.shortName.replace("PS ", ""))}">Request Specification &amp; COA</a><a class="button secondary" href="/contact/?product=${encodeURIComponent(grade.name)}">Talk to Technical Support</a></div></div>
+    <img src="${grade.image}" alt="${esc(grade.name)} fine powder ingredient" loading="eager">
+  </section>
+  <section class="product-overview">${sectionIntro("Product overview", grade.name, grade.description)}
+    <div class="detail-grid"><div><h3>Source</h3><p>${esc(grade.source)}</p></div><div><h3>Purity route</h3><p>${esc(grade.content)}</p></div><div><h3>Appearance</h3><p>${esc(grade.appearance)}</p></div><div><h3>Application direction</h3><p>${esc(grade.applications.join(", "))}</p></div></div>
+  </section>
+  <section class="technical-specification">${sectionIntro("Technical specification", "Parameters available for buyer review", controlledSpecNote)}
+    <div class="table-wrap"><table class="spec-table"><tbody><tr><th>Product name</th><td>${esc(grade.name)}</td></tr><tr><th>Source</th><td>${esc(grade.source)}</td></tr><tr><th>Appearance</th><td>${esc(grade.appearance)}</td></tr><tr><th>PS content</th><td>${esc(grade.content)}</td></tr><tr><th>Heavy metals</th><td>According to the current specification or batch COA</td></tr><tr><th>Microbiology</th><td>According to the current specification or batch COA</td></tr><tr><th>Shelf life</th><td>${grade.coa ? "24 months on the supplied sample COA; confirm the current controlled document" : "According to the current controlled specification"}</td></tr></tbody></table></div>
+  </section>
+  ${grade.coa ? `<section class="coa-section">${sectionIntro("Batch documentation", grade.coa.title, grade.coa.note)}
+    <div class="coa-grid"><article class="coa-card"><a class="coa-image-link" href="${grade.coa.image}" target="_blank" rel="noopener"><img src="${grade.coa.image}" alt="${esc(grade.coa.title)} supplied certificate image" loading="lazy"></a><div><h3>Extracted batch information</h3><table><tbody>${grade.coa.rows.map(([label, value]) => `<tr><th>${esc(label)}</th><td>${esc(value)}</td></tr>`).join("")}</tbody></table><p class="form-note">Inspection items marked with an asterisk on the supplied COA are reported as sourced from external inspection reports.</p><a class="document-link" href="${grade.coa.image}" target="_blank" rel="noopener">View full COA sample</a></div></article></div>
+  </section>` : ""}
+  <section class="product-downloads">${sectionIntro("Product downloads", "Request the controlled document package", "COA, TDS, MSDS, specification sheet, and allergen information must match the exact quoted grade, source, and destination market.")}
+    ${grade.downloads.length ? `<div class="download-grid">${grade.downloads.map(([title, href, type]) => `<a href="${href}" download><strong>${esc(title)}</strong><span>${esc(type)}</span></a>`).join("")}</div>` : `<div class="inline-cta"><strong>Current controlled files are supplied through technical support.</strong><a class="button primary" href="/contact/?product=${encodeURIComponent(grade.name)}&documents=Specification%2C%20COA%2C%20TDS%2C%20MSDS">Request documents</a></div>`}
+  </section>
+  <section class="application-links">${sectionIntro("Application links", "Explore relevant product-development paths", "Application pages provide educational and formulation context without making disease-treatment or guaranteed-result claims.")}
+    <div class="science-card-grid"><a href="/applications/cognitive-health/"><h3>Cognitive Health</h3><p>Brain-health, mental-performance, and cognitive-wellness concepts.</p></a><a href="/applications/healthy-aging/"><h3>Healthy Aging</h3><p>50+, active-aging, and senior-nutrition concepts.</p></a><a href="/applications/sports-nutrition/"><h3>Sports Nutrition</h3><p>Active-lifestyle and exercise-related nutrition research context.</p></a><a href="/applications/functional-foods/"><h3>Functional Foods</h3><p>Powder blends, sachets, nutrition mixes, and processing evaluation.</p></a></div>
+  </section>
+  <section class="product-faq">${sectionIntro("FAQ", `Common ${grade.shortName} buyer questions`, "Confirm all commercial and technical details against the current quoted product.")}
+    <div class="faq-list">${gradeFaqs.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
+  </section>
+  <section class="link-panel"><a href="/products/">All products</a><a href="/resources/phosphatidylserine-guide/">PS Buying Guide</a><a href="/resources/documents-for-ps-ingredients/">Technical documents</a><a href="/science/research-library/">Research Library</a><a href="/contact/">Request Specification &amp; COA</a></section>
+  <section class="form-panel"><div>${sectionIntro("Start an inquiry", `Request ${grade.shortName} specifications and technical support`, "Share your application, preferred source, target market, document needs, and estimated annual volume.")}</div>${quoteForm(grade.name)}</section>`;
+  return layout({
+    title: `${grade.name} Ingredient | Nutranexa`,
+    description: `Explore ${grade.name} for ${grade.positioning.toLowerCase()}. Request current specifications, COA, TDS, MSDS, source details, and formulation support.`,
+    route,
+    image: grade.coa?.image || grade.image,
+    schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"], [grade.name, route]]), productJson(grade, route), {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: gradeFaqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })),
+    }],
+    body,
+  });
+}
+
 function applicationsHub() {
-  const body = `<section class="page-hero compact"><p class="eyebrow">Applications</p><h1>Phosphatidylserine Applications for Supplements and Functional Foods</h1><p>Evaluate product format, source preference, document needs, and compliant wording before requesting a quotation.</p></section>
+  const body = `<section class="page-hero compact"><p class="eyebrow">Applications</p><h1>Phosphatidylserine Application Solutions</h1><p>Explore how source, purity grade, product format, technical documents, and compliant scientific context shape PS formulation decisions.</p></section>
   <section>${sectionIntro("Application paths", "Choose the right application route", "Clarify product format, source preference, document needs, and quotation details before starting a sourcing discussion.")}
-    <div class="card-grid">${applications.map((app) => `<article class="item-card"><img src="${app.image}" alt="${esc(app.title)}" loading="lazy"><div><h3>${esc(app.title)}</h3><p>${esc(app.description)}</p><a href="/applications/${app.slug}/">View application page</a></div></article>`).join("")}</div>
+    <div class="card-grid">${applications.filter((app) => !app.legacy).map((app) => `<article class="item-card"><img src="${app.image}" alt="${esc(app.title)}" loading="lazy"><div><h3>${esc(app.title)}</h3><p>${esc(app.description)}</p><a href="/applications/${app.slug}/">Explore application &rarr;</a></div></article>`).join("")}</div>
   </section>`;
   return layout({
     title: "Applications | Phosphatidylserine for Supplements and Functional Foods",
@@ -1601,23 +1886,36 @@ function applicationsHub() {
 
 function applicationPage(app) {
   const route = `/applications/${app.slug}/`;
-  const body = `${hero({
-    eyebrow: "Application page",
-    title: app.title,
-    text: app.description,
-    image: app.image,
-    cta: "Request Application Support",
-    secondary: "View PS Products",
-  })}
-  <section class="quick-answer"><p class="eyebrow">Quick Answer</p><h2>How should buyers evaluate this application?</h2><p>Buyers should define product format, target country, annual quantity, source preference, and document needs before requesting a quote. Nutranexa can discuss PS ingredient options without making unsupported medical or disease-treatment claims.</p></section>
-  <section>${sectionIntro("Application checklist", "What to prepare before quotation", "A clear brief helps sales respond with the most relevant source and document path.")}
-    <div class="feature-grid">${app.points.map((point) => `<div class="feature"><h3>${esc(point)}</h3><p>Confirm current product specifications, application fit, and compliance needs with the sales team.</p></div>`).join("")}</div>
+  const isCognitive = app.slug === "cognitive-health";
+  const tags = app.tags?.length ? `<ul class="application-tags">${app.tags.map((tag) => `<li>${esc(tag)}</li>`).join("")}</ul>` : "";
+  const body = `${isCognitive ? `<section class="application-hero">
+    <div><p class="eyebrow">Cognitive health application</p><h1>${esc(app.title)}</h1><p>${esc(app.description)}</p>${tags}<div class="hero-actions"><a class="button primary" href="/contact/?application=Cognitive%20Health">Request Cognitive Health Solution</a><a class="button secondary" href="/products/phosphatidylserine-20/">Download Product Overview</a></div></div>
+    <img src="${app.image}" alt="Light blue neural network, PS molecular structure, and fine light-yellow phosphatidylserine powder" loading="eager">
+  </section>` : `${hero({ eyebrow: "Application solution", title: app.title, text: app.description, image: app.image, cta: "Request Specification & COA", secondary: "View PS Grades" })}<section class="application-tag-band">${tags}</section>`}
+  ${isCognitive ? `<section class="application-relevance">${sectionIntro("Why PS fits cognitive health", "Why PS Is Relevant to Cognitive Health Formulations", "Phosphatidylserine is a naturally occurring phospholipid found in cell membranes, including neuronal cell membranes. Its structural and biological roles make it an ingredient of interest in cognitive-health research and nutraceutical product development.")}
+    <div class="explanation-grid">
+      <article><span>01</span><h3>Cell Membrane Structure</h3><p>Phosphatidylserine is an important phospholipid component associated with cell membrane structure and fluidity.</p></article>
+      <article><span>02</span><h3>Neuronal Communication</h3><p>PS is studied for its role in membrane-related signaling and neuronal communication processes.</p></article>
+      <article><span>03</span><h3>Flexible Formulation</h3><p>Available in multiple purity grades for capsules, tablets, powder blends, and selected nutrition formats.</p></article>
+      <article><span>04</span><h3>Research Interest</h3><p>Phosphatidylserine has been investigated across cognitive health, aging, stress, and exercise research areas.</p></article>
+    </div>
+  </section>
+  <section class="mechanism-module">${sectionIntro("Mechanism education", "A formulation-focused PS pathway", "This educational sequence describes ingredient context and scientific interest. It does not promise a consumer outcome or disease benefit.")}
+    <ol><li><span>01</span><strong>PS Ingredient</strong></li><li><span>02</span><strong>Digestion &amp; Absorption</strong></li><li><span>03</span><strong>Phospholipid Availability</strong></li><li><span>04</span><strong>Cell Membrane Structure</strong></li><li><span>05</span><strong>Scientific Research Interest</strong></li></ol>
+  </section>` : `<section>${sectionIntro("Application focus", `Building ${app.title.toLowerCase()} concepts`, "Use scientific research as educational context, then validate the exact ingredient, serving format, processing conditions, label wording, and target-market requirements for the finished product.")}
+    <div class="feature-grid">${app.points.map((point) => `<div class="feature"><h3>${esc(point)}</h3><p>Confirm current specifications, finished-product fit, and permitted market wording before commercial use.</p></div>`).join("")}</div>
+  </section>`}
+  <section class="grade-comparison">${sectionIntro("Recommended grades", "Recommended PS Grades for Product Development", "These are positioning routes, not automatic formulation recommendations. Confirm the current controlled specification and run finished-product testing.")}
+    <div class="table-wrap"><table class="spec-table"><thead><tr><th>Product</th><th>PS content</th><th>Source</th><th>Positioning</th><th></th></tr></thead><tbody>${psGrades.map((grade) => `<tr><td>${esc(grade.shortName)}</td><td>${esc(grade.shortName.replace("PS ", "Target "))}</td><td>Soy / Sunflower*</td><td>${esc(grade.positioning)}</td><td><a href="/products/${grade.slug}/">View grade</a></td></tr>`).join("")}</tbody></table></div><p class="form-note">* Source availability and product-specific documentation must be confirmed for the quoted grade.</p>
   </section>
   ${applicationFormatSection(app)}
-  <section class="link-panel"><a href="/products/phosphatidylserine/">Phosphatidylserine</a><a href="/products/soy-phosphatidylserine/">Soy PS</a><a href="/products/sunflower-phosphatidylserine/">Sunflower PS</a><a href="/quality-rd/">Quality & R&D</a></section>
-  <section class="form-panel"><div>${sectionIntro("Talk to sales", "Request application support", "Include application details and document needs for a faster reply.")}</div>${quoteForm(app.title)}</section>`;
+  <section class="application-science">${sectionIntro("Science and technical information", "Evidence, mechanism, and product documentation", "Keep human, animal, laboratory, and review evidence clearly distinguished, and never convert a research finding into a medical claim.")}
+    <div class="science-card-grid"><a href="/science/research-library/"><h3>Research Library</h3><p>Browse selected publications related to cognition, aging, exercise, and nutritional science.</p></a><a href="/science/how-ps-works/"><h3>Mechanism Overview</h3><p>Understand the biological role and structural characteristics of phosphatidylserine.</p></a><a href="/resources/documents-for-ps-ingredients/"><h3>Technical Documents</h3><p>Request product specifications, COA, TDS, MSDS, and related technical information.</p></a></div>
+  </section>
+  <section class="link-panel"><a href="/products/phosphatidylserine-20/">PS 20%</a><a href="/products/phosphatidylserine-50/">PS 50%</a><a href="/products/phosphatidylserine-70/">PS 70%</a><a href="/products/soy-phosphatidylserine/">Soy PS</a><a href="/products/sunflower-phosphatidylserine/">Sunflower PS</a><a href="/science/research-library/">Research Library</a><a href="/contact/">Talk to Technical Support</a></section>
+  <section class="form-panel"><div>${sectionIntro("Talk to technical support", `Request support for ${app.title.toLowerCase()}`, "Include your application, source preference, required PS grade, target market, annual volume, and document needs.")}</div>${quoteForm(app.title)}</section>`;
   return layout({
-    title: `${app.title} | Nutranexa`,
+    title: app.seoTitle || `${app.title} | Nutranexa`,
     description: app.description,
     route,
     image: app.image,
@@ -1726,7 +2024,7 @@ function qualityPage() {
   <section>${sectionIntro("Trust signals", "Quality information for buyer review", "Review company facts, R&D cooperation, production license references, and document samples before requesting current files.")}
     <div class="feature-grid"><div class="feature"><h3>R&D cooperation</h3><p>Nutranexa references cooperation with East China University of Science and Technology for PS development.</p></div><div class="feature"><h3>Production license reference</h3><p>PS obtained production license by the end of 2015 according to company materials.</p></div><div class="feature"><h3>Quality visibility</h3><p>Factory, cleanroom, lab, and equipment images support buyer evaluation.</p></div></div>
   </section>
-  <section>${sectionIntro("Document proof", "Certificates and registration files for buyer review", "Use these files as preliminary review materials. Current validity, scope, and product applicability should be confirmed before purchase or shipment.")}${documentCards()}</section>
+  <section>${sectionIntro("Document proof", "Quality, certification, and registration files for buyer review", "Use these files as preliminary review materials. Batch relevance, current validity, scope, and product applicability should be confirmed before purchase or shipment.")}${documentCards()}</section>
   ${technicalDownloadLibrary()}
   ${qualityDocumentWorkflow()}
   <section class="coa-section">${sectionIntro("COA samples", "PS 20% and 50% batch-specific sample data", "The COA samples show analysis items commonly reviewed by buyers, including assay, moisture, peroxide value, heavy metals, microbiology, and Salmonella.")}${coaSampleTables()}</section>
@@ -1763,7 +2061,7 @@ function aboutPage() {
 }
 
 function contactPage() {
-  const body = `<section class="page-hero compact"><p class="eyebrow">Contact sales</p><h1>Request a Quote or Product Documents</h1><p>Send product interest, target application, annual quantity, and document needs. You can contact sales by email, WhatsApp, phone, or the contact form.</p></section>
+  const body = `<section class="page-hero compact"><p class="eyebrow">Technical inquiry</p><h1>Request Specification &amp; COA</h1><p>Send your application, preferred source, required PS grade, target market, annual volume, and document needs through the secure form.</p></section>
   <section class="contact-layout">
     ${contactDetailsCard("Nutranexa / Shandong Baianrui Biopharmaceutical")}
     ${quoteForm("General quote request")}
@@ -1790,7 +2088,7 @@ function inquiryPage() {
     </div>
     <div class="inquiry-tech-card">
       <h2>Direct Sales Contact</h2>
-      <p>Email <a href="mailto:${salesEmail}">${salesEmail}</a> or WhatsApp <a href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a> for PS specifications, COA samples, document review, and quotation support.</p>
+      <p>Use the secure inquiry form or WhatsApp <a href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a> for PS specifications, COA samples, document review, and quotation support.</p>
       <ul class="check-list">
         <li>PS 20% and 50% COA sample review</li>
         <li>Halal, Kosher, food production license, and facility registration document discussion</li>
@@ -1798,7 +2096,7 @@ function inquiryPage() {
       </ul>
     </div>
   </div>
-  <form class="inquiry-form quote-form" data-context="Dedicated B2B inquiry page" action="https://formsubmit.co/wh1007209170@gmail.com" method="post" novalidate>
+  <form class="inquiry-form quote-form" data-context="Dedicated B2B inquiry page" action="/api/inquiry" method="post" novalidate>
     <input type="hidden" name="Lead Source" value="Inquiry Page">
     <input type="hidden" name="_subject" value="New Nutranexa Website Inquiry">
     <input type="hidden" name="_template" value="table">
@@ -1852,6 +2150,57 @@ function newsCategory(article) {
   if (/fda|efsa|regulat|guidance|compliance|dshea|law/.test(text)) return "Regulation";
   if (/launch|formula|product|introduc|debut/.test(text)) return "Product Launch";
   return "Ingredient Market";
+}
+
+function scienceHubPage() {
+  const route = "/science/";
+  const body = `<section class="page-hero compact"><p class="eyebrow">Science center</p><h1>Science Behind Phosphatidylserine</h1><p>Explore phosphatidylserine structure, biological role, selected research, and formulation guidance with clear evidence boundaries.</p></section>
+  <section>${sectionIntro("Science pathways", "Educational support for ingredient decisions", "Nutranexa distinguishes scientific education from finished-product claims and links buyers to original research sources.")}
+    <div class="science-card-grid"><a href="/science/how-ps-works/"><h3>How PS Works</h3><p>Understand phospholipid structure, membrane context, and research interest without medical claims.</p></a><a href="/science/research-library/"><h3>Research Library</h3><p>Review structured publication records with study type, population, summary, limitations, DOI, and original source.</p></a><a href="/science/formulation-support/"><h3>Formulation Support</h3><p>Connect target application, purity grade, source, product format, and required technical documents.</p></a></div>
+  </section>
+  <section class="cta-band"><div><p class="eyebrow">Scientific compliance</p><h2>Research interest is not a medical claim.</h2><p>Finished-product wording, study relevance, and permitted claims depend on formulation, dose, population, evidence quality, and target-market rules.</p></div><a class="button light" href="/contact/">Talk to Technical Support</a></section>`;
+  return layout({ title: "Phosphatidylserine Science Center | Nutranexa", description: "Explore phosphatidylserine structure, research publications, evidence limitations, and formulation support for B2B product development.", route, image: "/assets/images/hero-ps-innovation-v2.png", schema: [breadcrumbJson([["Home", "/"], ["Science", route]])], body });
+}
+
+function howPsWorksPage() {
+  const route = "/science/how-ps-works/";
+  const body = `<section class="application-hero"><div><p class="eyebrow">Mechanism education</p><h1>How Phosphatidylserine Works</h1><p>Phosphatidylserine is a naturally occurring phospholipid associated with cell membrane structure and membrane-related biological processes.</p><ul class="application-tags"><li>Phospholipid Structure</li><li>Cell Membrane Context</li><li>Research Education</li></ul></div><img src="/assets/images/hero-ps-innovation-v2.png" alt="Scientific visualization of neural connections, a molecular structure, and PS powder" loading="eager"></section>
+  <section class="mechanism-module">${sectionIntro("Educational pathway", "From PS ingredient to scientific research interest", "This sequence is a simplified educational framework for formulators. It does not demonstrate that a specific ingredient batch or finished product causes a health outcome.")}
+    <ol><li><span>01</span><strong>PS Ingredient</strong></li><li><span>02</span><strong>Digestion &amp; Absorption</strong></li><li><span>03</span><strong>Phospholipid Availability</strong></li><li><span>04</span><strong>Cell Membrane Structure</strong></li><li><span>05</span><strong>Scientific Research Interest</strong></li></ol>
+  </section>
+  <section class="detail-grid"><div><h2>Structure</h2><p>PS is a phospholipid ingredient. Its molecular and membrane context is relevant to scientific study and formulation education.</p></div><div><h2>Biological role</h2><p>PS is associated with cell membrane structure and fluidity and is studied in relation to membrane-related signaling processes.</p></div><div><h2>Evidence language</h2><p>Use phrases such as “studied for,” “associated with,” and “research interest in.” Do not convert research findings into treatment or guaranteed-result claims.</p></div><div><h2>Product development</h2><p>Ingredient source, purity, format, process conditions, dose, and finished-product stability must be evaluated separately.</p></div></section>
+  <section class="link-panel"><a href="/science/research-library/">Research Library</a><a href="/applications/cognitive-health/">Cognitive Health</a><a href="/science/formulation-support/">Formulation Support</a><a href="/contact/">Request Technical Documents</a></section>`;
+  return layout({ title: "How Phosphatidylserine Works | Nutranexa", description: "Learn about phosphatidylserine structure, cell membrane context, biological research interest, and compliant formulation education.", route, image: "/assets/images/hero-ps-innovation-v2.png", schema: [breadcrumbJson([["Home", "/"], ["Science", "/science/"], ["How PS Works", route]])], body });
+}
+
+function researchLibraryPage() {
+  const route = "/science/research-library/";
+  const itemList = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: researchItems.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.title, url: item.source_url })),
+  };
+  const cards = researchItems.map((item) => `<article class="research-card${item.featured ? " featured" : ""}">
+    <div class="research-meta"><span>${esc(item.research_type)}</span><span>${esc(item.application_area)}</span><span>${item.year}</span></div>
+    <h2>${esc(item.title)}</h2><p class="research-authors">${esc(item.authors)}</p><p><strong>${esc(item.journal)}</strong> · DOI ${esc(item.doi)}</p>
+    <dl><div><dt>Population</dt><dd>${esc(item.population)}</dd></div><div><dt>Evidence summary</dt><dd>${esc(item.summary)}</dd></div><div><dt>Limitations</dt><dd>${esc(item.limitations)}</dd></div></dl>
+    <a href="${esc(item.source_url)}" target="_blank" rel="noopener noreferrer">View original PubMed record &rarr;</a>
+  </article>`).join("");
+  const body = `<section class="page-hero compact"><p class="eyebrow">Research library</p><h1>Phosphatidylserine Research Library</h1><p>Selected source-linked publications for formulation education, organized by study type, application area, population, summary, and limitations.</p></section>
+  <section class="research-compliance"><h2>How to read this library</h2><p>Human findings are described as “reported in human studies.” Animal findings should be labeled “observed in animal studies,” laboratory findings “investigated in laboratory models,” and reviews “summarized previous research.” No entry should be treated as a medical claim for a bulk ingredient or finished product.</p></section>
+  <section class="research-library">${cards}</section>
+  <section class="link-panel"><a href="/science/how-ps-works/">How PS Works</a><a href="/applications/cognitive-health/">Cognitive Health</a><a href="/applications/healthy-aging/">Healthy Aging</a><a href="/applications/sports-nutrition/">Sports Nutrition</a><a href="/contact/">Talk to Technical Support</a></section>`;
+  return layout({ title: "Phosphatidylserine Research Library | Nutranexa", description: "Browse source-linked phosphatidylserine research records with study type, population, summary, limitations, DOI, and original PubMed links.", route, image: "/assets/images/news-lab-measurement-unsplash.jpg", schema: [breadcrumbJson([["Home", "/"], ["Science", "/science/"], ["Research Library", route]]), itemList], body });
+}
+
+function formulationSupportPage() {
+  const route = "/science/formulation-support/";
+  const body = `<section class="page-hero compact"><p class="eyebrow">Formulation support</p><h1>PS Ingredient Formulation Support</h1><p>Build a clearer technical brief around application, source, purity grade, product format, processing conditions, documentation, and target market.</p></section>
+  <section>${sectionIntro("Development workflow", "Information to prepare before sampling", "A complete brief helps technical and sales teams identify the relevant grade, source route, controlled documents, and testing questions.")}
+    <div class="explanation-grid"><article><span>01</span><h3>Define Application</h3><p>Cognitive health, memory support, healthy aging, sports nutrition, or functional food.</p></article><article><span>02</span><h3>Select Source</h3><p>Compare soy and sunflower routes against label, market, and document needs.</p></article><article><span>03</span><h3>Choose Target Grade</h3><p>Evaluate 20%, 50%, or 70% positioning without assuming process suitability.</p></article><article><span>04</span><h3>Plan Testing</h3><p>Confirm processing, stability, sensory, compatibility, assay, and packaging requirements.</p></article></div>
+  </section>
+  <section class="form-panel"><div>${sectionIntro("Technical brief", "Talk to technical support", "Share your formulation and document requirements. No technical value will be assumed without a controlled specification or batch document.")}</div>${quoteForm("Formulation support")}</section>`;
+  return layout({ title: "PS Formulation Support | Nutranexa", description: "Request phosphatidylserine formulation support for source selection, target purity, formats, testing, specifications, COA, TDS, and MSDS.", route, image: "/assets/images/quality-document-review.webp", schema: [breadcrumbJson([["Home", "/"], ["Science", "/science/"], ["Formulation Support", route]])], body });
 }
 
 function newsPage() {
@@ -1970,12 +2319,12 @@ function articlePage(article) {
 }
 
 function thankYouPage() {
-  const body = `<section class="page-hero compact"><p class="eyebrow">Inquiry received</p><h1>Thank you. Your request is ready for sales follow-up.</h1><p>Our team will review your product interest, document needs, application details, and quotation request. You can also contact us by email or WhatsApp for urgent projects.</p><a class="button primary" href="/products/phosphatidylserine/">Return to PS Products</a></section>`;
+  const body = `<section class="page-hero compact"><p class="eyebrow">Inquiry received</p><h1>Thank you. Your request is ready for technical follow-up.</h1><p>Our team will review your application, source preference, required PS grade, document needs, and estimated annual volume.</p><a class="button primary" href="/products/">Return to PS Products</a></section>`;
   return layout({ title: "Thank You | Nutranexa Quote Request", description: "Your Nutranexa phosphatidylserine inquiry has been received for sales follow-up.", route: "/thank-you/", schema: [breadcrumbJson([["Home", "/"], ["Thank You", "/thank-you/"]])], body });
 }
 
 function privacyPage() {
-  const body = `<section class="article-page"><header><p class="eyebrow">Privacy</p><h1>Privacy Policy</h1><p>This policy explains how Nutranexa handles B2B inquiry information.</p></header><div class="article-body"><p>Nutranexa collects information submitted through inquiry forms, including name, email, phone, company, country, product interest, and message content. The information is used to respond to B2B product, document, sample, and quotation requests.</p><p>Inquiry information may be reviewed by sales and technical staff so the team can confirm product source, specification, available documents, packaging, and shipment discussion points.</p><p>For privacy-related requests, contact ${salesEmail}.</p></div></section>`;
+  const body = `<section class="article-page"><header><p class="eyebrow">Privacy</p><h1>Privacy Policy</h1><p>This policy explains how Nutranexa handles B2B inquiry information.</p></header><div class="article-body"><p>Nutranexa collects information submitted through inquiry forms, including name, business email, company, country, application, source preference, required PS grade, document needs, estimated annual volume, and message content. The information is used to respond to B2B product, document, sample, and quotation requests.</p><p>Inquiry information may be reviewed by sales and technical staff so the team can confirm product source, specification, available documents, packaging, and shipment discussion points.</p><p>For privacy-related requests, use the website inquiry form and select the relevant request in your message.</p></div></section>`;
   return layout({ title: "Privacy Policy | Nutranexa", description: "Learn how Nutranexa handles B2B inquiry information submitted through the website.", route: "/privacy/", schema: [breadcrumbJson([["Home", "/"], ["Privacy", "/privacy/"]])], body });
 }
 
@@ -1994,10 +2343,15 @@ async function add(route, html) {
 await add("/", homePage());
 await add("/products/", productsHub());
 for (const product of products) await add(`/products/${product.slug}/`, productPage(product));
+for (const grade of psGrades) await add(`/products/${grade.slug}/`, psGradePage(grade));
 await add("/benefits/", benefitsHub());
 for (const item of psBenefitItems) await add(`/benefits/${item.slug}/`, benefitPage(item));
 await add("/applications/", applicationsHub());
 for (const app of applications) await add(`/applications/${app.slug}/`, applicationPage(app));
+await add("/science/", scienceHubPage());
+await add("/science/how-ps-works/", howPsWorksPage());
+await add("/science/research-library/", researchLibraryPage());
+await add("/science/formulation-support/", formulationSupportPage());
 await add("/manufacturing/", manufacturingPage());
 await add("/cases/", casesPage());
 await add("/quality-rd/", qualityPage());

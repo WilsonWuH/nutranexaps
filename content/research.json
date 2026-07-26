@@ -1,0 +1,58 @@
+[
+  {
+    "title": "The cognitive effects of supplementation with sunflower phosphatidyl serine in healthy children aged 8 to 12 years: a randomized controlled trial",
+    "authors": "Friling M, Jackson PA, Kennedy D, Dodd F, Smith E, Lavie A, Lopresti A, Ivanir E, Jalanka J",
+    "journal": "Nutrition Journal",
+    "year": 2025,
+    "doi": "10.1186/s12937-025-01264-9",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/41318468/",
+    "research_type": "Human Clinical Study",
+    "application_area": "Cognitive Health",
+    "population": "Healthy children aged 8 to 12 years",
+    "summary": "This randomized controlled trial reported no significant overall differences on its primary or secondary outcomes, while exploratory subgroup observations were identified for further research.",
+    "limitations": "The overall outcomes were not significant. Subgroup observations should not be converted into efficacy or medical claims.",
+    "featured": true
+  },
+  {
+    "title": "Effects of a food supplement containing phosphatidylserine on cognitive function in Chinese older adults with mild cognitive impairment: A randomized double-blind, placebo-controlled trial",
+    "authors": "Duan H, Xu N, Yang T, Wang M, Zhang C, Zhao J, Li Z, Chen Y, Yan J, Zhang M, Li W, Yue Z, Ma F, He R, Huang G",
+    "journal": "Journal of Affective Disorders",
+    "year": 2025,
+    "doi": "10.1016/j.jad.2024.09.131",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/39317299/",
+    "research_type": "Human Clinical Study",
+    "application_area": "Healthy Aging",
+    "population": "Chinese older adults with mild cognitive impairment",
+    "summary": "The human study reported short-term memory-related findings for a food supplement containing phosphatidylserine in the population studied.",
+    "limitations": "The study concerns a specific finished supplement and clinical population. Its findings do not establish that a bulk PS ingredient treats cognitive decline.",
+    "featured": true
+  },
+  {
+    "title": "Effects of Taurine-, Caffeine-, and Phosphatidylserine-Containing Supplementation Protocols on Physical and Cognitive Performance in Professional Male Football Players",
+    "authors": "Mizera K, Mizgała-Izworska E, Mizera J, Mackiewicz J",
+    "journal": "Nutrients",
+    "year": 2026,
+    "doi": "10.3390/nu18111684",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42280328/",
+    "research_type": "Human Clinical Study",
+    "application_area": "Sports Nutrition",
+    "population": "Professional male football players",
+    "summary": "This human exercise study investigated combined supplementation protocols containing taurine, caffeine, and phosphatidylserine in relation to physical and cognitive performance measures.",
+    "limitations": "The active protocols contained multiple ingredients and different caffeine doses, so the independent contribution of phosphatidylserine cannot be determined.",
+    "featured": true
+  },
+  {
+    "title": "Differential cognitive effects of DHA-enriched and standard phosphatidylserine formulations in children with ADHD: a randomized, placebo-controlled trial",
+    "authors": "Jaicks CCD, Kinter RC",
+    "journal": "Applied Neuropsychology: Child",
+    "year": 2026,
+    "doi": "10.1080/21622965.2026.2694486",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/42345137/",
+    "research_type": "Human Clinical Study",
+    "application_area": "Cognitive Health",
+    "population": "Children with ADHD",
+    "summary": "The randomized study compared DHA-enriched and standard phosphatidylserine formulations across cognitive measures in the population studied.",
+    "limitations": "This is research in a diagnosed pediatric population using specific finished formulations. It must not be translated into a disease-treatment claim for a bulk ingredient.",
+    "featured": false
+  }
+]

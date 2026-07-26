@@ -3,7 +3,7 @@ const nav = document.querySelector("#site-nav");
 const uiMessages = window.NUTRANEXA_I18N || {
   required: "Please complete all required fields before submitting.",
   submitting: "Submitting...",
-  sendError: "We could not send your inquiry. Please email us directly or contact us on WhatsApp.",
+  sendError: "We could not send your inquiry. Please try again or contact us on WhatsApp.",
   retryError: "We could not send your inquiry. Please try again.",
   success: "Submitted successfully. Redirecting to the confirmation page...",
 };
@@ -67,12 +67,20 @@ const inquiryPrefill = {
   assay: inquiryParams.get("assay"),
   documents: inquiryParams.get("documents"),
   sample: inquiryParams.get("sample"),
+  application: inquiryParams.get("application"),
 };
 
 const setFormValue = (form, name, value) => {
   if (!value) return;
   const field = form.elements.namedItem(name);
-  if (!field || field instanceof RadioNodeList) return;
+  if (!field) return;
+  if (field instanceof RadioNodeList) {
+    const requested = value.split(",").map((item) => item.trim().toLowerCase());
+    [...field].forEach((item) => {
+      if (item.type === "checkbox" || item.type === "radio") item.checked = requested.includes(item.value.toLowerCase());
+    });
+    return;
+  }
 
   if (field.tagName === "SELECT" && ![...field.options].some((option) => option.value === value)) {
     field.add(new Option(value, value));
@@ -81,6 +89,8 @@ const setFormValue = (form, name, value) => {
 };
 
 document.querySelectorAll(".quote-form").forEach((form) => {
+  setFormValue(form, "Locale", document.documentElement.lang || "en");
+  setFormValue(form, "Form Started", String(Date.now()));
   setFormValue(form, "Product Interest", inquiryPrefill.product);
   setFormValue(form, "Interest", inquiryPrefill.product);
   setFormValue(form, "Product Requirement", inquiryPrefill.product);
@@ -88,6 +98,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
   setFormValue(form, "Target Assay", inquiryPrefill.assay);
   setFormValue(form, "Documents Needed", inquiryPrefill.documents);
   setFormValue(form, "Sample Needed", inquiryPrefill.sample);
+  setFormValue(form, "Application", inquiryPrefill.application);
 
   const status = form.querySelector(".form-status");
   const submit = form.querySelector('button[type="submit"]');
@@ -130,30 +141,30 @@ document.querySelectorAll(".quote-form").forEach((form) => {
       submit.textContent = uiMessages.submitting;
     }
 
-    const data = Object.fromEntries(new FormData(form).entries());
+    const formData = new FormData(form);
+    const data = {};
+    for (const [key, value] of formData.entries()) {
+      if (key in data) data[key] = `${data[key]}, ${value}`;
+      else data[key] = value;
+    }
     const payload = {
       ...data,
       context: form.dataset.context || "General inquiry",
       submittedAt: new Date().toISOString(),
       name: data.Name || "Website visitor",
       email: data.Email || "",
-      phone: data.Phone || "",
       message: data.Message || "No additional message provided.",
-      _subject: `[Nutranexa Inquiry] ${data.Interest || data["Product Interest"] || data["Product Requirement"] || "General inquiry"} - ${data.Name || "Website visitor"}`,
-      _template: "table",
-      _captcha: "false",
-      _url: data._url || "https://nutranexaps.com/contact/",
     };
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
+      const response = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
       });
       const result = await response.json().catch(() => ({}));
 
-      if (!response.ok || String(result.success) !== "true") {
+      if (!response.ok || result.success !== true) {
         throw new Error(uiMessages.sendError);
       }
 
