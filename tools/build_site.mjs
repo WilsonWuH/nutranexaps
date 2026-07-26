@@ -737,6 +737,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-gras-scope-review-us": "U.S. phosphatidylserine GRAS scope review with soy and sunflower sources, PS powder, blank scope tiles, and unbranded beverage, bar, and cereal prototypes",
   "phosphatidylserine-customer-questionnaire-control-us-canada": "North American phosphatidylserine questionnaire-control desk with a sealed 25 kilogram drum edge, PS powder dish, soy and sunflower source trays, blank answer cards, barcode labels, and separate QA, regulatory, and sales folders",
   "phosphatidylserine-assay-batch-calculation-europe": "Top-down European supplement formulation bench showing two phosphatidylserine powder quantities, a blank precision scale, mass-balance tiles, a mixing vessel, and a capsule-filling tray",
+  "phosphatidylserine-hs-code-review-us-canada": "North American customs-classification review desk with a sealed 25 kilogram phosphatidylserine drum, powder dish, soy and sunflower route trays, a magnifier over blank tariff-code tiles, and a broker handoff board for identity, classification, invoice, and release checks",
 };
 
 const promotedSeoTitles = {
@@ -778,6 +779,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-gras-scope-review-us": "PS GRAS Scope Review for US Foods | Nutranexa",
   "phosphatidylserine-customer-questionnaire-control-us-canada": "PS Customer Questionnaire Control for US and Canada Buyers | Nutranexa",
   "phosphatidylserine-assay-batch-calculation-europe": "PS Assay-to-Batch Calculation for Europe | Nutranexa",
+  "phosphatidylserine-hs-code-review-us-canada": "PS HS Code Review for US and Canada Importers | Nutranexa",
 };
 
 function conciseMeta(value) {
@@ -907,6 +909,7 @@ async function loadPromotedArticles() {
     const route = metaValue(markdown, "URL Slug");
     const slug = route.replace(/^\/resources\//, "").replace(/\/$/, "");
     const title = metaValue(markdown, "H1") || metaValue(markdown, "SEO Title");
+    const publishedAt = metaValue(markdown, "Published At") || `${name.slice(0, 10)}T00:00:00Z`;
     return {
       slug,
       title,
@@ -914,6 +917,7 @@ async function loadPromotedArticles() {
       description: conciseMeta(metaValue(markdown, "Meta Description")),
       primaryKeyword: metaValue(markdown, "Primary Keyword"),
       published: name.slice(0, 10),
+      publishedAt,
       image: `/assets/images/resource-${slug}.webp`,
       imageAlt: promotedArticleVisuals[slug] || `${title} guide for ingredient buyers`,
       contentHtml: renderResourceMarkdown(markdown),
@@ -2137,9 +2141,16 @@ function inquiryPage() {
 }
 
 function resourcesHub() {
+  const hubArticles = [...articles].sort((a, b) => {
+    const aDate = a.publishedAt || (a.published ? `${a.published}T00:00:00Z` : "");
+    const bDate = b.publishedAt || (b.published ? `${b.published}T00:00:00Z` : "");
+    const publishedCompare = bDate.localeCompare(aDate);
+    if (publishedCompare !== 0) return publishedCompare;
+    return b.slug.localeCompare(a.slug);
+  });
   const body = `<section class="page-hero compact"><p class="eyebrow">Resources</p><h1>Phosphatidylserine Sourcing Guides</h1><p>Use these articles to compare product options, prepare document requests, and evaluate suppliers before contacting sales.</p></section>
   <section>${sectionIntro("Buyer guides", "Read practical PS sourcing articles", "The resource hub connects product selection, document review, application decisions, and supplier evaluation topics.")}
-    <div class="article-grid">${articles.map((article) => `<article class="article-card article-card-media"><img src="${articleImage(article)}" alt="${esc(article.imageAlt)}" width="1536" height="1024" loading="lazy"><div><p class="eyebrow">${article.pillar ? "Pillar guide" : "Article"}</p><h3>${esc(article.title)}</h3><p>${esc(article.description)}</p><a href="/resources/${article.slug}/">Read article</a></div></article>`).join("")}</div>
+    <div class="article-grid">${hubArticles.map((article) => `<article class="article-card article-card-media"><img src="${articleImage(article)}" alt="${esc(article.imageAlt)}" width="1536" height="1024" loading="lazy"><div><p class="eyebrow">${article.pillar ? "Pillar guide" : "Article"}</p><h3>${esc(article.title)}</h3><p>${esc(article.description)}</p><a href="/resources/${article.slug}/">Read article</a></div></article>`).join("")}</div>
   </section>`;
   return layout({
     title: "Resources | Phosphatidylserine Sourcing Guides | Nutranexa",
