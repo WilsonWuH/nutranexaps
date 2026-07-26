@@ -79,7 +79,13 @@ export async function POST(request) {
   try {
     const upstream = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
       method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        Origin: "https://nutranexaps.com",
+        Referer: "https://nutranexaps.com/contact/",
+        "User-Agent": "NutranexaWebsite/1.0",
+      },
       body: JSON.stringify(payload),
     });
     const result = await upstream.json().catch(() => ({}));
