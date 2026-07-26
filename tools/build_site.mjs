@@ -574,6 +574,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-pah-testing-europe": "European phosphatidylserine PAH review with an amber-glass powder sample, foil-wrapped retain, four analytical vials, and chromatography equipment",
   "phosphatidylserine-flowability-blend-uniformity-pilot": "Phosphatidylserine capsule-production pilot with a powder flow funnel, three spatial blend samples, a scale, scoop, and capsule filling plate",
   "phosphatidylserine-gras-scope-review-us": "U.S. phosphatidylserine GRAS scope review with soy and sunflower sources, PS powder, blank scope tiles, and unbranded beverage, bar, and cereal prototypes",
+  "phosphatidylserine-customer-questionnaire-control-us-canada": "North American phosphatidylserine questionnaire-control desk with a sealed 25 kilogram drum edge, PS powder dish, soy and sunflower source trays, blank answer cards, barcode labels, and separate QA, regulatory, and sales folders",
 };
 
 const promotedSeoTitles = {
@@ -613,6 +614,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-pah-testing-europe": "PS PAH Testing for Europe | Nutranexa",
   "phosphatidylserine-flowability-blend-uniformity-pilot": "PS Flow & Blend Uniformity Pilot | Nutranexa",
   "phosphatidylserine-gras-scope-review-us": "PS GRAS Scope Review for US Foods | Nutranexa",
+  "phosphatidylserine-customer-questionnaire-control-us-canada": "PS Customer Questionnaire Control for US and Canada Buyers | Nutranexa",
 };
 
 function conciseMeta(value) {
