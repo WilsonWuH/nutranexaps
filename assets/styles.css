@@ -1093,7 +1093,7 @@ html[dir="rtl"] .proof-strip dt {
   display: flex;
   width: max-content;
   will-change: transform;
-  animation: claim-marquee-scroll 34s linear infinite;
+  animation: claim-marquee-scroll 48s linear infinite;
 }
 
 .claim-marquee-window:hover .claim-marquee-track,
@@ -3462,24 +3462,47 @@ body {
 }
 
 .quality-claims {
-  margin-top: 44px;
-  padding-top: 30px;
+  margin: 28px 0 38px;
+  padding: 24px 0 22px;
+  overflow: hidden;
   border-top: 1px solid rgba(23, 105, 224, 0.12);
+  border-bottom: 1px solid rgba(23, 105, 224, 0.12);
 }
 
 .quality-claims > p {
+  margin: 0 0 18px;
   color: var(--blue-dark);
   font-weight: 800;
 }
 
 .quality-claims > small {
   display: block;
-  margin-top: 14px;
+  margin-top: 18px;
   color: var(--muted);
 }
 
 .quality-claims .claim-marquee-window {
-  width: calc(100% + 12vw);
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+}
+
+.quality-claims .claim-icon-card {
+  width: 160px;
+  min-height: 150px;
+  grid-template-rows: 96px auto;
+}
+
+.quality-claims .claim-icon-card img {
+  width: 92px;
+  height: 92px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .claim-marquee-track {
+    animation: none;
+  }
 }
 
 .resource-section {
@@ -3750,10 +3773,6 @@ body {
 
   .quality-heading > .button {
     margin: -16px 0 38px;
-  }
-
-  .quality-claims .claim-marquee-window {
-    width: calc(100% + 10vw);
   }
 
   .home-final-cta {

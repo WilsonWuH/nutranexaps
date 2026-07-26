@@ -1521,8 +1521,14 @@ function articleSeoTitle(article) {
 
 function homePage() {
   const claimIcons = [
+    ["GMP", "/assets/images/claims/claim-gmp.webp"],
     ["Kosher", "/assets/images/claims/claim-kosher.webp"],
     ["Halal", "/assets/images/claims/claim-halal.webp"],
+    ["ISO", "/assets/images/claims/claim-iso.webp"],
+    ["FDA Registration", "/assets/images/claims/claim-fda.webp"],
+    ["FSSC 22000", "/assets/images/claims/claim-fssc-22000.webp"],
+    ["Heavy Metals", "/assets/images/claims/claim-heavy-metals.webp"],
+    ["Allergen Review", "/assets/images/claims/claim-allergens.webp"],
   ];
   const claimIconItems = claimIcons
     .map(([label, image]) => `<li class="claim-icon-card"><img src="${image}" alt="" width="160" height="160" loading="eager"><span>${esc(label)}</span></li>`)
@@ -1596,7 +1602,7 @@ function homePage() {
   </section>
 
   <section class="home-section science-section">
-    <div class="science-visual"><img src="/assets/images/proof-rd-quality.webp" alt="Nutranexa research and quality team working in a clean laboratory" loading="lazy"><div><strong>Science-led</strong><span>Ingredient decisions</span></div></div>
+    <div class="science-visual"><img src="/assets/images/science-phosphatidylserine-lab-v2.webp" alt="Laboratory scientist reviewing a phosphatidylserine powder sample beside analytical equipment" width="1200" height="1200" loading="lazy"><div><strong>Science-led</strong><span>Ingredient decisions</span></div></div>
     <div class="science-copy">${sectionIntro("Science & research", "Science Behind Phosphatidylserine", "Explore the structure, biological role, and research areas associated with phosphatidylserine. Our science center helps formulators evaluate application potential without converting research into medical claims.")}
       <div class="science-links">
         <a href="/resources/what-is-phosphatidylserine/"><span>01</span><div><strong>What is Phosphatidylserine?</strong><small>Understand the ingredient and sourcing context.</small></div></a>
@@ -1611,16 +1617,16 @@ function homePage() {
     <div class="quality-heading">${sectionIntro("Quality documentation", "Quality Information Buyers Can Review", "Request current, product-specific specifications, batch COA, technical files, and manufacturing information for supplier qualification and shipment release.")}
       <a class="button secondary" href="/resources/documents-for-ps-ingredients/">View document guidance</a>
     </div>
+    <div class="quality-claims" aria-label="Selected certification and product assurance references">
+      <p>Selected quality &amp; compliance references</p>
+      <div class="claim-marquee-window"><div class="claim-marquee-track"><ul class="claim-icon-list">${claimIconItems}</ul><ul class="claim-icon-list" aria-hidden="true">${claimIconItems}</ul></div></div>
+      <small>Current certificate validity, scope, and product applicability should be confirmed before purchase or shipment.</small>
+    </div>
     <div class="document-support-grid">
       <article><span>COA</span><h3>Certificate of Analysis</h3><p>Batch-specific test results for buyer and quality review.</p></article>
       <article><span>TDS</span><h3>Technical Data Sheet</h3><p>Product properties, specification context, and handling information.</p></article>
       <article><span>MSDS</span><h3>Safety Data Sheet</h3><p>Safety, handling, storage, and transport information.</p></article>
       <article><span>TECH</span><h3>Technical Consultation</h3><p>Application-focused discussion before sampling or scale-up.</p></article>
-    </div>
-    <div class="quality-claims" aria-label="Selected certification and product assurance references">
-      <p>Selected quality &amp; compliance references</p>
-      <div class="claim-marquee-window"><div class="claim-marquee-track"><ul class="claim-icon-list">${claimIconItems}</ul><ul class="claim-icon-list" aria-hidden="true">${claimIconItems}</ul></div></div>
-      <small>Current certificate validity, scope, and product applicability should be confirmed before purchase or shipment.</small>
     </div>
   </section>
 
