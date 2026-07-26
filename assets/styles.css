@@ -3878,6 +3878,21 @@ body {
   object-fit: cover;
 }
 
+@media (min-width: 1001px) {
+  .application-hero {
+    grid-template-columns: minmax(0, 46%) minmax(0, 54%);
+    min-height: 540px;
+  }
+
+  .application-hero > div {
+    padding: 50px clamp(54px, 5vw, 96px);
+  }
+
+  .application-hero > img {
+    min-height: 540px;
+  }
+}
+
 .application-tags {
   display: flex;
   flex-wrap: wrap;
@@ -4228,6 +4243,11 @@ body {
   .application-hero > div,
   .product-grade-hero > div {
     padding: 58px 5vw 38px;
+  }
+
+  .application-hero h1 {
+    font-size: clamp(2.15rem, 9.6vw, 2.35rem);
+    line-height: 1.06;
   }
 
   .application-hero > img,
