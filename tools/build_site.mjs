@@ -2199,15 +2199,15 @@ function researchLibraryPage() {
   };
   const cards = researchItems.map((item) => `<article class="research-card${item.featured ? " featured" : ""}">
     <div class="research-meta"><span>${esc(item.research_type)}</span><span>${esc(item.application_area)}</span><span>${item.year}</span></div>
-    <h2>${esc(item.title)}</h2><p class="research-authors">${esc(item.authors)}</p><p><strong>${esc(item.journal)}</strong> · DOI ${esc(item.doi)}</p>
+    <h2>${esc(item.title)}</h2><p class="research-authors">${esc(item.authors)}</p><p><strong>${esc(item.journal)}</strong> · DOI <a href="https://doi.org/${item.doi.split("/").map(encodeURIComponent).join("/")}" target="_blank" rel="noopener noreferrer">${esc(item.doi)}</a></p>
     <dl><div><dt>Population</dt><dd>${esc(item.population)}</dd></div><div><dt>Evidence summary</dt><dd>${esc(item.summary)}</dd></div><div><dt>Limitations</dt><dd>${esc(item.limitations)}</dd></div></dl>
-    <a href="${esc(item.source_url)}" target="_blank" rel="noopener noreferrer">View original PubMed record &rarr;</a>
+    <a href="${esc(item.source_url)}" target="_blank" rel="noopener noreferrer">View original source &rarr;</a>
   </article>`).join("");
   const body = `<section class="page-hero compact"><p class="eyebrow">Research library</p><h1>Phosphatidylserine Research Library</h1><p>Selected source-linked publications for formulation education, organized by study type, application area, population, summary, and limitations.</p></section>
   <section class="research-compliance"><h2>How to read this library</h2><p>Human findings are described as “reported in human studies.” Animal findings should be labeled “observed in animal studies,” laboratory findings “investigated in laboratory models,” and reviews “summarized previous research.” No entry should be treated as a medical claim for a bulk ingredient or finished product.</p></section>
   <section class="research-library">${cards}</section>
   <section class="link-panel"><a href="/science/how-ps-works/">How PS Works</a><a href="/applications/cognitive-health/">Cognitive Health</a><a href="/applications/healthy-aging/">Healthy Aging</a><a href="/applications/sports-nutrition/">Sports Nutrition</a><a href="/contact/">Talk to Technical Support</a></section>`;
-  return layout({ title: "Phosphatidylserine Research Library | Nutranexa", description: "Browse source-linked phosphatidylserine research records with study type, population, summary, limitations, DOI, and original PubMed links.", route, image: "/assets/images/news-lab-measurement-unsplash.jpg", schema: [breadcrumbJson([["Home", "/"], ["Science", "/science/"], ["Research Library", route]]), itemList], body });
+  return layout({ title: "Phosphatidylserine Research Library | Nutranexa", description: "Browse source-linked phosphatidylserine research records with study type, population, summary, limitations, DOI, and original source links.", route, image: "/assets/images/news-lab-measurement-unsplash.jpg", schema: [breadcrumbJson([["Home", "/"], ["Science", "/science/"], ["Research Library", route]]), itemList], body });
 }
 
 function formulationSupportPage() {

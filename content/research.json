@@ -1,5 +1,47 @@
 [
   {
+    "title": "Loss of Atp8a2 drives neurodegeneration through the dysregulation of spatiotemporal phosphatidylserine externalization in mature neurons",
+    "authors": "Schneider A, Merkel AB, Perta N, Ruff L, Ussyshkin N, Zimmer P, Aksan B, Lepeuve A, D’Andrea L, Pelucchi S, Marcello E, Di Marino D, Mauceri D",
+    "journal": "Cell Death & Disease",
+    "year": 2026,
+    "doi": "10.1038/s41419-026-09097-y",
+    "source_url": "https://www.nature.com/articles/s41419-026-09097-y",
+    "research_type": "Animal and Laboratory Study",
+    "application_area": "Neuroscience / Cell Membrane Biology",
+    "population": "Cultured mature hippocampal neurons and mouse retinal, optic-nerve, and neurodegeneration models",
+    "summary": "Using cultured neurons and several mouse models, the study associated reduced Atp8a2 expression with altered phosphatidylserine exposure patterns, loss of neuronal structure, and greater vulnerability, while Atp8a2 overexpression produced model-specific protective effects.",
+    "limitations": "This mechanistic work studied endogenous membrane phosphatidylserine regulation in cell and mouse models, not dietary supplementation or humans. Acute experimental neurotoxicity and model-specific manipulations limit translation to clinical or nutrition outcomes.",
+    "featured": false
+  },
+  {
+    "title": "Beneficial vascular effects of oral phosphatidylserine supplementation in type 2 diabetes",
+    "authors": "McMillan NJ, Augenreich MA, Ramirez-Perez FI, Power G, Burr K, Lateef OM, Nagarajan M, Foote CA, Imkaew N, Jurrissen TJ, Lazo-Fernandez Y, Betancourt-Cortes EE, Ferreira-Santos L, Beltran-Ornelas JH, Manrique-Acevedo C, Martinez-Lemus LA, Padilla J",
+    "journal": "Journal of Applied Physiology",
+    "year": 2026,
+    "doi": "10.1152/japplphysiol.00281.2026",
+    "source_url": "https://journals.physiology.org/doi/10.1152/japplphysiol.00281.2026",
+    "research_type": "Human Clinical Study",
+    "application_area": "Metabolic and Vascular Research",
+    "population": "34 adults with type 2 diabetes; supporting endothelial-cell, isolated-artery, and db/db mouse models",
+    "summary": "In a four-week randomized, double-blind, placebo-controlled trial embedded in a broader mechanistic study, adults with type 2 diabetes receiving phosphatidylserine showed changes in leg blood-flow response and load-dependent aortic pulse-wave velocity compared with placebo; supporting cell and diabetic-mouse experiments examined ADAM17 and vascular mechanisms.",
+    "limitations": "The human sample was small (16 phosphatidylserine and 18 placebo), lasted four weeks, enrolled only adults with type 2 diabetes, and evaluated surrogate vascular measures rather than clinical events. Results are specific to the studied 900 mg/day supplement (about 280 mg/day phosphatidylserine) and do not support treatment claims.",
+    "featured": false
+  },
+  {
+    "title": "Phosphatidylserine and RhoB connect PI4P and PA metabolism to maintain plasma membrane identity",
+    "authors": "Huang S, Kim YJ, Cao X, Bumpus TW, Sohn M, Menold MT, Dale RK, Kang JJ, Uematsu S, Gupta S, Qian SB, Yu H, Balla T, Baskin JM",
+    "journal": "Journal of Cell Biology",
+    "year": 2026,
+    "doi": "10.1083/jcb.202509213",
+    "source_url": "https://rupress.org/jcb/article/225/8/e202509213/282770/Phosphatidylserine-and-RhoB-connect-PI4P-and-PA",
+    "research_type": "Laboratory Study",
+    "application_area": "Cell Membrane Biology",
+    "population": "Cultured mammalian cells and biochemical membrane models",
+    "summary": "In cultured-cell and biochemical experiments, prolonged PI4KA inhibition reduced cellular phosphatidylserine while increasing phospholipase D activity and phosphatidic acid, with RhoB upregulation linked to compensatory membrane and actin changes.",
+    "limitations": "This is mechanistic laboratory research using pharmacologic and genetic perturbations in cultured systems. It did not test oral phosphatidylserine, finished formulations, whole-animal outcomes, or human health effects.",
+    "featured": false
+  },
+  {
     "title": "The cognitive effects of supplementation with sunflower phosphatidyl serine in healthy children aged 8 to 12 years: a randomized controlled trial",
     "authors": "Friling M, Jackson PA, Kennedy D, Dodd F, Smith E, Lavie A, Lopresti A, Ivanir E, Jalanka J",
     "journal": "Nutrition Journal",
