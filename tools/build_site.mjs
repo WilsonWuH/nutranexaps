@@ -1553,7 +1553,7 @@ function homePage() {
       </div>
     </div>
     <div class="home-hero-visual">
-      <img src="/assets/images/hero-ps-innovation-v2.png" alt="Light blue neural network, molecular structure, and fine light-yellow phosphatidylserine powder" width="1680" height="945" loading="eager">
+      <img src="/assets/images/hero-ps-composite-v3.png" alt="Soybeans, sunflower, phosphatidylserine powder, a molecular structure, and a neural brain visualization" width="1672" height="941" loading="eager">
       <div class="hero-visual-note"><span>PS</span><p><strong>Formulation-ready options</strong><br>Source, purity, and documents aligned to your project.</p></div>
     </div>
   </section>

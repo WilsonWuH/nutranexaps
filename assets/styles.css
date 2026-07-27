@@ -2984,14 +2984,14 @@ body {
   align-self: center;
   width: 100%;
   min-height: 0;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1672 / 941;
   overflow: hidden;
 }
 
 .home-hero-visual::after {
   position: absolute;
   inset: 0 auto 0 0;
-  width: 22%;
+  width: 10%;
   content: "";
   background: linear-gradient(90deg, #f8fbff, transparent);
 }
@@ -3694,9 +3694,7 @@ body {
   }
 
   .hero-visual-note {
-    right: 5vw;
-    bottom: 20px;
-    left: 5vw;
+    display: none;
   }
 
   .trust-strip {
