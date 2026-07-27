@@ -2918,10 +2918,10 @@ body {
 .home-hero {
   position: relative;
   display: block;
-  min-height: 660px;
+  min-height: clamp(760px, 41.66vw, 1080px);
   padding: 0;
   overflow: hidden;
-  background: #f4f9ff url("/assets/images/hero-ps-banner-v4.png") center / cover no-repeat;
+  background: #f4f9ff url("/assets/images/hero-ps-banner-v4.png") center / 100% auto no-repeat;
 }
 
 .home-hero-copy {
@@ -2933,7 +2933,7 @@ body {
   justify-content: center;
   box-sizing: border-box;
   width: min(680px, 46vw);
-  min-height: 660px;
+  min-height: clamp(760px, 41.66vw, 1080px);
   margin-left: max(6vw, calc((100vw - 1280px) / 2));
   margin-right: clamp(24px, 2vw, 40px);
   padding: 72px 0 72px;
