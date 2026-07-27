@@ -1537,11 +1537,26 @@ function homePage() {
   const claimIconItems = claimIcons
     .map(([label, image]) => `<li class="claim-icon-card"><img src="${image}" alt="" width="160" height="160" loading="eager"><span>${esc(label)}</span></li>`)
     .join("");
+  const heroClaimIcons = [
+    ["ISO", "/assets/images/claims/claim-iso.webp"],
+    ["FDA Registration", "/assets/images/claims/claim-fda.webp"],
+    ["GMP", "/assets/images/claims/claim-gmp.webp"],
+    ["FSSC 22000", "/assets/images/claims/claim-fssc-22000.webp"],
+    ["Kosher", "/assets/images/claims/claim-kosher.webp"],
+    ["Halal", "/assets/images/claims/claim-halal.webp"],
+  ];
+  const heroClaimSlides = heroClaimIcons
+    .map(([label, image]) => `<span class="hero-certification-slide" aria-hidden="true"><img src="${image}" alt="" width="160" height="160"><strong>${esc(label)}</strong></span>`)
+    .join("");
   const body = `<section class="home-hero">
     <div class="home-hero-copy">
       <p class="eyebrow">Premium PS ingredient solutions</p>
       <h1>Premium Phosphatidylserine Ingredients <span>for Cognitive Health Innovation</span></h1>
       <p class="home-hero-lead">High-quality soy- and sunflower-derived phosphatidylserine in flexible purity grades for nutraceutical, functional food, and healthy aging formulations.</p>
+      <div class="hero-certification-rotator" role="img" aria-label="Selected quality references: ISO, FDA Registration, GMP, FSSC 22000, Kosher, and Halal. Scope and validity are confirmed for each order.">
+        <span class="hero-certification-label">Quality references<small>Scope confirmed per order</small></span>
+        <span class="hero-certification-stage">${heroClaimSlides}</span>
+      </div>
       <ul class="hero-benefit-tags" aria-label="Key product benefits">
         <li>Soy &amp; Sunflower Sources</li>
         <li>20%, 50% &amp; 70% PS Grades</li>
