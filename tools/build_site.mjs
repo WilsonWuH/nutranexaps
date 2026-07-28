@@ -739,6 +739,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-assay-batch-calculation-europe": "Top-down European supplement formulation bench showing two phosphatidylserine powder quantities, a blank precision scale, mass-balance tiles, a mixing vessel, and a capsule-filling tray",
   "phosphatidylserine-hs-code-review-us-canada": "North American customs-classification review desk with a sealed 25 kilogram phosphatidylserine drum, powder dish, soy and sunflower route trays, a magnifier over blank tariff-code tiles, and a broker handoff board for identity, classification, invoice, and release checks",
   "phosphatidylserine-third-party-testing-us-eu": "Cross-border phosphatidylserine independent-lab verification with a sealed 25 kilogram drum, powder dish, tamper-evident sample jar, chain-of-custody tags, and blank supplier-COA-versus-lab-report comparison cards on a daylight technical bench",
+  "phosphatidylserine-vegan-statement-us-canada": "North American phosphatidylserine vegan-statement review desk with a sealed 25 kilogram drum edge, white PS powder dish, soy and sunflower source trays, blank green claim cards, and a clean amber bottle mockup in daylight",
 };
 
 const promotedSeoTitles = {
@@ -781,6 +782,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-customer-questionnaire-control-us-canada": "PS Customer Questionnaire Control for US and Canada Buyers | Nutranexa",
   "phosphatidylserine-assay-batch-calculation-europe": "PS Assay-to-Batch Calculation for Europe | Nutranexa",
   "phosphatidylserine-hs-code-review-us-canada": "PS HS Code Review for US and Canada Importers | Nutranexa",
+  "phosphatidylserine-vegan-statement-us-canada": "PS Vegan Statement Review for US and Canada Buyers | Nutranexa",
 };
 
 function conciseMeta(value) {
