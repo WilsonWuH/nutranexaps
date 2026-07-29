@@ -20,8 +20,6 @@ const pageDirectories = [
   "science",
   "thank-you",
   ...locales.map((locale) => locale.code),
-  "ko",
-  "tr",
 ];
 
 await fs.rm(publicDir, { recursive: true, force: true });

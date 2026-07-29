@@ -6,7 +6,9 @@
     "ru",
     "ar",
     "fr",
-    "pt"
+    "pt",
+    "ko",
+    "tr"
   ],
   "routes": [
     "/about/",

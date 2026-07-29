@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "generate": "node tools/build_site.mjs && node tools/localize_site.mjs && node tools/build_market_subdirectories.mjs",
+    "generate": "node tools/build_site.mjs && node tools/localize_site.mjs",
     "i18n:extract": "node tools/build_site.mjs && node tools/extract_i18n.mjs",
     "i18n:translate": "node tools/generate_translations.mjs",
     "i18n:verify": "node tools/verify_i18n.mjs",
@@ -19,6 +19,7 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "bing-translate-api": "^4.2.0",
     "cheerio": "^1.1.2",
     "playwright": "^1.61.1",
     "playwright-core": "^1.61.1"

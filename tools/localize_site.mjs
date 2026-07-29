@@ -3,13 +3,38 @@ import path from "node:path";
 import { load } from "cheerio";
 import { defaultLocale, localeConfig, localePath, locales, runtimeMessages } from "../i18n/config.mjs";
 import { translationOverrides } from "../i18n/overrides.mjs";
-import { marketRoutes } from "../config/locales/markets.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://nutranexaps.com";
-const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "assets", "i18n", "apps", "config", "content", "docs", "qa", "tmp", "ko", "tr"]);
+const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "assets", "i18n", "apps", "config", "content", "docs", "qa", "tmp"]);
 const localeCodes = new Set(locales.map((locale) => locale.code));
-const marketRouteSet = new Set(marketRoutes);
+
+const terminologyReplacements = {
+  ko: [
+    [/\bPhosphatidylserine\b/gi, "포스파티딜세린"],
+    [/\bphosphatidyl serine\b/gi, "포스파티딜세린"],
+    [/인산지세린|인산티딜세린/g, "포스파티딜세린"],
+    [/콩 유래/g, "대두 유래"],
+    [/조형/g, "제형"],
+  ],
+  tr: [
+    [/\bPhosphatidylserine\b/g, "Fosfatidilserin"],
+    [/\bphosphatidylserine\b/g, "fosfatidilserin"],
+    [/\bPhosphatidyl serine\b/g, "Fosfatidilserin"],
+    [/\bphosphatidyl serine\b/g, "fosfatidilserin"],
+    [/Formülasyonun için/g, "Formülasyonunuz için"],
+  ],
+};
+
+function applyTerminology(messages, locale) {
+  const replacements = terminologyReplacements[locale] || [];
+  return Object.fromEntries(
+    Object.entries(messages).map(([source, translated]) => [
+      source,
+      replacements.reduce((value, [pattern, replacement]) => value.replace(pattern, replacement), translated),
+    ]),
+  );
+}
 
 function normalize(value) {
   return String(value || "").replace(/\s+/g, " ").trim();
@@ -91,20 +116,12 @@ function translateSchema(value, messages, locale, key = "") {
 function languageSwitcher(locale, route) {
   const current = localeConfig(locale);
   const standardLinks = locales.map((item) => `<a href="${publicLocalePath(item.code, route)}" lang="${item.code}" dir="${item.dir}"${item.code === locale ? ' aria-current="page"' : ""}><span>${item.code.toUpperCase()}</span>${item.nativeLabel}</a>`);
-  const marketLinks = [
-    `<a href="${marketRouteSet.has(route) ? `/ko${route}` : "/ko/"}" lang="ko"><span>KO</span>한국어</a>`,
-    `<a href="${marketRouteSet.has(route) ? `/tr${route}` : "/tr/"}" lang="tr"><span>TR</span>Türkçe</a>`,
-  ];
-  const links = [...standardLinks, ...marketLinks].join("");
+  const links = standardLinks.join("");
   return `<details class="language-switcher"><summary aria-label="${current.switcherLabel}"><span class="language-code">${locale.toUpperCase()}</span><span class="language-name">${current.nativeLabel}</span></summary><div class="language-menu">${links}</div></details>`;
 }
 
 function alternateLinks(route) {
   const links = locales.map((locale) => `<link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${publicLocalePath(locale.code, route)}">`);
-  if (marketRouteSet.has(route)) {
-    links.push(`<link rel="alternate" hreflang="ko" href="${siteUrl}/ko${route}">`);
-    links.push(`<link rel="alternate" hreflang="tr" href="${siteUrl}/tr${route}">`);
-  }
   links.push(`<link rel="alternate" hreflang="x-default" href="${siteUrl}${publicLocalePath(defaultLocale, route)}">`);
   return links.join("\n  ");
 }
@@ -131,6 +148,13 @@ function localizeHtml(html, locale, route, messages, { compatibility = false } =
   $("body *:not([data-i18n-skip])").contents().each((_, node) => {
     if (node.type === "text" && !$(node).parents("script,style").length) translateNode(node, messages);
   });
+
+  if (route === "/" && locale === "ko") {
+    $("h1").first().html('인지 건강 혁신을 위한 <span>프리미엄 포스파티딜세린 원료</span>');
+  }
+  if (route === "/" && locale === "tr") {
+    $("h1").first().html('Bilişsel Sağlık İnovasyonu için <span>Premium Fosfatidilserin Hammaddeleri</span>');
+  }
 
   const attributes = [
     ["meta[name='description'], meta[property='og:title'], meta[property='og:description']", "content"],
@@ -177,7 +201,7 @@ function localizeHtml(html, locale, route, messages, { compatibility = false } =
 const dictionaries = new Map();
 for (const locale of locales) {
   const content = JSON.parse(await fs.readFile(path.join(root, "i18n", "messages", `${locale.code}.json`), "utf8"));
-  dictionaries.set(locale.code, { ...content.messages, ...(translationOverrides[locale.code] || {}) });
+  dictionaries.set(locale.code, applyTerminology({ ...content.messages, ...(translationOverrides[locale.code] || {}) }, locale.code));
   await fs.rm(path.join(root, locale.code), { recursive: true, force: true });
 }
 
@@ -198,10 +222,6 @@ const sitemapEntries = [];
 for (const route of routes) {
   const alternates = [
     ...locales.map((locale) => `    <xhtml:link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${publicLocalePath(locale.code, route)}"/>`),
-    ...(marketRouteSet.has(route) ? [
-      `    <xhtml:link rel="alternate" hreflang="ko" href="${siteUrl}/ko${route}"/>`,
-      `    <xhtml:link rel="alternate" hreflang="tr" href="${siteUrl}/tr${route}"/>`,
-    ] : []),
     `    <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl}${publicLocalePath(defaultLocale, route)}"/>`,
   ].join("\n");
   for (const locale of locales) {

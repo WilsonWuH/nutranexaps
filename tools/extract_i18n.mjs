@@ -4,7 +4,7 @@ import { load } from "cheerio";
 import { locales } from "../i18n/config.mjs";
 
 const root = process.cwd();
-const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "assets", "i18n"]);
+const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "assets", "i18n", "apps", "config", "content", "docs", "qa", "tmp"]);
 const localeCodes = new Set(locales.map((locale) => locale.code));
 const sourceStrings = new Set();
 

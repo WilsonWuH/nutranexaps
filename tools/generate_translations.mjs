@@ -41,13 +41,13 @@ function repairLegacyTokens(english, translated) {
   return translated.replace(/\[\[[^\]\d]+?(\d+)\]\]/g, (token, rawIndex) => terms[Number(rawIndex)] || token);
 }
 
-function batches(entries, maxCharacters = 1500) {
+function batches(entries, maxCharacters = 1500, maxEntries = Number.POSITIVE_INFINITY) {
   const result = [];
   let current = [];
   let characters = 0;
   for (const entry of entries) {
     const size = entry.protected.text.length + 20;
-    if (current.length && characters + size > maxCharacters) {
+    if (current.length && (characters + size > maxCharacters || current.length >= maxEntries)) {
       result.push(current);
       current = [];
       characters = 0;
@@ -105,6 +105,15 @@ async function translateGoogleCloud(batch, locale) {
   return payload.data.translations.map((item, index) => restore(item.translatedText, batch[index].protected.terms));
 }
 
+async function translateBingPublic(batch, locale) {
+  const { MET } = await import("bing-translate-api");
+  const result = await MET.translate(batch.map((entry) => entry.protected.text), "en", locale.googleCode);
+  if (result.length !== batch.length || result.some((item) => !item.translations?.[0]?.text)) {
+    throw new Error(`Microsoft Edge translation returned ${result.length} results for a ${batch.length}-item ${locale.code} batch.`);
+  }
+  return result.map((item, index) => restore(item.translations[0].text, batch[index].protected.terms));
+}
+
 async function translateDeepL(batch, locale) {
   const response = await fetchWithRetry("https://api-free.deepl.com/v2/translate", {
     method: "POST",
@@ -117,6 +126,7 @@ async function translateDeepL(batch, locale) {
 
 async function translateBatch(batch, locale) {
   if (provider === "google-public") return translateGooglePublic(batch, locale);
+  if (provider === "bing-public") return translateBingPublic(batch, locale);
   if (provider === "google-cloud") return translateGoogleCloud(batch, locale);
   if (provider === "deepl") return translateDeepL(batch, locale);
   throw new Error(`Unsupported translation provider: ${provider}`);
@@ -143,16 +153,27 @@ for (const locale of targets) {
     console.log(`Skipped ${locale.code}; dictionary is already complete.`);
     continue;
   }
-  const groups = batches(entries);
+  const groups = batches(entries, provider === "bing-public" ? 10000 : 1500, provider === "bing-public" ? 10 : Number.POSITIVE_INFINITY);
 
-  for (let index = 0; index < groups.length; index += 1) {
-    const group = groups[index];
-    const translations = await translateBatch(group, localeConfig(locale.code));
-    group.forEach((entry, itemIndex) => {
-      translatedMessages[entry.english] = translations[itemIndex];
+  const concurrency = provider === "bing-public" ? 8 : 1;
+  for (let start = 0; start < groups.length; start += concurrency) {
+    const wave = groups.slice(start, start + concurrency);
+    const results = await Promise.all(wave.map((group) => translateBatch(group, localeConfig(locale.code))));
+    wave.forEach((group, waveIndex) => {
+      group.forEach((entry, itemIndex) => {
+        translatedMessages[entry.english] = results[waveIndex][itemIndex];
+      });
     });
-    console.log(`${locale.code}: translated batch ${index + 1}/${groups.length}`);
+    const completed = Math.min(start + wave.length, groups.length);
+    console.log(`${locale.code}: translated batches ${start + 1}-${completed}/${groups.length}`);
     if (provider === "google-public") await sleep(300);
+    if (provider === "bing-public") {
+      await fs.writeFile(
+        outputPath,
+        `${JSON.stringify({ _meta: { locale: locale.code, sourceLocale: "en", provider, generatedAt: new Date().toISOString(), humanReviewRequired: true }, messages: translatedMessages }, null, 2)}\n`,
+        "utf8",
+      );
+    }
   }
 
   await fs.writeFile(

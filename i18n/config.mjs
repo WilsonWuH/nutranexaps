@@ -7,6 +7,8 @@ export const locales = [
   { code: "ar", label: "Arabic", nativeLabel: "العربية", dir: "rtl", googleCode: "ar", deeplCode: "AR", ogLocale: "ar_AR", switcherLabel: "اختر اللغة" },
   { code: "fr", label: "French", nativeLabel: "Français", dir: "ltr", googleCode: "fr", deeplCode: "FR", ogLocale: "fr_FR", switcherLabel: "Choisir la langue" },
   { code: "pt", label: "Portuguese", nativeLabel: "Português", dir: "ltr", googleCode: "pt", deeplCode: "PT-BR", ogLocale: "pt_BR", switcherLabel: "Escolher idioma" },
+  { code: "ko", label: "Korean", nativeLabel: "한국어", dir: "ltr", googleCode: "ko", deeplCode: "KO", ogLocale: "ko_KR", switcherLabel: "언어 선택" },
+  { code: "tr", label: "Turkish", nativeLabel: "Türkçe", dir: "ltr", googleCode: "tr", deeplCode: "TR", ogLocale: "tr_TR", switcherLabel: "Dil seçin" },
 ];
 
 export const runtimeMessages = {
@@ -16,6 +18,8 @@ export const runtimeMessages = {
   ar: { required: "يرجى إكمال جميع الحقول المطلوبة قبل الإرسال.", submitting: "جارٍ الإرسال...", sendError: "تعذر إرسال استفسارك. يرجى مراسلتنا عبر البريد الإلكتروني أو WhatsApp.", retryError: "تعذر إرسال استفسارك. يرجى المحاولة مرة أخرى.", success: "تم إرسال الاستفسار بنجاح. جارٍ الانتقال إلى صفحة التأكيد..." },
   fr: { required: "Veuillez remplir tous les champs obligatoires avant l'envoi.", submitting: "Envoi en cours...", sendError: "Votre demande n'a pas pu être envoyée. Contactez-nous directement par e-mail ou WhatsApp.", retryError: "Votre demande n'a pas pu être envoyée. Veuillez réessayer.", success: "Demande envoyée. Redirection vers la page de confirmation..." },
   pt: { required: "Preencha todos os campos obrigatórios antes de enviar.", submitting: "Enviando...", sendError: "Não foi possível enviar sua consulta. Fale conosco diretamente por e-mail ou WhatsApp.", retryError: "Não foi possível enviar sua consulta. Tente novamente.", success: "Consulta enviada com sucesso. Redirecionando para a página de confirmação..." },
+  ko: { required: "필수 항목을 모두 입력해 주세요.", submitting: "전송 중...", sendError: "문의가 전송되지 않았습니다. 이메일 또는 WhatsApp으로 직접 연락해 주세요.", retryError: "문의가 전송되지 않았습니다. 잠시 후 다시 시도해 주세요.", success: "문의가 정상적으로 접수되었습니다. 확인 페이지로 이동합니다..." },
+  tr: { required: "Lütfen göndermeden önce tüm zorunlu alanları doldurun.", submitting: "Gönderiliyor...", sendError: "Talebiniz gönderilemedi. Lütfen doğrudan e-posta veya WhatsApp üzerinden bizimle iletişime geçin.", retryError: "Talebiniz gönderilemedi. Lütfen tekrar deneyin.", success: "Talebiniz başarıyla gönderildi. Onay sayfasına yönlendiriliyorsunuz..." },
 };
 
 export const protectedTerms = [
