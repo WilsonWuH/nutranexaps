@@ -741,6 +741,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-third-party-testing-us-eu": "Cross-border phosphatidylserine independent-lab verification with a sealed 25 kilogram drum, powder dish, tamper-evident sample jar, chain-of-custody tags, and blank supplier-COA-versus-lab-report comparison cards on a daylight technical bench",
   "phosphatidylserine-vegan-statement-us-canada": "North American phosphatidylserine vegan-statement review desk with a sealed 25 kilogram drum edge, white PS powder dish, soy and sunflower source trays, blank green claim cards, and a clean amber bottle mockup in daylight",
   "phosphatidylserine-fda-food-facility-registration-us": "U.S. import-compliance review with a sealed plain 25 kilogram phosphatidylserine drum, an unreadable facility-registration portal on a laptop, route cards for general soy and sunflower PS, a QA checklist board, and procurement-regulatory reviewers in a daylight office",
+  "soluble-soybean-polysaccharide-e426-europe": "European food-application review in a bright pilot kitchen with a central soluble soybean polysaccharide sample, separate beverage, cultured dairy, sauce, bakery, and tablet prototypes, and a gloved specialist moving a blank decision puck through a blue-and-amber physical gate",
 };
 
 const promotedSeoTitles = {
@@ -785,6 +786,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-hs-code-review-us-canada": "PS HS Code Review for US and Canada Importers | Nutranexa",
   "phosphatidylserine-vegan-statement-us-canada": "PS Vegan Statement Review for US and Canada Buyers | Nutranexa",
   "phosphatidylserine-fda-food-facility-registration-us": "PS FDA Food Facility Registration Review for US Importers | Nutranexa",
+  "soluble-soybean-polysaccharide-e426-europe": "Soluble Soybean Polysaccharide E 426 Europe | Nutranexa",
 };
 
 function conciseMeta(value) {
@@ -1150,10 +1152,16 @@ function resourceFaqJson(article) {
   };
 }
 
-function layout({ title, description, route, body, schema = [], image = "/assets/images/factory-aerial-wide.webp" }) {
+function layout({ title, description, route, body, schema = [], image = "/assets/images/factory-aerial-wide.webp", imageAlt = "", imageWidth = "", imageHeight = "", ogType = "website" }) {
   const active = route.split("/")[1] || "";
   const canonical = urlFor(route);
   const allSchema = [organizationJson(), websiteJson(), ...schema];
+  const ogImageDetails = [
+    imageAlt ? `<meta property="og:image:alt" content="${esc(imageAlt)}">` : "",
+    imageWidth ? `<meta property="og:image:width" content="${esc(imageWidth)}">` : "",
+    imageHeight ? `<meta property="og:image:height" content="${esc(imageHeight)}">` : "",
+  ].filter(Boolean).join("\n  ");
+  const twitterImageAlt = imageAlt ? `<meta name="twitter:image:alt" content="${esc(imageAlt)}">` : "";
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -1166,14 +1174,14 @@ function layout({ title, description, route, body, schema = [], image = "/assets
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="${esc(ogType)}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:image" content="${siteUrl}${image}">
-  <meta name="twitter:card" content="summary_large_image">
+${ogImageDetails ? `  ${ogImageDetails}\n` : ""}  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(description)}">
   <meta name="twitter:image" content="${siteUrl}${image}">
-  <link rel="icon" href="/assets/images/logo-nutranexa-icon.png">
+${twitterImageAlt ? `  ${twitterImageAlt}\n` : ""}  <link rel="icon" href="/assets/images/logo-nutranexa-icon.png">
   <link rel="stylesheet" href="/assets/styles.css">
   <script type="application/ld+json">${JSON.stringify(allSchema)}</script>
   <script>
@@ -2337,12 +2345,18 @@ function newsArticlePage(article) {
 
 function articlePage(article) {
   const route = `/resources/${article.slug}/`;
+  const isSspArticle = article.slug.startsWith("soluble-soybean-polysaccharide");
+  const productRoute = isSspArticle ? "/products/soluble-soybean-polysaccharide/" : "/products/phosphatidylserine/";
+  const productLabel = isSspArticle ? "View SSP Product" : "View PS Products";
+  const recommendedSteps = isSspArticle
+    ? `<h2>Recommended next steps</h2><ul><li>Review the <a href="/products/soluble-soybean-polysaccharide/">Soluble Soybean Polysaccharide product page</a>.</li><li>Define the project through <a href="/applications/functional-foods/">Functional Food Applications</a>.</li><li>Check <a href="/manufacturing/">manufacturing proof</a> and <a href="/quality-rd/">Quality & R&D</a>.</li></ul>`
+    : `<h2>Recommended next steps</h2><ul><li>Review the <a href="/products/phosphatidylserine/">Phosphatidylserine product page</a>.</li><li>Compare <a href="/products/soy-phosphatidylserine/">Soy PS</a> and <a href="/products/sunflower-phosphatidylserine/">Sunflower PS</a>.</li><li>Check <a href="/manufacturing/">manufacturing proof</a> and <a href="/quality-rd/">Quality & R&D</a>.</li></ul>`;
   const articleContent = article.contentHtml || article.body.map((para, index) => `${index === 1 ? '<aside class="inline-cta"><strong>Need current specifications?</strong><a href="/contact/">Request Specifications</a></aside>' : ""}<p>${esc(para)}</p>`).join("");
   const schemas = [breadcrumbJson([["Home", "/"], ["Resources", "/resources/"], [article.title, route]]), articleJson(article, route), resourceFaqJson(article)].filter(Boolean);
   const body = `<article class="article-page">
-  <header><p class="eyebrow">${article.pillar ? "Pillar guide" : "Resource article"}</p><h1>${esc(article.title)}</h1><p>${esc(article.description)}</p>${article.published ? `<p class="article-date">Published <time datetime="${esc(article.published)}">${esc(new Date(`${article.published}T00:00:00Z`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }))}</time></p>` : ""}<div class="article-actions"><a class="button secondary" href="/products/phosphatidylserine/">View PS Products</a><a class="button primary" href="/contact/">Request Specifications</a></div><img class="article-hero-image" src="${articleImage(article)}" alt="${esc(article.imageAlt)}" width="1536" height="1024" loading="eager"></header>
+  <header><p class="eyebrow">${article.pillar ? "Pillar guide" : "Resource article"}</p><h1>${esc(article.title)}</h1><p>${esc(article.description)}</p>${article.published ? `<p class="article-date">Published <time datetime="${esc(article.published)}">${esc(new Date(`${article.published}T00:00:00Z`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }))}</time></p>` : ""}<div class="article-actions"><a class="button secondary" href="${productRoute}">${productLabel}</a><a class="button primary" href="/contact/">Request Specifications</a></div><img class="article-hero-image" src="${articleImage(article)}" alt="${esc(article.imageAlt)}" width="1536" height="1024" loading="eager"></header>
   <div class="article-body">${articleContent}
-  <h2>Recommended next steps</h2><ul><li>Review the <a href="/products/phosphatidylserine/">Phosphatidylserine product page</a>.</li><li>Compare <a href="/products/soy-phosphatidylserine/">Soy PS</a> and <a href="/products/sunflower-phosphatidylserine/">Sunflower PS</a>.</li><li>Check <a href="/manufacturing/">manufacturing proof</a> and <a href="/quality-rd/">Quality & R&D</a>.</li></ul>
+  ${recommendedSteps}
   <div class="bottom-cta"><h2>Contact sales for product documents</h2><p>Share source preference, application, country, and annual quantity.</p><a class="button primary" href="/contact/">Contact Sales</a></div></div>
 </article>`;
   return layout({
@@ -2350,6 +2364,10 @@ function articlePage(article) {
     description: article.description,
     route,
     image: articleImage(article),
+    imageAlt: article.imageAlt,
+    imageWidth: "1536",
+    imageHeight: "1024",
+    ogType: "article",
     schema: schemas,
     body,
   });
