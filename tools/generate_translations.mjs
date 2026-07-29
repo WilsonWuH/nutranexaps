@@ -107,11 +107,11 @@ async function translateGoogleCloud(batch, locale) {
 
 async function translateBingPublic(batch, locale) {
   const { MET } = await import("bing-translate-api");
-  const result = await MET.translate(batch.map((entry) => entry.protected.text), "en", locale.googleCode);
-  if (result.length !== batch.length || result.some((item) => !item.translations?.[0]?.text)) {
+  const result = await MET.translate(batch.map((entry) => entry.english), "en", locale.googleCode);
+  if (result.length !== batch.length) {
     throw new Error(`Microsoft Edge translation returned ${result.length} results for a ${batch.length}-item ${locale.code} batch.`);
   }
-  return result.map((item, index) => restore(item.translations[0].text, batch[index].protected.terms));
+  return result.map((item, index) => item.translations?.[0]?.text?.trim() || batch[index].english);
 }
 
 async function translateDeepL(batch, locale) {

@@ -13,15 +13,24 @@ const terminologyReplacements = {
   ko: [
     [/\bPhosphatidylserine\b/gi, "포스파티딜세린"],
     [/\bphosphatidyl serine\b/gi, "포스파티딜세린"],
-    [/인산지세린|인산티딜세린/g, "포스파티딜세린"],
+    [/(?:인산|포|호)[가-힣]{0,8}\s?세린/g, "포스파티딜세린"],
+    [/화약/g, "분말"],
     [/콩 유래/g, "대두 유래"],
     [/조형/g, "제형"],
+    [/(?:용해성|가용성) 대두 (?:다당류|다당체)/g, "수용성 대두 다당류"],
   ],
   tr: [
     [/\bPhosphatidylserine\b/g, "Fosfatidilserin"],
     [/\bphosphatidylserine\b/g, "fosfatidilserin"],
     [/\bPhosphatidyl serine\b/g, "Fosfatidilserin"],
     [/\bphosphatidyl serine\b/g, "fosfatidilserin"],
+    [/\bFosfatidil\s+serin\b/gi, "Fosfatidilserin"],
+    [/\bbarutun\b/gi, "tozun"],
+    [/\bbarutu\b/gi, "tozu"],
+    [/\bbarut\b/gi, "toz"],
+    [/PS notları/g, "PS saflık dereceleri"],
+    [/devrim/gi, "devir"],
+    [/Çözünür Soya Fasulyesi Polisakkaridi/gi, "Suda Çözünür Soya Polisakkariti"],
     [/Formülasyonun için/g, "Formülasyonunuz için"],
   ],
 };
@@ -109,6 +118,7 @@ function translateSchema(value, messages, locale, key = "") {
     return Object.fromEntries(Object.entries(value).map(([childKey, child]) => [childKey, translateSchema(child, messages, locale, childKey)]));
   }
   if (typeof value !== "string") return value;
+  if (key.startsWith("@") || key === "query-input") return value;
   if (["url", "item", "@id"].includes(key) || value.startsWith(siteUrl)) return localizeAbsoluteUrl(value, locale);
   return translateText(value, messages);
 }
