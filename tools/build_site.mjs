@@ -743,6 +743,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-fda-food-facility-registration-us": "U.S. import-compliance review with a sealed plain 25 kilogram phosphatidylserine drum, an unreadable facility-registration portal on a laptop, route cards for general soy and sunflower PS, a QA checklist board, and procurement-regulatory reviewers in a daylight office",
   "soluble-soybean-polysaccharide-e426-europe": "European food-application review in a bright pilot kitchen with a central soluble soybean polysaccharide sample, separate beverage, cultured dairy, sauce, bakery, and tablet prototypes, and a gloved specialist moving a blank decision puck through a blue-and-amber physical gate",
   "soluble-soybean-polysaccharide-allergen-statement-us-eu": "Cross-border soluble soybean polysaccharide allergen-statement review with a powder dish, soybeans in a separate source tray, blank U.S. and EU label cards, and QA-regulatory reviewers aligning a dual-market decision board in daylight",
+  "phosphatidylserine-incoterms-europe": "European phosphatidylserine freight-planning route model with a sealed ingredient drum on a pallet, container terminal, import gate, warehouse, and four blank handover markers",
 };
 
 const promotedSeoTitles = {
@@ -789,6 +790,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-fda-food-facility-registration-us": "PS FDA Food Facility Registration Review for US Importers | Nutranexa",
   "soluble-soybean-polysaccharide-e426-europe": "Soluble Soybean Polysaccharide E 426 Europe | Nutranexa",
   "soluble-soybean-polysaccharide-allergen-statement-us-eu": "Soluble Soybean Polysaccharide Allergen Statement Review for US and EU Buyers | Nutranexa",
+  "phosphatidylserine-incoterms-europe": "Phosphatidylserine Incoterms for Europe | Nutranexa",
 };
 
 function conciseMeta(value) {
