@@ -743,6 +743,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-fda-food-facility-registration-us": "U.S. import-compliance review with a sealed plain 25 kilogram phosphatidylserine drum, an unreadable facility-registration portal on a laptop, route cards for general soy and sunflower PS, a QA checklist board, and procurement-regulatory reviewers in a daylight office",
   "soluble-soybean-polysaccharide-e426-europe": "European food-application review in a bright pilot kitchen with a central soluble soybean polysaccharide sample, separate beverage, cultured dairy, sauce, bakery, and tablet prototypes, and a gloved specialist moving a blank decision puck through a blue-and-amber physical gate",
   "soluble-soybean-polysaccharide-allergen-statement-us-eu": "Cross-border soluble soybean polysaccharide allergen-statement review with a powder dish, soybeans in a separate source tray, blank U.S. and EU label cards, and QA-regulatory reviewers aligning a dual-market decision board in daylight",
+  "phosphatidylserine-certificate-of-origin-review-us-eu": "Cross-border phosphatidylserine origin-document review with a sealed plain 25 kilogram drum, blank certificate and invoice folders, separate U.S. and EU route markers, and a customs validation board showing origin, consignee, and label checkpoints in daylight",
   "phosphatidylserine-incoterms-europe": "European phosphatidylserine freight-planning route model with a sealed ingredient drum on a pallet, container terminal, import gate, warehouse, and four blank handover markers",
 };
 
