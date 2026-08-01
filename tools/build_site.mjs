@@ -745,6 +745,7 @@ const promotedArticleVisuals = {
   "soluble-soybean-polysaccharide-allergen-statement-us-eu": "Cross-border soluble soybean polysaccharide allergen-statement review with a powder dish, soybeans in a separate source tray, blank U.S. and EU label cards, and QA-regulatory reviewers aligning a dual-market decision board in daylight",
   "phosphatidylserine-certificate-of-origin-review-us-eu": "Cross-border phosphatidylserine origin-document review with a sealed plain 25 kilogram drum, blank certificate and invoice folders, separate U.S. and EU route markers, and a customs validation board showing origin, consignee, and label checkpoints in daylight",
   "phosphatidylserine-incoterms-europe": "European phosphatidylserine freight-planning route model with a sealed ingredient drum on a pallet, container terminal, import gate, warehouse, and four blank handover markers",
+  "phosphatidylserine-food-supplement-notification-europe": "European food-supplement launch planning desk with one unbranded phosphatidylserine bottle branching into three separate national notification lanes, each ending at a blank dossier tray and decision gate",
 };
 
 const promotedSeoTitles = {
@@ -792,6 +793,7 @@ const promotedSeoTitles = {
   "soluble-soybean-polysaccharide-e426-europe": "Soluble Soybean Polysaccharide E 426 Europe | Nutranexa",
   "soluble-soybean-polysaccharide-allergen-statement-us-eu": "Soluble Soybean Polysaccharide Allergen Statement Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-incoterms-europe": "Phosphatidylserine Incoterms for Europe | Nutranexa",
+  "phosphatidylserine-food-supplement-notification-europe": "PS Supplement Notification Europe | Nutranexa",
 };
 
 function conciseMeta(value) {
