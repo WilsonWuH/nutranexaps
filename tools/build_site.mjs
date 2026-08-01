@@ -747,6 +747,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-incoterms-europe": "European phosphatidylserine freight-planning route model with a sealed ingredient drum on a pallet, container terminal, import gate, warehouse, and four blank handover markers",
   "phosphatidylserine-supplemented-food-caution-box-canada": "Canadian supplemented-food packaging review with a blank beverage carton and bar wrapper, a bold caution-identifier tile, an empty caution-box card, a Supplemented Food Facts placeholder grid, a phosphatidylserine powder dish, and a soy-source tray on a daylight regulatory desk",
   "phosphatidylserine-food-supplement-notification-europe": "European food-supplement launch planning desk with one unbranded phosphatidylserine bottle branching into three separate national notification lanes, each ending at a blank dossier tray and decision gate",
+  "phosphatidylserine-sample-shipment-checklist-us-eu": "Cross-border phosphatidylserine first-sample shipment setup with small sealed sample packs, a plain courier carton, blank invoice and packing cards, U.S. and EU route markers, tamper seals, and a receiving checklist on a daylight shipping desk",
 };
 
 const promotedSeoTitles = {
@@ -796,6 +797,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-incoterms-europe": "Phosphatidylserine Incoterms for Europe | Nutranexa",
   "phosphatidylserine-supplemented-food-caution-box-canada": "Phosphatidylserine Supplemented Food Caution Box Review for Canada | Nutranexa",
   "phosphatidylserine-food-supplement-notification-europe": "PS Supplement Notification Europe | Nutranexa",
+  "phosphatidylserine-sample-shipment-checklist-us-eu": "PS First Sample Shipment Checklist for US and EU Buyers | Nutranexa",
 };
 
 function conciseMeta(value) {
