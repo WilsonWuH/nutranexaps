@@ -749,6 +749,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-supplemented-food-caution-box-canada": "Canadian supplemented-food packaging review with a blank beverage carton and bar wrapper, a bold caution-identifier tile, an empty caution-box card, a Supplemented Food Facts placeholder grid, a phosphatidylserine powder dish, and a soy-source tray on a daylight regulatory desk",
   "phosphatidylserine-food-supplement-notification-europe": "European food-supplement launch planning desk with one unbranded phosphatidylserine bottle branching into three separate national notification lanes, each ending at a blank dossier tray and decision gate",
   "phosphatidylserine-sample-shipment-checklist-us-eu": "Cross-border phosphatidylserine first-sample shipment setup with small sealed sample packs, a plain courier carton, blank invoice and packing cards, U.S. and EU route markers, tamper seals, and a receiving checklist on a daylight shipping desk",
+  "soy-phosphatidylserine-eudr-europe": "European soy phosphatidylserine EUDR scope review shown as geolocated soybean field parcels feeding an amber ingredient path through a physical customs-classification gate",
 };
 
 const promotedSeoTitles = {
