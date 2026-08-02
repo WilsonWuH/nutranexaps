@@ -758,6 +758,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-food-production-license-review-us-eu": "Top-down phosphatidylserine supplier-license review with a sealed drum lid, powder dish, blank checklist cards, soy and sunflower source trays, magnifier, red seal pad, and export carton corner in daylight",
   "phosphatidylserine-halal-certificate-review-us-eu": "Top-down cross-border phosphatidylserine halal review workstation with a sealed drum lid edge, white powder dish on a translucent green panel, soy and sunflower sample trays, blank approval sleeves, and export carton corner in daylight",
   "phosphatidylserine-country-of-origin-marking-us": "U.S. import receiving desk reviewing country-of-origin marking on a sealed phosphatidylserine drum with blank label cards, source samples, and an entry-document folder in daylight",
+  "phosphatidylserine-isf-filing-checklist-us": "Container vessel on open water at dusk with abstract data-link nodes connecting manufacturer, consolidator, carrier, and importer into one advance-filing flow, an arc-shaped 24-hour clock motif above the bridge, and a distant U.S. port skyline",
 };
 
 const promotedSeoTitles = {
@@ -817,6 +818,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-food-production-license-review-us-eu": "PS Food Production License Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-halal-certificate-review-us-eu": "PS Halal Certificate Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-country-of-origin-marking-us": "PS Country of Origin Marking Checklist for US Importers | Nutranexa",
+  "phosphatidylserine-isf-filing-checklist-us": "PS ISF Filing Checklist for U.S. Importers | Nutranexa",
 };
 
 function conciseMeta(value) {
