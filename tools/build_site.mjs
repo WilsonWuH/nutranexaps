@@ -750,6 +750,14 @@ const promotedArticleVisuals = {
   "phosphatidylserine-food-supplement-notification-europe": "European food-supplement launch planning desk with one unbranded phosphatidylserine bottle branching into three separate national notification lanes, each ending at a blank dossier tray and decision gate",
   "phosphatidylserine-sample-shipment-checklist-us-eu": "Cross-border phosphatidylserine first-sample shipment setup with small sealed sample packs, a plain courier carton, blank invoice and packing cards, U.S. and EU route markers, tamper seals, and a receiving checklist on a daylight shipping desk",
   "soy-phosphatidylserine-eudr-europe": "European soy phosphatidylserine EUDR scope review shown as geolocated soybean field parcels feeding an amber ingredient path through a physical customs-classification gate",
+  "phosphatidylserine-3-mcpd-glycidyl-esters-review-europe": "Top-down European phosphatidylserine process-contaminant review with soy and sunflower source cues, amber oil vials, phosphatidylserine powder dish, and blank QA cards beside a sealed drum edge",
+  "phosphatidylserine-tse-bse-statement-europe": "European phosphatidylserine TSE/BSE statement review with a sealed 25 kilogram drum, soy and sunflower source trays, blank animal-origin declaration cards, and QA reviewers in a daylight technical office",
+  "phosphatidylserine-kosher-certificate-review-us-canada": "North American private-label phosphatidylserine kosher review with an amber supplement bottle mockup, soy and sunflower source dishes, a sealed drum edge, and tabbed approval folders on a daylight compliance desk",
+  "phosphatidylserine-customs-broker-handoff-us": "U.S. phosphatidylserine customs-broker handoff desk with invoice sleeves, packing tabs, an air-waybill pouch, barcode scanner, sealed drum corner, and abstract entry-workflow screen blocks in daylight",
+  "phosphatidylserine-safety-data-sheet-review-europe": "European phosphatidylserine safety-data-sheet review desk with a blank 16-section clipboard grid, powder dish, sealed drum edge, divider tabs, magnifier, and warehouse glove in daylight",
+  "phosphatidylserine-food-production-license-review-us-eu": "Top-down phosphatidylserine supplier-license review with a sealed drum lid, powder dish, blank checklist cards, soy and sunflower source trays, magnifier, red seal pad, and export carton corner in daylight",
+  "phosphatidylserine-halal-certificate-review-us-eu": "Top-down cross-border phosphatidylserine halal review workstation with a sealed drum lid edge, white powder dish on a translucent green panel, soy and sunflower sample trays, blank approval sleeves, and export carton corner in daylight",
+  "phosphatidylserine-country-of-origin-marking-us": "U.S. import receiving desk reviewing country-of-origin marking on a sealed phosphatidylserine drum with blank label cards, source samples, and an entry-document folder in daylight",
 };
 
 const promotedSeoTitles = {
@@ -801,6 +809,14 @@ const promotedSeoTitles = {
   "phosphatidylserine-supplemented-food-caution-box-canada": "Phosphatidylserine Supplemented Food Caution Box Review for Canada | Nutranexa",
   "phosphatidylserine-food-supplement-notification-europe": "PS Supplement Notification Europe | Nutranexa",
   "phosphatidylserine-sample-shipment-checklist-us-eu": "PS First Sample Shipment Checklist for US and EU Buyers | Nutranexa",
+  "phosphatidylserine-3-mcpd-glycidyl-esters-review-europe": "Phosphatidylserine 3-MCPD Review for Europe | Nutranexa",
+  "phosphatidylserine-tse-bse-statement-europe": "PS TSE/BSE Statement Review for Europe | Nutranexa",
+  "phosphatidylserine-kosher-certificate-review-us-canada": "PS Kosher Certificate Review for North America | Nutranexa",
+  "phosphatidylserine-customs-broker-handoff-us": "PS Customs Broker Handoff Checklist for US Importers | Nutranexa",
+  "phosphatidylserine-safety-data-sheet-review-europe": "PS Safety Data Sheet Review for Europe | Nutranexa",
+  "phosphatidylserine-food-production-license-review-us-eu": "PS Food Production License Review for US and EU Buyers | Nutranexa",
+  "phosphatidylserine-halal-certificate-review-us-eu": "PS Halal Certificate Review for US and EU Buyers | Nutranexa",
+  "phosphatidylserine-country-of-origin-marking-us": "PS Country of Origin Marking Checklist for US Importers | Nutranexa",
 };
 
 function conciseMeta(value) {
