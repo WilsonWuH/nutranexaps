@@ -759,6 +759,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-halal-certificate-review-us-eu": "Top-down cross-border phosphatidylserine halal review workstation with a sealed drum lid edge, white powder dish on a translucent green panel, soy and sunflower sample trays, blank approval sleeves, and export carton corner in daylight",
   "phosphatidylserine-country-of-origin-marking-us": "U.S. import receiving desk reviewing country-of-origin marking on a sealed phosphatidylserine drum with blank label cards, source samples, and an entry-document folder in daylight",
   "phosphatidylserine-isf-filing-checklist-us": "Container vessel on open water at dusk with abstract data-link nodes connecting manufacturer, consolidator, carrier, and importer into one advance-filing flow, an arc-shaped 24-hour clock motif above the bridge, and a distant U.S. port skyline",
+  "phosphatidylserine-food-safety-certification-review-europe": "European phosphatidylserine supplier certificate-scope review with one blank certificate card feeding separate scheme-register, accreditation-database, and certification-body verification lanes, a magnifier over the scope line, a sealed 25 kilogram drum edge, and a white powder dish",
 };
 
 const promotedSeoTitles = {
@@ -819,6 +820,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-halal-certificate-review-us-eu": "PS Halal Certificate Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-country-of-origin-marking-us": "PS Country of Origin Marking Checklist for US Importers | Nutranexa",
   "phosphatidylserine-isf-filing-checklist-us": "PS ISF Filing Checklist for U.S. Importers | Nutranexa",
+  "phosphatidylserine-food-safety-certification-review-europe": "Phosphatidylserine Food-Safety Certification Review for Europe | Nutranexa",
 };
 
 function conciseMeta(value) {
