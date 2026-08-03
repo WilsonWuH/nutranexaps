@@ -1,5 +1,47 @@
 [
   {
+    "title": "The Impact of Citicoline/Phosphatidylserine Supplementation on Cognitive Performance and Executive Functions in Mental Disorders: A Systematic Review of Controlled Trials",
+    "authors": "Kucuksahin NG, Kaya TT, Halac E, Sut E, Ciray RO",
+    "journal": "Human Psychopharmacology: Clinical and Experimental",
+    "year": 2026,
+    "doi": "10.1002/hup.70058",
+    "source_url": "https://onlinelibrary.wiley.com/doi/10.1002/hup.70058",
+    "research_type": "Systematic Review",
+    "application_area": "Cognitive Health / Mental Health",
+    "population": "Children, adolescents, and adults with ADHD, mood disorders, alcohol and substance use disorders, or schizophrenia (11 controlled trials)",
+    "summary": "This systematic review of 11 controlled trials (10 randomized, 1 non-randomized) evaluated citicoline and/or phosphatidylserine supplementation, alone or as adjunctive treatment, on cognitive performance in mental disorders. Results were heterogeneous: three ADHD trials reported significant improvements in attention and impulsivity while two found none, and findings were mixed or null in most other diagnostic groups; the authors concluded that current evidence does not support these agents as effective cognitive enhancers in mental disorders.",
+    "limitations": "Most included trials tested phosphatidylserine together with citicoline, so the independent contribution of phosphatidylserine could not be isolated. The 11 trials were heterogeneous across diagnoses and outcomes, several had high risk of bias, and the search ran through October 2025 without pooled meta-analysis; conclusions should not be generalized to healthy populations or specific finished products.",
+    "featured": false
+  },
+  {
+    "title": "Phosphatidylserine lipids reduce the adsorption of chondroitin sulphate at the membrane surface",
+    "authors": "Romano B, Menichetti R, Paracini N, Gutfreund P, Bracco B, Sassi P, Orecchini A, Potestio R, Luchini A",
+    "journal": "Journal of Colloid and Interface Science",
+    "year": 2026,
+    "doi": "10.1016/j.jcis.2026.141189",
+    "source_url": "https://www.sciencedirect.com/science/article/pii/S0021979726013664",
+    "research_type": "Laboratory Study",
+    "application_area": "Cell Membrane Biology",
+    "population": "Synthetic lipid bilayer model membranes with and without phosphatidylserine, plus molecular dynamics simulations",
+    "summary": "Combining quartz-crystal microbalance, neutron reflectometry, infrared spectroscopy, and molecular dynamics simulations, this biophysical study found that chondroitin sulphate adsorbs and remains stably attached to phosphatidylcholine-only lipid bilayers through sulphate-choline interactions, while the addition of phosphatidylserine strongly reduces chondroitin sulphate binding at the membrane surface.",
+    "limitations": "Model-membrane laboratory research on synthetic bilayers without cells, animals, or humans; it does not evaluate dietary phosphatidylserine, and its implications for phosphatidylserine exposure in cancer, apoptosis, or inflammation remain indirect.",
+    "featured": false
+  },
+  {
+    "title": "Targeting Phosphatidylserine Synthesis for Tumor Cell Suppression in Esophageal Squamous Cell Carcinoma and Glioblastoma",
+    "authors": "Hu Y, Cui Y, Xu Z, Wu D, Yu X",
+    "journal": "International Journal of Molecular Sciences",
+    "year": 2026,
+    "doi": "10.3390/ijms27146226",
+    "source_url": "https://www.mdpi.com/1422-0067/27/14/6226",
+    "research_type": "Laboratory and Animal Study",
+    "application_area": "Oncology / Cell Lipid Metabolism",
+    "population": "Esophageal squamous cell carcinoma and glioblastoma cell lines, mouse tumor models, and pan-cancer transcriptomic datasets",
+    "summary": "In cancer cell lines and mouse tumor models, pharmacological inhibition of phosphatidylserine synthase 1 (PTDSS1) depleted cellular phosphatidylserine and phosphatidylethanolamine pools, disrupted endoplasmic reticulum homeostasis, and drove a PERK-mediated autophagic response leading to apoptosis, selectively suppressing tumor growth in vitro and in vivo. Pan-cancer transcriptomic analysis linked elevated PTDSS1 expression with reduced overall survival.",
+    "limitations": "Preclinical tumor biology conducted in cell lines, xenograft models, and transcriptomic datasets; it does not test dietary phosphatidylserine or finished supplements, and whether PTDSS1 inhibition translates to humans is unproven.",
+    "featured": false
+  },
+  {
     "title": "Loss of Atp8a2 drives neurodegeneration through the dysregulation of spatiotemporal phosphatidylserine externalization in mature neurons",
     "authors": "Schneider A, Merkel AB, Perta N, Ruff L, Ussyshkin N, Zimmer P, Aksan B, Lepeuve A, D’Andrea L, Pelucchi S, Marcello E, Di Marino D, Mauceri D",
     "journal": "Cell Death & Disease",
