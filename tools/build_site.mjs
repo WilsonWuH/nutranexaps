@@ -760,6 +760,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-country-of-origin-marking-us": "U.S. import receiving desk reviewing country-of-origin marking on a sealed phosphatidylserine drum with blank label cards, source samples, and an entry-document folder in daylight",
   "phosphatidylserine-isf-filing-checklist-us": "Container vessel on open water at dusk with abstract data-link nodes connecting manufacturer, consolidator, carrier, and importer into one advance-filing flow, an arc-shaped 24-hour clock motif above the bridge, and a distant U.S. port skyline",
   "phosphatidylserine-food-safety-certification-review-europe": "European phosphatidylserine supplier certificate-scope review with one blank certificate card feeding separate scheme-register, accreditation-database, and certification-body verification lanes, a magnifier over the scope line, a sealed 25 kilogram drum edge, and a white powder dish",
+  "phosphatidylserine-uflpa-compliance-us": "Flat-illustration UFLPA supply-chain checkpoint for U.S. importers: factory cluster feeding a traceability route through a compliance gate with shield and checklist to a U.S. port, with a magnifying glass over a sealed ingredient drum",
 };
 
 const promotedSeoTitles = {
@@ -821,6 +822,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-country-of-origin-marking-us": "PS Country of Origin Marking Checklist for US Importers | Nutranexa",
   "phosphatidylserine-isf-filing-checklist-us": "PS ISF Filing Checklist for U.S. Importers | Nutranexa",
   "phosphatidylserine-food-safety-certification-review-europe": "Phosphatidylserine Food-Safety Certification Review for Europe | Nutranexa",
+  "phosphatidylserine-uflpa-compliance-us": "Phosphatidylserine UFLPA Compliance for U.S. Importers | Nutranexa",
 };
 
 function conciseMeta(value) {
