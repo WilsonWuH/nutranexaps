@@ -763,6 +763,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-food-safety-certification-review-europe": "European phosphatidylserine supplier certificate-scope review with one blank certificate card feeding separate scheme-register, accreditation-database, and certification-body verification lanes, a magnifier over the scope line, a sealed 25 kilogram drum edge, and a white powder dish",
   "phosphatidylserine-supplier-quality-agreement-us-eu": "Cross-border phosphatidylserine supplier-quality-agreement review with two procurement and quality reviewers aligning one blank agreement across separate U.S. and EU clause lanes, a sealed 25 kilogram drum edge, a white PS powder dish, soy and sunflower source trays, and tabbed clause dividers in a daylight technical office",
   "phosphatidylserine-uflpa-compliance-us": "Flat-illustration UFLPA supply-chain checkpoint for U.S. importers: factory cluster feeding a traceability route through a compliance gate with shield and checklist to a U.S. port, with a magnifying glass over a sealed ingredient drum",
+  "phosphatidylserine-fda-import-alert-dwpe-review-us": "U.S. port import checkpoint at dusk with a sealed 25 kilogram phosphatidylserine drum on a pallet truck stopped at a gate barrier, an abstract three-lane release status board with green amber and red signals, and a magnifier over an unreadable blank detention document",
 };
 
 const promotedSeoTitles = {
@@ -827,6 +828,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-food-safety-certification-review-europe": "Phosphatidylserine Food-Safety Certification Review for Europe | Nutranexa",
   "phosphatidylserine-supplier-quality-agreement-us-eu": "Phosphatidylserine Supplier Quality Agreement Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-uflpa-compliance-us": "Phosphatidylserine UFLPA Compliance for U.S. Importers | Nutranexa",
+  "phosphatidylserine-fda-import-alert-dwpe-review-us": "Phosphatidylserine FDA Import Alert and DWPE Review for US Importers | Nutranexa",
 };
 
 function conciseMeta(value) {
