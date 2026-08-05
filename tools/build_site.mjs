@@ -764,6 +764,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-supplier-quality-agreement-us-eu": "Cross-border phosphatidylserine supplier-quality-agreement review with two procurement and quality reviewers aligning one blank agreement across separate U.S. and EU clause lanes, a sealed 25 kilogram drum edge, a white PS powder dish, soy and sunflower source trays, and tabbed clause dividers in a daylight technical office",
   "phosphatidylserine-uflpa-compliance-us": "Flat-illustration UFLPA supply-chain checkpoint for U.S. importers: factory cluster feeding a traceability route through a compliance gate with shield and checklist to a U.S. port, with a magnifying glass over a sealed ingredient drum",
   "phosphatidylserine-fda-import-alert-dwpe-review-us": "U.S. port import checkpoint at dusk with a sealed 25 kilogram phosphatidylserine drum on a pallet truck stopped at a gate barrier, an abstract three-lane release status board with green amber and red signals, and a magnifier over an unreadable blank detention document",
+  "phosphatidylserine-export-documentation-ispm15-review-us-eu": "Daylight warehouse loading bay with a sealed plain 25 kilogram phosphatidylserine drum on a solid wood pallet corner, a clipboard with blank export document sheets, a measuring tape and caliper beside the pallet, abstract ISPM-15 style stamp blocks on the wood, and a distant container door",
 };
 
 const promotedSeoTitles = {
@@ -829,6 +830,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-supplier-quality-agreement-us-eu": "Phosphatidylserine Supplier Quality Agreement Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-uflpa-compliance-us": "Phosphatidylserine UFLPA Compliance for U.S. Importers | Nutranexa",
   "phosphatidylserine-fda-import-alert-dwpe-review-us": "Phosphatidylserine FDA Import Alert and DWPE Review for US Importers | Nutranexa",
+  "phosphatidylserine-export-documentation-ispm15-review-us-eu": "Phosphatidylserine Export Documentation and ISPM-15 Review for US and EU Buyers | Nutranexa",
 };
 
 function conciseMeta(value) {
