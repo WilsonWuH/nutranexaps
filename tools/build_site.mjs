@@ -769,6 +769,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-sfcr-import-licence-canada": "Canadian food-import licensing review with a sealed plain 25 kilogram phosphatidylserine drum, an unreadable licence-portal screen showing an abstract eight-character code tile, blank activity and commodity cards, a maple-leaf route marker beside a snow-dusted border gateway, and a broker handoff board for declaration and HS code checks in cool winter daylight",
   "phosphatidylserine-stability-study-europe": "European quality laboratory with an open glass-front stability chamber holding amber supplement bottles, sealed white powder tubs, and pouch samples on timepoint shelves, a blank protocol card, and an abstract timepoint track in cool morning light",
   "phosphatidylserine-mycotoxin-testing-us-eu": "Top-down mycotoxin sampling-station review for phosphatidylserine with a stainless grain sampling probe across a split tray of soybeans and sunflower seeds, sealed sample bags with blank tags, a white powder dish, a blank COA sheet with an abstract highlighted result row, a small risk-matrix card, and a sealed drum edge in daylight",
+  "phosphatidylserine-reserve-samples-us": "US quality-control reserve-sample review with a sealed plain 25 kilogram phosphatidylserine drum on a pallet, a retention-calendar board with blank month tiles, sealed amber sample jars with blank lot stickers, a white powder dish, a finished supplement bottle mockup, and a temperature and humidity logger on a daylight warehouse QA bench",
 };
 
 const promotedSeoTitles = {
@@ -839,6 +840,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-sfcr-import-licence-canada": "Phosphatidylserine SFCR Import Licence Review for Canadian Buyers | Nutranexa",
   "phosphatidylserine-stability-study-europe": "Phosphatidylserine Stability Study Guide for Europe | Nutranexa",
   "phosphatidylserine-mycotoxin-testing-us-eu": "Phosphatidylserine Mycotoxin Testing Review for US and EU Buyers | Nutranexa",
+  "phosphatidylserine-reserve-samples-us": "Phosphatidylserine Reserve Samples: US Supplement GMP Review | Nutranexa",
 };
 
 function conciseMeta(value) {
