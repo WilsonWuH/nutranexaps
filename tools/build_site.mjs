@@ -767,6 +767,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-export-documentation-ispm15-review-us-eu": "Daylight warehouse loading bay with a sealed plain 25 kilogram phosphatidylserine drum on a solid wood pallet corner, a clipboard with blank export document sheets, a measuring tape and caliper beside the pallet, abstract ISPM-15 style stamp blocks on the wood, and a distant container door",
   "phosphatidylserine-peroxide-value-review-us-eu": "Cool-toned analytical review bench with chilled amber sample vials on a color-block oxidation indicator strip, a white phosphatidylserine powder dish, a titration flask and burette, a magnifier over a blank COA sheet with an abstract highlighted result row, a sealed plain 25 kilogram drum edge, a temperature and humidity logger, and soy and sunflower source trays",
   "phosphatidylserine-sfcr-import-licence-canada": "Canadian food-import licensing review with a sealed plain 25 kilogram phosphatidylserine drum, an unreadable licence-portal screen showing an abstract eight-character code tile, blank activity and commodity cards, a maple-leaf route marker beside a snow-dusted border gateway, and a broker handoff board for declaration and HS code checks in cool winter daylight",
+  "phosphatidylserine-stability-study-europe": "European quality laboratory with an open glass-front stability chamber holding amber supplement bottles, sealed white powder tubs, and pouch samples on timepoint shelves, a blank protocol card, and an abstract timepoint track in cool morning light",
 };
 
 const promotedSeoTitles = {
@@ -835,6 +836,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-export-documentation-ispm15-review-us-eu": "Phosphatidylserine Export Documentation and ISPM-15 Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-peroxide-value-review-us-eu": "Phosphatidylserine Peroxide Value and Oxidation Quality Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-sfcr-import-licence-canada": "Phosphatidylserine SFCR Import Licence Review for Canadian Buyers | Nutranexa",
+  "phosphatidylserine-stability-study-europe": "Phosphatidylserine Stability Study Guide for Europe | Nutranexa",
 };
 
 function conciseMeta(value) {
