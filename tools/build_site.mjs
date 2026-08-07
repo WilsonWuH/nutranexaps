@@ -770,6 +770,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-stability-study-europe": "European quality laboratory with an open glass-front stability chamber holding amber supplement bottles, sealed white powder tubs, and pouch samples on timepoint shelves, a blank protocol card, and an abstract timepoint track in cool morning light",
   "phosphatidylserine-mycotoxin-testing-us-eu": "Top-down mycotoxin sampling-station review for phosphatidylserine with a stainless grain sampling probe across a split tray of soybeans and sunflower seeds, sealed sample bags with blank tags, a white powder dish, a blank COA sheet with an abstract highlighted result row, a small risk-matrix card, and a sealed drum edge in daylight",
   "phosphatidylserine-reserve-samples-us": "US quality-control reserve-sample review with a sealed plain 25 kilogram phosphatidylserine drum on a pallet, a retention-calendar board with blank month tiles, sealed amber sample jars with blank lot stickers, a white powder dish, a finished supplement bottle mockup, and a temperature and humidity logger on a daylight warehouse QA bench",
+  "phosphatidylserine-moisture-water-activity-review-us-eu": "Close-up moisture and water-activity spec review on a bright quality-control bench with a digital water-activity analyzer probe inserted into a white phosphatidylserine powder sample cup, a dew-point sensor card, sealed desiccant sachets, a condensation-gradient panel with moisture droplets, a blank COA sheet with an abstract highlighted moisture row, and a sealed plain 25 kilogram drum edge in daylight",
 };
 
 const promotedSeoTitles = {
@@ -841,6 +842,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-stability-study-europe": "Phosphatidylserine Stability Study Guide for Europe | Nutranexa",
   "phosphatidylserine-mycotoxin-testing-us-eu": "Phosphatidylserine Mycotoxin Testing Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-reserve-samples-us": "Phosphatidylserine Reserve Samples: US Supplement GMP Review | Nutranexa",
+  "phosphatidylserine-moisture-water-activity-review-us-eu": "Phosphatidylserine Moisture & Water Activity Review | Nutranexa",
 };
 
 function conciseMeta(value) {
