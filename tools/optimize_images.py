@@ -1,4 +1,6 @@
 from pathlib import Path
+import re
+import sys
 from PIL import Image, ImageOps, ImageFile
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
@@ -55,14 +57,59 @@ mapping = {
 
 OUT.mkdir(parents=True, exist_ok=True)
 
-for rel, (name, max_width) in mapping.items():
-    src = SRC / rel
-    if not src.exists():
+if "--performance-only" not in sys.argv:
+    for rel, (name, max_width) in mapping.items():
+        src = SRC / rel
+        if not src.exists():
+            continue
+        with Image.open(src) as image:
+            image = ImageOps.exif_transpose(image).convert("RGB")
+            if image.width > max_width:
+                ratio = max_width / image.width
+                image = image.resize((max_width, int(image.height * ratio)), Image.Resampling.LANCZOS)
+            image.save(OUT / name, "WEBP", quality=82, method=6)
+            print(f"{rel} -> {name} ({image.width}x{image.height})")
+
+
+def save_derivative(source_name, output_name, width, quality=82, lossless=False):
+    source = OUT / source_name
+    output = OUT / output_name
+    with Image.open(source) as image:
+        image = ImageOps.exif_transpose(image)
+        ratio = min(1, width / image.width)
+        target = (round(image.width * ratio), round(image.height * ratio))
+        if target != image.size:
+            image = image.resize(target, Image.Resampling.LANCZOS)
+        if image.mode not in ("RGB", "RGBA"):
+            image = image.convert("RGBA" if "transparency" in image.info else "RGB")
+        image.save(output, "WEBP", quality=quality, method=6, lossless=lossless)
+        print(f"{source_name} -> {output_name} ({image.width}x{image.height}, {output.stat().st_size} bytes)")
+
+
+# PageSpeed-focused derivatives. Keep the source masters for social sharing and
+# high-density fallbacks while serving correctly sized assets to the homepage.
+performance_derivatives = [
+    ("hero-ps-banner-v4.png", "hero-ps-banner-v4.webp", 1942, 80, False),
+    ("hero-ps-composite-v3.png", "hero-ps-composite-v3-1100.webp", 1100, 80, False),
+    ("hero-ps-composite-v3.png", "hero-ps-composite-v3.webp", 1672, 80, False),
+    ("brand-product-lab.webp", "brand-product-lab-480.webp", 480, 80, False),
+    ("product-soy-ps.webp", "product-soy-ps-480.webp", 480, 80, False),
+    ("product-sunflower-ps.webp", "product-sunflower-ps-480.webp", 480, 80, False),
+    ("science-phosphatidylserine-lab-v2.webp", "science-phosphatidylserine-lab-v2-560.webp", 560, 80, False),
+    ("logo-nutranexa.webp", "logo-nutranexa-260.webp", 260, 84, False),
+    ("logo-nutranexa.webp", "logo-nutranexa-520.webp", 520, 84, False),
+]
+
+for args in performance_derivatives:
+    save_derivative(*args)
+
+for source in sorted((OUT / "claims").glob("claim-*.webp")):
+    if re.search(r"-(48|96|112|224)$", source.stem):
         continue
-    with Image.open(src) as image:
-        image = ImageOps.exif_transpose(image).convert("RGB")
-        if image.width > max_width:
-            ratio = max_width / image.width
-            image = image.resize((max_width, int(image.height * ratio)), Image.Resampling.LANCZOS)
-        image.save(OUT / name, "WEBP", quality=82, method=6)
-        print(f"{rel} -> {name} ({image.width}x{image.height})")
+    for width in (48, 96, 112, 224):
+        output = source.with_name(f"{source.stem}-{width}.webp")
+        with Image.open(source) as image:
+            image = ImageOps.exif_transpose(image).convert("RGBA")
+            image.thumbnail((width, width), Image.Resampling.LANCZOS)
+            image.save(output, "WEBP", method=6, lossless=True)
+            print(f"{source.name} -> {output.name} ({image.width}x{image.height}, {output.stat().st_size} bytes)")

@@ -1208,8 +1208,11 @@ function resourceFaqJson(article) {
   };
 }
 
-function layout({ title, description, route, body, schema = [], image = "/assets/images/factory-aerial-wide.webp", imageAlt = "", imageWidth = "", imageHeight = "", ogType = "website" }) {
+function layout({ title, description, route, body, schema = [], image = "/assets/images/factory-aerial-wide.webp", imageAlt = "", imageWidth = "", imageHeight = "", ogType = "website", head = "", optimizeLogo = false }) {
   const active = route.split("/")[1] || "";
+  const headerLogo = optimizeLogo
+    ? '<img src="/assets/images/logo-nutranexa-260.webp" srcset="/assets/images/logo-nutranexa-260.webp 1x, /assets/images/logo-nutranexa-520.webp 2x" alt="Nutranexa logo" width="260" height="60" decoding="async">'
+    : '<img src="/assets/images/logo-nutranexa.webp" alt="Nutranexa logo" width="260" height="60">';
   const canonical = urlFor(route);
   const allSchema = [organizationJson(), websiteJson(), ...schema];
   const ogImageDetails = [
@@ -1237,7 +1240,7 @@ ${ogImageDetails ? `  ${ogImageDetails}\n` : ""}  <meta name="twitter:card" cont
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(description)}">
   <meta name="twitter:image" content="${siteUrl}${image}">
-${twitterImageAlt ? `  ${twitterImageAlt}\n` : ""}  <link rel="icon" href="/assets/images/logo-nutranexa-icon.png">
+${twitterImageAlt ? `  ${twitterImageAlt}\n` : ""}${head ? `  ${head}\n` : ""}  <link rel="icon" href="/assets/images/logo-nutranexa-icon.png">
   <link rel="stylesheet" href="/assets/styles.css">
   <script type="application/ld+json">${JSON.stringify(allSchema)}</script>
   <script>
@@ -1250,7 +1253,7 @@ ${twitterImageAlt ? `  ${twitterImageAlt}\n` : ""}  <link rel="icon" href="/asse
   <header class="site-header">
     <div class="nav-shell">
       <a class="brand" href="/" aria-label="Nutranexa home">
-        <img src="/assets/images/logo-nutranexa.webp" alt="Nutranexa logo" width="260" height="60">
+        ${headerLogo}
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
@@ -1260,7 +1263,7 @@ ${twitterImageAlt ? `  ${twitterImageAlt}\n` : ""}  <link rel="icon" href="/asse
     </div>
   </header>
   <main id="main">${body}</main>
-  ${footer()}
+  ${footer(optimizeLogo)}
   ${whatsappButton()}
   <script src="/assets/site.js" defer></script>
 </body>
@@ -1340,11 +1343,14 @@ function renderMegaNav(active) {
     .join("");
 }
 
-function footer() {
+function footer(optimizeLogo = false) {
+  const logo = optimizeLogo
+    ? '<img src="/assets/images/logo-nutranexa-260.webp" srcset="/assets/images/logo-nutranexa-260.webp 1x, /assets/images/logo-nutranexa-520.webp 2x" alt="Nutranexa logo" class="footer-logo" width="260" height="60" loading="lazy" decoding="async">'
+    : '<img src="/assets/images/logo-nutranexa.webp" alt="Nutranexa logo" class="footer-logo">';
   return `<footer class="site-footer">
   <div class="footer-grid">
     <div>
-      <img src="/assets/images/logo-nutranexa.webp" alt="Nutranexa logo" class="footer-logo">
+      ${logo}
       <p>Functional food ingredient manufacturer focused on phosphatidylserine and related nutrition ingredient applications.</p>
       <p class="small">Brand: Nutranexa / Baianrui. Product brand references include Shushi PS.</p>
     </div>
@@ -1593,6 +1599,7 @@ function articleSeoTitle(article) {
 }
 
 function homePage() {
+  const claimVariant = (image, width) => image.replace(/\.webp$/, `-${width}.webp`);
   const claimIcons = [
     ["GMP", "/assets/images/claims/claim-gmp.webp"],
     ["Kosher", "/assets/images/claims/claim-kosher.webp"],
@@ -1604,7 +1611,7 @@ function homePage() {
     ["Allergen Review", "/assets/images/claims/claim-allergens.webp"],
   ];
   const claimIconItems = claimIcons
-    .map(([label, image]) => `<li class="claim-icon-card"><img src="${image}" alt="" width="160" height="160" loading="eager"><span>${esc(label)}</span></li>`)
+    .map(([label, image]) => `<li class="claim-icon-card"><img src="${claimVariant(image, 112)}" srcset="${claimVariant(image, 112)} 1x, ${claimVariant(image, 224)} 2x" alt="" width="112" height="112" loading="lazy" decoding="async"><span>${esc(label)}</span></li>`)
     .join("");
   const heroClaimIcons = [
     ["ISO", "/assets/images/claims/claim-iso.webp"],
@@ -1615,7 +1622,7 @@ function homePage() {
     ["Halal", "/assets/images/claims/claim-halal.webp"],
   ];
   const heroClaimSlides = heroClaimIcons
-    .map(([label, image]) => `<span class="hero-certification-slide" aria-hidden="true"><img src="${image}" alt="" width="160" height="160"><strong>${esc(label)}</strong></span>`)
+    .map(([label, image]) => `<span class="hero-certification-slide" aria-hidden="true"><img src="${claimVariant(image, 48)}" srcset="${claimVariant(image, 48)} 1x, ${claimVariant(image, 96)} 2x" alt="" width="46" height="46" fetchpriority="low" decoding="async"><strong>${esc(label)}</strong></span>`)
     .join("");
   const body = `<section class="home-hero">
     <div class="home-hero-copy">
@@ -1637,7 +1644,7 @@ function homePage() {
       </div>
     </div>
     <div class="home-hero-visual">
-      <img src="/assets/images/hero-ps-composite-v3.png" alt="Soybeans, sunflower, phosphatidylserine powder, a molecular structure, and a neural brain visualization" width="1672" height="941" loading="eager">
+      <img src="/assets/images/hero-ps-composite-v3-1100.webp" srcset="/assets/images/hero-ps-composite-v3-1100.webp 1100w, /assets/images/hero-ps-composite-v3.webp 1672w" sizes="(max-width: 1100px) 100vw, 1px" alt="Soybeans, sunflower, phosphatidylserine powder, a molecular structure, and a neural brain visualization" width="1672" height="941" loading="lazy" fetchpriority="low" decoding="async">
       <div class="hero-visual-note"><span>PS</span><p><strong>Formulation-ready options</strong><br>Source, purity, and documents aligned to your project.</p></div>
     </div>
   </section>
@@ -1652,12 +1659,16 @@ function homePage() {
   <section id="product-solutions" class="home-section product-solutions">
     ${sectionIntro("Product solutions", "Choose the right PS route for your formulation", "Compare target purity and source preference, then confirm the current specification, COA, and application fit with our technical team.")}
     <div class="grade-grid">
-      ${psGrades.map((grade, index) => `<article class="grade-card${index === 1 ? " grade-card-featured" : ""}">
-        <div class="grade-card-media"><img src="${grade.image}" alt="${esc(grade.name)} light-yellow powder ingredient" loading="lazy">${grade.badge ? `<span>${esc(grade.badge)}</span>` : ""}</div>
+      ${psGrades.map((grade, index) => {
+        const cardImage = grade.image.replace(/\.webp$/, "-480.webp");
+        const dimensions = grade.image.includes("brand-product-lab") ? 'width="480" height="270"' : 'width="480" height="480"';
+        return `<article class="grade-card${index === 1 ? " grade-card-featured" : ""}">
+        <div class="grade-card-media"><img src="${cardImage}" srcset="${cardImage} 480w, ${grade.image} 1200w" sizes="(max-width: 760px) calc(100vw - 48px), 376px" alt="${esc(grade.name)} light-yellow powder ingredient" ${dimensions} loading="lazy" decoding="async">${grade.badge ? `<span>${esc(grade.badge)}</span>` : ""}</div>
         <p class="grade-kicker">${esc(grade.positioning)}</p><h3>${esc(grade.name)}</h3><p>${esc(grade.description)}</p>
         <ul>${grade.highlights.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
         <a class="button secondary" href="/products/${grade.slug}/">View ${esc(grade.shortName)}</a>
-      </article>`).join("")}
+      </article>`;
+      }).join("")}
     </div>
     <div class="source-bar">
       <div><img src="/assets/images/product-soy-ps.webp" alt="Fine light-yellow soy-derived phosphatidylserine powder" loading="lazy"><span><small>Source option</small><strong>Soy-Derived PS</strong></span></div>
@@ -1690,7 +1701,7 @@ function homePage() {
   </section>
 
   <section class="home-section science-section">
-    <div class="science-visual"><img src="/assets/images/science-phosphatidylserine-lab-v2.webp" alt="Laboratory scientist reviewing a phosphatidylserine powder sample beside analytical equipment" width="1200" height="1200" loading="lazy"><div><strong>Science-led</strong><span>Ingredient decisions</span></div></div>
+    <div class="science-visual"><img src="/assets/images/science-phosphatidylserine-lab-v2-560.webp" srcset="/assets/images/science-phosphatidylserine-lab-v2-560.webp 560w, /assets/images/science-phosphatidylserine-lab-v2.webp 1200w" sizes="(max-width: 760px) calc(100vw - 48px), 560px" alt="Laboratory scientist reviewing a phosphatidylserine powder sample beside analytical equipment" width="560" height="560" loading="lazy" decoding="async"><div><strong>Science-led</strong><span>Ingredient decisions</span></div></div>
     <div class="science-copy">${sectionIntro("Science & research", "Science Behind Phosphatidylserine", "Explore the structure, biological role, and research areas associated with phosphatidylserine. Our science center helps formulators evaluate application potential without converting research into medical claims.")}
       <div class="science-links">
         <a href="/resources/what-is-phosphatidylserine/"><span>01</span><div><strong>What is Phosphatidylserine?</strong><small>Understand the ingredient and sourcing context.</small></div></a>
@@ -1736,6 +1747,8 @@ function homePage() {
     description: "Premium soy- and sunflower-derived phosphatidylserine in 20%, 50%, and 70% grades with technical documentation and formulation support.",
     route: "/",
     image: "/assets/images/og-nutranexa-premium-ps-v2.png",
+    head: '<link rel="preload" as="image" href="/assets/images/hero-ps-banner-v4.webp" type="image/webp" media="(min-width: 1101px)" fetchpriority="high">',
+    optimizeLogo: true,
     schema: [breadcrumbJson([["Home", "/"]])],
     body,
   });
