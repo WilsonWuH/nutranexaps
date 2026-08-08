@@ -771,6 +771,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-mycotoxin-testing-us-eu": "Top-down mycotoxin sampling-station review for phosphatidylserine with a stainless grain sampling probe across a split tray of soybeans and sunflower seeds, sealed sample bags with blank tags, a white powder dish, a blank COA sheet with an abstract highlighted result row, a small risk-matrix card, and a sealed drum edge in daylight",
   "phosphatidylserine-reserve-samples-us": "US quality-control reserve-sample review with a sealed plain 25 kilogram phosphatidylserine drum on a pallet, a retention-calendar board with blank month tiles, sealed amber sample jars with blank lot stickers, a white powder dish, a finished supplement bottle mockup, and a temperature and humidity logger on a daylight warehouse QA bench",
   "phosphatidylserine-moisture-water-activity-review-us-eu": "Close-up moisture and water-activity spec review on a bright quality-control bench with a digital water-activity analyzer probe inserted into a white phosphatidylserine powder sample cup, a dew-point sensor card, sealed desiccant sachets, a condensation-gradient panel with moisture droplets, a blank COA sheet with an abstract highlighted moisture row, and a sealed plain 25 kilogram drum edge in daylight",
+  "phosphatidylserine-mosh-moah-testing-review-us-eu": "Mineral oil hydrocarbon review desk for phosphatidylserine with a cutaway sealed plain 25 kilogram drum showing a white powder bag inside a food-grade liner, a recycled-paperboard sheet separated from the drum by a divider, a blank COA sheet with two abstract chromatogram humps, a magnifier, a food-grade lubricant dropper bottle, and a packaging-declaration card in cool daylight",
 };
 
 const promotedSeoTitles = {
@@ -843,6 +844,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-mycotoxin-testing-us-eu": "Phosphatidylserine Mycotoxin Testing Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-reserve-samples-us": "Phosphatidylserine Reserve Samples: US Supplement GMP Review | Nutranexa",
   "phosphatidylserine-moisture-water-activity-review-us-eu": "Phosphatidylserine Moisture & Water Activity Review | Nutranexa",
+  "phosphatidylserine-mosh-moah-testing-review-us-eu": "Phosphatidylserine MOSH & MOAH Testing Review | Nutranexa",
 };
 
 function conciseMeta(value) {
