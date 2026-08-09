@@ -130,17 +130,22 @@ function languageSwitcher(locale, route) {
   return `<details class="language-switcher"><summary aria-label="${current.switcherLabel}"><span class="language-code">${locale.toUpperCase()}</span><span class="language-name">${current.nativeLabel}</span></summary><div class="language-menu">${links}</div></details>`;
 }
 
-function alternateLinks(route) {
-  const links = locales.map((locale) => `<link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${publicLocalePath(locale.code, route)}">`);
-  links.push(`<link rel="alternate" hreflang="x-default" href="${siteUrl}${publicLocalePath(defaultLocale, route)}">`);
+function alternateLinks(route, indexableLocaleCodes) {
+  const links = locales
+    .filter((locale) => indexableLocaleCodes.has(locale.code))
+    .map((locale) => `<link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${publicLocalePath(locale.code, route)}">`);
+  if (indexableLocaleCodes.has(defaultLocale)) {
+    links.push(`<link rel="alternate" hreflang="x-default" href="${siteUrl}${publicLocalePath(defaultLocale, route)}">`);
+  }
   return links.join("\n  ");
 }
 
-function localizeHtml(html, locale, route, messages, { compatibility = false } = {}) {
+function localizeHtml(html, locale, route, messages, indexableLocaleCodes, { compatibility = false } = {}) {
   const config = localeConfig(locale);
   const $ = load(html, { decodeEntities: false });
   const localizedRoute = publicLocalePath(locale, route);
   const localizedCanonical = `${siteUrl}${localizedRoute}`;
+  const isIndexable = indexableLocaleCodes.has(locale);
 
   $("html").attr("lang", locale).attr("dir", config.dir);
   $("body").addClass(`locale-${locale}`);
@@ -182,7 +187,15 @@ function localizeHtml(html, locale, route, messages, { compatibility = false } =
 
   $("link[rel='canonical']").attr("href", localizedCanonical);
   $("link[rel='alternate'][hreflang]").remove();
-  $("link[rel='canonical']").after(`\n  ${alternateLinks(route)}`);
+  if (isIndexable) {
+    const alternates = alternateLinks(route, indexableLocaleCodes);
+    if (alternates) $("link[rel='canonical']").after(`\n  ${alternates}`);
+  }
+  if (!isIndexable) {
+    const robots = $("meta[name='robots']");
+    if (robots.length) robots.attr("content", "noindex,follow");
+    else $("head").append('\n  <meta name="robots" content="noindex,follow">');
+  }
   $("meta[property='og:url']").attr("content", localizedCanonical);
   $("meta[property='og:locale'], meta[property='og:locale:alternate']").remove();
   $("meta[property='og:url']").after(`\n  <meta property="og:locale" content="${config.ogLocale}">${locales.filter((item) => item.code !== locale).map((item) => `\n  <meta property="og:locale:alternate" content="${item.ogLocale}">`).join("")}`);
@@ -217,24 +230,31 @@ for (const locale of locales) {
 
 const pages = await findEnglishPages(root);
 const routes = pages.map((page) => routeFromRelative(page.relative));
+const indexableLocalesByRoute = new Map();
 for (const page of pages) {
   const route = routeFromRelative(page.relative);
   const html = await fs.readFile(page.absolute, "utf8");
+  const sourceRobots = (html.match(/<meta name="robots" content="([^"]*)"/i)?.[1] || "").toLowerCase();
+  const indexableLocaleCodes = new Set(sourceRobots.includes("noindex") ? [] : locales.map((locale) => locale.code));
+  indexableLocalesByRoute.set(route, indexableLocaleCodes);
   for (const locale of locales) {
     const destination = outputPath(locale.code, route);
     await fs.mkdir(path.dirname(destination), { recursive: true });
-    await fs.writeFile(destination, localizeHtml(html, locale.code, route, dictionaries.get(locale.code)), "utf8");
+    await fs.writeFile(destination, localizeHtml(html, locale.code, route, dictionaries.get(locale.code), indexableLocaleCodes), "utf8");
   }
-  await fs.writeFile(page.absolute, localizeHtml(html, defaultLocale, route, dictionaries.get(defaultLocale), { compatibility: true }), "utf8");
+  await fs.writeFile(page.absolute, localizeHtml(html, defaultLocale, route, dictionaries.get(defaultLocale), indexableLocaleCodes, { compatibility: true }), "utf8");
 }
 
 const sitemapEntries = [];
 for (const route of routes) {
+  const indexableLocaleCodes = indexableLocalesByRoute.get(route) || new Set();
+  const indexableLocales = locales.filter((locale) => indexableLocaleCodes.has(locale.code));
+  if (!indexableLocales.length) continue;
   const alternates = [
-    ...locales.map((locale) => `    <xhtml:link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${publicLocalePath(locale.code, route)}"/>`),
+    ...indexableLocales.map((locale) => `    <xhtml:link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${publicLocalePath(locale.code, route)}"/>`),
     `    <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl}${publicLocalePath(defaultLocale, route)}"/>`,
   ].join("\n");
-  for (const locale of locales) {
+  for (const locale of indexableLocales) {
     sitemapEntries.push(`  <url>\n    <loc>${siteUrl}${publicLocalePath(locale.code, route)}</loc>\n${alternates}\n  </url>`);
   }
 }

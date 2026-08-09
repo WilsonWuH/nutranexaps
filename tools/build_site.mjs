@@ -1159,11 +1159,6 @@ function websiteJson() {
     "@type": "WebSite",
     name: "Nutranexa",
     url: siteUrl,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${siteUrl}/resources/?q={search_term_string}`,
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 
@@ -1212,7 +1207,7 @@ function resourceFaqJson(article) {
   };
 }
 
-function layout({ title, description, route, body, schema = [], image = "/assets/images/factory-aerial-wide.webp", imageAlt = "", imageWidth = "", imageHeight = "", ogType = "website", head = "", optimizeLogo = false }) {
+function layout({ title, description, route, body, schema = [], image = "/assets/images/factory-aerial-wide.webp", imageAlt = "", imageWidth = "", imageHeight = "", ogType = "website", head = "", optimizeLogo = false, robots = "index,follow" }) {
   const active = route.split("/")[1] || "";
   const headerLogo = optimizeLogo
     ? '<img src="/assets/images/logo-nutranexa-260.webp" srcset="/assets/images/logo-nutranexa-260.webp 1x, /assets/images/logo-nutranexa-520.webp 2x" alt="Nutranexa logo" width="260" height="60" decoding="async">'
@@ -1234,7 +1229,7 @@ function layout({ title, description, route, body, schema = [], image = "/assets
   <meta name="description" content="${esc(description)}">
   <meta name="naver-site-verification" content="c6d0c699471e32f496c25af5be8693ab4c4580e8">
   <link rel="canonical" href="${canonical}">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="${esc(robots)}">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:type" content="${esc(ogType)}">
@@ -2448,7 +2443,7 @@ function articlePage(article) {
 
 function thankYouPage() {
   const body = `<section class="page-hero compact"><p class="eyebrow">Inquiry received</p><h1>Thank you. Your request is ready for technical follow-up.</h1><p>Our team will review your application, source preference, required PS grade, document needs, and estimated annual volume.</p><a class="button primary" href="/products/">Return to PS Products</a></section>`;
-  return layout({ title: "Thank You | Nutranexa Quote Request", description: "Your Nutranexa phosphatidylserine inquiry has been received for sales follow-up.", route: "/thank-you/", schema: [breadcrumbJson([["Home", "/"], ["Thank You", "/thank-you/"]])], body });
+  return layout({ title: "Thank You | Nutranexa Quote Request", description: "Your Nutranexa phosphatidylserine inquiry has been received for sales follow-up.", route: "/thank-you/", robots: "noindex,follow", schema: [breadcrumbJson([["Home", "/"], ["Thank You", "/thank-you/"]])], body });
 }
 
 function privacyPage() {
@@ -2494,7 +2489,7 @@ await add("/privacy/", privacyPage());
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${routes.map((route) => `  <url><loc>${urlFor(route)}</loc></url>`).join("\n")}
+${routes.filter((route) => route !== "/thank-you/").map((route) => `  <url><loc>${urlFor(route)}</loc></url>`).join("\n")}
 </urlset>
 `;
 await fs.writeFile(path.join(root, "sitemap.xml"), sitemap, "utf8");

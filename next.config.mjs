@@ -23,6 +23,8 @@ const nextConfig = {
   async redirects() {
     return [
       { source: "/inquiry", destination: "/contact/", permanent: true },
+      { source: "/en", destination: "/", permanent: true },
+      { source: "/en/:path*", destination: "/:path*", permanent: true },
     ];
   },
   async rewrites() {
