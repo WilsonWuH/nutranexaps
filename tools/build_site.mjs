@@ -773,6 +773,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-moisture-water-activity-review-us-eu": "Close-up moisture and water-activity spec review on a bright quality-control bench with a digital water-activity analyzer probe inserted into a white phosphatidylserine powder sample cup, a dew-point sensor card, sealed desiccant sachets, a condensation-gradient panel with moisture droplets, a blank COA sheet with an abstract highlighted moisture row, and a sealed plain 25 kilogram drum edge in daylight",
   "phosphatidylserine-mosh-moah-testing-review-us-eu": "Mineral oil hydrocarbon review desk for phosphatidylserine with a cutaway sealed plain 25 kilogram drum showing a white powder bag inside a food-grade liner, a recycled-paperboard sheet separated from the drum by a divider, a blank COA sheet with two abstract chromatogram humps, a magnifier, a food-grade lubricant dropper bottle, and a packaging-declaration card in cool daylight",
   "phosphatidylserine-structure-function-claims-us": "US supplement claims-review desk in daylight with a sealed plain 25 kilogram phosphatidylserine drum on a pallet, a white powder dish, an amber supplement bottle with a blank label, blank claim-review cards feeding separate green and red decision gates, a magnifier over an evidence sheet, and a scale, with a wall notice board in the background",
+  "phosphatidylserine-particle-size-distribution-review-us-eu": "Quality reviewer comparing a stainless analytical sieve stack holding fine phosphatidylserine powder, a laser diffraction reading unit, and a blank particle size distribution report with an abstract bell-curve plot and D-value markers at a sourcing desk",
 };
 
 const promotedSeoTitles = {
@@ -847,6 +848,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-moisture-water-activity-review-us-eu": "Phosphatidylserine Moisture & Water Activity Review | Nutranexa",
   "phosphatidylserine-mosh-moah-testing-review-us-eu": "Phosphatidylserine MOSH & MOAH Testing Review | Nutranexa",
   "phosphatidylserine-structure-function-claims-us": "Phosphatidylserine Structure/Function Claims for US Brands | Nutranexa",
+  "phosphatidylserine-particle-size-distribution-review-us-eu": "Phosphatidylserine Particle Size Distribution Guide | Nutranexa",
 };
 
 function conciseMeta(value) {
