@@ -1,5 +1,47 @@
 [
   {
+    "title": "Football-Specific Performance and Cognitive Fatigue Resistance Following Supplementation with Two Phosphatidylserine Doses Combined with Taurine and Caffeine in Professional Male Football Players: A Randomized, Triple-Masked, Placebo-Controlled Trial",
+    "authors": "Mizera K, Mazurek D, Martínez-Rodríguez A, Kęska A",
+    "journal": "Nutrients",
+    "year": 2026,
+    "doi": "10.3390/nu18162588",
+    "source_url": "https://www.mdpi.com/2072-6643/18/16/2588",
+    "research_type": "Human Clinical Study",
+    "application_area": "Sports Nutrition",
+    "population": "Professional male football players (97 randomized, four parallel groups)",
+    "summary": "In this randomized, triple-masked, placebo-controlled trial, 97 professional male football players took placebo, taurine plus caffeine, or the same combination plus 300 or 600 mg/day phosphatidylserine for 14 days. The multi-ingredient conditions showed more favorable baseline-adjusted cognitive, psychomotor, 30 m sprint, and GPS-derived locomotor outcomes than placebo, while the adjusted comparison between the two phosphatidylserine doses was not statistically significant for the registered primary outcome.",
+    "limitations": "Phosphatidylserine was tested only together with taurine and caffeine, so its independent contribution cannot be isolated. There was no a priori sample-size calculation, some analytical decisions were formalized after unblinding during revision, within-session fatigue-decline indices lacked baseline comparators, the intervention lasted 14 days in professional male football players, and supplement contents were verified from product labels without independent laboratory analysis.",
+    "featured": false
+  },
+  {
+    "title": "Restricting efferocytosis pathway to CD91 via phosphatidylserine-targeting chimeric protein augments antitumor immune responses",
+    "authors": "Mizote Y, Nishita H, Hashiba K, Okuma C, Akane S, Minomi K, Tahara H",
+    "journal": "Molecular Therapy",
+    "year": 2026,
+    "doi": "10.1016/j.ymthe.2026.05.013",
+    "source_url": "https://www.cell.com/molecular-therapy/fulltext/S1525-0016(26)00400-4",
+    "research_type": "Laboratory and Animal Study",
+    "application_area": "Oncology / Cell Membrane Biology",
+    "population": "Cell culture and murine tumor models",
+    "summary": "This preclinical study engineered a chimeric protein (PStRAP) that links phosphatidylserine-exposed apoptotic tumor cells to the immunostimulatory phagocytic receptor CD91 instead of tolerogenic phosphatidylserine receptors, and reported increased phagocytosis and cross-priming in vitro plus enhanced antitumor effects when delivered as mRNA lipid nanoparticles alongside a cytotoxic drug in mouse tumor models.",
+    "limitations": "Evidence comes from cell culture and mouse tumor models only and cannot be extrapolated to humans. Disclosed industry involvement includes patent applications and Nitto Denko Corporation employment for several authors, and the effects are specific to the tested chimeric construct and mRNA/lipid-nanoparticle delivery approach.",
+    "featured": false
+  },
+  {
+    "title": "Phosphatidylserine synthesis tunes IP3R-mediated ER Ca2+ release via phospholipid homeostasis",
+    "authors": "Zhou Y, Diao M, Liu Y, He K, Yang X, Ding M, Huang X",
+    "journal": "Cell Reports",
+    "year": 2026,
+    "doi": "10.1016/j.celrep.2026.117792",
+    "source_url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(26)00870-3",
+    "research_type": "Laboratory and Animal Study",
+    "application_area": "Cell Lipid Metabolism / Calcium Signaling",
+    "population": "Drosophila and mammalian cell models",
+    "summary": "This laboratory and animal study showed that phosphatidylserine synthesized in the endoplasmic reticulum helps maintain cellular calcium homeostasis: PS deficiency in Drosophila caused mitochondrial damage that was reversed by reducing IP3 receptor-mediated ER calcium release, and mammalian cells with pathological PS levels (deficiency or excess, as modeled in Lenz-Majewski syndrome) displayed abnormal IP3R-mediated ER calcium-release patterns.",
+    "limitations": "Preclinical Drosophila and mammalian cell models only; the Lenz-Majewski syndrome relevance is based on cellular models rather than clinical data, and the findings do not address dietary phosphatidylserine intake in humans.",
+    "featured": false
+  },
+  {
     "title": "The Impact of Citicoline/Phosphatidylserine Supplementation on Cognitive Performance and Executive Functions in Mental Disorders: A Systematic Review of Controlled Trials",
     "authors": "Kucuksahin NG, Kaya TT, Halac E, Sut E, Ciray RO",
     "journal": "Human Psychopharmacology: Clinical and Experimental",
