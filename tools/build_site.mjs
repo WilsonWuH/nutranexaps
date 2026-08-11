@@ -778,6 +778,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-rasff-monitoring-europe": "European morning early-warning review desk with an abstract EU network map of alert node points and signal rings feeding three blank notification lanes marked by green amber and red status markers, a sealed plain 25 kilogram phosphatidylserine drum on a pallet, a magnifier, and a distant container port",
   "phosphatidylserine-marine-cargo-insurance-us-canada": "US and Canada portside logistics office reviewing marine cargo insurance for a phosphatidylserine shipment: a sealed plain 25 kilogram drum on a pallet, an open cargo-policy binder with blank green amber and blue coverage tabs, a single-shipment insurance certificate card under a magnifier, and a container vessel at a port terminal seen through the office window",
   "phosphatidylserine-ics2-eu-import": "Dawn container terminal scene for European phosphatidylserine imports with a sealed plain 25 kilogram drum on a pallet, blank shipping-instructions clipboard and packing-list card, an abstract translucent pre-arrival data window of unreadable form rows with a gold approval arrow, and a container ship and gantry crane in soft morning haze",
+  "phosphatidylserine-acetone-insoluble-review-us-eu": "Bright analytical extraction bench for a phosphatidylserine acetone-insoluble review with a round-bottom flask of clear acetone, a fine white PS powder weighing dish, a folded filter funnel above a receiving flask with a white precipitate, a blank COA sheet with an abstract highlighted purity row, a small reagent bottle, and a sealed plain 25 kilogram drum edge in daylight",
 };
 
 const promotedSeoTitles = {
@@ -857,6 +858,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-rasff-monitoring-europe": "Phosphatidylserine RASFF Monitoring for EU Buyers | Nutranexa",
   "phosphatidylserine-marine-cargo-insurance-us-canada": "Phosphatidylserine Marine Cargo Insurance Review | Nutranexa",
   "phosphatidylserine-ics2-eu-import": "Phosphatidylserine ICS2 EU Import Guide | Nutranexa",
+  "phosphatidylserine-acetone-insoluble-review-us-eu": "Phosphatidylserine Acetone Insoluble Review | Nutranexa",
 };
 
 function conciseMeta(value) {
