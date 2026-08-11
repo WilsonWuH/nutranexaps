@@ -779,6 +779,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-marine-cargo-insurance-us-canada": "US and Canada portside logistics office reviewing marine cargo insurance for a phosphatidylserine shipment: a sealed plain 25 kilogram drum on a pallet, an open cargo-policy binder with blank green amber and blue coverage tabs, a single-shipment insurance certificate card under a magnifier, and a container vessel at a port terminal seen through the office window",
   "phosphatidylserine-ics2-eu-import": "Dawn container terminal scene for European phosphatidylserine imports with a sealed plain 25 kilogram drum on a pallet, blank shipping-instructions clipboard and packing-list card, an abstract translucent pre-arrival data window of unreadable form rows with a gold approval arrow, and a container ship and gantry crane in soft morning haze",
   "phosphatidylserine-acetone-insoluble-review-us-eu": "Bright analytical extraction bench for a phosphatidylserine acetone-insoluble review with a round-bottom flask of clear acetone, a fine white PS powder weighing dish, a folded filter funnel above a receiving flask with a white precipitate, a blank COA sheet with an abstract highlighted purity row, a small reagent bottle, and a sealed plain 25 kilogram drum edge in daylight",
+  "phosphatidylserine-customs-valuation-us": "US import-cost review desk for phosphatidylserine with a sealed plain 25 kilogram drum on a pallet, a commercial-invoice card under a magnifier with abstract value-line rows, a blank calculator, a duty-math tile with abstract stacked bars, a broker handoff tray, and a harbor skyline through the window in daylight",
 };
 
 const promotedSeoTitles = {
@@ -859,6 +860,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-marine-cargo-insurance-us-canada": "Phosphatidylserine Marine Cargo Insurance Review | Nutranexa",
   "phosphatidylserine-ics2-eu-import": "Phosphatidylserine ICS2 EU Import Guide | Nutranexa",
   "phosphatidylserine-acetone-insoluble-review-us-eu": "Phosphatidylserine Acetone Insoluble Review | Nutranexa",
+  "phosphatidylserine-customs-valuation-us": "PS Customs Valuation Review for US Importers | Nutranexa",
 };
 
 function conciseMeta(value) {
