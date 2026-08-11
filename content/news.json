@@ -1,5 +1,285 @@
 [
   {
+    "slug": "preterm-choline-supplements-plasma-study-2026",
+    "headline": "Preterm Infant Trial Finds Similar Choline Exposure Across Four Forms",
+    "byline": "Nutranexa News",
+    "published": "2026-08-11",
+    "displayDate": "August 11, 2026",
+    "featuredImage": "/assets/images/news-preterm-choline-supplements-2026.webp",
+    "featuredAlt": "Neonatal nutrition research setup with feeding syringes, sample tubes, and a clinician reviewing preterm infant nutrition data",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "A randomized study in 32 enterally fed preterm infants found choline chloride, choline bitartrate, GPC, and egg phosphatidylcholine all raised plasma choline after 48 hours, with GPC acting fastest.",
+    "sections": [
+      {
+        "id": "study-design",
+        "heading": "Study Design",
+        "paragraphs": [
+          "Researchers enrolled 32 enterally fed preterm infants born at 28.0 to 32.0 weeks gestation and randomized them to receive an extra 30 mg/kg/day choline-equivalent for 48 hours.",
+          "The four tested forms were choline chloride, choline bitartrate, alpha-glycerophosphorylcholine, and egg phosphatidylcholine, with plasma choline, betaine, and phosphatidylcholine measured by tandem mass spectrometry."
+        ]
+      },
+      {
+        "id": "main-findings",
+        "heading": "Main Findings",
+        "paragraphs": [
+          "According to the paper, all four supplements increased plasma choline by 51 to 54 hours after supplementation began, and overall choline exposure over 54 hours was similar across the groups.",
+          "GPC increased choline most rapidly at the 6-hour measurement point, while the study did not find differential effects on plasma betaine or phosphatidylcholine."
+        ]
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "For choline ingredient buyers in early-life nutrition, the result suggests that short-term plasma exposure may not be the main differentiator between common choline forms at comparable choline-equivalent dosing.",
+          "Form choice may instead turn on human-milk alignment, processing behavior, regulatory positioning, and how each form fits a broader infant-nutrition matrix."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Choline supplementation in preterm infants: effects of four different supplements on choline plasma concentrations",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41524941/"
+      },
+      {
+        "title": "Choline supplementation in preterm infants: effects of four different supplements on choline plasma concentrations - PMC",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12795929/"
+      }
+    ]
+  },
+  {
+    "slug": "australia-mfgm-infant-formula-approval-2025",
+    "headline": "FSANZ Approval Clears Australian Infant Formula Path for MFGM",
+    "byline": "Nutranexa News",
+    "published": "2026-08-11",
+    "displayDate": "August 11, 2026",
+    "featuredImage": "/assets/images/news-australia-mfgm-infant-formula-approval-2025.webp",
+    "featuredAlt": "Regulatory review desk with infant formula documents, dairy ingredient samples, and an Australia market map on a monitor",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "FSANZ approved milk fat globule membrane-enriched whey protein concentrate as a nutritive substance in infant formula products, and Arla says the decision gives its Lacprodan MFGM-10 exclusive Australian commercialization rights for at least 15 months.",
+    "sections": [
+      {
+        "id": "approval-path",
+        "heading": "What Was Approved",
+        "paragraphs": [
+          "Food Standards Australia New Zealand approved Application A1307 on April 30, 2025 to permit milk fat globule membrane-enriched whey protein concentrate as a nutritive substance in infant formula products.",
+          "FSANZ's approval report says ministers were notified on May 14, 2025 and the variation was gazetted on July 22, 2025."
+        ]
+      },
+      {
+        "id": "market-impact",
+        "heading": "What It Means Commercially",
+        "paragraphs": [
+          "Arla Foods Ingredients said the decision makes Lacprodan MFGM-10 its first early-life nutrition product approved by Australian authorities and the only MFGM ingredient approved for infant products in Australia for at least 15 months.",
+          "The company also noted that the ingredient can be labeled in Australia as milk fat globule membrane-enriched whey protein concentrate, while New Zealand opted out of the joint infant formula standard."
+        ]
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "For phospholipid and MFGM buyers, the decision is a concrete regulatory signal that complex milk-lipid ingredients are gaining clearer market pathways in infant formula.",
+          "The next practical questions are source exclusivity, specification fit, claim discipline, and whether a formulation plan depends on Australia alone or a broader ANZ strategy."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "A1307 - Milk fat globule membrane as a nutritive substance in infant formula products | FSANZ",
+        "url": "https://www.foodstandards.gov.au/food-standards-code/applications/a1307-milk-fat-globule-membrane-nutritive-substance-infant-formula"
+      },
+      {
+        "title": "Approval report – Application A1307 Milk fat globule membrane as a nutritive substance in infant formula products",
+        "url": "https://www.foodstandards.gov.au/sites/default/files/2025-05/A1307%20Approval%20Report_0.pdf"
+      },
+      {
+        "title": "Australia approves Arla Foods Ingredients’ MFGM for use in infant formula",
+        "url": "https://www.arlafoodsingredients.com/about/press-releases/australia-approves-arla-foods-ingredients-mfgm-for-use-in-infant-formula/"
+      }
+    ]
+  },
+  {
+    "slug": "wppc-drying-functionality-study-2026",
+    "headline": "Fluidized Bed Drying Preserves More Native WPPC Structure",
+    "byline": "Nutranexa News",
+    "published": "2026-08-11",
+    "displayDate": "August 11, 2026",
+    "featuredImage": "/assets/images/news-wppc-drying-functionality-study-2026.webp",
+    "featuredAlt": "Pilot dairy drying line with powder collection vessels, phospholipid samples, and a lab screen comparing particle structures",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "A Journal of Dairy Science study found fluidized bed drying kept whey protein phospholipid concentrate closer to native protein structure and preserved more xanthine oxidase activity than spray drying.",
+    "sections": [
+      {
+        "id": "what-was-compared",
+        "heading": "What Was Compared",
+        "paragraphs": [
+          "Researchers compared whey protein phospholipid concentrate dried by lab-scale spray drying and fluidized bed drying, then benchmarked both against an industry-scale spray-dried control.",
+          "The study focused on how drying changed particle structure, protein conformation, oxidation markers, enzyme stability, and rehydrated powder behavior."
+        ]
+      },
+      {
+        "id": "what-shifted",
+        "heading": "What Shifted",
+        "paragraphs": [
+          "The paper reports that fluidized bed drying retained the most native-like protein secondary structure and preserved higher xanthine oxidase activity than the spray-dried powders.",
+          "Confocal microscopy also showed more uniform protein distribution in the fluidized bed product, while larger protein-fat aggregates appeared in the spray-dried materials."
+        ]
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "For buyers of phospholipid-rich dairy powders, the study reinforces that drying is not only a cost and throughput decision but also a functional-specification decision.",
+          "When a powder is meant to retain membrane-associated bioactivity or differentiated microstructure, process route may matter as much as starting composition."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Effect of spray drying and fluidized bed drying on whey protein phospholipid concentrate: Microstructural analysis, bioactivity, and functionality",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41937043/"
+      }
+    ]
+  },
+  {
+    "slug": "mfgm-polar-lipid-processing-study-2026",
+    "headline": "Lipidomics Study Tracks Where MFGM Recovery Loses Polar Lipids",
+    "byline": "Nutranexa News",
+    "published": "2026-08-11",
+    "displayDate": "August 11, 2026",
+    "featuredImage": "/assets/images/news-mfgm-polar-lipid-processing-study-2026.webp",
+    "featuredAlt": "Dairy lipidomics workstation with milk separation vessels, mass spectrometry graphics, and notes on phospholipid recovery losses",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "A 4D lipidomics study found the largest phospholipid and ganglioside losses during initial milk centrifugation and additional composition shifts during churning, coagulation, and evaporation.",
+    "sections": [
+      {
+        "id": "process-map",
+        "heading": "Process Map",
+        "paragraphs": [
+          "The Food Chemistry study monitored polar lipid changes at multiple stages of producing milk fat globule membrane-enriched ingredients from raw bovine milk.",
+          "Researchers tracked phospholipids, gangliosides, and differential lipid species after centrifugation, cream churning, rennet coagulation, ultrafiltration, and evaporation."
+        ]
+      },
+      {
+        "id": "largest-losses",
+        "heading": "Largest Losses",
+        "paragraphs": [
+          "The authors report that centrifugation caused the biggest drop, with 49% phospholipid loss and 18% ganglioside loss, while cream churning caused another 11% phospholipid loss and 7% ganglioside loss.",
+          "Later steps further shifted class composition, including decreases in phosphatidylserines and phosphatidylinositols after coagulation and losses of polyunsaturated and ether phospholipids after evaporation."
+        ]
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "For MFGM ingredient buyers, this is a reminder that two materials sold under similar high-level labels can differ meaningfully depending on how recovery and concentration were performed.",
+          "Supplier discussions should cover not only total phospholipid numbers but also processing history, class distribution, and where sensitive lipid species may be lost."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Changes in polar lipids during preparation of milk fat globule membrane enriched ingredients from raw bovine milk: Insights based on 4D lipidomics and ganglioside mass spectrometry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41740387/"
+      }
+    ]
+  },
+  {
+    "slug": "sunflower-phospholipid-ice-cream-study-2026",
+    "headline": "High-PC Sunflower Fractions Improve Ice Cream Emulsion Stability",
+    "byline": "Nutranexa News",
+    "published": "2026-08-11",
+    "displayDate": "August 11, 2026",
+    "featuredImage": "/assets/images/news-sunflower-phospholipid-ice-cream-study-2026.webp",
+    "featuredAlt": "Ice cream formulation bench with sunflower phospholipid samples, frozen emulsion cups, and a microscope image of fine fat droplets",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "A food science study reported that the highest-phosphatidylcholine sunflower fraction produced the smallest oil droplets and strongest interfacial stability in model ice cream.",
+    "sections": [
+      {
+        "id": "what-was-tested",
+        "heading": "What Was Tested",
+        "paragraphs": [
+          "The study evaluated four purified sunflower phospholipid fractions, crude lecithins, and a commercial product in an optimized ice cream base containing salep and phospholipids.",
+          "The fractions differed mainly in phosphatidylcholine content, allowing the author to compare how composition affected microstructure, zeta potential, rheology, and overrun."
+        ]
+      },
+      {
+        "id": "what-performed-best",
+        "heading": "What Performed Best",
+        "paragraphs": [
+          "Fraction 4, which had the highest phosphatidylcholine content, produced the smallest and most uniform oil particles and showed the strongest correlation with improved interfacial stability indicators.",
+          "The paper also found that phospholipid composition affected zeta potential, particle size, and overrun, while salep concentration remained the main driver of rheology."
+        ]
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "For lecithin buyers serving frozen desserts, the result suggests that refined fraction profile can matter more than treating sunflower phospholipids as a single generic emulsifier category.",
+          "That opens a sourcing conversation around phosphatidylcholine enrichment, byproduct valorization from oil refining, and clean-label functionality in premium frozen products."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sunflower phospholipid fractions in ice cream: effects on emulsion stability, rheology, and microstructure",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41695805/"
+      },
+      {
+        "title": "Sunflower phospholipid fractions in ice cream: effects on emulsion stability, rheology, and microstructure - PMC",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12894592/"
+      }
+    ]
+  },
+  {
+    "slug": "sunflower-lecithin-hipe-beta-carotene-2026",
+    "headline": "Sunflower Lecithin-Protein HIPEs Lift Beta-Carotene Retention",
+    "byline": "Nutranexa News",
+    "published": "2026-08-11",
+    "displayDate": "August 11, 2026",
+    "featuredImage": "/assets/images/news-sunflower-lecithin-hipe-beta-carotene-2026.webp",
+    "featuredAlt": "Amber beta-carotene emulsion jars with sunflower lecithin samples and a stability test setup under bright lab lighting",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "Researchers built high-internal-phase emulsions with sunflower lecithin, whey protein isolate, and sodium caseinate that stayed stable under heat, salt, and pH stress while improving beta-carotene bioaccessibility.",
+    "sections": [
+      {
+        "id": "emulsion-design",
+        "heading": "Emulsion Design",
+        "paragraphs": [
+          "The study combined two sunflower lecithins with different phosphatidylcholine contents with whey protein isolate and sodium caseinate to create composite particles for oil-in-water high internal phase emulsions.",
+          "The resulting systems held stable oil phase contents of up to 85% and 83%, depending on the lecithin grade used."
+        ]
+      },
+      {
+        "id": "delivery-results",
+        "heading": "Delivery Results",
+        "paragraphs": [
+          "According to the abstract, the HIPEs remained stable under thermal, storage, ionic, and pH 6 to 11 conditions.",
+          "When loaded with beta-carotene, they improved retention across different environments and increased in vitro bioaccessibility and free fatty acid release during digestion."
+        ]
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "For functional ingredient buyers, the work shows how sunflower lecithin grade selection can influence not just basic emulsification but also delivery-system performance for lipophilic actives.",
+          "That is commercially relevant for brands building fortified foods, powders, and ready-to-drink concepts where stability and bioaccessibility both matter."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Stabilization of high internal phase Pickering emulsions using sunflower lecithin-protein complexes: Characterization and application in β-carotene delivery",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41571132/"
+      }
+    ]
+  },
+  {
     "slug": "blackmores-cognizin-cognitive-support-launch-australia-nz-2026",
     "headline": "Blackmores and Kirin Set Late-July Cognizin Launch in Australia and New Zealand",
     "byline": "Nutranexa News",
