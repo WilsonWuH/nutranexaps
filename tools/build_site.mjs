@@ -782,6 +782,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-acetone-insoluble-review-us-eu": "Bright analytical extraction bench for a phosphatidylserine acetone-insoluble review with a round-bottom flask of clear acetone, a fine white PS powder weighing dish, a folded filter funnel above a receiving flask with a white precipitate, a blank COA sheet with an abstract highlighted purity row, a small reagent bottle, and a sealed plain 25 kilogram drum edge in daylight",
   "phosphatidylserine-customs-valuation-us": "US import-cost review desk for phosphatidylserine with a sealed plain 25 kilogram drum on a pallet, a commercial-invoice card under a magnifier with abstract value-line rows, a blank calculator, a duty-math tile with abstract stacked bars, a broker handoff tray, and a harbor skyline through the window in daylight",
   "phosphatidylserine-authenticity-testing-europe": "Blue-hour identity-verification bench for European phosphatidylserine authenticity review with a split source-field of soybeans in a left tray and sunflower seeds in a right tray feeding a central white PS powder dish, an abstract fingerprint-style identity ring with spectral line motif above the powder, a magnifier over a blank identity-report card, and a sealed plain 25 kilogram drum edge in deep blue laboratory lighting with warm amber accents",
+  "phosphatidylserine-banned-substance-screening-us": "US sports nutrition banned substance screening desk with a sealed plain 25 kilogram phosphatidylserine drum on a pallet, a white PS powder dish, a blank batch-screening report card under a magnifier, an abstract shield-and-gate status board with green amber and red markers, a blank prohibited-list card with abstract rows, and a stadium running track seen through the window in daylight",
 };
 
 const promotedSeoTitles = {
@@ -865,6 +866,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-acetone-insoluble-review-us-eu": "Phosphatidylserine Acetone Insoluble Review | Nutranexa",
   "phosphatidylserine-customs-valuation-us": "PS Customs Valuation Review for US Importers | Nutranexa",
   "phosphatidylserine-authenticity-testing-europe": "Phosphatidylserine Authenticity Testing for European Buyers | Nutranexa",
+  "phosphatidylserine-banned-substance-screening-us": "Phosphatidylserine Banned Substance Screening for US Sports Nutrition | Nutranexa",
 };
 
 function conciseMeta(value) {
