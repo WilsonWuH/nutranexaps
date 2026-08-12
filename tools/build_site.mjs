@@ -780,6 +780,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-ics2-eu-import": "Dawn container terminal scene for European phosphatidylserine imports with a sealed plain 25 kilogram drum on a pallet, blank shipping-instructions clipboard and packing-list card, an abstract translucent pre-arrival data window of unreadable form rows with a gold approval arrow, and a container ship and gantry crane in soft morning haze",
   "phosphatidylserine-acetone-insoluble-review-us-eu": "Bright analytical extraction bench for a phosphatidylserine acetone-insoluble review with a round-bottom flask of clear acetone, a fine white PS powder weighing dish, a folded filter funnel above a receiving flask with a white precipitate, a blank COA sheet with an abstract highlighted purity row, a small reagent bottle, and a sealed plain 25 kilogram drum edge in daylight",
   "phosphatidylserine-customs-valuation-us": "US import-cost review desk for phosphatidylserine with a sealed plain 25 kilogram drum on a pallet, a commercial-invoice card under a magnifier with abstract value-line rows, a blank calculator, a duty-math tile with abstract stacked bars, a broker handoff tray, and a harbor skyline through the window in daylight",
+  "phosphatidylserine-authenticity-testing-europe": "Blue-hour identity-verification bench for European phosphatidylserine authenticity review with a split source-field of soybeans in a left tray and sunflower seeds in a right tray feeding a central white PS powder dish, an abstract fingerprint-style identity ring with spectral line motif above the powder, a magnifier over a blank identity-report card, and a sealed plain 25 kilogram drum edge in deep blue laboratory lighting with warm amber accents",
 };
 
 const promotedSeoTitles = {
@@ -861,6 +862,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-ics2-eu-import": "Phosphatidylserine ICS2 EU Import Guide | Nutranexa",
   "phosphatidylserine-acetone-insoluble-review-us-eu": "Phosphatidylserine Acetone Insoluble Review | Nutranexa",
   "phosphatidylserine-customs-valuation-us": "PS Customs Valuation Review for US Importers | Nutranexa",
+  "phosphatidylserine-authenticity-testing-europe": "Phosphatidylserine Authenticity Testing for European Buyers | Nutranexa",
 };
 
 function conciseMeta(value) {
