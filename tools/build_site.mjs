@@ -787,6 +787,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-gummies-formulation-us-eu": "Three-quarter formulation bench for a phosphatidylserine gummy project with a clear tray of amber translucent gummy candies at the centre, a small stainless dish of fine pale-yellow PS powder and scoop in the foreground, a sealed plain 25 kilogram drum edge on the left, a compact water-activity meter with abstract screen bars and a blank spec card with one amber-highlighted assay row on the right, and warm daylight from a window",
   "phosphatidylserine-pfas-screening-us": "Daylight US phosphatidylserine PFAS screening review desk with a sealed plain 25 kilogram drum on a pallet at the left, a white PS powder dish at the centre, a blank PFAS screening report card under a magnifier with abstract fluorinated-chain molecule icons, an abstract declaration card with a blank checkmark row, a state-law status tile with green and amber markers, a food-contact liner sample card, and a water-side industrial skyline with container cranes through the window",
   "phosphatidylserine-purchase-order-spec-review-us-eu": "Top-down daylight purchase-order review desk for bulk phosphatidylserine with three blank three-way-match document cards arranged in a triangle and one highlighted specification-version row, a fine white PS powder dish and scoop at the centre, a sealed plain 25 kg drum edge with a blank lot-label card and barcode, a red seal stamp with an abstract star motif, a milestone ribbon connecting order, dispatch, and receiving nodes, a barcode scanner, and a container loading bay through the window",
+  "phosphatidylserine-product-liability-europe": "European liability-preparation desk for phosphatidylserine imports in warm morning light with a sealed plain 25 kilogram drum edge on the left, an open evidence binder with blank tabbed dividers at the centre, an abstract balance scale with a chain-link arc connecting the drum to an unbranded capsule bottle and a soft consumer silhouette, a wall date board with one highlighted blank deadline tile, a magnifier over a blank contract-clause card on the right, and a muted bookshelf backdrop",
 };
 
 const promotedSeoTitles = {
@@ -874,6 +875,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-ppwr-packaging-europe": "Phosphatidylserine Packaging Under the EU PPWR | Nutranexa",
   "phosphatidylserine-gummies-formulation-us-eu": "Phosphatidylserine Gummies: Formulation & Sourcing Review | Nutranexa",
   "phosphatidylserine-purchase-order-spec-review-us-eu": "Phosphatidylserine Purchase Order Checklist for US & EU Buyers | Nutranexa",
+  "phosphatidylserine-product-liability-europe": "Phosphatidylserine EU Product Liability Guide | Nutranexa",
 };
 
 function conciseMeta(value) {
