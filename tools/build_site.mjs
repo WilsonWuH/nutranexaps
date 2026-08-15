@@ -787,6 +787,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-gummies-formulation-us-eu": "Three-quarter formulation bench for a phosphatidylserine gummy project with a clear tray of amber translucent gummy candies at the centre, a small stainless dish of fine pale-yellow PS powder and scoop in the foreground, a sealed plain 25 kilogram drum edge on the left, a compact water-activity meter with abstract screen bars and a blank spec card with one amber-highlighted assay row on the right, and warm daylight from a window",
   "phosphatidylserine-pfas-screening-us": "Daylight US phosphatidylserine PFAS screening review desk with a sealed plain 25 kilogram drum on a pallet at the left, a white PS powder dish at the centre, a blank PFAS screening report card under a magnifier with abstract fluorinated-chain molecule icons, an abstract declaration card with a blank checkmark row, a state-law status tile with green and amber markers, a food-contact liner sample card, and a water-side industrial skyline with container cranes through the window",
   "phosphatidylserine-purchase-order-spec-review-us-eu": "Top-down daylight purchase-order review desk for bulk phosphatidylserine with three blank three-way-match document cards arranged in a triangle and one highlighted specification-version row, a fine white PS powder dish and scoop at the centre, a sealed plain 25 kg drum edge with a blank lot-label card and barcode, a red seal stamp with an abstract star motif, a milestone ribbon connecting order, dispatch, and receiving nodes, a barcode scanner, and a container loading bay through the window",
+  "phosphatidylserine-recall-readiness-us-eu": "Cool-toned quality-office scene for a phosphatidylserine recall-readiness review with a four-node receive-to-notify timeline ribbon (box, lock, route, and bell icons), a central recall-plan binder with ring spine, abstract checklist, and one highlighted lot-code row, a fine white PS powder dish and scoop, a sealed plain 25 kg drum edge with a blank lot-label card and barcode, a red incident flag, a magnifier over the binder, and a warehouse door with a striped hold panel seen through the window",
 };
 
 const promotedSeoTitles = {
@@ -874,6 +875,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-ppwr-packaging-europe": "Phosphatidylserine Packaging Under the EU PPWR | Nutranexa",
   "phosphatidylserine-gummies-formulation-us-eu": "Phosphatidylserine Gummies: Formulation & Sourcing Review | Nutranexa",
   "phosphatidylserine-purchase-order-spec-review-us-eu": "Phosphatidylserine Purchase Order Checklist for US & EU Buyers | Nutranexa",
+  "phosphatidylserine-recall-readiness-us-eu": "Phosphatidylserine Recall Preparedness for US & EU Buyers | Nutranexa",
 };
 
 function conciseMeta(value) {
