@@ -790,6 +790,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-product-liability-europe": "European liability-preparation desk for phosphatidylserine imports in warm morning light with a sealed plain 25 kilogram drum edge on the left, an open evidence binder with blank tabbed dividers at the centre, an abstract balance scale with a chain-link arc connecting the drum to an unbranded capsule bottle and a soft consumer silhouette, a wall date board with one highlighted blank deadline tile, a magnifier over a blank contract-clause card on the right, and a muted bookshelf backdrop",
   "phosphatidylserine-manufacturing-process-europe": "Daylight technical review scene of the bulk phosphatidylserine manufacturing process with a golden lecithin sample jar and white L-serine crystal dish on the left feeding an abstract transparent enzymatic conversion vessel with an enzyme droplet motif at the centre, a purification column, a pale-yellow PS powder dish, a sealed plain 25 kilogram drum edge on the right, and three blank process-evidence cards under a magnifier in the foreground",
   "phosphatidylserine-recall-readiness-us-eu": "Cool-toned quality-office scene for a phosphatidylserine recall-readiness review with a four-node receive-to-notify timeline ribbon (box, lock, route, and bell icons), a central recall-plan binder with ring spine, abstract checklist, and one highlighted lot-code row, a fine white PS powder dish and scoop, a sealed plain 25 kg drum edge with a blank lot-label card and barcode, a red incident flag, a magnifier over the binder, and a warehouse door with a striped hold panel seen through the window",
+  "phosphatidylserine-sanitary-transportation-us": "US domestic trucking compliance scene for a phosphatidylserine shipment at a clean dry-van terminal in daylight with a sealed plain 25 kilogram drum on a pallet at the trailer threshold, an intact food-grade liner flap, a blank sanitary-condition inspection clipboard under a magnifier, a driver training card with a checkmark, a no-temperature-control tag, a blank route-map card from port to warehouse with a highway, and a wide-open clean trailer interior",
 };
 
 const promotedSeoTitles = {
@@ -880,6 +881,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-product-liability-europe": "Phosphatidylserine EU Product Liability Guide | Nutranexa",
   "phosphatidylserine-manufacturing-process-europe": "PS Manufacturing Process Guide for EU Buyers | Nutranexa",
   "phosphatidylserine-recall-readiness-us-eu": "Phosphatidylserine Recall Preparedness for US & EU Buyers | Nutranexa",
+  "phosphatidylserine-sanitary-transportation-us": "PS & FDA Sanitary Transportation Rule | US Buyer Guide",
 };
 
 function conciseMeta(value) {
