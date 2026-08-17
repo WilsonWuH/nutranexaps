@@ -791,6 +791,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-manufacturing-process-europe": "Daylight technical review scene of the bulk phosphatidylserine manufacturing process with a golden lecithin sample jar and white L-serine crystal dish on the left feeding an abstract transparent enzymatic conversion vessel with an enzyme droplet motif at the centre, a purification column, a pale-yellow PS powder dish, a sealed plain 25 kilogram drum edge on the right, and three blank process-evidence cards under a magnifier in the foreground",
   "phosphatidylserine-recall-readiness-us-eu": "Cool-toned quality-office scene for a phosphatidylserine recall-readiness review with a four-node receive-to-notify timeline ribbon (box, lock, route, and bell icons), a central recall-plan binder with ring spine, abstract checklist, and one highlighted lot-code row, a fine white PS powder dish and scoop, a sealed plain 25 kg drum edge with a blank lot-label card and barcode, a red incident flag, a magnifier over the binder, and a warehouse door with a striped hold panel seen through the window",
   "phosphatidylserine-sanitary-transportation-us": "US domestic trucking compliance scene for a phosphatidylserine shipment at a clean dry-van terminal in daylight with a sealed plain 25 kilogram drum on a pallet at the trailer threshold, an intact food-grade liner flap, a blank sanitary-condition inspection clipboard under a magnifier, a driver training card with a checkmark, a no-temperature-control tag, a blank route-map card from port to warehouse with a highway, and a wide-open clean trailer interior",
+  "phosphatidylserine-foreign-matter-review-us-eu": "Receiving-dock quality inspection of a sealed plain 25 kilogram phosphatidylserine drum with a magnifier over a dark sample tray of white powder showing a small metallic fragment and a dark fiber strand, a U-shaped magnet bar lifting fine metal dust, and a blank specification and COA checklist with one highlighted foreign-matter row",
 };
 
 const promotedSeoTitles = {
@@ -882,6 +883,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-manufacturing-process-europe": "PS Manufacturing Process Guide for EU Buyers | Nutranexa",
   "phosphatidylserine-recall-readiness-us-eu": "Phosphatidylserine Recall Preparedness for US & EU Buyers | Nutranexa",
   "phosphatidylserine-sanitary-transportation-us": "PS & FDA Sanitary Transportation Rule | US Buyer Guide",
+  "phosphatidylserine-foreign-matter-review-us-eu": "Phosphatidylserine Foreign Matter Review | US & EU Buyers | Nutranexa",
 };
 
 function conciseMeta(value) {
@@ -930,6 +932,12 @@ function renderResourceMarkdown(markdown) {
     const line = lines[i].trim();
     if (!line || line === "---") { i += 1; continue; }
     if (/^## (Introduction|Main Content)$/i.test(line)) { i += 1; continue; }
+    const image = line.match(/^!\[([^\]]*)\]\((\/[^)]+)\)$/);
+    if (image) {
+      html.push(`<img class="article-inline-image" src="${image[2]}" alt="${esc(image[1])}" width="1024" height="683" loading="lazy">`);
+      i += 1;
+      continue;
+    }
     const table = markdownTable(lines, i);
     if (table) { html.push(table.html); i = table.next; continue; }
     const heading = line.match(/^(##|###)\s+(.+)$/);
@@ -1022,6 +1030,7 @@ async function loadPromotedArticles() {
       publishedAt,
       image: `/assets/images/resource-${slug}.webp`,
       imageAlt: promotedArticleVisuals[slug] || `${title} guide for ingredient buyers`,
+      contentImages: [...markdown.matchAll(/^!\[[^\]]*\]\((\/[^)]+)\)$/gm)].map((match) => match[1]),
       contentHtml: renderResourceMarkdown(markdown),
       faqs: extractResourceFaqs(markdown),
     };
@@ -1216,12 +1225,15 @@ function productJson(product, route) {
 }
 
 function articleJson(article, route) {
+  const imageUrls = article.contentImages?.length
+    ? [ `${siteUrl}${article.image}`, ...article.contentImages.map((src) => `${siteUrl}${src}`) ]
+    : `${siteUrl}${article.image}`;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    image: `${siteUrl}${article.image}`,
+    image: imageUrls,
     author: { "@type": "Organization", name: "Nutranexa" },
     publisher: { "@type": "Organization", name: "Nutranexa", logo: { "@type": "ImageObject", url: `${siteUrl}/assets/images/logo-nutranexa.webp` } },
     mainEntityOfPage: urlFor(route),

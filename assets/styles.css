@@ -2308,6 +2308,14 @@ textarea {
   box-shadow: var(--shadow);
 }
 
+.article-inline-image {
+  width: 100%;
+  height: auto;
+  margin: 26px 0;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
 .article-body {
   max-width: 820px;
   padding: 42px 0;
