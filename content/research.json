@@ -1,5 +1,47 @@
 [
   {
+    "title": "Cell surface remodeling caused by the loss of the flippase subunit TMEM30A in immune cells",
+    "authors": "Gurdap CO, Ragaller F, Muller M, Sjule E, Sych T, Blomén L, Thorén FB, Levental I, Levental KR, Sattentau QJ, Sezgin E",
+    "journal": "Journal of Cell Science",
+    "year": 2026,
+    "doi": "10.1242/jcs.264813",
+    "source_url": "https://journals.biologists.com/jcs/article/139/21/jcs264813/372568/Cell-surface-remodeling-caused-by-the-loss-of-the",
+    "research_type": "Laboratory Study",
+    "application_area": "Cell Membrane Biology / Immunology",
+    "population": "TMEM30A-knockout immune cell lines (in vitro; live-cell lipid reporter and surface proteome analyses)",
+    "summary": "This laboratory study deleted TMEM30A, the β-subunit of the P4-ATPase flippases that maintain phosphatidylserine asymmetry, in immune cells and mapped the consequences. Knockout cells showed robust phosphatidylserine externalization together with faster lateral diffusion of membrane constituents, decreased plasma membrane order, and surface proteome changes including increased tetraspanins and CD47; glycocalyx remodeling occurred through ADAM10-dependent shedding of transmembrane mucins. The findings link flippase dysfunction to coordinated lipid, glycan, and protein surface remodeling and to potential sensitization to immune therapy.",
+    "limitations": "In vitro cell-line model with complete TMEM30A deletion rather than clinically graded loss, so relevance to partial flippase dysfunction in disease is inferred; no animal or human outcomes were tested; the causal ordering between phosphatidylserine externalization and downstream surface changes was not fully resolved.",
+    "featured": false
+  },
+  {
+    "title": "Parasitophorous vacuole membranes of Toxoplasma gondii and Plasmodium falciparum lack the lipid asymmetry characteristic of host cell plasma membranes",
+    "authors": "Konishi R, Nakashima Y, Masatani T, Asada M, Hassan H, Fukuda K, Kuriyama S, Nishikawa Y, Kaneko O, Carruthers VB, Fujita A",
+    "journal": "Biochimica et Biophysica Acta - Biomembranes",
+    "year": 2026,
+    "doi": "10.1016/j.bbamem.2026.184567",
+    "source_url": "https://www.sciencedirect.com/science/article/pii/S0005273626000702",
+    "research_type": "Laboratory Study",
+    "application_area": "Cell Membrane Biology / Host-Pathogen Biology",
+    "population": "Parasitophorous vacuole membranes of Toxoplasma gondii and Plasmodium falciparum analyzed by quick-freeze freeze-fracture replica labeling",
+    "summary": "Using quantitative quick-freeze freeze-fracture replica labeling, this study measured the transbilayer distribution of phosphatidylserine, phosphatidylethanolamine, and GM3 ganglioside in the parasitophorous vacuole membrane of Toxoplasma gondii and Plasmodium falciparum. In contrast to host plasma membranes, where phosphatidylserine and phosphatidylethanolamine are confined to the cytoplasmic leaflet, all three lipids were symmetrically distributed across both leaflets of the vacuole membrane. The luminal presence of phosphatidylserine may facilitate binding of perforin-like proteins during parasite egress, indicating that the vacuole membrane is profoundly remodeled during infection.",
+    "limitations": "Laboratory imaging study in cultured parasites; only two apicomplexan species and three lipids were examined; the proposed link between luminal phosphatidylserine and perforin-like protein binding during egress is a mechanistic hypothesis rather than a directly demonstrated interaction.",
+    "featured": false
+  },
+  {
+    "title": "Combining a chitosan-immobilized phospholipase D with a mixed micelle system for highly efficient synthesis of phosphatidylserine",
+    "authors": "Liu Z, Wang C, Wu J, Chen M, Zhang Y",
+    "journal": "Enzyme and Microbial Technology",
+    "year": 2026,
+    "doi": "10.1016/j.enzmictec.2026.110954",
+    "source_url": "https://www.sciencedirect.com/science/article/pii/S0141022926001377",
+    "research_type": "Laboratory Study",
+    "application_area": "Biomanufacturing / Enzyme Engineering",
+    "population": "In vitro biocatalysis: phospholipase D immobilized on a magnetic chitosan-genipin carrier in a sodium deoxycholate mixed micelle system",
+    "summary": "This biocatalysis study immobilized phospholipase D on a magnetic chitosan-based carrier crosslinked with genipin and combined it with a sodium deoxycholate mixed micelle system to synthesize phosphatidylserine. The immobilized enzyme achieved an 8.05-fold higher phosphatidylserine conversion rate than free phospholipase D, retained 80% activity after six reuse cycles, and retained 72% activity after 12 days of storage at 4°C, providing an efficient, stable, and recyclable approach to phosphatidylserine production.",
+    "limitations": "In vitro enzyme reaction system only, without scale-up beyond laboratory conditions; the study reports process metrics rather than biological or clinical outcomes, and results are specific to the tested magnetic carrier, genipin crosslinking, and sodium deoxycholate mixed micelle formulation.",
+    "featured": false
+  },
+  {
     "title": "Football-Specific Performance and Cognitive Fatigue Resistance Following Supplementation with Two Phosphatidylserine Doses Combined with Taurine and Caffeine in Professional Male Football Players: A Randomized, Triple-Masked, Placebo-Controlled Trial",
     "authors": "Mizera K, Mazurek D, Martínez-Rodríguez A, Kęska A",
     "journal": "Nutrients",
