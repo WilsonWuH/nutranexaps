@@ -794,6 +794,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-foreign-matter-review-us-eu": "Receiving-dock quality inspection of a sealed plain 25 kilogram phosphatidylserine drum with a magnifier over a dark sample tray of white powder showing a small metallic fragment and a dark fiber strand, a U-shaped magnet bar lifting fine metal dust, and a blank specification and COA checklist with one highlighted foreign-matter row",
   "phosphatidylserine-traces-ched-d-eu-import": "European morning import-routing review with a sealed plain 25 kilogram phosphatidylserine drum, white powder sample, abstract product-classification gate, and diverging routine customs and food border-control lanes beside a blank electronic entry form and container seal",
   "phosphatidylserine-complaint-capa-review-us-eu": "Cool daylight complaint and CAPA review desk with a sealed plain 25 kilogram phosphatidylserine drum edge, a white powder sample dish, a magnifier over a highlighted complaint lot row, an abstract root-cause board, a circular CAPA loop, a blue quarantine tag, and a small red warning marker in a quality office",
+  "phosphatidylserine-customs-bond-review-us": "Daylight U.S. import-planning desk with a sealed plain 25 kilogram phosphatidylserine drum on a pallet, a blank customs-bond card under a magnifier, a broker handoff tray, and a port-entry gate with separate single-shipment and repeat-program security lanes in the background",
 };
 
 const promotedSeoTitles = {
@@ -839,6 +840,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-assay-batch-calculation-europe": "PS Assay-to-Batch Calculation for Europe | Nutranexa",
   "phosphatidylserine-hs-code-review-us-canada": "PS HS Code Review for US and Canada Importers | Nutranexa",
   "phosphatidylserine-vegan-statement-us-canada": "PS Vegan Statement Review for US and Canada Buyers | Nutranexa",
+  "phosphatidylserine-customs-bond-review-us": "Phosphatidylserine Customs Bond Review for US Importers | Nutranexa",
   "phosphatidylserine-fda-food-facility-registration-us": "PS FDA Food Facility Registration Review for US Importers | Nutranexa",
   "soluble-soybean-polysaccharide-e426-europe": "Soluble Soybean Polysaccharide E 426 Europe | Nutranexa",
   "soluble-soybean-polysaccharide-allergen-statement-us-eu": "Soluble Soybean Polysaccharide Allergen Statement Review for US and EU Buyers | Nutranexa",
