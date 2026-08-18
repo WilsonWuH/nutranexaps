@@ -793,6 +793,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-sanitary-transportation-us": "US domestic trucking compliance scene for a phosphatidylserine shipment at a clean dry-van terminal in daylight with a sealed plain 25 kilogram drum on a pallet at the trailer threshold, an intact food-grade liner flap, a blank sanitary-condition inspection clipboard under a magnifier, a driver training card with a checkmark, a no-temperature-control tag, a blank route-map card from port to warehouse with a highway, and a wide-open clean trailer interior",
   "phosphatidylserine-foreign-matter-review-us-eu": "Receiving-dock quality inspection of a sealed plain 25 kilogram phosphatidylserine drum with a magnifier over a dark sample tray of white powder showing a small metallic fragment and a dark fiber strand, a U-shaped magnet bar lifting fine metal dust, and a blank specification and COA checklist with one highlighted foreign-matter row",
   "phosphatidylserine-traces-ched-d-eu-import": "European morning import-routing review with a sealed plain 25 kilogram phosphatidylserine drum, white powder sample, abstract product-classification gate, and diverging routine customs and food border-control lanes beside a blank electronic entry form and container seal",
+  "phosphatidylserine-complaint-capa-review-us-eu": "Cool daylight complaint and CAPA review desk with a sealed plain 25 kilogram phosphatidylserine drum edge, a white powder sample dish, a magnifier over a highlighted complaint lot row, an abstract root-cause board, a circular CAPA loop, a blue quarantine tag, and a small red warning marker in a quality office",
 };
 
 const promotedSeoTitles = {
@@ -886,6 +887,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-sanitary-transportation-us": "PS & FDA Sanitary Transportation Rule | US Buyer Guide",
   "phosphatidylserine-foreign-matter-review-us-eu": "Phosphatidylserine Foreign Matter Review | US & EU Buyers | Nutranexa",
   "phosphatidylserine-traces-ched-d-eu-import": "PS TRACES NT & CHED-D Import Guide | Nutranexa",
+  "phosphatidylserine-complaint-capa-review-us-eu": "Phosphatidylserine Complaint Handling & CAPA Review for US and EU Buyers | Nutranexa",
 };
 
 function conciseMeta(value) {
