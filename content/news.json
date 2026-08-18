@@ -1,5 +1,502 @@
 [
   {
+    "slug": "fda-mandatory-gras-notification-proposed-rule-2026",
+    "headline": "FDA Proposes Mandatory GRAS Notification for Food Substances",
+    "byline": "Nutranexa News",
+    "published": "2026-08-18",
+    "displayDate": "August 18, 2026",
+    "featuredImage": "/assets/images/news-fda-mandatory-gras-rule-2026.webp",
+    "featuredAlt": "FDA proposed-rule document pages on a clean desk with a US regulatory review checklist and an unbranded ingredient dossier folder",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "FDA proposed making GRAS notifications mandatory for substances used in human and animal food, replacing the current voluntary program, with comments due December 9, 2026.",
+    "sections": [
+      {
+        "id": "proposal-overview",
+        "heading": "Proposal Overview",
+        "paragraphs": [
+          "The proposed rule, published August 11, 2026 in the Federal Register under Docket No. FDA-2025-N-3262, would amend 21 CFR Parts 170 and 570 to require the submission of GRAS notices for uses of substances purported to be generally recognized as safe under the conditions of intended use.",
+          "Under the proposal, any person introducing a substance into interstate commerce under the GRAS provision of the FD&C Act would need to notify FDA of the basis for the GRAS conclusion, unless an exception applies."
+        ]
+      },
+      {
+        "id": "key-provisions",
+        "heading": "Key Provisions",
+        "paragraphs": [
+          "The rule would convert the voluntary GRAS notification program into a mandatory one and treat failure to notify as a factor in FDA's prioritization of substances for post-market review.",
+          "It includes a time-limited streamlined submission option for certain intended uses of substances already in interstate commerce before the effective date of a final rule, and it would update the threshold of regulation exemption for human food to cover substances used in food and as food contact materials.",
+          "FDA is accepting comments through December 9, 2026 via regulations.gov under Docket FDA-2025-N-3262."
+        ],
+        "image": "/assets/images/news-fda-mandatory-gras-rule-2026-comment.webp",
+        "imageAlt": "Compliance desk with blank comment sheets, document trays, and a powder dish beside a calendar"
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "For buyers of lecithin, phosphatidylserine, and other functional ingredients, the proposal signals that self-affirmed GRAS dossiers may need to be formalized into FDA submissions, and that documentation readiness will become a more central supplier requirement.",
+          "Industry observers have also questioned whether FDA has the staffing to handle a larger volume of GRAS reviews, so implementation capacity remains an open question while the comment period runs."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Federal Register: Substances Generally Recognized as Safe (Proposed Rule, Vol. 91 No. 153)",
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-08-11/html/2026-16296.htm"
+      },
+      {
+        "title": "K&L Gates: FDA Announces Proposed Mandatory GRAS Notification Rule",
+        "url": "https://www.khlaw.com/fda-announces-proposed-mandatory-gras-notification-rule"
+      },
+      {
+        "title": "Venable: A Paradigm Shift - FDA Proposes Mandatory GRAS Notification",
+        "url": "https://www.venable.com/insights/publications/2026/08/a-paradigm-shift-fda-proposes-mandatory-gras"
+      }
+    ]
+  },
+  {
+    "slug": "china-ps-determination-standard-gbt-46804-2026",
+    "headline": "China Standard Sets Official Method for Phosphatidylserine Testing",
+    "byline": "Nutranexa News",
+    "published": "2026-08-18",
+    "displayDate": "August 18, 2026",
+    "featuredImage": "/assets/images/news-china-ps-test-standard-2026.webp",
+    "featuredAlt": "Chinese laboratory analyst equipment with sample vials, a printed standard document, and a beverage sample beside a measuring instrument",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "China's national standard GB/T 46804-2025, in effect since July 1, 2026, defines how phosphatidylserine content is measured in beverages, confectionery, convenience foods, and dairy products.",
+    "sections": [
+      {
+        "id": "standard-basics",
+        "heading": "Standard Basics",
+        "paragraphs": [
+          "The Standardization Administration of China published GB/T 46804-2025, Determination of phosphatidylserine in food, on December 2, 2025, and the standard took effect on July 1, 2026.",
+          "The document describes a method for measuring phosphatidylserine content and applies to beverages, candies including pressed and gummy formats, convenience foods, and dairy products."
+        ]
+      },
+      {
+        "id": "development-and-scope",
+        "heading": "Development and Scope",
+        "paragraphs": [
+          "The standard was prepared under the National Technical Committee on Food Industry Standardization (SAC/TC 64) and issued by the State Administration for Market Regulation and the Standardization Administration of China.",
+          "Drafting involved food research institutes, testing and certification organizations, and supplement and ingredient companies, giving the method broad applicability across finished food formats rather than raw ingredients alone."
+        ],
+        "image": "/assets/images/news-china-ps-test-standard-2026-samples.webp",
+        "imageAlt": "Food sample lineup with dairy cups, gummies, and assay glassware in a quality-control lab"
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "For buyers qualifying phosphatidylserine for China-market finished products, the standard provides a national reference method for verifying PS content in formulated foods and beverages.",
+          "Buyers can use the method to align third-party finished-product testing with Chinese requirements and to compare supplier data against a recognized national testing basis."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Standardization Administration of China: GB/T 46804-2025 Standard Record",
+        "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=AB3AD900AD33C04767BBF98830C1271A"
+      },
+      {
+        "title": "China Standard Online Service: GB/T 46804-2025 Determination of Phosphatidylserine in Food",
+        "url": "https://www.spc.org.cn/online/ab3ad900ad33c04767bbf98830c1271a.html"
+      }
+    ]
+  },
+  {
+    "slug": "china-soya-lecithin-july-price-rise-2026",
+    "headline": "China Non-GMO Soya Lecithin Prices Rose 2.1% in July",
+    "byline": "Nutranexa News",
+    "published": "2026-08-18",
+    "displayDate": "August 18, 2026",
+    "featuredImage": "/assets/images/news-china-lecithin-july-2026.webp",
+    "featuredAlt": "Pricing analyst desk with a price trend chart on a screen, a sample container of golden liquid lecithin, and a small soybean pod arrangement",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "China's non-GMO liquid soya lecithin market strengthened in July 2026, with FOB Tianjin prices up 2.1% month on month to USD 1,200 per metric ton.",
+    "sections": [
+      {
+        "id": "price-move",
+        "heading": "Price Move",
+        "paragraphs": [
+          "ChemAnalyst reported that China's non-GMO liquid soya lecithin grade FOB Tianjin rose 2.1% month on month in July 2026 to USD 1,200 per metric ton.",
+          "Firmer soybean-derived feedstock economics supported the increase, with Chinese soybean meal prices rising 6.27% during July."
+        ]
+      },
+      {
+        "id": "supply-factors",
+        "heading": "Supply Factors",
+        "paragraphs": [
+          "A maintenance shutdown at Gushen Biological Technology Group's Dezhou, Shandong facility, reported to have annual soy-lecithin capacity of around 2,000 metric tons, tightened prompt availability.",
+          "Food, bakery, confectionery, nutrition, and animal-feed applications continued to provide a stable demand base for the ingredient."
+        ],
+        "image": "/assets/images/news-china-lecithin-july-2026-supply.webp",
+        "imageAlt": "Amber lecithin bottle with soybeans and a logistics planning board in the background"
+      },
+      {
+        "id": "outlook",
+        "heading": "Outlook",
+        "paragraphs": [
+          "ChemAnalyst expects August prices to remain relatively firm but notes they could moderate while soybean availability stays ample and competing vegetable-oil supplies limit further cost escalation.",
+          "A stronger recovery in September and October is possible if festive-season food production, export enquiries, and soybean-derived feedstock costs strengthen."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "ChemAnalyst: China Soya Lecithin Prices Rise 2.1% in July on Tighter Supply and Firmer Soybean Costs",
+        "url": "https://www.chemanalyst.com/NewsAndDeals/NewsDetails/china-soya-lecithin-prices-rise-2-1-in-july-on-tighter-supply-43840"
+      }
+    ]
+  },
+  {
+    "slug": "choline-restriction-insulin-resistance-mice-2026",
+    "headline": "Mouse Study Links Chronic Choline Restriction to Insulin Resistance",
+    "byline": "Nutranexa News",
+    "published": "2026-08-18",
+    "displayDate": "August 18, 2026",
+    "featuredImage": "/assets/images/news-choline-insulin-mice-2026.webp",
+    "featuredAlt": "Laboratory mouse metabolism study scene with a small animal enclosure, feed bowls, and a glucose meter beside a research notebook",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "UNC researchers report that long-term choline restriction in mice remodeled liver lipid metabolism and drove insulin resistance through a CD36-ETNPPL regulatory axis.",
+    "sections": [
+      {
+        "id": "study-design",
+        "heading": "Study Design",
+        "paragraphs": [
+          "Researchers at the UNC Nutrition Research Institute examined how long-term choline restriction affected metabolism in mice, including effects on liver lipid handling and glucose regulation.",
+          "The work, published in July 2026, focused on the hepatic pathways that connect dietary choline supply to systemic insulin sensitivity."
+        ]
+      },
+      {
+        "id": "main-findings",
+        "heading": "Main Findings",
+        "paragraphs": [
+          "The study found that chronic choline restriction remodeled hepatic lipid metabolism and drove insulin resistance, with the effects traced to a CD36-ETNPPL regulatory axis.",
+          "According to the UNC report, the choline-restricted mice did not become obese, indicating the metabolic effects were not simply secondary to weight gain."
+        ],
+        "image": "/assets/images/news-choline-insulin-mice-2026-metabolism.webp",
+        "imageAlt": "Feed jars, glucose strips, and a liver model on a metabolism research bench"
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "The findings add to a growing body of animal and epidemiological evidence framing choline as relevant to metabolic health, not only cognition.",
+          "For choline ingredient suppliers, the study supports interest in choline-enriched metabolic and healthy-aging nutrition formats, though human confirmation is still needed."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "UNC Nutrition Research Institute: Could Too Little Choline Affect Blood Sugar?",
+        "url": "https://uncnri.org/2026/08/03/could-too-little-choline-affect-blood-sugar/"
+      },
+      {
+        "title": "Chronic choline restriction remodels hepatic lipid metabolism and drives insulin resistance through a CD36-ETNPPL regulatory axis",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2212877826000955"
+      }
+    ]
+  },
+  {
+    "slug": "soy-lysolecithin-lpc70-high-salt-mice-2026",
+    "headline": "Soy Lysolecithin LPC70 Eases Blood Pressure and Memory Effects of High-Salt Diet in Mice",
+    "byline": "Nutranexa News",
+    "published": "2026-08-18",
+    "displayDate": "August 18, 2026",
+    "featuredImage": "/assets/images/news-soy-lysolecithin-salt-2026.webp",
+    "featuredAlt": "Tabletop nutrition research arrangement with salt crystals in a small dish, a blood pressure monitor, and an amber lysolecithin sample vial",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "A Fujita Health University mouse study found that soy-derived lysolecithin LPC70 lowered high-salt-diet blood pressure and improved social and memory deficits.",
+    "sections": [
+      {
+        "id": "study-background",
+        "heading": "Study Background",
+        "paragraphs": [
+          "Researchers from Fujita Health University, in collaboration with ingredient developer Tsuji Oil Mills, tested soy-derived lysolecithin with 70% phospholipid content, called LPC70, in male mice fed a high-salt diet.",
+          "The study, reported in Neurochemistry International, aimed to clarify the biological mechanisms behind earlier observations that LPC70 reduces hypertension and cognitive impairment linked to high sodium intake."
+        ]
+      },
+      {
+        "id": "main-findings",
+        "heading": "Main Findings",
+        "paragraphs": [
+          "High-salt-fed mice showed elevated blood pressure, reduced social interaction, and impaired object recognition memory, and LPC70 supplementation lowered blood pressure and improved both behavioral measures.",
+          "Mechanistically, the authors linked the effects to organ-specific protective prostaglandin signaling, including normalization of the prostaglandin E2 receptor EP3 in the kidney and restoration of the neuroprotective prostaglandin D2 receptor DP1 in the prefrontal cortex.",
+          "LPC70 also boosted arachidonic acid-derived protective prostaglandin production despite lower circulating arachidonic acid levels on the high-salt diet."
+        ],
+        "image": "/assets/images/news-soy-lysolecithin-salt-2026-prostaglandin.webp",
+        "imageAlt": "Amber lysolecithin bottle beside salt, a blood pressure monitor, and signaling tokens"
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "The authors suggest LPC70 could be explored as a functional food ingredient for populations with high dietary salt intake, with clinical research as the next step.",
+          "For ingredient buyers, the study highlights lysolecithin fractions as a potential positioning option in sodium-management and cognitive-wellness food formats, while the evidence remains at the animal-model stage."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "NutritionInsight: Mouse study links soy lysolecithin to blood pressure and memory gains on high-salt diets",
+        "url": "https://www.nutritioninsight.com/news/high-salt-diet-soy-lysolecithin-hypertension-sodium.html"
+      },
+      {
+        "title": "Neurochemistry International: Soy lysolecithin attenuates hypertension and behavioral impairments in mice fed a high-salt diet",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0197018626000756"
+      }
+    ]
+  },
+  {
+    "slug": "ginkgo-ps-stress-cognition-exploratory-trials-2026",
+    "headline": "Ginkgo and Phosphatidylserine Combo Shows Stress and Memory Signals in Exploratory Trials",
+    "byline": "Nutranexa News",
+    "published": "2026-08-18",
+    "displayDate": "August 18, 2026",
+    "featuredImage": "/assets/images/news-ginkgo-ps-trials-2026.webp",
+    "featuredAlt": "Ginkgo leaves beside a small white powder dish and a soft-focus questionnaire on a calm wellness desk scene",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "Two exploratory randomized trials of a standardized Ginkgo biloba extract combined with phosphatidylserine reported memory and reaction-time signals and mood improvements.",
+    "sections": [
+      {
+        "id": "trial-design",
+        "heading": "Trial Design",
+        "paragraphs": [
+          "Researchers conducted two exploratory, registered randomized controlled trials of a standardized Ginkgo biloba extract associated with phosphatidylserine, published in Food Science & Nutrition in June 2026.",
+          "The first trial tested a 480 mg/day dose, while the second enrolled adults experiencing moderate stress who received either 240 mg/day or 480 mg/day of the combination for four weeks."
+        ]
+      },
+      {
+        "id": "main-findings",
+        "heading": "Main Findings",
+        "paragraphs": [
+          "In the first trial, participants showed improvements in delayed verbal memory and reaction time versus placebo, suggesting a possible benefit on cognitive performance.",
+          "In the second trial, both doses were associated with improvements in mood states and a visually consistent downward trend in reaction times across four cognitive performance tests.",
+          "The authors describe the trials as exploratory, meaning larger confirmatory studies are still needed."
+        ],
+        "image": "/assets/images/news-ginkgo-ps-trials-2026-cognition.webp",
+        "imageAlt": "Ginkgo leaves and a response-button device on a calm cognitive-testing desk"
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "For formulators, the results illustrate continued commercial interest in combining botanical extracts with phosphatidylserine in stress and cognitive support products.",
+          "Buyers should treat the findings as preliminary and evaluate supplier dossiers against the need for larger trials and market-specific claim rules."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Food Science & Nutrition: Health Benefits of a Standardized Ginkgo biloba Extract Associated With Phosphatidylserine in Alleviating Mental Stress and Cognitive Performance",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/fsn3.72001"
+      },
+      {
+        "title": "Europe PMC: Health Benefits of a Standardized Ginkgo biloba Extract Associated With Phosphatidylserine (PMC13260694)",
+        "url": "https://europepmc.org/article/PMC/PMC13260694"
+      }
+    ]
+  },
+  {
+    "slug": "choline-source-solubility-dyslipidemia-cohort-2026",
+    "headline": "Cohort Study Links Choline Source and Solubility to Dyslipidemia Patterns",
+    "byline": "Nutranexa News",
+    "published": "2026-08-18",
+    "displayDate": "August 18, 2026",
+    "featuredImage": "/assets/images/news-choline-dyslipidemia-cohort-2026.webp",
+    "featuredAlt": "Epidemiology study scene with stacked food model cards, a laptop showing a lipid chart, and a small blood sample tube in a bright clinic office",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "A prospective cohort study in the American Journal of Clinical Nutrition found choline source and solubility were differentially associated with dyslipidemia risk, with gut microbiota as a key modifier.",
+    "sections": [
+      {
+        "id": "study-design",
+        "heading": "Study Design",
+        "paragraphs": [
+          "A prospective cohort study published in the American Journal of Clinical Nutrition examined how dietary choline from different food sources and solubility forms relates to dyslipidemia risk.",
+          "The analysis separated TMAO-associated and non-TMAO-associated patterns and tested whether gut microbiota composition modified the associations."
+        ]
+      },
+      {
+        "id": "main-findings",
+        "heading": "Main Findings",
+        "paragraphs": [
+          "The authors found that dietary choline from distinct food sources and solubility forms was differentially associated with dyslipidemia risk.",
+          "For example, the adverse LDL-cholesterol association of egg-derived choline was observed only in individuals enriched in the Phascolarctobacterium genus, illustrating how gut microbiota can shape the relationship."
+        ],
+        "image": "/assets/images/news-choline-dyslipidemia-cohort-2026-sources.webp",
+        "imageAlt": "Egg, powder, greens, and microbiome models arranged around a blank analysis card"
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "The findings reinforce that choline source and format, not just total intake, matter for how choline-based nutrition is positioned.",
+          "Ingredient buyers should keep source-specific and microbiome-aware evidence in mind when selecting between egg, lecithin-derived, and synthetic choline forms for food and supplement applications."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "American Journal of Clinical Nutrition: Source- and solubility-specific choline, gut microbiota, and dyslipidemia risk",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0002916526002492"
+      }
+    ]
+  },
+  {
+    "slug": "danone-phospholipid-droplet-early-life-digestion-2026",
+    "headline": "In Vitro Study Shows Lipid Droplet Structure Changes Infant Formula Digestion",
+    "byline": "Nutranexa News",
+    "published": "2026-08-18",
+    "displayDate": "August 18, 2026",
+    "featuredImage": "/assets/images/news-danone-droplet-digestion-2026.webp",
+    "featuredAlt": "Microscopy-style visual of large and small lipid droplets above an infant formula scoop and milk illustration on a research desk",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "Danone Research and Innovation and the University of Lyon found that larger, milk phospholipid-coated lipid droplets were digested and absorbed differently than standard formula droplets in vitro.",
+    "sections": [
+      {
+        "id": "research-setup",
+        "heading": "Research Setup",
+        "paragraphs": [
+          "Scientists from Danone Research & Innovation and the University of Lyon's CarMeN laboratory simulated infant gastrointestinal digestion in vitro to compare human milk, a standard infant formula, a formula with added milk fat globule membrane, and a novel concept formula made with large, milk phospholipid-coated lipid droplets.",
+          "The findings were published in Food Chemistry in 2026 and summarized by Danone Research in a July 2026 press release."
+        ]
+      },
+      {
+        "id": "main-findings",
+        "heading": "Main Findings",
+        "paragraphs": [
+          "Larger lipid droplets enriched with phospholipids were broken down very differently compared with the small, simpler droplets typical of standard infant formulas.",
+          "The researchers concluded that droplet size and the presence of surface phospholipids affected the rate and extent of lipid digestion and absorption, showing that fat structure, not just composition, shapes early-life lipid handling.",
+          "Danone said the team plans to build on the in vitro insights with clinical studies."
+        ],
+        "image": "/assets/images/news-danone-droplet-digestion-2026-formula-lipids.webp",
+        "imageAlt": "Large and small lipid droplet models beside formula powder and a digestion-study beaker"
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "The work adds to the evidence base for structuring infant nutrition around milk phospholipids and MFGM, an area of growing supplier investment.",
+          "For ingredient buyers, it reinforces demand for phospholipid-rich dairy fractions and positions structural lipid design as a formulation differentiator in premium infant nutrition."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Danone Research: How lipid droplet structure affects early-life digestion and absorption - In vitro evidence",
+        "url": "https://www.danoneresearch.com/science-based/newsroom/press-releases/lipid-digestion-early-life-research/"
+      },
+      {
+        "title": "Food Chemistry: Dietary lipid droplet size and phospholipids modulate lipid digestion and absorption in early life nutrition",
+        "url": "https://doi.org/10.1016/j.foodchem.2025.147742"
+      }
+    ]
+  },
+  {
+    "slug": "soy-lecithin-echinacea-liposomes-meat-2026",
+    "headline": "Soy Lecithin Liposomes Carry Echinacea Extract for Meat Preservation",
+    "byline": "Nutranexa News",
+    "published": "2026-08-18",
+    "displayDate": "August 18, 2026",
+    "featuredImage": "/assets/images/news-lecithin-echinacea-liposomes-2026.webp",
+    "featuredAlt": "Food science bench with purple coneflower blooms, a milky nanoliposome suspension in a beaker, and packaged chicken fillets in a cold display",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "Researchers developed soy lecithin nanoliposomes encapsulating Echinacea purpurea extract and showed the formulation inhibited bacteria and preserved quality in a chicken meat model.",
+    "sections": [
+      {
+        "id": "formulation",
+        "heading": "Formulation",
+        "paragraphs": [
+          "A study published in Food Chemistry developed soy lecithin-based nanoliposomes encapsulating Echinacea purpurea extract as a natural antimicrobial system for food preservation.",
+          "The authors note that food-grade soy lecithin offers a cost-effective and scalable approach for stabilizing and delivering plant bioactives, with phospholipid composition directly influencing liposome formation and functionality."
+        ]
+      },
+      {
+        "id": "main-findings",
+        "heading": "Main Findings",
+        "paragraphs": [
+          "The nanoliposome formulation demonstrated antioxidant and antimicrobial effects in the characterization work.",
+          "In a chicken meat model, it inhibited Staphylococcus aureus growth from day 3 onward, suppressed Escherichia coli growth for 9 days, and preserved the meat's color, pH, and texture."
+        ],
+        "image": "/assets/images/news-lecithin-echinacea-liposomes-2026-meat-shelf-life.webp",
+        "imageAlt": "Chicken fillets with nanoliposome liquid, lecithin, and echinacea in a chilled food-science display"
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "The study illustrates growing interest in lecithin as a carrier matrix for natural antimicrobial and antioxidant actives in clean-label meat and food applications.",
+          "For lecithin suppliers, it points to opportunities in encapsulation-grade specification work, where phospholipid profile, dispersibility, and food-grade compliance matter."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Food Chemistry: Soy lecithin nanoliposomes encapsulating Echinacea purpurea extract - Characterization and application as a natural antimicrobial for chicken meat preservation",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S030881462602786X"
+      },
+      {
+        "title": "EbioTrade: Soy lecithin nanoliposomes encapsulating Echinacea purpurea extract (Chinese-language coverage)",
+        "url": "https://www.ebiotrade.com/newsf/2026-8/20260808082319724.htm"
+      }
+    ]
+  },
+  {
+    "slug": "korea-choline-alfoscerate-reassessment-2026",
+    "headline": "Korea's Choline Drug Market Faces Clawbacks After Reassessment Misses Endpoint",
+    "byline": "Nutranexa News",
+    "published": "2026-08-18",
+    "displayDate": "August 18, 2026",
+    "featuredImage": "/assets/images/news-korea-choline-market-2026.webp",
+    "featuredAlt": "Seoul pharmacy counter scene with prescription boxes, a market chart printout, and a Korean-language medication label in soft daylight",
+    "imageCredit": "Nutranexa generated image",
+    "imageCreditUrl": "https://nutranexaps.com/",
+    "description": "Korean choline alfoscerate drugs failed the primary endpoint in a clinical reassessment for mild cognitive impairment, putting reimbursement and clawback outcomes in focus.",
+    "sections": [
+      {
+        "id": "reassessment-result",
+        "heading": "Reassessment Result",
+        "paragraphs": [
+          "Korean pharmaceutical companies submitted results last month from the first large-scale confirmatory domestic clinical trial of choline alfoscerate drugs for mild cognitive impairment, and the primary endpoint was not met.",
+          "The Ministry of Food and Drug Safety is reviewing the results, and the outcome will determine whether the indication is retained and how large health insurance clawbacks become."
+        ]
+      },
+      {
+        "id": "market-context",
+        "heading": "Market Context",
+        "paragraphs": [
+          "Choline drug prescriptions in Korea were 622.3 billion won in 2023, 612.3 billion won in 2024, and 545.6 billion won in 2025, according to market research firm UBIST.",
+          "The National Health Insurance Service signed conditional clawback contracts with manufacturers to recover 20% of prescription amounts from June 2021 if indications are deleted, and companies including Daewoong Bio and Chong Kun Dang have recognized estimated liabilities approaching 100 billion won each.",
+          "The report also notes that seven of Korea's eight drug-pricing reference countries treat choline products as food ingredients or health functional foods rather than reimbursed medicines."
+        ],
+        "image": "/assets/images/news-korea-choline-market-2026-reimbursement.webp",
+        "imageAlt": "Reimbursement folders and a pharmacy bottle beside a declining market chart sheet"
+      },
+      {
+        "id": "buyer-takeaway",
+        "heading": "Buyer Takeaway",
+        "paragraphs": [
+          "For suppliers of choline and GPC-type ingredients, the Korean reassessment reinforces a global pattern where cognitive ingredients are shifting from pharmaceutical reimbursement toward supplement and food channels.",
+          "Buyers should watch the Korean market as a demand signal, while keeping in mind that the reassessment covers a pharmaceutical indication and does not address supplement-formulation rules."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Seoul Economic Daily: Choline Drug Market Faces Collapse After 26 Years as Clinical Trial Fails",
+        "url": "https://en.sedaily.com/finance/2026/07/26/choline-drug-market-faces-collapse-after-26-years-as"
+      }
+    ]
+  },
+  {
     "slug": "preterm-choline-supplements-plasma-study-2026",
     "headline": "Preterm Infant Trial Finds Similar Choline Exposure Across Four Forms",
     "byline": "Nutranexa News",

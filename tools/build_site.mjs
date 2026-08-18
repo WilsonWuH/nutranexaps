@@ -2408,7 +2408,30 @@ function newsArticlePage(article) {
     .concat('<li><a href="#sources">Sources</a></li>')
     .join("");
   const route = `/news/${article.slug}/`;
-  const sections = article.sections.map((section) => `<section id="${esc(section.id)}"><h2>${esc(section.heading)}</h2>${section.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}</section>`).join("");
+  const articleImages = [
+    {
+      "@type": "ImageObject",
+      url: `${siteUrl}${article.featuredImage}`,
+      width: 1200,
+      height: 800,
+    },
+    ...article.sections
+      .filter((section) => section.image)
+      .map((section) => ({
+        "@type": "ImageObject",
+        url: `${siteUrl}${section.image}`,
+        width: 1200,
+        height: 800,
+      })),
+  ];
+  const sections = article.sections
+    .map((section) => {
+      const sectionImage = section.image
+        ? `<p><img src="${esc(section.image)}" alt="${esc(section.imageAlt || section.heading)}" width="360" height="240" loading="lazy"></p>`
+        : "";
+      return `<section id="${esc(section.id)}"><h2>${esc(section.heading)}</h2>${sectionImage}${section.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}</section>`;
+    })
+    .join("");
   const sources = article.sources.map((source) => `<li><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title)}</a></li>`).join("");
   const schema = {
     "@context": "https://schema.org",
@@ -2419,12 +2442,7 @@ function newsArticlePage(article) {
     dateModified: article.published,
     author: { "@type": "Organization", name: article.byline },
     publisher: { "@type": "Organization", name: "Nutranexa", logo: { "@type": "ImageObject", url: `${siteUrl}/assets/images/logo-nutranexa.webp` } },
-    image: {
-      "@type": "ImageObject",
-      url: `${siteUrl}${article.featuredImage}`,
-      width: 1200,
-      height: 800,
-    },
+    image: articleImages,
     mainEntityOfPage: urlFor(route),
   };
   const body = `<article>
