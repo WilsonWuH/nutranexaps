@@ -796,6 +796,7 @@ const promotedArticleVisuals = {
   "phosphatidylserine-complaint-capa-review-us-eu": "Cool daylight complaint and CAPA review desk with a sealed plain 25 kilogram phosphatidylserine drum edge, a white powder sample dish, a magnifier over a highlighted complaint lot row, an abstract root-cause board, a circular CAPA loop, a blue quarantine tag, and a small red warning marker in a quality office",
   "phosphatidylserine-customs-bond-review-us": "Daylight U.S. import-planning desk with a sealed plain 25 kilogram phosphatidylserine drum on a pallet, a blank customs-bond card under a magnifier, a broker handoff tray, and a port-entry gate with separate single-shipment and repeat-program security lanes in the background",
   "phosphatidylserine-ethylene-oxide-testing-europe": "European morning analytical bench for phosphatidylserine ethylene oxide and 2-chloroethanol review with separate soy and sunflower source dishes, a white PS powder sample, an amber headspace vial, two abstract molecular-analysis paths leading to GC-MS/MS instrumentation, and a sealed plain 25 kilogram drum edge",
+  "phosphatidylserine-dietary-supplement-listing-us": "Daylight U.S. regulatory-preparation desk for dietary supplement listing readiness with a sealed plain 25 kilogram phosphatidylserine drum on a pallet, an amber supplement bottle with a blank label, a blank electronic listing form card with abstract field rows under a magnifier, tabbed document file dividers for specification, COA, manufacturer identity, allergen, claims, and traceability, a database search motif, and soy and sunflower source trays",
 };
 
 const promotedSeoTitles = {
@@ -892,6 +893,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-traces-ched-d-eu-import": "PS TRACES NT & CHED-D Import Guide | Nutranexa",
   "phosphatidylserine-complaint-capa-review-us-eu": "Phosphatidylserine Complaint Handling & CAPA Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-ethylene-oxide-testing-europe": "PS Ethylene Oxide Testing for Europe | Nutranexa",
+  "phosphatidylserine-dietary-supplement-listing-us": "Phosphatidylserine Dietary Supplement Listing Guide | Nutranexa",
 };
 
 function conciseMeta(value) {
