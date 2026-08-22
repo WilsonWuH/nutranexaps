@@ -2,7 +2,7 @@
 
 ## Release scope
 
-Implemented the approved English Wave 1 commercial optimization for six URLs. URL paths, redirects, canonical rules, robots directives, sitemap architecture, hreflang architecture, and locale routing were not changed by the source patch.
+Implemented the approved English Wave 1 commercial optimization for six URLs. URL paths, redirects, canonical rules, robots directives, sitemap architecture, hreflang architecture, and locale routing were not changed by the source patch. The post-review content pass also closes the requested comparison matrix, supplier checklist, PS 50% decision guide, source-specific buyer review, and contact-page request-language gaps.
 
 The implementation was made in the `codex/phase2-wave1` branch created from `origin/main` on 2026-08-22. The current production deployment was not changed by this task.
 
@@ -24,11 +24,13 @@ The implementation was made in the `codex/phase2-wave1` branch created from `ori
 | `/products/sunflower-phosphatidylserine/` | Sunflower Phosphatidylserine Supplier \| Nutranexa | Sunflower Phosphatidylserine \| 20% & 50% Supplier | Sunflower Phosphatidylserine Supplier for Non-Soy Nutrition Formulas | Sunflower Phosphatidylserine Supplier \| 20% & 50% | 1153 | 1365 |
 | `/products/soy-phosphatidylserine/` | Soy Phosphatidylserine Supplier \| Nutranexa | Soy Phosphatidylserine Supplier \| Bulk Source & Specs | Soy Phosphatidylserine Supplier for Bulk Supplement Ingredients | Soy Phosphatidylserine Supplier for Bulk Source Review | 1108 | 1285 |
 | `/products/phosphatidylserine-50/` | Phosphatidylserine 50% Ingredient \| Nutranexa | Phosphatidylserine 50% Ingredient \| Nutranexa | Phosphatidylserine 50% Powder | Phosphatidylserine 50% Powder | 904* | 918 |
-| `/resources/soy-vs-sunflower-phosphatidylserine/` | Soy vs Sunflower Phosphatidylserine \| Nutranexa | Soy vs Sunflower PS Sourcing Guide \| Nutranexa | Soy Phosphatidylserine vs Sunflower Phosphatidylserine | Soy vs Sunflower Phosphatidylserine: B2B Sourcing Guide | 498 | 939 |
-| `/resources/choose-phosphatidylserine-supplier/` | How to Choose a PS Supplier \| Nutranexa | How to Choose a PS Supplier \| B2B Checklist | How to Choose a Phosphatidylserine Supplier | How to Choose a Phosphatidylserine Supplier: B2B Checklist | 493 | 903 |
-| `/contact/` | Contact Nutranexa \| Request PS Ingredient Quote | Contact Nutranexa \| Request PS Ingredient Quote | Request a Quote or Product Documents | Request Specification & COA | 456 | 584 |
+| `/resources/soy-vs-sunflower-phosphatidylserine/` | Soy vs Sunflower Phosphatidylserine \| Nutranexa | Soy vs Sunflower PS Sourcing Guide \| Nutranexa | Soy Phosphatidylserine vs Sunflower Phosphatidylserine | Soy vs Sunflower Phosphatidylserine: B2B Sourcing Guide | 498 | Expanded: 13-row decision matrix and dedicated decision sections |
+| `/resources/choose-phosphatidylserine-supplier/` | How to Choose a PS Supplier \| Nutranexa | How to Choose a PS Supplier \| B2B Checklist | How to Choose a Phosphatidylserine Supplier | How to Choose a Phosphatidylserine Supplier: B2B Checklist | 493 | Expanded: 15 numbered qualification checks and scoring guidance |
+| `/contact/` | Contact Nutranexa \| Request PS Ingredient Quote | Contact Nutranexa \| Request PS Ingredient Quote | Request a Quote or Product Documents | Request Specification & COA | 456 | Expanded: quote, sample, COA, MOQ, lead-time, and packaging request language |
 
 \* The PS 50% route is generated from the `psGrades` source model and was not present as a tracked static file in the origin checkout. The before value is the pre-change generated baseline from the same source model; the route already exists in production.
+
+The table preserves the first implementation delta for traceability. The post-review content pass further expanded the six generated pages; the current rendered pages are approximately 1,700 words (sunflower), 1,600 (soy), 1,370 (PS 50%), 1,400 (comparison), 1,230 (supplier guide), and 690 (contact), including shared page chrome.
 
 ## First-party evidence handling
 
@@ -41,6 +43,8 @@ The implementation was made in the `codex/phase2-wave1` branch created from `ori
 ## Internal linking
 
 The source pages now link to the PS 50% grade, the opposite source page, the source-comparison guide, and the supplier qualification guide. The PS 50% page links back to both source pages and forward to the comparison and supplier guides. The two guides link back to the relevant product and technical-document paths.
+
+The comparison page now explicitly links to the soy product, sunflower product, PS 50% grade, PS powder specifications, Quality & R&D, supplier qualification guide, and contact workflow. The supplier guide now links to product, specification, Quality & R&D, and contact paths.
 
 Query ownership is now treated as:
 
@@ -67,6 +71,14 @@ Query ownership is now treated as:
 - Internal route links in all six pages: no broken route hrefs detected.
 - Desktop 1440px and mobile 390px render checks: no horizontal overflow, no page errors, and forms remained usable.
 - No production deployment or mass indexing request was performed.
+
+Post-review content checks:
+
+- Comparison matrix covers all 13 requested buyer dimensions: source, grades, allergen, non-soy positioning, vegetarian suitability, Halal/Kosher documentation, powder characteristics, application considerations, specification differences, commercial availability, MOQ, documentation requirements, and buyer suitability.
+- Supplier checklist covers all 15 requested qualification areas, each with a buyer question, evidence to record, and Pass/Hold/Follow-up decision.
+- PS 50% page now separates concentration from source, states how to request the assay/test basis, compares 20%/50%/70% routes conservatively, and avoids source-page duplication.
+- Sunflower and soy product pages now separate source, grade, allergen documentation, representative specification, and batch evidence.
+- Contact first-screen copy now names factory quote, current specification, batch COA, TDS, sample, MOQ, lead time, packaging, source, and concentration requests.
 
 ## Potential claim risks
 
@@ -95,4 +107,4 @@ Review at day 14 for diagnostics, day 28 for an early decision, and day 56 for t
 
 ## Deployment gate
 
-The branch is ready for production review. Before deployment, confirm the exact GSC export, review the generated diff for the deployment system, and perform one real form-delivery smoke test in an approved test context.
+The branch is ready for production review. The mandatory before/after audit is recorded in [`phase2-wave1-pre-edit-audit.md`](phase2-wave1-pre-edit-audit.md). Before deployment, still confirm the exact GSC export window/country/device/clicks, review the generated diff for the deployment system, and perform one real form-delivery smoke test in an approved test context. Production deployment and the post-deployment HTTP/content check remain external release actions and have not been performed here.

@@ -408,8 +408,8 @@ const psGrades = [
     name: "Phosphatidylserine 50%",
     shortName: "PS 50%",
     badge: "Most Popular",
-    positioning: "Mainstream cognitive products",
-    description: "A balanced PS 50% grade for mainstream supplement and functional nutrition projects, with source, specification, batch COA, and application fit confirmed for each quotation.",
+    positioning: "Concentration-focused bulk formulations",
+    description: "Evaluate Phosphatidylserine 50% for concentration-focused supplement and functional nutrition projects, with source, specification, batch COA, and application fit confirmed for each quotation.",
     image: "/assets/images/brand-product-lab.webp",
     source: "Soy or sunflower source; confirm the quoted route",
     appearance: "Confirm against the current controlled specification",
@@ -1074,13 +1074,18 @@ const evergreenArticles = [
       <h2>Quick comparison</h2>
       <div class="table-wrap"><table class="spec-table"><thead><tr><th>Buyer question</th><th>Soy-derived PS</th><th>Sunflower-derived PS</th></tr></thead><tbody>
         <tr><th>Raw material source</th><td>Soy lecithin and L-serine; confirm the quoted product.</td><td>Sunflower-source ingredient base; confirm the quoted product.</td></tr>
-        <tr><th>Typical grade route</th><td>Grade and current assay options must be confirmed.</td><td>PS 20% and PS 50% sample COAs are available for review.</td></tr>
+        <tr><th>Typical available grades</th><td>The supplied English material supports PS 20%; any other soy-source grade must be confirmed.</td><td>PS 20% and PS 50% sunflower sample COAs are available for review; final availability must be confirmed.</td></tr>
         <tr><th>Allergen considerations</th><td>Request the current soy allergen and GMO statements for the target market.</td><td>Do not infer allergen-free status from sunflower origin; request the current statement.</td></tr>
         <tr><th>Non-soy positioning</th><td>Not the preferred route where a non-soy position is required.</td><td>Can support a non-soy position when the documentation matches the quoted product.</td></tr>
-        <tr><th>Vegetarian suitability</th><td colspan="2">Confirm the full formulation, processing aids, label rules, and market requirements.</td></tr>
-        <tr><th>Halal / Kosher files</th><td colspan="2">Availability and product scope are available upon request and must be checked for the quoted grade.</td></tr>
+        <tr><th>Vegetarian suitability</th><td colspan="2">Confirm the full formulation, processing aids, label rules, and market requirements for the quoted product.</td></tr>
+        <tr><th>Halal / Kosher documentation availability</th><td colspan="2">Availability and product scope are available upon request and must be checked for the quoted grade.</td></tr>
         <tr><th>Powder characteristics</th><td colspan="2">Confirm appearance, carrier, particle profile, moisture, flow, and storage against the current specification.</td></tr>
-        <tr><th>Commercial fit</th><td colspan="2">Compare MOQ, packaging, lead time, sample support, and batch-specific documents before approval.</td></tr>
+        <tr><th>Application considerations</th><td>Evaluate source acceptance, serving format, flow, moisture, and compatibility in the intended capsule, tablet, powder, dairy, or food process.</td><td>Evaluate the same process variables while confirming that the sunflower-source documentation supports the intended positioning.</td></tr>
+        <tr><th>Specification differences</th><td colspan="2">Compare PS assay, carrier, moisture, peroxide value, insoluble matter, microbiology, storage, and test basis in current source-specific documents.</td></tr>
+        <tr><th>Commercial availability</th><td>Confirm current source, grade, sample, and shipment availability through the quotation.</td><td>Confirm current source, grade, sample, and shipment availability through the quotation.</td></tr>
+        <tr><th>MOQ considerations</th><td colspan="2">Use the current quotation to confirm MOQ, packaging, palletization, and destination-specific shipment terms.</td></tr>
+        <tr><th>Documentation requirements</th><td colspan="2">Request the current specification, batch COA, source/allergen statements, packaging, storage, and applicable market files.</td></tr>
+        <tr><th>Buyer suitability</th><td>Often a fit when the project accepts a soy-derived route and the source documents pass market review.</td><td>Often a fit when non-soy or sunflower-origin positioning matters and current documents support the claim.</td></tr>
       </tbody></table></div>
       <h2>What is soy-derived PS?</h2>
       <p>Soy PS is commonly evaluated when a buyer accepts a soy-derived source route and wants to compare source, grade, and document fit for capsules, tablets, powders, dairy formulas, or functional foods. The ingredient name alone does not establish an allergen conclusion or a specific PS concentration. Request the current signed specification, source statement, allergen information, and batch COA.</p>
@@ -1088,10 +1093,22 @@ const evergreenArticles = [
       <h2>What is sunflower-derived PS?</h2>
       <p>Sunflower PS is a source-specific option for buyers who prefer sunflower-origin positioning or need to keep soy and sunflower routes separate during qualification. The site provides PS 20% and PS 50% sunflower sample COAs for preliminary review. Final availability, grade, carrier, and market documents must be confirmed before purchase.</p>
       <p>Review the <a href="/products/sunflower-phosphatidylserine/">sunflower phosphatidylserine product page</a> and the <a href="/products/phosphatidylserine-50/">PS 50% grade page</a> when comparing source and concentration.</p>
-      <h2>Documents buyers should request</h2>
+      <h2>Allergen considerations</h2>
+      <p>Soy and sunflower source names are not substitutes for a current allergen statement. Request source, GMO, processing-aid, and destination-market documents for the exact quoted grade, and have the buyer's regulatory team review final label wording.</p>
+      <h2>Formulation considerations</h2>
+      <p>Compare the intended format, target serving, carrier, flow, moisture exposure, oxidation control, and stability plan. Run application and finished-product testing before treating either source as interchangeable.</p>
+      <h2>Specification comparison</h2>
+      <p>Use the <a href="/resources/phosphatidylserine-powder-specifications/">PS powder specifications guide</a> to organize assay, appearance, moisture, peroxide value, insoluble matter, microbiology, storage, and test-method questions. The current source-specific specification and batch COA remain controlling.</p>
+      <h2>Documentation buyers should request</h2>
       <ul class="check-list"><li>Current product specification tied to the quoted source and grade</li><li>Batch-specific COA and the test basis used for assay and quality indicators</li><li>Source, allergen, and GMO statements where required</li><li>Packaging, storage, MOQ, lead time, and sample information</li><li>Halal, Kosher, or other market-specific files when applicable</li></ul>
       <h2>Which source should you choose?</h2>
       <p>Choose soy PS when the project accepts a soy-derived route and the current source and allergen documents fit the target market. Choose sunflower PS when a non-soy position or sunflower-origin route is important and the current specification and source statement support that decision. In either case, qualify the exact product, not only the ingredient name.</p>
+      <h2>When soy PS makes more sense</h2>
+      <p>Soy may be the better starting route when the project accepts soy lecithin-derived material, the buyer already has a qualified soy label position, and the current source-specific documents meet the destination-market review.</p>
+      <h2>When sunflower PS makes more sense</h2>
+      <p>Sunflower may be the better starting route when a non-soy or sunflower-origin position matters and the quoted grade, current source statement, allergen review, and batch evidence support that choice.</p>
+      <h2>Request technical documents</h2>
+      <p>Use the <a href="/quality-rd/">Quality &amp; R&amp;D workflow</a> and request the exact specification, current COA, source/allergen files, packaging, MOQ, and lead time for your project.</p>
       <div class="inline-cta"><strong>Need a source and grade review?</strong><a href="/contact/?documents=Specification%2C%20COA%2C%20Allergen%20Information">Request the current technical documents</a></div>
     `,
   },
@@ -1104,18 +1121,25 @@ const evergreenArticles = [
     contentHtml: `
       <p>A phosphatidylserine supplier should be evaluated as a qualification partner, not only by the lowest quoted price. The core checks are source traceability, assay method, batch consistency, oxidation control, document readiness, manufacturing capability, and responsiveness to application questions.</p>
       <h2>Supplier evaluation checklist</h2>
-      <div class="table-wrap"><table class="spec-table"><thead><tr><th>Evaluation area</th><th>What the buyer should ask</th><th>Evidence status</th></tr></thead><tbody>
-        <tr><th>Source traceability</th><td>What is the lecithin source, product route, lot reference, and quoted grade?</td><td>Confirm in the current specification and source statement.</td></tr>
-        <tr><th>PS assay</th><td>What method, limit, and current batch result support the stated PS content?</td><td>Match the specification to the batch COA.</td></tr>
-        <tr><th>Batch consistency</th><td>Can the supplier explain release criteria and retain current batch records?</td><td>Request representative and current batch documents.</td></tr>
-        <tr><th>Oxidation control</th><td>What peroxide-value limit, storage control, and packaging protection apply?</td><td>Confirm limits and results for the quoted product.</td></tr>
-        <tr><th>Heavy metals and microbiology</th><td>Which limits and test results are included in the release package?</td><td>Review the current COA and test basis.</td></tr>
-        <tr><th>Allergen and market files</th><td>Are source-specific allergen, GMO, Halal, Kosher, or other documents available?</td><td>Availability varies by product and market; request current files.</td></tr>
-        <tr><th>Manufacturing capability</th><td>Who manufactures the material, and what process, quality, and change-control information is available?</td><td>Verify the controlled company and product scope.</td></tr>
-        <tr><th>Commercial execution</th><td>What are the MOQ, packaging, sample policy, lead time, and shipment conditions?</td><td>Confirm in the quotation and order documents.</td></tr>
+      <div class="table-wrap"><table class="spec-table"><thead><tr><th>Evaluation area</th><th>What the buyer should ask</th><th>Evidence to record</th><th>Decision</th></tr></thead><tbody>
+        <tr><th>1. Source traceability</th><td>What is the lecithin source, product route, lot reference, and quoted grade?</td><td>Current specification and source statement.</td><td>Pass / Hold</td></tr>
+        <tr><th>2. PS assay method</th><td>What method, limit, and current batch result support the stated PS content?</td><td>Method, acceptance limit, and matching COA result.</td><td>Pass / Follow up</td></tr>
+        <tr><th>3. Batch-to-batch consistency</th><td>Can the supplier explain release criteria and retain current batch records?</td><td>Representative and current batch documents.</td><td>Pass / Hold</td></tr>
+        <tr><th>4. Oxidation control</th><td>What peroxide-value limit, storage control, and packaging protection apply?</td><td>Limit, current result, packaging, and storage instruction.</td><td>Pass / Follow up</td></tr>
+        <tr><th>5. Heavy metal testing</th><td>Which limits and test results are included for Pb, As, Hg, Cd, or other required metals?</td><td>Current limits, method, and batch result.</td><td>Pass / Hold</td></tr>
+        <tr><th>6. Microbiological testing</th><td>Which plate count, yeast/mold, pathogen, and Salmonella controls apply?</td><td>Current microbiology section of the COA or report.</td><td>Pass / Hold</td></tr>
+        <tr><th>7. Allergen documentation</th><td>Are source-specific allergen, GMO, and processing-aid statements available?</td><td>Signed current statements for the quoted source.</td><td>Pass / Follow up</td></tr>
+        <tr><th>8. Regulatory documentation</th><td>Which production, food-facility, Halal, Kosher, or destination-market files apply?</td><td>Document scope, validity, and product applicability.</td><td>Pass / Follow up</td></tr>
+        <tr><th>9. Manufacturing capability</th><td>Who manufactures the material, and what process, quality, and capacity information is available?</td><td>Controlled company identity, product scope, and capacity response.</td><td>Pass / Hold</td></tr>
+        <tr><th>10. Sample / pilot support</th><td>Can the supplier provide a sample, sample COA, and technical response for the intended format?</td><td>Sample identity, lot, documents, and pilot conditions.</td><td>Pass / Follow up</td></tr>
+        <tr><th>11. Commercial MOQ</th><td>What is the MOQ by grade, source, package, and destination?</td><td>Written quotation or commercial terms.</td><td>Pass / Follow up</td></tr>
+        <tr><th>12. Lead time</th><td>What is the normal and first-order lead time after document approval?</td><td>Written production and shipment timeline.</td><td>Pass / Follow up</td></tr>
+        <tr><th>13. Packaging</th><td>What net weight, liner, palletization, labeling, and storage conditions apply?</td><td>Packaging specification and shipment confirmation.</td><td>Pass / Follow up</td></tr>
+        <tr><th>14. Change control</th><td>How are source, process, specification, site, or packaging changes communicated?</td><td>Change-notification process or written supplier response.</td><td>Pass / Hold</td></tr>
+        <tr><th>15. COA verification</th><td>Does the COA identify the same product, source, grade, lot, test basis, and dates as the quotation?</td><td>Matched batch-specific COA and release record.</td><td>Pass / Hold</td></tr>
       </tbody></table></div>
       <h2>How to score a supplier</h2>
-      <p>Use a simple pass, hold, or follow-up decision for each area. A supplier can remain on the shortlist while evidence is pending, but a missing current specification, unclear source, or unmatched COA should remain a hold before commercial approval.</p>
+      <p>Use a simple pass, hold, or follow-up decision for each area. A supplier can remain on the shortlist while evidence is pending, but a missing current specification, unclear source, failed critical test, or unmatched COA should remain a hold before commercial approval. Record the document date and owner for every follow-up.</p>
       <ol class="number-list"><li>Define the target source, PS grade, application, destination market, and annual volume.</li><li>Request the current specification and ask which test methods support each critical parameter.</li><li>Compare a sample COA with the specification and confirm that the product name, source, lot, and grade match.</li><li>Check packaging, storage, MOQ, lead time, sample support, and change-control expectations.</li><li>Record open questions and obtain written confirmation before the pilot or purchase order.</li></ol>
       <h2>Documents to request before qualification</h2>
       <ul class="check-list"><li>Current controlled specification</li><li>Batch-specific COA or a clearly identified representative sample</li><li>Source, allergen, and GMO statements where required</li><li>Packaging, storage, shelf-life, MOQ, and lead-time details</li><li>Applicable production, Halal, Kosher, or market-specific files</li><li>Sample and technical-support terms for the intended application</li></ul>
@@ -1582,6 +1606,22 @@ function technicalSpecificationSection(product) {
   </section>`;
 }
 
+function sourceProductDecisionSection(product) {
+  if (!["soy-phosphatidylserine", "sunflower-phosphatidylserine"].includes(product.slug)) return "";
+  const sunflower = product.slug === "sunflower-phosphatidylserine";
+  const source = sunflower ? "Sunflower-derived" : "Soy-derived";
+  const gradeText = sunflower
+    ? "PS 20% and PS 50% sunflower sample COAs are available for preliminary review. Final grade, carrier, and current availability must match the quotation."
+    : "The supplied English material supports a PS 20% specification. Any soy-source PS 50% route must be confirmed against the current controlled product list and specification; do not infer it from another source page.";
+  const specText = sunflower
+    ? "Request the current specification for the quoted sunflower grade; no generic assay, carrier, or particle value is substituted for the controlled document."
+    : "The supplied PS 20% specification lists PS content at >= 20% and includes appearance, moisture, acetone insoluble, residual n-hexane, microbiology, and storage parameters. Request the current soy-source copy before approval.";
+  return `<section class="source-decision">${sectionIntro("Source-specific buyer review", `${source} PS: source, grade, and evidence`, "Separate raw-material origin from PS concentration. The exact source, grade, specification, batch COA, and destination-market documents must be qualified together.")}
+    <div class="detail-grid"><div><h3>Available concentrations</h3><p>${esc(gradeText)}</p></div><div><h3>Representative specification</h3><p>${esc(specText)}</p></div><div><h3>Source and allergen documents</h3><p>${sunflower ? "Sunflower origin can support a non-soy position, but it does not by itself establish allergen-free status." : "Soy-source material requires a current allergen and GMO statement where the target market or label review requires it."} Request the source-specific documents for the quoted product.</p></div><div><h3>Batch evidence</h3><p>Use the current batch COA, lot reference, test basis, and controlled specification for qualification. Historical or sample documents are technical references, not permanent guarantees.</p></div></div>
+    <div class="section-actions"><a class="button secondary" href="/products/phosphatidylserine-50/">Review PS 50% grade details</a><a class="button secondary" href="/resources/soy-vs-sunflower-phosphatidylserine/">Compare source options</a></div>
+  </section>`;
+}
+
 function downloadableDocuments(product) {
   if (!product.downloads?.length) return "";
   return `<section class="download-library">${sectionIntro("Technical downloads", "Review supplied product documents", "Download the supplied files for preliminary evaluation. Ask sales for the latest controlled copy and current batch documents before placing an order.")}
@@ -2003,9 +2043,10 @@ function productPage(product) {
   })}
   ${product.slug === "phosphatidylserine" ? psBenefitsSection() : ""}
   <section class="product-template">
-    <div class="product-main">
-      <div class="quick-answer product-quick"><p class="eyebrow">Quick Answer</p><h2>What is ${esc(product.name)} and who is it for?</h2><p>${esc(product.quick)}</p></div>
-      ${product.slug === "phosphatidylserine" ? specificationMatrix() : ""}
+     <div class="product-main">
+       <div class="quick-answer product-quick"><p class="eyebrow">Quick Answer</p><h2>What is ${esc(product.name)} and who is it for?</h2><p>${esc(product.quick)}</p></div>
+       ${sourceProductDecisionSection(product)}
+       ${product.slug === "phosphatidylserine" ? specificationMatrix() : ""}
       ${technicalSpecificationSection(product)}
       <div class="detail-grid product-detail-grid">
         <div><h2>Product overview</h2><p>${esc(product.description)}</p><h3>Source and ingredient base</h3><p>${esc(product.source)}</p></div>
@@ -2052,6 +2093,15 @@ function psGradePage(grade) {
     [`Which documents are available for ${grade.shortName}?`, "Buyers can request the current specification, batch COA, TDS, MSDS, allergen information, and applicable certificates. Availability and scope must be confirmed."],
     ["Can this grade be used in beverages?", "Suitability for beverage systems should be confirmed through formulation, processing, and stability testing. The website does not claim universal beverage solubility."],
   ];
+  const gradeBuyerGuide = grade.slug === "phosphatidylserine-50" ? `<section class="grade-decision">${sectionIntro("Grade decision guide", "How buyers should evaluate PS 50%", "PS 50% describes the target phosphatidylserine concentration; source, carrier, test method, and current product documents still determine whether a quoted material fits the project.")}
+    <div class="detail-grid"><div><h3>What PS 50% means</h3><p>PS 50% is a concentration or grade reference, not a source claim. Confirm whether the quoted material is soy-derived, sunflower-derived, or another documented route, then match the source and grade to the label and market brief.</p></div><div><h3>How PS content is tested</h3><p>Use the assay method and acceptance limit stated in the current controlled specification or batch COA. Request the test basis, lot number, report date, and any external laboratory reference before qualification.</p></div><div><h3>Application fit</h3><p>PS 50% may be considered for capsules, tablets, powders, and functional nutrition concepts where the target serving, carrier, flow, moisture, oxidation control, and stability plan have been tested.</p></div><div><h3>Documentation to request</h3><p>Request the current specification, batch-specific COA, source statement, allergen information, TDS, MSDS, packaging, MOQ, and market-specific files where applicable.</p></div></div>
+    <div class="table-wrap"><table class="spec-table"><thead><tr><th>Grade route</th><th>Buyer consideration</th></tr></thead><tbody>
+      <tr><th>PS 20%</th><td>Lower concentration route; compare serving size, carrier, processing behavior, and current source-specific specification.</td></tr>
+      <tr><th>PS 50%</th><td>Concentration-focused route for projects seeking a higher assay; verify assay method, source, batch result, and application fit.</td></tr>
+      <tr><th>PS 70%</th><td>Only evaluate when available for the quoted project; confirm current evidence rather than assuming availability or interchangeability.</td></tr>
+    </tbody></table></div>
+    <div class="section-actions"><a class="button secondary" href="/products/soy-phosphatidylserine/">Review soy-source PS</a><a class="button secondary" href="/products/sunflower-phosphatidylserine/">Review sunflower-source PS</a><a class="button secondary" href="/contact/?documents=Specification%2C%20COA">Request current documents</a></div>
+  </section>` : "";
   const body = `<section class="product-grade-hero">
     <div><p class="eyebrow">${esc(grade.badge)}</p><h1>${esc(grade.name)} Powder</h1><p>Plant-derived phosphatidylserine ingredient for nutraceutical and functional nutrition formulations.</p><ul class="application-tags"><li>${esc(grade.source)}</li><li>${esc(grade.positioning)}</li><li>Technical documents on request</li></ul><div class="hero-actions"><a class="button primary" href="/contact/?product=${encodeURIComponent(grade.name)}&assay=${encodeURIComponent(grade.shortName.replace("PS ", ""))}">Request Specification &amp; COA</a><a class="button secondary" href="/contact/?product=${encodeURIComponent(grade.name)}">Talk to Technical Support</a></div></div>
     <img src="${grade.image}" alt="${esc(grade.name)} fine powder ingredient" loading="eager">
@@ -2060,8 +2110,9 @@ function psGradePage(grade) {
     <div class="detail-grid"><div><h3>Source</h3><p>${esc(grade.source)}</p></div><div><h3>Purity route</h3><p>${esc(grade.content)}</p></div><div><h3>Appearance</h3><p>${esc(grade.appearance)}</p></div><div><h3>Application direction</h3><p>${esc(grade.applications.join(", "))}</p></div></div>
   </section>
   <section class="technical-specification">${sectionIntro("Technical specification", "Parameters available for buyer review", controlledSpecNote)}
-    <div class="table-wrap"><table class="spec-table"><tbody><tr><th>Product name</th><td>${esc(grade.name)}</td></tr><tr><th>Source</th><td>${esc(grade.source)}</td></tr><tr><th>Appearance</th><td>${esc(grade.appearance)}</td></tr><tr><th>PS content</th><td>${esc(grade.content)}</td></tr><tr><th>Heavy metals</th><td>According to the current specification or batch COA</td></tr><tr><th>Microbiology</th><td>According to the current specification or batch COA</td></tr><tr><th>Shelf life</th><td>${grade.coa ? "24 months on the supplied sample COA; confirm the current controlled document" : "According to the current controlled specification"}</td></tr></tbody></table></div>
+    <div class="table-wrap"><table class="spec-table"><tbody><tr><th>Product name</th><td>${esc(grade.name)}</td></tr><tr><th>Source</th><td>${esc(grade.source)}</td></tr><tr><th>Appearance</th><td>${esc(grade.appearance)}</td></tr><tr><th>PS content</th><td>${esc(grade.content)}</td></tr><tr><th>Assay / test basis</th><td>According to the current controlled specification or batch COA; request the method and acceptance limit</td></tr><tr><th>Heavy metals</th><td>According to the current specification or batch COA</td></tr><tr><th>Microbiology</th><td>According to the current specification or batch COA</td></tr><tr><th>Shelf life</th><td>${grade.coa ? "24 months on the supplied sample COA; confirm the current controlled document" : "According to the current controlled specification"}</td></tr></tbody></table></div>
   </section>
+  ${gradeBuyerGuide}
   ${grade.coa ? `<section class="coa-section">${sectionIntro("Batch documentation", grade.coa.title, grade.coa.note)}
     <div class="coa-grid"><article class="coa-card"><a class="coa-image-link" href="${grade.coa.image}" target="_blank" rel="noopener"><img src="${grade.coa.image}" alt="${esc(grade.coa.title)} supplied certificate image" loading="lazy"></a><div><h3>Extracted batch information</h3><table><tbody>${grade.coa.rows.map(([label, value]) => `<tr><th>${esc(label)}</th><td>${esc(value)}</td></tr>`).join("")}</tbody></table><p class="form-note">Inspection items marked with an asterisk on the supplied COA are reported as sourced from external inspection reports.</p><a class="document-link" href="${grade.coa.image}" target="_blank" rel="noopener">View full COA sample</a></div></article></div>
   </section>` : ""}
@@ -2281,7 +2332,7 @@ function aboutPage() {
 }
 
 function contactPage() {
-  const body = `<section class="page-hero compact"><p class="eyebrow">Technical inquiry</p><h1>Request Specification &amp; COA</h1><p>Send your application, preferred source, required PS grade, target market, annual volume, and document needs through the secure form.</p></section>
+  const body = `<section class="page-hero compact"><p class="eyebrow">Technical inquiry</p><h1>Request Specification &amp; COA</h1><p>Request a factory quote, current specification, batch COA, TDS, sample, MOQ, lead time, packaging details, or source and concentration review. Share your application, target market, and estimated annual volume through the secure form.</p></section>
   <section class="contact-layout">
     ${contactDetailsCard("Nutranexa / Shandong Baianrui Biopharmaceutical")}
     ${quoteForm("General quote request", "", { includeRequestType: true })}
