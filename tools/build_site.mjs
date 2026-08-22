@@ -182,9 +182,9 @@ const products = [
     slug: "soy-phosphatidylserine",
     name: "Soy Phosphatidylserine",
     eyebrow: "Soy-source PS",
-    title: "Soy Phosphatidylserine Supplier for Bulk Supplement Ingredients",
+    title: "Soy Phosphatidylserine Supplier for Bulk Source Review",
     description:
-      "Compare soy phosphatidylserine for capsules, tablets, powders, dairy nutrition formulas, and functional food ingredient sourcing.",
+      "Review soy phosphatidylserine for bulk supplement and functional food sourcing with source, grade, specification, and document support.",
     image: "/assets/images/product-soy-ps.webp",
     imageAlt: "Soy phosphatidylserine powder product in a clean ingredient bowl",
     cta: "Request Specs",
@@ -193,8 +193,8 @@ const products = [
     moq: "25 kg",
     packaging: "25 kg net per drum",
     quick:
-      "Soy phosphatidylserine is a PS ingredient made from soy lecithin and L-serine through bio-enzymatic conversion. It is suitable for buyers seeking a soy-source ingredient for supplements, nutrition powders, dairy formulas, and functional food product development.",
-    source: "Soy lecithin and L-serine; exact PS content and particle specifications to be confirmed.",
+      "Soy phosphatidylserine is a PS ingredient made from soy lecithin and L-serine through bio-enzymatic conversion. Buyers should confirm the quoted grade, current specification, allergen statement, and batch COA before approving a soy-source route for supplements, nutrition powders, dairy formulas, or functional foods.",
+    source: "Soy lecithin and L-serine; current PS content, particle specifications, and source-specific documents must be confirmed for the quoted product.",
     applications: ["Nutrition powders", "Tablet and capsule products", "Functional dairy formulas", "Private-label supplement development"],
     proof: ["Lead PS product focus", "Production equipment visibility", "R&D cooperation information available", "Quality control details available for buyer review"],
     docs: ["English PS 20% specification: Available for download", "COA sample: Current soy-source COA to be confirmed; reference PS samples are available for buyer review", "Bulk packaging: 25 kg net per drum; MOQ 25 kg"],
@@ -216,6 +216,7 @@ const products = [
     faqs: [
       ["Who should request soy PS specifications?", "Ingredient importers, dietary supplement manufacturers, and food brands comparing source, content, and application fit should request specifications."],
       ["Is soy PS different from sunflower PS?", "Yes. They differ by ingredient source and buyer preference. Use the comparison article and request current specifications before purchasing."],
+      ["Does a soy source confirm the allergen position?", "No. Request the current source-specific allergen and GMO statements for the quoted product and destination market; do not infer a regulatory position from the ingredient name alone."],
       ["Can I ask for application support?", "Yes. Use the quote form and include application, annual quantity, and required document needs."],
       ["What is the MOQ for soy phosphatidylserine?", "The MOQ is 25 kg, packed as 25 kg net per drum. Confirm the required drum quantity and shipment destination when requesting a quote."],
     ],
@@ -224,9 +225,9 @@ const products = [
     slug: "sunflower-phosphatidylserine",
     name: "Sunflower Phosphatidylserine",
     eyebrow: "Sunflower-source PS",
-    title: "Sunflower Phosphatidylserine Supplier for Non-Soy Nutrition Formulas",
+    title: "Sunflower Phosphatidylserine Supplier | 20% & 50%",
     description:
-      "Evaluate sunflower phosphatidylserine for non-soy supplement positioning, nutrition formulas, functional foods, and ingredient distribution.",
+      "Evaluate sunflower phosphatidylserine for non-soy positioning, including PS 20% and PS 50% sample COA review, bulk sourcing, and technical document support.",
     image: "/assets/images/product-sunflower-ps.webp",
     imageAlt: "Sunflower phosphatidylserine powder product in a black bowl with sunflower seeds",
     cta: "Request a Quote",
@@ -235,13 +236,15 @@ const products = [
     moq: "25 kg",
     packaging: "25 kg net per drum",
     quick:
-      "Sunflower phosphatidylserine is a source-specific PS ingredient for buyers who prefer a sunflower-origin option. Nutranexa supplies sunflower PS for B2B supplement, nutrition, and functional food projects, with current specifications and documents confirmed through sales.",
-    source: "Sunflower-source ingredient base; final content, carrier, and test documents to be confirmed.",
+      "Sunflower phosphatidylserine is a source-specific PS ingredient for buyers who prefer a sunflower-origin option. PS 20% and PS 50% sunflower sample COAs are available for buyer review; the quoted grade, current specification, and destination-market documents must still be confirmed before purchase.",
+    source: "Sunflower-source ingredient base; PS 20% and PS 50% sample COAs are available for review, while final content, carrier, and current test documents must match the quoted product.",
     applications: ["Non-soy positioning", "Supplement capsules", "Functional food formulas", "Brand formulations requiring source differentiation"],
     proof: ["Product imagery available", "Manufacturing information available", "Quality and R&D details available", "Document request support prepared"],
     docs: ["Specification: Available upon request", "COA samples: PS 20% and PS 50% sunflower samples available for review", "Bulk packaging: 25 kg net per drum; MOQ 25 kg", "Certificate files: Halal, Kosher, and production documents supplied for buyer review"],
     faqs: [
-      ["Why choose sunflower PS?", "Some brands prefer sunflower-source ingredients for positioning or formulation reasons. Buyers should confirm exact specs before quoting."],
+      ["Why choose sunflower PS?", "Some brands prefer sunflower-source ingredients for non-soy positioning or formulation reasons. Buyers should confirm the exact source, grade, and current documents before quoting."],
+      ["Are PS 20% and PS 50% sunflower samples available?", "Sample COAs for PS 20% and PS 50% sunflower products are available for review. Request the current controlled specification and batch COA for the product being quoted."],
+      ["Does sunflower source mean allergen-free?", "No. Sunflower origin can support a non-soy position, but allergen status must be confirmed with the current source-specific statement and destination-market review."],
       ["Can Nutranexa support supplement applications?", "Nutranexa supports PS ingredient discussions for dietary supplement and functional food applications without making medical treatment claims."],
       ["What details should I send for quotation?", "Share country, product format, application, annual quantity, and document requirements."],
       ["What is the MOQ for sunflower phosphatidylserine?", "The MOQ is 25 kg, packed as 25 kg net per drum. Final shipment and labeling details are confirmed with the quotation."],
@@ -406,12 +409,12 @@ const psGrades = [
     shortName: "PS 50%",
     badge: "Most Popular",
     positioning: "Mainstream cognitive products",
-    description: "A balanced purity grade for mainstream cognitive health supplements, capsules, and tablet formulations.",
+    description: "A balanced PS 50% grade for mainstream supplement and functional nutrition projects, with source, specification, batch COA, and application fit confirmed for each quotation.",
     image: "/assets/images/brand-product-lab.webp",
     source: "Soy or sunflower source; confirm the quoted route",
     appearance: "Confirm against the current controlled specification",
     content: "Target 50% grade; confirm against the current controlled specification",
-    highlights: ["Soy or sunflower source", "Mainstream supplement application", "Complete technical support"],
+    highlights: ["Soy or sunflower source", "Mainstream supplement application", "Current specification and COA on request"],
     applications: ["Cognitive health", "Memory support", "Healthy aging", "Capsules and tablets"],
     downloads: [],
   },
@@ -1062,27 +1065,63 @@ const evergreenArticles = [
   },
   {
     slug: "soy-vs-sunflower-phosphatidylserine",
-    title: "Soy Phosphatidylserine vs Sunflower Phosphatidylserine",
-    description: "Compare soy-source and sunflower-source PS options for formulation and sourcing decisions.",
+    title: "Soy vs Sunflower Phosphatidylserine: B2B Sourcing Guide",
+    description: "B2B sourcing guide comparing soy and sunflower phosphatidylserine by source, grade, allergen documents, formulation fit, and buyer qualification needs.",
     image: "/assets/images/resource-soy-vs-sunflower-ps.webp",
     imageAlt: "Soy and sunflower phosphatidylserine powder samples shown with their separate source materials",
-    body: [
-      "Soy phosphatidylserine and sunflower phosphatidylserine are source-specific PS options. The right choice depends on formulation preference, brand positioning, regional buyer expectations, and available technical documents.",
-      "Soy PS is often evaluated by buyers who accept soy-derived ingredients and want a conventional source path. Sunflower PS can be relevant when a brand prefers a non-soy source position.",
-      "Before purchase, compare PS content, carrier, particle profile, allergen considerations, packaging, COA, and application support.",
-    ],
+    contentHtml: `
+      <p>Soy phosphatidylserine and sunflower phosphatidylserine are source-specific PS options. The right route depends on formulation requirements, brand positioning, destination-market review, and the technical documents available for the exact quoted grade.</p>
+      <h2>Quick comparison</h2>
+      <div class="table-wrap"><table class="spec-table"><thead><tr><th>Buyer question</th><th>Soy-derived PS</th><th>Sunflower-derived PS</th></tr></thead><tbody>
+        <tr><th>Raw material source</th><td>Soy lecithin and L-serine; confirm the quoted product.</td><td>Sunflower-source ingredient base; confirm the quoted product.</td></tr>
+        <tr><th>Typical grade route</th><td>Grade and current assay options must be confirmed.</td><td>PS 20% and PS 50% sample COAs are available for review.</td></tr>
+        <tr><th>Allergen considerations</th><td>Request the current soy allergen and GMO statements for the target market.</td><td>Do not infer allergen-free status from sunflower origin; request the current statement.</td></tr>
+        <tr><th>Non-soy positioning</th><td>Not the preferred route where a non-soy position is required.</td><td>Can support a non-soy position when the documentation matches the quoted product.</td></tr>
+        <tr><th>Vegetarian suitability</th><td colspan="2">Confirm the full formulation, processing aids, label rules, and market requirements.</td></tr>
+        <tr><th>Halal / Kosher files</th><td colspan="2">Availability and product scope are available upon request and must be checked for the quoted grade.</td></tr>
+        <tr><th>Powder characteristics</th><td colspan="2">Confirm appearance, carrier, particle profile, moisture, flow, and storage against the current specification.</td></tr>
+        <tr><th>Commercial fit</th><td colspan="2">Compare MOQ, packaging, lead time, sample support, and batch-specific documents before approval.</td></tr>
+      </tbody></table></div>
+      <h2>What is soy-derived PS?</h2>
+      <p>Soy PS is commonly evaluated when a buyer accepts a soy-derived source route and wants to compare source, grade, and document fit for capsules, tablets, powders, dairy formulas, or functional foods. The ingredient name alone does not establish an allergen conclusion or a specific PS concentration. Request the current signed specification, source statement, allergen information, and batch COA.</p>
+      <p>Review the <a href="/products/soy-phosphatidylserine/">soy phosphatidylserine product page</a> for the current source description and document-request path.</p>
+      <h2>What is sunflower-derived PS?</h2>
+      <p>Sunflower PS is a source-specific option for buyers who prefer sunflower-origin positioning or need to keep soy and sunflower routes separate during qualification. The site provides PS 20% and PS 50% sunflower sample COAs for preliminary review. Final availability, grade, carrier, and market documents must be confirmed before purchase.</p>
+      <p>Review the <a href="/products/sunflower-phosphatidylserine/">sunflower phosphatidylserine product page</a> and the <a href="/products/phosphatidylserine-50/">PS 50% grade page</a> when comparing source and concentration.</p>
+      <h2>Documents buyers should request</h2>
+      <ul class="check-list"><li>Current product specification tied to the quoted source and grade</li><li>Batch-specific COA and the test basis used for assay and quality indicators</li><li>Source, allergen, and GMO statements where required</li><li>Packaging, storage, MOQ, lead time, and sample information</li><li>Halal, Kosher, or other market-specific files when applicable</li></ul>
+      <h2>Which source should you choose?</h2>
+      <p>Choose soy PS when the project accepts a soy-derived route and the current source and allergen documents fit the target market. Choose sunflower PS when a non-soy position or sunflower-origin route is important and the current specification and source statement support that decision. In either case, qualify the exact product, not only the ingredient name.</p>
+      <div class="inline-cta"><strong>Need a source and grade review?</strong><a href="/contact/?documents=Specification%2C%20COA%2C%20Allergen%20Information">Request the current technical documents</a></div>
+    `,
   },
   {
     slug: "choose-phosphatidylserine-supplier",
-    title: "How to Choose a Phosphatidylserine Supplier",
-    description: "A sourcing checklist for importers and manufacturers evaluating PS ingredient suppliers.",
+    title: "How to Choose a Phosphatidylserine Supplier: B2B Checklist",
+    description: "A practical B2B checklist for evaluating phosphatidylserine suppliers by source traceability, assay, COA, quality controls, MOQ, lead time, and document readiness.",
     image: "/assets/images/resource-choose-ps-supplier.webp",
     imageAlt: "Ingredient buyer and quality specialist reviewing a phosphatidylserine sample at a manufacturing site",
-    body: [
-      "A phosphatidylserine supplier should be evaluated on manufacturing capability, quality control, product document readiness, source transparency, and responsiveness to application questions.",
-      "Useful proof points include factory imagery, R&D cooperation, production license information, equipment visibility, and clear product information that avoids unsupported claims.",
-      "Ask for specifications, COA, packaging options, lead time, MOQ, sample policy, and the intended application before comparing prices.",
-    ],
+    contentHtml: `
+      <p>A phosphatidylserine supplier should be evaluated as a qualification partner, not only by the lowest quoted price. The core checks are source traceability, assay method, batch consistency, oxidation control, document readiness, manufacturing capability, and responsiveness to application questions.</p>
+      <h2>Supplier evaluation checklist</h2>
+      <div class="table-wrap"><table class="spec-table"><thead><tr><th>Evaluation area</th><th>What the buyer should ask</th><th>Evidence status</th></tr></thead><tbody>
+        <tr><th>Source traceability</th><td>What is the lecithin source, product route, lot reference, and quoted grade?</td><td>Confirm in the current specification and source statement.</td></tr>
+        <tr><th>PS assay</th><td>What method, limit, and current batch result support the stated PS content?</td><td>Match the specification to the batch COA.</td></tr>
+        <tr><th>Batch consistency</th><td>Can the supplier explain release criteria and retain current batch records?</td><td>Request representative and current batch documents.</td></tr>
+        <tr><th>Oxidation control</th><td>What peroxide-value limit, storage control, and packaging protection apply?</td><td>Confirm limits and results for the quoted product.</td></tr>
+        <tr><th>Heavy metals and microbiology</th><td>Which limits and test results are included in the release package?</td><td>Review the current COA and test basis.</td></tr>
+        <tr><th>Allergen and market files</th><td>Are source-specific allergen, GMO, Halal, Kosher, or other documents available?</td><td>Availability varies by product and market; request current files.</td></tr>
+        <tr><th>Manufacturing capability</th><td>Who manufactures the material, and what process, quality, and change-control information is available?</td><td>Verify the controlled company and product scope.</td></tr>
+        <tr><th>Commercial execution</th><td>What are the MOQ, packaging, sample policy, lead time, and shipment conditions?</td><td>Confirm in the quotation and order documents.</td></tr>
+      </tbody></table></div>
+      <h2>How to score a supplier</h2>
+      <p>Use a simple pass, hold, or follow-up decision for each area. A supplier can remain on the shortlist while evidence is pending, but a missing current specification, unclear source, or unmatched COA should remain a hold before commercial approval.</p>
+      <ol class="number-list"><li>Define the target source, PS grade, application, destination market, and annual volume.</li><li>Request the current specification and ask which test methods support each critical parameter.</li><li>Compare a sample COA with the specification and confirm that the product name, source, lot, and grade match.</li><li>Check packaging, storage, MOQ, lead time, sample support, and change-control expectations.</li><li>Record open questions and obtain written confirmation before the pilot or purchase order.</li></ol>
+      <h2>Documents to request before qualification</h2>
+      <ul class="check-list"><li>Current controlled specification</li><li>Batch-specific COA or a clearly identified representative sample</li><li>Source, allergen, and GMO statements where required</li><li>Packaging, storage, shelf-life, MOQ, and lead-time details</li><li>Applicable production, Halal, Kosher, or market-specific files</li><li>Sample and technical-support terms for the intended application</li></ul>
+      <p>The <a href="/quality-rd/">Quality &amp; R&amp;D page</a>, <a href="/resources/phosphatidylserine-powder-specifications/">PS powder specifications guide</a>, and <a href="/contact/">technical document request form</a> provide the next steps for a product-specific review.</p>
+      <div class="inline-cta"><strong>Ready to qualify a PS route?</strong><a href="/contact/?documents=Specification%2C%20COA%2C%20TDS%2C%20MSDS">Request a current document package</a></div>
+    `,
   },
   {
     slug: "phosphatidylserine-dietary-supplements",
@@ -1479,7 +1518,10 @@ function companyVideoSection() {
   </section>`;
 }
 
-function quoteForm(context = "General inquiry") {
+function quoteForm(context = "General inquiry", _note = "", options = {}) {
+  const requestType = options.includeRequestType
+    ? `<label>Request Type <select name="Request Type"><option value="">Select request type</option><option>Quote</option><option>Sample</option><option>Specification</option><option>COA</option><option>Technical Support</option><option>Distributor Inquiry</option><option>Other</option></select></label>`
+    : "";
   return `<form class="quote-form" data-context="${esc(context)}" action="/api/inquiry" method="post">
   <input type="hidden" name="Product Interest" value="${esc(context)}">
   <input type="hidden" name="Locale" value="en">
@@ -1493,6 +1535,7 @@ function quoteForm(context = "General inquiry") {
     <label>Application <select name="Application"><option value="">Select application</option><option>Cognitive Health</option><option>Memory Support</option><option>Healthy Aging</option><option>Sports Nutrition</option><option>Functional Foods</option><option>Other</option></select></label>
     <label>Preferred Source <select name="Source Preference"><option value="">No preference yet</option><option>Soy</option><option>Sunflower</option><option>Need recommendation</option></select></label>
     <label>Required PS Grade <select name="Target Assay"><option value="">Need recommendation</option><option>20%</option><option>50%</option><option>70%</option><option>Other / customized</option></select></label>
+    ${requestType}
     <label>Estimated Annual Volume <input name="Estimated Annual Volume" placeholder="e.g. 500 kg / year"></label>
     <fieldset class="form-full document-choice"><legend>Required Documents</legend><label><input type="checkbox" name="Documents Needed" value="Specification"> Specification</label><label><input type="checkbox" name="Documents Needed" value="COA"> COA</label><label><input type="checkbox" name="Documents Needed" value="TDS"> TDS</label><label><input type="checkbox" name="Documents Needed" value="MSDS"> MSDS</label><label><input type="checkbox" name="Documents Needed" value="Allergen Information"> Allergen Information</label></fieldset>
     <label class="form-full">Message <textarea name="Message" rows="4" placeholder="Tell us about your formulation, target market, timeline, or technical questions."></textarea></label>
@@ -1571,6 +1614,19 @@ function documentsRequestSection(product) {
   </section>`;
 }
 
+function commercialLinkPanel(product) {
+  if (product.slug === "soy-phosphatidylserine") {
+    return `<section class="link-panel"><a href="/products/phosphatidylserine-50/">Review PS 50% specifications</a><a href="/products/sunflower-phosphatidylserine/">Compare sunflower-source PS</a><a href="/resources/soy-vs-sunflower-phosphatidylserine/">Compare soy and sunflower sourcing</a><a href="/resources/choose-phosphatidylserine-supplier/">Use the supplier qualification checklist</a></section>`;
+  }
+  if (product.slug === "sunflower-phosphatidylserine") {
+    return `<section class="link-panel"><a href="/products/phosphatidylserine-50/">Review PS 50% specifications</a><a href="/products/soy-phosphatidylserine/">Compare soy-source PS</a><a href="/resources/soy-vs-sunflower-phosphatidylserine/">Compare soy and sunflower sourcing</a><a href="/resources/choose-phosphatidylserine-supplier/">Use the supplier qualification checklist</a></section>`;
+  }
+  if (product.slug === "phosphatidylserine") {
+    return `<section class="link-panel"><a href="/products/phosphatidylserine-50/">Review PS 50% specifications</a><a href="/products/soy-phosphatidylserine/">Review soy-source PS</a><a href="/products/sunflower-phosphatidylserine/">Review sunflower-source PS</a><a href="/resources/choose-phosphatidylserine-supplier/">Use the supplier qualification checklist</a></section>`;
+  }
+  return "";
+}
+
 function packagingSection(product) {
   if (!product.moq || !product.packaging) return "";
   const inquiry = productInquiryHref(product, "Packaging and quotation");
@@ -1632,8 +1688,8 @@ function articleImage(article) {
 function productSeoTitle(product) {
   const titles = {
     phosphatidylserine: "Phosphatidylserine Manufacturer | Nutranexa",
-    "soy-phosphatidylserine": "Soy Phosphatidylserine Supplier | Nutranexa",
-    "sunflower-phosphatidylserine": "Sunflower Phosphatidylserine Supplier | Nutranexa",
+    "soy-phosphatidylserine": "Soy Phosphatidylserine Supplier | Bulk Source & Specs",
+    "sunflower-phosphatidylserine": "Sunflower Phosphatidylserine | 20% & 50% Supplier",
     "soluble-soybean-polysaccharide": "Soluble Soybean Polysaccharide Supplier | Nutranexa",
   };
   return titles[product.slug] || `${product.name} Supplier | Nutranexa`;
@@ -1642,8 +1698,8 @@ function productSeoTitle(product) {
 function articleSeoTitle(article) {
   const titles = {
     "what-is-phosphatidylserine": "What Is Phosphatidylserine? | Nutranexa",
-    "soy-vs-sunflower-phosphatidylserine": "Soy vs Sunflower Phosphatidylserine | Nutranexa",
-    "choose-phosphatidylserine-supplier": "How to Choose a PS Supplier | Nutranexa",
+    "soy-vs-sunflower-phosphatidylserine": "Soy vs Sunflower PS Sourcing Guide | Nutranexa",
+    "choose-phosphatidylserine-supplier": "How to Choose a PS Supplier | B2B Checklist",
     "phosphatidylserine-dietary-supplements": "PS for Dietary Supplements | Nutranexa",
     "documents-for-ps-ingredients": "PS Ingredient Documents Checklist | Nutranexa",
     "phosphatidylserine-powder-specifications": "PS Powder Specifications | Nutranexa",
@@ -1965,6 +2021,7 @@ function productPage(product) {
         <img class="section-photo" src="/assets/images/quality-document-review.webp" alt="Nutranexa quality document review and COA request workflow" loading="lazy">
       </section>
       ${documentsRequestSection(product)}
+      ${commercialLinkPanel(product)}
       ${downloadableDocuments(product)}
       <section class="product-faq">${sectionIntro("FAQ", "Common buyer questions", "These answers are written for sourcing and application evaluation without medical treatment claims.")}
         <div class="faq-list">${product.faqs.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
@@ -2017,7 +2074,7 @@ function psGradePage(grade) {
   <section class="product-faq">${sectionIntro("FAQ", `Common ${grade.shortName} buyer questions`, "Confirm all commercial and technical details against the current quoted product.")}
     <div class="faq-list">${gradeFaqs.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
   </section>
-  <section class="link-panel"><a href="/products/">All products</a><a href="/resources/phosphatidylserine-guide/">PS Buying Guide</a><a href="/resources/documents-for-ps-ingredients/">Technical documents</a><a href="/science/research-library/">Research Library</a><a href="/contact/">Request Specification &amp; COA</a></section>
+  <section class="link-panel"><a href="/products/">All products</a><a href="/products/soy-phosphatidylserine/">Review soy-source PS</a><a href="/products/sunflower-phosphatidylserine/">Review sunflower-source PS</a><a href="/resources/soy-vs-sunflower-phosphatidylserine/">Compare source options</a><a href="/resources/choose-phosphatidylserine-supplier/">Use the supplier qualification checklist</a><a href="/resources/phosphatidylserine-guide/">PS Buying Guide</a><a href="/resources/documents-for-ps-ingredients/">Technical documents</a><a href="/science/research-library/">Research Library</a><a href="/contact/">Request Specification &amp; COA</a></section>
   <section class="form-panel"><div>${sectionIntro("Start an inquiry", `Request ${grade.shortName} specifications and technical support`, "Share your application, preferred source, target market, document needs, and estimated annual volume.")}</div>${quoteForm(grade.name)}</section>`;
   return layout({
     title: `${grade.name} Ingredient | Nutranexa`,
@@ -2227,7 +2284,7 @@ function contactPage() {
   const body = `<section class="page-hero compact"><p class="eyebrow">Technical inquiry</p><h1>Request Specification &amp; COA</h1><p>Send your application, preferred source, required PS grade, target market, annual volume, and document needs through the secure form.</p></section>
   <section class="contact-layout">
     ${contactDetailsCard("Nutranexa / Shandong Baianrui Biopharmaceutical")}
-    ${quoteForm("General quote request")}
+    ${quoteForm("General quote request", "", { includeRequestType: true })}
   </section>`;
   return layout({
     title: "Contact Nutranexa | Request PS Ingredient Quote",
