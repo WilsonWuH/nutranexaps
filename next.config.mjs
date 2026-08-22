@@ -2,20 +2,25 @@ import fs from "node:fs";
 import path from "node:path";
 import { locales } from "./i18n/config.mjs";
 
-function collectHtmlRewrites(directory, base = "") {
+function collectHtmlRewrites(directory) {
   if (!fs.existsSync(directory)) return [];
 
-  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-    const relative = path.posix.join(base, entry.name);
-    const absolute = path.join(directory, entry.name);
+  const sections = fs.readdirSync(directory, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .sort();
 
-    if (entry.isDirectory()) return collectHtmlRewrites(absolute, relative);
-    if (entry.name !== "index.html") return [];
-
-    const routeDirectory = path.posix.dirname(relative);
-    const source = routeDirectory === "." ? "/" : `/${routeDirectory}`;
-    return [{ source, destination: `/site/${relative}` }];
-  });
+  // Every generated page is stored as <section>/<path>/index.html. Two rules
+  // per top-level section preserve those routes while staying below Vercel's
+  // 2,048-route limit. Assets, sitemaps, and /api are outside /site and are
+  // therefore not intercepted by these section-specific rules.
+  return [
+    { source: "/", destination: "/site/index.html" },
+    ...sections.flatMap((section) => [
+      { source: `/${section}`, destination: `/site/${section}/index.html` },
+      { source: `/${section}/:path*`, destination: `/site/${section}/:path*/index.html` },
+    ]),
+  ];
 }
 
 const nextConfig = {
