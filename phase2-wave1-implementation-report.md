@@ -107,4 +107,18 @@ Review at day 14 for diagnostics, day 28 for an early decision, and day 56 for t
 
 ## Deployment gate
 
-The branch is ready for production review. The mandatory before/after audit is recorded in [`phase2-wave1-pre-edit-audit.md`](phase2-wave1-pre-edit-audit.md). Before deployment, still confirm the exact GSC export window/country/device/clicks, review the generated diff for the deployment system, and perform one real form-delivery smoke test in an approved test context. Production deployment and the post-deployment HTTP/content check remain external release actions and have not been performed here.
+The mandatory before/after audit is recorded in [`phase2-wave1-pre-edit-audit.md`](phase2-wave1-pre-edit-audit.md). Static HTML rewrites were compressed to section-level rules in `next.config.mjs` after Vercel rejected the previous 2,083-route configuration; URL behavior and generated page architecture were preserved.
+
+## Production deployment
+
+- Deployment target: `wilson-s-projects88/nutranexaps`
+- Commit: `d26a27a` (`Compress static rewrites for Vercel route limit`), including the Wave 1 content commits `e3a3304` and `1f8a95f`
+- Deployment ID: `dpl_FPKv9of72kum9Mk9Cn2j6gtMVEpC`
+- Deployment URL: https://nutranexaps-e1bt50w77-wilson-s-projects88.vercel.app
+- Production aliases: https://nutranexaps.com, https://www.nutranexaps.com, https://nutranexaps.vercel.app
+- Deployed at: 2026-08-22 22:34 China Standard Time
+- Remote build: passed; Next.js 16.2.9, TypeScript, static generation, and optimization completed
+- Post-deployment check: all six Wave 1 URLs returned HTTP 200 with the intended title/H1, self-canonical, `index,follow`, and nine hreflang links; no horizontal-overflow or browser-error regression was observed in the local production build check.
+- Vercel error scan: no logs found for the deployment in the first hour after release.
+
+Remaining measurement work is operational rather than a release blocker: record the exact GSC export window/country/device/clicks, run one approved real form-delivery smoke test, and begin the 14/28/56-day query-to-URL review.
