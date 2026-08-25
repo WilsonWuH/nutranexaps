@@ -312,6 +312,7 @@ const products = [
     inquirySource: "Soy",
     inquiryAssay: "PLF powder / liquid / granules",
     formType: "lecithin",
+    schemaManufacturer: false,
     category: "Lecithin ingredient",
     quick:
       "Soy lecithin is available in powder, liquid, and granulated routes. The supplied product materials describe form-specific phospholipid, moisture, insoluble-material, acid-value, peroxide-value, packaging, and storage information. Confirm the exact grade and current controlled document before approval.",
@@ -1346,7 +1347,7 @@ function productJson(product, route) {
     description: product.description,
     image: `${siteUrl}${product.image}`,
     brand: { "@type": "Brand", name: "Nutranexa" },
-    manufacturer: { "@type": "Organization", name: "Shandong Baianrui Biopharmaceutical Co., Ltd." },
+    ...(product.schemaManufacturer === false ? {} : { manufacturer: { "@type": "Organization", name: "Shandong Baianrui Biopharmaceutical Co., Ltd." } }),
     category: product.category || "Functional food ingredient",
     url: urlFor(route),
     ...(product.moq ? { additionalProperty: [
@@ -1679,7 +1680,7 @@ function technicalSpecificationSection(product) {
 function batchReferenceSection(product) {
   if (!product.batchReference?.length) return "";
   return `<section class="coa-section">${sectionIntro("Representative batch reference", "PLF powder COA highlights", "The values below are from one supplied batch report and are shown for technical orientation only. They are not a permanent product guarantee and do not replace the current controlled specification or batch COA.")}
-    <div class="table-wrap"><table class="spec-table"><tbody>${product.batchReference.map(([label, value]) => `<tr><th>${esc(label)}</th><td>${esc(value)}</td></tr>`).join("")}</tbody></table></div>
+    <div class="table-wrap batch-table-wrap"><table class="spec-table"><tbody>${product.batchReference.map(([label, value]) => `<tr><th>${esc(label)}</th><td>${esc(value)}</td></tr>`).join("")}</tbody></table></div>
     <p class="form-note">The supplied brochure and batch report use different acceptance limits for some parameters. Request the current signed specification before publishing or approving a grade.</p>
   </section>`;
 }
@@ -2145,6 +2146,10 @@ function benefitPage(item) {
 
 function productPage(product) {
   const route = `/products/${product.slug}/`;
+  const isSourcedIngredient = product.slug === "soy-lecithin";
+  const capabilityTitle = isSourcedIngredient ? "Supply and qualification capability" : "Manufacturing capability";
+  const capabilityLink = isSourcedIngredient ? "/quality-rd/" : "/manufacturing/";
+  const capabilityLinkText = isSourcedIngredient ? "Review qualification support" : "View manufacturing proof";
   const body = `${hero({
     eyebrow: product.eyebrow,
     title: product.title,
@@ -2164,7 +2169,7 @@ function productPage(product) {
       <div class="detail-grid product-detail-grid">
         <div><h2>Product overview</h2><p>${esc(product.description)}</p><h3>Source and ingredient base</h3><p>${esc(product.source)}</p></div>
         <div><h2>Applications</h2><ul class="check-list">${product.applications.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
-        <div><h2>Manufacturing capability</h2><ul class="check-list">${product.proof.map((item) => `<li>${esc(item)}</li>`).join("")}</ul><a href="/manufacturing/">View manufacturing proof</a></div>
+        <div><h2>${capabilityTitle}</h2><ul class="check-list">${product.proof.map((item) => `<li>${esc(item)}</li>`).join("")}</ul><a href="${capabilityLink}">${capabilityLinkText}</a></div>
         <div><h2>Available documents</h2><ul class="check-list">${product.docs.map((item) => `<li>${esc(item)}</li>`).join("")}</ul><a href="/quality-rd/">Review Quality & R&D</a></div>
       </div>
       ${packagingSection(product)}

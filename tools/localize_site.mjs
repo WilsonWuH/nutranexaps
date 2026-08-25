@@ -8,6 +8,7 @@ const root = process.cwd();
 const siteUrl = "https://nutranexaps.com";
 const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "assets", "i18n", "apps", "config", "content", "docs", "qa", "tmp"]);
 const localeCodes = new Set(locales.map((locale) => locale.code));
+const defaultOnlyRoutes = new Set(["/products/lecithin/", "/products/soy-lecithin/"]);
 
 const terminologyReplacements = {
   ko: [
@@ -145,7 +146,8 @@ function localizeHtml(html, locale, route, messages, indexableLocaleCodes, { com
   const $ = load(html, { decodeEntities: false });
   const localizedRoute = publicLocalePath(locale, route);
   const localizedCanonical = `${siteUrl}${localizedRoute}`;
-  const isIndexable = indexableLocaleCodes.has(locale);
+  const routeIndexableLocaleCodes = defaultOnlyRoutes.has(route) ? new Set([defaultLocale]) : indexableLocaleCodes;
+  const isIndexable = routeIndexableLocaleCodes.has(locale);
 
   $("html").attr("lang", locale).attr("dir", config.dir);
   $("body").addClass(`locale-${locale}`);
@@ -188,7 +190,7 @@ function localizeHtml(html, locale, route, messages, indexableLocaleCodes, { com
   $("link[rel='canonical']").attr("href", localizedCanonical);
   $("link[rel='alternate'][hreflang]").remove();
   if (isIndexable) {
-    const alternates = alternateLinks(route, indexableLocaleCodes);
+    const alternates = alternateLinks(route, routeIndexableLocaleCodes);
     if (alternates) $("link[rel='canonical']").after(`\n  ${alternates}`);
   }
   if (!isIndexable) {
@@ -236,7 +238,7 @@ for (const page of pages) {
   const html = await fs.readFile(page.absolute, "utf8");
   const sourceRobots = (html.match(/<meta name="robots" content="([^"]*)"/i)?.[1] || "").toLowerCase();
   const indexableLocaleCodes = new Set(sourceRobots.includes("noindex") ? [] : locales.map((locale) => locale.code));
-  indexableLocalesByRoute.set(route, indexableLocaleCodes);
+  indexableLocalesByRoute.set(route, defaultOnlyRoutes.has(route) ? new Set([defaultLocale]) : indexableLocaleCodes);
   for (const locale of locales) {
     const destination = outputPath(locale.code, route);
     await fs.mkdir(path.dirname(destination), { recursive: true });

@@ -33,7 +33,7 @@ megaItems.forEach((item) => {
   trigger.setAttribute("aria-expanded", "false");
 
   trigger.addEventListener("click", (event) => {
-    const needsTapToggle = window.matchMedia("(hover: none) and (min-width: 861px)").matches;
+    const needsTapToggle = window.matchMedia("(max-width: 1320px)").matches || window.matchMedia("(hover: none)").matches;
     if (!needsTapToggle || item.classList.contains("is-open")) return;
 
     event.preventDefault();
@@ -161,7 +161,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
     };
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
+      const response = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
