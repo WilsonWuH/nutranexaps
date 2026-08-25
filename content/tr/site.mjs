@@ -5,7 +5,7 @@ const common = {
   market: "Türkiye",
   nav: [
     ["Ana Sayfa", "/"], ["Ürünler", "/products/"], ["Uygulamalar", "/applications/"],
-    ["Kalite Kontrol", "/quality-control/"], ["Teknik Belgeler", "/technical-documents/"],
+    ["Kalite Kontrol", "/quality-rd/"], ["Teknik Belgeler", "/technical-documents/"],
     ["Ambalaj ve Teslimat", "/packaging-delivery/"], ["Kaynaklar", "/blog/"], ["İletişim", "/contact/"],
   ],
   ui: {
@@ -69,7 +69,7 @@ const pages = [
     intro: "Numunenin kullanım amacı, ürün formatı, hedef oran ve sonraki satın alma planını paylaşarak uygunluk kontrolü isteyin.",
   },
   {
-    route: "/quality-control/",
+    route: "/quality-rd/",
     title: "Fosfatidilserin Kalite Kontrol | COA ve Spesifikasyon",
     description: "PS oranı, kaynak, mikrobiyoloji, ağır metaller, kalıntı çözücüler ve oksidasyonla ilgili kalite belge kontrol başlıklarını inceleyin.",
     h1: "PS hammadde kalite kontrolü ve lot belge incelemesi",

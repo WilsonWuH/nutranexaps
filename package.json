@@ -7,6 +7,7 @@
     "i18n:extract": "node tools/build_site.mjs && node tools/extract_i18n.mjs",
     "i18n:translate": "node tools/generate_translations.mjs",
     "i18n:verify": "node tools/verify_i18n.mjs",
+    "seo:verify": "node tools/verify_seo_indexing.mjs",
     "verify:markets": "node tools/verify_market_subdirectories.mjs",
     "verify:markets:browser": "node tools/verify_market_browser.mjs",
     "dev": "npm run generate && node tools/prepare-next.mjs && next dev",

@@ -3,6 +3,7 @@ import path from "node:path";
 import { load } from "cheerio";
 import { defaultLocale, localePath, locales } from "../i18n/config.mjs";
 import { translationOverrides } from "../i18n/overrides.mjs";
+import { indexableLocalesForRoute, isRouteIndexable, sitemapFiles } from "../config/seo/indexing.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://nutranexaps.com";
@@ -37,7 +38,10 @@ for (const locale of locales) {
     if (!$("meta[name='description']").attr("content")?.trim()) errors.push(`${locale.code}${route}: meta description is missing`);
     if ($("h1").length !== 1) errors.push(`${locale.code}${route}: expected one H1, found ${$("h1").length}`);
     if ($("link[rel='canonical']").attr("href") !== expectedUrl) errors.push(`${locale.code}${route}: canonical is incorrect`);
-    const expectedHreflangs = locales.length + 1;
+    const indexableLocaleCodes = indexableLocalesForRoute(route);
+    const expectedHreflangs = isRouteIndexable(route, locale.code)
+      ? indexableLocaleCodes.size + (indexableLocaleCodes.has(defaultLocale) ? 1 : 0)
+      : 0;
     if ($("link[rel='alternate'][hreflang]").length !== expectedHreflangs) errors.push(`${locale.code}${route}: hreflang set is incomplete`);
     const isPlainNewsArticle = route.startsWith("/news/") && route !== "/news/";
     if (!isPlainNewsArticle && !$(".language-switcher").length) errors.push(`${locale.code}${route}: language switcher is missing`);
@@ -48,10 +52,23 @@ for (const locale of locales) {
 }
 
 const sitemap = await fs.readFile(path.join(root, "sitemap.xml"), "utf8");
-const expectedUrls = manifest.routes.length * locales.length;
-const actualUrls = (sitemap.match(/<url>/g) || []).length;
+if (!sitemap.includes("<sitemapindex") || !sitemapFiles.every((filename) => sitemap.includes(`<loc>${siteUrl}/${filename}</loc>`))) {
+  errors.push("sitemap: index or required child sitemap is missing");
+}
+const expectedUrls = manifest.routes.reduce((total, route) => total + indexableLocalesForRoute(route).size, 0);
+let actualUrls = 0;
+for (const filename of sitemapFiles) {
+  const child = await fs.readFile(path.join(root, filename), "utf8").catch(() => "");
+  if (!child.includes("<urlset")) errors.push(`sitemap: ${filename} is not a URL set`);
+  actualUrls += (child.match(/<url>/g) || []).length;
+}
 if (actualUrls !== expectedUrls) errors.push(`sitemap: expected ${expectedUrls} URLs, found ${actualUrls}`);
-if (!sitemap.includes('hreflang="x-default"')) errors.push("sitemap: x-default hreflang is missing");
+let hasXDefault = false;
+for (const filename of sitemapFiles) {
+  const child = await fs.readFile(path.join(root, filename), "utf8").catch(() => "");
+  if (child.includes('hreflang="x-default"')) hasXDefault = true;
+}
+if (!hasXDefault) errors.push("sitemap: x-default hreflang is missing");
 
 if (errors.length) {
   console.error(errors.join("\n"));

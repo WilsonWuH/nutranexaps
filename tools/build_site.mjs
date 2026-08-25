@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { sitemapFiles } from "../config/seo/indexing.mjs";
 
 const root = path.resolve(".");
 const siteUrl = "https://nutranexaps.com";
@@ -303,7 +304,7 @@ const products = [
     slug: "soy-lecithin",
     name: "Soy Lecithin",
     eyebrow: "Selected phospholipid ingredient",
-    title: "Soy Lecithin Powder, Liquid, and Granules for Food and Nutrition Formulations",
+    title: "Soy Lecithin Supplier: Powder, Liquid & Granules | Nutranexa",
     description:
       "Review soybean lecithin in powder, liquid, and granulated forms for food, dietary supplement, bakery, confectionery, dairy, and protein formulation projects.",
     image: "/assets/images/news-china-lecithin-july-2026-supply.webp",
@@ -1394,24 +1395,6 @@ function websiteJson() {
   };
 }
 
-function productJson(product, route) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    description: product.description,
-    image: `${siteUrl}${product.image}`,
-    brand: { "@type": "Brand", name: "Nutranexa" },
-    ...(product.schemaManufacturer === false ? {} : { manufacturer: { "@type": "Organization", name: "Shandong Baianrui Biopharmaceutical Co., Ltd." } }),
-    category: product.category || "Functional food ingredient",
-    url: urlFor(route),
-    ...(product.moq ? { additionalProperty: [
-      { "@type": "PropertyValue", name: "Minimum order quantity", value: product.moq },
-      { "@type": "PropertyValue", name: "Bulk packaging", value: product.packaging },
-    ] } : {}),
-  };
-}
-
 function articleJson(article, route) {
   const imageUrls = article.contentImages?.length
     ? [ `${siteUrl}${article.image}`, ...article.contentImages.map((src) => `${siteUrl}${src}`) ]
@@ -1868,7 +1851,7 @@ function productSeoTitle(product) {
     "soy-phosphatidylserine": "Soy Phosphatidylserine Supplier | Bulk Source & Specs",
     "sunflower-phosphatidylserine": "Sunflower Phosphatidylserine | 20% & 50% Supplier",
     "soluble-soybean-polysaccharide": "Soluble Soybean Polysaccharide Supplier | Nutranexa",
-    "soy-lecithin": "Soy Lecithin Powder, Liquid & Granules | Nutranexa",
+    "soy-lecithin": "Soy Lecithin Supplier: Powder, Liquid & Granules | Nutranexa",
   };
   return titles[product.slug] || `${product.name} Supplier | Nutranexa`;
 }
@@ -2084,8 +2067,8 @@ function lecithinHub() {
   <section class="form-panel"><div>${sectionIntro("Technical support", "Request a soybean lecithin document package", "Include form, application, target market, annual quantity, and required documents so the team can return the relevant technical files.")}</div>${quoteForm("Soy Lecithin", "", { productType: "lecithin" })}</section>
   <section class="link-panel"><a href="/products/">All products</a><a href="/products/phosphatidylserine/">Phosphatidylserine</a><a href="/products/soy-phosphatidylserine/">Soy PS</a><a href="/applications/functional-foods/">Functional food applications</a><a href="/contact/">Request current specification</a></section>`;
   return layout({
-    title: "Lecithin Ingredients | Soy Lecithin Forms | Nutranexa",
-    description: "Review selected lecithin ingredients, including powdered, liquid, and granulated soybean lecithin, with buyer-focused specifications and document requests.",
+    title: "Lecithin Ingredients for Food & Nutrition | Nutranexa",
+    description: "Review selected lecithin ingredients, including powdered, liquid, and granulated soybean lecithin, with supplier qualification, current specifications, and document requests.",
     route: "/products/lecithin/",
     schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"], ["Lecithin Ingredients", "/products/lecithin/"]])],
     body,
@@ -2253,7 +2236,7 @@ function productPage(product) {
     description: product.description,
     route,
     image: product.image,
-    schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"], [product.name, route]]), productJson(product, route)],
+    schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"], [product.name, route]])],
     body,
   });
 }
@@ -2307,7 +2290,7 @@ function psGradePage(grade) {
     description: `Explore ${grade.name} for ${grade.positioning.toLowerCase()}. Request current specifications, COA, TDS, MSDS, source details, and formulation support.`,
     route,
     image: grade.coa?.image || grade.image,
-    schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"], [grade.name, route]]), productJson(grade, route), {
+    schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"], [grade.name, route]]), {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: gradeFaqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })),
@@ -2320,6 +2303,7 @@ function applicationsHub() {
   const body = `<section class="page-hero compact"><p class="eyebrow">Applications</p><h1>Phosphatidylserine Application Solutions</h1><p>Explore how source, purity grade, product format, technical documents, and compliant scientific context shape PS formulation decisions.</p></section>
   <section>${sectionIntro("Application paths", "Choose the right application route", "Clarify product format, source preference, document needs, and quotation details before starting a sourcing discussion.")}
     <div class="card-grid">${applications.filter((app) => !app.legacy).map((app) => `<article class="item-card"><img src="${app.image}" alt="${esc(app.title)}" loading="lazy"><div><h3>${esc(app.title)}</h3><p>${esc(app.description)}</p><a href="/applications/${app.slug}/">Explore application &rarr;</a></div></article>`).join("")}</div>
+    <p class="section-note">For private-label and co-development projects, review <a href="/applications/oem-odm/">OEM/ODM application support</a> and share your target format, market, and document needs.</p>
   </section>`;
   return layout({
     title: "Applications | Phosphatidylserine for Supplements and Functional Foods",
@@ -2846,18 +2830,23 @@ for (const article of articles) await add(`/resources/${article.slug}/`, article
 await add("/thank-you/", thankYouPage());
 await add("/privacy/", privacyPage());
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${routes.filter((route) => route !== "/thank-you/").map((route) => `  <url><loc>${urlFor(route)}</loc></url>`).join("\n")}
-</urlset>
-`;
-await fs.writeFile(path.join(root, "sitemap.xml"), sitemap, "utf8");
-
 const robots = `User-agent: *
 Allow: /
 Sitemap: ${siteUrl}/sitemap.xml
 `;
 await fs.writeFile(path.join(root, "robots.txt"), robots, "utf8");
+
+// localize_site.mjs owns the final multilingual Sitemap Index. Remove stale
+// URL-set files from older generators so a deployment cannot expose duplicate
+// or legacy sitemap inventories between builds.
+await Promise.all([
+  "sitemap.xml",
+  "sitemap-en.xml",
+  "sitemap-ko.xml",
+  "sitemap-tr.xml",
+  "sitemap-existing-locales.xml",
+  ...sitemapFiles,
+].map((file) => fs.rm(path.join(root, file), { force: true })));
 
 console.log(`Built ${routes.length} routes`);
 

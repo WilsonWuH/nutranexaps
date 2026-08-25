@@ -3,12 +3,27 @@ import path from "node:path";
 import { load } from "cheerio";
 import { defaultLocale, localeConfig, localePath, locales, runtimeMessages } from "../i18n/config.mjs";
 import { translationOverrides } from "../i18n/overrides.mjs";
+import {
+  indexableLocalesForRoute,
+  isRouteIndexable,
+  sitemapFiles,
+  sitemapGroup,
+} from "../config/seo/indexing.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://nutranexaps.com";
 const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "assets", "i18n", "apps", "config", "content", "docs", "qa", "tmp"]);
 const localeCodes = new Set(locales.map((locale) => locale.code));
-const defaultOnlyRoutes = new Set(["/products/lecithin/", "/products/soy-lecithin/"]);
+const legacyMarketLocales = new Set(["ko", "tr"]);
+const preservedLegacyRoutes = [
+  "/quote/",
+  "/sample-request/",
+  "/technical-documents/",
+  "/packaging-delivery/",
+  "/faq/",
+  "/blog/",
+  "/products/ps-specifications/",
+];
 
 const terminologyReplacements = {
   ko: [
@@ -146,8 +161,7 @@ function localizeHtml(html, locale, route, messages, indexableLocaleCodes, { com
   const $ = load(html, { decodeEntities: false });
   const localizedRoute = publicLocalePath(locale, route);
   const localizedCanonical = `${siteUrl}${localizedRoute}`;
-  const routeIndexableLocaleCodes = defaultOnlyRoutes.has(route) ? new Set([defaultLocale]) : indexableLocaleCodes;
-  const isIndexable = routeIndexableLocaleCodes.has(locale);
+  const isIndexable = isRouteIndexable(route, locale);
 
   $("html").attr("lang", locale).attr("dir", config.dir);
   $("body").addClass(`locale-${locale}`);
@@ -190,7 +204,7 @@ function localizeHtml(html, locale, route, messages, indexableLocaleCodes, { com
   $("link[rel='canonical']").attr("href", localizedCanonical);
   $("link[rel='alternate'][hreflang]").remove();
   if (isIndexable) {
-    const alternates = alternateLinks(route, routeIndexableLocaleCodes);
+    const alternates = alternateLinks(route, indexableLocaleCodes);
     if (alternates) $("link[rel='canonical']").after(`\n  ${alternates}`);
   }
   if (!isIndexable) {
@@ -224,9 +238,19 @@ function localizeHtml(html, locale, route, messages, indexableLocaleCodes, { com
 }
 
 const dictionaries = new Map();
+const preservedLegacyPages = new Map();
 for (const locale of locales) {
   const content = JSON.parse(await fs.readFile(path.join(root, "i18n", "messages", `${locale.code}.json`), "utf8"));
   dictionaries.set(locale.code, applyTerminology({ ...content.messages, ...(translationOverrides[locale.code] || {}) }, locale.code));
+  const legacyPages = new Map();
+  if (legacyMarketLocales.has(locale.code)) {
+    for (const route of preservedLegacyRoutes) {
+      const file = outputPath(locale.code, route);
+      const html = await fs.readFile(file, "utf8").catch(() => null);
+      if (html) legacyPages.set(route, html.replaceAll("/quality-control/", "/quality-rd/"));
+    }
+  }
+  preservedLegacyPages.set(locale.code, legacyPages);
   await fs.rm(path.join(root, locale.code), { recursive: true, force: true });
 }
 
@@ -236,9 +260,8 @@ const indexableLocalesByRoute = new Map();
 for (const page of pages) {
   const route = routeFromRelative(page.relative);
   const html = await fs.readFile(page.absolute, "utf8");
-  const sourceRobots = (html.match(/<meta name="robots" content="([^"]*)"/i)?.[1] || "").toLowerCase();
-  const indexableLocaleCodes = new Set(sourceRobots.includes("noindex") ? [] : locales.map((locale) => locale.code));
-  indexableLocalesByRoute.set(route, defaultOnlyRoutes.has(route) ? new Set([defaultLocale]) : indexableLocaleCodes);
+  const indexableLocaleCodes = indexableLocalesForRoute(route);
+  indexableLocalesByRoute.set(route, indexableLocaleCodes);
   for (const locale of locales) {
     const destination = outputPath(locale.code, route);
     await fs.mkdir(path.dirname(destination), { recursive: true });
@@ -247,7 +270,15 @@ for (const page of pages) {
   await fs.writeFile(page.absolute, localizeHtml(html, defaultLocale, route, dictionaries.get(defaultLocale), indexableLocaleCodes, { compatibility: true }), "utf8");
 }
 
-const sitemapEntries = [];
+for (const [locale, pagesToRestore] of preservedLegacyPages) {
+  for (const [route, html] of pagesToRestore) {
+    const destination = outputPath(locale, route);
+    await fs.mkdir(path.dirname(destination), { recursive: true });
+    await fs.writeFile(destination, html, "utf8");
+  }
+}
+
+const sitemapEntries = new Map(sitemapFiles.map((name) => [name, []]));
 for (const route of routes) {
   const indexableLocaleCodes = indexableLocalesByRoute.get(route) || new Set();
   const indexableLocales = locales.filter((locale) => indexableLocaleCodes.has(locale.code));
@@ -257,12 +288,24 @@ for (const route of routes) {
     `    <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl}${publicLocalePath(defaultLocale, route)}"/>`,
   ].join("\n");
   for (const locale of indexableLocales) {
-    sitemapEntries.push(`  <url>\n    <loc>${siteUrl}${publicLocalePath(locale.code, route)}</loc>\n${alternates}\n  </url>`);
+    const entry = `  <url>\n    <loc>${siteUrl}${publicLocalePath(locale.code, route)}</loc>\n${alternates}\n  </url>`;
+    const filename = `sitemap-${sitemapGroup(route, locale.code)}.xml`;
+    sitemapEntries.get(filename)?.push(entry);
   }
 }
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemapEntries.join("\n")}\n</urlset>\n`;
-await fs.writeFile(path.join(root, "sitemap.xml"), sitemap, "utf8");
+const sitemapHeader = '<?xml version="1.0" encoding="UTF-8"?>';
+const sitemapUrlset = (entries) => `${sitemapHeader}\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join("\n")}\n</urlset>\n`;
+await Promise.all(sitemapFiles.map((filename) => fs.writeFile(path.join(root, filename), sitemapUrlset(sitemapEntries.get(filename)), "utf8")));
+const sitemapIndex = `${sitemapHeader}\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapFiles.map((filename) => `  <sitemap><loc>${siteUrl}/${filename}</loc></sitemap>`).join("\n")}\n</sitemapindex>\n`;
+await fs.writeFile(path.join(root, "sitemap.xml"), sitemapIndex, "utf8");
+await Promise.all([
+  "sitemap-en.xml",
+  "sitemap-ko.xml",
+  "sitemap-tr.xml",
+  "sitemap-existing-locales.xml",
+].map((filename) => fs.rm(path.join(root, filename), { force: true })));
 await fs.writeFile(path.join(root, "i18n", "routes.json"), `${JSON.stringify({ defaultLocale, locales: locales.map((locale) => locale.code), routes }, null, 2)}\n`, "utf8");
 
-console.log(`Generated ${pages.length * locales.length} localized pages across ${locales.length} locales.`);
+const sitemapStats = Object.fromEntries(sitemapFiles.map((filename) => [filename, sitemapEntries.get(filename).length]));
+console.log(`Generated ${pages.length * locales.length} localized pages across ${locales.length} locales. Sitemap URLs: ${JSON.stringify(sitemapStats)}`);

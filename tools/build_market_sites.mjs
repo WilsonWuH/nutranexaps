@@ -48,7 +48,7 @@ const siteData = {
       ["홈", "/"],
       ["제품", "/products/"],
       ["응용 분야", "/applications/"],
-      ["품질 관리", "/quality-control/"],
+      ["품질 관리", "/quality-rd/"],
       ["기술 자료", "/technical-documents/"],
       ["포장·납품", "/packaging-delivery/"],
       ["블로그", "/blog/"],
@@ -132,7 +132,7 @@ const siteData = {
         sections: [["샘플 검토 기준", "색상, 냄새, 분산성, 흐름성, 입도, 수분, 산화 관련 항목, 미생물 기준은 적용 제품에 따라 검토 방식이 달라질 수 있습니다."]],
       },
       quality: {
-        route: "/quality-control/",
+        route: "/quality-rd/",
         title: "품질 관리 | PS 원료 COA, 규격서, 시험 항목",
         description: "포스파티딜세린 원료 구매 전 확인해야 할 COA, 규격서, 중금속, 미생물, 수분, 산화 관리 항목을 정리했습니다.",
         h1: "PS 원료 품질 관리와 문서 검토",
@@ -289,7 +289,7 @@ const siteData = {
       ["Ana Sayfa", "/"],
       ["Ürünler", "/products/"],
       ["Uygulamalar", "/applications/"],
-      ["Kalite", "/quality-control/"],
+      ["Kalite", "/quality-rd/"],
       ["Teknik Belgeler", "/technical-documents/"],
       ["Ambalaj ve Teslimat", "/packaging-delivery/"],
       ["Blog", "/blog/"],
@@ -371,7 +371,7 @@ const siteData = {
         sections: [["Numune değerlendirmesi", "Renk, koku, akışkanlık, dispersiyon, nem, oksidasyon kontrolü ve mikrobiyolojik kriterler ürün uygulamasına göre değerlendirilmelidir."]],
       },
       quality: {
-        route: "/quality-control/",
+        route: "/quality-rd/",
         title: "Kalite Kontrol | Fosfatidilserin COA ve Spesifikasyon",
         description: "Fosfatidilserin alımında COA, teknik föy, ağır metal, mikrobiyoloji, nem ve kalıntı solvent kontrolü nasıl incelenir?",
         h1: "PS hammaddesi kalite kontrol ve belge incelemesi",
@@ -567,16 +567,6 @@ function schema(site, page) {
       ],
     },
   ];
-  if (page.product) {
-    graph.push({
-      "@context": "https://schema.org",
-      "@type": "Product",
-      name: page.h1,
-      brand: { "@type": "Brand", name: "Nutranexa" },
-      category: "Functional food ingredient",
-      description: page.description,
-    });
-  }
   if (page.faq) {
     graph.push({
       "@context": "https://schema.org",
@@ -712,7 +702,7 @@ function renderPage(site, page) {
   if (page.route === "/") {
     body += productCards(site);
     body += sectionsHtml(page.sections);
-    body += `<section class="split"><div><h2>${esc(site.pages.quality.h1)}</h2><p>${esc(site.pages.quality.intro)}</p><a class="button secondary" href="/quality-control/">${esc(site.ctaDocs)}</a></div><img src="/assets/images/quality-document-review.webp" alt="${esc(site.pages.quality.h1)}" width="900" height="620"></section>`;
+    body += `<section class="split"><div><h2>${esc(site.pages.quality.h1)}</h2><p>${esc(site.pages.quality.intro)}</p><a class="button secondary" href="/quality-rd/">${esc(site.ctaDocs)}</a></div><img src="/assets/images/quality-document-review.webp" alt="${esc(site.pages.quality.h1)}" width="900" height="620"></section>`;
   } else if (page.route === "/products/") {
     body += productCards(site);
   } else if (page.specs) {

@@ -30,6 +30,8 @@ const nextConfig = {
       { source: "/inquiry", destination: "/contact/", permanent: true },
       { source: "/en", destination: "/", permanent: true },
       { source: "/en/:path*", destination: "/:path*", permanent: true },
+      { source: "/ko/quality-control/", destination: "/ko/quality-rd/", permanent: true },
+      { source: "/tr/quality-control/", destination: "/tr/quality-rd/", permanent: true },
     ];
   },
   async headers() {

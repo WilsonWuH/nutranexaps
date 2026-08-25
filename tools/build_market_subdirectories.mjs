@@ -60,9 +60,6 @@ function schema(site, page) {
       ],
     },
   ];
-  if (page.type === "product") {
-    graph.push({ "@type": "Product", name: page.h1, description: page.description, category: "Phosphatidylserine ingredient", brand: { "@type": "Brand", name: company.name }, url: canonical(site.locale, page.route) });
-  }
   if (page.type === "faq") {
     graph.push({ "@type": "FAQPage", mainEntity: page.faq.map(([question, answer]) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) });
   }

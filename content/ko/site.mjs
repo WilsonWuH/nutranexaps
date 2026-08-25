@@ -5,7 +5,7 @@ const common = {
   market: "한국",
   nav: [
     ["홈", "/"], ["제품", "/products/"], ["응용 분야", "/applications/"],
-    ["품질 관리", "/quality-control/"], ["기술 문서", "/technical-documents/"],
+    ["품질 관리", "/quality-rd/"], ["기술 문서", "/technical-documents/"],
     ["포장 및 납품", "/packaging-delivery/"], ["자료", "/blog/"], ["문의", "/contact/"],
   ],
   ui: {
@@ -70,7 +70,7 @@ const pages = [
     intro: "샘플 목적, 적용 제형, 목표 함량과 후속 구매 계획을 공유해 주시면 제공 가능 여부를 확인합니다.",
   },
   {
-    route: "/quality-control/",
+    route: "/quality-rd/",
     title: "포스파티딜세린 품질 관리 | COA·규격 검토",
     description: "PS 함량, 원료 출처, 미생물, 중금속, 잔류용매와 산화 관련 품질 문서 검토 항목을 확인하세요.",
     h1: "PS 원료 품질 관리와 로트 문서 검토",
