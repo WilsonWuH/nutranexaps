@@ -5,6 +5,7 @@ import { defaultLocale, localeConfig, localePath, locales, runtimeMessages } fro
 import { translationOverrides } from "../i18n/overrides.mjs";
 import {
   indexableLocalesForRoute,
+  sitemapLocalesForRoute,
   isRouteIndexable,
   sitemapFiles,
   sitemapGroup,
@@ -23,6 +24,10 @@ const preservedLegacyRoutes = [
   "/faq/",
   "/blog/",
   "/products/ps-specifications/",
+  // The market configuration still exposes this legacy commercial route. Keep
+  // its localized HTML available while the main English application taxonomy
+  // remains focused on current application pages.
+  "/applications/oem-odm/",
 ];
 
 const terminologyReplacements = {
@@ -257,11 +262,13 @@ for (const locale of locales) {
 const pages = await findEnglishPages(root);
 const routes = pages.map((page) => routeFromRelative(page.relative));
 const indexableLocalesByRoute = new Map();
+const sitemapLocalesByRoute = new Map();
 for (const page of pages) {
   const route = routeFromRelative(page.relative);
   const html = await fs.readFile(page.absolute, "utf8");
   const indexableLocaleCodes = indexableLocalesForRoute(route);
   indexableLocalesByRoute.set(route, indexableLocaleCodes);
+  sitemapLocalesByRoute.set(route, sitemapLocalesForRoute(route));
   for (const locale of locales) {
     const destination = outputPath(locale.code, route);
     await fs.mkdir(path.dirname(destination), { recursive: true });
@@ -270,8 +277,13 @@ for (const page of pages) {
   await fs.writeFile(page.absolute, localizeHtml(html, defaultLocale, route, dictionaries.get(defaultLocale), indexableLocaleCodes, { compatibility: true }), "utf8");
 }
 
+const generatedRouteSet = new Set(routes);
 for (const [locale, pagesToRestore] of preservedLegacyPages) {
   for (const [route, html] of pagesToRestore) {
+    // OEM/ODM is now a first-class generated application route. Keep it in the
+    // compatibility inventory for old checkouts, but prefer the current page
+    // so every locale receives the normal WebPage/hreflang head.
+    if (route === "/applications/oem-odm/" && generatedRouteSet.has(route)) continue;
     const destination = outputPath(locale, route);
     await fs.mkdir(path.dirname(destination), { recursive: true });
     await fs.writeFile(destination, html, "utf8");
@@ -280,14 +292,14 @@ for (const [locale, pagesToRestore] of preservedLegacyPages) {
 
 const sitemapEntries = new Map(sitemapFiles.map((name) => [name, []]));
 for (const route of routes) {
-  const indexableLocaleCodes = indexableLocalesByRoute.get(route) || new Set();
-  const indexableLocales = locales.filter((locale) => indexableLocaleCodes.has(locale.code));
-  if (!indexableLocales.length) continue;
+  const sitemapLocaleCodes = sitemapLocalesByRoute.get(route) || new Set();
+  const sitemapLocales = locales.filter((locale) => sitemapLocaleCodes.has(locale.code));
+  if (!sitemapLocales.length) continue;
   const alternates = [
-    ...indexableLocales.map((locale) => `    <xhtml:link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${publicLocalePath(locale.code, route)}"/>`),
+    ...sitemapLocales.map((locale) => `    <xhtml:link rel="alternate" hreflang="${locale.code}" href="${siteUrl}${publicLocalePath(locale.code, route)}"/>`),
     `    <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl}${publicLocalePath(defaultLocale, route)}"/>`,
   ].join("\n");
-  for (const locale of indexableLocales) {
+  for (const locale of sitemapLocales) {
     const entry = `  <url>\n    <loc>${siteUrl}${publicLocalePath(locale.code, route)}</loc>\n${alternates}\n  </url>`;
     const filename = `sitemap-${sitemapGroup(route, locale.code)}.xml`;
     sitemapEntries.get(filename)?.push(entry);

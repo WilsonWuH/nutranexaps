@@ -19,7 +19,10 @@ for (const route of routes) {
     h1: document.querySelector("h1")?.textContent?.trim(),
     horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
     canonical: document.querySelector('link[rel="canonical"]')?.href,
-    imagesWithoutAlt: [...document.images].filter((image) => !image.hasAttribute("alt") || !image.alt.trim()).length,
+    // Empty alt is correct for decorative imagery; only a missing alt
+    // attribute is a defect. Keep the count explicit for the report.
+    imagesWithoutAlt: [...document.images].filter((image) => !image.hasAttribute("alt")).length,
+    decorativeEmptyAlt: [...document.images].filter((image) => image.hasAttribute("alt") && !image.alt.trim()).length,
     forms: document.querySelectorAll("form").length,
   }));
   if (!response?.ok()) errors.push(`${route} returned ${response?.status()}`);
@@ -31,9 +34,12 @@ for (const route of routes) {
 await page.setViewportSize({ width: 390, height: 844 });
 for (const route of ["/ko/", "/tr/", "/ko/contact/", "/tr/contact/"]) {
   const response = await page.goto(base + route, { waitUntil: "networkidle" });
-  await page.locator(".nav-toggle").click();
+  const navToggle = page.locator(".nav-toggle");
+  if (await navToggle.count()) await navToggle.click();
   const data = await page.evaluate(() => ({
-    navOpen: document.querySelector("#market-nav")?.classList.contains("open"),
+    // The deployment uses #site-nav; #market-nav is retained only for the
+    // retired standalone market template.
+    navOpen: document.querySelector("#site-nav")?.classList.contains("open") ?? document.querySelector("#market-nav")?.classList.contains("open"),
     horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
     overflowing: [...document.querySelectorAll("body *")].filter((element) => element.getBoundingClientRect().right > document.documentElement.clientWidth + 1).slice(0, 8).map((element) => ({ tag: element.tagName, className: element.className, text: element.textContent?.trim().slice(0, 80), right: Math.round(element.getBoundingClientRect().right), width: Math.round(element.getBoundingClientRect().width) })),
     buttonWidth: document.querySelector(".button")?.getBoundingClientRect().width,

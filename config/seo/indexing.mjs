@@ -1,8 +1,8 @@
 import { defaultLocale, locales } from "../../i18n/config.mjs";
 
-// This policy is deliberately conservative: English content remains the primary
-// discovery surface, while localized pages enter the index only when they are
-// core commercial pages or have a documented performance signal.
+// Indexability and sitemap inclusion are deliberately separate decisions.
+// Without a complete GSC export, an existing localized page stays indexable and
+// crawlable even when it is temporarily omitted from the concentrated sitemap.
 export const siteUrl = "https://nutranexaps.com";
 export const localeCodes = locales.map(({ code }) => code);
 
@@ -79,15 +79,25 @@ export function isNewsRoute(route) {
 export function isRouteIndexable(route, locale = defaultLocale) {
   if (!route || utilityRoutes.has(route) || route === "/quality-control/") return false;
   if (englishOnlyRoutes.has(route)) return locale === defaultLocale;
-  if (coreRoutes.has(route)) return true;
-  if (performanceRoutes.get(locale)?.has(route)) return true;
-  // English is the controlled source language and remains indexable for all
-  // content routes. Other locales need an allowlist entry.
-  return locale === defaultLocale;
+  // Existing localized pages remain index,follow until a complete GSC export
+  // supports a deliberate noindex batch. The sitemap policy below is narrower.
+  return true;
 }
 
 export function indexableLocalesForRoute(route) {
   return new Set(localeCodes.filter((locale) => isRouteIndexable(route, locale)));
+}
+
+export function includeInSitemap(route, locale = defaultLocale) {
+  if (!isRouteIndexable(route, locale)) return false;
+  if (englishOnlyRoutes.has(route)) return locale === defaultLocale;
+  if (coreRoutes.has(route)) return true;
+  if (performanceRoutes.get(locale)?.has(route)) return true;
+  return locale === defaultLocale;
+}
+
+export function sitemapLocalesForRoute(route) {
+  return new Set(localeCodes.filter((locale) => includeInSitemap(route, locale)));
 }
 
 export function sitemapGroup(route, locale) {

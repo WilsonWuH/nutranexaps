@@ -47,4 +47,5 @@ export const englishRouteMap = new Map([
   ["/applications/", "/applications/"],
   ["/applications/dietary-supplements/", "/applications/dietary-supplements/"],
   ["/applications/functional-foods/", "/applications/functional-foods/"],
+  ["/applications/oem-odm/", "/applications/oem-odm/"],
 ]);

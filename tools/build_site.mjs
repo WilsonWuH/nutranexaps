@@ -446,6 +446,20 @@ const applications = [
       ["Functional food concepts", "Define the target country, permitted positioning, process conditions, source preference, and required document package."],
     ],
   },
+  {
+    slug: "oem-odm",
+    title: "OEM/ODM Phosphatidylserine Ingredient Support",
+    seoTitle: "OEM/ODM PS Ingredient Support | Nutranexa",
+    description: "Coordinate PS source qualification, target grade, technical documents, samples, and supplier communication for OEM/ODM product development.",
+    image: "/assets/images/brand-product-lab.webp",
+    tags: ["Supplier Qualification", "Technical Documents", "Product Development"],
+    points: ["Source and grade qualification", "Sample and document coordination", "Application and packaging discussions", "Commercial details confirmed by quotation"],
+    formats: [
+      ["Private-label supplements", "Align source, target assay, format, documents, and market requirements with the finished-product team."],
+      ["Functional food concepts", "Review processing, stability, packaging, and permitted positioning before a formulation trial."],
+      ["Co-development projects", "Share the product brief, destination market, target volume, and document list for supplier-side review."],
+    ],
+  },
 ];
 
 const psGrades = [
@@ -1395,6 +1409,20 @@ function websiteJson() {
   };
 }
 
+function webPageJson({ title, description, route }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${urlFor(route)}#webpage`,
+    url: urlFor(route),
+    name: title,
+    description,
+    inLanguage: "en",
+    isPartOf: { "@type": "WebSite", "@id": `${siteUrl}/#website`, name: "Nutranexa", url: siteUrl },
+    about: { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: "Nutranexa", url: siteUrl },
+  };
+}
+
 function articleJson(article, route) {
   const imageUrls = article.contentImages?.length
     ? [ `${siteUrl}${article.image}`, ...article.contentImages.map((src) => `${siteUrl}${src}`) ]
@@ -1425,13 +1453,26 @@ function resourceFaqJson(article) {
   };
 }
 
+function productFaqJson(product) {
+  if (!product.faqs?.length) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: product.faqs.map(([question, answer]) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
+  };
+}
+
 function layout({ title, description, route, body, schema = [], image = "/assets/images/factory-aerial-wide.webp", imageAlt = "", imageWidth = "", imageHeight = "", ogType = "website", head = "", optimizeLogo = false, robots = "index,follow" }) {
   const active = route.split("/")[1] || "";
   const headerLogo = optimizeLogo
     ? '<img src="/assets/images/logo-nutranexa-260.webp" srcset="/assets/images/logo-nutranexa-260.webp 1x, /assets/images/logo-nutranexa-520.webp 2x" alt="Nutranexa logo" width="260" height="60" decoding="async">'
     : '<img src="/assets/images/logo-nutranexa.webp" alt="Nutranexa logo" width="260" height="60">';
   const canonical = urlFor(route);
-  const allSchema = [organizationJson(), websiteJson(), ...schema];
+  const allSchema = [organizationJson(), websiteJson(), webPageJson({ title, description, route }), ...schema].filter(Boolean);
   const ogImageDetails = [
     imageAlt ? `<meta property="og:image:alt" content="${esc(imageAlt)}">` : "",
     imageWidth ? `<meta property="og:image:width" content="${esc(imageWidth)}">` : "",
@@ -1489,7 +1530,7 @@ ${twitterImageAlt ? `  ${twitterImageAlt}\n` : ""}${head ? `  ${head}\n` : ""}  
 
 function plainNewsArticleLayout({ title, description, route, body, schema = [], image, imageAlt = "" }) {
   const canonical = urlFor(route);
-  const allSchema = [organizationJson(), websiteJson(), ...schema];
+  const allSchema = [organizationJson(), websiteJson(), webPageJson({ title, description, route }), ...schema].filter(Boolean);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -2236,7 +2277,7 @@ function productPage(product) {
     description: product.description,
     route,
     image: product.image,
-    schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"], [product.name, route]])],
+    schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"], [product.name, route]]), productFaqJson(product)].filter(Boolean),
     body,
   });
 }

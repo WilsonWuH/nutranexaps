@@ -560,6 +560,17 @@ function schema(site, page) {
     },
     {
       "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${canonical(site, page.route)}#webpage`,
+      url: canonical(site, page.route),
+      name: page.title,
+      description: page.description,
+      inLanguage: site.lang,
+      isPartOf: { "@type": "WebSite", "@id": `${base}/#website`, name: site.name, url: base },
+      about: { "@type": "Organization", "@id": `${base}/#organization`, name: company.name, url: base },
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: site.nav[0][0], item: `${base}/` },

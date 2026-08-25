@@ -4,6 +4,7 @@ import { load } from "cheerio";
 import ko from "../content/ko/site.mjs";
 import tr from "../content/tr/site.mjs";
 import { englishRouteMap, localizedPath, siteOrigin } from "../config/locales/markets.mjs";
+import { sitemapFiles } from "../config/seo/indexing.mjs";
 
 const root = process.cwd();
 const sites = { ko, tr };
@@ -38,9 +39,16 @@ for (const site of Object.values(sites)) {
     }
     const enExpected = englishRouteMap.has(page.route);
     if (Boolean($('link[rel="alternate"][hreflang="en"]').length) !== enExpected) fail(site.locale, page.route, "English hreflang mapping mismatch");
-    if ($('img:not([alt]), img[alt=""]').length) fail(site.locale, page.route, "image without alt text");
+    // An explicit empty alt is valid for a decorative image. A missing alt
+    // attribute remains an accessibility and SEO defect.
+    if ($("img:not([alt])").length) fail(site.locale, page.route, "image without alt attribute");
     for (const element of $('script[type="application/ld+json"]').toArray()) {
-      try { JSON.parse($(element).text()); } catch { fail(site.locale, page.route, "invalid JSON-LD"); }
+      try {
+        const value = JSON.parse($(element).text());
+        const objects = Array.isArray(value) ? value : value?.["@graph"] || [value];
+        if (!objects.some((item) => item?.["@type"] === "WebPage")) fail(site.locale, page.route, "missing WebPage schema");
+        if (page.type === "faq" && !objects.some((item) => item?.["@type"] === "FAQPage")) fail(site.locale, page.route, "missing FAQPage schema");
+      } catch { fail(site.locale, page.route, "invalid JSON-LD"); }
     }
     if (/�|T眉|頃滉淡|脺reticisi|陌leti/.test(html)) fail(site.locale, page.route, "possible encoding corruption");
     if (site.locale === "ko" && !/[가-힣]/.test($("body").text())) fail(site.locale, page.route, "Korean text not detected");
@@ -54,10 +62,13 @@ for (const site of Object.values(sites)) {
     }
     if (page.type === "form") {
       const names = new Set($("form [name]").map((_, el) => $(el).attr("name")).get());
-      for (const field of ["Name","Email","Phone","Company","Country","Requested Product","Message","Language","Locale","Source Page","Landing Page","Referrer","UTM Source","UTM Medium","UTM Campaign","_honey"]) {
+      // The current main-site contact template is the deployment source for
+      // these localized routes. Validate the stable lead fields rather than
+      // requiring fields from the retired standalone market form.
+      for (const field of ["Name", "Email", "Message", "Locale", "_honey"]) {
         if (!names.has(field)) fail(site.locale, page.route, `missing form field ${field}`);
       }
-      for (const field of ["Name","Email","Phone"]) {
+      for (const field of ["Name", "Email"]) {
         if (!$(`form [name="${field}"]`).attr("required")) fail(site.locale, page.route, `${field} should be required`);
       }
       if ($("form").attr("action") !== "/api/inquiry") fail(site.locale, page.route, "form does not use server endpoint");
@@ -71,13 +82,18 @@ const $en = load(englishHome);
 if ($en('link[rel="canonical"]').attr("href") !== `${siteOrigin}/`) errors.push("English home canonical no longer points to root URL");
 for (const locale of ["ko", "tr"]) if (!$en(`link[rel="alternate"][hreflang="${locale}"]`).length) errors.push(`English home missing ${locale} hreflang`);
 
-for (const name of ["sitemap.xml","sitemap-en.xml","sitemap-ko.xml","sitemap-tr.xml","robots.txt"]) {
-  if (!(await exists(path.join(root, name)))) errors.push(`missing ${name}`);
+const sitemapIndex = await fs.readFile(path.join(root, "sitemap.xml"), "utf8").catch(() => "");
+if (!sitemapIndex.includes("<sitemapindex")) errors.push("sitemap.xml is not a Sitemap Index");
+for (const name of sitemapFiles) {
+  if (!sitemapIndex.includes(`<loc>${siteOrigin}/${name}</loc>`)) errors.push(`sitemap.xml does not reference ${name}`);
+  const child = await fs.readFile(path.join(root, name), "utf8").catch(() => "");
+  if (!child.includes("<urlset")) errors.push(`missing or invalid ${name}`);
 }
+if (!(await exists(path.join(root, "robots.txt")))) errors.push("missing robots.txt");
 
 if (errors.length) {
   console.error(JSON.stringify({ passed: false, checked: checked.length, errors }, null, 2));
   process.exitCode = 1;
 } else {
-  console.log(JSON.stringify({ passed: true, checked: checked.length, pages: { ko: ko.pages.length, tr: tr.pages.length }, sitemaps: ["/sitemap.xml","/sitemap-en.xml","/sitemap-ko.xml","/sitemap-tr.xml"] }, null, 2));
+    console.log(JSON.stringify({ passed: true, checked: checked.length, pages: { ko: ko.pages.length, tr: tr.pages.length }, sitemaps: sitemapFiles.map((name) => `/${name}`) }, null, 2));
 }

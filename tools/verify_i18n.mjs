@@ -3,7 +3,7 @@ import path from "node:path";
 import { load } from "cheerio";
 import { defaultLocale, localePath, locales } from "../i18n/config.mjs";
 import { translationOverrides } from "../i18n/overrides.mjs";
-import { indexableLocalesForRoute, isRouteIndexable, sitemapFiles } from "../config/seo/indexing.mjs";
+import { indexableLocalesForRoute, isRouteIndexable, sitemapFiles, sitemapLocalesForRoute } from "../config/seo/indexing.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://nutranexaps.com";
@@ -55,7 +55,7 @@ const sitemap = await fs.readFile(path.join(root, "sitemap.xml"), "utf8");
 if (!sitemap.includes("<sitemapindex") || !sitemapFiles.every((filename) => sitemap.includes(`<loc>${siteUrl}/${filename}</loc>`))) {
   errors.push("sitemap: index or required child sitemap is missing");
 }
-const expectedUrls = manifest.routes.reduce((total, route) => total + indexableLocalesForRoute(route).size, 0);
+const expectedUrls = manifest.routes.reduce((total, route) => total + sitemapLocalesForRoute(route).size, 0);
 let actualUrls = 0;
 for (const filename of sitemapFiles) {
   const child = await fs.readFile(path.join(root, filename), "utf8").catch(() => "");

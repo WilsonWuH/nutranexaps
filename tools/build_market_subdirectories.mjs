@@ -3,6 +3,7 @@ import path from "node:path";
 import ko from "../content/ko/site.mjs";
 import tr from "../content/tr/site.mjs";
 import { company, englishRouteMap, localizedPath, siteOrigin } from "../config/locales/markets.mjs";
+import { sitemapFiles } from "../config/seo/indexing.mjs";
 
 const root = process.cwd();
 const sites = { ko, tr };
@@ -166,46 +167,16 @@ async function writeSites() {
   }
 }
 
-async function englishRoutes() {
-  const dirs = ["about","applications","benefits","cases","contact","manufacturing","news","privacy","products","quality-rd","resources","thank-you"];
-  const urls = ["/"];
-  async function walk(directory, base) {
-    for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
-      const absolute = path.join(directory, entry.name);
-      const relative = path.posix.join(base, entry.name);
-      if (entry.isDirectory()) await walk(absolute, relative);
-      else if (entry.name === "index.html") urls.push(`/${path.posix.dirname(relative).replace(/^\.$/, "")}/`.replace(/\/+/g, "/"));
-    }
-  }
-  for (const dir of dirs) if (await fs.stat(path.join(root, dir)).then(() => true).catch(() => false)) await walk(path.join(root, dir), dir);
-  return [...new Set(urls)].sort();
-}
-
-function sitemapUrlset(entries) {
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join("\n")}\n</urlset>\n`;
-}
-
-async function writeSitemaps() {
+async function verifySitemapIndex() {
+  // Sitemap ownership belongs to localize_site.mjs. The standalone market
+  // page builder must not recreate the retired four-file inventory after the
+  // main build has produced the six diagnostic child maps.
   const current = await fs.readFile(path.join(root, "sitemap.xml"), "utf8").catch(() => "");
-  if (current.includes("<urlset")) await fs.writeFile(path.join(root, "sitemap-existing-locales.xml"), current, "utf8");
-  const english = await englishRoutes();
-  await fs.writeFile(path.join(root, "sitemap-en.xml"), sitemapUrlset(english.map((route) => `  <url><loc>${siteOrigin}${route}</loc></url>`)), "utf8");
-  for (const site of Object.values(sites)) {
-    const entries = site.pages.map((page) => {
-      const alternates = ["ko","tr"].map((locale) => `<xhtml:link rel="alternate" hreflang="${locale}" href="${canonical(locale, page.route)}"/>`);
-      const en = englishRouteMap.get(page.route);
-      if (en) alternates.unshift(`<xhtml:link rel="alternate" hreflang="en" href="${siteOrigin}${en}"/>`);
-      if (en) alternates.push(`<xhtml:link rel="alternate" hreflang="x-default" href="${siteOrigin}${en}"/>`);
-      return `  <url><loc>${canonical(site.locale, page.route)}</loc>${alternates.join("")}</url>`;
-    });
-    await fs.writeFile(path.join(root, `sitemap-${site.locale}.xml`), sitemapUrlset(entries), "utf8");
+  if (!current.includes("<sitemapindex") || !sitemapFiles.every((filename) => current.includes(`<loc>${siteOrigin}/${filename}</loc>`))) {
+    throw new Error("Run npm run generate before the standalone market builder so the six-child Sitemap Index is present.");
   }
-  const names = ["sitemap-en.xml", "sitemap-ko.xml", "sitemap-tr.xml", ...(current.includes("<urlset") ? ["sitemap-existing-locales.xml"] : [])];
-  const index = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${names.map((name) => `  <sitemap><loc>${siteOrigin}/${name}</loc></sitemap>`).join("\n")}\n</sitemapindex>\n`;
-  await fs.writeFile(path.join(root, "sitemap.xml"), index, "utf8");
-  await fs.writeFile(path.join(root, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${siteOrigin}/sitemap.xml\nSitemap: ${siteOrigin}/sitemap-ko.xml\nSitemap: ${siteOrigin}/sitemap-tr.xml\n`, "utf8");
 }
 
 await writeSites();
-await writeSitemaps();
+await verifySitemapIndex();
 console.log(`Built ${ko.pages.length} Korean and ${tr.pages.length} Turkish subdirectory pages.`);
