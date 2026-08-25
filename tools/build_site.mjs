@@ -1617,9 +1617,9 @@ function footer(optimizeLogo = false) {
 </footer>`;
 }
 
-function hero({ eyebrow, title, text, image, cta = "Request a Quote", secondary = "View Products", contactHref = "/contact/", secondaryHref = "/products/", heroClass = "" }) {
+function hero({ eyebrow, title, text, image, imageAlt = "", cta = "Request a Quote", secondary = "View Products", contactHref = "/contact/", secondaryHref = "/products/", heroClass = "" }) {
   return `<section class="hero${heroClass ? ` ${esc(heroClass)}` : ""}">
-  <div class="hero-media"><img src="${image}" alt="" loading="eager"></div>
+  <div class="hero-media"><img src="${image}" alt="${esc(imageAlt || title)}" loading="eager"></div>
   <div class="hero-content">
     <p class="eyebrow">${esc(eyebrow)}</p>
     <h1>${esc(title)}</h1>
@@ -2210,6 +2210,7 @@ function productPage(product) {
     title: product.title,
     text: product.description,
     image: product.image,
+    imageAlt: product.imageAlt,
     cta: product.cta,
     secondary: "Compare applications",
     contactHref: productInquiryHref(product),
