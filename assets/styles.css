@@ -2224,6 +2224,30 @@ textarea {
 	  }
 }
 
+@media (min-width: 721px) and (max-width: 860px) {
+  .whatsapp-float {
+    right: 14px;
+    bottom: 14px;
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    padding: 0;
+    place-items: center;
+    font-size: 0;
+  }
+
+  .whatsapp-float span,
+  .whatsapp-float strong {
+    display: none;
+  }
+
+  .whatsapp-float::before {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .document-grid,
 .coa-grid {
   display: grid;
@@ -4202,7 +4226,7 @@ body {
   margin: 0;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 860px) {
   .batch-table-wrap {
     overflow-x: visible;
   }
