@@ -47,6 +47,13 @@ const megaNav = [
         ],
       },
       {
+        title: "Selected Phospholipids",
+        links: [
+          ["Lecithin Ingredients", "/products/lecithin/", "Review soy lecithin forms and buyer document needs"],
+          ["Soy Lecithin", "/products/soy-lecithin/", "Powder, liquid, and granulated product routes"],
+        ],
+      },
+      {
         title: "Compare & Select",
         links: [
           ["Compare PS Grades", "/resources/phosphatidylserine-powder-specifications/", "Review assay, source, and document considerations"],
@@ -290,6 +297,58 @@ const products = [
       ["Is soluble soybean polysaccharide a main product?", "It is included in Nutranexa's product center and supports the broader functional food ingredient portfolio."],
       ["Are application details available?", "Application details should be confirmed with the sales team and technical documents before use."],
       ["Can I request specs together with PS products?", "Yes. Use the form and list multiple product interests."],
+    ],
+  },
+  {
+    slug: "soy-lecithin",
+    name: "Soy Lecithin",
+    eyebrow: "Selected phospholipid ingredient",
+    title: "Soy Lecithin Powder, Liquid, and Granules for Food and Nutrition Formulations",
+    description:
+      "Review soybean lecithin in powder, liquid, and granulated forms for food, dietary supplement, bakery, confectionery, dairy, and protein formulation projects.",
+    image: "/assets/images/news-china-lecithin-july-2026-supply.webp",
+    imageAlt: "Illustrative soy lecithin powder and liquid sample prepared for a buyer document review",
+    cta: "Request Lecithin Specs",
+    inquirySource: "Soy",
+    inquiryAssay: "PLF powder / liquid / granules",
+    formType: "lecithin",
+    category: "Lecithin ingredient",
+    quick:
+      "Soy lecithin is available in powder, liquid, and granulated routes. The supplied product materials describe form-specific phospholipid, moisture, insoluble-material, acid-value, peroxide-value, packaging, and storage information. Confirm the exact grade and current controlled document before approval.",
+    source: "Soybean-derived lecithin; source-specific GMO, allergen, and market documents must be requested for the quoted product.",
+    applications: ["Bakery and flour products", "Chocolate, confectionery, and chewing gum", "Dairy and protein beverages", "Dietary supplements and functional foods", "Emulsification and dispersion support in food formulations"],
+    proof: ["Powder, liquid, and granulated forms are listed in the supplied product materials", "PLF powder is supported by a representative batch COA", "Form-specific packaging and storage information is documented", "Current specification, TDS, and source statements should be confirmed before purchase"],
+    docs: ["Representative PLF batch COA: batch-specific reference available for review", "Current specification and TDS: request the controlled version for the quoted grade", "Allergen and GMO statements: request source-specific documents", "Packaging and storage: confirm form, pack size, and shipment conditions with the quotation"],
+    specification: [
+      ["Available forms", "Powder, liquid, and granulated soybean lecithin"],
+      ["Powdered PLF route", "Acetone insoluble >= 97% in the supplied product sheet; reconcile against the current controlled specification"],
+      ["Liquid route", "Acetone insoluble >= 60% in the supplied product sheet; exact grade limit to be confirmed"],
+      ["Granulated route", "Acetone insoluble >= 97% in the supplied product sheet"],
+      ["Representative PLF batch", "Powder; source recorded as soybean; batch-specific results are shown below"],
+      ["Storage", "Sealed, protected from light and moisture, and stored in a cool, dry place"],
+      ["Shelf life", "24 months stated in the supplied product materials; confirm the current controlled document"],
+      ["Packaging", "Powder: 1 kg, 5 kg, or 20 kg inner packs with 20/25 kg outer packs; liquid: 20 kg or 200 kg drums; confirm current availability"],
+    ],
+    batchReference: [
+      ["Product / grade", "Lecithin / PLF"],
+      ["Batch and dates", "26060901; manufactured 2026-06-09; tested 2026-06-10"],
+      ["Batch quantity", "7,800 kg"],
+      ["Appearance and texture", "Brownish-yellow powder; characteristic lecithin odour"],
+      ["Acetone insoluble", "97.48%"],
+      ["Loss on drying", "0.69%"],
+      ["Hexane insoluble", "0.19%"],
+      ["Acid value", "25.7 mgKOH/g"],
+      ["Peroxide value", "1.3 mmol/kg"],
+      ["Lead / total arsenic", "Not detected in the supplied batch report"],
+      ["Residual solvent", "Not detected in the supplied batch report"],
+    ],
+    documentNote: "This page summarizes product information from a supplied lecithin brochure and one PLF batch COA. The brochure and COA use different acceptance limits for some items, so the current signed specification and batch COA must control the quotation. Supplier identity and contact details are intentionally excluded.",
+    faqs: [
+      ["Which soybean lecithin forms are available for review?", "The supplied materials list powdered, liquid, and granulated soybean lecithin. Confirm the exact grade, form, and current availability for the quotation."],
+      ["What is PLF soybean lecithin?", "PLF is a powder-grade soybean lecithin route shown in the supplied product materials. A representative batch report records 97.48% acetone insoluble, but the current controlled specification must be requested before approval."],
+      ["Can I request a current COA and specification?", "Yes. Include the required form, target market, application, annual quantity, and document needs so the technical team can match the files to the quoted product."],
+      ["Is soy lecithin non-GMO or allergen-free?", "Do not infer either status from the product name. Request the current source-specific GMO and allergen statements for the quoted product and destination market."],
+      ["What applications are listed for soybean lecithin?", "The supplied materials describe food and nutrition uses including bakery, confectionery, dairy and protein beverages, dietary supplements, and emulsification or dispersion support. Finished-product suitability must be tested separately."],
     ],
   },
 ];
@@ -1288,7 +1347,7 @@ function productJson(product, route) {
     image: `${siteUrl}${product.image}`,
     brand: { "@type": "Brand", name: "Nutranexa" },
     manufacturer: { "@type": "Organization", name: "Shandong Baianrui Biopharmaceutical Co., Ltd." },
-    category: "Functional food ingredient",
+    category: product.category || "Functional food ingredient",
     url: urlFor(route),
     ...(product.moq ? { additionalProperty: [
       { "@type": "PropertyValue", name: "Minimum order quantity", value: product.moq },
@@ -1444,7 +1503,7 @@ function renderMegaNav(active) {
           <div class="mega-inner">
             <div class="mega-feature">
               <p class="eyebrow">${item.label}</p>
-              <h2>${item.label === "Products" ? "Source PS ingredients with clear buyer paths." : item.label === "Applications" ? "Connect ingredients to compliant applications." : item.label === "Science" ? "Turn phospholipid science into practical formulation decisions." : item.label === "Quality" ? "Qualify products with manufacturing and document confidence." : "Build buyer trust before the inquiry."}</h2>
+              <h2>${item.label === "Products" ? "Source PS and selected phospholipid ingredients with clear buyer paths." : item.label === "Applications" ? "Connect ingredients to compliant applications." : item.label === "Science" ? "Turn phospholipid science into practical formulation decisions." : item.label === "Quality" ? "Qualify products with manufacturing and document confidence." : "Build buyer trust before the inquiry."}</h2>
               <a href="${item.href}">View ${item.label}</a>
             </div>
             ${item.columns
@@ -1478,6 +1537,7 @@ function footer(optimizeLogo = false) {
       <a href="/products/phosphatidylserine/">Phosphatidylserine</a>
       <a href="/products/soy-phosphatidylserine/">Soy Phosphatidylserine</a>
       <a href="/products/sunflower-phosphatidylserine/">Sunflower Phosphatidylserine</a>
+      <a href="/products/soy-lecithin/">Soy Lecithin</a>
       <a href="/products/soluble-soybean-polysaccharide/">Soluble Soybean Polysaccharide</a>
     </div>
     <div>
@@ -1546,6 +1606,16 @@ function quoteForm(context = "General inquiry", _note = "", options = {}) {
   const requestType = options.includeRequestType
     ? `<label>Request Type <select name="Request Type"><option value="">Select request type</option><option>Quote</option><option>Sample</option><option>Specification</option><option>COA</option><option>Technical Support</option><option>Distributor Inquiry</option><option>Other</option></select></label>`
     : "";
+  const isLecithin = options.productType === "lecithin";
+  const applicationField = isLecithin
+    ? `<label>Application <select name="Application"><option value="">Select application</option><option>Bakery</option><option>Chocolate and Confectionery</option><option>Dairy or Protein Beverage</option><option>Dietary Supplement</option><option>Functional Food</option><option>Other</option></select></label>`
+    : `<label>Application <select name="Application"><option value="">Select application</option><option>Cognitive Health</option><option>Memory Support</option><option>Healthy Aging</option><option>Sports Nutrition</option><option>Functional Foods</option><option>Other</option></select></label>`;
+  const sourceField = isLecithin
+    ? `<label>Preferred Source <select name="Source Preference"><option value="">No preference yet</option><option>Soy</option><option>Sunflower</option><option>Egg</option><option>Need recommendation</option></select></label>`
+    : `<label>Preferred Source <select name="Source Preference"><option value="">No preference yet</option><option>Soy</option><option>Sunflower</option><option>Need recommendation</option></select></label>`;
+  const targetField = isLecithin
+    ? `<label>Requested Product Form <select name="Target Assay"><option value="">Need recommendation</option><option>Powdered soybean lecithin / PLF</option><option>Liquid soybean lecithin</option><option>Granulated soybean lecithin</option><option>Modified lecithin</option><option>Phosphatidylcholine</option><option>Other / customized</option></select></label>`
+    : `<label>Required PS Grade <select name="Target Assay"><option value="">Need recommendation</option><option>20%</option><option>50%</option><option>70%</option><option>Other / customized</option></select></label>`;
   return `<form class="quote-form" data-context="${esc(context)}" action="/api/inquiry" method="post">
   <input type="hidden" name="Product Interest" value="${esc(context)}">
   <input type="hidden" name="Locale" value="en">
@@ -1556,9 +1626,9 @@ function quoteForm(context = "General inquiry", _note = "", options = {}) {
     <label>Business Email *<input required type="email" name="Email" autocomplete="email"></label>
     <label>Company *<input required name="Company" autocomplete="organization" placeholder="Company name"></label>
     <label>Country *<input required name="Country" autocomplete="country-name" placeholder="United States, Germany, Korea..."></label>
-    <label>Application <select name="Application"><option value="">Select application</option><option>Cognitive Health</option><option>Memory Support</option><option>Healthy Aging</option><option>Sports Nutrition</option><option>Functional Foods</option><option>Other</option></select></label>
-    <label>Preferred Source <select name="Source Preference"><option value="">No preference yet</option><option>Soy</option><option>Sunflower</option><option>Need recommendation</option></select></label>
-    <label>Required PS Grade <select name="Target Assay"><option value="">Need recommendation</option><option>20%</option><option>50%</option><option>70%</option><option>Other / customized</option></select></label>
+    ${applicationField}
+    ${sourceField}
+    ${targetField}
     ${requestType}
     <label>Estimated Annual Volume <input name="Estimated Annual Volume" placeholder="e.g. 500 kg / year"></label>
     <fieldset class="form-full document-choice"><legend>Required Documents</legend><label><input type="checkbox" name="Documents Needed" value="Specification"> Specification</label><label><input type="checkbox" name="Documents Needed" value="COA"> COA</label><label><input type="checkbox" name="Documents Needed" value="TDS"> TDS</label><label><input type="checkbox" name="Documents Needed" value="MSDS"> MSDS</label><label><input type="checkbox" name="Documents Needed" value="Allergen Information"> Allergen Information</label></fieldset>
@@ -1602,7 +1672,15 @@ function technicalSpecificationSection(product) {
   if (!product.specification?.length) return "";
   return `<section class="technical-specification">${sectionIntro("Technical specification", `${product.name} supplied specification highlights`, "These values summarize the supplied English specification. Confirm the current signed version, batch COA, test methods, and destination-market requirements before purchase or formulation use.")}
     <dl class="technical-spec-grid">${product.specification.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl>
-    ${product.supplierNote ? `<p class="document-caution"><strong>Document scope:</strong> ${esc(product.supplierNote)}</p>` : ""}
+    ${product.documentNote || product.supplierNote ? `<p class="document-caution"><strong>Document scope:</strong> ${esc(product.documentNote || product.supplierNote)}</p>` : ""}
+  </section>`;
+}
+
+function batchReferenceSection(product) {
+  if (!product.batchReference?.length) return "";
+  return `<section class="coa-section">${sectionIntro("Representative batch reference", "PLF powder COA highlights", "The values below are from one supplied batch report and are shown for technical orientation only. They are not a permanent product guarantee and do not replace the current controlled specification or batch COA.")}
+    <div class="table-wrap"><table class="spec-table"><tbody>${product.batchReference.map(([label, value]) => `<tr><th>${esc(label)}</th><td>${esc(value)}</td></tr>`).join("")}</tbody></table></div>
+    <p class="form-note">The supplied brochure and batch report use different acceptance limits for some parameters. Request the current signed specification before publishing or approving a grade.</p>
   </section>`;
 }
 
@@ -1642,7 +1720,7 @@ function technicalDownloadLibrary() {
 function documentsRequestSection(product) {
   const href = (documents) => productInquiryHref(product, documents);
   const items = [
-    ["COA sample", product.slug === "sunflower-phosphatidylserine" ? "PS 20% and 50% sunflower samples available" : product.slug === "phosphatidylserine" ? "PS 20% sunflower, PS 50%, and PS 50% sunflower samples available" : product.slug === "soluble-soybean-polysaccharide" ? "Request the current batch COA matching TJ-110" : "Reference samples available; exact source must be confirmed", "COA sample"],
+    ["COA sample", product.slug === "sunflower-phosphatidylserine" ? "PS 20% and 50% sunflower samples available" : product.slug === "phosphatidylserine" ? "PS 20% sunflower, PS 50%, and PS 50% sunflower samples available" : product.slug === "soluble-soybean-polysaccharide" ? "Request the current batch COA matching TJ-110" : product.slug === "soy-lecithin" ? "Representative PLF batch data available; request the current batch COA" : "Reference samples available; exact source must be confirmed", "COA sample"],
     ["Current specification", product.downloads?.length ? "English specification available below; request the latest controlled version for approval" : "Request the version matching source, target assay, and quoted product", "Specification"],
     ["TDS / SDS", "Availability and current version to be confirmed by sales", "TDS / SDS"],
     ["Certificates", "Request current files and verify product scope and validity", "Certificates"],
@@ -1663,6 +1741,9 @@ function commercialLinkPanel(product) {
   }
   if (product.slug === "phosphatidylserine") {
     return `<section class="link-panel"><a href="/products/phosphatidylserine-50/">Review PS 50% specifications</a><a href="/products/soy-phosphatidylserine/">Review soy-source PS</a><a href="/products/sunflower-phosphatidylserine/">Review sunflower-source PS</a><a href="/resources/choose-phosphatidylserine-supplier/">Use the supplier qualification checklist</a></section>`;
+  }
+  if (product.slug === "soy-lecithin") {
+    return `<section class="link-panel"><a href="/products/lecithin/">Review lecithin ingredients</a><a href="/products/phosphatidylserine/">Explore phosphatidylserine</a><a href="/products/soy-phosphatidylserine/">Compare soy-source PS</a><a href="/applications/functional-foods/">Review functional food applications</a><a href="/contact/">Request current documents</a></section>`;
   }
   return "";
 }
@@ -1731,6 +1812,7 @@ function productSeoTitle(product) {
     "soy-phosphatidylserine": "Soy Phosphatidylserine Supplier | Bulk Source & Specs",
     "sunflower-phosphatidylserine": "Sunflower Phosphatidylserine | 20% & 50% Supplier",
     "soluble-soybean-polysaccharide": "Soluble Soybean Polysaccharide Supplier | Nutranexa",
+    "soy-lecithin": "Soy Lecithin Powder, Liquid & Granules | Nutranexa",
   };
   return titles[product.slug] || `${product.name} Supplier | Nutranexa`;
 }
@@ -1829,6 +1911,12 @@ function homePage() {
     </div>
   </section>
 
+  <section class="home-section selected-phospholipids">
+    <div>${sectionIntro("Selected phospholipids", "Soy lecithin for food and nutrition development", "A new, evidence-led product route is available for powdered, liquid, and granulated soybean lecithin. Review the product forms and request the current controlled specification before approval.")}</div>
+    <div class="detail-grid"><div><h3>Powder, liquid, and granules</h3><p>Choose the form that matches your process, handling, and dispersion requirements.</p></div><div><h3>PLF batch reference</h3><p>A representative PLF powder batch is documented with acetone insoluble, moisture, acid value, peroxide value, and contaminant results.</p></div><div><h3>Document-led qualification</h3><p>Request the current specification, COA, GMO and allergen statements, packaging, and storage details for the quoted grade.</p></div></div>
+    <a class="button secondary" href="/products/soy-lecithin/">Review Soy Lecithin</a>
+  </section>
+
   <section class="home-section applications-showcase">
     ${sectionIntro("Applications", "Built for modern cognitive and functional nutrition concepts", "Nutranexa supports product developers with source selection, technical documentation, and application-focused ingredient guidance.")}
     <div class="application-grid">
@@ -1907,24 +1995,49 @@ function homePage() {
 }
 
 function productsHub() {
-  const body = `<section class="page-hero compact"><p class="eyebrow">Products</p><h1>Bulk Functional Food Ingredients for Global Buyers</h1><p>Start with phosphatidylserine, then compare soy-source, sunflower-source, and related functional food ingredient options.</p></section>
+  const psProducts = products.filter((product) => product.formType !== "lecithin");
+  const lecithinProducts = products.filter((product) => product.formType === "lecithin");
+  const body = `<section class="page-hero compact"><p class="eyebrow">Products</p><h1>Bulk PS and Selected Phospholipid Ingredients for Global Buyers</h1><p>Start with phosphatidylserine, then review selected lecithin and related functional food ingredient options with product-specific document paths.</p></section>
   <section class="grade-hub">${sectionIntro("PS purity grades", "Phosphatidylserine 20%, 50%, and 70%", "Select a target grade for product positioning, then confirm source availability, the current controlled specification, and batch documentation.")}
     <div class="grade-grid">${psGrades.map((grade) => `<article class="grade-card"><div class="grade-card-media"><img src="${grade.image}" alt="${esc(grade.name)} powder" loading="lazy"><span>${esc(grade.badge)}</span></div><p class="grade-kicker">${esc(grade.positioning)}</p><h3>${esc(grade.name)}</h3><p>${esc(grade.description)}</p><a class="button secondary" href="/products/${grade.slug}/">View ${esc(grade.shortName)}</a></article>`).join("")}</div>
   </section>
   <section>${sectionIntro("Product portfolio", "Compare Nutranexa ingredient options", "Review product source, application fit, available documents, and quote requirements from one place.")}
-    <div class="card-grid">${products.map(productCard).join("")}</div>
+    <div class="card-grid">${psProducts.map(productCard).join("")}</div>
   </section>
-  <section class="form-panel"><div>${sectionIntro("Quote support", "Send one inquiry for multiple products", "Use the product interest field to list PS, soy PS, sunflower PS, and soluble soybean polysaccharide requirements.")}</div>${quoteForm("Multiple products")}</section>`;
+  <section>${sectionIntro("Selected phospholipids", "Lecithin ingredients for food and nutrition development", "The live lecithin route currently focuses on soybean lecithin in powder, liquid, and granulated forms. Additional sources and grades will be added only after product-specific documentation is confirmed.")}
+    <div class="card-grid">${lecithinProducts.map(productCard).join("")}</div>
+    <div class="section-actions"><a class="button secondary" href="/products/lecithin/">Review lecithin category</a></div>
+  </section>
+  <section class="form-panel"><div>${sectionIntro("Quote support", "Send one inquiry for multiple products", "Use the product interest field to list PS, soy PS, soybean lecithin, and soluble soybean polysaccharide requirements.")}</div>${quoteForm("Multiple products")}</section>`;
   return layout({
-    title: "Products | Phosphatidylserine, Soy PS, Sunflower PS | Nutranexa",
-    description: "Explore Nutranexa bulk ingredients for phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide.",
+    title: "Products | PS, Soy Lecithin and Functional Ingredients | Nutranexa",
+    description: "Explore Nutranexa bulk ingredients for phosphatidylserine, soy lecithin, soy PS, sunflower PS, and soluble soybean polysaccharide.",
     route: "/products/",
     schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"]])],
     body,
   });
 }
 
+function lecithinHub() {
+  const soyLecithin = products.find((product) => product.slug === "soy-lecithin");
+  const body = `<section class="page-hero compact"><p class="eyebrow">Lecithin ingredients</p><h1>Selected Lecithin Ingredients for Food and Nutrition Formulations</h1><p>Review soybean lecithin in powder, liquid, and granulated forms, then request the controlled specification, current batch COA, source statements, and packaging details for the quoted grade.</p></section>
+  <section>${sectionIntro("Current live product route", "Soy lecithin in multiple forms", "The current product page is based on the supplied soybean lecithin product materials and a representative PLF batch report. It intentionally separates product facts from supplier identity and flags parameters that require reconciliation before approval.")}
+    <div class="card-grid">${soyLecithin ? productCard(soyLecithin) : ""}</div>
+  </section>
+  <section class="detail-grid"><div><p class="eyebrow">Powdered</p><h2>Powdered soybean lecithin</h2><p>PLF powder is the best-documented route in the current material. The supplied sheet describes high acetone-insoluble content and a 24-month shelf-life statement; the current controlled specification must govern the quotation.</p></div><div><p class="eyebrow">Liquid</p><h2>Liquid soybean lecithin</h2><p>Liquid grades are described as amber to brown-yellow liquids for emulsification and dispersion support in bakery, chocolate, confectionery, and related food systems.</p></div><div><p class="eyebrow">Granulated</p><h2>Granulated soybean lecithin</h2><p>Granulated material is described as a dispersible form for food premixes and applications where powder handling and reduced caking are useful.</p></div><div><p class="eyebrow">Qualification</p><h2>Confirm before purchase</h2><p>Match the exact grade, current specification, batch COA, GMO and allergen statements, packaging, storage, and destination-market requirements before approval.</p></div></section>
+  <section class="form-panel"><div>${sectionIntro("Technical support", "Request a soybean lecithin document package", "Include form, application, target market, annual quantity, and required documents so the team can return the relevant technical files.")}</div>${quoteForm("Soy Lecithin", "", { productType: "lecithin" })}</section>
+  <section class="link-panel"><a href="/products/">All products</a><a href="/products/phosphatidylserine/">Phosphatidylserine</a><a href="/products/soy-phosphatidylserine/">Soy PS</a><a href="/applications/functional-foods/">Functional food applications</a><a href="/contact/">Request current specification</a></section>`;
+  return layout({
+    title: "Lecithin Ingredients | Soy Lecithin Forms | Nutranexa",
+    description: "Review selected lecithin ingredients, including powdered, liquid, and granulated soybean lecithin, with buyer-focused specifications and document requests.",
+    route: "/products/lecithin/",
+    schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"], ["Lecithin Ingredients", "/products/lecithin/"]])],
+    body,
+  });
+}
+
 function advisorCard(product) {
+  const isLecithin = product.formType === "lecithin";
   return `<aside class="advisor-sticky" aria-label="Ingredient specialist contact">
     <div class="advisor-card">
       <div class="advisor-photo-wrap"><img src="/assets/images/ip-specialist.webp" alt="Nutranexa ingredient specialist for ${esc(product.name)} sourcing" loading="lazy"></div>
@@ -1932,13 +2045,13 @@ function advisorCard(product) {
       <h2>Your direct sourcing contact</h2>
       <p>Share your application, source preference, annual quantity, and documents needed. The team can confirm current ${esc(product.name)} details before quotation.</p>
       <ul class="advisor-list">
-        <li>PS / Soy PS / Sunflower PS support</li>
+        <li>${isLecithin ? "Lecithin form and grade support" : "PS / Soy PS / Sunflower PS support"}</li>
         <li>Specification, COA, and certificate requests</li>
         <li>Application and quotation follow-up</li>
       </ul>
       <div class="advisor-actions">
-        <a class="button primary" href="${productInquiryHref(product)}">Request Source & Assay</a>
-        <a class="button secondary" href="/resources/documents-for-ps-ingredients/">Document checklist</a>
+        <a class="button primary" href="${productInquiryHref(product)}">${isLecithin ? "Request Form & Specs" : "Request Source & Assay"}</a>
+        <a class="button secondary" href="${isLecithin ? "/contact/" : "/resources/documents-for-ps-ingredients/"}">${isLecithin ? "Request current documents" : "Document checklist"}</a>
       </div>
     </div>
   </aside>`;
@@ -2064,6 +2177,7 @@ function productPage(product) {
       ${documentsRequestSection(product)}
       ${commercialLinkPanel(product)}
       ${downloadableDocuments(product)}
+      ${batchReferenceSection(product)}
       <section class="product-faq">${sectionIntro("FAQ", "Common buyer questions", "These answers are written for sourcing and application evaluation without medical treatment claims.")}
         <div class="faq-list">${product.faqs.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
       </section>
@@ -2072,7 +2186,7 @@ function productPage(product) {
     </div>
     ${advisorCard(product)}
   </section>
-  <section class="form-panel"><div>${sectionIntro("Request quotation", `Talk to sales about ${product.name}`, "Include target market, product format, annual quantity, and document requirements so the team can confirm current availability.")}</div>${quoteForm(product.name, product.moq ? `MOQ ${product.moq}; enter estimated yearly demand` : "Enter estimated yearly demand")}</section>`;
+  <section class="form-panel"><div>${sectionIntro("Request quotation", `Talk to sales about ${product.name}`, "Include target market, product form, annual quantity, and document requirements so the team can confirm current availability.")}</div>${quoteForm(product.name, product.moq ? `MOQ ${product.moq}; enter estimated yearly demand` : "Enter estimated yearly demand", { productType: product.formType })}</section>`;
   return layout({
     title: productSeoTitle(product),
     description: product.description,
@@ -2648,6 +2762,7 @@ async function add(route, html) {
 
 await add("/", homePage());
 await add("/products/", productsHub());
+await add("/products/lecithin/", lecithinHub());
 for (const product of products) await add(`/products/${product.slug}/`, productPage(product));
 for (const grade of psGrades) await add(`/products/${grade.slug}/`, psGradePage(grade));
 await add("/benefits/", benefitsHub());
