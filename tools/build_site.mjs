@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { sitemapFiles } from "../config/seo/indexing.mjs";
-import { companyIdentity, companySources, companyPatents, companyEvidence, companySameAs } from "../config/trust/company.mjs";
+import { companyIdentity, companySources, companyPatents, companyEvidence } from "../config/trust/company.mjs";
 
 const root = path.resolve(".");
 const siteUrl = companyIdentity.siteUrl;
@@ -1402,15 +1402,10 @@ function organizationJson() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${siteUrl}/#organization`,
-    name: companyIdentity.legalName,
-    legalName: companyIdentity.legalName,
-    alternateName: [companyIdentity.publicName, companyIdentity.chineseName],
+    name: companyIdentity.publicName,
     url: companyIdentity.siteUrl,
     logo: `${siteUrl}${companyIdentity.logoPath}`,
-    sameAs: companySameAs,
     contactPoint: [{ "@type": "ContactPoint", telephone: phone, contactType: "sales", areaServed: ["Europe", "North America", "Worldwide"], availableLanguage: ["English", "Chinese"] }],
-    address: { "@type": "PostalAddress", streetAddress: address, addressCountry: "CN" },
-    foundingDate: companyIdentity.foundingDate,
   };
 }
 
@@ -1434,7 +1429,7 @@ function webPageJson({ title, description, route }) {
     description,
     inLanguage: "en",
     isPartOf: { "@type": "WebSite", "@id": `${siteUrl}/#website`, name: "Nutranexa", url: siteUrl },
-    about: { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: companyIdentity.legalName, url: siteUrl },
+    about: { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: companyIdentity.publicName, url: siteUrl },
   };
 }
 
@@ -1971,7 +1966,7 @@ function homePage() {
       </ul>
       <div class="hero-actions">
         ${qualificationPackCta({ sourcePage: "homepage-hero" })}
-        <a class="button secondary" data-analytics-event="verification_view" data-source-page="homepage-hero" href="/company-verification/">Verify Our Company</a>
+        <a class="button secondary" data-analytics-event="verification_click" data-source-page="homepage-hero" href="/company-verification/">Verify Our Company</a>
       </div>
     </div>
     <div class="home-hero-visual">
@@ -2011,7 +2006,7 @@ function homePage() {
   <section class="home-section buyer-verification" aria-labelledby="buyer-verification-title">
     ${sectionIntro("Buyer verification", "Build the qualification picture before you inquire", "Review the company, product evidence, and manufacturing context, then request the current files for the exact source, grade, and destination market.", "buyer-verification-title")}
     <div class="verification-card-grid">
-      <a href="/company-verification/" data-analytics-event="verification_view" data-source-page="homepage-buyer-verification"><span>01</span><h3>Company &amp; licence</h3><p>Review public names, production references, independent sources, and patent records.</p><strong>Review company verification &rarr;</strong></a>
+      <a href="/company-verification/" data-analytics-event="verification_click" data-source-page="homepage-buyer-verification"><span>01</span><h3>Company &amp; licence</h3><p>Review public names, production references, independent sources, and patent records.</p><strong>Review company verification &rarr;</strong></a>
       <a href="/quality-rd/" data-analytics-event="document_preview" data-document-type="quality-guidance"><span>02</span><h3>Batch &amp; documents</h3><p>See how specifications, sample COAs, certificates, and current copies fit the approval workflow.</p><strong>Review quality documents &rarr;</strong></a>
       <a href="/manufacturing/" data-source-page="homepage-buyer-verification"><span>03</span><h3>Factory &amp; delivery</h3><p>Connect campus, workshop, packaging, and dispatch evidence to your supplier review.</p><strong>Review manufacturing &rarr;</strong></a>
     </div>
@@ -2565,15 +2560,15 @@ function aboutPage() {
 }
 
 function companyVerificationPage() {
-  const sourceCards = companySources.map((source) => `<article class="verification-source-card"><p class="eyebrow">Independent source</p><h3>${esc(source.name)}</h3><p>${esc(source.supports)}</p><a class="verification-source-link" data-analytics-event="verification_source_click" data-source-name="${esc(source.name)}" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">Open source &rarr;</a></article>`).join("");
-  const patentCards = companyPatents.map((patent) => `<article class="verification-patent-card"><h3>${esc(patent.number)}</h3><p>${esc(patent.supports)}</p><a class="verification-source-link" data-analytics-event="verification_source_click" data-source-name="Patent ${esc(patent.number)}" href="${esc(patent.url)}" target="_blank" rel="noopener noreferrer">View patent record &rarr;</a></article>`).join("");
+  const sourceCards = companySources.map((source) => `<article class="verification-source-card"><p class="eyebrow">${esc(source.sourceType)}</p><h3>${esc(source.name)}</h3><p>${esc(source.supports)}</p><a class="verification-source-link" data-analytics-event="verification_source_click" data-source-name="${esc(source.name)}" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">Open source &rarr;</a></article>`).join("");
+  const patentCards = companyPatents.map((patent) => `<article class="verification-patent-card"><p class="eyebrow">${esc(patent.sourceType)}</p><h3>${esc(patent.number)}</h3><p>${esc(patent.supports)}</p><a class="verification-source-link" data-analytics-event="verification_source_click" data-source-name="Patent ${esc(patent.number)}" href="${esc(patent.url)}" target="_blank" rel="noopener noreferrer">View patent record &rarr;</a></article>`).join("");
   const identityRows = companyEvidence.identity.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("");
   const productionRows = companyEvidence.production.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("");
   const body = `<section class="page-hero compact verification-hero"><p class="eyebrow">Buyer verification</p><h1>Company &amp; Manufacturer Verification</h1><p>Review the public company names, production references, independent source pages, and document-request paths available for Nutranexa supplier qualification.</p><div class="hero-actions">${qualificationPackCta({ sourcePage: "company-verification-hero" })}<a class="button secondary" href="/quality-rd/">Review quality documents</a></div></section>
   <section class="verification-summary" aria-labelledby="verification-summary-title"><div>${sectionIntro("Verification Summary", "A practical starting point for supplier due diligence", "This page brings together public facts and source links that buyers can review before requesting a product-specific qualification pack. It does not replace legal, regulatory, or customer due diligence.", "verification-summary-title")}</div><aside class="verification-summary-note"><strong>Last reviewed</strong><time datetime="${esc(companyIdentity.lastReviewed)}">${esc(companyIdentity.lastReviewed)}</time><span>Current document scope and validity should be confirmed for the quoted product and destination market.</span></aside></section>
   <section class="verification-section" aria-labelledby="manufacturer-identity-title"><div>${sectionIntro("Manufacturer Identity", "Names and company facts presented consistently", "Public materials use the following names and facts. The page keeps the naming relationship neutral until the company approves a formal legal and brand-usage statement.", "manufacturer-identity-title")}</div><dl class="verification-fact-grid">${identityRows}</dl></section>
   <section class="verification-section verification-naming" aria-labelledby="company-names-title"><div>${sectionIntro("Understanding Our Company Names", "How to read the names in public materials", "Nutranexa is the public-facing name used on this website. Public records and third-party profiles may use the English company name or the Chinese company name shown above. This page does not assert that Nutranexa is a registered trademark, nor does it infer a legal relationship between names from appearance alone.", "company-names-title")}</div><p class="document-caution"><strong>Before contract or approval:</strong> Confirm the entity named on the quotation, contract, invoice, certificate, production licence, and current technical documents with the Nutranexa team.</p></section>
-  <section class="verification-section" aria-labelledby="independent-sources-title"><div>${sectionIntro("Independent Sources", "Review the pages behind the public references", "These links are provided so buyers can inspect the source context themselves. Each source uses its own naming and profile conventions; no broader approval claim is inferred.", "independent-sources-title")}</div><div class="verification-source-grid">${sourceCards}</div></section>
+  <section class="verification-section" aria-labelledby="independent-sources-title"><div>${sectionIntro("Independent Sources", "Review public source pages by source type", "This section includes a company-operated website, an industry association profile, and a trade-directory profile. The source type is shown on each card; only non-company pages are independent of the company-operated website, and no broader approval claim is inferred.", "independent-sources-title")}</div><div class="verification-source-grid">${sourceCards}</div></section>
   <section class="verification-section" aria-labelledby="production-qualifications-title"><div>${sectionIntro("Production Qualifications", "Production references for buyer review", "The production licence reference and campus-area statement below are presented as references. Request the current licence copy, scope, and validity before relying on them for a specific purchase or market filing.", "production-qualifications-title")}</div><dl class="verification-fact-grid">${productionRows}</dl><p class="form-note">A production licence reference is not a product endorsement. Product applicability, certificate scope, and current validity require document-level review.</p></section>
   <section class="verification-section verification-manufacturing" aria-labelledby="manufacturing-evidence-title"><div>${sectionIntro("Manufacturing Evidence", "Connect public factory evidence to the qualification path", "Review the manufacturing page and company film for campus, workshop, laboratory, packaging, and shipment context. Images and video are supporting evidence and do not replace an audit or controlled document review.", "manufacturing-evidence-title")}</div><div class="verification-manufacturing-grid"><figure><img src="/assets/images/factory-campus.webp" alt="Nutranexa factory campus exterior" loading="lazy"><figcaption>Factory campus reference image.</figcaption></figure><div><ul class="check-list"><li><a href="/manufacturing/">Review manufacturing process and facilities</a></li><li><a href="/about/">Read the company profile</a></li><li><a href="/cases/">Review packaging and dispatch evidence</a></li></ul>${companyVideoPlayer("company-video-player verification-video")}</div></div></section>
   <section class="verification-section" aria-labelledby="patents-title"><div>${sectionIntro("Patents & Technical Know-how", "Review patent records without overextending their scope", "The following patent records can be inspected directly in the public database. They are evidence of patent records and named rights-holder information, not a blanket claim that every product or process is covered by either patent.", "patents-title")}</div><div class="verification-patent-grid">${patentCards}</div></section>

@@ -180,7 +180,6 @@ const siteData = {
         description: "대두 유래 PS 원료의 출처, 적용 제형, 문서, MOQ, 포장 정보를 확인하세요.",
         h1: "대두 유래 포스파티딜세린",
         intro: "대두 유래 PS는 대두 레시틴과 L-serine 기반의 bio-enzymatic conversion 공정을 통해 생산되는 원료 옵션입니다.",
-        product: true,
         sections: [
           ["적용 분야", "캡슐, 정제, 분말, 건강기능식품, 기능성 식품 개발 프로젝트에서 검토할 수 있습니다."],
           ["확인 항목", "PS 함량, 색상, 냄새, 입도, 분산성, 수분, 미생물 기준, 중금속, 잔류용매, GMO 및 알레르겐 문서를 확인합니다."],
@@ -192,7 +191,6 @@ const siteData = {
         description: "비대두 포지셔닝을 위한 해바라기 유래 PS 원료의 사양, 적용 분야, COA 및 샘플 요청 정보를 확인하세요.",
         h1: "해바라기 유래 포스파티딜세린",
         intro: "해바라기 유래 PS는 비대두 원료 포지셔닝이 필요한 브랜드와 한국 제품 개발 프로젝트에서 검토할 수 있는 옵션입니다.",
-        product: true,
         sections: [
           ["구매 검토 포인트", "원료 출처, PS 함량, 알레르겐 문서, COA, 규격서, 포장, 샘플 평가 결과를 함께 확인합니다."],
           ["적용 제품", "캡슐, 정제, 분말 제품, 기능성 식품 및 OEM/ODM 제품 개발에 대해 상담할 수 있습니다."],
@@ -419,7 +417,6 @@ const siteData = {
         description: "Soya kaynaklı PS hammaddesi için kaynak, uygulama, belge, MOQ ve ambalaj bilgilerini inceleyin.",
         h1: "Soya kaynaklı fosfatidilserin",
         intro: "Soya kaynaklı PS, soya lesitini ve L-serine bazlı bio-enzymatic conversion süreciyle üretilen bir hammadde seçeneğidir.",
-        product: true,
         sections: [
           ["Uygulamalar", "Kapsül, tablet, toz ürün, takviye edici gıda ve fonksiyonel gıda geliştirme projelerinde değerlendirilebilir."],
           ["Kontrol noktaları", "PS konsantrasyonu, renk, koku, partikül profili, dispersiyon, nem, mikrobiyoloji, ağır metaller, kalıntı solvent, GMO ve alerjen belgeleri kontrol edilir."],
@@ -431,7 +428,6 @@ const siteData = {
         description: "Soya dışı kaynak arayan markalar ve distribütörler için ayçiçeği kaynaklı PS hammaddesi, COA ve numune bilgileri.",
         h1: "Ayçiçeği kaynaklı fosfatidilserin",
         intro: "Ayçiçeği kaynaklı PS, soya dışı kaynak pozisyonlaması isteyen markalar, ithalatçılar ve distribütörler için değerlendirilebilir.",
-        product: true,
         sections: [
           ["Satın alma kontrolü", "Kaynak, PS konsantrasyonu, alerjen beyanı, COA, teknik föy, ambalaj ve numune değerlendirmesi birlikte incelenmelidir."],
           ["Uygulama alanları", "Kapsül, tablet, toz ürün, fonksiyonel gıda ve OEM/ODM projeleri için görüşülebilir."],
@@ -578,6 +574,9 @@ function schema(site, page) {
       ],
     },
   ];
+  // Market pages intentionally expose only Organization, WebSite, WebPage,
+  // BreadcrumbList, and (where visible) FAQPage. Product JSON-LD is not
+  // appropriate for these supplier-information pages.
   if (page.faq) {
     graph.push({
       "@context": "https://schema.org",

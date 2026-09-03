@@ -15,3 +15,19 @@ npm-debug.log*
 /ar/
 /fr/
 /pt/
+# Generated-only fallback/localized pages are recreated by npm run generate.
+# Existing tracked pages under these trees remain tracked; new generated pages
+# stay out of the working tree while still being copied into the deployment.
+/ko/
+/tr/
+/applications/cognitive-health/
+/applications/healthy-aging/
+/applications/memory-support/
+/applications/sports-nutrition/
+/products/phosphatidylserine-20/
+/products/phosphatidylserine-70/
+/resources/phosphatidylserine-manufacturer-audit-europe/
+/resources/phosphatidylserine-novel-food-review-europe/
+/resources/phosphatidylserine-packaging-declaration-review-us-eu/
+/resources/phosphatidylserine-prior-notice-checklist-us/
+/science/

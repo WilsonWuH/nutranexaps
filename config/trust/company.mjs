@@ -2,7 +2,7 @@
 // Keep legal-name relationships neutral until the company approves a formal
 // naming policy for contracts, certificates, and public web properties.
 export const companyIdentity = {
-  legalName: "Shandong Baianrui Biopharmaceutical Co., Ltd.",
+  englishCompanyName: "Shandong Baianrui Biopharmaceutical Co., Ltd.",
   chineseName: "山东佰安瑞生物药业有限公司",
   publicName: "Nutranexa",
   foundingDate: "2013",
@@ -20,16 +20,19 @@ export const companyIdentity = {
 export const companySources = [
   {
     name: "Official Nutranexa website",
+    sourceType: "Company-operated website",
     url: companyIdentity.officialWebsite,
     supports: "Public-facing company and product information.",
   },
   {
     name: "CFAA company profile",
+    sourceType: "Industry association",
     url: "https://www.cfaa.cn/lxweb/queryCompanyAllDetail.action?companyInfo.id=9908",
     supports: "A third-party company profile referencing the Chinese company name and related business information.",
   },
   {
     name: "CPHI company profile",
+    sourceType: "Trade directory",
     url: "https://www.cphi-online.com/company/shandong-nutranexa-biopharmaceutical-co-ltd/",
     supports: "A third-party exhibitor/company profile using an English Nutranexa company name.",
   },
@@ -38,11 +41,13 @@ export const companySources = [
 export const companyPatents = [
   {
     number: "CN217817741U",
+    sourceType: "Patent database",
     url: "https://patents.google.com/patent/CN217817741U/zh",
     supports: "Patent record and named rights-holder information.",
   },
   {
     number: "CN212820171U",
+    sourceType: "Patent database",
     url: "https://patents.google.com/patent/CN212820171U/zh",
     supports: "Patent record and named rights-holder information.",
   },
@@ -50,8 +55,8 @@ export const companyPatents = [
 
 export const companyEvidence = {
   identity: [
-    ["English company name", companyIdentity.legalName],
-    ["Chinese company name", companyIdentity.chineseName],
+    ["English company name shown in public materials", companyIdentity.englishCompanyName],
+    ["Chinese company name shown in public materials", companyIdentity.chineseName],
     ["Public-facing name used on this website", companyIdentity.publicName],
     ["Founded", companyIdentity.foundingDate],
   ],
@@ -60,9 +65,3 @@ export const companyEvidence = {
     ["Campus area stated in company materials", companyIdentity.campusArea],
   ],
 };
-
-export const companySameAs = [
-  companyIdentity.officialWebsite,
-  ...companySources.slice(1).map((source) => source.url),
-  ...companyPatents.map((patent) => patent.url),
-];
