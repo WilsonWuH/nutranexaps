@@ -32,6 +32,10 @@ try {
   if (await qualityPage.locator('img[src*="doc-fda-food-facility-registration"]').count()) {
     throw new Error("Third-party FDA registrar image remains in the public document gallery");
   }
+  const controlledDocumentResponse = await qualityPage.request.get(`${baseUrl}/assets/images/doc-fda-food-facility-registration.webp`);
+  if (controlledDocumentResponse.status() !== 404) {
+    throw new Error(`Controlled FDA registrar image is publicly reachable (HTTP ${controlledDocumentResponse.status()})`);
+  }
   const schema = JSON.parse(await qualityPage.locator('script[type="application/ld+json"]').textContent());
   const organization = schema.find((entry) => entry["@type"] === "Organization");
   if (organization?.name !== "Shandong Nutranexa Biopharmaceutical Co., Ltd." || organization?.alternateName !== "Nutranexa") {
@@ -41,7 +45,7 @@ try {
   await qualityPage.close();
 
   if (consoleErrors.length) throw new Error(`Console errors:\n${consoleErrors.join("\n")}`);
-  console.log("Buyer trust browser verification passed: 12 responsive page combinations, identity schema, public-document policy, and console checks.");
+  console.log("Buyer trust browser verification passed: 12 responsive page combinations, identity schema, controlled-file access, public-document policy, and console checks.");
 } finally {
   await browser.close();
 }

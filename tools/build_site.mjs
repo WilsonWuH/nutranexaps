@@ -15,8 +15,8 @@ function readAnalyticsId(name, pattern) {
   return value;
 }
 const analyticsConfig = {
-  gtm: readAnalyticsId("NEXT_PUBLIC_GTM_ID", /^GTM-[A-Z0-9]+$/),
-  ga4: readAnalyticsId("NEXT_PUBLIC_GA4_ID", /^G-[A-Z0-9]+$/),
+  gtm: readAnalyticsId("NEXT_PUBLIC_GTM_ID", /^GTM-[A-Z0-9]{6,12}$/),
+  ga4: readAnalyticsId("NEXT_PUBLIC_GA4_ID", /^G-[A-Z0-9]{10}$/),
   clarity: readAnalyticsId("NEXT_PUBLIC_CLARITY_ID", /^[a-z0-9]{6,20}$/),
 };
 const newsItems = JSON.parse(await fs.readFile(path.join(root, "content", "news.json"), "utf8"));

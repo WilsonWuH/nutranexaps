@@ -40,6 +40,7 @@ const preservedLegacyRoutes = [
 
 const terminologyReplacements = {
   ko: [
+    [/산둥 백안루이 바이오제약유한회사/g, companyIdentity.englishCompanyName],
     [/\bPhosphatidylserine\b/gi, "포스파티딜세린"],
     [/\bphosphatidyl serine\b/gi, "포스파티딜세린"],
     [/(?:인산|포|호)[가-힣]{0,8}\s?세린/g, "포스파티딜세린"],
@@ -152,6 +153,35 @@ function translateSchema(value, messages, locale, key = "") {
   if (["url", "item", "@id"].includes(key) || value.startsWith(siteUrl)) return localizeAbsoluteUrl(value, locale);
   if (protectedSchemaIdentityValues.has(value)) return value;
   return translateText(value, messages);
+}
+
+function normalizeOrganizationIdentity(value) {
+  if (Array.isArray(value)) return value.map(normalizeOrganizationIdentity);
+  if (!value || typeof value !== "object") return value;
+  const normalized = Object.fromEntries(Object.entries(value).map(([key, child]) => [key, normalizeOrganizationIdentity(child)]));
+  const types = Array.isArray(normalized["@type"]) ? normalized["@type"] : [normalized["@type"]];
+  if (types.includes("Organization")) {
+    normalized.name = companyIdentity.englishCompanyName;
+    normalized.alternateName = companyIdentity.publicName;
+    delete normalized.legalName;
+    delete normalized.sameAs;
+  }
+  return normalized;
+}
+
+function normalizeLegacyPageIdentity(html) {
+  const $ = load(html, { decodeEntities: false });
+  $("script[type='application/ld+json']").each((_, element) => {
+    try {
+      const schema = JSON.parse($(element).text());
+      $(element).text(JSON.stringify(normalizeOrganizationIdentity(schema)));
+    } catch {
+      // Leave malformed legacy data unchanged so the dedicated identity verifier can fail loudly.
+    }
+  });
+  return $.html()
+    .replaceAll("산둥 백안루이 바이오제약유한회사", companyIdentity.englishCompanyName)
+    .replaceAll("Shandong Baianrui Biopharmaceutical Co., Ltd.", companyIdentity.englishCompanyName);
 }
 
 function languageSwitcher(locale, route, availableLocales = locales) {
@@ -298,7 +328,7 @@ for (const [locale, pagesToRestore] of preservedLegacyPages) {
     if (route === "/applications/oem-odm/" && generatedRouteSet.has(route)) continue;
     const destination = outputPath(locale, route);
     await fs.mkdir(path.dirname(destination), { recursive: true });
-    await fs.writeFile(destination, html, "utf8");
+    await fs.writeFile(destination, normalizeLegacyPageIdentity(html), "utf8");
   }
 }
 

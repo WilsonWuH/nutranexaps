@@ -4,8 +4,8 @@ The main site includes a validated, environment-driven analytics loader. No anal
 
 ## Supported variables
 
-- `NEXT_PUBLIC_GTM_ID`: preferred when Google Tag Manager manages GA4 and other Google tags; format `GTM-...`.
-- `NEXT_PUBLIC_GA4_ID`: direct GA4 fallback when GTM is not supplied; format `G-...`.
+- `NEXT_PUBLIC_GTM_ID`: preferred when Google Tag Manager manages GA4 and other Google tags; format `GTM-` followed by 6–12 uppercase letters or digits.
+- `NEXT_PUBLIC_GA4_ID`: direct GA4 fallback when GTM is not supplied; format `G-` followed by exactly 10 uppercase letters or digits.
 - `NEXT_PUBLIC_CLARITY_ID`: optional Microsoft Clarity project ID; lowercase letters and numbers only.
 
 If both GTM and GA4 are present, the site loads GTM only so GA4 is not counted twice. Configure the GA4 tag inside the GTM container in that case. If GTM is blank and GA4 is present, the direct GA4 loader sends page views and the site's approved non-PII events. Clarity loads independently when its ID is present.

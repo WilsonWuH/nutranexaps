@@ -9,7 +9,14 @@ const errors = [];
 const notices = [];
 
 function isIsoDate(value) {
-  return /^\d{4}-\d{2}-\d{2}$/.test(value) && !Number.isNaN(Date.parse(`${value}T00:00:00Z`));
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [year, month, day] = value.split("-").map(Number);
+  const parsed = new Date(Date.UTC(year, month - 1, day));
+  return parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day;
+}
+
+if (isIsoDate("2026-02-31") || isIsoDate("2026-13-01")) {
+  errors.push("ISO date validator accepted an impossible calendar date");
 }
 
 if (!isIsoDate(trustDocumentReview.reviewedOn)) {
