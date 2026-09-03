@@ -41,6 +41,7 @@ const preservedLegacyRoutes = [
 const terminologyReplacements = {
   ko: [
     [/산둥 백안루이 바이오제약유한회사/g, companyIdentity.englishCompanyName],
+    [/Shandong Nutranexa Biopharmaceutical Co\., Ltd\.\s*\(Shandong Nutranexa Biopharmaceutical Co\., Ltd\.\)/g, companyIdentity.englishCompanyName],
     [/\bPhosphatidylserine\b/gi, "포스파티딜세린"],
     [/\bphosphatidyl serine\b/gi, "포스파티딜세린"],
     [/(?:인산|포|호)[가-힣]{0,8}\s?세린/g, "포스파티딜세린"],
