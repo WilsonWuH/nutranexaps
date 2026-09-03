@@ -11,6 +11,14 @@ export const utilityRoutes = new Set(["/thank-you/"]);
 export const englishOnlyRoutes = new Set([
   "/products/lecithin/",
   "/products/soy-lecithin/",
+  "/company-verification/",
+]);
+
+// These pages are intentionally published in English only until an approved
+// human translation exists. The generator skips non-English artifacts instead
+// of creating a noindex page that looks like a translated page.
+export const untranslatedEnglishOnlyRoutes = new Set([
+  "/company-verification/",
 ]);
 
 export const coreProductRoutes = new Set([
@@ -101,6 +109,7 @@ export function sitemapLocalesForRoute(route) {
 }
 
 export function sitemapGroup(route, locale) {
+  if (route === "/company-verification/") return "core";
   if (isCoreProductRoute(route) || englishOnlyRoutes.has(route)) return "products";
   if (isResourceRoute(route)) return locale === defaultLocale ? "resources-en" : "resources-localized";
   if (isNewsRoute(route)) return locale === defaultLocale ? "news-en" : "news-localized";

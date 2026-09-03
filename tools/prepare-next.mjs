@@ -10,6 +10,7 @@ const pageDirectories = [
   "applications",
   "benefits",
   "cases",
+  "company-verification",
   "contact",
   "manufacturing",
   "news",

@@ -3,7 +3,7 @@ import path from "node:path";
 import { load } from "cheerio";
 import { defaultLocale, localePath, locales } from "../i18n/config.mjs";
 import { translationOverrides } from "../i18n/overrides.mjs";
-import { indexableLocalesForRoute, isRouteIndexable, sitemapFiles, sitemapLocalesForRoute } from "../config/seo/indexing.mjs";
+import { indexableLocalesForRoute, isRouteIndexable, sitemapFiles, sitemapLocalesForRoute, untranslatedEnglishOnlyRoutes } from "../config/seo/indexing.mjs";
 
 const root = process.cwd();
 const siteUrl = "https://nutranexaps.com";
@@ -22,6 +22,7 @@ for (const locale of locales) {
   if (["ko", "tr"].includes(locale.code) && missing.length) errors.push(`${locale.code}: ${missing.length} dictionary entries are missing`);
 
   for (const route of manifest.routes) {
+    if (untranslatedEnglishOnlyRoutes.has(route) && locale.code !== defaultLocale) continue;
     const file = path.join(root, locale.code, ...route.split("/").filter(Boolean), "index.html");
     let html;
     try {

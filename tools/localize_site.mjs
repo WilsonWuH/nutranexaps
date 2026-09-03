@@ -9,6 +9,8 @@ import {
   isRouteIndexable,
   sitemapFiles,
   sitemapGroup,
+  englishOnlyRoutes,
+  untranslatedEnglishOnlyRoutes,
 } from "../config/seo/indexing.mjs";
 
 const root = process.cwd();
@@ -105,6 +107,7 @@ function localizeInternalPath(value, locale) {
   const pathname = match?.[1] || value;
   const suffix = match?.[2] || "";
   const withoutLocale = pathname.replace(new RegExp(`^/(${[...localeCodes].join("|")})(?=/|$)`), "") || "/";
+  if (englishOnlyRoutes.has(withoutLocale)) return `${withoutLocale}${suffix}`;
   return `${localePath(locale, withoutLocale)}${suffix}`;
 }
 
@@ -144,9 +147,9 @@ function translateSchema(value, messages, locale, key = "") {
   return translateText(value, messages);
 }
 
-function languageSwitcher(locale, route) {
+function languageSwitcher(locale, route, availableLocales = locales) {
   const current = localeConfig(locale);
-  const standardLinks = locales.map((item) => `<a href="${publicLocalePath(item.code, route)}" lang="${item.code}" dir="${item.dir}"${item.code === locale ? ' aria-current="page"' : ""}><span>${item.code.toUpperCase()}</span>${item.nativeLabel}</a>`);
+  const standardLinks = availableLocales.map((item) => `<a href="${publicLocalePath(item.code, route)}" lang="${item.code}" dir="${item.dir}"${item.code === locale ? ' aria-current="page"' : ""}><span>${item.code.toUpperCase()}</span>${item.nativeLabel}</a>`);
   const links = standardLinks.join("");
   return `<details class="language-switcher"><summary aria-label="${current.switcherLabel}"><span class="language-code">${locale.toUpperCase()}</span><span class="language-name">${current.nativeLabel}</span></summary><div class="language-menu">${links}</div></details>`;
 }
@@ -233,7 +236,8 @@ function localizeHtml(html, locale, route, messages, indexableLocaleCodes, { com
   $(".language-switcher").remove();
   const isPlainNewsArticle = route.startsWith("/news/") && route !== "/news/";
   if (!isPlainNewsArticle) {
-    const switcher = languageSwitcher(locale, route);
+    const availableLocales = indexableLocaleCodes.size ? locales.filter((item) => indexableLocaleCodes.has(item.code)) : locales;
+    const switcher = languageSwitcher(locale, route, availableLocales);
     if ($(".nav-cta").length) $(".nav-cta").first().before(switcher);
     else if ($("header").length) $("header").first().append(switcher);
   }
@@ -270,6 +274,7 @@ for (const page of pages) {
   indexableLocalesByRoute.set(route, indexableLocaleCodes);
   sitemapLocalesByRoute.set(route, sitemapLocalesForRoute(route));
   for (const locale of locales) {
+    if (locale.code !== defaultLocale && untranslatedEnglishOnlyRoutes.has(route)) continue;
     const destination = outputPath(locale.code, route);
     await fs.mkdir(path.dirname(destination), { recursive: true });
     await fs.writeFile(destination, localizeHtml(html, locale.code, route, dictionaries.get(locale.code), indexableLocaleCodes), "utf8");
