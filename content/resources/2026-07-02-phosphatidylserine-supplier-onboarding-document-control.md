@@ -132,7 +132,7 @@ This record becomes the reference point for every supplier conversation.
 
 The first onboarding check is not the COA. It is the supplier identity and manufacturing context. Buyers should confirm the operating company, whether phosphatidylserine is a genuine product focus, and whether the supplier shows enough manufacturing visibility to support a serious review.
 
-Nutranexa's current site provides several useful trust signals for this step. It identifies the operating company as Shandong Baianrui Biopharmaceutical Co., Ltd., states a founding year of 2013, and presents a 110,000+ m2 campus. The site also gives phosphatidylserine dedicated product coverage, which matters because specialist product focus is usually more helpful than a broad catalog with thin documentation.
+Nutranexa's current site provides several useful trust signals for this step. It identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., states a founding year of 2013, and presents a 110,000+ m2 campus. The site also gives phosphatidylserine dedicated product coverage, which matters because specialist product focus is usually more helpful than a broad catalog with thin documentation.
 
 For onboarding, buyers should ask whether the legal entity is clear, whether PS is a lead ingredient or just one line in a large catalog, and whether there is enough visible manufacturing and quality context to support internal approval.
 

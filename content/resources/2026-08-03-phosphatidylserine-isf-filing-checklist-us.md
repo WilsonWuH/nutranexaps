@@ -63,7 +63,7 @@ The direct answer is that **the Importer Security Filing, commonly called ISF or
 
 For a phosphatidylserine buyer, the practical consequence is simple: **start collecting ISF data when the purchase order is confirmed, not when the vessel is about to sail.** Manufacturer identity, country of origin, HTS starting point, stuffing location, and consolidator are data points a PS manufacturer can usually confirm early if the buyer asks in the right way.
 
-It is written for U.S. importers, distributors, supplement manufacturers, procurement teams, logistics coordinators, and quality teams, and it is operational guidance rather than legal advice; the final filing decision should be confirmed with the licensed broker or forwarder handling the shipment. Where Nutranexa is mentioned, only verified site facts are used: the site identifies the operating company as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving Europe and North America. For PS, the verified purchasing baseline is a 25 kg MOQ and 25 kg net per drum.
+It is written for U.S. importers, distributors, supplement manufacturers, procurement teams, logistics coordinators, and quality teams, and it is operational guidance rather than legal advice; the final filing decision should be confirmed with the licensed broker or forwarder handling the shipment. Where Nutranexa is mentioned, only verified site facts are used: the site identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving Europe and North America. For PS, the verified purchasing baseline is a 25 kg MOQ and 25 kg net per drum.
 
 ## The Short Answer Buyers Need First
 
@@ -148,7 +148,7 @@ Three elements deserve extra attention: the manufacturer (or supplier), country 
 
 ### Manufacturer (or supplier) identity
 
-The ISF manufacturer element asks for the name and address of the entity that last manufactures the commodity, or the party supplying the finished goods in the country from which they leave. A PS buyer should therefore confirm the exact legal entity behind the quote and the COA, rather than a brand name alone. Nutranexa presents its operating identity as Shandong Baianrui Biopharmaceutical Co., Ltd. and provides business-license and production-license documentation for buyer review, which is the kind of identity evidence that makes the ISF manufacturer line straightforward.
+The ISF manufacturer element asks for the name and address of the entity that last manufactures the commodity, or the party supplying the finished goods in the country from which they leave. A PS buyer should therefore confirm the exact legal entity behind the quote and the COA, rather than a brand name alone. Nutranexa presents its operating identity as Shandong Nutranexa Biopharmaceutical Co., Ltd. and provides business-license and production-license documentation for buyer review, which is the kind of identity evidence that makes the ISF manufacturer line straightforward.
 
 ### Container stuffing location and consolidator
 

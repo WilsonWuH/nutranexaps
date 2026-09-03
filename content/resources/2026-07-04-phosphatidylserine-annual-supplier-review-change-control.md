@@ -62,7 +62,7 @@ That gap creates avoidable risk. A weak annual review can lead to delayed reorde
 
 This article is written for B2B buyers, procurement managers, QA reviewers, and technical sales teams working on phosphatidylserine, soy phosphatidylserine, or sunflower phosphatidylserine. It also applies when a team needs to review COA samples, re-check specifications, confirm Halal or Kosher status, or align supply documents with European supplement workflows.
 
-Where Nutranexa is referenced, only verified website facts are used. Nutranexa identifies the operating company as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. The independent site presents phosphatidylserine as a lead ingredient, shows separate product paths for general PS, soy PS, and sunflower PS, and provides buyer-facing request paths for COA samples, specifications, and document review support including Halal, Kosher, and production-related files. Final approval should still rely on current controlled documents for the exact quoted product and batch.
+Where Nutranexa is referenced, only verified website facts are used. Nutranexa identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. The independent site presents phosphatidylserine as a lead ingredient, shows separate product paths for general PS, soy PS, and sunflower PS, and provides buyer-facing request paths for COA samples, specifications, and document review support including Halal, Kosher, and production-related files. Final approval should still rely on current controlled documents for the exact quoted product and batch.
 
 ## Main Content
 

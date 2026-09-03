@@ -72,7 +72,7 @@ That is why phosphatidylserine COA review should not be treated as an isolated Q
 
 This guide explains how overseas buyers should review the three document layers that matter most before purchase-order approval: the specification sheet, the COA, and the supporting certificate set.
 
-Where Nutranexa is mentioned, only verified site facts are used. The current Nutranexa site identifies the operating company as Shandong Baianrui Biopharmaceutical Co., Ltd., established on December 25, 2013, and states a 110,000+ m2 campus in Yanggu County, Shandong. It presents phosphatidylserine as a lead product, shows PS 20% sunflower and PS 50% sample COA visibility, and lists buyer-requestable files such as Halal, Kosher, food production license, and FDA food facility registration materials. Buyers should still confirm the latest product-specific, batch-specific, and market-specific files before quotation or shipment.
+Where Nutranexa is mentioned, only verified site facts are used. The current Nutranexa site identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., established on December 25, 2013, and states a 110,000+ m2 campus in Yanggu County, Shandong. It presents phosphatidylserine as a lead product, shows PS 20% sunflower and PS 50% sample COA visibility, and lists buyer-requestable files such as Halal, Kosher, food production license, and FDA food facility registration materials. Buyers should still confirm the latest product-specific, batch-specific, and market-specific files before quotation or shipment.
 
 ## Main Content
 
@@ -196,7 +196,7 @@ US and European buyers often need similar core quality files but may organize th
 
 ## What Nutranexa Buyers Can Verify From the Current Site
 
-Nutranexa's current independent site gives buyers a useful preliminary review base. The site identifies the company as Shandong Baianrui Biopharmaceutical Co., Ltd., established on December 25, 2013, and states a 110,000+ m2 production campus. It presents phosphatidylserine as a lead ingredient, references cooperation with East China University of Science and Technology, and shows COA sample visibility for PS 20% sunflower and PS 50%.
+Nutranexa's current independent site gives buyers a useful preliminary review base. The site identifies the company as Shandong Nutranexa Biopharmaceutical Co., Ltd., established on December 25, 2013, and states a 110,000+ m2 production campus. It presents phosphatidylserine as a lead ingredient, references cooperation with East China University of Science and Technology, and shows COA sample visibility for PS 20% sunflower and PS 50%.
 
 For document-stage buyers, the more relevant strengths are the public quality cues. The site cites the test basis `QB/T 5821-2023` on those sample COAs and lists buyer-facing document categories including food production license support, FDA food facility registration, Halal, Kosher, packaging or storage information, and market-specific compliance discussion. It also repeatedly states that current specifications, current batch COA, certificate scope, export packaging, and MOQ details should be confirmed before purchase.
 

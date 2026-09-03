@@ -2,12 +2,23 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { sitemapFiles } from "../config/seo/indexing.mjs";
 import { companyIdentity, companySources, companyPatents, companyEvidence } from "../config/trust/company.mjs";
+import { documentProof } from "../config/trust/documents.mjs";
 
 const root = path.resolve(".");
 const siteUrl = companyIdentity.siteUrl;
 const phone = companyIdentity.phone;
 const whatsapp = companyIdentity.whatsapp;
 const address = companyIdentity.address;
+function readAnalyticsId(name, pattern) {
+  const value = process.env[name]?.trim() || "";
+  if (value && !pattern.test(value)) throw new Error(`Invalid ${name} format`);
+  return value;
+}
+const analyticsConfig = {
+  gtm: readAnalyticsId("NEXT_PUBLIC_GTM_ID", /^GTM-[A-Z0-9]+$/),
+  ga4: readAnalyticsId("NEXT_PUBLIC_GA4_ID", /^G-[A-Z0-9]+$/),
+  clarity: readAnalyticsId("NEXT_PUBLIC_CLARITY_ID", /^[a-z0-9]{6,20}$/),
+};
 const newsItems = JSON.parse(await fs.readFile(path.join(root, "content", "news.json"), "utf8"));
 const researchItems = JSON.parse(await fs.readFile(path.join(root, "content", "research.json"), "utf8"));
 
@@ -533,44 +544,6 @@ const psGrades = [
         ["Salmonella", "Not detected / 25g"],
       ],
     },
-  },
-];
-
-const documentProof = [
-  {
-    title: "Business License",
-    text: "Company registration document for Shandong Baianrui Biopharmaceutical Co., Ltd.; established on Dec 25, 2013.",
-    image: "/assets/images/doc-business-license.webp",
-  },
-  {
-    title: "Food Production License",
-    text: "Food production license document supplied; license period shown as Dec 10, 2025 to Dec 09, 2030.",
-    image: "/assets/images/doc-food-production-license.webp",
-  },
-  {
-    title: "Food Additive License Details",
-    text: "Food additive production item details include phosphatidylserine-related product information.",
-    image: "/assets/images/doc-food-additive-license-details.webp",
-  },
-  {
-    title: "FDA Food Facility Registration",
-    text: "Food facility registration document supplied for 2025-2026; this is not an FDA product endorsement.",
-    image: "/assets/images/doc-fda-food-facility-registration.webp",
-  },
-  {
-    title: "Kosher Certificate",
-    text: "Kosher certification document supplied for phosphatidylserine, valid until May 31, 2027.",
-    image: "/assets/images/doc-kosher-certificate.webp",
-  },
-  {
-    title: "Halal Certificate",
-    text: "Halal certificate document supplied for phosphatidylserine under Nutranexa / Shushi brand reference, valid Dec 26, 2024 to Dec 26, 2027.",
-    image: "/assets/images/doc-halal-certificate.webp",
-  },
-  {
-    title: "PS 70% COA Batch Sample",
-    text: "Buyer-supplied batch COA for model PP701, lot C00120260604, reporting 72.9 g/100g phosphatidylserine. The source route is not stated on the sample.",
-    image: "/assets/images/doc-coa-ps-70.webp",
   },
 ];
 
@@ -1402,7 +1375,8 @@ function organizationJson() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${siteUrl}/#organization`,
-    name: companyIdentity.publicName,
+    name: companyIdentity.englishCompanyName,
+    alternateName: companyIdentity.publicName,
     url: companyIdentity.siteUrl,
     logo: `${siteUrl}${companyIdentity.logoPath}`,
     contactPoint: [{ "@type": "ContactPoint", telephone: phone, contactType: "sales", areaServed: ["Europe", "North America", "Worldwide"], availableLanguage: ["English", "Chinese"] }],
@@ -1429,7 +1403,7 @@ function webPageJson({ title, description, route }) {
     description,
     inLanguage: "en",
     isPartOf: { "@type": "WebSite", "@id": `${siteUrl}/#website`, name: "Nutranexa", url: siteUrl },
-    about: { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: companyIdentity.publicName, url: siteUrl },
+    about: { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: companyIdentity.englishCompanyName, url: siteUrl },
   };
 }
 
@@ -1476,6 +1450,24 @@ function productFaqJson(product) {
   };
 }
 
+function analyticsHeadHtml() {
+  const { gtm, ga4, clarity } = analyticsConfig;
+  const mode = gtm ? "gtm" : ga4 ? "ga4" : "disabled";
+  const publicConfig = JSON.stringify({ gtm, ga4, clarity, mode }).replace(/</g, "\\u003c");
+  const tags = [`<script>window.dataLayer=window.dataLayer||[];window.NUTRANEXA_ANALYTICS=${publicConfig};</script>`];
+  if (gtm) {
+    tags.push(`<script>window.dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});</script>`);
+    tags.push(`<script async src="https://www.googletagmanager.com/gtm.js?id=${gtm}"></script>`);
+  } else if (ga4) {
+    tags.push(`<script async src="https://www.googletagmanager.com/gtag/js?id=${ga4}"></script>`);
+    tags.push(`<script>window.gtag=function(){window.dataLayer.push(arguments);};window.gtag('js',new Date());window.gtag('config','${ga4}',{send_page_view:true});</script>`);
+  }
+  if (clarity) {
+    tags.push(`<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments);};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','${clarity}');</script>`);
+  }
+  return tags.join("\n  ");
+}
+
 function layout({ title, description, route, body, schema = [], image = "/assets/images/factory-aerial-wide.webp", imageAlt = "", imageWidth = "", imageHeight = "", ogType = "website", head = "", optimizeLogo = false, robots = "index,follow" }) {
   const active = route.split("/")[1] || "";
   const headerLogo = optimizeLogo
@@ -1511,10 +1503,7 @@ ${ogImageDetails ? `  ${ogImageDetails}\n` : ""}  <meta name="twitter:card" cont
 ${twitterImageAlt ? `  ${twitterImageAlt}\n` : ""}${head ? `  ${head}\n` : ""}  <link rel="icon" href="/assets/images/logo-nutranexa-icon.png">
   <link rel="stylesheet" href="/assets/styles.css">
   <script type="application/ld+json">${JSON.stringify(allSchema)}</script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    window.NUTRANEXA_ANALYTICS = { ga4: "G-TO-BE-CONFIGURED", ads: "AW-TO-BE-CONFIGURED", clarity: "TO-BE-CONFIGURED" };
-  </script>
+  ${analyticsHeadHtml()}
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -1620,7 +1609,7 @@ function footer(optimizeLogo = false) {
     <div>
       ${logo}
       <p>Functional food ingredient manufacturer focused on phosphatidylserine and related nutrition ingredient applications.</p>
-      <p class="small">Brand: Nutranexa / Baianrui. Product brand references include Shushi PS.</p>
+      <p class="small">Company: ${esc(companyIdentity.englishCompanyName)}. Product brand references include Nutranexa and Shushi PS.</p>
     </div>
     <div>
       <h2>Products</h2>
@@ -1874,7 +1863,7 @@ function contactDetailsCard(title = "Sales contact") {
 }
 
 function documentCards(limit = documentProof.length) {
-  return `<div class="document-grid">${documentProof.slice(0, limit).map((doc) => `<article class="document-card"><img src="${doc.image}" alt="${esc(doc.title)} document sample" loading="lazy"><div><h3>${esc(doc.title)}</h3><p>${esc(doc.text)}</p></div></article>`).join("")}</div>`;
+  return `<div class="document-grid">${documentProof.filter((doc) => doc.public !== false).slice(0, limit).map((doc) => `<article class="document-card"><img src="${doc.image}" alt="${esc(doc.title)} document sample" loading="lazy"><div><h3>${esc(doc.title)}</h3><p>${esc(doc.text)}</p></div></article>`).join("")}</div>`;
 }
 
 function coaSampleTables(samples = coaSamples) {
@@ -1926,12 +1915,8 @@ function articleSeoTitle(article) {
 function homePage() {
   const claimVariant = (image, width) => image.replace(/\.webp$/, `-${width}.webp`);
   const claimIcons = [
-    ["GMP", "/assets/images/claims/claim-gmp.webp"],
     ["Kosher", "/assets/images/claims/claim-kosher.webp"],
     ["Halal", "/assets/images/claims/claim-halal.webp"],
-    ["ISO", "/assets/images/claims/claim-iso.webp"],
-    ["FDA Registration", "/assets/images/claims/claim-fda.webp"],
-    ["FSSC 22000", "/assets/images/claims/claim-fssc-22000.webp"],
     ["Heavy Metals", "/assets/images/claims/claim-heavy-metals.webp"],
     ["Allergen Review", "/assets/images/claims/claim-allergens.webp"],
   ];
@@ -1939,10 +1924,6 @@ function homePage() {
     .map(([label, image]) => `<li class="claim-icon-card"><img src="${claimVariant(image, 112)}" srcset="${claimVariant(image, 112)} 1x, ${claimVariant(image, 224)} 2x" alt="" width="112" height="112" loading="lazy" decoding="async"><span>${esc(label)}</span></li>`)
     .join("");
   const heroClaimIcons = [
-    ["ISO", "/assets/images/claims/claim-iso.webp"],
-    ["FDA Registration", "/assets/images/claims/claim-fda.webp"],
-    ["GMP", "/assets/images/claims/claim-gmp.webp"],
-    ["FSSC 22000", "/assets/images/claims/claim-fssc-22000.webp"],
     ["Kosher", "/assets/images/claims/claim-kosher.webp"],
     ["Halal", "/assets/images/claims/claim-halal.webp"],
   ];
@@ -1954,8 +1935,8 @@ function homePage() {
       <p class="eyebrow">Manufacturer · Supplier Qualification</p>
       <h1>Premium Phosphatidylserine Ingredients <span>for Cognitive Health Innovation</span></h1>
       <p class="home-hero-lead">High-quality soy- and sunflower-derived phosphatidylserine in flexible purity grades for nutraceutical, functional food, and healthy aging formulations.</p>
-      <p class="home-hero-subcopy">Shandong Baianrui Biopharmaceutical Co., Ltd. · Nutranexa public-facing site · Established 2013</p>
-      <div class="hero-certification-rotator" role="img" aria-label="Selected quality references: ISO, FDA Registration, GMP, FSSC 22000, Kosher, and Halal. Scope and validity are confirmed for each order.">
+      <p class="home-hero-subcopy">${esc(companyIdentity.englishCompanyName)} · Established 2013</p>
+      <div class="hero-certification-rotator" role="img" aria-label="Reviewed Kosher and Halal document references. Scope and current copies are confirmed for each order.">
         <span class="hero-certification-label">Quality references<small>Scope confirmed per order</small></span>
         <span class="hero-certification-stage">${heroClaimSlides}</span>
       </div>
@@ -2541,7 +2522,7 @@ function aboutPage() {
   const body = `${hero({
     eyebrow: "About Nutranexa",
     title: "Biotechnology Manufacturer Focused on New Food Ingredients",
-    text: "Shandong Baianrui Biopharmaceutical Co., Ltd. was founded in 2013, operates a 110,000+ m2 campus, and primarily serves export markets in Europe and North America.",
+    text: `${companyIdentity.englishCompanyName} was founded in 2013, operates a 110,000+ m2 campus, and primarily serves export markets in Europe and North America.`,
     image: "/assets/images/factory-campus.webp",
     cta: "Request Qualification Pack",
     contactHref: qualificationPackHref(),
@@ -2550,7 +2531,7 @@ function aboutPage() {
   ${companyVideoSection()}
   <section class="detail-grid"><div><h2>Company profile</h2><p>Nutranexa integrates R&D, production, and sales of new food ingredients, health food ingredients, and food additives. The company positions phosphatidylserine as a lead product and uses factory and product materials to support buyer evaluation.</p><a href="/company-verification/">Review company verification information &rarr;</a></div><div><h2>Primary export markets</h2><p>Nutranexa primarily serves B2B ingredient buyers in Europe and North America, with product documents and commercial details reviewed according to the destination market and quoted product.</p></div><div><h2>Mission</h2><p>Provide healthy, safe, and effective functional food and dietary supplement ingredients while supporting biotechnology industry development and customer product needs.</p></div></section>`;
   return layout({
-    title: "About Nutranexa | Shandong Baianrui Biopharmaceutical",
+    title: "About Nutranexa | Shandong Nutranexa Biopharmaceutical",
     description: "Learn about Nutranexa, a biotechnology manufacturer supplying phosphatidylserine and functional food ingredients primarily to B2B buyers in Europe and North America.",
     route: "/about/",
     image: "/assets/images/factory-campus.webp",
@@ -2564,10 +2545,10 @@ function companyVerificationPage() {
   const patentCards = companyPatents.map((patent) => `<article class="verification-patent-card"><p class="eyebrow">${esc(patent.sourceType)}</p><h3>${esc(patent.number)}</h3><p>${esc(patent.supports)}</p><a class="verification-source-link" data-analytics-event="verification_source_click" data-source-name="Patent ${esc(patent.number)}" href="${esc(patent.url)}" target="_blank" rel="noopener noreferrer">View patent record &rarr;</a></article>`).join("");
   const identityRows = companyEvidence.identity.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("");
   const productionRows = companyEvidence.production.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("");
-  const body = `<section class="page-hero compact verification-hero"><p class="eyebrow">Buyer verification</p><h1>Company &amp; Manufacturer Verification</h1><p>Review the public company names, production references, independent source pages, and document-request paths available for Nutranexa supplier qualification.</p><div class="hero-actions">${qualificationPackCta({ sourcePage: "company-verification-hero" })}<a class="button secondary" href="/quality-rd/">Review quality documents</a></div></section>
+  const body = `<section class="page-hero compact verification-hero"><p class="eyebrow">Buyer verification</p><h1>Company &amp; Manufacturer Verification</h1><p>Review the public company names, production references, public source pages, and document-request paths available for Nutranexa supplier qualification.</p><div class="hero-actions">${qualificationPackCta({ sourcePage: "company-verification-hero" })}<a class="button secondary" href="/quality-rd/">Review quality documents</a></div></section>
   <section class="verification-summary" aria-labelledby="verification-summary-title"><div>${sectionIntro("Verification Summary", "A practical starting point for supplier due diligence", "This page brings together public facts and source links that buyers can review before requesting a product-specific qualification pack. It does not replace legal, regulatory, or customer due diligence.", "verification-summary-title")}</div><aside class="verification-summary-note"><strong>Last reviewed</strong><time datetime="${esc(companyIdentity.lastReviewed)}">${esc(companyIdentity.lastReviewed)}</time><span>Current document scope and validity should be confirmed for the quoted product and destination market.</span></aside></section>
-  <section class="verification-section" aria-labelledby="manufacturer-identity-title"><div>${sectionIntro("Manufacturer Identity", "Names and company facts presented consistently", "Public materials use the following names and facts. The page keeps the naming relationship neutral until the company approves a formal legal and brand-usage statement.", "manufacturer-identity-title")}</div><dl class="verification-fact-grid">${identityRows}</dl></section>
-  <section class="verification-section verification-naming" aria-labelledby="company-names-title"><div>${sectionIntro("Understanding Our Company Names", "How to read the names in public materials", "Nutranexa is the public-facing name used on this website. Public records and third-party profiles may use the English company name or the Chinese company name shown above. This page does not assert that Nutranexa is a registered trademark, nor does it infer a legal relationship between names from appearance alone.", "company-names-title")}</div><p class="document-caution"><strong>Before contract or approval:</strong> Confirm the entity named on the quotation, contract, invoice, certificate, production licence, and current technical documents with the Nutranexa team.</p></section>
+  <section class="verification-section" aria-labelledby="manufacturer-identity-title"><div>${sectionIntro("Manufacturer Identity", "Names and company facts presented consistently", "Nutranexa is the company-confirmed new English name used by this website. The Chinese name below is preserved exactly as shown on the supplied business licence.", "manufacturer-identity-title")}</div><dl class="verification-fact-grid">${identityRows}</dl></section>
+  <section class="verification-section verification-naming" aria-labelledby="company-names-title"><div>${sectionIntro("Understanding Our Company Names", "How to read the names in public materials", "Shandong Nutranexa Biopharmaceutical Co., Ltd. is the approved English company name and Nutranexa is its short public-facing form. The Chinese business licence uses 山东佰安瑞生物药业有限公司. Older public records may retain an earlier English rendering.", "company-names-title")}</div><p class="document-caution"><strong>Before contract or approval:</strong> Match the Chinese legal name, company identifiers, address, and receiving account across the quotation, contract, invoice, certificate, production licence, and current technical documents.</p></section>
   <section class="verification-section" aria-labelledby="public-sources-title"><div>${sectionIntro("Public Sources", "Review public source pages by source type", "This section includes a company-operated website, an industry association profile, and a trade-directory profile. The source type is shown on each card; only non-company pages are independent of the company-operated website, and no broader approval claim is inferred.", "public-sources-title")}</div><div class="verification-source-grid">${sourceCards}</div></section>
   <section class="verification-section" aria-labelledby="production-qualifications-title"><div>${sectionIntro("Production Qualifications", "Production references for buyer review", "The production licence reference and campus-area statement below are presented as references. Request the current licence copy, scope, and validity before relying on them for a specific purchase or market filing.", "production-qualifications-title")}</div><dl class="verification-fact-grid">${productionRows}</dl><p class="form-note">A production licence reference is not a product endorsement. Product applicability, certificate scope, and current validity require document-level review.</p></section>
   <section class="verification-section verification-manufacturing" aria-labelledby="manufacturing-evidence-title"><div>${sectionIntro("Manufacturing Evidence", "Connect public factory evidence to the qualification path", "Review the manufacturing page and company film for campus, workshop, laboratory, packaging, and shipment context. Images and video are supporting evidence and do not replace an audit or controlled document review.", "manufacturing-evidence-title")}</div><div class="verification-manufacturing-grid"><figure><img src="/assets/images/factory-campus.webp" alt="Nutranexa factory campus exterior" loading="lazy"><figcaption>Factory campus reference image.</figcaption></figure><div><ul class="check-list"><li><a href="/manufacturing/">Review manufacturing process and facilities</a></li><li><a href="/about/">Read the company profile</a></li><li><a href="/cases/">Review packaging and dispatch evidence</a></li></ul>${companyVideoPlayer("company-video-player verification-video")}</div></div></section>
@@ -2577,7 +2558,7 @@ function companyVerificationPage() {
   <section class="home-final-cta verification-cta"><div><p class="eyebrow">Qualification CTA</p><h2>Request the documents for your exact product route.</h2><p>Share source, target grade, application, destination market, annual volume, and required files so the response can be matched to your review.</p></div><div class="final-cta-actions">${qualificationPackCta({ className: "button light", sourcePage: "company-verification-final" })}<a href="/contact/">Contact the technical team &rarr;</a></div></section>`;
   return layout({
     title: "Company Verification & Manufacturer Credentials | Nutranexa",
-    description: "Review Nutranexa company identity, production references, independent source pages, patents, and document paths for B2B supplier qualification.",
+    description: "Review Nutranexa company identity, production references, public source pages, patents, and document paths for B2B supplier qualification.",
     route: "/company-verification/",
     image: "/assets/images/factory-campus.webp",
     schema: [breadcrumbJson([["Home", "/"], ["Company Verification", "/company-verification/"]])],
@@ -2588,7 +2569,7 @@ function companyVerificationPage() {
 function contactPage() {
   const body = `<section class="page-hero compact"><p class="eyebrow">Technical inquiry</p><h1>Request Specification &amp; COA</h1><p>Request a factory quote, current specification, batch COA, TDS, sample, MOQ, lead time, packaging details, or source and concentration review. Share your application, target market, and estimated annual volume through the secure form.</p></section>
   <section class="contact-layout">
-    ${contactDetailsCard("Nutranexa / Shandong Baianrui Biopharmaceutical")}
+    ${contactDetailsCard(companyIdentity.englishCompanyName)}
     ${quoteForm("General quote request", "", { includeRequestType: true })}
   </section>`;
   return layout({

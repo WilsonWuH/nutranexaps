@@ -3,6 +3,7 @@ import path from "node:path";
 import { load } from "cheerio";
 import { defaultLocale, localeConfig, localePath, locales, runtimeMessages } from "../i18n/config.mjs";
 import { translationOverrides } from "../i18n/overrides.mjs";
+import { companyIdentity } from "../config/trust/company.mjs";
 import {
   indexableLocalesForRoute,
   sitemapLocalesForRoute,
@@ -18,6 +19,11 @@ const siteUrl = "https://nutranexaps.com";
 const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "assets", "i18n", "apps", "config", "content", "docs", "qa", "tmp"]);
 const localeCodes = new Set(locales.map((locale) => locale.code));
 const legacyMarketLocales = new Set(["ko", "tr"]);
+const protectedSchemaIdentityValues = new Set([
+  companyIdentity.englishCompanyName,
+  companyIdentity.publicName,
+  companyIdentity.chineseName,
+]);
 const preservedLegacyRoutes = [
   "/quote/",
   "/sample-request/",
@@ -144,6 +150,7 @@ function translateSchema(value, messages, locale, key = "") {
   if (typeof value !== "string") return value;
   if (key.startsWith("@") || key === "query-input") return value;
   if (["url", "item", "@id"].includes(key) || value.startsWith(siteUrl)) return localizeAbsoluteUrl(value, locale);
+  if (protectedSchemaIdentityValues.has(value)) return value;
   return translateText(value, messages);
 }
 

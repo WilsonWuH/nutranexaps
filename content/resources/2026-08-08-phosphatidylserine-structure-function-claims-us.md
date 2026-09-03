@@ -40,7 +40,7 @@ Most US supplement brands meet structure/function claims during label developmen
 
 This review is a regulatory and document-review discussion for B2B buyers, not medical advice and not a substitute for qualified counsel on a specific label.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving export markets in Europe and North America. Its public product pages list [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/), its published minimum order is 25 kg with 25 kg net per drum, and buyers can request current specifications and COA evidence from the sales team.
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving export markets in Europe and North America. Its public product pages list [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/), its published minimum order is 25 kg with 25 kg net per drum, and buyers can request current specifications and COA evidence from the sales team.
 
 ## The Direct Answer Buyers Need First
 

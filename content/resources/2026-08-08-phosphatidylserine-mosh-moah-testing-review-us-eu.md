@@ -35,7 +35,7 @@ A quality team sourcing bulk [phosphatidylserine](/products/phosphatidylserine/)
 
 This review is written for ingredient importers, distributors, supplement manufacturers, functional food brands, and quality teams in North America and Europe. It explains what MOSH and MOAH are, why they matter for a lecithin-derived powder, where the EU and US stand today, and which checks turn a mineral oil review into evidence. This is a contaminant and document-review discussion, not a medical discussion.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving export markets in Europe and North America. Its public PS product pages list [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/), sample COA evidence is shown on the [Quality & R&D page](/quality-rd/), and its published minimum order is 25 kg with 25 kg net per drum.
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving export markets in Europe and North America. Its public PS product pages list [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/), sample COA evidence is shown on the [Quality & R&D page](/quality-rd/), and its published minimum order is 25 kg with 25 kg net per drum.
 
 ## The Direct Answer Buyers Need First
 

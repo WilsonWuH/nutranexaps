@@ -33,7 +33,7 @@ When a bulk [phosphatidylserine](/products/phosphatidylserine/) (PS) shipment le
 
 This article is written for importers, distributors, supplement manufacturers, functional food brands, and their procurement, quality, and logistics teams in Europe and North America. It covers what buyers can verify before money moves or cargo sails: the China export document set, how China Customs inspection-and-quarantine work fits in, and how to read the ISPM-15 mark on pallets, crates, and dunnage.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving Europe and North America. Its public pages reference [manufacturing](/manufacturing/), [quality and R&D](/quality-rd/), [packaging and dispatch evidence](/cases/), and a 25 kg minimum order with 25 kg net per drum. Specific China export filings, ISPM-15 records, and per-shipment documents must be confirmed with the supplier's export team and your forwarder.
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving Europe and North America. Its public pages reference [manufacturing](/manufacturing/), [quality and R&D](/quality-rd/), [packaging and dispatch evidence](/cases/), and a 25 kg minimum order with 25 kg net per drum. Specific China export filings, ISPM-15 records, and per-shipment documents must be confirmed with the supplier's export team and your forwarder.
 
 ## The Short Answer Buyers Need First
 

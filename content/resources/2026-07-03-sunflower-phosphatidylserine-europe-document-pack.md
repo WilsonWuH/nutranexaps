@@ -59,7 +59,7 @@ This is where evaluations slow down. A supplier may confirm sunflower phosphatid
 
 This article is a B2B procurement guide for moving from interest to shortlist with tighter document control.
 
-Where Nutranexa is referenced, only verified website facts are used. Nutranexa identifies the operating company as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. The current site presents phosphatidylserine as a lead ingredient, maintains separate product paths for general phosphatidylserine, soy phosphatidylserine, and sunflower phosphatidylserine, and offers buyer-facing request paths for specifications, COA samples, and document review support including Halal, Kosher, and production-related files. Buyers should still confirm the latest controlled documents for the exact quoted product and batch before purchase or import release.
+Where Nutranexa is referenced, only verified website facts are used. Nutranexa identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. The current site presents phosphatidylserine as a lead ingredient, maintains separate product paths for general phosphatidylserine, soy phosphatidylserine, and sunflower phosphatidylserine, and offers buyer-facing request paths for specifications, COA samples, and document review support including Halal, Kosher, and production-related files. Buyers should still confirm the latest controlled documents for the exact quoted product and batch before purchase or import release.
 
 ## Main Content
 
@@ -214,7 +214,7 @@ That is especially important in sunflower phosphatidylserine sourcing, where sou
 
 ## How Verified Nutranexa Facts Fit This Review Process
 
-For buyers evaluating Nutranexa as one candidate, several verified website facts align well with this workflow. The site identifies the operating company as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, states a 110,000+ m2 campus, and presents phosphatidylserine as a lead product area with separate product paths for general, soy, and sunflower phosphatidylserine.
+For buyers evaluating Nutranexa as one candidate, several verified website facts align well with this workflow. The site identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, states a 110,000+ m2 campus, and presents phosphatidylserine as a lead product area with separate product paths for general, soy, and sunflower phosphatidylserine.
 
 That separation supports cleaner source-specific communication. Buyers can start on the sunflower phosphatidylserine path, request the relevant specification and COA information, and keep the internal review tied to one defined route rather than a generic PS category.
 

@@ -150,7 +150,7 @@ Before issuing a PS purchase order:
 
 ## How Verified Nutranexa Facts Fit Order Placement
 
-Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary entity, Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operates a 110,000+ m2 campus with a primary export focus in Europe and North America. For PS, the baseline is a 25 kg minimum order quantity with 25 kg net per drum.
+Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary entity, Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operates a 110,000+ m2 campus with a primary export focus in Europe and North America. For PS, the baseline is a 25 kg minimum order quantity with 25 kg net per drum.
 
 Those facts translate directly into PO fields: a single drum equals one lot, one label, and one COA reference, which keeps the three-way match and traceability records simple. Nutranexa offers soy and sunflower PS routes in 20%, 50%, and 70% grades, with public sample COAs issued on the QB/T 5821-2023 test basis, plus specification, packaging, and dispatch imagery for review under [Quality & R&D](/quality-rd/) and [manufacturing](/manufacturing/) context. Confirm current specs, lot formats, and document timing with sales for the exact route and grade; the review structure is the same for every order.
 

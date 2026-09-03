@@ -24,6 +24,9 @@ const pushAnalytics = (event, details = {}) => {
   window.dataLayer = window.dataLayer || [];
   const safeDetails = Object.fromEntries(Object.entries({ page_path: pagePath, page_language: pageLanguage, ...details }).filter(([, value]) => value !== undefined && value !== null && value !== ""));
   window.dataLayer.push({ event, ...safeDetails });
+  if (window.NUTRANEXA_ANALYTICS?.mode === "ga4" && typeof window.gtag === "function") {
+    window.gtag("event", event, safeDetails);
+  }
 };
 
 if (pagePath === "/company-verification/") {

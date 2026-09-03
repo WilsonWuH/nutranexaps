@@ -73,7 +73,7 @@ The goal is simple: turn one arriving shipment into one controlled inventory eve
 
 This article explains how B2B buyers can structure that workflow. It is written for real procurement and QA teams, not for consumer readers. It focuses on shipment receipt, document matching, lot traceability, and warehouse-release discipline.
 
-Where Nutranexa is mentioned, only verified site facts are used. The current Nutranexa site identifies the company as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and visible manufacturing, cleanroom, lab, and equipment imagery. The site shows phosphatidylserine as a lead product, public reference COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501, and document categories such as business license, food production license, food additive item details, FDA food facility registration, Halal, and Kosher. Buyers should still request current lot-specific shipment files and confirm final applicability before release, use, or resale.
+Where Nutranexa is mentioned, only verified site facts are used. The current Nutranexa site identifies the company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and visible manufacturing, cleanroom, lab, and equipment imagery. The site shows phosphatidylserine as a lead product, public reference COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501, and document categories such as business license, food production license, food additive item details, FDA food facility registration, Halal, and Kosher. Buyers should still request current lot-specific shipment files and confirm final applicability before release, use, or resale.
 
 ## Main Content
 
@@ -181,7 +181,7 @@ The final release step should be lot-specific. If one lot passes and another lot
 
 ## How Verified Nutranexa Facts Fit This Receiving Workflow
 
-Buyers evaluating Nutranexa can connect several verified site facts to their incoming inspection process. The current site identifies Shandong Baianrui Biopharmaceutical Co., Ltd. as the company entity, shows factory, workshop, cleanroom, and laboratory visuals, and states that the business was founded in 2013 on a 110,000+ m2 campus.
+Buyers evaluating Nutranexa can connect several verified site facts to their incoming inspection process. The current site identifies Shandong Nutranexa Biopharmaceutical Co., Ltd. as the company entity, shows factory, workshop, cleanroom, and laboratory visuals, and states that the business was founded in 2013 on a 110,000+ m2 campus.
 
 For document matching, the Quality & R&D page is especially relevant. It publicly shows document categories buyers often use during supplier and receiving review: business license, food production license, food additive item details, FDA food facility registration, Halal, Kosher, TDS or SDS request paths, and source-specific allergen or GMO statement request paths. The same page also shows PS COA samples for sunflower model PP201 and general PS model PP501, including batch-style analytical reporting fields buyers often compare during receipt review.
 

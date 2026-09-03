@@ -1,24 +1,29 @@
 # Buyer Trust Deployment Gates
 
-This document records the external approvals and operational configuration that remain outside the static website implementation. The website must not present any of these gates as complete until the owner confirms them.
+This document records completed approvals and the operational configuration that still remains outside the static website implementation.
 
 ## Required before production release
 
-- **Legal-name relationship approval:** Confirm whether `Shandong Baianrui Biopharmaceutical Co., Ltd.`, `山东佰安瑞生物药业有限公司`, the public-facing Nutranexa name, `nutranexaps.com`, and `nutranexa.cn` refer to the same legal or commercial entity, and confirm which entity appears on quotations, contracts, invoices, certificates, and production-licence documents. Until approved, public copy lists these names by source and does not put the English or Chinese name in `Organization.legalName`, does not use them as `alternateName`, does not call Nutranexa a registered trademark, and does not infer that the names are the same legal entity.
 - **Enterprise email and delivery:** Open the approved company-domain mailbox(es), test inbound and outbound delivery, and configure SPF, DKIM, and DMARC. Update the form delivery destination only after the owner supplies and approves the real recipient. The existing `/api/inquiry` route and current recipient remain unchanged by this implementation.
-- **Real analytics configuration:** Supply the approved GA4/GTM measurement ID(s), implement the approved loader, and validate that `next.config.mjs` CSP `script-src` and `connect-src` allow the required analytics endpoints. Then validate page views, qualification-pack clicks, verification clicks, form start, successful submission, errors, source clicks, document previews, video starts, email clicks, and WhatsApp clicks. The source keeps a visible configuration placeholder and does not invent IDs or pretend the loader is connected.
-- **Certificate and licence review:** Recheck the current validity, scope, issuing entity, product applicability, and controlled-copy status for every certificate, licence, statement, and COA before describing it as current. Historical or representative batch material must remain labelled as such.
-- **Asset publication authorization:** Obtain written authorization to publish factory, laboratory, packaging, shipment, team, certificate, COA, and video assets, including any customer or lot information that could identify a buyer.
+- **Analytics account IDs:** Add the approved GTM or GA4 ID and optional Clarity ID to Vercel, then verify receipt in GTM Preview/GA4 DebugView/Clarity. The loader, format validation, direct-GA4 event bridge, and CSP allow-list are implemented; IDs are intentionally blank until supplied.
+- **FDA record renewal:** The supplied private registrar record shows expiration on Dec 31, 2026. Replace it with current facility-controlled evidence before that date. FDA does not issue or endorse third-party registration certificates. The supplied image uses an FDA logo, so it is retained for controlled buyer review and removed from the public document gallery and homepage claims.
+
+## Owner approvals recorded on 2026-09-03
+
+- **English company name:** The owner confirmed Nutranexa as the company's new English name. Public copy uses `Shandong Nutranexa Biopharmaceutical Co., Ltd.` as the full English form shown on supplied English-language certificates and `Nutranexa` as the short form. The Chinese legal name remains exactly as shown on the business licence. Organization Schema intentionally avoids `legalName` but may use the approved English name plus the Nutranexa alternate name.
+- **Asset publication authorization:** The owner confirmed that the website's factory, laboratory, packaging, shipment, team, certificate, COA, and video materials are authorized for publication.
+- **Document review:** The displayed licence/certificate copies were reviewed on Sep 3, 2026. Dated copies are currently in date: production licence and item details through Dec 9, 2030; private food-facility registration record through Dec 31, 2026; Kosher through May 31, 2027; Halal through Dec 26, 2027. The business licence copy has no fixed expiry printed. COAs remain labelled representative/historical. See `config/trust/documents.mjs`.
 
 ## Implemented in source
 
-- `config/trust/company.mjs` is the reusable source for source-listed public facts and verification links; it does not decide the unapproved legal-name relationship.
+- `config/trust/company.mjs` is the reusable source for approved English naming, the Chinese licence name, public facts, and verification links.
+- `config/trust/documents.mjs` records document scope, displayed dates, review status, and authorization date. `npm run trust:verify` fails on missing files or expired dated documents and warns 120 days before renewal.
 - `/company-verification/` is generated in English only until human translations are approved. Non-English artifacts and hreflang targets are not generated for this route.
 - Qualification Pack CTAs use `/contact/?request=qualification-pack` and preserve the existing inquiry endpoint and required-field model.
 - Form options include qualification-pack routing, volume ranges, Halal, Kosher, GMO, SDS, and related document requests without exposing a new mailbox.
-- Analytics events are emitted through the existing `dataLayer` architecture without visitor name, email, phone, message, or other PII.
+- Analytics events are emitted through the existing `dataLayer` architecture without visitor name, email, phone, message, or other PII. GTM, direct GA4, and Clarity loaders activate only with validated environment IDs; see `docs/ANALYTICS_CONFIGURATION.md`.
 - The event set is `verification_view` (verification-page load), `verification_click` (homepage entry), `verification_source_click`, `qualification_pack_click`, `qualification_form_start`, `qualification_form_submit`, `qualification_form_error`, `document_preview`, `factory_video_start`, `email_click`, and `whatsapp_click`; no event contains visitor-entered PII.
-- Organization JSON-LD keeps one `@id` and the public-facing `Nutranexa` subject with minimal safe fields. It intentionally omits unapproved `legalName`, `alternateName`, `sameAs`, and patent relationships. Source pages are listed in page content with neutral source types. Product JSON-LD is not restored.
+- Organization JSON-LD keeps one `@id`, the approved full English company name, `Nutranexa` as `alternateName`, and minimal safe fields. It omits `legalName`, `sameAs`, and patent relationships. Source pages are listed in page content with neutral source types. Product JSON-LD is not restored.
 - `npm run seo:no-products` checks all repository HTML, including `apps/kr-site/dist` and `apps/tr-site/dist`, for Product JSON-LD.
 
 ## Release verification

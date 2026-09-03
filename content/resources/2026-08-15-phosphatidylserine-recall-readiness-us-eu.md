@@ -150,7 +150,7 @@ Before approving a PS supplier and again at each annual [supplier review](/resou
 
 ## How Verified Nutranexa Facts Fit Recall Readiness
 
-Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary entity, Shandong Baianrui Biopharmaceutical Co., Ltd., was founded in 2013 and operates a 110,000+ m2 campus with a primary export focus in Europe and North America. For PS, the baseline is a 25 kg minimum order quantity with 25 kg net per drum, in 20%, 50%, and 70% grades.
+Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary entity, Shandong Nutranexa Biopharmaceutical Co., Ltd., was founded in 2013 and operates a 110,000+ m2 campus with a primary export focus in Europe and North America. For PS, the baseline is a 25 kg minimum order quantity with 25 kg net per drum, in 20%, 50%, and 70% grades.
 
 Those facts translate into a recall-ready order structure: one drum equals one lot, one label, and one COA reference, keeping traceability simple at the buyer's warehouse. Nutranexa publishes sample COAs on the QB/T 5821-2023 test basis and makes specification, manufacturing, packaging, and dispatch evidence available under [Quality & R&D](/quality-rd/) and [manufacturing](/manufacturing/). Confirm the current recall procedure and notification commitments directly with sales before approval.
 

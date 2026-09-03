@@ -131,7 +131,7 @@ How the evidence is presented to CBP is almost as important as the evidence itse
 
 ## Evaluating Supplier Documentation: The Nutranexa Approach
 
-Because the importer of record owns the UFLPA response file, selecting a manufacturer capable of supplying granular, batch-specific evidence is critical. Nutranexa operates through its primary manufacturing entity, Shandong Baianrui Biopharmaceutical Co., Ltd., which was founded in 2013. The company operates a 110,000+ m2 production campus in Shandong Province, with a primary export focus in Europe and North America.
+Because the importer of record owns the UFLPA response file, selecting a manufacturer capable of supplying granular, batch-specific evidence is critical. Nutranexa operates through its primary manufacturing entity, Shandong Nutranexa Biopharmaceutical Co., Ltd., which was founded in 2013. The company operates a 110,000+ m2 production campus in Shandong Province, with a primary export focus in Europe and North America.
 
 ### Facility Location and UFLPA
 
@@ -145,7 +145,7 @@ Nutranexa is a functional food ingredient manufacturer focused on phosphatidylse
 
 For standard bulk orders (which feature a 25 kg Minimum Order Quantity packaged at 25 kg net per drum), Nutranexa supplies detailed PS Certificates of Analysis (COA) and specification evidence. Beyond standard quality documents, our [quality and R&D](/quality-rd/) teams can provide factory floor, raw material packaging, and dispatch imagery that visually corroborates the documentary trail.
 
-Furthermore, Nutranexa provides verified business-license and production-license documentation for the Shandong Baianrui Biopharmaceutical Co., Ltd. facility. Crucially for UFLPA tracing, the sales team can match current documents directly to the quoted product, the specific logistical route, and the exact production batch, ensuring that your customs broker has a cohesive, translated document packet to present upon entry. R&D cooperation information is also available for buyer review.
+Furthermore, Nutranexa provides verified business-license and production-license documentation for the Shandong Nutranexa Biopharmaceutical Co., Ltd. facility. Crucially for UFLPA tracing, the sales team can match current documents directly to the quoted product, the specific logistical route, and the exact production batch, ensuring that your customs broker has a cohesive, translated document packet to present upon entry. R&D cooperation information is also available for buyer review.
 
 To ensure physical labeling aligns with documentary evidence, buyers should also review our guide on [phosphatidylserine country of origin marking](/resources/phosphatidylserine-country-of-origin-marking-us/) before finalizing their packaging specifications.
 

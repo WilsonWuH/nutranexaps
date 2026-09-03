@@ -24,7 +24,7 @@ export const runtimeMessages = {
 
 export const protectedTerms = [
   "Nutranexa",
-  "Baianrui",
+  "Nutranexa",
   "Shushi PS",
   "Phosphatidylserine",
   "PS",

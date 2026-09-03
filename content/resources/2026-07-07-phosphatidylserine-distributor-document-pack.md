@@ -64,7 +64,7 @@ This matters more in North America because customer expectations often split by 
 
 This article is written for ingredient importers, distributors, private-label operators, supplement manufacturers, procurement teams, QA teams, and regulatory reviewers serving the United States and Canada. It focuses on document control, customer readiness, and commercial clarity. It does not provide legal advice and it does not make medical treatment claims.
 
-Where Nutranexa is mentioned, only verified site facts are used. The current site identifies the operating company as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and a primary export focus on Europe and North America. It shows separate product paths for [Phosphatidylserine](/products/phosphatidylserine/), [Soy Phosphatidylserine](/products/soy-phosphatidylserine/), and [Sunflower Phosphatidylserine](/products/sunflower-phosphatidylserine/), and it gives buyers visible access to specification support, public COA examples, packaging proof, manufacturing imagery, and contact-based document follow-up. Final customer packs should still be built from the current controlled files for the exact quoted item and order stage.
+Where Nutranexa is mentioned, only verified site facts are used. The current site identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and a primary export focus on Europe and North America. It shows separate product paths for [Phosphatidylserine](/products/phosphatidylserine/), [Soy Phosphatidylserine](/products/soy-phosphatidylserine/), and [Sunflower Phosphatidylserine](/products/sunflower-phosphatidylserine/), and it gives buyers visible access to specification support, public COA examples, packaging proof, manufacturing imagery, and contact-based document follow-up. Final customer packs should still be built from the current controlled files for the exact quoted item and order stage.
 
 ## The Short Answer Buyers Need First
 
@@ -219,7 +219,7 @@ This is also where today's related resource topics connect without overlapping. 
 
 For buyers using Nutranexa as a phosphatidylserine source candidate, several verified site facts support a stronger distributor packet workflow.
 
-The site identifies Shandong Baianrui Biopharmaceutical Co., Ltd. as founded in 2013 with a 110,000+ m2 campus and a primary export focus on Europe and North America. It gives buyers separate product paths for general PS, soy PS, and sunflower PS, which helps distributors keep source routes distinct inside customer packets instead of collapsing them into a generic product family.
+The site identifies Shandong Nutranexa Biopharmaceutical Co., Ltd. as founded in 2013 with a 110,000+ m2 campus and a primary export focus on Europe and North America. It gives buyers separate product paths for general PS, soy PS, and sunflower PS, which helps distributors keep source routes distinct inside customer packets instead of collapsing them into a generic product family.
 
 The site also shows visible specification and COA support, [Quality & R&D](/quality-rd/) document-request pathways, [manufacturing](/manufacturing/) and packaging proof, and product-page confirmation of a 25 kg MOQ with 25 kg net per drum for PS routes. Those facts are useful for a downstream customer packet because they support four practical tasks:
 

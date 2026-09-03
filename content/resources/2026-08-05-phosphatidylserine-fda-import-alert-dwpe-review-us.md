@@ -35,7 +35,7 @@ The direct answer for most buyers is this: FDA import alerts are product-, firm-
 
 This guide is written for U.S. importers, distributors, supplement manufacturers, functional food brands, and their procurement, quality, and regulatory teams. It focuses on the buyer's side of import-alert risk: what DWPE is, which alerts can affect supplement ingredients, how to screen before purchase, and what to do if a shipment is detained.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving export markets in Europe and North America. Its public pages reference R&D cooperation with East China University of Science and Technology, PS COA and specification evidence, and a 25 kg minimum order with 25 kg net per drum. Nothing here replaces the current specification, batch COA, facility-registration details, or entry documents a buyer must confirm with the supplier and broker.
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving export markets in Europe and North America. Its public pages reference R&D cooperation with East China University of Science and Technology, PS COA and specification evidence, and a 25 kg minimum order with 25 kg net per drum. Nothing here replaces the current specification, batch COA, facility-registration details, or entry documents a buyer must confirm with the supplier and broker.
 
 ## The Short Answer Buyers Need First
 

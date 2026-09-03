@@ -134,7 +134,7 @@ Before approving a PS supplier, and again at each annual [supplier review](/reso
 
 ## How Verified Nutranexa Facts Fit the Review
 
-Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. Shandong Baianrui Biopharmaceutical Co., Ltd. was founded in 2013 and operates a 110,000+ m2 campus with a primary export focus in Europe and North America. For PS, the baseline is a 25 kg minimum order quantity with 25 kg net per drum, in 20%, 50%, and 70% grades.
+Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. Shandong Nutranexa Biopharmaceutical Co., Ltd. was founded in 2013 and operates a 110,000+ m2 campus with a primary export focus in Europe and North America. For PS, the baseline is a 25 kg minimum order quantity with 25 kg net per drum, in 20%, 50%, and 70% grades.
 
 Those facts support a physical-contamination review without inventing process details: one drum equals one lot, one label, and one COA reference, which makes the appearance and foreign-matter checks at receiving easy to trace to a single batch. Nutranexa publishes sample COAs on the QB/T 5821-2023 test basis and makes specification, manufacturing, packaging, and dispatch evidence available under [Quality & R&D](/quality-rd/) and [manufacturing](/manufacturing/), including [PS 20%](/products/phosphatidylserine-20/) and [PS 50%](/products/phosphatidylserine-50/) grades and the [soy](/products/soy-phosphatidylserine/) and [sunflower](/products/sunflower-phosphatidylserine/) routes. Confirm the current specification wording, COA fields, and process-control answers directly with sales before approval.
 

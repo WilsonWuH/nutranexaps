@@ -163,7 +163,7 @@ PFAS screening belongs inside the quality and document controls buyers already u
 
 ## How Verified Nutranexa Facts Fit This Workflow
 
-Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary entity, Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operates a 110,000+ m2 campus with a primary export focus in Europe and North America. For PS, the baseline is a 25 kg minimum order quantity with 25 kg net per drum.
+Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary entity, Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operates a 110,000+ m2 campus with a primary export focus in Europe and North America. For PS, the baseline is a 25 kg minimum order quantity with 25 kg net per drum.
 
 Those facts support the file: separate soy and sunflower routes keep the raw-material chain specific, and a 25 kg drum baseline keeps batch linkage simple, one drum, one label, one lot reference to reconcile with the COA, packing list, and any PFAS declaration. Nutranexa provides PS COA and specification evidence, factory, packaging, and dispatch imagery for review, supported by [Quality & R&D](/quality-rd/) and [manufacturing](/manufacturing/) context. None of that asserts PFAS results or a PFAS-free status: declarations, test data, and packaging documents must be confirmed for the exact route, lot, and configuration.
 

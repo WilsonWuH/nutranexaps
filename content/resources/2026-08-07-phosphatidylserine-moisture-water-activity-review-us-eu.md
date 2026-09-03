@@ -35,7 +35,7 @@ A quality or procurement team sourcing bulk [phosphatidylserine](/products/phosp
 
 This review is written for ingredient importers, distributors, supplement manufacturers, functional food brands, and quality teams in North America and Europe. It explains the difference between moisture content and water activity, what to check on a PS specification and COA, where moisture fits in US and EU quality frameworks, and which buyer questions reduce risk. This is a specification and quality-control review, not a medical discussion.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving export markets in Europe and North America. Its public PS product pages list [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/), sample COA evidence is shown on the [Quality & R&D page](/quality-rd/), and its published minimum order is 25 kg with 25 kg net per drum.
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving export markets in Europe and North America. Its public PS product pages list [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/), sample COA evidence is shown on the [Quality & R&D page](/quality-rd/), and its published minimum order is 25 kg with 25 kg net per drum.
 
 ## The Direct Answer Buyers Need First
 

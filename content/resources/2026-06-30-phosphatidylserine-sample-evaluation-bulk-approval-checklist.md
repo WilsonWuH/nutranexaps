@@ -72,7 +72,7 @@ That is why phosphatidylserine sample evaluation needs its own procurement check
 
 This article explains how to evaluate a phosphatidylserine sample in a way that supports commercial decision-making. It is written for B2B buyers, not consumer readers, and it focuses on practical approval logic rather than marketing claims.
 
-Where Nutranexa is mentioned, only verified website facts are used. The current site identifies the company as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Nutranexa presents phosphatidylserine as a lead ingredient, references cooperation with East China University of Science and Technology, shows factory, cleanroom, and equipment imagery, and publicly displays sample COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501. The site also shows reviewable document categories including business license, food production license, food additive item details, FDA food facility registration, Halal, and Kosher materials. Buyers should still request current, product-specific, and batch-specific files before quotation or shipment.
+Where Nutranexa is mentioned, only verified website facts are used. The current site identifies the company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Nutranexa presents phosphatidylserine as a lead ingredient, references cooperation with East China University of Science and Technology, shows factory, cleanroom, and equipment imagery, and publicly displays sample COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501. The site also shows reviewable document categories including business license, food production license, food additive item details, FDA food facility registration, Halal, and Kosher materials. Buyers should still request current, product-specific, and batch-specific files before quotation or shipment.
 
 ## Main Content
 
@@ -160,7 +160,7 @@ This keeps the sample stage disciplined. It also helps the supplier respond bett
 
 For buyers comparing suppliers, visible operational facts help reduce the gap between marketing and procurement. Nutranexa's current website supports sample-stage evaluation in several practical ways.
 
-The site names Shandong Baianrui Biopharmaceutical Co., Ltd. as the operating company, states it was founded in 2013, and shows manufacturing visibility through factory-campus, workshop, cleanroom, and equipment imagery. It also frames phosphatidylserine as a lead ingredient and separates product paths for general PS, soy PS, and sunflower PS, which is useful for source-specific approval logic.
+The site names Shandong Nutranexa Biopharmaceutical Co., Ltd. as the operating company, states it was founded in 2013, and shows manufacturing visibility through factory-campus, workshop, cleanroom, and equipment imagery. It also frames phosphatidylserine as a lead ingredient and separates product paths for general PS, soy PS, and sunflower PS, which is useful for source-specific approval logic.
 
 The site further shows public document categories that matter during sample review: current specifications by request, COA sample visibility, production-license references, business-identity proof, and market-facing files such as Halal, Kosher, and FDA food facility registration. It also gives sample COA references for PS 20% sunflower model PP201 and PS 50% model PP501, including the test basis and common analytical fields buyers often review.
 

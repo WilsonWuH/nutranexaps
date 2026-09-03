@@ -70,7 +70,7 @@ This matters especially in export projects. Procurement wants a workable quotati
 
 This article is written for overseas buyers comparing phosphatidylserine suppliers at the specification and approval stage. It explains how to compare soy phosphatidylserine and sunflower phosphatidylserine using buyer-focused criteria: source fit, application context, specification review, COA interpretation, certificate matching, and supplier execution readiness.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa presents itself as the international brand of Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and phosphatidylserine as its lead ingredient. The current site also references R&D cooperation, public COA sample visibility, and buyer-requestable Halal, Kosher, and production-document review. Current batch files, product-specific scope, and destination-market relevance should still be confirmed directly before quotation or shipment.
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and phosphatidylserine as its lead ingredient. The current site also references R&D cooperation, public COA sample visibility, and buyer-requestable Halal, Kosher, and production-document review. Current batch files, product-specific scope, and destination-market relevance should still be confirmed directly before quotation or shipment.
 
 ## Main Content
 

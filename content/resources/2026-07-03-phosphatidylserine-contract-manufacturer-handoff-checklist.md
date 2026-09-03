@@ -72,7 +72,7 @@ That is why phosphatidylserine contract manufacturer handoff deserves its own ch
 
 This article explains how buyers should manage that transfer. It is written for supplement brands, contract manufacturers, functional food companies, and ingredient distributors that already understand phosphatidylserine as a sourcing category and now need tighter operational control.
 
-Where Nutranexa is mentioned, only verified site facts are used. The current independent website identifies the operating company as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, and states a 110,000+ m2 campus. It presents phosphatidylserine as a lead ingredient, shows separate buyer paths for general phosphatidylserine, soy phosphatidylserine, and sunflower phosphatidylserine, and provides visible manufacturing, quality, and document-review support. The site also shows public COA samples and buyer-facing request paths for specification, current batch COA, Halal, Kosher, TDS or SDS, and source-specific allergen or GMO statements. Buyers should still confirm the latest controlled files and exact product applicability before pilot, production, or shipment release.
+Where Nutranexa is mentioned, only verified site facts are used. The current independent website identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, and states a 110,000+ m2 campus. It presents phosphatidylserine as a lead ingredient, shows separate buyer paths for general phosphatidylserine, soy phosphatidylserine, and sunflower phosphatidylserine, and provides visible manufacturing, quality, and document-review support. The site also shows public COA samples and buyer-facing request paths for specification, current batch COA, Halal, Kosher, TDS or SDS, and source-specific allergen or GMO statements. Buyers should still confirm the latest controlled files and exact product applicability before pilot, production, or shipment release.
 
 ## Main Content
 
@@ -243,7 +243,7 @@ Once that packet exists, pilot scheduling becomes easier because every team know
 
 ## How Verified Nutranexa Facts Support a Cleaner Handoff
 
-For buyers using Nutranexa as a phosphatidylserine source candidate, several verified site elements support a cleaner production handoff. The company identifies itself as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and visible manufacturing, cleanroom, laboratory, and equipment imagery. That matters because production teams often ask for supplier identity and manufacturing context before they accept a new material into their system.
+For buyers using Nutranexa as a phosphatidylserine source candidate, several verified site elements support a cleaner production handoff. The company identifies itself as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and visible manufacturing, cleanroom, laboratory, and equipment imagery. That matters because production teams often ask for supplier identity and manufacturing context before they accept a new material into their system.
 
 Nutranexa also separates general phosphatidylserine, soy phosphatidylserine, and sunflower phosphatidylserine into dedicated product paths. For handoff control, that is useful because it reduces early-stage source ambiguity. Buyers can align the sourcing brief, specification request, and internal raw-material record around one defined source path instead of an overly broad "PS" description.
 

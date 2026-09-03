@@ -70,7 +70,7 @@ That is why phosphatidylserine pre shipment inspection deserves its own checklis
 
 This guide explains how to inspect a bulk phosphatidylserine shipment before dispatch using a document-led, buyer-friendly workflow. It is written for supplement brands, ingredient distributors, contract manufacturers, and functional food teams that source internationally and need a practical release process without exaggerated claims or unnecessary complexity.
 
-Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. The site also shows manufacturing images, quality-document pages, and sample COA information for PS 20% sunflower and PS 50% products. Buyers should still confirm current batch-specific documents and current certificate validity before every commercial shipment.
+Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. The site also shows manufacturing images, quality-document pages, and sample COA information for PS 20% sunflower and PS 50% products. Buyers should still confirm current batch-specific documents and current certificate validity before every commercial shipment.
 
 ## Main Content
 

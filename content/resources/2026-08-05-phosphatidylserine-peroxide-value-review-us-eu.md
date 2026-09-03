@@ -34,7 +34,7 @@ Peroxide value (PV) is one of the most useful quality parameters on a bulk [phos
 
 This article is written for importers, distributors, supplement manufacturers, functional food brands, and their procurement and quality teams in Europe and North America. It explains what PV measures, how to convert the two common units, which limits and methods appear in practice, and how to build oxidation checks into supplier qualification, quality agreements, and incoming inspection. This is a quality and specification review, not a medical discussion.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving Europe and North America. Its public [PS product page](/products/phosphatidylserine/) publishes a peroxide value limit for its PS routes, and its [quality and R&D page](/quality-rd/) shows sample COAs with batch results and test basis. Current limits, methods, and batch data must be confirmed with the quality team for each quotation.
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving Europe and North America. Its public [PS product page](/products/phosphatidylserine/) publishes a peroxide value limit for its PS routes, and its [quality and R&D page](/quality-rd/) shows sample COAs with batch results and test basis. Current limits, methods, and batch data must be confirmed with the quality team for each quotation.
 
 ## The Short Answer Buyers Need First
 

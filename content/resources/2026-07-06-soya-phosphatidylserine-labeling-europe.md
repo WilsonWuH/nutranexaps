@@ -62,7 +62,7 @@ This matters because soy phosphatidylserine projects often stall for avoidable r
 
 This article is written for ingredient importers, distributors, supplement manufacturers, private-label teams, procurement managers, regulatory reviewers, and QA teams serving Europe. It focuses on commercial readiness and document control, not medical claims.
 
-Where Nutranexa is mentioned, only verified site facts are used. Nutranexa identifies the operating company as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. The current site presents phosphatidylserine as a lead ingredient, provides separate product paths for [Phosphatidylserine](/products/phosphatidylserine/), [Soy Phosphatidylserine](/products/soy-phosphatidylserine/), and [Sunflower Phosphatidylserine](/products/sunflower-phosphatidylserine/), and offers buyer-facing request paths for current specifications, COA samples, and support files. Buyers should still confirm the latest controlled documents for the exact quoted product and market.
+Where Nutranexa is mentioned, only verified site facts are used. Nutranexa identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. The current site presents phosphatidylserine as a lead ingredient, provides separate product paths for [Phosphatidylserine](/products/phosphatidylserine/), [Soy Phosphatidylserine](/products/soy-phosphatidylserine/), and [Sunflower Phosphatidylserine](/products/sunflower-phosphatidylserine/), and offers buyer-facing request paths for current specifications, COA samples, and support files. Buyers should still confirm the latest controlled documents for the exact quoted product and market.
 
 ## Main Content
 

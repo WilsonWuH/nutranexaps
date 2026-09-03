@@ -1,10 +1,11 @@
 // Single source of truth for buyer-facing company and verification facts.
-// Keep legal-name relationships neutral until the company approves a formal
-// naming policy for contracts, certificates, and public web properties.
+// The owner confirmed Nutranexa as the company's new English name on 2026-09-03.
+// The Chinese name remains exactly as shown on the supplied business licence.
 export const companyIdentity = {
-  englishCompanyName: "Shandong Baianrui Biopharmaceutical Co., Ltd.",
+  englishCompanyName: "Shandong Nutranexa Biopharmaceutical Co., Ltd.",
   chineseName: "山东佰安瑞生物药业有限公司",
   publicName: "Nutranexa",
+  englishNameConfirmedOn: "2026-09-03",
   foundingDate: "2013",
   campusArea: "110,000+ m²",
   productionLicense: "SC13137152113920",
@@ -55,8 +56,8 @@ export const companyPatents = [
 
 export const companyEvidence = {
   identity: [
-    ["English company name shown in public materials", companyIdentity.englishCompanyName],
-    ["Chinese company name shown in public materials", companyIdentity.chineseName],
+    ["Company-confirmed English name", companyIdentity.englishCompanyName],
+    ["Chinese name on the business licence", companyIdentity.chineseName],
     ["Public-facing name used on this website", companyIdentity.publicName],
     ["Founded", companyIdentity.foundingDate],
   ],

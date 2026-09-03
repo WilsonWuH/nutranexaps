@@ -71,7 +71,7 @@ This is why phosphatidylserine repeat-order document review deserves a separate 
 
 For overseas supplement brands, contract manufacturers, distributors, and functional food importers, this is especially important because the purchase decision often sits across several teams: sourcing, QA, regulatory, planning, finance, and logistics. If one team assumes "same as last time" while another team sees a document change too late, the shipment can stall.
 
-Where relevant, this article uses verified Nutranexa facts from the current website only. Nutranexa identifies itself as the international brand of Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Its public site also shows factory, cleanroom, lab, and equipment imagery; R&D cooperation references with East China University of Science and Technology; sample COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501; and public document references including business license, food production license, food additive license details, FDA food facility registration, Halal, and Kosher files. Buyers should still request current, transaction-specific documents before quotation, PO release, or shipment.
+Where relevant, this article uses verified Nutranexa facts from the current website only. Nutranexa identifies itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Its public site also shows factory, cleanroom, lab, and equipment imagery; R&D cooperation references with East China University of Science and Technology; sample COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501; and public document references including business license, food production license, food additive license details, FDA food facility registration, Halal, and Kosher files. Buyers should still request current, transaction-specific documents before quotation, PO release, or shipment.
 
 ## Main Content
 
@@ -224,7 +224,7 @@ This turns supplier management into a measurable process instead of an email arc
 
 Nutranexa's public site gives buyers a useful starting framework for repeat-order control because several facts are visible before direct inquiry:
 
-- the company identity is presented as Nutranexa / Shandong Baianrui Biopharmaceutical Co., Ltd.
+- the company identity is presented as Nutranexa / Shandong Nutranexa Biopharmaceutical Co., Ltd.
 - the founding year shown publicly is 2013
 - the manufacturing campus presented publicly is 110,000+ m2
 - factory, cleanroom, lab, and equipment imagery are available for buyer review

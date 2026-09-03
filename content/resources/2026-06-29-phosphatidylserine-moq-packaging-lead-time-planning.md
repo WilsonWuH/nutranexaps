@@ -72,7 +72,7 @@ That is why phosphatidylserine MOQ and packaging planning deserves its own procu
 
 This article is written for overseas supplement brands, nutrition companies, contract manufacturers, and ingredient distributors that are preparing a first commercial phosphatidylserine order or comparing suppliers for repeat purchase planning. It explains how to think about MOQ, packaging format, and timing risk in a way that supports procurement, QA, operations, and finance at the same time.
 
-Where relevant, this article uses verified Nutranexa facts only. Nutranexa presents itself as the international brand of Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 production campus in Yanggu County, Shandong. The current site also shows manufacturing imagery, sample COA visibility for PS 20% sunflower and PS 50%, and document references including business license, food production license, food additive license details, FDA food facility registration, Halal, and Kosher materials. Buyers should still confirm current product-specific packaging, MOQ, certificate scope, and batch-linked files before quotation or shipment.
+Where relevant, this article uses verified Nutranexa facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 production campus in Yanggu County, Shandong. The current site also shows manufacturing imagery, sample COA visibility for PS 20% sunflower and PS 50%, and document references including business license, food production license, food additive license details, FDA food facility registration, Halal, and Kosher materials. Buyers should still confirm current product-specific packaging, MOQ, certificate scope, and batch-linked files before quotation or shipment.
 
 ## Main Content
 
@@ -246,7 +246,7 @@ Repeat-order readiness is often a better predictor of long-term sourcing success
 
 ## What Nutranexa Can Support in MOQ, Packaging, and Document Planning
 
-Based on the current independent site, Nutranexa can support buyer planning in several practical ways. The company profile identifies Shandong Baianrui Biopharmaceutical Co., Ltd. as the operating company behind Nutranexa and states a founding year of 2013. The manufacturing page presents a 110,000+ m2 campus, factory imagery, and cleanroom or equipment visibility for buyer review. Product pages for general PS, soy PS, and sunflower PS guide buyers toward source-specific inquiry instead of generic requests.
+Based on the current independent site, Nutranexa can support buyer planning in several practical ways. The company profile identifies Shandong Nutranexa Biopharmaceutical Co., Ltd. as the operating company behind Nutranexa and states a founding year of 2013. The manufacturing page presents a 110,000+ m2 campus, factory imagery, and cleanroom or equipment visibility for buyer review. Product pages for general PS, soy PS, and sunflower PS guide buyers toward source-specific inquiry instead of generic requests.
 
 The current site also gives procurement teams a usable document framework. Quality and product sections reference specification requests, COA samples for PS 20% sunflower and PS 50%, food production license support, food additive item details, FDA food facility registration, Halal, Kosher, and packaging or storage information. Just as important, the site does not present those materials as blanket guarantees. It repeatedly says buyers should confirm the latest product-specific, batch-specific, and market-specific files before quotation or shipment.
 
@@ -283,7 +283,7 @@ Not necessarily. A lower MOQ can reduce inventory exposure, but it may change pr
 
 ### What Nutranexa facts are publicly visible that help procurement planning?
 
-The current site shows Nutranexa as the international brand of Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. It also shows manufacturing imagery, sample COA data for PS 20% sunflower and PS 50%, and public references to business license, food production license, FDA food facility registration, Halal, and Kosher files. Current order-specific details still need to be confirmed directly.
+The current site shows Nutranexa as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. It also shows manufacturing imagery, sample COA data for PS 20% sunflower and PS 50%, and public references to business license, food production license, FDA food facility registration, Halal, and Kosher files. Current order-specific details still need to be confirmed directly.
 
 ### What is the safest way to request a phosphatidylserine quote after reading this guide?
 

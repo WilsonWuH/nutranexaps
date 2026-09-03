@@ -33,7 +33,7 @@ The short answer is that if the project is using the current Canadian supplement
 
 This article is written for importers, distributors, functional food brands, procurement managers, formulation teams, QA teams, and regulatory reviewers serving Canada. It focuses on label-preparation workflow and buyer-side document control. It does not provide legal advice and it does not make medical treatment claims.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies the operating company as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving Europe and North America. The site keeps [Phosphatidylserine](/products/phosphatidylserine/), [Soy Phosphatidylserine](/products/soy-phosphatidylserine/), and [Sunflower Phosphatidylserine](/products/sunflower-phosphatidylserine/) on separate buyer paths and provides request paths for current specifications, COA support, [Quality & R&D](/quality-rd/), and [Contact Sales](/contact/).
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving Europe and North America. The site keeps [Phosphatidylserine](/products/phosphatidylserine/), [Soy Phosphatidylserine](/products/soy-phosphatidylserine/), and [Sunflower Phosphatidylserine](/products/sunflower-phosphatidylserine/) on separate buyer paths and provides request paths for current specifications, COA support, [Quality & R&D](/quality-rd/), and [Contact Sales](/contact/).
 
 ## The Short Answer Canadian Buyers Need First
 

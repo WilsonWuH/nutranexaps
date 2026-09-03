@@ -163,7 +163,7 @@ Under [19 U.S.C. § 1592](https://www.law.cornell.edu/uscode/text/19/1592), impo
 
 ## Where Verified Nutranexa Facts Fit This Review
 
-Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary manufacturing entity, Shandong Baianrui Biopharmaceutical Co., Ltd., was founded in 2013 and operates a 110,000+ m2 campus, with a primary export focus in Europe and North America. For PS, the published baseline is a 25 kg minimum order quantity with 25 kg net per drum.
+Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary manufacturing entity, Shandong Nutranexa Biopharmaceutical Co., Ltd., was founded in 2013 and operates a 110,000+ m2 campus, with a primary export focus in Europe and North America. For PS, the published baseline is a 25 kg minimum order quantity with 25 kg net per drum.
 
 Those facts help build a valuation and entry file: the route-specific pages for [Phosphatidylserine](/products/phosphatidylserine/), [Soy Phosphatidylserine](/products/soy-phosphatidylserine/), and [Sunflower Phosphatidylserine](/products/sunflower-phosphatidylserine/) define commercial descriptions that should match the invoice; [Quality & R&D](/quality-rd/) and [Manufacturing](/manufacturing/) provide specification, COA, and imagery context; and sales can confirm current product and packaging details before the broker file is assembled. As with any supplier, the buyer's customs broker and legal team decide the final entered value; this article does not assert any valuation result for Nutranexa shipments.
 

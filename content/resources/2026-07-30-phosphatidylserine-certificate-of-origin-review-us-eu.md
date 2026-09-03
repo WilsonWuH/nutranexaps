@@ -35,7 +35,7 @@ The short answer is this: **for phosphatidylserine imports, decide what origin q
 
 This article is written for importers, distributors, supplement manufacturers, procurement managers, quality teams, customs coordinators, and regulatory reviewers handling phosphatidylserine in Europe and North America. It focuses on document control and shipment readiness.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving Europe and North America. The site also shows public [phosphatidylserine](/products/phosphatidylserine/), [soy phosphatidylserine](/products/soy-phosphatidylserine/), and [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) product paths and request paths for specification and COA support. Final import approval should still depend on the current route-specific shipment file.
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving Europe and North America. The site also shows public [phosphatidylserine](/products/phosphatidylserine/), [soy phosphatidylserine](/products/soy-phosphatidylserine/), and [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) product paths and request paths for specification and COA support. Final import approval should still depend on the current route-specific shipment file.
 
 ## The Short Answer Buyers Need First
 

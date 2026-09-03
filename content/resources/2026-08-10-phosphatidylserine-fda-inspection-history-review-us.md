@@ -42,7 +42,7 @@ Most US buyers of bulk [phosphatidylserine](/products/phosphatidylserine/) (PS) 
 
 This review explains which FDA records exist for a PS supplier, how to search them, how to interpret the results, and how to document the screen in a supplier qualification file. It is a compliance-screening guide for US importers, distributors, supplement manufacturers, functional food brands, and their procurement, QA, and regulatory teams, not legal advice.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving export markets in Europe and North America. Its public pages list [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/), a published minimum order of 25 kg with 25 kg net per drum, and buyers can request current specifications, COA evidence, and registration-related files from the sales team.
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa identifies itself as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, operating a 110,000+ m2 campus, and primarily serving export markets in Europe and North America. Its public pages list [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/), a published minimum order of 25 kg with 25 kg net per drum, and buyers can request current specifications, COA evidence, and registration-related files from the sales team.
 
 ## The Direct Answer Buyers Need First
 
@@ -153,7 +153,7 @@ For first-time buyers, the screen is also a test of supplier transparency: a sup
 
 ## Where Verified Nutranexa Facts Fit This Review
 
-Nutranexa's public site supports the buyer-side screen. The company identifies itself as Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and a primary export focus on Europe and North America. The [products](/products/) pages show separate paths for [Phosphatidylserine](/products/phosphatidylserine/), [Soy Phosphatidylserine](/products/soy-phosphatidylserine/), and [Sunflower Phosphatidylserine](/products/sunflower-phosphatidylserine/), with a published 25 kg minimum order and 25 kg net per drum.
+Nutranexa's public site supports the buyer-side screen. The company identifies itself as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and a primary export focus on Europe and North America. The [products](/products/) pages show separate paths for [Phosphatidylserine](/products/phosphatidylserine/), [Soy Phosphatidylserine](/products/soy-phosphatidylserine/), and [Sunflower Phosphatidylserine](/products/sunflower-phosphatidylserine/), with a published 25 kg minimum order and 25 kg net per drum.
 
 For the FDA record screen, buyers need the exact legal entity and facility details, current registration-related files, and COA or specification evidence. Nutranexa directs buyers to request current specification, COA, packaging, and registration-related support files through [Quality & R&D](/quality-rd/) and [Contact Sales](/contact/). As with any supplier, run the public searches against the exact legal entity and confirm current evidence directly; this article does not assert any specific inspection result for Nutranexa.
 

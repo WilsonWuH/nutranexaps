@@ -70,7 +70,7 @@ For phosphatidylserine procurement, a good quotation depends on the quality of t
 
 This guide is written for importers, distributors, supplement manufacturers, and functional food teams that want a more reliable way to source bulk phosphatidylserine. It explains what buyers should prepare before requesting a quotation, how QA and procurement teams should qualify a supplier, and how to compare offers for US and European projects without relying on unsupported claims.
 
-Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Baianrui Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. The site also states that Nutranexa supports phosphatidylserine projects with manufacturing context, sample COA visibility, and document-request workflows. Buyers should still confirm current batch-specific and market-specific files before purchase or shipment.
+Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. The site also states that Nutranexa supports phosphatidylserine projects with manufacturing context, sample COA visibility, and document-request workflows. Buyers should still confirm current batch-specific and market-specific files before purchase or shipment.
 
 ## Main Content
 
@@ -208,7 +208,7 @@ Buyers should check:
 - factory location
 - production context that supports the ingredient category
 
-Nutranexa's current site provides several relevant facts that overseas buyers can review at the early stage: the company profile names Shandong Baianrui Biopharmaceutical Co., Ltd.; the site states it was founded in 2013; it presents a 110,000+ m2 campus; and it shows manufacturing, cleanroom, equipment, and quality-document pages intended for buyer evaluation. That does not replace a full supplier audit, but it is useful early-stage screening evidence.
+Nutranexa's current site provides several relevant facts that overseas buyers can review at the early stage: the company profile names Shandong Nutranexa Biopharmaceutical Co., Ltd.; the site states it was founded in 2013; it presents a 110,000+ m2 campus; and it shows manufacturing, cleanroom, equipment, and quality-document pages intended for buyer evaluation. That does not replace a full supplier audit, but it is useful early-stage screening evidence.
 
 ### Specification and COA review
 
