@@ -1448,6 +1448,7 @@ ${twitterImageAlt ? `  ${twitterImageAlt}\n` : ""}${head ? `  ${head}\n` : ""}  
     <div class="nav-shell">
       <a class="brand" href="/" aria-label="Nutranexa home">
         ${headerLogo}
+        <span class="brand-tag">Pure ingredients for a Healthier Tomorrow</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
@@ -1536,38 +1537,51 @@ function footer(optimizeLogo = false) {
   const logo = optimizeLogo
     ? '<img src="/assets/images/logo-nutranexa-260.webp" srcset="/assets/images/logo-nutranexa-260.webp 1x, /assets/images/logo-nutranexa-520.webp 2x" alt="Nutranexa logo" class="footer-logo" width="260" height="60" loading="lazy" decoding="async">'
     : '<img src="/assets/images/logo-nutranexa.webp" alt="Nutranexa logo" class="footer-logo">';
+  const year = new Date().getFullYear();
   return `<footer class="site-footer">
-  <div class="footer-grid">
-    <div>
-      ${logo}
-      <p>Functional food ingredient manufacturer focused on phosphatidylserine and related nutrition ingredient applications.</p>
-      <p class="small">Company: ${esc(companyIdentity.englishCompanyName)}. Product brand references include Nutranexa and Shushi PS.</p>
+  <div class="nx-shell">
+    <div class="nx-footer-grid">
+      <div class="nx-footer-brand">
+        ${logo}
+        <p>Natural ingredients. Reliable supply.<br>A healthier tomorrow.</p>
+        <p class="nx-footer-contact">WhatsApp: <a data-analytics-event="whatsapp_click" href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a></p>
+      </div>
+      <div>
+        <h2>Products</h2>
+        <a href="/products/phosphatidylserine-20/">Phosphatidylserine 20%</a>
+        <a href="/products/phosphatidylserine-50/">Phosphatidylserine 50%</a>
+        <a href="/products/phosphatidylserine-70/">Phosphatidylserine 70%</a>
+        <a href="/products/soy-phosphatidylserine/">Soy-Derived PS</a>
+        <a href="/products/sunflower-phosphatidylserine/">Sunflower-Derived PS</a>
+        <a href="/products/">All Products</a>
+      </div>
+      <div>
+        <h2>Applications</h2>
+        <a href="/applications/dietary-supplements/">Capsules &amp; Tablets</a>
+        <a href="/applications/functional-foods/">Powder Blends</a>
+        <a href="/applications/functional-foods/">Functional Foods</a>
+        <a href="/applications/healthy-aging/">Healthy Aging Nutrition</a>
+        <a href="/applications/">View All Applications</a>
+      </div>
+      <div>
+        <h2>Resources</h2>
+        <a href="/quality-rd/">Certificates</a>
+        <a href="/resources/documents-for-ps-ingredients/">Specifications &amp; Data Sheets</a>
+        <a href="/resources/phosphatidylserine-guide/">PS Buying Guide</a>
+        <a href="/resources/">Articles &amp; Insights</a>
+        <a href="/contact/">Contact Us</a>
+      </div>
+      <div>
+        <h2>About</h2>
+        <a href="/about/">Our Company</a>
+        <a href="/manufacturing/">Manufacturing</a>
+        <a href="/quality-rd/">Quality</a>
+        <a href="/company-verification/">Verify Our Company</a>
+      </div>
     </div>
-    <div>
-      <h2>Products</h2>
-      <a href="/products/phosphatidylserine/">Phosphatidylserine</a>
-      <a href="/products/soy-phosphatidylserine/">Soy Phosphatidylserine</a>
-      <a href="/products/sunflower-phosphatidylserine/">Sunflower Phosphatidylserine</a>
-      <a href="/products/soy-lecithin/">Soy Lecithin</a>
-      <a href="/products/soluble-soybean-polysaccharide/">Soluble Soybean Polysaccharide</a>
-    </div>
-    <div>
-      <h2>Buyer Paths</h2>
-      <a href="/applications/cognitive-health/">Cognitive Health</a>
-      <a href="/applications/healthy-aging/">Healthy Aging</a>
-      <a href="/applications/sports-nutrition/">Sports Nutrition</a>
-      <a href="/applications/functional-foods/">Functional Foods</a>
-      <a href="/science/research-library/">Research Library</a>
-      <a href="/quality-rd/">Quality & R&D</a>
-      <a href="/company-verification/">Verify Our Company</a>
-    </div>
-    <div>
-      <h2>Contact</h2>
-      <p>WhatsApp: <a data-analytics-event="whatsapp_click" href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a></p>
-      <p>Phone: ${phone}</p>
-      <p>${address}</p>
-      ${qualificationPackCta({ label: "Request Specification", className: "footer-button", sourcePage: "footer" })}
-      <a href="/privacy/">Privacy Policy</a>
+    <div class="nx-footer-bottom">
+      <span>&copy; ${year} Nutranexa. All rights reserved.</span>
+      <span class="nx-footer-legal"><a href="/privacy/">Privacy Policy</a><a href="/sitemap.xml">Sitemap</a></span>
     </div>
   </div>
 </footer>`;
@@ -1877,13 +1891,13 @@ function nxHomePage() {
         <h3><a href="/products/${grade.slug}/">${esc(grade.name)}</a></h3>
         <p class="nx-grade-tag">${esc(grade.tag)}</p>
         <p class="nx-grade-meta">${esc(grade.meta)}</p>
-        <a class="nx-textlink" href="/products/${grade.slug}/">View ${esc(grade.shortName)} &rarr;</a>
+        <a class="nx-textlink" href="/products/${grade.slug}/" aria-label="Learn more about ${esc(grade.name)}">Learn More &rarr;</a>
       </article>`,
     )
     .join("");
   const sourceChecks = {
-    soy: ["Established supply route", "Commonly used source", "Different labeling considerations"],
-    sunflower: ["Alternative plant source", "Non-soy option", "Suitable for different market positioning"],
+    soy: ["Established supply chain", "Non-GMO options available", "Consistent quality", "Wide application range"],
+    sunflower: ["Alternative for diverse formulation needs", "Non-soy option", "Sustainable sourcing", "Excellent functionality"],
   };
   const sourceCol = (key, name, href, image, alt, style) => `<div class="nx-source-col">
         <img src="${image}" alt="${esc(alt)}" width="700" height="700" loading="lazy" decoding="async"${style ? ` style="${style}"` : ""}>
@@ -1893,8 +1907,8 @@ function nxHomePage() {
       </div>`;
   const madeCards = [
     ["/manufacturing/", "/assets/images/equipment-workshop-01.webp", "Stainless steel phosphatidylserine production tanks inside the Nutranexa workshop", "Manufacturing", "Raw materials &rarr; Processing &rarr; Purification &rarr; Drying &rarr; Packing", 600, 400],
-    ["/quality-rd/", "/assets/images/science-phosphatidylserine-lab-v2-560.webp", "Laboratory analyst reviewing a phosphatidylserine powder sample beside analytical equipment", "Quality Control", "Assay, moisture, peroxide value, heavy metals, microbiology", 560, 560],
-    ["/manufacturing/", "/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg phosphatidylserine drums in the cleanroom packing area", "Reliable Supply", "Standard 25 kg drum packaging &middot; Global shipment", 960, 1280],
+    ["/quality-rd/", "/assets/images/science-phosphatidylserine-lab-v2-560.webp", "Laboratory analyst reviewing a phosphatidylserine powder sample beside analytical equipment", "Quality Control", "Identity, purity, heavy metals, peroxide value, microbiology and more.", 560, 560],
+    ["/manufacturing/", "/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg phosphatidylserine drums in the cleanroom packing area", "Packing &amp; Supply", "Standard 25 kg drum packaging &middot; Global shipment support", 960, 1280],
   ]
     .map(
       ([href, image, alt, title, text, w, h]) =>
@@ -1906,7 +1920,7 @@ function nxHomePage() {
     ["/applications/dietary-supplements/", "/assets/images/dietary-supplement-application.webp", "Pressed PS tablets in formulation trays", "Tablets", "Functional formulations", "78% 66%"],
     ["/applications/functional-foods/", "/assets/images/product-powder-spoon.webp", "Fine phosphatidylserine powder on a spoon", "Powder Blends", "Nutrition powders", "50% 50%"],
     ["/applications/functional-foods/", "/assets/images/functional-food-application.webp", "Functional food and beverage development bench with PS powder samples", "Functional Foods", "Fortified foods &amp; beverages", "30% 62%"],
-    ["/applications/healthy-aging/", "/assets/images/news-mfgm-phospholipid-cognition-trial-2025.webp", "Senior woman at a table with nutrition powder and sachets", "Healthy Aging", "Everyday nutrition", "50% 22%"],
+    ["/applications/healthy-aging/", "/assets/images/news-mfgm-phospholipid-cognition-trial-2025.webp", "Senior woman at a table with nutrition powder and sachets", "Healthy Aging Nutrition", "Life stage support", "50% 22%"],
   ]
     .map(
       ([href, image, alt, title, sub, pos]) =>
@@ -1914,13 +1928,15 @@ function nxHomePage() {
     )
     .join("");
   const docCards = [
-    ["/assets/images/doc-coa-ps-20-sunflower.webp", "PS 20% Sample COA", "PS 20% sunflower sample certificate of analysis"],
-    ["/assets/images/doc-coa-ps-50.webp", "PS 50% Sample COA", "PS 50% sample certificate of analysis"],
-    ["/assets/images/doc-coa-ps-70.webp", "PS 70% Sample COA", "PS 70% sample certificate of analysis"],
+    ["/assets/images/doc-coa-ps-20-sunflower.webp", "Sample COA", "20% PS", "PDF", "PS 20% sunflower sample certificate of analysis"],
+    ["/assets/documents/phosphatidylserine-20-specification.docx", "Product Specification", "PS 20%", "DOCX", "PS 20% English product specification document"],
+    ["/contact/?documents=Specification%2C%20COA%2C%20TDS%2C%20SDS", "TDS", "Technical Data Sheet", "On Request", "Request the technical data sheet for the quoted grade"],
+    ["/contact/?documents=Specification%2C%20COA%2C%20TDS%2C%20SDS", "SDS", "Safety Data Sheet", "On Request", "Request the safety data sheet for the quoted grade"],
+    ["/assets/images/doc-kosher-certificate.webp", "Halal / Kosher", "Certificates", "PDF", "Halal and Kosher certificates for phosphatidylserine"],
   ]
     .map(
-      ([image, title, alt]) =>
-        `<a class="nx-doc-card" href="${image}" target="_blank" rel="noopener"><img src="${image}" alt="${esc(alt)}" width="1200" height="1698" loading="lazy" decoding="async"><span class="nx-doc-info"><strong>${esc(title)}</strong><small>PDF</small></span></a>`,
+      ([href, title, sub, tag, alt]) =>
+        `<a class="nx-doc-card" href="${href}"${href.startsWith("/assets/images/") ? ' target="_blank" rel="noopener"' : ""}${href.endsWith(".docx") ? " download" : ""}>${href.startsWith("/assets/images/") ? `<img src="${href}" alt="${esc(alt)}" width="1200" height="1698" loading="lazy" decoding="async">` : `<span class="nx-doc-icon">${nxIcon.doc}</span>`}<span class="nx-doc-info"><strong>${esc(title)}</strong><small>${esc(sub)}</small><em>${esc(tag)}</em></span></a>`,
     )
     .join("");
   const aboutFacts = [
@@ -1934,35 +1950,61 @@ function nxHomePage() {
         `<li><span class="nx-fact-icon">${icon}</span><span class="nx-fact-label"><strong>${top}</strong><small>${sub}</small></span></li>`,
     )
     .join("");
+  const certDocs = [
+    ["/assets/images/doc-kosher-certificate.webp", "Kosher Certificate"],
+    ["/assets/images/doc-halal-certificate.webp", "Halal Certificate"],
+    ["/assets/images/doc-food-production-license.webp", "Food Production License"],
+    ["/assets/images/doc-business-license.webp", "Business License"],
+    ["/assets/images/doc-coa-ps-50.webp", "PS 50% Sample COA"],
+  ];
+  const certItem = ([image, name]) => `<a class="nx-cert-item" data-analytics-event="document_preview" data-document-type="certificate" href="${image}" target="_blank" rel="noopener"><img src="${image}" alt="${esc(name)} document" width="1200" height="1698" loading="lazy" decoding="async"><span class="nx-cert-name">${esc(name)}</span><span class="nx-cert-view">View Certificate &rarr;</span></a>`;
+  const certItems = certDocs.map(certItem).join("");
   const body = `<section class="nx-hero">
     <img class="nx-hero-bg" src="/assets/images/brand-product-lab.webp" alt="Phosphatidylserine powder sample jars on a laboratory bench with a Nutranexa researcher in the background" width="1600" height="900" fetchpriority="high" decoding="async">
     <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-hero-side" aria-hidden="true"><span>Science</span><span>Quality</span><span>Better Nutrition</span></div>
     <div class="nx-shell nx-hero-inner">
       <div class="nx-hero-copy">
-        <h1>Phosphatidylserine Made for Modern Nutrition</h1>
+        <p class="nx-hero-eyebrow">Natural ingredients. Real impact.</p>
+        <h1>Phosphatidylserine Ingredients for Modern Nutrition</h1>
         <p class="nx-hero-lead">Soy- and sunflower-derived phosphatidylserine in 20%, 50% and 70% grades for supplements and functional nutrition.</p>
         <div class="nx-hero-actions">
-          <a class="nx-btn" href="/products/phosphatidylserine/">Explore PS Grades</a>
+          <a class="nx-btn" href="/products/phosphatidylserine/">Explore PS Grades &rarr;</a>
           ${qualificationPackCta({ label: "Request Specification & COA", className: "nx-btn ghost", sourcePage: "homepage-hero" })}
         </div>
-        <ul class="nx-hero-facts">${heroFacts}</ul>
       </div>
-      <div class="nx-hero-card"><img src="/assets/images/logo-nutranexa-icon.png" alt="" width="28" height="28"><span><strong>Nutranexa</strong><small>Phosphatidylserine &middot; PS 20% / 50% / 70%</small></span></div>
+      <ul class="nx-hero-facts">${heroFacts}</ul>
+      <div class="nx-hero-card"><img src="/assets/images/logo-nutranexa-icon.png" alt="" width="28" height="28"><span><strong>Nutranexa</strong><small>Phosphatidylserine &middot; For a Healthier Tomorrow</small></span></div>
+    </div>
+  </section>
+
+  <section class="nx-cert-strip" aria-labelledby="nx-cert-title">
+    <div class="nx-shell nx-cert-wrap">
+      <div class="nx-cert-intro">
+        <h2 id="nx-cert-title">Certifications &amp; Compliance</h2>
+        <p>Globally trusted. Fully documented.</p>
+      </div>
+      <div class="nx-marquee">
+        <div class="nx-marquee-track">
+          <div class="nx-marquee-set">${certItems}</div>
+          <div class="nx-marquee-set" aria-hidden="true">${certItems}</div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="nx-section nx-products" id="products">
     <div class="nx-shell">
-      <div class="nx-section-head"><h2>Our PS Products</h2><a class="nx-textlink" href="/products/">View All Products &rarr;</a></div>
+      <div class="nx-section-head"><div><h2>Choose Your PS Grade</h2><p class="nx-section-sub">Three concentration grades to meet different formulation needs.</p></div><a class="nx-textlink" href="/products/">View All Products &rarr;</a></div>
       <div class="nx-products-grid">
         <div class="nx-grade-grid">${gradeCardHtml}</div>
         <aside class="nx-source-panel" aria-labelledby="nx-sources-title">
-          <h2 id="nx-sources-title">Two Plant Sources for Different Needs</h2>
+          <h2 id="nx-sources-title">Two Plant Sources</h2>
+          <p class="nx-section-sub">Consistent quality from trusted raw materials.</p>
           <div class="nx-source-cols">
             ${sourceCol("soy", "Soy-Derived PS", "/products/soy-phosphatidylserine/", "/assets/images/product-soy-ps.webp", "Soybeans beside phosphatidylserine powder", "object-position:62% 8%")}
             ${sourceCol("sunflower", "Sunflower-Derived PS", "/products/sunflower-phosphatidylserine/", "/assets/images/product-sunflower-ps.webp", "Sunflower seeds and sunflowers beside PS powder", "object-position:50% 12%")}
           </div>
-          <a class="nx-textlink" href="/resources/soy-vs-sunflower-phosphatidylserine/">Compare Soy vs Sunflower &rarr;</a>
         </aside>
       </div>
     </div>
@@ -1970,28 +2012,22 @@ function nxHomePage() {
 
   <section class="nx-section nx-made">
     <div class="nx-shell">
-      <div class="nx-section-head"><div><h2>Made. Tested. Documented.</h2><p class="nx-section-sub">From raw material control to final powder packing.</p></div><a class="nx-textlink" href="/manufacturing/">Explore Manufacturing &rarr;</a></div>
+      <div class="nx-section-head"><div><h2>Made. Tested. Documented.</h2><p class="nx-section-sub">From raw material control to final product delivery, we ensure quality at every step.</p></div><a class="nx-textlink" href="/manufacturing/">Explore Our Capabilities &rarr;</a></div>
       <div class="nx-photo-grid">${madeCards}</div>
     </div>
   </section>
 
   <section class="nx-section nx-apps">
     <div class="nx-shell">
-      <div class="nx-section-head"><div><h2>Applications</h2><p class="nx-section-sub">Supporting a wide range of supplement and functional nutrition products.</p></div><a class="nx-textlink" href="/applications/">Explore Applications &rarr;</a></div>
+      <div class="nx-section-head"><div><h2>Built for Modern Formulations</h2><p class="nx-section-sub">Versatile ingredients for a wide range of supplement and functional nutrition products.</p></div><a class="nx-textlink" href="/applications/">Explore Applications &rarr;</a></div>
       <div class="nx-app-grid">${appCards}</div>
     </div>
   </section>
 
   <section class="nx-section nx-docs">
     <div class="nx-shell">
-      <div class="nx-section-head"><div><h2>Real Batch Documentation</h2><p class="nx-section-sub">Sample COAs are historical batch references. Request the current specification and batch documentation for your project.</p></div><a class="nx-textlink" href="/quality-rd/">View All Documents &rarr;</a></div>
-      <div class="nx-doc-grid">
-        ${docCards}
-        <a class="nx-doc-card more" href="/quality-rd/">
-          <span class="nx-doc-icon">${nxIcon.doc}</span>
-          <span class="nx-doc-info"><strong>More Documents</strong><small>Specification, TDS, SDS, Allergen, Halal, Kosher</small></span>
-        </a>
-      </div>
+      <div class="nx-section-head"><div><h2>Real Batch Documentation</h2><p class="nx-section-sub">Sample documents to help you evaluate our quality and specifications. Request the latest documents for your project.</p></div><a class="nx-textlink" href="/quality-rd/">View All Documents &rarr;</a></div>
+      <div class="nx-doc-grid five">${docCards}</div>
     </div>
   </section>
 
@@ -1999,31 +2035,22 @@ function nxHomePage() {
     <div class="nx-shell nx-about-grid">
       <div class="nx-about-copy">
         <h2>About Nutranexa</h2>
-        <p class="nx-section-sub">We develop and manufacture functional food ingredients in Shandong, China.</p>
+        <p class="nx-section-sub">We develop and manufacture functional food ingredients in Shandong, China, serving customers worldwide.</p>
         <ul class="nx-about-facts">${aboutFacts}</ul>
         <a class="nx-btn ghost" href="/about/">Learn More About Us &rarr;</a>
       </div>
-      <img class="nx-about-photo" src="/assets/images/factory-campus.webp" alt="Nutranexa manufacturing campus building in Shandong, China" width="700" height="382" loading="lazy" decoding="async">
+      <figure class="nx-about-figure">
+        <img class="nx-about-photo" src="/assets/images/factory-building.webp" alt="Nutranexa manufacturing facility buildings in Shandong, China" width="498" height="372" loading="lazy" decoding="async">
+        <figcaption>Trusted Ingredients.<br>A Healthier Tomorrow.</figcaption>
+      </figure>
     </div>
   </section>
 
-  <nav class="nx-linkband" aria-label="Buyer resources">
-    <div class="nx-shell">
-      <span>Buyer resources</span>
-      <a href="/resources/phosphatidylserine-guide/">PS Buying Guide</a>
-      <a href="/resources/documents-for-ps-ingredients/">Document Checklist</a>
-      <a href="/resources/soy-vs-sunflower-phosphatidylserine/">Soy vs Sunflower PS</a>
-      <a href="/science/research-library/">Research Library</a>
-      <a href="/company-verification/">Verify Our Company</a>
-    </div>
-  </nav>
-
   <section class="nx-final-cta">
     <div class="nx-shell nx-final-grid">
-      <div><h2>Let&rsquo;s Work on Your Next Project</h2><p>Get the latest specification, COA or discuss your requirements with our team.</p></div>
+      <div><h2>Discuss Your PS Project</h2><p>Tell us your source, grade, application and quantity. Our team will get back to you with product information, sample options and documentation.</p></div>
       <div class="nx-final-actions">
-        ${qualificationPackCta({ label: "Request Specification", className: "nx-btn light", sourcePage: "homepage-final" })}
-        <a class="nx-btn outline-light" href="/contact/">Contact Us &rarr;</a>
+        ${qualificationPackCta({ label: "Request Specification →", className: "nx-btn light", sourcePage: "homepage-final" })}
       </div>
     </div>
   </section>`;
@@ -2032,7 +2059,7 @@ function nxHomePage() {
     description: "Premium soy- and sunflower-derived phosphatidylserine in 20%, 50%, and 70% grades with technical documentation and formulation support.",
     route: "/",
     image: "/assets/images/og-nutranexa-premium-ps-v2.png",
-    head: '<link rel="preload" as="image" href="/assets/images/brand-product-lab.webp" type="image/webp" media="(min-width: 861px)" fetchpriority="high">',
+    head: '<link rel="preload" as="image" href="/assets/images/product-powder-spoon.webp" type="image/webp" media="(min-width: 861px)" fetchpriority="high">',
     optimizeLogo: true,
     schema: [breadcrumbJson([["Home", "/"]])],
     body,
