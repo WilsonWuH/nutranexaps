@@ -1935,7 +1935,9 @@ function nxHomePage() {
     )
     .join("");
   const body = `<section class="nx-hero">
-    <div class="nx-shell nx-hero-grid">
+    <img class="nx-hero-bg" src="/assets/images/brand-product-lab.webp" alt="Phosphatidylserine powder sample jars on a laboratory bench with a Nutranexa researcher in the background" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
       <div class="nx-hero-copy">
         <h1>Phosphatidylserine Made for Modern Nutrition</h1>
         <p class="nx-hero-lead">Soy- and sunflower-derived phosphatidylserine in 20%, 50% and 70% grades for supplements and functional nutrition.</p>
@@ -1945,10 +1947,7 @@ function nxHomePage() {
         </div>
         <ul class="nx-hero-facts">${heroFacts}</ul>
       </div>
-      <div class="nx-hero-visual">
-        <img src="/assets/images/brand-product-lab.webp" alt="Phosphatidylserine powder sample jars on a laboratory bench with a Nutranexa researcher in the background" width="1600" height="900" fetchpriority="high" decoding="async">
-        <div class="nx-hero-card"><img src="/assets/images/logo-nutranexa-icon.png" alt="" width="28" height="28"><span><strong>Nutranexa</strong><small>Phosphatidylserine &middot; PS 20% / 50% / 70%</small></span></div>
-      </div>
+      <div class="nx-hero-card"><img src="/assets/images/logo-nutranexa-icon.png" alt="" width="28" height="28"><span><strong>Nutranexa</strong><small>Phosphatidylserine &middot; PS 20% / 50% / 70%</small></span></div>
     </div>
   </section>
 
@@ -2410,7 +2409,9 @@ function ps50Page(grade) {
   </div></section>`;
   const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><a href="/products/">Products</a><span>&rsaquo;</span><span aria-current="page">Phosphatidylserine 50%</span></div></nav>
   <section class="nx-hero nx-phero">
-    <div class="nx-shell nx-hero-grid">
+    <img class="nx-hero-bg" src="/assets/images/brand-product-lab.webp" alt="Phosphatidylserine 50% powder sample jars on a laboratory bench with a Nutranexa researcher in the background" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
       <div class="nx-hero-copy">
         <h1>Phosphatidylserine 50%</h1>
         <p class="nx-hero-lead">Our mainstream high-concentration grade for supplements and functional nutrition.</p>
@@ -2420,10 +2421,7 @@ function ps50Page(grade) {
           <a class="nx-btn ghost" href="/contact/?product=${encodeURIComponent("Phosphatidylserine 50%")}">Discuss Your Project</a>
         </div>
       </div>
-      <div class="nx-hero-visual">
-        <img src="/assets/images/brand-product-lab.webp" alt="Phosphatidylserine 50% powder sample jars on a laboratory bench with a Nutranexa researcher in the background" width="1600" height="900" fetchpriority="high" decoding="async">
-        <div class="nx-hero-card"><img src="/assets/images/logo-nutranexa-icon.png" alt="" width="28" height="28"><span><strong>Phosphatidylserine</strong><small>PS 50% &middot; Soy / Sunflower</small></span></div>
-      </div>
+      <div class="nx-hero-card"><img src="/assets/images/logo-nutranexa-icon.png" alt="" width="28" height="28"><span><strong>Phosphatidylserine</strong><small>PS 50% &middot; Soy / Sunflower</small></span></div>
     </div>
   </section>
 

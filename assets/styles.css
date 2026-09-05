@@ -4828,8 +4828,25 @@ body {
 /* Hero -------------------------------------------------------------------- */
 
 .nx-hero {
-  padding: 30px 0 68px;
-  background: linear-gradient(180deg, #fff 0%, var(--nx-cream) 100%);
+  position: relative;
+  padding: 0;
+  background: var(--nx-cream);
+  overflow: hidden;
+}
+
+.nx-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% 42%;
+}
+
+.nx-hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.88) 30%, rgba(255, 255, 255, 0.42) 56%, rgba(255, 255, 255, 0) 74%);
 }
 
 .nx-breadcrumb {
@@ -4860,16 +4877,19 @@ body {
   font-weight: 700;
 }
 
-.nx-phero {
-  padding-top: 26px;
-  background: linear-gradient(180deg, #fff 0%, var(--nx-cream) 100%);
+.nx-phero .nx-hero-inner {
+  padding-top: 54px;
+  padding-bottom: 66px;
 }
 
-.nx-hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
-  gap: 48px;
-  align-items: center;
+.nx-hero-inner {
+  position: relative;
+  padding-top: 76px;
+  padding-bottom: 88px;
+}
+
+.nx-hero-copy {
+  max-width: 560px;
 }
 
 .nx-hero-copy h1 {
@@ -4946,22 +4966,10 @@ body {
   color: var(--nx-muted);
 }
 
-.nx-hero-visual {
-  position: relative;
-}
-
-.nx-hero-visual img {
-  width: 100%;
-  aspect-ratio: 5 / 4;
-  object-fit: cover;
-  object-position: 72% 55%;
-  border-radius: 18px;
-}
-
 .nx-hero-card {
   position: absolute;
-  right: 18px;
-  bottom: 18px;
+  right: 24px;
+  bottom: 30px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -5654,19 +5662,6 @@ body {
   .nx-doc-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .nx-hero-grid {
-    grid-template-columns: 1fr;
-    gap: 34px;
-  }
-
-  .nx-hero-visual {
-    order: -1;
-  }
-
-  .nx-hero-visual img {
-    aspect-ratio: 16 / 9;
-  }
 }
 
 @media (max-width: 860px) {
@@ -5674,8 +5669,23 @@ body {
     padding: 54px 0;
   }
 
-  .nx-hero {
-    padding-bottom: 48px;
+  .nx-hero-bg {
+    position: static;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .nx-hero-scrim {
+    display: none;
+  }
+
+  .nx-hero-inner {
+    padding-top: 26px;
+    padding-bottom: 44px;
+  }
+
+  .nx-hero-copy {
+    max-width: none;
   }
 
   .nx-grade-grid {
@@ -5709,9 +5719,7 @@ body {
   }
 
   .nx-hero-card {
-    right: 12px;
-    bottom: 12px;
-    padding: 10px 14px;
+    display: none;
   }
 }
 
