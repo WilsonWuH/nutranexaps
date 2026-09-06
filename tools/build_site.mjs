@@ -1950,14 +1950,18 @@ function nxHomePage() {
         `<li><span class="nx-fact-icon">${icon}</span><span class="nx-fact-label"><strong>${top}</strong><small>${sub}</small></span></li>`,
     )
     .join("");
+  const certShield = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3Z"/><path d="M9.5 12l2 2 3.5-4"/></svg>';
+  const certBadgeIcon = (img) => `<img src="${img}" srcset="${img.replace("-96.webp", "-224.webp")} 2x" alt="" width="56" height="56" loading="lazy" decoding="async">`;
   const certDocs = [
-    ["/assets/images/doc-kosher-certificate.webp", "Kosher Certificate"],
-    ["/assets/images/doc-halal-certificate.webp", "Halal Certificate"],
-    ["/assets/images/doc-food-production-license.webp", "Food Production License"],
-    ["/assets/images/doc-business-license.webp", "Business License"],
-    ["/assets/images/doc-coa-ps-50.webp", "PS 50% Sample COA"],
+    [certBadgeIcon("/assets/images/claims/claim-fda-96.webp"), "FDA", "Registration", "/assets/images/doc-fda-registration-2025.webp", true],
+    [certBadgeIcon("/assets/images/claims/claim-halal-96.webp"), "Halal", "Certified", "/assets/images/doc-halal-certificate.webp", true],
+    [certBadgeIcon("/assets/images/claims/claim-kosher-96.webp"), "Kosher", "Certified", "/assets/images/doc-kosher-certificate.webp", true],
+    [certBadgeIcon("/assets/images/claims/claim-iso-96.webp"), "ISO 9001", "Quality Management", "/quality-rd/", false],
+    [nxIcon.doc, "Food Production", "License", "/assets/images/doc-food-production-license.webp", true],
+    [certShield, "Quality Systems", "HACCP", "/quality-rd/", false],
+    [nxIcon.globe, "Export", "Documentation", "/quality-rd/", false],
   ];
-  const certItem = ([image, name]) => `<a class="nx-cert-item" data-analytics-event="document_preview" data-document-type="certificate" href="${image}" target="_blank" rel="noopener"><img src="${image}" alt="${esc(name)} document" width="1200" height="1698" loading="lazy" decoding="async"><span class="nx-cert-name">${esc(name)}</span><span class="nx-cert-view">View Certificate &rarr;</span></a>`;
+  const certItem = ([icon, line1, line2, href, hasDoc]) => `<a class="nx-cert-item${hasDoc ? " has-doc" : ""}" data-analytics-event="document_preview" data-document-type="certificate" href="${href}"${hasDoc ? ' target="_blank" rel="noopener"' : ""}><span class="nx-cert-badge">${icon}</span><span class="nx-cert-label"><strong>${esc(line1)}</strong><small>${esc(line2)}</small></span><span class="nx-cert-view">View Certificate &rarr;</span></a>`;
   const certItems = certDocs.map(certItem).join("");
   const body = `<section class="nx-hero">
     <img class="nx-hero-bg" src="/assets/images/brand-product-lab.webp" alt="Phosphatidylserine powder sample jars on a laboratory bench with a Nutranexa researcher in the background" width="1600" height="900" fetchpriority="high" decoding="async">

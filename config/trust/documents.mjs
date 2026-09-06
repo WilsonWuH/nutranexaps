@@ -27,11 +27,11 @@ export const trustDocumentReview = {
     },
     {
       title: "U.S. Food Facility Registration Record",
-      image: "/assets/images/doc-fda-food-facility-registration.webp",
+      image: "/assets/images/doc-fda-registration-2025.webp",
       status: "renewal-due-soon",
-      public: false,
+      public: true,
       validThrough: "2026-12-31",
-      text: "A private registrar's verification record is supplied for the 2025-2026 cycle and shows an expiration date of Dec 31, 2026. FDA does not issue or endorse third-party registration certificates. Because the supplied record uses the FDA logo, it is retained for controlled buyer review instead of being displayed publicly.",
+      text: "Registration record for the 2025-2026 cycle (registrar Santec Chemicals Corp; registration no. 11186090682) with an expiration date of Dec 31, 2026. FDA does not issue or endorse third-party registration certificates. The registrant has authorized website display of this record copy through the stated validity date.",
     },
     {
       title: "Kosher Certificate",

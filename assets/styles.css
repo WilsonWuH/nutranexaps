@@ -5661,51 +5661,78 @@ body {
 
 .nx-cert-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
-  margin-right: 52px;
-  padding: 4px 2px;
+  gap: 8px;
+  margin-right: 44px;
+  text-align: center;
 }
 
-.nx-cert-item img {
-  height: 54px;
-  width: auto;
-  border-radius: 4px;
+.nx-cert-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
   border: 1px solid var(--nx-line);
-  object-fit: cover;
-  object-position: top;
+  border-radius: 14px;
+  background: #fff;
+  color: var(--nx-forest);
+  overflow: hidden;
 }
 
-.nx-cert-name,
-.nx-cert-view {
-  font-size: 0.86rem;
-  font-weight: 700;
+.nx-cert-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nx-cert-badge svg {
+  width: 26px;
+  height: 26px;
+}
+
+.nx-cert-label {
+  display: grid;
+  gap: 1px;
+  line-height: 1.25;
+  max-width: 120px;
+}
+
+.nx-cert-label strong {
+  font-size: 0.8rem;
+  color: var(--nx-ink);
   white-space: nowrap;
 }
 
-.nx-cert-name {
-  color: var(--nx-ink);
+.nx-cert-label small {
+  font-size: 0.72rem;
+  color: var(--nx-muted);
+  white-space: nowrap;
 }
 
 .nx-cert-view {
   display: none;
+  font-size: 0.74rem;
+  font-weight: 700;
   color: var(--nx-forest);
+  white-space: nowrap;
 }
 
 .nx-cert-item:hover {
   text-decoration: none;
 }
 
-.nx-cert-item:hover .nx-cert-name {
+.nx-cert-item:hover .nx-cert-badge {
+  border-color: var(--nx-forest);
+}
+
+.nx-cert-item.has-doc:hover .nx-cert-label {
   display: none;
 }
 
-.nx-cert-item:hover .nx-cert-view {
-  display: inline;
-}
-
-.nx-cert-item:hover img {
-  border-color: var(--nx-forest);
+.nx-cert-item.has-doc:hover .nx-cert-view {
+  display: block;
 }
 
 @keyframes nx-marquee-scroll {
@@ -6029,11 +6056,12 @@ body {
   }
 
   .nx-cert-item {
-    margin-right: 34px;
+    margin-right: 32px;
   }
 
-  .nx-cert-item img {
-    height: 44px;
+  .nx-cert-badge {
+    width: 48px;
+    height: 48px;
   }
 
   .nx-cert-wrap {
