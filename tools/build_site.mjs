@@ -2965,10 +2965,47 @@ function productPageV2(product) {
 }
 
 function applicationsHub() {
-  const body = `<section class="page-hero compact"><p class="eyebrow">Applications</p><h1>Phosphatidylserine Application Solutions</h1><p>Explore how source, purity grade, product format, technical documents, and compliant scientific context shape PS formulation decisions.</p></section>
-  <section>${sectionIntro("Application paths", "Choose the right application route", "Clarify product format, source preference, document needs, and quotation details before starting a sourcing discussion.")}
-    <div class="card-grid">${applications.filter((app) => !app.legacy).map((app) => `<article class="item-card"><img src="${app.image}" alt="${esc(app.title)}" loading="lazy"><div><h3>${esc(app.title)}</h3><p>${esc(app.description)}</p><a href="/applications/${app.slug}/">Explore application &rarr;</a></div></article>`).join("")}</div>
-    <p class="section-note">For private-label and co-development projects, review <a href="/applications/oem-odm/">OEM/ODM application support</a> and share your target format, market, and document needs.</p>
+  const cardOverrides = { "cognitive-health": ["/assets/images/dietary-supplement-application.webp", "Supplement bottles and PS ingredient documents on a development bench", "16% 42%"] };
+  const cards = applications
+    .filter((app) => !app.legacy)
+    .map((app) => {
+      const [image, alt, pos] = cardOverrides[app.slug] || [app.image, app.title, "50% 50%"];
+      return `<a class="nx-app-card" href="/applications/${app.slug}/"><span class="nx-app-media"><img src="${image}" alt="${esc(alt)}" width="700" height="700" loading="lazy" decoding="async" style="object-position:${pos}"></span><span class="nx-app-label"><h3>${esc(app.title)}</h3><p>${esc(app.description)}</p></span></a>`;
+    })
+    .join("");
+  const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><span aria-current="page">Applications</span></div></nav>
+  <section class="nx-hero nx-phero">
+    <img class="nx-hero-bg" src="/assets/images/dietary-supplement-application.webp" alt="Phosphatidylserine capsules, tablets, and powder on a product development bench" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
+      <div class="nx-hero-copy">
+        <p class="nx-hero-eyebrow">Applications</p>
+        <h1>Phosphatidylserine Application Solutions</h1>
+        <p class="nx-hero-lead">From capsules and tablets to powder blends and functional foods &mdash; see how PS fits the product formats your market buys.</p>
+        <div class="nx-hero-actions">
+          <a class="nx-btn" href="/products/phosphatidylserine/">Explore PS Grades</a>
+          ${qualificationPackCta({ label: "Request Specification & COA", className: "nx-btn ghost", sourcePage: "applications-hero" })}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-apps">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Application paths</h2><p class="nx-section-sub">Six product directions built on the same ingredient &mdash; with format, wording, and document notes for each.</p></div><a class="nx-textlink" href="/products/">View PS Grades &rarr;</a></div>
+      <div class="nx-app-grid">${cards}</div>
+      <p class="nx-note">For private-label and co-development projects, review <a href="/applications/oem-odm/">OEM/ODM application support</a> and share your target format, market, and document needs.</p>
+    </div>
+  </section>
+
+  <section class="nx-final-cta">
+    <div class="nx-shell nx-final-grid">
+      <div><h2>Let&rsquo;s Work on Your Next Project</h2><p>Tell us your product format, source preference, and target market &mdash; we will reply with the matching grade, documents, and sample options.</p></div>
+      <div class="nx-final-actions">
+        ${qualificationPackCta({ label: "Request Specification", className: "nx-btn light", sourcePage: "applications-final" })}
+        <a class="nx-btn outline-light" href="/contact/">Contact Us &rarr;</a>
+      </div>
+    </div>
   </section>`;
   return layout({
     title: "Applications | Phosphatidylserine for Supplements and Functional Foods",
@@ -2982,33 +3019,96 @@ function applicationsHub() {
 function applicationPage(app) {
   const route = `/applications/${app.slug}/`;
   const isCognitive = app.slug === "cognitive-health";
-  const tags = app.tags?.length ? `<ul class="application-tags">${app.tags.map((tag) => `<li>${esc(tag)}</li>`).join("")}</ul>` : "";
-  const body = `${isCognitive ? `<section class="application-hero">
-    <div><p class="eyebrow">Cognitive health application</p><h1>${esc(app.title)}</h1><p>${esc(app.description)}</p>${tags}<div class="hero-actions"><a class="button primary" href="/contact/?application=Cognitive%20Health">Request Cognitive Health Solution</a><a class="button secondary" href="/products/phosphatidylserine-20/">Download Product Overview</a></div></div>
-    <img src="${app.image}" alt="Light blue neural network, PS molecular structure, and fine light-yellow phosphatidylserine powder" loading="eager">
-  </section>` : `${hero({ eyebrow: "Application solution", title: app.title, text: app.description, image: app.image, cta: "Request Specification & COA", secondary: "View PS Grades" })}<section class="application-tag-band">${tags}</section>`}
-  ${isCognitive ? `<section class="application-relevance">${sectionIntro("Why PS fits cognitive health", "Why PS Is Relevant to Cognitive Health Formulations", "Phosphatidylserine is a naturally occurring phospholipid found in cell membranes, including neuronal cell membranes. Its structural and biological roles make it an ingredient of interest in cognitive-health research and nutraceutical product development.")}
-    <div class="explanation-grid">
-      <article><span>01</span><h3>Cell Membrane Structure</h3><p>Phosphatidylserine is an important phospholipid component associated with cell membrane structure and fluidity.</p></article>
-      <article><span>02</span><h3>Neuronal Communication</h3><p>PS is studied for its role in membrane-related signaling and neuronal communication processes.</p></article>
-      <article><span>03</span><h3>Flexible Formulation</h3><p>Available in multiple purity grades for capsules, tablets, powder blends, and selected nutrition formats.</p></article>
-      <article><span>04</span><h3>Research Interest</h3><p>Phosphatidylserine has been investigated across cognitive health, aging, stress, and exercise research areas.</p></article>
+  const heroBg = isCognitive ? "/assets/images/dietary-supplement-application.webp" : app.image;
+  const tags = app.tags?.length ? `<ul class="application-tags nx-hero-facts">${app.tags.map((tag) => `<li>${esc(tag)}</li>`).join("")}</ul>` : "";
+  const relevanceCards = isCognitive
+    ? [
+        ["01", "Cell Membrane Structure", "Phosphatidylserine is an important phospholipid component associated with cell membrane structure and fluidity."],
+        ["02", "Neuronal Communication", "PS is studied for its role in membrane-related signaling and neuronal communication processes."],
+        ["03", "Flexible Formulation", "Available in multiple purity grades for capsules, tablets, powder blends, and selected nutrition formats."],
+        ["04", "Research Interest", "Phosphatidylserine has been investigated across cognitive health, aging, stress, and exercise research areas."],
+      ]
+    : app.points.map((point, index) => [String(index + 1).padStart(2, "0"), point, "Confirm current specifications, finished-product fit, and permitted market wording before commercial use."]);
+  const relevanceCardsHtml = relevanceCards
+    .map(
+      ([number, title, text]) =>
+        `<article class="nx-step-card"><span class="nx-step-number">${number}</span><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`,
+    )
+    .join("");
+  const formatCards = app.formats
+    ? `<section class="nx-section nx-formats"><div class="nx-shell">
+    <div class="nx-section-head"><div><h2>Compatible product formats</h2><p class="nx-section-sub">Capsules, tablets, powder blends, sachets, and selected functional nutrition products can be evaluated. Suitability for beverage systems should be confirmed through formulation and stability testing.</p></div></div>
+    <div class="nx-process-grid two">${app.formats.map(([title, text]) => `<article class="nx-step-card"><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`).join("")}</div>
+  </div></section>`
+    : "";
+  const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><a href="/applications/">Applications</a><span>&rsaquo;</span><span aria-current="page">${esc(app.title)}</span></div></nav>
+  <section class="nx-hero nx-phero">
+    <img class="nx-hero-bg" src="${heroBg}" alt="${esc(app.title)} application context" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
+      <div class="nx-hero-copy">
+        <p class="nx-hero-eyebrow">Application</p>
+        <h1>${esc(app.title)}</h1>
+        <p class="nx-hero-lead">${esc(app.description)}</p>
+        ${tags}
+        <div class="nx-hero-actions">
+          <a class="nx-btn" href="/contact/?application=${encodeURIComponent(app.title)}">Request Specification &amp; COA</a>
+          <a class="nx-btn ghost" href="/products/phosphatidylserine/">View PS Grades</a>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="mechanism-module">${sectionIntro("Mechanism education", "A formulation-focused PS pathway", "This educational sequence describes ingredient context and scientific interest. It does not promise a consumer outcome or disease benefit.")}
-    <ol><li><span>01</span><strong>PS Ingredient</strong></li><li><span>02</span><strong>Digestion &amp; Absorption</strong></li><li><span>03</span><strong>Phospholipid Availability</strong></li><li><span>04</span><strong>Cell Membrane Structure</strong></li><li><span>05</span><strong>Scientific Research Interest</strong></li></ol>
-  </section>` : `<section>${sectionIntro("Application focus", `Building ${app.title.toLowerCase()} concepts`, "Use scientific research as educational context, then validate the exact ingredient, serving format, processing conditions, label wording, and target-market requirements for the finished product.")}
-    <div class="feature-grid">${app.points.map((point) => `<div class="feature"><h3>${esc(point)}</h3><p>Confirm current specifications, finished-product fit, and permitted market wording before commercial use.</p></div>`).join("")}</div>
-  </section>`}
-  <section class="grade-comparison">${sectionIntro("Recommended grades", "Recommended PS Grades for Product Development", "These are positioning routes, not automatic formulation recommendations. Confirm the current controlled specification and run finished-product testing.")}
-    <div class="table-wrap"><table class="spec-table"><thead><tr><th>Product</th><th>PS content</th><th>Source</th><th>Positioning</th><th></th></tr></thead><tbody>${psGrades.map((grade) => `<tr><td>${esc(grade.shortName)}</td><td>${esc(grade.shortName.replace("PS ", "Target "))}</td><td>Soy / Sunflower*</td><td>${esc(grade.positioning)}</td><td><a href="/products/${grade.slug}/">View grade</a></td></tr>`).join("")}</tbody></table></div><p class="form-note">* Source availability and product-specific documentation must be confirmed for the quoted grade.</p>
+
+  <section class="nx-section nx-relevance">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>${isCognitive ? "Why PS fits cognitive health formulations" : `Building ${esc(app.title.toLowerCase())} concepts`}</h2><p class="nx-section-sub">${isCognitive ? "Phosphatidylserine is a naturally occurring phospholipid found in cell membranes, including neuronal cell membranes. Its structural and biological roles make it an ingredient of interest in cognitive-health research and nutraceutical product development." : "Use scientific research as educational context, then validate the exact ingredient, serving format, processing conditions, label wording, and target-market requirements for the finished product."}</p></div></div>
+      <div class="nx-process-grid two">${relevanceCardsHtml}</div>
+    </div>
   </section>
-  ${applicationFormatSection(app)}
-  <section class="application-science">${sectionIntro("Science and technical information", "Evidence, mechanism, and product documentation", "Keep human, animal, laboratory, and review evidence clearly distinguished, and never convert a research finding into a medical claim.")}
-    <div class="science-card-grid"><a href="/science/research-library/"><h3>Research Library</h3><p>Browse selected publications related to cognition, aging, exercise, and nutritional science.</p></a><a href="/science/how-ps-works/"><h3>Mechanism Overview</h3><p>Understand the biological role and structural characteristics of phosphatidylserine.</p></a><a href="/resources/documents-for-ps-ingredients/"><h3>Technical Documents</h3><p>Request product specifications, COA, TDS, MSDS, and related technical information.</p></a></div>
+  ${isCognitive ? `<section class="nx-section nx-made"><div class="nx-shell">
+    <div class="nx-section-head"><div><h2>A formulation-focused PS pathway</h2><p class="nx-section-sub">This educational sequence describes ingredient context and scientific interest. It does not promise a consumer outcome or disease benefit.</p></div></div>
+    <ol class="nx-app-pathway"><li><span>01</span><strong>PS Ingredient</strong></li><li><span>02</span><strong>Digestion &amp; Absorption</strong></li><li><span>03</span><strong>Phospholipid Availability</strong></li><li><span>04</span><strong>Cell Membrane Structure</strong></li><li><span>05</span><strong>Scientific Research Interest</strong></li></ol>
+  </div></section>` : ""}
+  ${formatCards}
+
+  <section class="nx-section nx-grades-guide">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Recommended PS grades</h2><p class="nx-section-sub">These are positioning routes, not automatic formulation recommendations. Confirm the current controlled specification and run finished-product testing.</p></div></div>
+      <div class="table-wrap"><table class="spec-table nx-spec-table"><thead><tr><th>Product</th><th>PS content</th><th>Source</th><th>Positioning</th><th></th></tr></thead><tbody>${psGrades.map((grade) => `<tr><td>${esc(grade.shortName)}</td><td>Target ${esc(grade.shortName.replace("PS ", ""))}</td><td>Soy / Sunflower*</td><td>${esc(grade.positioning)}</td><td><a href="/products/${grade.slug}/">View grade</a></td></tr>`).join("")}</tbody></table></div>
+      <p class="nx-note">* Source availability and product-specific documentation must be confirmed for the quoted grade.</p>
+    </div>
   </section>
-  <section class="link-panel"><a href="/products/phosphatidylserine-20/">PS 20%</a><a href="/products/phosphatidylserine-50/">PS 50%</a><a href="/products/phosphatidylserine-70/">PS 70%</a><a href="/products/soy-phosphatidylserine/">Soy PS</a><a href="/products/sunflower-phosphatidylserine/">Sunflower PS</a><a href="/science/research-library/">Research Library</a><a href="/contact/">Talk to Technical Support</a></section>
-  <section class="form-panel"><div>${sectionIntro("Talk to technical support", `Request support for ${app.title.toLowerCase()}`, "Include your application, source preference, required PS grade, target market, annual volume, and document needs.")}</div>${quoteForm(app.title)}</section>`;
+
+  <section class="nx-section nx-science-links">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Science and technical information</h2><p class="nx-section-sub">Keep human, animal, laboratory, and review evidence clearly distinguished, and never convert a research finding into a medical claim.</p></div></div>
+      <div class="nx-process-grid">
+        <a class="nx-step-card" href="/science/research-library/"><h3>Research Library</h3><p>Browse selected publications related to cognition, aging, exercise, and nutritional science.</p></a>
+        <a class="nx-step-card" href="/science/how-ps-works/"><h3>Mechanism Overview</h3><p>Understand the biological role and structural characteristics of phosphatidylserine.</p></a>
+        <a class="nx-step-card" href="/resources/documents-for-ps-ingredients/"><h3>Technical Documents</h3><p>Request product specifications, COA, TDS, MSDS, and related technical information.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <nav class="nx-linkband" aria-label="Related pages">
+    <div class="nx-shell">
+      <span>Related pages</span>
+      <a href="/products/phosphatidylserine-20/">PS 20%</a>
+      <a href="/products/phosphatidylserine-50/">PS 50%</a>
+      <a href="/products/phosphatidylserine-70/">PS 70%</a>
+      <a href="/products/soy-phosphatidylserine/">Soy PS</a>
+      <a href="/products/sunflower-phosphatidylserine/">Sunflower PS</a>
+      <a href="/science/research-library/">Research Library</a>
+    </div>
+  </nav>
+  <section class="nx-final-cta">
+    <div class="nx-shell nx-final-grid">
+      <div><h2>Request support for ${esc(app.title.toLowerCase())}</h2><p>Include your application, source preference, required PS grade, target market, annual volume, and document needs.</p></div>
+      <div class="nx-final-actions">
+        <a class="nx-btn light" href="/contact/?application=${encodeURIComponent(app.title)}">Talk to Technical Support &rarr;</a>
+      </div>
+    </div>
+  </section>`;
   return layout({
     title: app.seoTitle || `${app.title} | Nutranexa`,
     description: app.description,
@@ -3295,22 +3395,89 @@ function qualityPage() {
 }
 
 function aboutPage() {
-  const body = `${hero({
-    eyebrow: "About Nutranexa",
-    title: "Biotechnology Manufacturer Focused on New Food Ingredients",
-    text: `${companyIdentity.englishCompanyName} was founded in 2013, operates a 110,000+ m2 campus, and primarily serves export markets in Europe and North America.`,
-    image: "/assets/images/factory-campus.webp",
-    cta: "Request Qualification Pack",
-    contactHref: qualificationPackHref(),
-    secondary: "View Manufacturing",
-  })}
+  const campusPhotos = [
+    ["/assets/images/factory-building.webp", "Nutranexa office and production buildings at the Shandong campus", "Campus buildings"],
+    ["/assets/images/equipment-workshop-01.webp", "Stainless steel extraction and conversion tanks in the workshop", "PS workshops"],
+    ["/assets/images/equipment-cleanroom-production.webp", "Operators in cleanroom suits at a stainless processing vessel", "Cleanroom production"],
+    ["/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg drums in the packing area", "Packing area"],
+    ["/assets/images/proof-cphi-exhibition.webp", "Nutranexa phosphatidylserine team at an industry exhibition", "Industry exhibitions"],
+    ["/assets/images/proof-university-cooperation.webp", "Cooperation with East China University of Science and Technology", "University cooperation"],
+  ]
+    .map(
+      ([image, alt, title]) =>
+        `<a class="nx-photo-card" href="${image}" target="_blank" rel="noopener" data-analytics-event="factory_image_view"><img src="${image}" alt="${esc(alt)}" loading="lazy" decoding="async"><span class="nx-photo-caption"><h3>${title}</h3></span></a>`,
+    )
+    .join("");
+  const nxIcon = {
+    building: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16"/><path d="M14 9h5a1 1 0 0 1 1 1v11"/><path d="M2 21h20"/><path d="M7.5 8h2M7.5 12h2M7.5 16h2"/></svg>',
+    drum: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"/><ellipse cx="12" cy="7.5" rx="7" ry="2"/><path d="M5 12.5h14"/></svg>',
+    flask: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v5.2L4.6 17.4a2 2 0 0 0 1.8 3h11.2a2 2 0 0 0 1.8-3L14 8.2V3"/><path d="M7.4 15h9.2"/></svg>',
+    people: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.5" cy="8" r="3"/><path d="M2.5 20c.8-3.2 3.2-5 6-5s5.2 1.8 6 5"/><circle cx="16.5" cy="9" r="2.4"/><path d="M15.8 15.2c2.5.4 4.4 2 5.2 4.8"/></svg>',
+  };
+
+  const aboutFacts = [
+    [nxIcon.building, "Founded", "2013"],
+    [nxIcon.drum, "110,000+ m&sup2;", "Production campus"],
+    [nxIcon.flask, "PS core ingredient", "License since 2015"],
+    [nxIcon.people, "R&amp;D + Manufacturing", "+ Quality Control"],
+  ]
+    .map(
+      ([icon, top, sub]) =>
+        `<li><span class="nx-fact-icon">${icon}</span><span class="nx-fact-label"><strong>${top}</strong><small>${sub}</small></span></li>`,
+    )
+    .join("");
+  const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><span aria-current="page">About</span></div></nav>
+  <section class="nx-hero nx-phero">
+    <img class="nx-hero-bg" src="/assets/images/factory-aerial.webp" alt="Aerial view of the Nutranexa campus in Shandong, China" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
+      <div class="nx-hero-copy">
+        <p class="nx-hero-eyebrow">About Nutranexa</p>
+        <h1>We Develop and Manufacture Functional Food Ingredients in Shandong</h1>
+        <p class="nx-hero-lead">${esc(companyIdentity.englishCompanyName)} was founded in 2013 and primarily serves B2B ingredient buyers in Europe and North America, with phosphatidylserine as its lead product.</p>
+        <div class="nx-hero-actions">
+          ${qualificationPackCta({ label: "Request Qualification Pack", className: "nx-btn", sourcePage: "about-hero" })}
+          <a class="nx-btn ghost" href="/manufacturing/">View Manufacturing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <ul class="nx-hero-facts nx-facts-band"><div class="nx-shell nx-facts-row">${aboutFacts}</div></ul>
+
   ${companyVideoSection()}
-  <section class="detail-grid"><div><h2>Company profile</h2><p>Nutranexa integrates R&D, production, and sales of new food ingredients, health food ingredients, and food additives. The company positions phosphatidylserine as a lead product and uses factory and product materials to support buyer evaluation.</p><a href="/company-verification/">Review company verification information &rarr;</a></div><div><h2>Primary export markets</h2><p>Nutranexa primarily serves B2B ingredient buyers in Europe and North America, with product documents and commercial details reviewed according to the destination market and quoted product.</p></div><div><h2>Mission</h2><p>Provide healthy, safe, and effective functional food and dietary supplement ingredients while supporting biotechnology industry development and customer product needs.</p></div></section>`;
+
+  <section class="nx-section nx-facility">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Inside the campus</h2><p class="nx-section-sub">Offices, workshops, cleanrooms, packing, exhibitions, and university cooperation &mdash; the real working environment behind the ingredient.</p></div><a class="nx-textlink" href="/manufacturing/">Inside Manufacturing &rarr;</a></div>
+      <div class="nx-photo-grid">${campusPhotos}</div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-about-detail">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Company profile</h2><p class="nx-section-sub">The facts buyers use for supplier qualification.</p></div><a class="nx-textlink" href="/company-verification/">Company Verification &rarr;</a></div>
+      <div class="nx-process-grid">
+        <article class="nx-step-card"><h3>Company</h3><p>${esc(companyIdentity.englishCompanyName)} integrates R&amp;D, production, and sales of new food ingredients, health food ingredients, and food additives, with phosphatidylserine as the lead product.</p></article>
+        <article class="nx-step-card"><h3>Export markets</h3><p>Nutranexa primarily serves B2B ingredient buyers in Europe and North America, with product documents and commercial details reviewed according to the destination market and quoted product.</p></article>
+        <article class="nx-step-card"><h3>Mission</h3><p>Provide healthy, safe, and effective functional food and dietary supplement ingredients while supporting biotechnology industry development and customer product needs.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-final-cta">
+    <div class="nx-shell nx-final-grid">
+      <div><h2>Visit the campus or start with documents</h2><p>Request the qualification pack for supplier onboarding, or plan an on-site review of the workshops, laboratory, and packing lines.</p></div>
+      <div class="nx-final-actions">
+        ${qualificationPackCta({ label: "Request Qualification Pack", className: "nx-btn light", sourcePage: "about-final" })}
+        <a class="nx-btn outline-light" href="/contact/">Contact Us &rarr;</a>
+      </div>
+    </div>
+  </section>`;
   return layout({
     title: "About Nutranexa | Shandong Nutranexa Biopharmaceutical",
     description: "Learn about Nutranexa, a biotechnology manufacturer supplying phosphatidylserine and functional food ingredients primarily to B2B buyers in Europe and North America.",
     route: "/about/",
-    image: "/assets/images/factory-campus.webp",
+    image: "/assets/images/factory-aerial.webp",
     schema: [breadcrumbJson([["Home", "/"], ["About", "/about/"]])],
     body,
   });
@@ -3443,12 +3610,43 @@ function newsCategory(article) {
 
 function scienceHubPage() {
   const route = "/science/";
-  const body = `<section class="page-hero compact"><p class="eyebrow">Science center</p><h1>Science Behind Phosphatidylserine</h1><p>Explore phosphatidylserine structure, biological role, selected research, and formulation guidance with clear evidence boundaries.</p></section>
-  <section>${sectionIntro("Science pathways", "Educational support for ingredient decisions", "Nutranexa distinguishes scientific education from finished-product claims and links buyers to original research sources.")}
-    <div class="science-card-grid"><a href="/science/how-ps-works/"><h3>How PS Works</h3><p>Understand phospholipid structure, membrane context, and research interest without medical claims.</p></a><a href="/science/research-library/"><h3>Research Library</h3><p>Review structured publication records with study type, population, summary, limitations, DOI, and original source.</p></a><a href="/science/formulation-support/"><h3>Formulation Support</h3><p>Connect target application, purity grade, source, product format, and required technical documents.</p></a></div>
+  const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><span aria-current="page">Science</span></div></nav>
+  <section class="nx-hero nx-phero">
+    <img class="nx-hero-bg" src="/assets/images/science-phosphatidylserine-lab-v2.webp" alt="Nutranexa laboratory analyst reviewing a phosphatidylserine sample" width="1200" height="1200" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
+      <div class="nx-hero-copy">
+        <p class="nx-hero-eyebrow">Science center</p>
+        <h1>Science Behind Phosphatidylserine</h1>
+        <p class="nx-hero-lead">PS structure, biological role, selected research, and formulation guidance &mdash; with clear evidence boundaries.</p>
+        <div class="nx-hero-actions">
+          <a class="nx-btn" href="/science/research-library/">Browse the Research Library</a>
+          <a class="nx-btn ghost" href="/contact/">Talk to Technical Support</a>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="cta-band"><div><p class="eyebrow">Scientific compliance</p><h2>Research interest is not a medical claim.</h2><p>Finished-product wording, study relevance, and permitted claims depend on formulation, dose, population, evidence quality, and target-market rules.</p></div><a class="button light" href="/contact/">Talk to Technical Support</a></section>`;
-  return layout({ title: "Phosphatidylserine Science Center | Nutranexa", description: "Explore phosphatidylserine structure, research publications, evidence limitations, and formulation support for B2B product development.", route, image: "/assets/images/hero-ps-innovation-v2.png", schema: [breadcrumbJson([["Home", "/"], ["Science", route]])], body });
+
+  <section class="nx-section nx-science-links">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Science pathways</h2><p class="nx-section-sub">Nutranexa distinguishes scientific education from finished-product claims and links buyers to original research sources.</p></div></div>
+      <div class="nx-process-grid">
+        <a class="nx-step-card" href="/science/how-ps-works/"><h3>How PS Works</h3><p>Understand phospholipid structure, membrane context, and research interest without medical claims.</p></a>
+        <a class="nx-step-card" href="/science/research-library/"><h3>Research Library</h3><p>Review structured publication records with study type, population, summary, limitations, DOI, and original source.</p></a>
+        <a class="nx-step-card" href="/science/formulation-support/"><h3>Formulation Support</h3><p>Connect target application, purity grade, source, product format, and required technical documents.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-final-cta">
+    <div class="nx-shell nx-final-grid">
+      <div><h2>Research interest is not a medical claim.</h2><p>Finished-product wording, study relevance, and permitted claims depend on formulation, dose, population, evidence quality, and target-market rules.</p></div>
+      <div class="nx-final-actions">
+        <a class="nx-btn light" href="/contact/">Talk to Technical Support &rarr;</a>
+      </div>
+    </div>
+  </section>`;
+  return layout({ title: "Phosphatidylserine Science Center | Nutranexa", description: "Explore phosphatidylserine structure, research publications, evidence limitations, and formulation support for B2B product development.", route, image: "/assets/images/science-phosphatidylserine-lab-v2.webp", schema: [breadcrumbJson([["Home", "/"], ["Science", route]])], body });
 }
 
 function howPsWorksPage() {
