@@ -5788,6 +5788,183 @@ body {
   font-size: 0.92rem;
 }
 
+/* Interior page facts band --------------------------------------------------- */
+
+.nx-facts-band {
+  list-style: none;
+  margin: 0;
+  padding: 18px 0;
+  background: #fff;
+  border-bottom: 1px solid var(--nx-line);
+}
+
+.nx-facts-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 26px;
+}
+
+.nx-facts-row .nx-hero-facts {
+  margin: 0;
+}
+
+/* Split feature (photo + copy) ------------------------------------------------ */
+
+.nx-split-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 44px;
+  align-items: center;
+}
+
+.nx-split-photo {
+  margin: 0;
+  position: relative;
+}
+
+.nx-split-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.nx-split-photo figcaption {
+  margin-top: 10px;
+  font-size: 0.84rem;
+  color: var(--nx-muted);
+}
+
+.nx-split-copy h2 {
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  margin: 0 0 12px;
+}
+
+.nx-split-copy .nx-section-sub {
+  margin-bottom: 20px;
+}
+
+.nx-split-copy .nx-checks {
+  margin: 0 0 24px;
+  gap: 9px;
+}
+
+.nx-split-copy .nx-checks li {
+  font-size: 0.95rem;
+}
+
+/* Process / parameter cards --------------------------------------------------- */
+
+.nx-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.nx-process-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.nx-step-card {
+  border: 1px solid var(--nx-line);
+  border-radius: 14px;
+  background: #fff;
+  padding: 20px;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.nx-step-number {
+  font-family: var(--nx-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--nx-forest);
+  line-height: 1;
+}
+
+.nx-step-card h3 {
+  font-size: 1.02rem;
+  margin: 0;
+  color: var(--nx-ink);
+}
+
+.nx-step-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--nx-muted);
+  line-height: 1.55;
+}
+
+/* Document grid (quality page) ------------------------------------------------- */
+
+.nx-doc-grid.docs {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* R&D cards --------------------------------------------------------------------- */
+
+.nx-rd-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.nx-rd-card {
+  margin: 0;
+  border: 1px solid var(--nx-line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  display: grid;
+  align-content: start;
+}
+
+.nx-rd-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.nx-rd-card figcaption {
+  padding: 16px 18px;
+  display: grid;
+  gap: 5px;
+}
+
+.nx-rd-card figcaption strong {
+  font-family: var(--nx-serif);
+  font-size: 1.05rem;
+  color: var(--nx-ink);
+}
+
+.nx-rd-card figcaption span {
+  font-size: 0.88rem;
+  color: var(--nx-muted);
+  line-height: 1.5;
+}
+
+.nx-rd-text {
+  padding: 22px;
+  gap: 12px;
+  align-content: start;
+}
+
+.nx-rd-text h3 {
+  font-family: var(--nx-serif);
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--nx-ink);
+}
+
+.nx-rd-text p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--nx-muted);
+  line-height: 1.6;
+}
+
 /* PS50 page ---------------------------------------------------------------- */
 
 .nx-spec-grid {
@@ -6064,6 +6241,23 @@ body {
     height: 48px;
   }
 
+  .nx-split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nx-process-grid,
+  .nx-process-grid.two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nx-doc-grid.docs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nx-rd-grid {
+    grid-template-columns: 1fr;
+  }
+
   .nx-cert-wrap {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -6084,6 +6278,11 @@ body {
 
   .nx-footer-brand {
     grid-column: 1 / -1;
+  }
+
+  .nx-process-grid,
+  .nx-process-grid.two {
+    grid-template-columns: 1fr;
   }
 
   .nx-hero-card {

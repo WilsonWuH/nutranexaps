@@ -1,6 +1,8 @@
 import { chromium } from "playwright";
 
 const pages = [
+  ["http://127.0.0.1:8123/manufacturing/", "C:/Users/Administrator/.zcode/workspace/default/nx-mfg-full.png"],
+  ["http://127.0.0.1:8123/quality-rd/", "C:/Users/Administrator/.zcode/workspace/default/nx-quality-full.png"],
   ["http://127.0.0.1:8123/", "C:/Users/Administrator/.zcode/workspace/default/nx-home-full.png"],
   ["http://127.0.0.1:8123/products/phosphatidylserine-50/", "C:/Users/Administrator/.zcode/workspace/default/nx-ps50-full.png"],
 ];

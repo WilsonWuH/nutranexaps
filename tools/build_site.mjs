@@ -2596,48 +2596,110 @@ function applicationPage(app) {
 }
 
 function manufacturingPage() {
-  const body = `${hero({
-    eyebrow: "Manufacturing",
-    title: "Factory, Cleanroom, and Equipment Proof for Ingredient Buyers",
-    text: "Nutranexa presents factory campus, cleanroom production, workshop equipment, and packaging support information for buyer evaluation.",
-    image: "/assets/images/factory-campus.webp",
-    cta: "Request Factory Details",
-    secondary: "View Quality & R&D",
-    secondaryHref: "/quality-rd/",
-    heroClass: "manufacturing-hero",
-  })}
-  <section>${sectionIntro("Factory evidence", "Manufacturing information for buyer confidence", "Review facility images and production context while confirming product-specific documents with the sales team.")}
-    <div class="gallery">
-      ${["factory-campus.webp", "factory-building.webp", "equipment-workshop-02.webp", "equipment-workshop-01.webp", "equipment-workshop-03.webp", "equipment-cleanroom-workshop.webp"].map((img) => `<img src="/assets/images/${img}" alt="Nutranexa manufacturing and factory visual proof" loading="lazy">`).join("")}
+  const nxIcon = {
+    drum: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"/><ellipse cx="12" cy="7.5" rx="7" ry="2"/><path d="M5 12.5h14"/></svg>',
+    building: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16"/><path d="M14 9h5a1 1 0 0 1 1 1v11"/><path d="M2 21h20"/><path d="M7.5 8h2M7.5 12h2M7.5 16h2"/></svg>',
+    clean: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M6 21V8l6-4 6 4v13"/><path d="M10 21v-4h4v4"/></svg>',
+    globe: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 4 5.6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-5.6-4-9s1.5-6.4 4-9Z"/></svg>',
+  };
+  const heroFacts = [
+    [nxIcon.building, "110,000+ m&sup2;", "Production campus"],
+    [nxIcon.clean, "Cleanroom", "Packing area"],
+    [nxIcon.drum, "25 kg MOQ", "Standard drum"],
+    [nxIcon.globe, "Global", "Shipment support"],
+  ]
+    .map(
+      ([icon, top, sub]) =>
+        `<li><span class="nx-fact-icon">${icon}</span><span class="nx-fact-label"><strong>${top}</strong><small>${sub}</small></span></li>`,
+    )
+    .join("");
+  const facilityPhotos = [
+    ["/assets/images/factory-aerial-wide.webp", "Aerial view of the Nutranexa production campus", "Production campus"],
+    ["/assets/images/equipment-workshop-01.webp", "Stainless steel extraction and conversion tanks in the workshop", "Extraction &amp; conversion"],
+    ["/assets/images/equipment-workshop-03.webp", "Workshop piping and processing equipment", "Processing lines"],
+    ["/assets/images/equipment-cleanroom-production.webp", "Operators in full cleanroom suits working at a stainless vessel", "Cleanroom production"],
+    ["/assets/images/equipment-cleanroom-workshop.webp", "Cleanroom workshop with dedicated process vessels", "Cleanroom workshop"],
+    ["/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg drums in the packing area", "Packing area"],
+  ]
+    .map(
+      ([image, alt, title]) =>
+        `<a class="nx-photo-card" href="${image}" target="_blank" rel="noopener" data-analytics-event="factory_image_view"><img src="${image}" alt="${esc(alt)}" loading="lazy" decoding="async"><span class="nx-photo-caption"><h3>${title}</h3></span></a>`,
+    )
+    .join("");
+  const processSteps = manufacturingSteps
+    .map(
+      ([number, title, text]) =>
+        `<article class="nx-step-card"><span class="nx-step-number">${esc(number)}</span><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`,
+    )
+    .join("");
+  const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><span aria-current="page">Manufacturing</span></div></nav>
+  <section class="nx-hero nx-phero">
+    <img class="nx-hero-bg" src="/assets/images/factory-aerial.webp" alt="Aerial view of the Nutranexa manufacturing campus in Shandong, China" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
+      <div class="nx-hero-copy">
+        <p class="nx-hero-eyebrow">Manufacturing</p>
+        <h1>Inside Our Manufacturing Facility</h1>
+        <p class="nx-hero-lead">From raw material control to final powder packing &mdash; the campus, workshops, and cleanroom areas where Nutranexa phosphatidylserine is made.</p>
+        <div class="nx-hero-actions">
+          <a class="nx-btn" href="/contact/?request=qualification-pack">Request Factory Details</a>
+          <a class="nx-btn ghost" href="/quality-rd/">View Quality &amp; R&amp;D</a>
+        </div>
+      </div>
     </div>
   </section>
-  ${manufacturingProcessSection()}
-  <section class="split-section packaging-proof">
-    <div>${sectionIntro("Bulk packaging", "25 kg per drum with a 25 kg MOQ", "For phosphatidylserine products, one 25 kg drum meets the minimum order quantity. Final labels, inner packing, palletizing, and export shipping requirements are confirmed before order.")}
-      <ul class="check-list"><li>MOQ: 25 kg</li><li>Net weight: 25 kg per drum</li><li>Warehouse and packing preparation image available</li><li>Shipment details confirmed according to destination and order quantity</li></ul>
-      <a class="button secondary" href="/contact/?product=Phosphatidylserine%20%28PS%29&documents=Packaging%20and%20quotation">Request packaging details</a>
+  <ul class="nx-hero-facts nx-facts-band"><div class="nx-shell nx-facts-row">${heroFacts}</div></ul>
+
+  <section class="nx-section nx-facility">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>The facility at a glance</h2><p class="nx-section-sub">Real photos from the campus, workshops, cleanroom areas, and packing lines. Click any photo to view it full size.</p></div><a class="nx-textlink" href="/cases/">Packing &amp; Dispatch Evidence &rarr;</a></div>
+      <div class="nx-photo-grid">${facilityPhotos}</div>
     </div>
-    <img class="section-photo" src="/assets/images/ps-25kg-drum-packaging-clean.webp" width="960" height="1280" alt="Phosphatidylserine 25 kg drums prepared in a clean Nutranexa dispatch area" loading="lazy">
   </section>
-  <section class="dispatch-proof">
-    ${sectionIntro("Dispatch proof", "Drum loading and palletized shipment preparation", "These operational photos show ingredient drums staged for vehicle loading and palletized drums protected with stretch wrapping at a logistics loading area. Final pallet pattern, labels, and transport arrangements are confirmed for each order.")}
-    <div class="dispatch-gallery">
-      <figure>
-        <img class="dispatch-photo dispatch-photo-portrait" src="/assets/images/shipment-drums-local-dispatch.webp" width="900" height="1600" alt="Ingredient drums staged beside a vehicle for dispatch" loading="lazy">
-        <figcaption>Drums staged for vehicle loading during dispatch preparation.</figcaption>
+
+  <section class="nx-section nx-process">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>From raw material to released batch</h2><p class="nx-section-sub">A document-led route that supports supplier evaluation without disclosing confidential parameters.</p></div></div>
+      <div class="nx-process-grid">${processSteps}</div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-made">
+    <div class="nx-shell nx-split-grid">
+      <figure class="nx-split-photo">
+        <img src="/assets/images/equipment-cleanroom-production.webp" alt="Operators in full cleanroom suits working at a stainless steel vessel" width="600" height="400" loading="lazy" decoding="async">
+        <figcaption>Cleanroom production area &mdash; dedicated PS processing.</figcaption>
       </figure>
-      <figure>
-        <img class="dispatch-photo" src="/assets/images/shipment-palletized-drums-loading-bay.webp" width="1400" height="1050" alt="Palletized ingredient drums stretch wrapped at a logistics loading bay" loading="lazy">
-        <figcaption>Palletized drums stretch wrapped for handling at the loading area.</figcaption>
-      </figure>
+      <div class="nx-split-copy">
+        <h2>Built for phosphatidylserine production</h2>
+        <p class="nx-section-sub">PS has been produced on this campus under a food production license since 2015. Extraction, bio-enzymatic conversion, separation, purification, and drying run in dedicated workshops, and packing happens in a controlled cleanroom area before drums are palletized for shipment.</p>
+        <ul class="nx-checks">
+          <li>Dedicated PS production route on a 110,000+ m&sup2; campus</li>
+          <li>Cleanroom packing area with standard 25 kg net drums</li>
+          <li>Batch documents prepared and checked before dispatch</li>
+          <li>Palletized, stretch-wrapped loads for global shipment</li>
+        </ul>
+        <a class="nx-btn ghost" href="/about/">More About Nutranexa &rarr;</a>
+      </div>
     </div>
   </section>
-  <section class="detail-grid"><div><h2>Buyer confidence points</h2><ul class="check-list"><li>110,000+ m2 production campus</li><li>Factory, equipment, and cleanroom imagery available</li><li>PS-focused production context</li><li>Product document requests available before purchase</li></ul></div><div><h2>Confirm before purchase</h2><ul class="check-list"><li>Current specifications</li><li>COA sample or current batch COA</li><li>Certificate scope and validity</li><li>Export packaging and MOQ details</li></ul></div></section>`;
+
+  ${companyVideoSection()}
+
+  <section class="nx-final-cta">
+    <div class="nx-shell nx-final-grid">
+      <div><h2>See it for yourself</h2><p>Request current factory details, packing standards, and batch documentation &mdash; or plan a visit and review the facility in person.</p></div>
+      <div class="nx-final-actions">
+        ${qualificationPackCta({ label: "Request Factory Details", className: "nx-btn light", sourcePage: "manufacturing-final" })}
+        <a class="nx-btn outline-light" href="/cases/">Packing &amp; Dispatch Evidence &rarr;</a>
+      </div>
+    </div>
+  </section>`;
   return layout({
     title: "Manufacturing Capability | Nutranexa PS Ingredient Factory",
     description: "View Nutranexa factory campus, cleanroom, equipment, and production context for phosphatidylserine and functional food ingredients.",
     route: "/manufacturing/",
-    image: "/assets/images/factory-campus.webp",
+    image: "/assets/images/factory-aerial.webp",
     schema: [breadcrumbJson([["Home", "/"], ["Manufacturing", "/manufacturing/"]])],
     body,
   });
@@ -2684,23 +2746,120 @@ function casesPage() {
 }
 
 function qualityPage() {
-  const body = `${hero({
-    eyebrow: "Quality & R&D",
-    title: "R&D Cooperation, Quality Control, and Verified Document Workflow",
-    text: "Nutranexa's PS story includes cooperation with East China University of Science and Technology, production license references, and quality-control oriented buyer communication.",
-    image: "/assets/images/quality-document-review.webp",
-    cta: "Request Qualification Pack",
-    contactHref: qualificationPackHref(),
-    secondary: "View Products",
-  })}
-  <section>${sectionIntro("Trust signals", "Quality information for buyer review", "Review company facts, R&D cooperation, production license references, and document samples before requesting current files.")}
-    <div class="feature-grid"><div class="feature"><h3>R&D cooperation</h3><p>Nutranexa references cooperation with East China University of Science and Technology for PS development.</p></div><div class="feature"><h3>Production license reference</h3><p>PS obtained production license by the end of 2015 according to company materials.</p></div><div class="feature"><h3>Quality visibility</h3><p>Factory, cleanroom, lab, and equipment images support buyer evaluation.</p></div></div>
+  const nxIcon = {
+    flask: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v5.2L4.6 17.4a2 2 0 0 0 1.8 3h11.2a2 2 0 0 0 1.8-3L14 8.2V3"/><path d="M7.4 15h9.2"/></svg>',
+    doc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/><path d="M9.5 13.5h5M9.5 16.5h5"/></svg>',
+    people: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.5" cy="8" r="3"/><path d="M2.5 20c.8-3.2 3.2-5 6-5s5.2 1.8 6 5"/><circle cx="16.5" cy="9" r="2.4"/><path d="M15.8 15.2c2.5.4 4.4 2 5.2 4.8"/></svg>',
+  };
+  const heroFacts = [
+    [nxIcon.doc, "7 public", "Documents"],
+    [nxIcon.flask, "HPLC &amp; ELS", "Batch testing"],
+    [nxIcon.people, "University", "R&amp;D cooperation"],
+    [nxIcon.doc, "COA", "Per batch"],
+  ]
+    .map(
+      ([icon, top, sub]) =>
+        `<li><span class="nx-fact-icon">${icon}</span><span class="nx-fact-label"><strong>${top}</strong><small>${sub}</small></span></li>`,
+    )
+    .join("");
+  const docCards = documentProof
+    .map(
+      (doc) =>
+        `<a class="nx-doc-card" href="${doc.image}" target="_blank" rel="noopener" data-analytics-event="document_preview" data-document-type="${esc(doc.title)}"><img src="${doc.image}" alt="${esc(doc.title)} document" width="1200" height="1698" loading="lazy" decoding="async"><span class="nx-doc-info"><strong>${esc(doc.title)}</strong><em>${doc.validThrough ? "Valid through " + esc(doc.validThrough) : "Reference copy"}</em></span></a>`,
+    )
+    .join("");
+  const labParams = [
+    ["Assay", "Phosphatidylserine content tested against the batch specification."],
+    ["Moisture", "Water content control for powder stability and flow."],
+    ["Peroxide value", "Oxidation control on every released batch."],
+    ["Acetone insoluble", "Phospholipid fraction confirmation."],
+    ["Heavy metals", "Pb, As, Hg, Cd controlled per specification."],
+    ["Microbiology", "Plate count, coliforms, molds and yeasts, Salmonella."],
+  ]
+    .map(
+      ([title, text]) =>
+        `<article class="nx-step-card"><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`,
+    )
+    .join("");
+  const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><span aria-current="page">Quality &amp; R&amp;D</span></div></nav>
+  <section class="nx-hero nx-phero">
+    <img class="nx-hero-bg" src="/assets/images/quality-document-review.webp" alt="Nutranexa quality team reviewing specifications and COA documents" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
+      <div class="nx-hero-copy">
+        <p class="nx-hero-eyebrow">Quality &amp; R&amp;D</p>
+        <h1>Quality You Can Review</h1>
+        <p class="nx-hero-lead">Certificates, batch testing, and documents you can open and check &mdash; before you commit to a supplier.</p>
+        <div class="nx-hero-actions">
+          ${qualificationPackCta({ label: "Request Documents", className: "nx-btn", sourcePage: "quality-hero" })}
+          <a class="nx-btn ghost" href="/manufacturing/">View Manufacturing</a>
+        </div>
+      </div>
+    </div>
   </section>
-  <section>${sectionIntro("Document proof", "Quality, certification, and registration files for buyer review", "Use these files as preliminary review materials. Batch relevance, current validity, scope, and product applicability should be confirmed before purchase or shipment.")}${documentCards()}</section>
+  <ul class="nx-hero-facts nx-facts-band"><div class="nx-shell nx-facts-row">${heroFacts}</div></ul>
+
+  <section class="nx-section nx-lab">
+    <div class="nx-shell nx-split-grid">
+      <figure class="nx-split-photo">
+        <img src="/assets/images/science-phosphatidylserine-lab-v2.webp" alt="Nutranexa laboratory analyst reviewing a phosphatidylserine powder sample beside analytical equipment" width="1200" height="1200" loading="lazy" decoding="async">
+        <figcaption>Quality control laboratory &mdash; sample review before release.</figcaption>
+      </figure>
+      <div class="nx-split-copy">
+        <h2>Our lab tests every released batch</h2>
+        <p class="nx-section-sub">The QC team runs batch testing with HPLC and evaporative light-scattering detection, alongside moisture, peroxide value, and microbiology analysis. A batch ships only after its results match the product specification.</p>
+        <div class="nx-process-grid two">${labParams}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-docs">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Product documents &amp; certificates</h2><p class="nx-section-sub">Open any document to review the actual record. Request current controlled copies matched to your quoted product and batch.</p></div><a class="nx-textlink" href="/company-verification/">Company Verification &rarr;</a></div>
+      <div class="nx-doc-grid docs">${docCards}</div>
+      <p class="nx-note">Documents shown are supplied reference copies. Current validity, scope, and product applicability are confirmed with the controlled documents issued for your order.</p>
+    </div>
+  </section>
+
+  <section class="nx-section nx-made">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Real batch COA data</h2><p class="nx-section-sub">Actual batch-specific results, including assay, moisture, peroxide value, heavy metals, and microbiology.</p></div></div>
+      ${coaSampleTables()}
+    </div>
+  </section>
+
   ${technicalDownloadLibrary()}
-  ${qualityDocumentWorkflow()}
-  <section class="coa-section">${sectionIntro("COA samples", "PS 20% and 50% batch-specific sample data", "The COA samples show analysis items commonly reviewed by buyers, including assay, moisture, peroxide value, heavy metals, microbiology, and Salmonella.")}${coaSampleTables()}</section>
-  <section class="split-section"><div><h2>Documents to request</h2><ul class="check-list"><li>Specification sheet</li><li>COA sample or current batch COA</li><li>Food production license and item details</li><li>Halal / Kosher files where market requires them</li><li>Packaging and storage information</li><li>Market-specific compliance files where relevant</li></ul>${qualificationPackCta({ sourcePage: "quality-documents" })}<p class="section-note"><a href="/company-verification/">Review the company verification page before requesting current copies.</a></p></div><img class="section-photo" src="/assets/images/quality-document-review.webp" alt="Nutranexa specification review and COA request support" loading="lazy"></section>`;
+
+  <section class="nx-section nx-rd">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Research &amp; development</h2><p class="nx-section-sub">PS development at Nutranexa is supported by university cooperation and ongoing industry work.</p></div></div>
+      <div class="nx-rd-grid">
+        <figure class="nx-rd-card">
+          <img src="/assets/images/proof-university-cooperation.webp" alt="Cooperation with East China University of Science and Technology" width="700" height="525" loading="lazy" decoding="async">
+          <figcaption><strong>University cooperation</strong><span>PS development cooperation with East China University of Science and Technology.</span></figcaption>
+        </figure>
+        <figure class="nx-rd-card">
+          <img src="/assets/images/proof-cphi-exhibition.webp" alt="Nutranexa phosphatidylserine exhibition booth" width="700" height="525" loading="lazy" decoding="async">
+          <figcaption><strong>Industry presence</strong><span>Nutranexa PS team at industry exhibitions in China.</span></figcaption>
+        </figure>
+        <div class="nx-rd-card nx-rd-text">
+          <h3>PS as a core ingredient since 2015</h3>
+          <p>Nutranexa obtained its PS production license at the end of 2015 and has focused on phosphatidylserine development, testing, and application support since then &mdash; working with buyers across supplements and functional nutrition formats.</p>
+          <a class="nx-btn ghost small" href="/about/">About Nutranexa &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-final-cta">
+    <div class="nx-shell nx-final-grid">
+      <div><h2>Request the documents for your exact product</h2><p>Share source, target grade, application, destination market, and annual volume &mdash; we will send the matching specification, COA, and certificates.</p></div>
+      <div class="nx-final-actions">
+        ${qualificationPackCta({ label: "Request Documents", className: "nx-btn light", sourcePage: "quality-final" })}
+        <a class="nx-btn outline-light" href="/manufacturing/">View Manufacturing &rarr;</a>
+      </div>
+    </div>
+  </section>`;
   return layout({
     title: "Quality & R&D | Nutranexa Phosphatidylserine Supplier",
     description: "Review Nutranexa R&D cooperation, quality control, COA samples, certificates, and document support for phosphatidylserine ingredients.",
