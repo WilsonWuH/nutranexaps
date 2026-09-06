@@ -1,6 +1,11 @@
 import { chromium } from "playwright";
 
 const pages = [
+  ["http://127.0.0.1:8123/products/phosphatidylserine-20/", "C:/Users/Administrator/.zcode/workspace/default/nx-ps20-full.png"],
+  ["http://127.0.0.1:8123/products/phosphatidylserine-70/", "C:/Users/Administrator/.zcode/workspace/default/nx-ps70-full.png"],
+  ["http://127.0.0.1:8123/products/phosphatidylserine/", "C:/Users/Administrator/.zcode/workspace/default/nx-ps-main-full.png"],
+  ["http://127.0.0.1:8123/products/soy-phosphatidylserine/", "C:/Users/Administrator/.zcode/workspace/default/nx-soy-full.png"],
+  ["http://127.0.0.1:8123/products/sunflower-phosphatidylserine/", "C:/Users/Administrator/.zcode/workspace/default/nx-sunflower-full.png"],
   ["http://127.0.0.1:8123/manufacturing/", "C:/Users/Administrator/.zcode/workspace/default/nx-mfg-full.png"],
   ["http://127.0.0.1:8123/quality-rd/", "C:/Users/Administrator/.zcode/workspace/default/nx-quality-full.png"],
   ["http://127.0.0.1:8123/", "C:/Users/Administrator/.zcode/workspace/default/nx-home-full.png"],
