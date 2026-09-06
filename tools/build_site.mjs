@@ -1607,6 +1607,22 @@ function hero({ eyebrow, title, text, image, imageAlt = "", cta = "Request a Quo
 </section>`;
 }
 
+function nxPageHero({ eyebrow, title, text, image, imageAlt = "", ctaHtml = "", crumb = "" }) {
+  return `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><span aria-current="page">${esc(crumb || eyebrow)}</span></div></nav>\n
+  <section class="nx-hero nx-phero">\n
+    <img class="nx-hero-bg" src="${image}" alt="${esc(imageAlt || title)}" width="1600" height="900" fetchpriority="high" decoding="async">\n
+    <div class="nx-hero-scrim" aria-hidden="true"></div>\n
+    <div class="nx-shell nx-hero-inner">\n
+      <div class="nx-hero-copy">\n
+        <p class="nx-hero-eyebrow">${esc(eyebrow)}</p>\n
+        <h1>${esc(title)}</h1>\n
+        <p class="nx-hero-lead">${esc(text)}</p>\n
+        ${ctaHtml ? `<div class="nx-hero-actions">${ctaHtml}</div>` : ""}\n
+      </div>\n
+    </div>\n
+  </section>`;
+}
+
 function sectionIntro(label, title, text, titleId = "") {
   return `<div class="section-intro"><p class="eyebrow">${esc(label)}</p><h2${titleId ? ` id="${esc(titleId)}"` : ""}>${esc(title)}</h2><p>${esc(text)}</p></div>`;
 }
@@ -2182,14 +2198,14 @@ function benefitPage(item) {
     const product = products.find((entry) => entry.name === name);
     return product ? `<a href="/products/${product.slug}/">${esc(name)}</a>` : `<a href="/products/phosphatidylserine/">${esc(name)}</a>`;
   }).join("");
-  const body = `${hero({
+  const body = nxPageHero({
     eyebrow: "Benefits & application value",
     title: item.pageTitle,
     text: item.pageDescription,
     image: item.image,
-    cta: "Request Application Support",
-    secondary: "View PS Products",
-  })}
+    crumb: "Benefits",
+    ctaHtml: `<a class="nx-btn" href="/contact/?application=${encodeURIComponent(item.title)}">Request Application Support</a><a class="nx-btn ghost" href="/products/phosphatidylserine/">View PS Products</a>`,
+  }) + `;
   <section class="quick-answer"><p class="eyebrow">Quick Answer</p><h2>What does this value area mean for buyers?</h2><p>${esc(item.buyerValue)}</p></section>
   <section>${sectionIntro("Application scenarios", "Where this value area fits", "Review practical product directions before discussing samples, specifications, or bulk pricing.")}
     <div class="feature-grid">${item.applications.map((application) => `<div class="feature"><h3>${esc(application)}</h3><p>Confirm source, specification, document needs, and finished-product wording with the sales team before commercial use.</p></div>`).join("")}</div>
@@ -3230,15 +3246,14 @@ function manufacturingPage() {
 }
 
 function casesPage() {
-  const body = `${hero({
+  const body = nxPageHero({
     eyebrow: "Cases & Projects",
     title: "Supply, Packaging, and Delivery Evidence for Ingredient Buyers",
     text: "Review representative factory, packaging, and dispatch records used to support phosphatidylserine sourcing projects. Customer identities and confidential order details are not published.",
     image: "/assets/images/shipment-palletized-drums-loading-bay.webp",
-    cta: "Discuss Your Requirements",
-    secondary: "View Manufacturing",
-    secondaryHref: "/manufacturing/",
-  })}
+    crumb: "Cases & Projects",
+    ctaHtml: `<a class="nx-btn" href="/contact/">Discuss Your Requirements</a><a class="nx-btn ghost" href="/manufacturing/">View Manufacturing</a>`,
+  }) + `;
   <section>${sectionIntro("Project evidence", "From product confirmation to dispatch preparation", "Each sourcing project is confirmed against the requested product source, assay, documents, packaging, destination, and order quantity before shipment.")}
     <div class="feature-grid">
       <article class="feature"><h2>Product and document review</h2><p>Sales confirms the requested PS source and assay, then coordinates available specifications, COA samples, packaging information, and applicable certificate files.</p></article>
@@ -3651,13 +3666,20 @@ function scienceHubPage() {
 
 function howPsWorksPage() {
   const route = "/science/how-ps-works/";
-  const body = `<section class="application-hero"><div><p class="eyebrow">Mechanism education</p><h1>How Phosphatidylserine Works</h1><p>Phosphatidylserine is a naturally occurring phospholipid associated with cell membrane structure and membrane-related biological processes.</p><ul class="application-tags"><li>Phospholipid Structure</li><li>Cell Membrane Context</li><li>Research Education</li></ul></div><img src="/assets/images/hero-ps-innovation-v2.png" alt="Scientific visualization of neural connections, a molecular structure, and PS powder" loading="eager"></section>
+  const body = nxPageHero({
+    eyebrow: "Mechanism education",
+    title: "How Phosphatidylserine Works",
+    text: "Phosphatidylserine is a naturally occurring phospholipid associated with cell membrane structure and membrane-related biological processes.",
+    image: "/assets/images/science-phosphatidylserine-lab-v2.webp",
+    crumb: "How PS Works",
+  }) + `;
+  <section><ul class="application-tags"><li>Phospholipid Structure</li><li>Cell Membrane Context</li><li>Research Education</li></ul></section>
   <section class="mechanism-module">${sectionIntro("Educational pathway", "From PS ingredient to scientific research interest", "This sequence is a simplified educational framework for formulators. It does not demonstrate that a specific ingredient batch or finished product causes a health outcome.")}
     <ol><li><span>01</span><strong>PS Ingredient</strong></li><li><span>02</span><strong>Digestion &amp; Absorption</strong></li><li><span>03</span><strong>Phospholipid Availability</strong></li><li><span>04</span><strong>Cell Membrane Structure</strong></li><li><span>05</span><strong>Scientific Research Interest</strong></li></ol>
   </section>
   <section class="detail-grid"><div><h2>Structure</h2><p>PS is a phospholipid ingredient. Its molecular and membrane context is relevant to scientific study and formulation education.</p></div><div><h2>Biological role</h2><p>PS is associated with cell membrane structure and fluidity and is studied in relation to membrane-related signaling processes.</p></div><div><h2>Evidence language</h2><p>Use phrases such as “studied for,” “associated with,” and “research interest in.” Do not convert research findings into treatment or guaranteed-result claims.</p></div><div><h2>Product development</h2><p>Ingredient source, purity, format, process conditions, dose, and finished-product stability must be evaluated separately.</p></div></section>
   <section class="link-panel"><a href="/science/research-library/">Research Library</a><a href="/applications/cognitive-health/">Cognitive Health</a><a href="/science/formulation-support/">Formulation Support</a><a href="/contact/">Request Technical Documents</a></section>`;
-  return layout({ title: "How Phosphatidylserine Works | Nutranexa", description: "Learn about phosphatidylserine structure, cell membrane context, biological research interest, and compliant formulation education.", route, image: "/assets/images/hero-ps-innovation-v2.png", schema: [breadcrumbJson([["Home", "/"], ["Science", "/science/"], ["How PS Works", route]])], body });
+  return layout({ title: "How Phosphatidylserine Works | Nutranexa", description: "Learn about phosphatidylserine structure, cell membrane context, biological research interest, and compliant formulation education.", route, image: "/assets/images/science-phosphatidylserine-lab-v2.webp", schema: [breadcrumbJson([["Home", "/"], ["Science", "/science/"], ["How PS Works", route]])], body });
 }
 
 function researchLibraryPage() {

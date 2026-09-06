@@ -1,6 +1,10 @@
 import { chromium } from "playwright";
 
 const pages = [
+  ["http://127.0.0.1:8123/resources/", "C:/Users/Administrator/.zcode/workspace/default/nx-resources-full.png"],
+  ["http://127.0.0.1:8123/news/", "C:/Users/Administrator/.zcode/workspace/default/nx-news-full.png"],
+  ["http://127.0.0.1:8123/cases/", "C:/Users/Administrator/.zcode/workspace/default/nx-cases-full.png"],
+  ["http://127.0.0.1:8123/contact/", "C:/Users/Administrator/.zcode/workspace/default/nx-contact-full.png"],
   ["http://127.0.0.1:8123/applications/", "C:/Users/Administrator/.zcode/workspace/default/nx-apps-full.png"],
   ["http://127.0.0.1:8123/applications/cognitive-health/", "C:/Users/Administrator/.zcode/workspace/default/nx-app-cog-full.png"],
   ["http://127.0.0.1:8123/science/", "C:/Users/Administrator/.zcode/workspace/default/nx-science-full.png"],
