@@ -1922,7 +1922,7 @@ function nxHomePage() {
         <a class="nx-btn small" href="${href}">Learn About ${esc(name.split("-")[0])} PS &rarr;</a>
       </div>`;
   const madeCards = [
-    ["/manufacturing/", "/assets/images/equipment-workshop-01.webp", "Stainless steel phosphatidylserine production tanks inside the Nutranexa workshop", "Manufacturing", "Raw materials &rarr; Processing &rarr; Purification &rarr; Drying &rarr; Packing", 600, 400],
+    ["/manufacturing/", "/assets/images/factory-separation.webp", "Separation and purification area with centrifuge separators inside the Nutranexa workshop", "Manufacturing", "Raw materials &rarr; Processing &rarr; Purification &rarr; Drying &rarr; Packing", 1600, 1200],
     ["/quality-rd/", "/assets/images/science-phosphatidylserine-lab-v2-560.webp", "Laboratory analyst reviewing a phosphatidylserine powder sample beside analytical equipment", "Quality Control", "Identity, purity, heavy metals, peroxide value, microbiology and more.", 560, 560],
     ["/manufacturing/", "/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg phosphatidylserine drums in the cleanroom packing area", "Packing &amp; Supply", "Standard 25 kg drum packaging &middot; Global shipment support", 960, 1280],
   ]
@@ -2412,7 +2412,7 @@ function ps50Page(grade) {
     .map(([label, value]) => `<tr><th>${label}</th><td>${value}</td></tr>`)
     .join("");
   const mfgCards = [
-    ["/manufacturing/", "/assets/images/equipment-workshop-01.webp", "Stainless steel phosphatidylserine production tanks inside the Nutranexa workshop", "Manufacturing", "Raw materials &rarr; Processing &rarr; Purification &rarr; Drying &rarr; Packing", 600, 400],
+    ["/manufacturing/", "/assets/images/factory-separation.webp", "Separation and purification area with centrifuge separators inside the Nutranexa workshop", "Manufacturing", "Raw materials &rarr; Processing &rarr; Purification &rarr; Drying &rarr; Packing", 1600, 1200],
     ["/quality-rd/", "/assets/images/science-phosphatidylserine-lab-v2-560.webp", "Laboratory analyst reviewing a phosphatidylserine powder sample beside analytical equipment", "Quality Control", "Assay, moisture, peroxide value, heavy metals, microbiology", 560, 560],
     ["/manufacturing/", "/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg phosphatidylserine drums in the cleanroom packing area", "Packaging &amp; Supply", "Standard 25 kg drum packaging &middot; Global shipment", 960, 1280],
   ]
@@ -2657,7 +2657,7 @@ function gradeV2Page(grade) {
     .map(([label, value]) => `<tr><th>${label}</th><td>${value}</td></tr>`)
     .join("");
   const mfgCards = [
-    ["/manufacturing/", "/assets/images/equipment-workshop-01.webp", "Stainless steel phosphatidylserine production tanks inside the Nutranexa workshop", "Manufacturing", "Raw materials &rarr; Processing &rarr; Purification &rarr; Drying &rarr; Packing", 600, 400],
+    ["/manufacturing/", "/assets/images/factory-separation.webp", "Separation and purification area with centrifuge separators inside the Nutranexa workshop", "Manufacturing", "Raw materials &rarr; Processing &rarr; Purification &rarr; Drying &rarr; Packing", 1600, 1200],
     ["/quality-rd/", "/assets/images/science-phosphatidylserine-lab-v2-560.webp", "Laboratory analyst reviewing a phosphatidylserine powder sample beside analytical equipment", "Quality Control", "Assay, moisture, peroxide value, heavy metals, microbiology", 560, 560],
     ["/manufacturing/", "/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg phosphatidylserine drums in the cleanroom packing area", "Packaging &amp; Supply", "Standard 25 kg drum packaging &middot; Global shipment", 960, 1280],
   ]
@@ -2837,7 +2837,7 @@ function productPageV2(product) {
           <a class="nx-btn small" href="${href}">Learn More &rarr;</a>
         </div>`;
   const mfgCards = [
-    ["/manufacturing/", "/assets/images/equipment-workshop-01.webp", "Stainless steel phosphatidylserine production tanks inside the Nutranexa workshop", "Manufacturing", "Raw materials &rarr; Processing &rarr; Purification &rarr; Drying &rarr; Packing", 600, 400],
+    ["/manufacturing/", "/assets/images/factory-separation.webp", "Separation and purification area with centrifuge separators inside the Nutranexa workshop", "Manufacturing", "Raw materials &rarr; Processing &rarr; Purification &rarr; Drying &rarr; Packing", 1600, 1200],
     ["/quality-rd/", "/assets/images/science-phosphatidylserine-lab-v2-560.webp", "Laboratory analyst reviewing a phosphatidylserine powder sample beside analytical equipment", "Quality Control", "Assay, moisture, peroxide value, heavy metals, microbiology", 560, 560],
     ["/manufacturing/", "/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg phosphatidylserine drums in the cleanroom packing area", "Packaging &amp; Supply", "Standard 25 kg drum packaging &middot; Global shipment", 960, 1280],
   ]
@@ -3154,11 +3154,11 @@ function manufacturingPage() {
     )
     .join("");
   const facilityPhotos = [
-    ["/assets/images/factory-aerial-wide.webp", "Aerial view of the Nutranexa production campus", "Production campus"],
-    ["/assets/images/equipment-workshop-01.webp", "Stainless steel extraction and conversion tanks in the workshop", "Extraction &amp; conversion"],
-    ["/assets/images/equipment-workshop-03.webp", "Workshop piping and processing equipment", "Processing lines"],
-    ["/assets/images/equipment-cleanroom-production.webp", "Operators in full cleanroom suits working at a stainless vessel", "Cleanroom production"],
-    ["/assets/images/equipment-cleanroom-workshop.webp", "Cleanroom workshop with dedicated process vessels", "Cleanroom workshop"],
+    ["/assets/images/factory-aerial-hd.webp", "Aerial view of the Nutranexa production campus", "Production campus"],
+    ["/assets/images/factory-separation.webp", "Separation and purification area with centrifuge separators and stainless tanks", "Separation &amp; purification"],
+    ["/assets/images/factory-evaporation.webp", "Three-effect evaporation and concentration vessels", "Concentration"],
+    ["/assets/images/factory-filter-press.webp", "Operators running the filter press workshop", "Filter press workshop"],
+    ["/assets/images/factory-cleanroom-vessels.webp", "Operators in cleanroom suits working at mixing vessels", "Cleanroom production"],
     ["/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg drums in the packing area", "Packing area"],
   ]
     .map(
@@ -3207,7 +3207,7 @@ function manufacturingPage() {
   <section class="nx-section nx-made">
     <div class="nx-shell nx-split-grid">
       <figure class="nx-split-photo">
-        <img src="/assets/images/equipment-cleanroom-production.webp" alt="Operators in full cleanroom suits working at a stainless steel vessel" width="600" height="400" loading="lazy" decoding="async">
+        <img src="/assets/images/factory-cleanroom-vessels.webp" alt="Operators in cleanroom suits working at stainless mixing vessels" width="1440" height="1080" loading="lazy" decoding="async">
         <figcaption>Cleanroom production area &mdash; dedicated PS processing.</figcaption>
       </figure>
       <div class="nx-split-copy">
@@ -3269,8 +3269,9 @@ function casesPage() {
   </section>
   <section>${sectionIntro("Delivery evidence", "Palletized ingredient shipments", "These images document representative shipment preparation without disclosing customer identities, prices, or confidential order information.")}
     <div class="dispatch-gallery">
-      <figure><img class="dispatch-photo" src="/assets/images/shipment-palletized-drums-loading-bay.webp" alt="Palletized ingredient drums prepared at a loading bay" loading="lazy"><figcaption>Palletized drums protected for loading and handling.</figcaption></figure>
-      <figure><img class="dispatch-photo dispatch-photo-portrait" src="/assets/images/ps-25kg-drum-packaging-clean.webp" alt="Phosphatidylserine 25 kg drum packaging in a clean dispatch area" loading="lazy"><figcaption>Representative 25 kg drum packing preparation.</figcaption></figure>
+      <figure><img class="dispatch-photo" src="/assets/images/shipment-dock-rows.webp" alt="Palletized ingredient drums lined up at a warehouse dock" loading="lazy"><figcaption>Palletized drums protected for loading and handling.</figcaption></figure>
+      <figure><img class="dispatch-photo" src="/assets/images/shipment-dock-415.webp" alt="Stretch wrapped ingredient drums staged at loading dock 415" loading="lazy"><figcaption>Drums staged for loading at the dispatch dock.</figcaption></figure>
+      <figure><img class="dispatch-photo dispatch-photo-portrait" src="/assets/images/shipment-loading-night.webp" alt="Palletized ingredient drums loaded onto a truck" loading="lazy"><figcaption>Loaded pallets ready for transport.</figcaption></figure>
     </div>
   </section>
   <section class="cta-band"><div><p class="eyebrow">Your project</p><h2>Send the product, assay, destination, and annual quantity</h2><p>Nutranexa can reply with the relevant sourcing path, available documents, MOQ, packaging, and quotation discussion points.</p></div><a class="button primary" href="/contact/">Send Your Requirements</a></section>`;
@@ -3412,8 +3413,8 @@ function qualityPage() {
 function aboutPage() {
   const campusPhotos = [
     ["/assets/images/factory-building.webp", "Nutranexa office and production buildings at the Shandong campus", "Campus buildings"],
-    ["/assets/images/equipment-workshop-01.webp", "Stainless steel extraction and conversion tanks in the workshop", "PS workshops"],
-    ["/assets/images/equipment-cleanroom-production.webp", "Operators in cleanroom suits at a stainless processing vessel", "Cleanroom production"],
+    ["/assets/images/factory-filter-press-2.webp", "Operator cleaning the filter press cloths in the PS workshop", "PS workshops"],
+    ["/assets/images/factory-cleanroom-vessels.webp", "Operators in cleanroom suits working at mixing vessels", "Cleanroom production"],
     ["/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg drums in the packing area", "Packing area"],
     ["/assets/images/proof-cphi-exhibition.webp", "Nutranexa phosphatidylserine team at an industry exhibition", "Industry exhibitions"],
     ["/assets/images/proof-university-cooperation.webp", "Cooperation with East China University of Science and Technology", "University cooperation"],
