@@ -4834,13 +4834,19 @@ body {
   overflow: hidden;
 }
 
+/* Homepage banner uses a 20:9 canvas; keep the hero tall enough that the
+   full scene (wall logo, researcher, jar labels) stays in frame. */
+.nx-hero:not(.nx-phero) {
+  min-height: min(45vw, 730px);
+}
+
 .nx-hero-bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 72% 42%;
+  object-position: 100% 55%;
 }
 
 .nx-hero-scrim {

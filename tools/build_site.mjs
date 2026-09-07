@@ -1980,7 +1980,7 @@ function nxHomePage() {
   const certItem = ([icon, line1, line2, href, hasDoc]) => `<a class="nx-cert-item${hasDoc ? " has-doc" : ""}" data-analytics-event="document_preview" data-document-type="certificate" href="${href}"${hasDoc ? ' target="_blank" rel="noopener"' : ""}><span class="nx-cert-badge">${icon}</span><span class="nx-cert-label"><strong>${esc(line1)}</strong><small>${esc(line2)}</small></span><span class="nx-cert-view">View Certificate &rarr;</span></a>`;
   const certItems = certDocs.map(certItem).join("");
   const body = `<section class="nx-hero">
-    <img class="nx-hero-bg" src="/assets/images/brand-product-lab.webp" alt="Phosphatidylserine powder sample jars on a laboratory bench with a Nutranexa researcher in the background" width="1600" height="900" fetchpriority="high" decoding="async">
+    <img class="nx-hero-bg" src="/assets/images/brand-product-lab.webp" alt="Phosphatidylserine powder sample jars on a laboratory bench with a Nutranexa researcher in the background" width="2000" height="900" fetchpriority="high" decoding="async">
     <div class="nx-hero-scrim" aria-hidden="true"></div>
     <div class="nx-hero-side" aria-hidden="true"><span>Science</span><span>Quality</span><span>Better Nutrition</span></div>
     <div class="nx-shell nx-hero-inner">
@@ -2456,7 +2456,7 @@ function ps50Page(grade) {
   </div></section>`;
   const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><a href="/products/">Products</a><span>&rsaquo;</span><span aria-current="page">Phosphatidylserine 50%</span></div></nav>
   <section class="nx-hero nx-phero">
-    <img class="nx-hero-bg" src="/assets/images/brand-product-lab.webp" alt="Phosphatidylserine 50% powder sample jars on a laboratory bench with a Nutranexa researcher in the background" width="1600" height="900" fetchpriority="high" decoding="async">
+    <img class="nx-hero-bg" src="/assets/images/brand-product-lab.webp" alt="Phosphatidylserine 50% powder sample jars on a laboratory bench with a Nutranexa researcher in the background" width="2000" height="900" fetchpriority="high" decoding="async">
     <div class="nx-hero-scrim" aria-hidden="true"></div>
     <div class="nx-shell nx-hero-inner">
       <div class="nx-hero-copy">
