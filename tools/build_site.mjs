@@ -3174,7 +3174,7 @@ function manufacturingPage() {
     .join("");
   const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><span aria-current="page">Manufacturing</span></div></nav>
   <section class="nx-hero nx-phero">
-    <img class="nx-hero-bg" src="/assets/images/factory-aerial.webp" alt="Aerial view of the Nutranexa manufacturing campus in Shandong, China" width="1600" height="900" fetchpriority="high" decoding="async">
+    <img class="nx-hero-bg" src="/assets/images/factory-aerial-hero.webp" alt="Aerial view of the Nutranexa manufacturing campus in Shandong, China" width="1600" height="900" fetchpriority="high" decoding="async">
     <div class="nx-hero-scrim" aria-hidden="true"></div>
     <div class="nx-shell nx-hero-inner">
       <div class="nx-hero-copy">
@@ -3239,7 +3239,7 @@ function manufacturingPage() {
     title: "Manufacturing Capability | Nutranexa PS Ingredient Factory",
     description: "View Nutranexa factory campus, cleanroom, equipment, and production context for phosphatidylserine and functional food ingredients.",
     route: "/manufacturing/",
-    image: "/assets/images/factory-aerial.webp",
+    image: "/assets/images/factory-aerial-hero.webp",
     schema: [breadcrumbJson([["Home", "/"], ["Manufacturing", "/manufacturing/"]])],
     body,
   });
@@ -3444,7 +3444,7 @@ function aboutPage() {
     .join("");
   const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><span aria-current="page">About</span></div></nav>
   <section class="nx-hero nx-phero">
-    <img class="nx-hero-bg" src="/assets/images/factory-aerial.webp" alt="Aerial view of the Nutranexa campus in Shandong, China" width="1600" height="900" fetchpriority="high" decoding="async">
+    <img class="nx-hero-bg" src="/assets/images/factory-aerial-hero.webp" alt="Aerial view of the Nutranexa campus in Shandong, China" width="1600" height="900" fetchpriority="high" decoding="async">
     <div class="nx-hero-scrim" aria-hidden="true"></div>
     <div class="nx-shell nx-hero-inner">
       <div class="nx-hero-copy">
@@ -3493,7 +3493,7 @@ function aboutPage() {
     title: "About Nutranexa | Shandong Nutranexa Biopharmaceutical",
     description: "Learn about Nutranexa, a biotechnology manufacturer supplying phosphatidylserine and functional food ingredients primarily to B2B buyers in Europe and North America.",
     route: "/about/",
-    image: "/assets/images/factory-aerial.webp",
+    image: "/assets/images/factory-aerial-hero.webp",
     schema: [breadcrumbJson([["Home", "/"], ["About", "/about/"]])],
     body,
   });
