@@ -5027,6 +5027,15 @@ body {
   color: var(--nx-ink);
 }
 
+@media (min-width: 1623px) {
+  /* Past 1622px the hero height caps at 730px and the jar labels sink into
+     the bottom-right corner, so park the badge in the empty scrim area. */
+  .nx-hero-card {
+    right: auto;
+    left: 24px;
+  }
+}
+
 .nx-hero-card small {
   font-size: 0.78rem;
   color: var(--nx-muted);
