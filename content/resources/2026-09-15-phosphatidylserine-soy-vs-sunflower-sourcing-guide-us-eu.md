@@ -22,9 +22,9 @@
 
 ## SEO Metadata
 
-- **SEO Title:** Soy vs Sunflower Phosphatidylserine: Sourcing Guide for US & EU Buyers | Nutranexa
-- **Meta Description:** Compare soy-derived and sunflower-derived phosphatidylserine on origin, allergen labeling, spec differences, price dynamics, and supply chain risk. A practical sourcing guide for B2B supplement buyers in the US and EU.
-- **URL Slug:** /resources/phosphatidylserine-soy-vs-sunflower-sourcing-guide-us-eu/
+- SEO Title: Soy vs Sunflower Phosphatidylserine: Sourcing Guide for US & EU Buyers | Nutranexa
+- Meta Description: Compare soy-derived and sunflower-derived phosphatidylserine on origin, allergen labeling, spec differences, price dynamics, and supply chain risk. A practical sourcing guide for B2B supplement buyers in the US and EU.
+- URL Slug: /resources/phosphatidylserine-soy-vs-sunflower-sourcing-guide-us-eu/
 
 ## Outline
 
