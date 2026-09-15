@@ -213,7 +213,13 @@ async function verifyAllHtml(htmlFiles) {
       if (targetRoute === "/thank-you/") continue;
       if (!sourceByRoute.has(targetRoute)) sourceByRoute.set(targetRoute, new Set());
       sourceByRoute.get(targetRoute).add(sourceUrl);
-      if (!redirectRoutes.has(targetRoute) && !(await fs.stat(fileForPath(targetRoute)).then(() => true).catch(() => false))) {
+      // Root-level files such as /sitemap.xml are legitimate footer link
+      // targets; check the file itself instead of expecting a page directory.
+      const rootFileCandidate = !targetRoute.slice(1, -1).includes("/")
+        ? path.join(root, targetRoute.slice(1, -1))
+        : null;
+      const rootFileOk = rootFileCandidate && await fs.stat(rootFileCandidate).then(() => true).catch(() => false);
+      if (!rootFileOk && !redirectRoutes.has(targetRoute) && !(await fs.stat(fileForPath(targetRoute)).then(() => true).catch(() => false))) {
         htmlStats.brokenLinks += 1;
         fail(`links: broken internal link ${href} in ${sourceUrl}`);
       }
@@ -286,7 +292,9 @@ await verifyAllHtml(htmlFiles);
 await verifyMarketConfigArtifacts();
 
 if (errors.length) {
-  console.error(JSON.stringify({ passed: false, htmlFiles: htmlStats.files, jsonLdErrors: htmlStats.jsonLdErrors, productSchemas: htmlStats.productSchemas, brokenLinks: htmlStats.brokenLinks, errors }, null, 2));
+  const payload = JSON.stringify({ passed: false, htmlFiles: htmlStats.files, jsonLdErrors: htmlStats.jsonLdErrors, productSchemas: htmlStats.productSchemas, brokenLinks: htmlStats.brokenLinks, errors }, null, 2);
+  await fs.writeFile(path.join(root, "tmp", "seo_verify_result.txt"), payload, "utf8");
+  console.error(payload);
   process.exitCode = 1;
 } else {
   console.log(JSON.stringify({ passed: true, htmlFiles: htmlStats.files, jsonLdErrors: htmlStats.jsonLdErrors, productSchemas: htmlStats.productSchemas, brokenLinks: htmlStats.brokenLinks, sitemapUrls: sitemapEntries.size, sitemapStats, coreProducts: coreProductRoutes.size }, null, 2));

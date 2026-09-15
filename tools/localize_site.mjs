@@ -111,6 +111,10 @@ function publicLocalePath(locale, route) {
 function localizeInternalPath(value, locale) {
   if (!value || !value.startsWith("/") || value.startsWith("//")) return value;
   if (/^\/(assets|api)(\/|$)/.test(value)) return value;
+  // Root-level files such as /sitemap.xml, /robots.txt and /favicon.ico are not
+  // localizable routes. Never prefix them with a locale path: /fr/sitemap.xml/
+  // does not exist and previously produced 404 footer links on every locale.
+  if (/^\/[^/]+\.[a-z0-9]+(?:[?#].*)?$/i.test(value)) return value;
   const match = value.match(/^([^?#]*)([?#].*)?$/);
   const pathname = match?.[1] || value;
   const suffix = match?.[2] || "";
@@ -298,14 +302,22 @@ for (const locale of locales) {
     }
   }
   preservedLegacyPages.set(locale.code, legacyPages);
-  await fs.rm(path.join(root, locale.code), { recursive: true, force: true });
+  // NX_KEEP_LOCALE_DIRS=1 skips the pre-build cleanup so local reruns work in
+  // sandboxes that forbid recursive deletion. Same-named outputs are still
+  // overwritten below; only truly removed routes could leave stale files.
+  if (process.env.NX_KEEP_LOCALE_DIRS !== "1") {
+    await fs.rm(path.join(root, locale.code), { recursive: true, force: true });
+  }
 }
 
 const pages = await findEnglishPages(root);
 const routes = pages.map((page) => routeFromRelative(page.relative));
 const indexableLocalesByRoute = new Map();
 const sitemapLocalesByRoute = new Map();
+let processedPages = 0;
 for (const page of pages) {
+  processedPages += 1;
+  if (processedPages % 40 === 0) console.log(`[progress] page ${processedPages}/${pages.length}`);
   const route = routeFromRelative(page.relative);
   const html = await fs.readFile(page.absolute, "utf8");
   const indexableLocaleCodes = indexableLocalesForRoute(route);

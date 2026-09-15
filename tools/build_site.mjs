@@ -1191,7 +1191,7 @@ const evergreenArticles = [
   },
   {
     slug: "phosphatidylserine-dietary-supplements",
-    title: "Phosphatidylserine Applications in Dietary Supplements",
+    title: "Phosphatidylserine for Dietary Supplements: Buyer & Formulation Guide",
     description: "How B2B buyers can evaluate PS for tablets, capsules, powders, and supplement ingredient portfolios.",
     image: "/assets/images/resource-ps-dietary-supplements.webp",
     imageAlt: "Phosphatidylserine powder arranged with capsule softgel tablet and powder supplement formats",
@@ -3269,9 +3269,8 @@ function casesPage() {
   </section>
   <section>${sectionIntro("Delivery evidence", "Palletized ingredient shipments", "These images document representative shipment preparation without disclosing customer identities, prices, or confidential order information.")}
     <div class="dispatch-gallery">
-      <figure><img class="dispatch-photo" src="/assets/images/shipment-dock-rows.webp" alt="Palletized ingredient drums lined up at a warehouse dock" loading="lazy"><figcaption>Palletized drums protected for loading and handling.</figcaption></figure>
-      <figure><img class="dispatch-photo" src="/assets/images/shipment-dock-415.webp" alt="Stretch wrapped ingredient drums staged at loading dock 415" loading="lazy"><figcaption>Drums staged for loading at the dispatch dock.</figcaption></figure>
-      <figure><img class="dispatch-photo dispatch-photo-portrait" src="/assets/images/shipment-loading-night.webp" alt="Palletized ingredient drums loaded onto a truck" loading="lazy"><figcaption>Loaded pallets ready for transport.</figcaption></figure>
+      <figure><img class="dispatch-photo" src="/assets/images/shipment-palletized-drums-loading-bay.webp" alt="Palletized ingredient drums lined up at a warehouse dock" loading="lazy"><figcaption>Palletized drums protected for loading and handling.</figcaption></figure>
+      <figure><img class="dispatch-photo dispatch-photo-portrait" src="/assets/images/shipment-drums-local-dispatch.webp" alt="Palletized ingredient drums loaded onto a truck" loading="lazy"><figcaption>Loaded pallets ready for transport.</figcaption></figure>
     </div>
   </section>
   <section class="cta-band"><div><p class="eyebrow">Your project</p><h2>Send the product, assay, destination, and annual quantity</h2><p>Nutranexa can reply with the relevant sourcing path, available documents, MOQ, packaging, and quotation discussion points.</p></div><a class="button primary" href="/contact/">Send Your Requirements</a></section>`;

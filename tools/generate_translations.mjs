@@ -132,6 +132,17 @@ async function translateBatch(batch, locale) {
   throw new Error(`Unsupported translation provider: ${provider}`);
 }
 
+async function translateBatchWithRetry(batch, locale, attempts = 6) {
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return await translateBatch(batch, locale);
+    } catch (error) {
+      if (attempt === attempts) throw error;
+      await sleep(1500 * attempt);
+    }
+  }
+}
+
 for (const locale of targets) {
   const outputPath = path.join(messagesDir, `${locale.code}.json`);
   let existing = { messages: {} };
@@ -158,7 +169,7 @@ for (const locale of targets) {
   const concurrency = provider === "bing-public" ? 8 : 1;
   for (let start = 0; start < groups.length; start += concurrency) {
     const wave = groups.slice(start, start + concurrency);
-    const results = await Promise.all(wave.map((group) => translateBatch(group, localeConfig(locale.code))));
+    const results = await Promise.all(wave.map((group) => translateBatchWithRetry(group, localeConfig(locale.code))));
     wave.forEach((group, waveIndex) => {
       group.forEach((entry, itemIndex) => {
         translatedMessages[entry.english] = results[waveIndex][itemIndex];

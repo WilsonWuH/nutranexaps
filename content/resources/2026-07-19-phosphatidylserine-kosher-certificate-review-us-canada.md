@@ -230,8 +230,8 @@ Third, the site provides verified commercial handling facts for phosphatidylseri
 
 ## Sources
 
-- [OU Kosher: What Is a Letter of Certification?](https://oukosher.org/companies/letter-of-certification/)
-- [OU Kosher: Private Label Guide](https://oukosher.org/get-certified/private-label/)
+- [OU Kosher: Letter of Certification (LOC) search](https://oukosher.org/letter-of-certification/)
+- [OU Kosher: Steps for Kosher Certification](https://www.oukosher.org/get-certified-landing/)
 - [OU Kosher: All OU Symbols Explained](https://oukosher.org/blog/industrial-kosher/all-ou-symbols-explained/)
 - [OK Kosher: Private Label Application](https://www.ok.org/get-ok-kosher-certified/private-label-application/)
 - [OK Kosher: Label Printing Approval Requirements](https://www.ok.org/consumers/faq/)

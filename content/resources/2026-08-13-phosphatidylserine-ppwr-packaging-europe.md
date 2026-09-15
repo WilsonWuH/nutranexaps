@@ -208,7 +208,7 @@ The PPWR turned packaging from a logistics detail into a compliance file for eve
 - [EUR-Lex: Regulation (EU) 2025/40 on packaging and packaging waste](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202500040)
 - [European Commission: Packaging waste](https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en)
 - [EUR-Lex: Commission Notice C/2026/3084 - Guidance document on Regulation (EU) 2025/40](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202603084)
-- [European Commission: Guidance on the Packaging and Packaging Waste Regulation (press release)](https://environment.ec.europa.eu/news/guidance-packaging-and-packaging-waste-regulation-2026-06-10_en)
+- [European Commission: Packaging and Packaging Waste Regulation Implementation](https://green-business.ec.europa.eu/packaging-and-packaging-waste-regulation-implementation_en)
 
 ## Contact Sales
 
