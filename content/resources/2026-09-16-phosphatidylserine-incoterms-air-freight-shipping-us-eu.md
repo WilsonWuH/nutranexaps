@@ -25,9 +25,9 @@ bulk powder import logistics
 
 ## SEO Metadata
 
-SEO Title: Phosphatidylserine Incoterms & Air Freight: US/EU Importer Guide | Nutranexa
-Meta Description: Compare Incoterms 2020 options and air vs ocean freight for phosphatidylserine imports into the US and EU. Costs, lead times, documents, and a buyer checklist.
-URL Slug: /resources/phosphatidylserine-incoterms-air-freight-shipping-us-eu/
+- SEO Title: Phosphatidylserine Incoterms & Air Freight: US/EU Importer Guide | Nutranexa
+- Meta Description: Compare Incoterms 2020 options and air vs ocean freight for phosphatidylserine imports into the US and EU. Costs, lead times, documents, and a buyer checklist.
+- URL Slug: /resources/phosphatidylserine-incoterms-air-freight-shipping-us-eu/
 
 ## Outline
 
