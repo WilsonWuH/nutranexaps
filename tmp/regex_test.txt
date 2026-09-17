@@ -1,0 +1,6 @@
+/sitemap.xml => true
+/robots.txt => true
+/privacy/ => false
+/fr/sitemap.xml/ => false
+/contact/ => false
+/favicon.ico => true

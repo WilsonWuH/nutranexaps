@@ -15,6 +15,7 @@ export const companyIdentity = {
   address: "Yunhe West Road, Shizilou District, Yanggu County, Liaocheng City, Shandong Province, P.R. China",
   phone: "400-138-0635",
   whatsapp: "+8613645700210",
+  email: "wh1007209170@gmail.com",
   lastReviewed: "2026-09-03",
 };
 

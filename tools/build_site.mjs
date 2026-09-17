@@ -8,6 +8,7 @@ const root = path.resolve(".");
 const siteUrl = companyIdentity.siteUrl;
 const phone = companyIdentity.phone;
 const whatsapp = companyIdentity.whatsapp;
+const email = companyIdentity.email;
 const address = companyIdentity.address;
 function readAnalyticsId(name, pattern) {
   const value = process.env[name]?.trim() || "";
@@ -1545,6 +1546,7 @@ function footer(optimizeLogo = false) {
         ${logo}
         <p>Natural ingredients. Reliable supply.<br>A healthier tomorrow.</p>
         <p class="nx-footer-contact">WhatsApp: <a data-analytics-event="whatsapp_click" href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a></p>
+        <p class="nx-footer-contact">Email: <a data-analytics-event="email_click" href="mailto:${email}">${email}</a></p>
       </div>
       <div>
         <h2>Products</h2>
@@ -1821,7 +1823,7 @@ function qualityDocumentWorkflow() {
 }
 
 function contactDetailsCard(title = "Sales contact") {
-  return `<div class="contact-card contact-details-card"><h2>${esc(title)}</h2><p><strong>Technical response:</strong> Use the secure inquiry form to request specifications, COA, TDS, SDS, and application support.</p><p><strong>WhatsApp:</strong> <a data-analytics-event="whatsapp_click" href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a></p><p><strong>Phone:</strong> ${phone}</p><p><strong>Address:</strong> ${address}</p><p><strong>Website:</strong> <a href="${companyIdentity.officialWebsite}" target="_blank" rel="noopener noreferrer">nutranexa.cn</a></p><p><a href="/company-verification/">Review company verification information</a></p>${qualificationPackCta({ className: "button secondary", sourcePage: "contact-details" })}</div>`;
+  return `<div class="contact-card contact-details-card"><h2>${esc(title)}</h2><p><strong>Technical response:</strong> Use the secure inquiry form to request specifications, COA, TDS, SDS, and application support.</p><p><strong>WhatsApp:</strong> <a data-analytics-event="whatsapp_click" href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a></p><p><strong>Email:</strong> <a data-analytics-event="email_click" href="mailto:${email}">${email}</a></p><p><strong>Phone:</strong> ${phone}</p><p><strong>Address:</strong> ${address}</p><p><strong>Website:</strong> <a href="${companyIdentity.officialWebsite}" target="_blank" rel="noopener noreferrer">nutranexa.cn</a></p><p><a href="/company-verification/">Review company verification information</a></p>${qualificationPackCta({ className: "button secondary", sourcePage: "contact-details" })}</div>`;
 }
 
 function documentCards(limit = documentProof.length) {

@@ -1,0 +1,14 @@
+L0: function metaValue(markdown, label) {
+L1:   const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+L2:   return markdown.match(new RegExp(`^[-*] ${escaped}:\\s*([^\\r\\n]+)`, "mi"))?.[1]?.replace(/`/g, "").trim() || "";
+L3: }
+L4: 
+L5: function inlineMarkdown(value) {
+L6:   return esc(value)
+L7:     .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]+)\)/g, '<a href="$2">$1</a>')
+L8:     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+L9:     .replace(/`([^`]+)`/g, "<code>$1</code>");
+L10: }
+L11: 
+L12: function markdownTable(lines, start) {
+L13:   if (!lines[start]?.includes("|") || !/^\s*\|?\s*:?-{3,}/.test(lines[start + 1]

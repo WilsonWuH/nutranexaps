@@ -1,0 +1,3 @@
+cheerio loaded: function
+i18n config loaded: 8 locales
+indexing loaded: 6 sitemap files

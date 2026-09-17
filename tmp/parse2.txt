@@ -1,0 +1,65 @@
+L1041: 
+L1042: function extractResourceFaqs(markdown) {
+L1043:   const faqStart = markdown.search(/^## FAQ\s*$/mi);
+L1044:   if (faqStart < 0) return [];
+L1045:   const faqBlock = markdown.slice(faqStart + markdown.slice(faqStart).indexOf("\n") + 1);
+L1046:   const nextH2 = faqBlock.search(/^## (?!#)/m);
+L1047:   const section = nextH2 >= 0 ? faqBlock.slice(0, nextH2) : faqBlock;
+L1048:   return [...section.matchAll(/^###\s+(.+)\r?\n([\s\S]*?)(?=^###\s+|(?![\s\S]))/gm)].map((match) => {
+L1049:     const answer = match[2].replace(/^[-*]\s+/gm, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_`#]/g, "").replace(/\s+/g, " ").trim();
+L1050:     return [match[1].trim(), answer];
+L1051:   }).filter(([, answer]) => answer);
+L1052: }
+L1053: 
+L1054: async function loadPromotedArticles() {
+L1055:   const directory = path.join(root, "content", "resources");
+L1056:   const entries = (await fs.readdir(directory))
+L1057:     .filter((name) => name.endsWith(".md"))
+L1058:     .map(async (name) => {
+L1059:       const markdown = await fs.readFile(path.join(directory, name), "utf8");
+L1060:       return {
+L1061:         name,
+L1062:         markdown,
+L1063:         publishedAt: metaValue(markdown, "Published At") || `${name.slice(0, 10)}T00:00:00Z`,
+L1064:       };
+L1065:     });
+L1066:   const names = (await Promise.all(entries))
+L1067:     .sort((a, b) => {
+L1068:       const publishedCompare = b.publishedAt.localeCompare(a.publishedAt);
+L1069:       if (publishedCompare !== 0) return publishedCompare;
+L1070:       return b.name.localeCompare(a.name);
+L1071:     })
+L1072:     .map(({ name, markdown }) => ({ name, markdown }));
+L1073:   return Promise.all(names.map(async ({ name, markdown }) => {
+L1074:     const route = metaValue(markdown, "URL Slug");
+L1075:     const slug = route.replace(/^\/resources\//, "").replace(/\/$/, "");
+L1076:     const title = metaValue(markdown, "H1") || metaValue(markdown, "SEO Title");
+L1077:     const publishedAt = metaValue(markdown, "Published At") || `${name.slice(0, 10)}T00:00:00Z`;
+L1078:     return {
+L1079:       slug,
+L1080:       title,
+L1081:       seoTitle: promotedSeoTitles[slug] || metaValue(markdown, "SEO Title"),
+L1082:       description: conciseMeta(metaValue(markdown, "Meta Description")),
+L1083:       primaryKeyword: metaValue(markdown, "Primary Keyword"),
+L1084:       published: name.slice(0, 10),
+L1085:       publishedAt,
+L1086:       image: `/assets/images/resource-${slug}.webp`,
+L1087:       imageAlt: promotedArticleVisuals[slug] || `${title} guide for ingredient buyers`,
+L1088:       contentImages: [...markdown.matchAll(/^!\[[^\]]*\]\((\/[^)]+)\)$/gm)].map((match) => match[1]),
+L1089:       contentHtml: renderResourceMarkdown(markdown),
+L1090:       faqs: extractResourceFaqs(markdown),
+L1091:     };
+L1092:   }));
+L1093: }
+L1094: 
+L1095: const evergreenArticles = [
+L1096:   {
+L1097:     slug: "what-is-phosphatidylserine",
+L1098:     title: "What Is Phosphatidylserine?",
+L1099:     description: "A B2B overview of phosphatidylserine as a functional food ingredient for supplement and nutrition product buyers.",
+L1100:     image: "/assets/images/resource-what-is-phosphatidylserine.webp",
+L1101:     imageAlt: "Phosphatidylserine powder beside a phospholipid bilayer model in a food science laboratory",
+L1102:     body: [
+L1103:       "Phosphatidylserine, often shortened to PS, is a phospholipid ingredient used in functional food and dietary supplement applications. For B2B buyers, the most important sourcing questions are source, specification, document availability, manufacturing capability, and application fit.",
+L1104:       "Nutranexa positions PS as a lead product developed through cooperation with East China University of Science and Technology. The ingredient is described as being made from natural lecithin and L-serine through bio-enzymatic conversion.",
+L1105:       "Buyers should request verified specifications, COA, packaging details, and intended application support before placing a purchase order.",
