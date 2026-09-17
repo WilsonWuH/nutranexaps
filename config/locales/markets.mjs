@@ -3,7 +3,7 @@ export const siteOrigin = "https://nutranexaps.com";
 export const company = {
   name: "Nutranexa",
   email: "wh1007209170@gmail.com",
-  phone: "400-138-0635",
+  phone: "+8613645700210",
   whatsapp: "+8613645700210",
   kakaoTalk: "wilsonps1",
   moq: "25 kg / 1 drum",

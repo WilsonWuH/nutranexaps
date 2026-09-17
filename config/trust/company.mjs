@@ -13,7 +13,7 @@ export const companyIdentity = {
   officialWebsite: "https://www.nutranexa.cn/en/",
   logoPath: "/assets/images/logo-nutranexa.webp",
   address: "Yunhe West Road, Shizilou District, Yanggu County, Liaocheng City, Shandong Province, P.R. China",
-  phone: "400-138-0635",
+  phone: "+8613645700210",
   whatsapp: "+8613645700210",
   email: "wh1007209170@gmail.com",
   lastReviewed: "2026-09-03",
