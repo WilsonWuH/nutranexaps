@@ -1,8 +1,0 @@
-en: 19963 keys
-es: 20354 keys, missing 0, identical-to-en 198
-pt: 20354 keys, missing 0, identical-to-en 201
-fr: 20354 keys, missing 0, identical-to-en 235
-ar: 20354 keys, missing 0, identical-to-en 131
-ru: 20354 keys, missing 0, identical-to-en 155
-ko: 20424 keys, missing 0, identical-to-en 159
-tr: 20424 keys, missing 0, identical-to-en 206
