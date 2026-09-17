@@ -229,14 +229,32 @@ document.querySelectorAll(".quote-form").forEach((form) => {
     };
 
     try {
-      const response = await fetch("/api/inquiry", {
+      const response = await fetch("/api/inquiry/", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
       });
       const result = await response.json().catch(() => ({}));
 
-      if (!response.ok || String(result.success) !== "true") {
+      let delivered = response.ok && String(result.success) === "true";
+      // The email relay can reject server-to-server requests from hosting IPs
+      // (Cloudflare 403). Fall back to a direct browser submission, which uses
+      // the visitor's own network and is accepted by formsubmit.
+      if (!delivered && response.status !== 429) {
+        try {
+          const fallback = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify(payload),
+          });
+          const fallbackResult = await fallback.json().catch(() => ({}));
+          delivered = fallback.ok && String(fallbackResult.success) === "true";
+        } catch {
+          delivered = false;
+        }
+      }
+
+      if (!delivered) {
         throw new Error(uiMessages.sendError);
       }
 

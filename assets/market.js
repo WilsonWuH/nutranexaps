@@ -76,13 +76,30 @@ document.querySelectorAll(".market-form").forEach((form) => {
     data["Documents Required"] = formData.getAll("Documents Required");
     data["Inquiry Kind"] = form.dataset.kind;
     try {
-      const response = await fetch(form.action, {
+      const api = form.action.endsWith("/") ? form.action : `${form.action}/`;
+      const response = await fetch(api, {
         method: "POST",
         headers: { Accept: "application/json", "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
       const result = await response.json().catch(() => ({}));
-      if (!response.ok || result.success !== true) throw new Error("submit failed");
+      let delivered = response.ok && result.success === true;
+      // The email relay can reject server-to-server requests from hosting IPs
+      // (Cloudflare 403). Fall back to a direct browser submission.
+      if (!delivered && response.status !== 429) {
+        try {
+          const fallback = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify(data),
+          });
+          const fallbackResult = await fallback.json().catch(() => ({}));
+          delivered = fallback.ok && String(fallbackResult.success) === "true";
+        } catch {
+          delivered = false;
+        }
+      }
+      if (!delivered) throw new Error("submit failed");
       localStorage.setItem("nutranexa_last_submit", String(Date.now()));
       const eventName = form.dataset.kind === "quote" ? "quote_form_submit" : form.dataset.kind === "sample" ? "sample_form_submit" : "contact_form_success";
       window.dataLayer.push({ event: eventName, page_language: pageLanguage, requested_product: data["Requested Product"], requested_assay: data["Requested Assay"] });
