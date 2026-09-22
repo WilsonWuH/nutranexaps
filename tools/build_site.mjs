@@ -1455,12 +1455,13 @@ ${twitterImageAlt ? `  ${twitterImageAlt}\n` : ""}${head ? `  ${head}\n` : ""}  
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         ${renderMegaNav(active)}
       </nav>
-      ${qualificationPackCta({ label: "Request Specification", className: "nav-cta", sourcePage: "header" })}
+      ${quoteCta({ label: "Get Quote", className: "nav-cta", sourcePage: "header" })}
     </div>
   </header>
   <main id="main">${body}</main>
   ${footer(optimizeLogo)}
   ${whatsappButton()}
+  ${stickyConversionBar()}
   <script src="/assets/site.js" defer></script>
 </body>
 </html>`;
@@ -1585,6 +1586,7 @@ function footer(optimizeLogo = false) {
       <span>&copy; ${year} Nutranexa. All rights reserved.</span>
       <span class="nx-footer-legal"><a href="/privacy/">Privacy Policy</a><a href="/sitemap.xml">Sitemap</a></span>
     </div>
+    <p class="nx-footer-identity">Nutranexa is the international ingredient brand of ${esc(companyIdentity.englishCompanyName)}, a phosphatidylserine manufacturer based in Shandong, China.</p>
   </div>
 </footer>`;
 }
@@ -1660,8 +1662,9 @@ function quoteForm(context = "General inquiry", _note = "", options = {}) {
   const targetField = isLecithin
     ? `<label>Requested Product Form <select name="Target Assay"><option value="">Need recommendation</option><option>Powdered soybean lecithin / PLF</option><option>Liquid soybean lecithin</option><option>Granulated soybean lecithin</option><option>Modified lecithin</option><option>Phosphatidylcholine</option><option>Other / customized</option></select></label>`
     : `<label>Required PS Grade <select name="Target Assay"><option value="">Need recommendation</option><option>20%</option><option>50%</option><option>70%</option><option>Other / customized</option></select></label>`;
-  return `<form class="quote-form" data-context="${esc(context)}" action="/api/inquiry" method="post">
+  return `<form class="quote-form" data-context="${esc(context)}" data-form-mode="Qualification" action="/api/inquiry" method="post">
   <input type="hidden" name="Product Interest" value="${esc(context)}">
+  <input type="hidden" name="Form Mode" value="Qualification">
   <input type="hidden" name="Locale" value="en">
   <input type="hidden" name="Form Started" value="">
   <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
@@ -1683,6 +1686,210 @@ function quoteForm(context = "General inquiry", _note = "", options = {}) {
   <p class="form-status" role="status" aria-live="polite">Name, business email, company, country, and consent are required.</p>
   <p class="form-note">Your information is used only to respond to this B2B product and technical-document request.</p>
 </form>`;
+}
+
+/* ---------------------------------------------------------------------------
+ * Commercial conversion helpers.
+ *
+ * These add procurement-first information (MOQ, sources, samples, documents,
+ * quote and sample calls to action) around existing content. They are always
+ * inserted around existing sections; no indexed copy is removed.
+ * ------------------------------------------------------------------------- */
+
+const commercialFacts = {
+  grades: "PS 20% / 50% / 70%",
+  source: "Soy & Sunflower",
+  moq: "25 kg",
+  packaging: "25 kg/drum",
+  sample: "Available",
+  documents: "COA / TDS / SDS",
+  shipping: "International support",
+};
+
+function quoteIntentHref({ product = "", source = "", assay = "", documents = "" } = {}) {
+  const params = new URLSearchParams({ request: "quote" });
+  if (product) params.set("product", product);
+  if (source) params.set("source", source);
+  if (assay) params.set("assay", assay);
+  if (documents) params.set("documents", documents);
+  return `/contact/?${params.toString()}`;
+}
+
+function quoteCta({
+  label = "Get Price & Sample",
+  className = "nx-btn",
+  sourcePage = "",
+  product = "",
+  source = "",
+  assay = "",
+  documents = "",
+} = {}) {
+  return `<a class="${esc(className)}" href="${quoteIntentHref({ product, source, assay, documents })}" data-analytics-event="quote_click" data-source-page="${esc(sourcePage || product || "site")}"${product ? ` data-product="${esc(product)}"` : ""}>${esc(label)}</a>`;
+}
+
+function sampleCta({ label = "Request Sample", className = "nx-btn ghost", sourcePage = "", product = "", source = "", assay = "" } = {}) {
+  return `<a class="${esc(className)}" href="${quoteIntentHref({ product, source, assay, documents: "Sample, COA, Specification" })}" data-analytics-event="sample_request" data-source-page="${esc(sourcePage || product || "site")}"${product ? ` data-product="${esc(product)}"` : ""}>${esc(label)}</a>`;
+}
+
+function coaDownloadCta({ href = "/assets/images/doc-coa-ps-50.webp", label = "Download Sample COA", className = "nx-textlink", sourcePage = "" } = {}) {
+  return `<a class="${esc(className)}" href="${href}" target="_blank" rel="noopener" data-analytics-event="coa_download" data-source-page="${esc(sourcePage)}">${esc(label)} &darr;</a>`;
+}
+
+function buyerInfoBar({ title = "Ready for your next PS project?", sourcePage = "buyer-bar" } = {}) {
+  const items = [
+    ["MOQ", commercialFacts.moq],
+    ["Sample", commercialFacts.sample],
+    ["Documents", commercialFacts.documents],
+    ["Packaging", commercialFacts.packaging],
+    ["Sources", commercialFacts.source],
+  ];
+  return `<section class="nx-buyerbar" aria-labelledby="nx-buyerbar-title">
+    <div class="nx-shell nx-buyerbar-grid">
+      <div class="nx-buyerbar-intro">
+        <h2 id="nx-buyerbar-title">${esc(title)}</h2>
+        <p>Tell us the grade, source, quantity and destination country for a current quotation.</p>
+      </div>
+      <dl class="nx-buyerbar-list">${items
+        .map(([term, value]) => `<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`)
+        .join("")}</dl>
+      <div class="nx-buyerbar-action">
+        ${quoteCta({ label: "Get Current Quote", sourcePage })}
+        ${coaDownloadCta({ sourcePage })}
+      </div>
+    </div>
+  </section>`;
+}
+
+function commercialInfoBlock({ product = "", sourcePage = "", rows = [] } = {}) {
+  const items = rows.length
+    ? rows
+    : [
+        ["MOQ", commercialFacts.moq],
+        ["Standard Packaging", commercialFacts.packaging],
+        ["Samples", commercialFacts.sample],
+        ["Documents", commercialFacts.documents],
+        ["Shipping", commercialFacts.shipping],
+        ["Quote", "On request"],
+      ];
+  return `<div class="nx-commercial-box">
+      <h3>Commercial Information</h3>
+      <dl class="nx-commercial-grid">${items
+        .map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`)
+        .join("")}</dl>
+      <div class="nx-commercial-actions">
+        ${quoteCta({ label: "Get Current Price", sourcePage, product, className: "nx-btn small" })}
+        ${sampleCta({ sourcePage, product, className: "nx-btn small ghost" })}
+      </div>
+    </div>`;
+}
+
+function inlineQuoteBlock({ title, text, product = "", sourcePage = "" } = {}) {
+  return `<div class="nx-inlinequote-wrap"><div class="nx-shell"><aside class="nx-inlinequote-block">
+      <div class="nx-inlinequote-copy"><h3>${esc(title)}</h3><p>${esc(text)}</p></div>
+      <div class="nx-inlinequote-actions">
+        ${quoteCta({ label: "Get Current Price", sourcePage, product, className: "nx-btn small" })}
+        ${sampleCta({ sourcePage, product, className: "nx-btn small ghost" })}
+      </div>
+    </aside></div></div>`;
+}
+
+function quickQuoteForm({ product = "", context = "Quick quote", sourcePage = "", values = [] } = {}) {
+  const options = (values.length ? values : ["PS 20%", "PS 50%", "PS 70%", "Not sure yet"])
+    .map((value) => `<option value="${esc(value)}"${value === product ? " selected" : ""}>${esc(value)}</option>`)
+    .join("");
+  return `<form class="quote-form quick-quote-form" data-context="${esc(context)}" data-form-mode="Quick Quote" action="/api/inquiry" method="post">
+  <input type="hidden" name="Product Interest" value="${esc(product || "Phosphatidylserine (PS)")}">
+  <input type="hidden" name="Form Mode" value="Quick Quote">
+  <input type="hidden" name="Locale" value="en">
+  <input type="hidden" name="Form Started" value="">
+  <input type="hidden" name="Consent" value="Yes">
+  <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
+  <div class="form-grid">
+    <label>Business Email *<input required type="email" name="Email" autocomplete="email"></label>
+    <label>Country *<input required name="Country" autocomplete="country-name" placeholder="United States, Germany, Korea..."></label>
+    <label class="form-full">Product / Grade *<select required name="Product / Grade"><option value="">Select grade</option>${options}</select></label>
+    <label>Required Quantity<input name="Required Quantity" placeholder="e.g. 25 kg, 100 kg, 1 MT"></label>
+    <label>Source Preference<select name="Source Preference"><option value="">No preference yet</option><option>Soy</option><option>Sunflower</option><option>Need recommendation</option></select></label>
+    <label class="form-full">Message<textarea name="Message" rows="3" placeholder="Share your formulation, target market, timeline or document needs."></textarea></label>
+  </div>
+  <button class="nx-btn" type="submit">Request Quote</button>
+  <p class="form-status" role="status" aria-live="polite">Business email, country and product are required.</p>
+  <p class="form-note">We use this information only to answer your B2B price and sample request. Further supplier qualification details can be exchanged by email afterwards.</p>
+</form>`;
+}
+
+function quickQuoteSection({ product = "", sourcePage = "", heading = "Get Price &amp; Sample", text = "", values = [] } = {}) {
+  return `<section class="nx-section nx-quickquote" aria-labelledby="nx-quickquote-title">
+    <div class="nx-shell nx-quickquote-grid">
+      <div class="nx-quickquote-copy">
+        <h2 id="nx-quickquote-title">${heading}</h2>
+        <p class="nx-section-sub">${esc(text || "Send grade, source, quantity and destination country. We reply with current pricing, sample options and the documents you need.")}</p>
+        <ul class="nx-checks">
+          <li>Sample available &middot; MOQ ${esc(commercialFacts.moq)}</li>
+          <li>COA, TDS and SDS supplied with the quotation</li>
+          <li>Export documentation and international shipping support</li>
+        </ul>
+      </div>
+      <div class="nx-quickquote-form">${quickQuoteForm({ product, context: `${product || "PS"} price and sample request`, sourcePage, values })}</div>
+    </div>
+  </section>`;
+}
+
+function whyBuyersChooseSection({ sourcePage = "why-nutranexa" } = {}) {
+  const blocks = [
+    ["Direct Manufacturing", "PS ingredient manufacturing and QC capability in Shandong, China."],
+    ["Multiple PS Grades", "20%, 50% and 70% phosphatidylserine options."],
+    ["Soy &amp; Sunflower Sources", "Support for different formulation and market requirements."],
+    ["Low Trial MOQ", "Standard minimum order quantity from 25 kg."],
+    ["Technical Documentation", "COA, specifications, TDS, SDS and supporting documents."],
+    ["Global Supply Support", "Export documentation and international shipment support."],
+  ];
+  return `<section class="nx-section nx-why" aria-labelledby="nx-why-title">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2 id="nx-why-title">Why Buyers Choose Nutranexa</h2><p class="nx-section-sub">A phosphatidylserine manufacturer supplying bulk ingredient buyers directly from Shandong, China.</p></div>${quoteCta({ label: "Get Current Quote", className: "nx-textlink", sourcePage })}</div>
+      <div class="nx-why-grid">${blocks
+        .map(
+          ([title, text]) =>
+            `<article class="nx-why-card"><h3>${title}</h3><p>${text}</p></article>`,
+        )
+        .join("")}</div>
+    </div>
+  </section>`;
+}
+
+function supplyEvidenceSection({ sourcePage = "supply-evidence" } = {}) {
+  const items = [
+    ["/assets/images/factory-campus.webp", "Nutranexa manufacturing campus in Shandong, China", "Production campus", 700, 382],
+    ["/assets/images/factory-separation.webp", "Separation and purification area with centrifuge separators inside the Nutranexa workshop", "Separation and purification", 1600, 1200],
+    ["/assets/images/science-phosphatidylserine-lab-v2-560.webp", "Laboratory analyst reviewing a phosphatidylserine powder sample beside analytical equipment", "QC laboratory", 560, 560],
+    ["/assets/images/ps-25kg-drum-packaging-clean.webp", "Operator moving palletized 25 kg phosphatidylserine drums in the cleanroom packing area", "25 kg drum packing", 960, 1280],
+    ["/assets/images/shipment-palletized-drums-loading-bay.webp", "Palletized phosphatidylserine drums prepared at the loading bay before dispatch", "Pallet preparation", 1400, 1050],
+    ["/assets/images/resource-ps-container-loading-inspection.webp", "Container loading inspection before an export shipment", "Container loading", 1600, 1200],
+  ];
+  return `<section class="nx-section nx-evidence" aria-labelledby="nx-evidence-title">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2 id="nx-evidence-title">Real Supply. Real Documentation.</h2><p class="nx-section-sub">Photographs from our own production campus, quality control laboratory, packing area and export dispatch. Batch COAs are issued for every shipment.</p></div>${coaDownloadCta({ sourcePage })}</div>
+      <div class="nx-evidence-grid">${items
+        .map(
+          ([image, alt, caption, w, h]) =>
+            `<figure class="nx-evidence-card"><img src="${image}" alt="${esc(alt)}" width="${w}" height="${h}" loading="lazy" decoding="async"><figcaption>${esc(caption)}</figcaption></figure>`,
+        )
+        .join("")}</div>
+      <div class="nx-evidence-actions">
+        ${quoteCta({ label: "Get Current Price", sourcePage })}
+        <a class="nx-btn ghost" href="/company-verification/">Verify Our Company &rarr;</a>
+      </div>
+    </div>
+  </section>`;
+}
+
+function stickyConversionBar() {
+  const waHref = `https://wa.me/${whatsapp.replace(/\D/g, "")}`;
+  return `<div class="nx-sticky-cta"><a href="${quoteIntentHref()}" data-analytics-event="quote_click" data-source-page="sticky-desktop">Get Quote</a></div>
+  <div class="nx-mobile-bar" role="complementary" aria-label="Quick contact options">
+    <a class="nx-mobile-whatsapp" href="${waHref}" data-analytics-event="whatsapp_click" data-source-page="sticky-mobile">WhatsApp</a>
+    <a class="nx-mobile-quote" href="${quoteIntentHref()}" data-analytics-event="quote_click" data-source-page="sticky-mobile">Get Quote</a>
+  </div>`;
 }
 
 function productInquiryHref(product, documents = "") {
@@ -1823,7 +2030,7 @@ function qualityDocumentWorkflow() {
 }
 
 function contactDetailsCard(title = "Sales contact") {
-  return `<div class="contact-card contact-details-card"><h2>${esc(title)}</h2><p><strong>Technical response:</strong> Use the secure inquiry form to request specifications, COA, TDS, SDS, and application support.</p><p><strong>WhatsApp:</strong> <a data-analytics-event="whatsapp_click" href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a></p><p><strong>Email:</strong> <a data-analytics-event="email_click" href="mailto:${email}">${email}</a></p><p><strong>Phone:</strong> ${phone}</p><p><strong>Address:</strong> ${address}</p><p><a href="/company-verification/">Review company verification information</a></p>${qualificationPackCta({ className: "button secondary", sourcePage: "contact-details" })}</div>`;
+  return `<div class="contact-card contact-details-card"><h2>${esc(title)}</h2><p><strong>PS grades:</strong> PS 20% / 50% / 70% from soy or sunflower. MOQ 25 kg, samples available.</p><p><strong>WhatsApp:</strong> <a data-analytics-event="whatsapp_click" href="https://wa.me/${whatsapp.replace(/\D/g, "")}">${whatsapp}</a></p><p><strong>Email:</strong> <a data-analytics-event="email_click" href="mailto:${email}">${email}</a></p><p><strong>Phone:</strong> <a data-analytics-event="phone_click" href="tel:${whatsapp.replace(/\s/g, "")}">${phone}</a></p><p><strong>Address:</strong> ${address}</p><p><a href="/company-verification/">Review company verification information</a></p>${quoteCta({ label: "Get Current Quote", className: "button secondary", sourcePage: "contact-details" })}</div>`;
 }
 
 function documentCards(limit = documentProof.length) {
@@ -1887,10 +2094,12 @@ function nxHomePage() {
     doc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/><path d="M9.5 13.5h5M9.5 16.5h5"/></svg>',
   };
   const heroFacts = [
+    [nxIcon.flask, "PS 20% / 50% / 70%", "Grades"],
     [nxIcon.leaf, "Soy &amp; Sunflower", "Sources"],
-    [nxIcon.flask, "20% / 50% / 70%", "Grades"],
-    [nxIcon.drum, "25 kg MOQ", "standard drum"],
-    [nxIcon.globe, "Established", "2013"],
+    [nxIcon.drum, "MOQ 25 kg", "25 kg drum"],
+    [nxIcon.flask, "Samples", "Available"],
+    [nxIcon.doc, "COA &amp; Documents", "Available"],
+    [nxIcon.globe, "Global Shipping", "Support"],
   ]
     .map(
       ([icon, top, sub]) =>
@@ -1908,8 +2117,17 @@ function nxHomePage() {
         <a class="nx-grade-media" href="/products/${grade.slug}/" tabindex="-1" aria-hidden="true"><img src="${grade.image}" alt="${esc(grade.name)} light-yellow powder" width="${grade.w}" height="${grade.h}" loading="lazy" decoding="async"></a>
         <h3><a href="/products/${grade.slug}/">${esc(grade.name)}</a></h3>
         <p class="nx-grade-tag">${esc(grade.tag)}</p>
-        <p class="nx-grade-meta">${esc(grade.meta)}</p>
-        <a class="nx-textlink" href="/products/${grade.slug}/" aria-label="Learn more about ${esc(grade.name)}">Learn More &rarr;</a>
+        <dl class="nx-grade-specs">
+          <div><dt>Source</dt><dd>${esc(grade.source)}</dd></div>
+          <div><dt>Assay</dt><dd>${esc(grade.assay)}</dd></div>
+          <div><dt>Form</dt><dd>Powder</dd></div>
+          <div><dt>MOQ</dt><dd>25 kg</dd></div>
+          <div><dt>Sample</dt><dd>Available</dd></div>
+        </dl>
+        <div class="nx-grade-actions">
+          <a class="nx-btn small" href="/products/${grade.slug}/">View Details</a>
+          ${quoteCta({ label: "Get Quote", className: "nx-btn small ghost", sourcePage: "homepage-grade-card", product: grade.name, assay: grade.assay })}
+        </div>
       </article>`,
     )
     .join("");
@@ -1945,6 +2163,12 @@ function nxHomePage() {
         `<a class="nx-app-card" href="${href}"><span class="nx-app-media"><img src="${image}" alt="${esc(alt)}" width="700" height="700" loading="lazy" decoding="async" style="object-position:${pos}"></span><span class="nx-app-label"><h3>${title}</h3><p>${sub}</p></span></a>`,
     )
     .join("");
+  const docEvent = (href) =>
+    href.endsWith(".docx") || href.endsWith(".pdf")
+      ? ' data-analytics-event="specification_download"'
+      : href.includes("/doc-coa-")
+        ? ' data-analytics-event="coa_download"'
+        : "";
   const docCards = [
     ["/assets/images/doc-coa-ps-20-sunflower.webp", "Sample COA", "20% PS", "PDF", "PS 20% sunflower sample certificate of analysis"],
     ["/assets/documents/phosphatidylserine-20-specification.docx", "Product Specification", "PS 20%", "DOCX", "PS 20% English product specification document"],
@@ -1954,7 +2178,7 @@ function nxHomePage() {
   ]
     .map(
       ([href, title, sub, tag, alt]) =>
-        `<a class="nx-doc-card" href="${href}"${href.startsWith("/assets/images/") ? ' target="_blank" rel="noopener"' : ""}${href.endsWith(".docx") ? " download" : ""}>${href.startsWith("/assets/images/") ? `<img src="${href}" alt="${esc(alt)}" width="1200" height="1698" loading="lazy" decoding="async">` : `<span class="nx-doc-icon">${nxIcon.doc}</span>`}<span class="nx-doc-info"><strong>${esc(title)}</strong><small>${esc(sub)}</small><em>${esc(tag)}</em></span></a>`,
+        `<a class="nx-doc-card" href="${href}"${docEvent(href)}${href.startsWith("/assets/images/") ? ' target="_blank" rel="noopener"' : ""}${href.endsWith(".docx") ? " download" : ""}>${href.startsWith("/assets/images/") ? `<img src="${href}" alt="${esc(alt)}" width="1200" height="1698" loading="lazy" decoding="async">` : `<span class="nx-doc-icon">${nxIcon.doc}</span>`}<span class="nx-doc-info"><strong>${esc(title)}</strong><small>${esc(sub)}</small><em>${esc(tag)}</em></span></a>`,
     )
     .join("");
   const aboutFacts = [
@@ -1987,18 +2211,21 @@ function nxHomePage() {
     <div class="nx-hero-side" aria-hidden="true"><span>Science</span><span>Quality</span><span>Better Nutrition</span></div>
     <div class="nx-shell nx-hero-inner">
       <div class="nx-hero-copy">
-        <p class="nx-hero-eyebrow">Natural ingredients. Real impact.</p>
-        <h1>Phosphatidylserine Ingredients for Modern Nutrition</h1>
-        <p class="nx-hero-lead">Soy- and sunflower-derived phosphatidylserine in 20%, 50% and 70% grades for supplements and functional nutrition.</p>
+        <p class="nx-hero-eyebrow">Phosphatidylserine manufacturer in Shandong, China</p>
+        <h1>Phosphatidylserine Manufacturer &amp; Bulk Supplier</h1>
+        <p class="nx-hero-lead">Soy- and sunflower-derived phosphatidylserine in 20%, 50% and 70% grades for dietary supplements and functional nutrition.</p>
         <div class="nx-hero-actions">
-          <a class="nx-btn" href="/products/phosphatidylserine/">Explore PS Grades &rarr;</a>
-          ${qualificationPackCta({ label: "Request Specification & COA", className: "nx-btn ghost", sourcePage: "homepage-hero" })}
+          ${quoteCta({ label: "Get Price & Sample", sourcePage: "homepage-hero" })}
+          <a class="nx-btn ghost" href="/products/phosphatidylserine/">View PS Grades</a>
         </div>
+        <p class="nx-hero-tertiary">Prefer to review documents first? ${coaDownloadCta({ sourcePage: "homepage-hero" })}</p>
       </div>
       <ul class="nx-hero-facts">${heroFacts}</ul>
       <div class="nx-hero-card"><img src="/assets/images/logo-nutranexa-icon.png" alt="" width="28" height="28"><span><strong>Nutranexa</strong><small>Phosphatidylserine &middot; For a Healthier Tomorrow</small></span></div>
     </div>
   </section>
+
+  ${buyerInfoBar({ sourcePage: "homepage-buyer-bar" })}
 
   <section class="nx-cert-strip" aria-labelledby="nx-cert-title">
     <div class="nx-shell nx-cert-wrap">
@@ -2032,12 +2259,16 @@ function nxHomePage() {
     </div>
   </section>
 
+  ${whyBuyersChooseSection({ sourcePage: "homepage-why" })}
+
   <section class="nx-section nx-made">
     <div class="nx-shell">
       <div class="nx-section-head"><div><h2>Made. Tested. Documented.</h2><p class="nx-section-sub">From raw material control to final product delivery, we ensure quality at every step.</p></div><a class="nx-textlink" href="/manufacturing/">Explore Our Capabilities &rarr;</a></div>
       <div class="nx-photo-grid">${madeCards}</div>
     </div>
   </section>
+
+  ${supplyEvidenceSection({ sourcePage: "homepage-evidence" })}
 
   <section class="nx-section nx-apps">
     <div class="nx-shell">
@@ -2057,7 +2288,8 @@ function nxHomePage() {
     <div class="nx-shell nx-about-grid">
       <div class="nx-about-copy">
         <h2>About Nutranexa</h2>
-        <p class="nx-section-sub">We develop and manufacture functional food ingredients in Shandong, China, serving customers worldwide.</p>
+        <p class="nx-section-sub">We develop and manufacture phosphatidylserine ingredients in Shandong, China, serving supplement brands, manufacturers and distributors worldwide.</p>
+        <p class="nx-about-identity">Nutranexa is the international ingredient brand of ${esc(companyIdentity.englishCompanyName)}, our manufacturing entity in Shandong, China.</p>
         <ul class="nx-about-facts">${aboutFacts}</ul>
         <a class="nx-btn ghost" href="/about/">Learn More About Us &rarr;</a>
       </div>
@@ -2068,11 +2300,20 @@ function nxHomePage() {
     </div>
   </section>
 
+  ${quickQuoteSection({
+    product: "Phosphatidylserine (PS)",
+    sourcePage: "homepage-quick-quote",
+    heading: "Get Price &amp; Sample",
+    text: "Tell us the grade, source, quantity and destination country. We reply with current pricing, sample options and documents.",
+    values: ["PS 20%", "PS 50%", "PS 70%", "Not sure yet"],
+  })}
+
   <section class="nx-final-cta">
     <div class="nx-shell nx-final-grid">
-      <div><h2>Discuss Your PS Project</h2><p>Tell us your source, grade, application and quantity. Our team will get back to you with product information, sample options and documentation.</p></div>
+      <div><h2>Need Bulk Phosphatidylserine?</h2><p>PS 20% / 50% / 70% from soy or sunflower. MOQ 25 kg, samples available, COA supplied with every quotation.</p></div>
       <div class="nx-final-actions">
-        ${qualificationPackCta({ label: "Request Specification →", className: "nx-btn light", sourcePage: "homepage-final" })}
+        ${quoteCta({ label: "Get Current Price", className: "nx-btn light", sourcePage: "homepage-final" })}
+        ${sampleCta({ label: "Request Sample", className: "nx-btn outline-light", sourcePage: "homepage-final" })}
       </div>
     </div>
   </section>`;
@@ -2463,14 +2704,35 @@ function ps50Page(grade) {
     <div class="nx-shell nx-hero-inner">
       <div class="nx-hero-copy">
         <h1>Phosphatidylserine 50%</h1>
-        <p class="nx-hero-lead">Our mainstream high-concentration grade for supplements and functional nutrition.</p>
+        <p class="nx-hero-lead">Bulk PS 50% powder available from soy or sunflower sources for dietary supplements and functional nutrition.</p>
         <ul class="nx-hero-facts">${heroFacts}</ul>
         <div class="nx-hero-actions">
-          ${qualificationPackCta({ label: "Request Specification & COA", className: "nx-btn", sourcePage: "ps50-hero" })}
-          <a class="nx-btn ghost" href="/contact/?product=${encodeURIComponent("Phosphatidylserine 50%")}">Discuss Your Project</a>
+          ${quoteCta({ label: "Get Current Price", sourcePage: "ps50-hero", product: "Phosphatidylserine 50%", assay: "50%" })}
+          ${sampleCta({ label: "Request Sample", className: "nx-btn ghost", sourcePage: "ps50-hero", product: "Phosphatidylserine 50%", assay: "50%" })}
         </div>
+        <p class="nx-hero-tertiary">Or review batch evidence first: ${coaDownloadCta({ href: "/assets/images/doc-coa-ps-50.webp", sourcePage: "ps50-hero" })}</p>
       </div>
       <div class="nx-hero-card"><img src="/assets/images/logo-nutranexa-icon.png" alt="" width="28" height="28"><span><strong>Phosphatidylserine</strong><small>PS 50% &middot; Soy / Sunflower</small></span></div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-procure">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Procurement Snapshot</h2><p class="nx-section-sub">What buyers need before requesting a quotation for PS 50%.</p></div>${coaDownloadCta({ href: "/assets/images/doc-coa-ps-50.webp", sourcePage: "ps50-procure" })}</div>
+      ${commercialInfoBlock({
+        product: "Phosphatidylserine 50%",
+        sourcePage: "ps50-procure",
+        rows: [
+          ["Assay", "50%"],
+          ["Source", "Soy / Sunflower"],
+          ["Appearance", "Light yellow to yellow powder"],
+          ["Packaging", "25 kg/drum"],
+          ["MOQ", "25 kg"],
+          ["Shelf Life", "24 months"],
+          ["Sample", "Available"],
+          ["COA", "Available"],
+        ],
+      })}
     </div>
   </section>
 
@@ -2491,6 +2753,14 @@ function ps50Page(grade) {
       </aside>
     </div>
   </section>
+
+  ${quickQuoteSection({
+    product: "PS 50%",
+    sourcePage: "ps50-inline",
+    heading: "Get Price &amp; Sample",
+    text: "Tell us the source, quantity and destination country for PS 50%. We reply with current pricing and sample options.",
+    values: ["PS 50%", "PS 20%", "PS 70%", "Not sure yet"],
+  })}
 
   <section class="nx-section nx-apps">
     <div class="nx-shell">
@@ -2515,6 +2785,13 @@ function ps50Page(grade) {
     </div>
   </section>
 
+  ${inlineQuoteBlock({
+    title: "Need PS 50% for your formulation?",
+    text: "Tell us your source, quantity and destination country. We will confirm availability, documents and shipment details.",
+    product: "Phosphatidylserine 50%",
+    sourcePage: "ps50-spec",
+  })}
+
   <section class="nx-section nx-faq">
     <div class="nx-shell">
       <div class="nx-section-head"><h2>Frequently Asked Questions</h2></div>
@@ -2536,10 +2813,10 @@ function ps50Page(grade) {
   </nav>
   <section class="nx-final-cta">
     <div class="nx-shell nx-final-grid">
-      <div><h2>Let&rsquo;s Work on Your Next Project</h2><p>Get the latest PS 50% specification, COA or discuss your requirements with our team.</p></div>
+      <div><h2>Need Bulk PS 50%?</h2><p>PS 50% from soy or sunflower, 25 kg MOQ, samples available and COA supplied with every quotation.</p></div>
       <div class="nx-final-actions">
-        ${qualificationPackCta({ label: "Request Specification", className: "nx-btn light", sourcePage: "ps50-final" })}
-        <a class="nx-btn outline-light" href="/contact/?product=${encodeURIComponent("Phosphatidylserine 50%")}">Contact Us &rarr;</a>
+        ${quoteCta({ label: "Get Current Price", className: "nx-btn light", sourcePage: "ps50-final", product: "Phosphatidylserine 50%", assay: "50%" })}
+        ${sampleCta({ label: "Request Sample", className: "nx-btn outline-light", sourcePage: "ps50-final", product: "Phosphatidylserine 50%", assay: "50%" })}
       </div>
     </div>
   </section>`;
@@ -2598,6 +2875,7 @@ function gradeV2Page(grade) {
       heroAlt: "Phosphatidylserine 70% powder with sunflower seeds",
       sub: "High-purity PS for premium concepts and advanced formulation formats.",
       assay: "70% Target Assay",
+      appearance: "Light to brown yellow powder",
       specRows: [
         ["Product name", "Phosphatidylserine 70%"],
         ["Source", "Soy or Sunflower"],
@@ -2711,6 +2989,26 @@ function gradeV2Page(grade) {
     </div>
   </section>
 
+  <section class="nx-section nx-procure">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Procurement Snapshot</h2><p class="nx-section-sub">What buyers need before requesting a quotation for ${esc(grade.shortName)}.</p></div>${coaDownloadCta({ href: cfg.coa.image, sourcePage: `${grade.slug}-procure` })}</div>
+      ${commercialInfoBlock({
+        product: grade.name,
+        sourcePage: `${grade.slug}-procure`,
+        rows: [
+          ["Assay", cfg.assay.replace(" Target Assay", "")],
+          ["Source", "Soy / Sunflower"],
+          ["Appearance", cfg.appearance],
+          ["Packaging", "25 kg/drum"],
+          ["MOQ", "25 kg"],
+          ["Shelf Life", "24 months"],
+          ["Sample", "Available"],
+          ["COA", "Available"],
+        ],
+      })}
+    </div>
+  </section>
+
   <section class="nx-section nx-spec">
     <div class="nx-shell nx-spec-grid">
       <div class="nx-spec-block">
@@ -2728,6 +3026,14 @@ function gradeV2Page(grade) {
       </aside>
     </div>
   </section>
+
+  ${quickQuoteSection({
+    product: grade.shortName,
+    sourcePage: `${grade.slug}-inline`,
+    heading: "Get Price &amp; Sample",
+    text: `Tell us the source, quantity and destination country for ${grade.shortName}. We reply with current pricing and sample options.`,
+    values: [grade.shortName, "PS 50%", "PS 70%", "Not sure yet"].filter((value, index, list) => list.indexOf(value) === index),
+  })}
 
   <section class="nx-section nx-apps">
     <div class="nx-shell">
@@ -2753,6 +3059,13 @@ function gradeV2Page(grade) {
   </section>
   ${coaSection}
 
+  ${inlineQuoteBlock({
+    title: `Need ${grade.shortName} for your formulation?`,
+    text: "Tell us your source, quantity and destination country. We will confirm availability, documents and shipment details.",
+    product: grade.name,
+    sourcePage: `${grade.slug}-documents`,
+  })}
+
   <section class="nx-section nx-faq">
     <div class="nx-shell">
       <div class="nx-section-head"><h2>Frequently Asked Questions</h2></div>
@@ -2773,10 +3086,10 @@ function gradeV2Page(grade) {
   </nav>
   <section class="nx-final-cta">
     <div class="nx-shell nx-final-grid">
-      <div><h2>Let&rsquo;s Work on Your Next Project</h2><p>Get the latest ${esc(grade.shortName)} specification, COA or discuss your requirements with our team.</p></div>
+      <div><h2>Need Bulk ${esc(grade.shortName)}?</h2><p>${esc(grade.shortName)} from soy or sunflower, 25 kg MOQ, samples available and COA supplied with every quotation.</p></div>
       <div class="nx-final-actions">
-        ${qualificationPackCta({ label: "Request Specification", className: "nx-btn light", sourcePage: `${grade.slug}-final` })}
-        <a class="nx-btn outline-light" href="/contact/?product=${encodeURIComponent(grade.name)}">Contact Us &rarr;</a>
+        ${quoteCta({ label: "Get Current Price", className: "nx-btn light", sourcePage: `${grade.slug}-final`, product: grade.name, assay: cfg.assay.replace(" Target Assay", "") })}
+        ${sampleCta({ label: "Request Sample", className: "nx-btn outline-light", sourcePage: `${grade.slug}-final`, product: grade.name, assay: cfg.assay.replace(" Target Assay", "") })}
       </div>
     </div>
   </section>`;
@@ -2887,14 +3200,35 @@ function productPageV2(product) {
         <p class="nx-hero-lead">${esc(product.description)}</p>
         <ul class="nx-hero-facts">${heroFacts}</ul>
         <div class="nx-hero-actions">
-          ${qualificationPackCta({ label: "Request Specification & COA", className: "nx-btn", sourcePage: `${product.slug}-hero` })}
-          <a class="nx-btn ghost" href="/contact/?product=${encodeURIComponent(product.name)}">Discuss Your Project</a>
+          ${quoteCta({ label: "Get Current Price", sourcePage: `${product.slug}-hero`, product: product.name, source: product.inquirySource, assay: product.inquiryAssay })}
+          ${sampleCta({ label: "Request Sample", className: "nx-btn ghost", sourcePage: `${product.slug}-hero`, product: product.name, source: product.inquirySource, assay: product.inquiryAssay })}
         </div>
+        <p class="nx-hero-tertiary">Or review documents first: ${coaDownloadCta({ href: isSunflower ? "/assets/images/doc-coa-ps-20-sunflower.webp" : "/assets/images/doc-coa-ps-50.webp", sourcePage: `${product.slug}-hero` })}</p>
       </div>
       <div class="nx-hero-visual">
         <img src="${product.image}" alt="${esc(product.imageAlt || product.name + " powder")}" width="1600" height="900" fetchpriority="high" decoding="async">
         <div class="nx-hero-card"><img src="/assets/images/logo-nutranexa-icon.png" alt="" width="28" height="28"><span><strong>${esc(product.name)}</strong><small>Soy / Sunflower &middot; Powder</small></span></div>
       </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-procure">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Procurement Snapshot</h2><p class="nx-section-sub">What buyers need before requesting a quotation for ${esc(product.name)}.</p></div>${coaDownloadCta({ href: isSunflower ? "/assets/images/doc-coa-ps-20-sunflower.webp" : "/assets/images/doc-coa-ps-50.webp", sourcePage: `${product.slug}-procure` })}</div>
+      ${commercialInfoBlock({
+        product: product.name,
+        sourcePage: `${product.slug}-procure`,
+        rows: [
+          ["Assay", isSoy ? "PS 20%" : isSunflower ? "PS 20% / 50%" : "PS 20% / 50% / 70%"],
+          ["Source", isSoy ? "Soy" : isSunflower ? "Sunflower" : "Soy / Sunflower"],
+          ["Appearance", "Light yellow to yellow powder"],
+          ["Packaging", product.packaging || "25 kg/drum"],
+          ["MOQ", product.moq || "25 kg"],
+          ["Shelf Life", "24 months"],
+          ["Sample", "Available"],
+          ["COA", "Available"],
+        ],
+      })}
     </div>
   </section>
 
@@ -2923,6 +3257,14 @@ function productPageV2(product) {
   ${isMainPs ? psBenefitsSection("product") : ""}
   ${technicalSpecificationSection(product)}
 
+  ${quickQuoteSection({
+    product: isSoy ? "Soy PS" : isSunflower ? "Sunflower PS" : "PS",
+    sourcePage: `${product.slug}-inline`,
+    heading: "Get Price &amp; Sample",
+    text: `Tell us the grade, quantity and destination country for ${product.name}. We reply with current pricing and sample options.`,
+    values: isSunflower ? ["Sunflower PS 20%", "Sunflower PS 50%", "Not sure yet"] : isSoy ? ["Soy PS 20%", "Soy PS 50%", "Not sure yet"] : ["PS 20%", "PS 50%", "PS 70%", "Not sure yet"],
+  })}
+
   <section class="nx-section nx-apps">
     <div class="nx-shell">
       <div class="nx-section-head"><div><h2>Applications</h2><p class="nx-section-sub">${esc(product.name)} is used across dietary supplements and functional nutrition products.</p></div><a class="nx-textlink" href="/applications/">View All Applications &rarr;</a></div>
@@ -2946,6 +3288,13 @@ function productPageV2(product) {
   </section>
   ${coaSection}
 
+  ${inlineQuoteBlock({
+    title: `Need ${product.name} for your formulation?`,
+    text: "Tell us your grade, quantity and destination country. We will confirm availability, documents and shipment details.",
+    product: product.name,
+    sourcePage: `${product.slug}-documents`,
+  })}
+
   <section class="nx-section nx-faq">
     <div class="nx-shell">
       <div class="nx-section-head"><h2>Frequently Asked Questions</h2></div>
@@ -2965,10 +3314,10 @@ function productPageV2(product) {
   </nav>
   <section class="nx-final-cta">
     <div class="nx-shell nx-final-grid">
-      <div><h2>Let&rsquo;s Work on Your Next Project</h2><p>Get the latest ${esc(product.name)} specification, COA or discuss your requirements with our team.</p></div>
+      <div><h2>Need Bulk ${esc(product.name)}?</h2><p>MOQ 25 kg, samples available and COA supplied with every quotation.</p></div>
       <div class="nx-final-actions">
-        ${qualificationPackCta({ label: "Request Specification", className: "nx-btn light", sourcePage: `${product.slug}-final` })}
-        <a class="nx-btn outline-light" href="/contact/?product=${encodeURIComponent(product.name)}">Contact Us &rarr;</a>
+        ${quoteCta({ label: "Get Current Price", className: "nx-btn light", sourcePage: `${product.slug}-final`, product: product.name, source: product.inquirySource, assay: product.inquiryAssay })}
+        ${sampleCta({ label: "Request Sample", className: "nx-btn outline-light", sourcePage: `${product.slug}-final`, product: product.name, source: product.inquirySource, assay: product.inquiryAssay })}
       </div>
     </div>
   </section>`;
@@ -3526,15 +3875,58 @@ function companyVerificationPage() {
   });
 }
 
+function contactQuickForm() {
+  const gradeOptions = ["PS 20%", "PS 50%", "PS 70%", "Not sure yet"]
+    .map((value) => `<option value="${esc(value)}">${esc(value)}</option>`)
+    .join("");
+  const quantityOptions = ["Sample quantity", "25–100 kg", "100–500 kg", "500 kg–1 MT", "1–5 MT", "Above 5 MT", "Not decided"]
+    .map((value) => `<option value="${esc(value)}">${esc(value)}</option>`)
+    .join("");
+  return `<div class="contact-quick">
+      <h2>Request a Quote &amp; Sample</h2>
+      <p class="form-intro">Send your grade, quantity and destination country. We reply with current pricing, sample options and available documents. Further qualification details can follow by email.</p>
+      <form class="quote-form quick-quote-form" data-context="Contact page quick quote" data-form-mode="Quick Quote" action="/api/inquiry" method="post">
+  <input type="hidden" name="Product Interest" value="Phosphatidylserine (PS)">
+  <input type="hidden" name="Form Mode" value="Quick Quote">
+  <input type="hidden" name="Locale" value="en">
+  <input type="hidden" name="Form Started" value="">
+  <input type="hidden" name="Consent" value="Yes">
+  <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
+  <div class="form-grid">
+    <label>Name<input name="Name" autocomplete="name"></label>
+    <label>Business Email *<input required type="email" name="Email" autocomplete="email"></label>
+    <label>Company<input name="Company" autocomplete="organization" placeholder="Company name"></label>
+    <label>Country *<input required name="Country" autocomplete="country-name" placeholder="United States, Germany, Korea..."></label>
+    <label class="form-full">Product / Grade *<select required name="Product / Grade"><option value="">Select grade</option>${gradeOptions}</select></label>
+    <label>Estimated Quantity<select name="Estimated Quantity"><option value="">Select quantity</option>${quantityOptions}</select></label>
+    <label>Preferred Source<select name="Source Preference"><option value="">No preference yet</option><option>Soy</option><option>Sunflower</option><option>Need recommendation</option></select></label>
+    <label class="form-full">Message<textarea name="Message" rows="4" placeholder="Tell us about your formulation, target market, timeline, or required documents."></textarea></label>
+  </div>
+  <button class="button primary" type="submit">Get Quote &amp; Sample</button>
+  <p class="form-status" role="status" aria-live="polite">Business email, country and product are required.</p>
+  <p class="form-note">Your information is used only to answer this B2B price, sample and document request.</p>
+</form>
+    </div>`;
+}
+
 function contactPage() {
-  const body = `<section class="page-hero compact"><p class="eyebrow">Technical inquiry</p><h1>Request Specification &amp; COA</h1><p>Request a factory quote, current specification, batch COA, TDS, sample, MOQ, lead time, packaging details, or source and concentration review. Share your application, target market, and estimated annual volume through the secure form.</p></section>
+  const body = `<section class="page-hero compact"><p class="eyebrow">Commercial inquiry</p><h1>Request a Quote, Sample or Specification</h1><p>Ask for a bulk phosphatidylserine quotation, a sample, or the current specification and document set. Tell us the grade, source, quantity and destination country and we will reply with pricing, availability and documents.</p></section>
   <section class="contact-layout">
     ${contactDetailsCard(companyIdentity.englishCompanyName)}
-    ${quoteForm("General quote request", "", { includeRequestType: true })}
+    <div class="contact-forms">
+      ${contactQuickForm()}
+      <div class="nx-advanced-form">
+        <button type="button" class="nx-advanced-toggle" aria-expanded="false" aria-controls="nx-advanced-body">Need technical documents or supplier qualification support?</button>
+        <div id="nx-advanced-body" class="nx-advanced-body" hidden>
+          <p>Use the extended request for qualification packs, application data, annual-volume discussions, or a complete document set including COA, TDS, SDS, allergen, GMO, Halal and Kosher files.</p>
+          ${quoteForm("Qualification pack request", "", { includeRequestType: true })}
+        </div>
+      </div>
+    </div>
   </section>`;
   return layout({
-    title: "Contact Nutranexa | Request PS Ingredient Quote",
-    description: "Contact Nutranexa to request phosphatidylserine specifications, quotation, application support, and verified documents.",
+    title: "Contact Nutranexa | Request PS Price, Sample or Specification",
+    description: "Request a phosphatidylserine quotation, sample, specification or qualification documents from Nutranexa, a PS manufacturer and bulk supplier in China.",
     route: "/contact/",
     schema: [breadcrumbJson([["Home", "/"], ["Contact", "/contact/"]])],
     body,
@@ -3858,7 +4250,12 @@ function articlePage(article) {
 }
 
 function thankYouPage() {
-  const body = `<section class="page-hero compact"><p class="eyebrow">Inquiry received</p><h1>Thank you. Your request is ready for technical follow-up.</h1><p>Our team will review your application, source preference, required PS grade, document needs, and estimated annual volume.</p><a class="button primary" href="/products/">Return to PS Products</a></section>`;
+  const body = `<section class="page-hero compact"><p class="eyebrow">Request received</p><h1>Thank you. Your request has been received.</h1><p>Our team will review your PS grade, source, quantity and destination country, and reply with current pricing, sample options and the documents you need.</p>
+  <div class="thankyou-actions">
+    ${coaDownloadCta({ label: "Download Sample COA", className: "button secondary", sourcePage: "thank-you" })}
+    <a class="button secondary" href="/products/phosphatidylserine/">View PS Grades</a>
+    <a class="button primary" href="https://wa.me/${whatsapp.replace(/\D/g, "")}" data-analytics-event="whatsapp_click" data-source-page="thank-you">WhatsApp Our Team</a>
+  </div></section>`;
   return layout({ title: "Thank You | Nutranexa Quote Request", description: "Your Nutranexa phosphatidylserine inquiry has been received for sales follow-up.", route: "/thank-you/", robots: "noindex,follow", schema: [breadcrumbJson([["Home", "/"], ["Thank You", "/thank-you/"]])], body });
 }
 

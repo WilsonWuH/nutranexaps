@@ -18,7 +18,23 @@ const analyticsEnum = (value, allowed, fallback = "unspecified") => {
   const normalized = String(value || "").trim();
   return allowed.includes(normalized) ? normalized : fallback;
 };
-const analyticsProducts = ["Phosphatidylserine (PS)", "Soy Phosphatidylserine", "Sunflower Phosphatidylserine", "Soy Lecithin", "Soluble Soybean Polysaccharide"];
+const analyticsProducts = [
+  "Phosphatidylserine (PS)",
+  "Soy Phosphatidylserine",
+  "Sunflower Phosphatidylserine",
+  "Soy Lecithin",
+  "Soluble Soybean Polysaccharide",
+  "PS 20%",
+  "PS 50%",
+  "PS 70%",
+  "Soy PS",
+  "Sunflower PS",
+  "Phosphatidylserine 20%",
+  "Phosphatidylserine 50%",
+  "Phosphatidylserine 70%",
+];
+const formProduct = (form) =>
+  form.elements.namedItem("Product / Grade")?.value || form.elements.namedItem("Product Interest")?.value;
 const analyticsRequestTypes = ["Qualification Pack", "Quote", "Sample", "Specification", "COA", "Technical Support", "Distributor Inquiry", "Other"];
 const pushAnalytics = (event, details = {}) => {
   window.dataLayer = window.dataLayer || [];
@@ -29,8 +45,21 @@ const pushAnalytics = (event, details = {}) => {
   }
 };
 
+// Language-prefixed routes (/ko/contact/) map back to their canonical path so
+// conversion reporting stays comparable across locales.
+const canonicalPath = pagePath.replace(/^\/(ar|es|fr|ko|pt|ru|tr)(\/|$)/, "/");
+const isQuickForm = (form) => (form.dataset.formMode || "Qualification") === "Quick Quote";
+
 if (pagePath === "/company-verification/") {
   pushAnalytics("verification_view");
+}
+
+if (canonicalPath === "/contact/") {
+  pushAnalytics("contact_page_view");
+}
+
+if (canonicalPath === "/thank-you/") {
+  pushAnalytics("generate_lead");
 }
 
 document.addEventListener("click", (event) => {
@@ -62,6 +91,17 @@ if (navToggle && nav) {
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
+
+document.querySelectorAll(".nx-advanced-toggle").forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const panel = document.getElementById(toggle.getAttribute("aria-controls") || "");
+    if (!panel) return;
+    const willOpen = panel.hidden;
+    panel.hidden = !willOpen;
+    toggle.setAttribute("aria-expanded", String(willOpen));
+    toggle.classList.toggle("is-open", willOpen);
+  });
+});
 
 const megaItems = [...document.querySelectorAll(".has-mega")];
 
@@ -156,6 +196,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
   setFormValue(form, "Product Requirement", inquiryPrefill.product);
   setFormValue(form, "Source Preference", inquiryPrefill.source);
   setFormValue(form, "Target Assay", inquiryPrefill.assay);
+  setFormValue(form, "Product / Grade", inquiryPrefill.product);
   setFormValue(form, "Documents Needed", inquiryPrefill.documents);
   setFormValue(form, "Sample Needed", inquiryPrefill.sample);
   setFormValue(form, "Application", inquiryPrefill.application);
@@ -222,7 +263,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
       name: data.Name || "Website visitor",
       email: data.Email || "",
       message: data.Message || "No additional message provided.",
-      _subject: `[Nutranexa B2B Inquiry] ${data["Product Interest"] || data.Interest || data.Application || "PS ingredient request"} - ${data.Name || "Website visitor"}`,
+      _subject: `[Nutranexa B2B Inquiry] ${data["Product / Grade"] || data["Product Interest"] || data.Interest || data.Application || "PS ingredient request"} - ${data.Name || "Website visitor"}`,
       _template: "table",
       _captcha: "false",
       _url: window.location.href,
@@ -260,15 +301,23 @@ document.querySelectorAll(".quote-form").forEach((form) => {
 
       if (!submitTracked) {
         submitTracked = true;
-        pushAnalytics("qualification_form_submit", {
-          product: analyticsEnum(form.elements.namedItem("Product Interest")?.value, analyticsProducts),
+        pushAnalytics("quote_form_submit", {
+          product: analyticsEnum(formProduct(form), analyticsProducts),
+          form_mode: analyticsEnum(form.dataset.formMode, ["Quick Quote", "Qualification"], "unspecified"),
           document_type: data["Documents Needed"] ? "selected_documents" : "none_selected",
-          request_type: analyticsEnum(data["Request Type"], analyticsRequestTypes),
-          source_page: analyticsValue(pagePath),
+          source_page: analyticsValue(canonicalPath),
         });
-        // Preserve the existing funnel event for configured analytics users,
-        // while keeping visitor-entered values out of the data layer.
-        pushAnalytics("lead_form_submit", { form_type: "qualification" });
+        // Keep the existing funnel event while staying silent about
+        // visitor-entered values in the data layer.
+        pushAnalytics("lead_form_submit", { form_type: isQuickForm(form) ? "quick_quote" : "qualification" });
+        if (!isQuickForm(form)) {
+          pushAnalytics("qualification_form_submit", {
+            product: analyticsEnum(formProduct(form), analyticsProducts),
+            document_type: data["Documents Needed"] ? "selected_documents" : "none_selected",
+            request_type: analyticsEnum(data["Request Type"], analyticsRequestTypes),
+            source_page: analyticsValue(canonicalPath),
+          });
+        }
       }
     } catch (error) {
       pushAnalytics("qualification_form_error", {

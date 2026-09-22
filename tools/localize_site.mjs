@@ -16,7 +16,7 @@ import {
 
 const root = process.cwd();
 const siteUrl = "https://nutranexaps.com";
-const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "assets", "i18n", "apps", "config", "content", "docs", "qa", "tmp"]);
+const excludedDirectories = new Set([".git", ".next", "node_modules", "public", "out", "assets", "i18n", "apps", "config", "content", "docs", "qa", "tmp"]);
 const localeCodes = new Set(locales.map((locale) => locale.code));
 const legacyMarketLocales = new Set(["ko", "tr"]);
 const protectedSchemaIdentityValues = new Set([

@@ -57,12 +57,23 @@ export async function POST(request) {
     return Response.json({ success: false, error: "spam_check_failed" }, { status: 400 });
   }
 
+  const formMode = clean(body["Form Mode"], 40);
   const name = clean(body.Name, 200);
   const email = clean(body.Email, 254);
   const company = clean(body.Company, 200);
   const country = clean(body.Country, 120);
   const consent = clean(body.Consent, 20);
-  if (!name || !validEmail(email) || !company || !country || consent !== "Yes") {
+
+  if (formMode === "Quick Quote") {
+    // Short price/sample forms only ask for business email, country and grade.
+    const grade = clean(body["Product / Grade"] || body["Product Interest"], 200);
+    if (!validEmail(email) || !country || !grade) {
+      return Response.json({ success: false, error: "validation_failed" }, { status: 400 });
+    }
+    body.Name = name || "Website visitor";
+    body.Company = company || "Not provided";
+    body.Consent = "Yes";
+  } else if (!name || !validEmail(email) || !company || !country || consent !== "Yes") {
     return Response.json({ success: false, error: "validation_failed" }, { status: 400 });
   }
 

@@ -116,7 +116,7 @@ function parseJsonLd($, source) {
 async function walkHtml(directory, files = []) {
   const entries = await fs.readdir(directory, { withFileTypes: true }).catch(() => []);
   for (const entry of entries) {
-    if ([".git", ".next", "node_modules", "public", "apps", "assets", "config", "content", "docs", "i18n", "qa", "tmp"].includes(entry.name)) continue;
+    if ([".git", ".next", "node_modules", "public", "out", "apps", "assets", "config", "content", "docs", "i18n", "qa", "tmp"].includes(entry.name)) continue;
     const absolute = path.join(directory, entry.name);
     if (entry.isDirectory()) await walkHtml(absolute, files);
     else if (entry.isFile() && entry.name === "index.html") files.push(absolute);

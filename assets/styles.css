@@ -6344,3 +6344,535 @@ body {
     text-align: center;
   }
 }
+
+/* CRO: procurement-first components ---------------------------------------- */
+
+.nx-hero-tertiary {
+  margin: 14px 0 0;
+  font-size: 0.94rem;
+  color: var(--nx-muted);
+}
+
+/* Buyer information bar ---------------------------------------------------- */
+
+.nx-buyerbar {
+  background: var(--nx-forest-deep);
+  color: #fff;
+  padding: 26px 0;
+}
+
+.nx-buyerbar-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 2fr) auto;
+  align-items: center;
+  gap: 26px;
+}
+
+.nx-buyerbar-intro h2 {
+  font-family: var(--nx-serif);
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
+  margin: 0 0 6px;
+  color: #fff;
+}
+
+.nx-buyerbar-intro p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.nx-buyerbar-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+}
+
+.nx-buyerbar-list div {
+  display: grid;
+  gap: 2px;
+}
+
+.nx-buyerbar-list dt {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.nx-buyerbar-list dd {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.nx-buyerbar-action {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+}
+
+.nx-buyerbar-action .nx-btn {
+  background: #fff;
+  border-color: #fff;
+  color: var(--nx-forest-deep);
+}
+
+.nx-buyerbar-action .nx-btn:hover {
+  background: var(--nx-cream);
+  border-color: var(--nx-cream);
+  color: var(--nx-forest-deep);
+}
+
+.nx-buyerbar-action .nx-textlink {
+  color: #fff;
+}
+
+.nx-buyerbar-action .nx-textlink:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Grade cards: commercial fields ------------------------------------------- */
+
+.nx-grade-specs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 16px;
+  margin: 4px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--nx-line);
+}
+
+.nx-grade-specs div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.nx-grade-specs dt {
+  font-weight: 700;
+  color: var(--nx-muted);
+}
+
+.nx-grade-specs dd {
+  margin: 0;
+  font-weight: 700;
+  color: var(--nx-ink);
+  text-align: right;
+}
+
+.nx-grade-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.nx-grade-actions .nx-btn {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* Commercial information box ----------------------------------------------- */
+
+.nx-commercial-box {
+  border: 1px solid var(--nx-line);
+  border-left: 3px solid var(--nx-forest);
+  border-radius: 12px;
+  background: #fff;
+  padding: 24px;
+}
+
+.nx-commercial-box h3 {
+  font-size: 1.05rem;
+  margin: 0 0 16px;
+}
+
+.nx-commercial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px 22px;
+  margin: 0;
+}
+
+.nx-commercial-grid div {
+  display: grid;
+  gap: 2px;
+}
+
+.nx-commercial-grid dt {
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--nx-muted);
+}
+
+.nx-commercial-grid dd {
+  margin: 0;
+  font-weight: 700;
+  color: var(--nx-ink);
+}
+
+.nx-commercial-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.nx-procure {
+  padding: 54px 0;
+  background: var(--nx-sage);
+}
+
+/* Inline quote blocks ------------------------------------------------------ */
+
+.nx-inlinequote-wrap {
+  padding: 0 0 62px;
+}
+
+.nx-inlinequote-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 26px;
+  border: 1px solid var(--nx-line);
+  border-radius: 12px;
+  background: var(--nx-cream);
+}
+
+.nx-inlinequote-block h3 {
+  font-size: 1.1rem;
+  margin: 0 0 6px;
+}
+
+.nx-inlinequote-block p {
+  margin: 0;
+  color: var(--nx-muted);
+  font-size: 0.95rem;
+}
+
+.nx-inlinequote-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Page-level quick quote form ---------------------------------------------- */
+
+.nx-quickquote {
+  background: var(--nx-cream);
+}
+
+.nx-quickquote-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.nx-quickquote-copy .nx-checks {
+  margin-top: 18px;
+}
+
+.nx-quickquote-form {
+  border: 1px solid var(--nx-line);
+  border-radius: 14px;
+  background: #fff;
+  padding: 24px;
+}
+
+.nx-quickquote-form button[type="submit"] {
+  width: 100%;
+}
+
+/* Why buyers choose -------------------------------------------------------- */
+
+.nx-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.nx-why-card {
+  border: 1px solid var(--nx-line);
+  border-radius: 12px;
+  padding: 22px;
+  background: var(--nx-cream);
+}
+
+.nx-why-card h3 {
+  font-family: var(--nx-serif);
+  font-size: 1.08rem;
+  margin: 0 0 8px;
+}
+
+.nx-why-card p {
+  margin: 0;
+  font-size: 0.94rem;
+  color: var(--nx-muted);
+}
+
+/* Real supply evidence ----------------------------------------------------- */
+
+.nx-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.nx-evidence-card {
+  margin: 0;
+  border: 1px solid var(--nx-line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.nx-evidence-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.nx-evidence-card figcaption {
+  padding: 12px 16px;
+  border-top: 1px solid var(--nx-line);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.nx-evidence-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+/* Contact page modes ------------------------------------------------------- */
+
+.contact-quick h2 {
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  margin: 0 0 10px;
+}
+
+.form-intro {
+  margin: 0 0 18px;
+  color: var(--nx-muted);
+}
+
+.nx-advanced-form {
+  margin-top: 26px;
+  border: 1px solid var(--nx-line);
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.nx-advanced-form summary {
+  padding: 18px 22px;
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--nx-ink);
+}
+
+.nx-advanced-form summary:hover {
+  color: var(--nx-forest);
+}
+
+.nx-advanced-toggle {
+  display: block;
+  width: 100%;
+  padding: 18px 22px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  text-align: left;
+  color: var(--nx-ink);
+}
+
+.nx-advanced-toggle:hover {
+  color: var(--nx-forest);
+}
+
+.nx-advanced-toggle.is-open {
+  border-bottom: 1px solid var(--nx-line);
+}
+
+.nx-advanced-body {
+  padding: 0 22px 24px;
+}
+
+.nx-advanced-body p {
+  color: var(--nx-muted);
+  font-size: 0.92rem;
+}
+
+.thankyou-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Identity lines ----------------------------------------------------------- */
+
+.nx-about-identity {
+  margin: 0 0 18px;
+  color: var(--nx-muted);
+  font-size: 0.95rem;
+}
+
+.nx-footer-identity {
+  margin: 0;
+  padding-bottom: 34px;
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 70ch;
+}
+
+/* Sticky conversion CTA ---------------------------------------------------- */
+
+.nx-sticky-cta,
+.nx-mobile-bar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nx-sticky-cta {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 56%;
+    z-index: 88;
+  }
+
+  .nx-sticky-cta a {
+    display: block;
+    padding: 18px 11px;
+    border-radius: 10px 0 0 10px;
+    background: var(--nx-forest);
+    color: #fff;
+    font-size: 0.86rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    writing-mode: vertical-rl;
+    box-shadow: 0 12px 30px rgba(18, 54, 42, 0.22);
+  }
+
+  .nx-sticky-cta a:hover {
+    background: var(--nx-forest-deep);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 860px) {
+  /* The bottom bar replaces the floating bubble so buttons never stack. */
+  .whatsapp-float {
+    display: none;
+  }
+
+  .nx-mobile-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 95;
+    box-shadow: 0 -8px 24px rgba(18, 54, 42, 0.18);
+  }
+
+  .nx-mobile-bar a {
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.96rem;
+    font-weight: 800;
+  }
+
+  .nx-mobile-bar a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nx-mobile-whatsapp {
+    background: #25d366;
+  }
+
+  .nx-mobile-quote {
+    background: var(--nx-forest);
+  }
+
+  body {
+    padding-bottom: calc(54px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* Responsive additions ----------------------------------------------------- */
+
+@media (max-width: 1080px) {
+  .nx-buyerbar-grid,
+  .nx-quickquote-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nx-buyerbar-list,
+  .nx-commercial-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .nx-why-grid,
+  .nx-evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nx-inlinequote-block {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .nx-buyerbar-list,
+  .nx-commercial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nx-why-grid,
+  .nx-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nx-commercial-actions .nx-btn,
+  .nx-evidence-actions .nx-btn,
+  .nx-inlinequote-actions .nx-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nx-grade-specs {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  .nx-quickquote-form {
+    padding: 18px;
+  }
+
+  .nx-commercial-grid,
+  .nx-buyerbar-list {
+    grid-template-columns: 1fr;
+  }
+
+  .nx-evidence-card img {
+    height: 180px;
+  }
+}
