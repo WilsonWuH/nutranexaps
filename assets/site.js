@@ -283,7 +283,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
       // the visitor's own network and is accepted by formsubmit.
       if (!delivered && response.status !== 429) {
         try {
-          const fallback = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
+          const fallback = await fetch("https://formsubmit.co/ajax/wilson@nutranexaps.com", {
             method: "POST",
             headers: { "Content-Type": "application/json", Accept: "application/json" },
             body: JSON.stringify(payload),

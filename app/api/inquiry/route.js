@@ -88,7 +88,7 @@ export async function POST(request) {
   payload._captcha = "false";
 
   try {
-    const upstream = await fetch("https://formsubmit.co/ajax/wh1007209170@gmail.com", {
+    const upstream = await fetch("https://formsubmit.co/ajax/wilson@nutranexaps.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

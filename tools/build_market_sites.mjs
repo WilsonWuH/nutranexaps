@@ -23,7 +23,7 @@ const imageFiles = [
 ];
 
 const company = {
-  email: "wh1007209170@gmail.com",
+  email: "wilson@nutranexaps.com",
   whatsapp: "+8613645700210",
   phone: "400-138-0635",
   address: "Yunhe West Road, Shizilou District, Yanggu County, Liaocheng City, Shandong Province, P.R. China",
