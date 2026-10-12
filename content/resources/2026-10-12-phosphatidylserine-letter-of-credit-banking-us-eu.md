@@ -19,8 +19,10 @@ Cluster: PS sourcing/quality/logistics/banking. Buyer intent: procurement and fi
 
 ## SEO Metadata
 
-SEO Title: Phosphatidylserine Letters of Credit: Payment Security Guide for Buyers
-Meta Description: How US/EU buyers use letters of credit for phosphatidylserine purchases: UCP 600 mechanics, common documentary discrepancies, FX risk, and when a LC is worth the cost.
+- SEO Title: Phosphatidylserine Letters of Credit: Payment Security Guide for Buyers
+- H1: Phosphatidylserine Letters of Credit: Payment Security and Currency Risk for US/EU Buyers
+- Meta Description: How US/EU buyers use letters of credit for phosphatidylserine purchases: UCP 600 mechanics, common documentary discrepancies, FX risk, and when a LC is worth the cost.
+- Primary Keyword: phosphatidylserine letter of credit
 - URL Slug: /resources/phosphatidylserine-letter-of-credit-banking-us-eu/
 
 ## Outline

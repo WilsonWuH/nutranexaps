@@ -19,8 +19,9 @@ Cluster: PS sourcing/quality/OEM. Buyer intent: procurement teams preparing for 
 
 ## SEO Metadata
 
-SEO Title: Phosphatidylserine Supplier Meetings at Trade Shows: Buyer Guide
-Meta Description: Prepare for PS ingredient supplier meetings at SupplySide West, Vitafoods, and regional expos. A practical US/EU buyer guide to pre-show research, floor questions, and follow-up.
+- SEO Title: Phosphatidylserine Supplier Meetings at Trade Shows: Buyer Guide
+- H1: Phosphatidylserine Supplier Meetings at Trade Shows: A Buyer's Preparation Guide
+- Meta Description: Prepare for PS ingredient supplier meetings at SupplySide West, Vitafoods, and regional expos. A practical US/EU buyer guide to pre-show research, floor questions, and follow-up.
 - URL Slug: /resources/phosphatidylserine-trade-show-supplier-meetings/
 
 ## Outline
