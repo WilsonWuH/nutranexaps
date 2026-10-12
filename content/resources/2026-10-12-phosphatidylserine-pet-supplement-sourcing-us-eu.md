@@ -19,8 +19,10 @@ Cluster: PS markets/new application niches. Buyer intent: brand teams expanding 
 
 ## SEO Metadata
 
-SEO Title: Phosphatidylserine for Pet Supplements: A Sourcing Guide for US/EU Brands
-Meta Description: Evaluating phosphatidylserine for dog and cat formulas? Learn how US AAFCO and EU feed rules, specifications, and supplier documentation differ for pet applications.
+- SEO Title: Phosphatidylserine for Pet Supplements: A Sourcing Guide for US/EU Brands
+- H1: Phosphatidylserine for Pet Supplements: Sourcing and Compliance for US/EU Brands
+- Meta Description: Evaluating phosphatidylserine for dog and cat formulas? Learn how US AAFCO and EU feed rules, specifications, and supplier documentation differ for pet applications.
+- Primary Keyword: phosphatidylserine pet supplements
 - URL Slug: /resources/phosphatidylserine-pet-supplement-sourcing-us-eu/
 
 ## Outline
