@@ -23,7 +23,13 @@ for (const locale of locales) {
 
   for (const route of manifest.routes) {
     if (untranslatedEnglishOnlyRoutes.has(route) && locale.code !== defaultLocale) continue;
-    const file = path.join(root, locale.code, ...route.split("/").filter(Boolean), "index.html");
+    // English is the default locale: its pages live at the site root, not
+    // under /en/ (which is 301-redirected to the root). Validate the root
+    // page for English instead of looking for an /en/ tree.
+    const file =
+      locale.code === defaultLocale
+        ? path.join(root, ...route.split("/").filter(Boolean), "index.html")
+        : path.join(root, locale.code, ...route.split("/").filter(Boolean), "index.html");
     let html;
     try {
       html = await fs.readFile(file, "utf8");

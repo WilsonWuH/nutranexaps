@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { existsSync } from "node:fs";
 import path from "node:path";
 import { locales } from "../i18n/config.mjs";
 
@@ -36,7 +37,12 @@ await fs.cp(path.join(root, "assets"), path.join(publicDir, "assets"), {
 });
 
 for (const directory of pageDirectories) {
-  await fs.cp(path.join(root, directory), path.join(siteDir, directory), { recursive: true });
+  const source = path.join(root, directory);
+  // The default locale (en) has no directory of its own: English pages are
+  // served from the site root and /en/:path* is 301-redirected there. Skip
+  // any page directory that does not exist instead of failing the build.
+  if (!existsSync(source)) continue;
+  await fs.cp(source, path.join(siteDir, directory), { recursive: true });
 }
 
 const rootFiles = await fs.readdir(root);

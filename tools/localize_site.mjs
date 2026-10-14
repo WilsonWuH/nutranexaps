@@ -324,6 +324,11 @@ for (const page of pages) {
   indexableLocalesByRoute.set(route, indexableLocaleCodes);
   sitemapLocalesByRoute.set(route, sitemapLocalesForRoute(route));
   for (const locale of locales) {
+    // English is the default locale and is served from the site root. A
+    // separate /en/ tree would duplicate every root URL for search engines;
+    // /en/:path* is 301-redirected to /:path* in next.config.mjs instead, so
+    // never generate the duplicate tree.
+    if (locale.code === defaultLocale) continue;
     if (locale.code !== defaultLocale && untranslatedEnglishOnlyRoutes.has(route)) continue;
     const destination = outputPath(locale.code, route);
     await fs.mkdir(path.dirname(destination), { recursive: true });
@@ -375,4 +380,4 @@ await Promise.all([
 await fs.writeFile(path.join(root, "i18n", "routes.json"), `${JSON.stringify({ defaultLocale, locales: locales.map((locale) => locale.code), routes }, null, 2)}\n`, "utf8");
 
 const sitemapStats = Object.fromEntries(sitemapFiles.map((filename) => [filename, sitemapEntries.get(filename).length]));
-console.log(`Generated ${pages.length * locales.length} localized pages across ${locales.length} locales. Sitemap URLs: ${JSON.stringify(sitemapStats)}`);
+console.log(`Generated ${pages.length * (locales.length - 1)} localized pages across ${locales.length - 1} translated locales (English stays at the site root). Sitemap URLs: ${JSON.stringify(sitemapStats)}`);
