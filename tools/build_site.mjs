@@ -422,8 +422,8 @@ const psGrades = [
     positioning: "Value-focused nutrition",
     description: "A cost-efficient phosphatidylserine option designed for daily nutrition products, powder blends, and value-focused formulations.",
     image: "/assets/images/product-soy-ps.webp",
-    source: "Soy or sunflower source; confirm the quoted route",
-    appearance: "Fine powder; light to brown yellow",
+    source: "Soy / Sunflower",
+    appearance: "Light-yellow to yellow fine powder",
     content: ">= 20% according to the supplied PS 20% specification",
     highlights: ["Soy or sunflower source", "Flexible formulation option", "Technical documentation available"],
     applications: ["Cognitive health", "Healthy aging", "Powder blends", "Functional nutrition"],
@@ -437,8 +437,8 @@ const psGrades = [
     positioning: "Concentration-focused bulk formulations",
     description: "Evaluate Phosphatidylserine 50% for concentration-focused supplement and functional nutrition projects, with source, specification, batch COA, and application fit confirmed for each quotation.",
     image: "/assets/images/brand-product-lab.webp",
-    source: "Soy or sunflower source; confirm the quoted route",
-    appearance: "Confirm against the current controlled specification",
+    source: "Soy / Sunflower",
+    appearance: "Light-yellow to yellow fine powder",
     content: "Target 50% grade; confirm against the current controlled specification",
     highlights: ["Soy or sunflower source", "Mainstream supplement application", "Current specification and COA on request"],
     applications: ["Cognitive health", "Memory support", "Healthy aging", "Capsules and tablets"],
@@ -452,8 +452,8 @@ const psGrades = [
     positioning: "Premium formulations",
     description: "A high-purity solution for premium cognitive health, healthy aging, and advanced nutrition concepts.",
     image: "/assets/images/product-sunflower-ps.webp",
-    source: "Soy or sunflower source; confirm current availability",
-    appearance: "Light to brown yellow powder; the supplied batch result is yellow powder",
+    source: "Soy / Sunflower",
+    appearance: "Light-yellow to off-white fine powder",
     content: ">= 70%; supplied batch sample result: 72.9 g/100g",
     highlights: ["Premium positioning", "High-concentration option", "Technical documentation available"],
     applications: ["Premium cognitive health", "Healthy aging", "Advanced nutrition", "Compact dosage formats"],
@@ -1273,6 +1273,21 @@ function esc(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
 }
 
+// Normalizes an optional spec value: missing, null, undefined, or the literal
+// strings "undefined"/"null" collapse to the fallback (or "" when none given).
+function specText(value, fallback = "") {
+  const text = String(value ?? "").trim();
+  if (text && text !== "undefined" && text !== "null") return text;
+  return String(fallback ?? "").trim();
+}
+
+// Renders one <dt>/<dd> spec row; the whole row is omitted when the value is
+// empty after normalization, so blank optional specs never leave a stub behind.
+function specRow(label, value, fallback = "") {
+  const text = specText(value, fallback);
+  return text ? `<div><dt>${esc(label)}</dt><dd>${esc(text)}</dd></div>` : "";
+}
+
 function urlFor(route) {
   return `${siteUrl}${route}`;
 }
@@ -1742,16 +1757,14 @@ function buyerInfoBar({ title = "Ready for your next PS project?", sourcePage = 
     ["Documents", commercialFacts.documents],
     ["Packaging", commercialFacts.packaging],
     ["Sources", commercialFacts.source],
-  ];
+  ].filter(([, value]) => specText(value) !== "");
   return `<section class="nx-buyerbar" aria-labelledby="nx-buyerbar-title">
     <div class="nx-shell nx-buyerbar-grid">
       <div class="nx-buyerbar-intro">
         <h2 id="nx-buyerbar-title">${esc(title)}</h2>
         <p>Tell us the grade, source, quantity and destination country for a current quotation.</p>
       </div>
-      <dl class="nx-buyerbar-list">${items
-        .map(([term, value]) => `<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`)
-        .join("")}</dl>
+      <dl class="nx-buyerbar-list">${items.map(([term, value]) => specRow(term, value)).join("")}</dl>
       <div class="nx-buyerbar-action">
         ${quoteCta({ label: "Get Current Quote", sourcePage })}
         ${coaDownloadCta({ sourcePage })}
@@ -1761,7 +1774,7 @@ function buyerInfoBar({ title = "Ready for your next PS project?", sourcePage = 
 }
 
 function commercialInfoBlock({ product = "", sourcePage = "", rows = [] } = {}) {
-  const items = rows.length
+  const items = (rows.length
     ? rows
     : [
         ["MOQ", commercialFacts.moq],
@@ -1770,12 +1783,10 @@ function commercialInfoBlock({ product = "", sourcePage = "", rows = [] } = {}) 
         ["Documents", commercialFacts.documents],
         ["Shipping", commercialFacts.shipping],
         ["Quote", "On request"],
-      ];
+      ]).filter(([, value]) => specText(value) !== "");
   return `<div class="nx-commercial-box">
       <h3>Commercial Information</h3>
-      <dl class="nx-commercial-grid">${items
-        .map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`)
-        .join("")}</dl>
+      <dl class="nx-commercial-grid">${items.map(([label, value]) => specRow(label, value)).join("")}</dl>
       <div class="nx-commercial-actions">
         ${quoteCta({ label: "Get Current Price", sourcePage, product, className: "nx-btn small" })}
         ${sampleCta({ sourcePage, product, className: "nx-btn small ghost" })}
@@ -2107,9 +2118,9 @@ function nxHomePage() {
     )
     .join("");
   const gradeCards = [
-    { slug: "phosphatidylserine-20", name: "Phosphatidylserine 20%", shortName: "PS 20%", tag: "Flexible formulation grade", meta: "Soy / Sunflower · Powder · 20% assay", image: "/assets/images/product-soy-ps-480.webp", w: 480, h: 480 },
-    { slug: "phosphatidylserine-50", name: "Phosphatidylserine 50%", shortName: "PS 50%", tag: "Our mainstream high-concentration grade", meta: "Soy / Sunflower · Powder · 50% assay", image: "/assets/images/product-powder-spoon.webp", w: 700, h: 700 },
-    { slug: "phosphatidylserine-70", name: "Phosphatidylserine 70%", shortName: "PS 70%", tag: "High-purity PS for advanced formulations", meta: "Soy / Sunflower · Powder · 70% assay", image: "/assets/images/product-sunflower-ps-480.webp", w: 480, h: 480 },
+    { slug: "phosphatidylserine-20", name: "Phosphatidylserine 20%", shortName: "PS 20%", tag: "Flexible formulation grade", source: "Soy / Sunflower", assay: "≥ 20%", meta: "Soy / Sunflower · Powder · 20% assay", image: "/assets/images/product-soy-ps-480.webp", w: 480, h: 480 },
+    { slug: "phosphatidylserine-50", name: "Phosphatidylserine 50%", shortName: "PS 50%", tag: "Our mainstream high-concentration grade", source: "Soy / Sunflower", assay: "≥ 50%", meta: "Soy / Sunflower · Powder · 50% assay", image: "/assets/images/product-powder-spoon.webp", w: 700, h: 700 },
+    { slug: "phosphatidylserine-70", name: "Phosphatidylserine 70%", shortName: "PS 70%", tag: "High-purity PS for advanced formulations", source: "Soy / Sunflower", assay: "≥ 70%", meta: "Soy / Sunflower · Powder · 70% assay", image: "/assets/images/product-sunflower-ps-480.webp", w: 480, h: 480 },
   ];
   const gradeCardHtml = gradeCards
     .map(
@@ -2118,8 +2129,8 @@ function nxHomePage() {
         <h3><a href="/products/${grade.slug}/">${esc(grade.name)}</a></h3>
         <p class="nx-grade-tag">${esc(grade.tag)}</p>
         <dl class="nx-grade-specs">
-          <div><dt>Source</dt><dd>${esc(grade.source)}</dd></div>
-          <div><dt>Assay</dt><dd>${esc(grade.assay)}</dd></div>
+          ${specRow("Source", grade.source, "Soy / Sunflower")}
+          ${specRow("Assay", grade.assay)}
           <div><dt>Form</dt><dd>Powder</dd></div>
           <div><dt>MOQ</dt><dd>25 kg</dd></div>
           <div><dt>Sample</dt><dd>Available</dd></div>
@@ -2725,7 +2736,7 @@ function ps50Page(grade) {
         rows: [
           ["Assay", "50%"],
           ["Source", "Soy / Sunflower"],
-          ["Appearance", "Light yellow to yellow powder"],
+          ["Appearance", "Light-yellow to yellow fine powder"],
           ["Packaging", "25 kg/drum"],
           ["MOQ", "25 kg"],
           ["Shelf Life", "24 months"],
@@ -2850,6 +2861,7 @@ function gradeV2Page(grade) {
       heroAlt: "Phosphatidylserine 20% powder with soybeans",
       sub: "The flexible entry grade for daily nutrition products and powder blend concepts.",
       assay: "20% Target Assay",
+      appearance: "Light-yellow to yellow fine powder",
       specRows: [
         ["Product name", "Phosphatidylserine 20%"],
         ["Source", "Soy or Sunflower"],
@@ -2875,11 +2887,11 @@ function gradeV2Page(grade) {
       heroAlt: "Phosphatidylserine 70% powder with sunflower seeds",
       sub: "High-purity PS for premium concepts and advanced formulation formats.",
       assay: "70% Target Assay",
-      appearance: "Light to brown yellow powder",
+      appearance: "Light-yellow to off-white fine powder",
       specRows: [
         ["Product name", "Phosphatidylserine 70%"],
         ["Source", "Soy or Sunflower"],
-        ["Appearance", "Light to brown yellow powder (supplied batch: yellow powder)"],
+        ["Appearance", "Light-yellow to off-white fine powder (supplied batch: yellow powder)"],
         ["Assay (Phosphatidylserine)", "&ge; 70% target (supplied batch sample result: 72.9 g/100g)"],
         ["Moisture", "&le; 2.0% (supplied batch: 0.59 g/100g)"],
         ["Peroxide value", "&le; 2.5 mmol/kg (supplied batch: 0.39 mmol/kg)"],
