@@ -113,7 +113,7 @@ const products = [
     eyebrow: "Core ingredient page",
     title: "Phosphatidylserine Manufacturer for Supplement and Functional Food Brands",
     description:
-      "Source bulk phosphatidylserine (PS) from Nutranexa for dietary supplements, nutrition powders, functional foods, and dairy-based product development.",
+      "Source export-grade Phosphatidylserine (PS) directly from Shandong Nutranexa factory. Available in 20%, 50%, 70% assays with full COA, TDS, Halal & Kosher certificates. Request wholesale quote today.",
     image: "/assets/images/brand-product-lab.webp",
     imageAlt: "Nutranexa phosphatidylserine ingredient samples in a branded laboratory",
     cta: "Request a Quote",
@@ -186,7 +186,7 @@ const products = [
     eyebrow: "Sunflower-source PS",
     title: "Sunflower Phosphatidylserine Supplier | 20% & 50%",
     description:
-      "Evaluate sunflower phosphatidylserine for non-soy positioning, including PS 20% and PS 50% sample COA review, bulk sourcing, and technical document support.",
+      "Soy-free, allergen-friendly Sunflower Phosphatidylserine powder in 20% and 50% grades. Direct factory supply, 25kg drum MOQ, batch COA & samples ready for US/EU supplement brands.",
     image: "/assets/images/product-sunflower-ps.webp",
     imageAlt: "Sunflower phosphatidylserine powder product in a black bowl with sunflower seeds",
     cta: "Request a Quote",
@@ -2070,9 +2070,9 @@ function articleImage(article) {
 
 function productSeoTitle(product) {
   const titles = {
-    phosphatidylserine: "Phosphatidylserine Manufacturer | Nutranexa",
+    phosphatidylserine: "Bulk Phosphatidylserine Powder Supplier | Soy & Sunflower PS | Nutranexa",
     "soy-phosphatidylserine": "Soy Phosphatidylserine Supplier | Bulk Source & Specs",
-    "sunflower-phosphatidylserine": "Sunflower Phosphatidylserine | 20% & 50% Supplier",
+    "sunflower-phosphatidylserine": "Sunflower Phosphatidylserine 20% & 50% Bulk Manufacturer | Non-Soy PS | Nutranexa",
     "soluble-soybean-polysaccharide": "Soluble Soybean Polysaccharide Supplier | Nutranexa",
     "soy-lecithin": "Soy Lecithin Supplier: Powder, Liquid & Granules | Nutranexa",
   };
@@ -2329,8 +2329,8 @@ function nxHomePage() {
     </div>
   </section>`;
   return layout({
-    title: "Premium Phosphatidylserine Ingredients | Nutranexa",
-    description: "Premium soy- and sunflower-derived phosphatidylserine in 20%, 50%, and 70% grades with technical documentation and formulation support.",
+    title: "Phosphatidylserine (PS) 20% 50% 70% Manufacturer | Bulk Price & COA | Nutranexa",
+    description: "Direct GMP & ISO9001 Phosphatidylserine manufacturer in China. Bulk Soy & Sunflower PS powder (20%, 50%, 70%) in stock. MOQ 25kg, free sample & batch COA available. Get factory quote in 12h.",
     route: "/",
     image: "/assets/images/og-nutranexa-premium-ps-v2.png",
     head: '<link rel="preload" as="image" href="/assets/images/product-powder-spoon.webp" type="image/webp" media="(min-width: 861px)" fetchpriority="high">',
