@@ -20475,6 +20475,23 @@
     "Need Phosphatidylserine (PS) for your formulation?": "Formülasyonunuz için fosfatidilserin (PS) mü gerekiyor?",
     "Need Sunflower Phosphatidylserine for your formulation?": "Formülasyonunuz için ayçiçeği fosfatidilserini mü gerekiyor?",
     "Need Bulk Phosphatidylserine (PS)?": "Toplu fosfatidilserin (PS) mü gerekiyor?",
-    "Need Bulk Sunflower Phosphatidylserine?": "Toplu ayçiçeği fosfatidilserini mü gerekiyor?"
+    "Need Bulk Sunflower Phosphatidylserine?": "Toplu ayçiçeği fosfatidilserini mü gerekiyor?",
+    "Need Recommendation": "Öneri gerekiyor",
+    "Name, business email and product grade are required.": "Ad, kurumsal e-posta ve ürün kalitesi zorunludur.",
+    "Message & Required Quantity": "Mesaj ve Gerekli Miktar",
+    "Tell us your target quantity, destination country, and required documents (COA, sample, specification).": "Hedef miktarı, hedef ülkeyi ve gerekli belgeleri (COA, numune, spesifikasyon) belirtin.",
+    "Need a full qualification pack (COA, TDS, SDS, allergen, GMO, Halal, Kosher)? List the documents in your message and our team will send the complete set.": "Tam bir kalifikasyon paketi (COA, TDS, SDS, alerjen, GMO, Helal, Koşer) gerekiyor mu? Belgeleri mesajınıza yazın; ekibimiz tam seti göndersin.",
+    "Download Sample COA": "Numune COA İndir",
+    "Enter your business email and select the grade. The sample COA downloads immediately, and our team follows up with the current controlled documents.": "Kurumsal e-postanızı girin ve kaliteyi seçin. Numune COA anında indirilir; ekibimiz güncel kontrollü belgeleri takip eder.",
+    "Target Grade": "Hedef Kalite",
+    "Download COA": "COA İndir",
+    "We use your email only to send the COA and related documents.": "E-postanızı yalnızca COA ve ilgili belgeleri göndermek için kullanıyoruz.",
+    "Looking for Bulk Phosphatidylserine (20% / 50% / 70%) with Full EU/US Compliance Documents?": "ABD/AB uygunluk belgeleri tam olan toplu fosfatidilserin (%20 / %50 / %70) mü arıyorsunuz?",
+    "MOQ 25kg · Free Sample · Batch COA": "MOQ 25 kg · Ücretsiz numune · Parti COA",
+    "Get Factory Quote": "Fabrika Teklifi Al",
+    "Three quick fields and our team replies with current pricing, sample options and documents.": "Üç hızlı alan; ekibimiz güncel fiyatlandırma, numune seçenekleri ve belgelerle yanıt verir.",
+    "Request a Quote & Sample": "Teklif ve Numune Talep Et",
+    "Get Quote & Sample": "Teklif ve Numune Al",
+    "Close": "Kapat"
   }
 }

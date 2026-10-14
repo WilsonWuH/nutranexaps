@@ -90,59 +90,25 @@
     <div class="contact-forms">
       <div class="contact-quick">
       <h2>Request a Quote &amp; Sample</h2>
-      <p class="form-intro">Send your grade, quantity and destination country. We reply with current pricing, sample options and available documents. Further qualification details can follow by email.</p>
-      <form class="quote-form quick-quote-form" data-context="Contact page quick quote" data-form-mode="Quick Quote" action="/api/inquiry" method="post">
+      <p class="form-intro">Three quick fields and our team replies with current pricing, sample options and documents.</p>
+      <form class="quote-form quick-quote-form" data-context="Contact page simple inquiry" data-form-mode="Simple Contact" action="/api/inquiry" method="post" novalidate="">
   <input type="hidden" name="Product Interest" value="Phosphatidylserine (PS)">
-  <input type="hidden" name="Form Mode" value="Quick Quote">
+  <input type="hidden" name="Form Mode" value="Simple Contact">
   <input type="hidden" name="Locale" value="en">
   <input type="hidden" name="Form Started" value="">
   <input type="hidden" name="Consent" value="Yes">
   <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
   <div class="form-grid">
-    <label>Name<input name="Name" autocomplete="name"></label>
-    <label>Business Email *<input required="" type="email" name="Email" autocomplete="email"></label>
-    <label>Company<input name="Company" autocomplete="organization" placeholder="Company name"></label>
-    <label>Country *<input required="" name="Country" autocomplete="country-name" placeholder="United States, Germany, Korea..."></label>
-    <label class="form-full">Product / Grade *<select required="" name="Product / Grade"><option value="">Select grade</option><option value="PS 20%">PS 20%</option><option value="PS 50%">PS 50%</option><option value="PS 70%">PS 70%</option><option value="Not sure yet">Not sure yet</option></select></label>
-    <label>Estimated Quantity<select name="Estimated Quantity"><option value="">Select quantity</option><option value="Sample quantity">Sample quantity</option><option value="25–100 kg">25–100 kg</option><option value="100–500 kg">100–500 kg</option><option value="500 kg–1 MT">500 kg–1 MT</option><option value="1–5 MT">1–5 MT</option><option value="Above 5 MT">Above 5 MT</option><option value="Not decided">Not decided</option></select></label>
-    <label>Preferred Source<select name="Source Preference"><option value="">No preference yet</option><option>Soy</option><option>Sunflower</option><option>Need recommendation</option></select></label>
-    <label class="form-full">Message<textarea name="Message" rows="4" placeholder="Tell us about your formulation, target market, timeline, or required documents."></textarea></label>
+    <label>Name *<input required="" name="Name" autocomplete="name" placeholder="Your full name"></label>
+    <label>Business Email *<input required="" type="email" name="Email" autocomplete="email" placeholder="name@company.com"></label>
+    <label class="form-full">Product / Grade *<select required="" name="Product / Grade"><option value="">Select grade</option><option value="PS 20%">PS 20%</option><option value="PS 50%">PS 50%</option><option value="PS 70%">PS 70%</option><option value="Sunflower PS">Sunflower PS</option><option value="Soy Lecithin">Soy Lecithin</option><option value="Soluble Soybean Polysaccharide">Soluble Soybean Polysaccharide</option><option value="Need Recommendation">Need Recommendation</option></select></label>
+    <label class="form-full">Message &amp; Required Quantity<textarea name="Message" rows="4" placeholder="Tell us your target quantity, destination country, and required documents (COA, sample, specification)."></textarea></label>
   </div>
   <button class="button primary" type="submit">Get Quote &amp; Sample</button>
-  <p class="form-status" role="status" aria-live="polite">Business email, country and product are required.</p>
-  <p class="form-note">Your information is used only to answer this B2B price, sample and document request.</p>
+  <p class="form-status" role="status" aria-live="polite">Name, business email and product grade are required.</p>
+  <p class="form-note">Need a full qualification pack (COA, TDS, SDS, allergen, GMO, Halal, Kosher)? List the documents in your message and our team will send the complete set.</p>
 </form>
     </div>
-      <div class="nx-advanced-form">
-        <button type="button" class="nx-advanced-toggle" aria-expanded="false" aria-controls="nx-advanced-body">Need technical documents or supplier qualification support?</button>
-        <div id="nx-advanced-body" class="nx-advanced-body" hidden="">
-          <p>Use the extended request for qualification packs, application data, annual-volume discussions, or a complete document set including COA, TDS, SDS, allergen, GMO, Halal and Kosher files.</p>
-          <form class="quote-form" data-context="Qualification pack request" data-form-mode="Qualification" action="/api/inquiry" method="post">
-  <input type="hidden" name="Product Interest" value="Qualification pack request">
-  <input type="hidden" name="Form Mode" value="Qualification">
-  <input type="hidden" name="Locale" value="en">
-  <input type="hidden" name="Form Started" value="">
-  <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
-  <div class="form-grid">
-    <label>Name *<input required="" name="Name" autocomplete="name"></label>
-    <label>Business Email *<input required="" type="email" name="Email" autocomplete="email"></label>
-    <label>Company *<input required="" name="Company" autocomplete="organization" placeholder="Company name"></label>
-    <label>Country *<input required="" name="Country" autocomplete="country-name" placeholder="United States, Germany, Korea..."></label>
-    <label>Application <select name="Application"><option value="">Select application</option><option>Cognitive Health</option><option>Memory Support</option><option>Healthy Aging</option><option>Sports Nutrition</option><option>Functional Foods</option><option>Other</option></select></label>
-    <label>Preferred Source <select name="Source Preference"><option value="">No preference yet</option><option>Soy</option><option>Sunflower</option><option>Need recommendation</option></select></label>
-    <label>Required PS Grade <select name="Target Assay"><option value="">Need recommendation</option><option>20%</option><option>50%</option><option>70%</option><option>Other / customized</option></select></label>
-    <label>Request Type <select name="Request Type"><option value="">Select request type</option><option>Qualification Pack</option><option>Quote</option><option>Sample</option><option>Specification</option><option>COA</option><option>Technical Support</option><option>Distributor Inquiry</option><option>Other</option></select></label>
-    <label>Estimated Annual Volume <select name="Estimated Annual Volume"><option value="">Select annual volume</option><option>Sample</option><option>25–100 kg</option><option>100–500 kg</option><option>500 kg–1 MT</option><option>1–5 MT</option><option>Above 5 MT</option><option>Not decided</option></select></label>
-    <fieldset class="form-full document-choice"><legend>Required Documents</legend><label><input type="checkbox" name="Documents Needed" value="Specification"> Specification</label><label><input type="checkbox" name="Documents Needed" value="COA"> COA</label><label><input type="checkbox" name="Documents Needed" value="TDS"> TDS</label><label><input type="checkbox" name="Documents Needed" value="SDS"> SDS</label><label><input type="checkbox" name="Documents Needed" value="MSDS"> MSDS</label><label><input type="checkbox" name="Documents Needed" value="Allergen Information"> Allergen Information</label><label><input type="checkbox" name="Documents Needed" value="GMO Statement"> GMO Statement</label><label><input type="checkbox" name="Documents Needed" value="Halal"> Halal</label><label><input type="checkbox" name="Documents Needed" value="Kosher"> Kosher</label></fieldset>
-    <label class="form-full">Message <textarea name="Message" rows="4" placeholder="Tell us about your formulation, target market, timeline, or technical questions."></textarea></label>
-    <label class="form-full consent-field"><input required="" type="checkbox" name="Consent" value="Yes"> <span>I agree that Nutranexa may use this information to respond to my B2B inquiry. *</span></label>
-  </div>
-  <button class="button primary" type="submit">Request Qualification Pack</button>
-  <p class="form-status" role="status" aria-live="polite">Name, business email, company, country, and consent are required.</p>
-  <p class="form-note">Your information is used only to respond to this B2B product and technical-document request.</p>
-</form>
-        </div>
-      </div>
     </div>
   </section></main>
   <footer class="site-footer">
@@ -200,6 +166,26 @@
     <a class="nx-mobile-whatsapp" href="https://wa.me/8613645700210" data-analytics-event="whatsapp_click" data-source-page="sticky-mobile">WhatsApp</a>
     <a class="nx-mobile-quote" href="/contact/?request=quote" data-analytics-event="quote_click" data-source-page="sticky-mobile">Get Quote</a>
   </div>
+  <div class="nx-modal" id="nx-coa-lead-modal" hidden="">
+  <div class="nx-modal-backdrop" data-coa-close=""></div>
+  <div class="nx-modal-panel" role="dialog" aria-modal="true" aria-labelledby="nx-coa-lead-title">
+    <button type="button" class="nx-modal-close" data-coa-close="" aria-label="Close">×</button>
+    <h2 id="nx-coa-lead-title">Download Sample COA</h2>
+    <p class="nx-modal-lead">Enter your business email and select the grade. The sample COA downloads immediately, and our team follows up with the current controlled documents.</p>
+    <form class="coa-lead-form" data-form-mode="Lead Magnet" novalidate="">
+      <input type="hidden" name="Form Mode" value="Lead Magnet">
+      <input type="hidden" name="Product Interest" value="Sample COA download">
+      <input type="hidden" name="Consent" value="Yes">
+      <input type="hidden" name="Form Started" value="">
+      <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
+      <label>Business Email *<input required="" type="email" name="Email" autocomplete="email" placeholder="name@company.com"></label>
+      <label>Target Grade *<select required="" name="Target Grade"><option value="">Select grade</option><option value="PS 20%">PS 20%</option><option value="PS 50%">PS 50%</option><option value="PS 70%">PS 70%</option></select></label>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <button class="button primary" type="submit">Download COA</button>
+      <p class="form-note">We use your email only to send the COA and related documents.</p>
+    </form>
+  </div>
+</div>
   <script>window.NUTRANEXA_I18N={"required":"Please complete all required fields before submitting.","submitting":"Submitting...","sendError":"We could not send your inquiry. Please email us directly or contact us on WhatsApp.","retryError":"We could not send your inquiry. Please try again.","success":"Submitted successfully. Redirecting to the confirmation page..."};</script><script src="/assets/site.js" defer=""></script>
 
 </body></html>

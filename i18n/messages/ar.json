@@ -20405,6 +20405,23 @@
     "Need Phosphatidylserine (PS) for your formulation?": "هل تحتاج فوسفاتيديلسيرين (PS) لتركيبتك؟",
     "Need Sunflower Phosphatidylserine for your formulation?": "هل تحتاج فوسفاتيديلسيرين من عباد الشمس لتركيبتك؟",
     "Need Bulk Phosphatidylserine (PS)?": "هل تحتاج فوسفاتيديلسيرين (PS) بالجملة؟",
-    "Need Bulk Sunflower Phosphatidylserine?": "هل تحتاج فوسفاتيديلسيرين من عباد الشمس بالجملة؟"
+    "Need Bulk Sunflower Phosphatidylserine?": "هل تحتاج فوسفاتيديلسيرين من عباد الشمس بالجملة؟",
+    "Need Recommendation": "أحتاج إلى توصية",
+    "Name, business email and product grade are required.": "الاسم والبريد الإلكتروني المهني ودرجة المنتج مطلوبة.",
+    "Message & Required Quantity": "الرسالة والكمية المطلوبة",
+    "Tell us your target quantity, destination country, and required documents (COA, sample, specification).": "أخبرنا بالكمية المستهدفة ودولة الوجهة والوثائق المطلوبة (COA، عينة، مواصفات).",
+    "Need a full qualification pack (COA, TDS, SDS, allergen, GMO, Halal, Kosher)? List the documents in your message and our team will send the complete set.": "هل تحتاج إلى حزمة تأهيل كاملة (COA وTDS وSDS ومستويات الحساسية والكائنات المعدلة وراثيًا والحلال والكوشير)؟ اذكر الوثائق في رسالتك وسيرسل فريقنا المجموعة الكاملة.",
+    "Download Sample COA": "تنزيل نموذج COA",
+    "Enter your business email and select the grade. The sample COA downloads immediately, and our team follows up with the current controlled documents.": "أدخل بريدك الإلكتروني المهني واختر الدرجة. يتم تنزيل نموذج COA فورًا، ويتابع فريقك بإرسال الوثائق الخاضعة للرقابة الحالية.",
+    "Target Grade": "الدرجة المستهدفة",
+    "Download COA": "تنزيل COA",
+    "We use your email only to send the COA and related documents.": "نستخدم بريدك الإلكتروني فقط لإرسال COA والوثائق ذات الصلة.",
+    "Looking for Bulk Phosphatidylserine (20% / 50% / 70%) with Full EU/US Compliance Documents?": "هل تبحث عن فوسفاتيديلسيرين بالجملة (20% / 50% / 70%) مع وثائق امتثال كاملة للاتحاد الأوروبي والولايات المتحدة؟",
+    "MOQ 25kg · Free Sample · Batch COA": "الحد الأدنى للطلب 25 كجم · عينة مجانية · COA للدفعة",
+    "Get Factory Quote": "احصل على عرض سعر المصنع",
+    "Three quick fields and our team replies with current pricing, sample options and documents.": "ثلاثة حقول سريعة، ويرد فريقنا بالأسعار الحالية وخيارات العينات والوثائق.",
+    "Request a Quote & Sample": "طلب عرض سعر وعينة",
+    "Get Quote & Sample": "احصل على عرض سعر وعينة",
+    "Close": "إغلاق"
   }
 }

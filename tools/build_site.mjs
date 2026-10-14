@@ -1477,6 +1477,7 @@ ${twitterImageAlt ? `  ${twitterImageAlt}\n` : ""}${head ? `  ${head}\n` : ""}  
   ${footer(optimizeLogo)}
   ${whatsappButton()}
   ${stickyConversionBar()}
+  ${coaLeadModal()}
   <script src="/assets/site.js" defer></script>
 </body>
 </html>`;
@@ -1747,7 +1748,35 @@ function sampleCta({ label = "Request Sample", className = "nx-btn ghost", sourc
 }
 
 function coaDownloadCta({ href = "/assets/images/doc-coa-ps-50.webp", label = "Download Sample COA", className = "nx-textlink", sourcePage = "" } = {}) {
-  return `<a class="${esc(className)}" href="${href}" target="_blank" rel="noopener" data-analytics-event="coa_download" data-source-page="${esc(sourcePage)}">${esc(label)} &darr;</a>`;
+  // Lead magnet: capture a business email before the COA file leaves the site.
+  // site.js opens #nx-coa-lead-modal, posts the lead, then triggers the download.
+  return `<button type="button" class="${esc(className)} nx-coa-lead" data-coa-href="${esc(href)}" data-analytics-event="coa_download" data-source-page="${esc(sourcePage)}">${esc(label)} &darr;</button>`;
+}
+
+function coaLeadModal() {
+  const gradeOptions = ["PS 20%", "PS 50%", "PS 70%"]
+    .map((value) => `<option value="${esc(value)}">${esc(value)}</option>`)
+    .join("");
+  return `<div class="nx-modal" id="nx-coa-lead-modal" hidden>
+  <div class="nx-modal-backdrop" data-coa-close></div>
+  <div class="nx-modal-panel" role="dialog" aria-modal="true" aria-labelledby="nx-coa-lead-title">
+    <button type="button" class="nx-modal-close" data-coa-close aria-label="Close">&times;</button>
+    <h2 id="nx-coa-lead-title">Download Sample COA</h2>
+    <p class="nx-modal-lead">Enter your business email and select the grade. The sample COA downloads immediately, and our team follows up with the current controlled documents.</p>
+    <form class="coa-lead-form" data-form-mode="Lead Magnet" novalidate>
+      <input type="hidden" name="Form Mode" value="Lead Magnet">
+      <input type="hidden" name="Product Interest" value="Sample COA download">
+      <input type="hidden" name="Consent" value="Yes">
+      <input type="hidden" name="Form Started" value="">
+      <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
+      <label>Business Email *<input required type="email" name="Email" autocomplete="email" placeholder="name@company.com"></label>
+      <label>Target Grade *<select required name="Target Grade"><option value="">Select grade</option>${gradeOptions}</select></label>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <button class="button primary" type="submit">Download COA</button>
+      <p class="form-note">We use your email only to send the COA and related documents.</p>
+    </form>
+  </div>
+</div>`;
 }
 
 function buyerInfoBar({ title = "Ready for your next PS project?", sourcePage = "buyer-bar" } = {}) {
@@ -3888,35 +3917,28 @@ function companyVerificationPage() {
 }
 
 function contactQuickForm() {
-  const gradeOptions = ["PS 20%", "PS 50%", "PS 70%", "Not sure yet"]
-    .map((value) => `<option value="${esc(value)}">${esc(value)}</option>`)
-    .join("");
-  const quantityOptions = ["Sample quantity", "25–100 kg", "100–500 kg", "500 kg–1 MT", "1–5 MT", "Above 5 MT", "Not decided"]
+  const gradeOptions = ["PS 20%", "PS 50%", "PS 70%", "Sunflower PS", "Soy Lecithin", "Soluble Soybean Polysaccharide", "Need Recommendation"]
     .map((value) => `<option value="${esc(value)}">${esc(value)}</option>`)
     .join("");
   return `<div class="contact-quick">
       <h2>Request a Quote &amp; Sample</h2>
-      <p class="form-intro">Send your grade, quantity and destination country. We reply with current pricing, sample options and available documents. Further qualification details can follow by email.</p>
-      <form class="quote-form quick-quote-form" data-context="Contact page quick quote" data-form-mode="Quick Quote" action="/api/inquiry" method="post">
+      <p class="form-intro">Three quick fields and our team replies with current pricing, sample options and documents.</p>
+      <form class="quote-form quick-quote-form" data-context="Contact page simple inquiry" data-form-mode="Simple Contact" action="/api/inquiry" method="post" novalidate>
   <input type="hidden" name="Product Interest" value="Phosphatidylserine (PS)">
-  <input type="hidden" name="Form Mode" value="Quick Quote">
+  <input type="hidden" name="Form Mode" value="Simple Contact">
   <input type="hidden" name="Locale" value="en">
   <input type="hidden" name="Form Started" value="">
   <input type="hidden" name="Consent" value="Yes">
   <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
   <div class="form-grid">
-    <label>Name<input name="Name" autocomplete="name"></label>
-    <label>Business Email *<input required type="email" name="Email" autocomplete="email"></label>
-    <label>Company<input name="Company" autocomplete="organization" placeholder="Company name"></label>
-    <label>Country *<input required name="Country" autocomplete="country-name" placeholder="United States, Germany, Korea..."></label>
+    <label>Name *<input required name="Name" autocomplete="name" placeholder="Your full name"></label>
+    <label>Business Email *<input required type="email" name="Email" autocomplete="email" placeholder="name@company.com"></label>
     <label class="form-full">Product / Grade *<select required name="Product / Grade"><option value="">Select grade</option>${gradeOptions}</select></label>
-    <label>Estimated Quantity<select name="Estimated Quantity"><option value="">Select quantity</option>${quantityOptions}</select></label>
-    <label>Preferred Source<select name="Source Preference"><option value="">No preference yet</option><option>Soy</option><option>Sunflower</option><option>Need recommendation</option></select></label>
-    <label class="form-full">Message<textarea name="Message" rows="4" placeholder="Tell us about your formulation, target market, timeline, or required documents."></textarea></label>
+    <label class="form-full">Message &amp; Required Quantity<textarea name="Message" rows="4" placeholder="Tell us your target quantity, destination country, and required documents (COA, sample, specification)."></textarea></label>
   </div>
   <button class="button primary" type="submit">Get Quote &amp; Sample</button>
-  <p class="form-status" role="status" aria-live="polite">Business email, country and product are required.</p>
-  <p class="form-note">Your information is used only to answer this B2B price, sample and document request.</p>
+  <p class="form-status" role="status" aria-live="polite">Name, business email and product grade are required.</p>
+  <p class="form-note">Need a full qualification pack (COA, TDS, SDS, allergen, GMO, Halal, Kosher)? List the documents in your message and our team will send the complete set.</p>
 </form>
     </div>`;
 }
@@ -3927,13 +3949,6 @@ function contactPage() {
     ${contactDetailsCard(companyIdentity.englishCompanyName)}
     <div class="contact-forms">
       ${contactQuickForm()}
-      <div class="nx-advanced-form">
-        <button type="button" class="nx-advanced-toggle" aria-expanded="false" aria-controls="nx-advanced-body">Need technical documents or supplier qualification support?</button>
-        <div id="nx-advanced-body" class="nx-advanced-body" hidden>
-          <p>Use the extended request for qualification packs, application data, annual-volume discussions, or a complete document set including COA, TDS, SDS, allergen, GMO, Halal and Kosher files.</p>
-          ${quoteForm("Qualification pack request", "", { includeRequestType: true })}
-        </div>
-      </div>
     </div>
   </section>`;
   return layout({
@@ -4214,11 +4229,13 @@ function newsArticlePage(article) {
     <h2>Table of contents</h2>
     <ul>${toc}</ul>
   </nav>
+  ${inlineProductCta()}
   ${sections}
   <section id="sources">
     <h2>Sources</h2>
     <ul>${sources}</ul>
   </section>
+  ${inlineProductCta()}
 </article>`;
   return plainNewsArticleLayout({
     title: promotedNewsSeoTitles[article.slug] || `${article.headline} | Nutranexa News`,
@@ -4231,6 +4248,14 @@ function newsArticlePage(article) {
   });
 }
 
+function inlineProductCta() {
+  return `<aside class="inline-product-cta">
+  <p class="inline-product-cta-copy">Looking for Bulk Phosphatidylserine (20% / 50% / 70%) with Full EU/US Compliance Documents?</p>
+  <p class="inline-product-cta-meta">MOQ 25kg &middot; Free Sample &middot; Batch COA</p>
+  <a class="button primary inline-product-cta-btn" href="/contact/">Get Factory Quote</a>
+</aside>`;
+}
+
 function articlePage(article) {
   const route = `/resources/${article.slug}/`;
   const isSspArticle = article.slug.startsWith("soluble-soybean-polysaccharide");
@@ -4239,13 +4264,19 @@ function articlePage(article) {
   const recommendedSteps = isSspArticle
     ? `<h2>Recommended next steps</h2><ul><li>Review the <a href="/products/soluble-soybean-polysaccharide/">Soluble Soybean Polysaccharide product page</a>.</li><li>Define the project through <a href="/applications/functional-foods/">Functional Food Applications</a>.</li><li>Check <a href="/manufacturing/">manufacturing proof</a> and <a href="/quality-rd/">Quality & R&D</a>.</li></ul>`
     : `<h2>Recommended next steps</h2><ul><li>Review the <a href="/products/phosphatidylserine/">Phosphatidylserine product page</a>.</li><li>Compare <a href="/products/soy-phosphatidylserine/">Soy PS</a> and <a href="/products/sunflower-phosphatidylserine/">Sunflower PS</a>.</li><li>Check <a href="/manufacturing/">manufacturing proof</a> and <a href="/quality-rd/">Quality & R&D</a>.</li></ul>`;
-  const articleContent = article.contentHtml || article.body.map((para, index) => `${index === 1 ? '<aside class="inline-cta"><strong>Need current specifications?</strong><a href="/contact/">Request Specifications</a></aside>' : ""}<p>${esc(para)}</p>`).join("");
+  const rawArticleContent = article.contentHtml || article.body.map((para, index) => `${index === 1 ? '<aside class="inline-cta"><strong>Need current specifications?</strong><a href="/contact/">Request Specifications</a></aside>' : ""}<p>${esc(para)}</p>`).join("");
+  // CRO: an inline product CTA above the first H2 (roughly the first 30% of the
+  // article) plus one at the very end of the article body.
+  const articleContent = /<h2[\s>]/i.test(rawArticleContent)
+    ? rawArticleContent.replace(/<h2[\s>]/i, (match) => `${inlineProductCta()}${match}`)
+    : `${inlineProductCta()}${rawArticleContent}`;
   const schemas = [breadcrumbJson([["Home", "/"], ["Resources", "/resources/"], [article.title, route]]), articleJson(article, route), resourceFaqJson(article)].filter(Boolean);
   const body = `<article class="article-page">
   <header><p class="eyebrow">${article.pillar ? "Pillar guide" : "Resource article"}</p><h1>${esc(article.title)}</h1><p>${esc(article.description)}</p>${article.published ? `<p class="article-date">Published <time datetime="${esc(article.published)}">${esc(new Date(`${article.published}T00:00:00Z`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }))}</time></p>` : ""}<div class="article-actions"><a class="button secondary" href="${productRoute}">${productLabel}</a><a class="button primary" href="/contact/">Request Specifications</a></div><img class="article-hero-image" src="${articleImage(article)}" alt="${esc(article.imageAlt)}" width="1536" height="1024" loading="eager"></header>
   <div class="article-body">${articleContent}
   ${recommendedSteps}
-  <div class="bottom-cta"><h2>Contact sales for product documents</h2><p>Share source preference, application, country, and annual quantity.</p><a class="button primary" href="/contact/">Contact Sales</a></div></div>
+  <div class="bottom-cta"><h2>Contact sales for product documents</h2><p>Share source preference, application, country, and annual quantity.</p><a class="button primary" href="/contact/">Contact Sales</a></div>
+  ${inlineProductCta()}</div>
 </article>`;
   return layout({
     title: articleSeoTitle(article),

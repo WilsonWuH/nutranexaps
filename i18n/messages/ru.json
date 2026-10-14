@@ -20405,6 +20405,23 @@
     "Need Phosphatidylserine (PS) for your formulation?": "Нужен фосфатидилсерин (PS) для вашей рецептуры?",
     "Need Sunflower Phosphatidylserine for your formulation?": "Нужен фосфатидилсерин из подсолнечника для вашей рецептуры?",
     "Need Bulk Phosphatidylserine (PS)?": "Нужен фосфатидилсерин (PS) оптом?",
-    "Need Bulk Sunflower Phosphatidylserine?": "Нужен фосфатидилсерин из подсолнечника оптом?"
+    "Need Bulk Sunflower Phosphatidylserine?": "Нужен фосфатидилсерин из подсолнечника оптом?",
+    "Need Recommendation": "Нужна рекомендация",
+    "Name, business email and product grade are required.": "Укажите имя, рабочую электронную почту и концентрацию продукта.",
+    "Message & Required Quantity": "Сообщение и требуемое количество",
+    "Tell us your target quantity, destination country, and required documents (COA, sample, specification).": "Укажите целевое количество, страну назначения и необходимые документы (COA, образец, спецификация).",
+    "Need a full qualification pack (COA, TDS, SDS, allergen, GMO, Halal, Kosher)? List the documents in your message and our team will send the complete set.": "Нужен полный квалификационный пакет (COA, TDS, SDS, аллергены, ГМО, Halal, Kosher)? Перечислите документы в сообщении — наша команда пришлёт полный комплект.",
+    "Download Sample COA": "Скачать образец COA",
+    "Enter your business email and select the grade. The sample COA downloads immediately, and our team follows up with the current controlled documents.": "Укажите рабочую электронную почту и выберите концентрацию. Образец COA скачается сразу, а наша команда пришлёт актуальные контролируемые документы.",
+    "Target Grade": "Целевая концентрация",
+    "Download COA": "Скачать COA",
+    "We use your email only to send the COA and related documents.": "Мы используем вашу электронную почту только для отправки COA и связанных документов.",
+    "Looking for Bulk Phosphatidylserine (20% / 50% / 70%) with Full EU/US Compliance Documents?": "Ищете фосфатидилсерин оптом (20% / 50% / 70%) с полным комплектом документов по соответствию ЕС/США?",
+    "MOQ 25kg · Free Sample · Batch COA": "MOQ 25 кг · Бесплатный образец · COA партии",
+    "Get Factory Quote": "Получить предложение завода",
+    "Three quick fields and our team replies with current pricing, sample options and documents.": "Три быстрых поля — и наша команда ответит актуальными ценами, вариантами образцов и документами.",
+    "Request a Quote & Sample": "Запросить предложение и образец",
+    "Get Quote & Sample": "Получить предложение и образец",
+    "Close": "Закрыть"
   }
 }

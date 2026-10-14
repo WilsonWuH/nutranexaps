@@ -20404,6 +20404,23 @@
     "Need Phosphatidylserine (PS) for your formulation?": "¿Necesita fosfatidilserina (PS) para su formulación?",
     "Need Sunflower Phosphatidylserine for your formulation?": "¿Necesita fosfatidilserina de girasol para su formulación?",
     "Need Bulk Phosphatidylserine (PS)?": "¿Necesita fosfatidilserina (PS) a granel?",
-    "Need Bulk Sunflower Phosphatidylserine?": "¿Necesita fosfatidilserina de girasol a granel?"
+    "Need Bulk Sunflower Phosphatidylserine?": "¿Necesita fosfatidilserina de girasol a granel?",
+    "Need Recommendation": "Necesito recomendación",
+    "Name, business email and product grade are required.": "Se requieren nombre, correo electrónico corporativo y grado de producto.",
+    "Message & Required Quantity": "Mensaje y cantidad requerida",
+    "Tell us your target quantity, destination country, and required documents (COA, sample, specification).": "Indíquenos su cantidad objetivo, el país de destino y los documentos necesarios (COA, muestra, especificación).",
+    "Need a full qualification pack (COA, TDS, SDS, allergen, GMO, Halal, Kosher)? List the documents in your message and our team will send the complete set.": "¿Necesita un paquete de calificación completo (COA, TDS, SDS, alérgenos, OMG, Halal, Kosher)? Enumere los documentos en su mensaje y nuestro equipo enviará el conjunto completo.",
+    "Download Sample COA": "Descargar COA de muestra",
+    "Enter your business email and select the grade. The sample COA downloads immediately, and our team follows up with the current controlled documents.": "Introduzca su correo electrónico corporativo y seleccione la calidad. El COA de muestra se descarga inmediatamente y nuestro equipo le enviará los documentos controlados actuales.",
+    "Target Grade": "Calidad objetivo",
+    "Download COA": "Descargar COA",
+    "We use your email only to send the COA and related documents.": "Usamos su correo electrónico únicamente para enviarle el COA y los documentos relacionados.",
+    "Looking for Bulk Phosphatidylserine (20% / 50% / 70%) with Full EU/US Compliance Documents?": "¿Busca fosfatidilserina a granel (20% / 50% / 70%) con documentos de cumplimiento completos de la UE y EE. UU.?",
+    "MOQ 25kg · Free Sample · Batch COA": "MOQ 25 kg · Muestra gratuita · COA por lote",
+    "Get Factory Quote": "Obtener cotización de fábrica",
+    "Three quick fields and our team replies with current pricing, sample options and documents.": "Tres campos rápidos y nuestro equipo responde con precios actuales, opciones de muestra y documentos.",
+    "Request a Quote & Sample": "Solicitar cotización y muestra",
+    "Get Quote & Sample": "Obtener cotización y muestra",
+    "Close": "Cerrar"
   }
 }

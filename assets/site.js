@@ -48,7 +48,7 @@ const pushAnalytics = (event, details = {}) => {
 // Language-prefixed routes (/ko/contact/) map back to their canonical path so
 // conversion reporting stays comparable across locales.
 const canonicalPath = pagePath.replace(/^\/(ar|es|fr|ko|pt|ru|tr)(\/|$)/, "/");
-const isQuickForm = (form) => (form.dataset.formMode || "Qualification") === "Quick Quote";
+const isQuickForm = (form) => ["Quick Quote", "Simple Contact"].includes(form.dataset.formMode || "Qualification");
 
 if (pagePath === "/company-verification/") {
   pushAnalytics("verification_view");
@@ -288,7 +288,7 @@ document.querySelectorAll(".quote-form").forEach((form) => {
         submitTracked = true;
         pushAnalytics("quote_form_submit", {
           product: analyticsEnum(formProduct(form), analyticsProducts),
-          form_mode: analyticsEnum(form.dataset.formMode, ["Quick Quote", "Qualification"], "unspecified"),
+          form_mode: analyticsEnum(form.dataset.formMode, ["Quick Quote", "Simple Contact", "Qualification"], "unspecified"),
           document_type: data["Documents Needed"] ? "selected_documents" : "none_selected",
           source_page: analyticsValue(canonicalPath),
         });
@@ -333,3 +333,130 @@ document.querySelectorAll(".quote-form").forEach((form) => {
     }, 900);
   });
 });
+
+// --- COA lead magnet modal -------------------------------------------------
+// "Download Sample COA" captures a business email + grade first, posts the lead
+// to formsubmit (same delivery target as the inquiry forms), then triggers the
+// actual file download and closes the modal.
+(function coaLeadMagnet() {
+  const modal = document.getElementById("nx-coa-lead-modal");
+  if (!modal) return;
+  const form = modal.querySelector(".coa-lead-form");
+  if (!form) return;
+  const status = modal.querySelector(".form-status");
+  const submit = form.querySelector('button[type="submit"]');
+  const submitLabel = submit ? submit.textContent.trim() : "Download COA";
+  let coaHref = "/assets/images/doc-coa-ps-50.webp";
+  let lastFocus = null;
+
+  const open = (href) => {
+    coaHref = href || coaHref;
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    document.body.classList.add("nx-modal-open");
+    const first = form.querySelector('input[name="Email"]');
+    if (first) first.focus();
+    pushAnalytics("coa_lead_modal_open", { source_page: analyticsValue(pagePath) });
+  };
+  const close = () => {
+    modal.hidden = true;
+    document.body.classList.remove("nx-modal-open");
+    if (status) {
+      status.textContent = "";
+      status.className = "form-status";
+    }
+    if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
+  };
+
+  document.querySelectorAll(".nx-coa-lead").forEach((trigger) => {
+    trigger.addEventListener("click", () => open(trigger.dataset.coaHref));
+  });
+  modal.querySelectorAll("[data-coa-close]").forEach((element) => element.addEventListener("click", close));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !modal.hidden) close();
+  });
+
+  const started = form.querySelector('[name="Form Started"]');
+  if (started) started.value = String(Date.now());
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const honey = form.querySelector('[name="_honey"]');
+    if (honey && honey.value.trim()) return;
+
+    const email = form.querySelector('[name="Email"]');
+    const grade = form.querySelector('[name="Target Grade"]');
+    const valid = [email, grade].every((field) => {
+      const ok = field.checkValidity();
+      if (field.closest("label")) field.closest("label").classList.toggle("is-invalid", !ok);
+      return ok;
+    });
+    if (!valid) {
+      if (status) {
+        status.textContent = uiMessages.required;
+        status.className = "form-status error";
+      }
+      return;
+    }
+
+    if (submit) {
+      submit.disabled = true;
+      submit.textContent = uiMessages.submitting;
+    }
+
+    const data = {};
+    for (const [key, value] of new FormData(form).entries()) {
+      if (key in data) data[key] = `${data[key]}, ${value}`;
+      else data[key] = value;
+    }
+    const payload = {
+      ...data,
+      context: "Sample COA download",
+      submittedAt: new Date().toISOString(),
+      name: data.Name || "Sample COA download",
+      email: data.Email || "",
+      message: `Sample COA download requested for ${data["Target Grade"] || "PS"}.`,
+      _subject: `[Nutranexa COA Lead] ${data["Target Grade"] || "PS"} - ${data.Email}`,
+      _template: "table",
+      _captcha: "false",
+      _url: window.location.href,
+    };
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/wilson@nutranexaps.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || String(result.success) !== "true") throw new Error(uiMessages.sendError);
+
+      pushAnalytics("coa_lead_submit", {
+        product: analyticsEnum(data["Target Grade"], analyticsProducts),
+        source_page: analyticsValue(pagePath),
+      });
+
+      const link = document.createElement("a");
+      link.href = coaHref;
+      link.download = "";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+
+      if (status) {
+        status.textContent = uiMessages.success;
+        status.className = "form-status success";
+      }
+      setTimeout(close, 1200);
+    } catch (error) {
+      if (submit) {
+        submit.disabled = false;
+        submit.textContent = submitLabel;
+      }
+      if (status) {
+        status.textContent = error instanceof Error ? error.message : uiMessages.retryError;
+        status.className = "form-status error";
+      }
+    }
+  });
+})();

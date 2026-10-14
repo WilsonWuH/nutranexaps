@@ -6876,3 +6876,134 @@ body {
     height: 180px;
   }
 }
+
+/* ===== CRO: COA lead-magnet modal ===== */
+button.nx-coa-lead {
+  font-family: inherit;
+  font-size: inherit;
+}
+.nx-modal[hidden] {
+  display: none;
+}
+.nx-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.nx-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 54, 42, 0.55);
+}
+.nx-modal-panel {
+  position: relative;
+  width: min(460px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px 28px 26px;
+  box-shadow: 0 24px 60px rgba(18, 54, 42, 0.28);
+}
+.nx-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  border: 0;
+  background: none;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--nx-muted);
+  cursor: pointer;
+  padding: 6px;
+}
+.nx-modal-close:hover {
+  color: var(--nx-forest-deep);
+}
+.nx-modal-panel h2 {
+  font-family: var(--nx-serif);
+  color: var(--nx-forest-deep);
+  font-size: 24px;
+  margin: 0 0 8px;
+  padding-right: 24px;
+}
+.nx-modal-lead {
+  color: var(--nx-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 18px;
+}
+.nx-modal-panel form {
+  display: grid;
+  gap: 14px;
+}
+.nx-modal-panel label {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--nx-ink);
+}
+.nx-modal-panel input,
+.nx-modal-panel select {
+  padding: 11px 12px;
+  border: 1px solid var(--nx-line);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  background: #fff;
+  color: var(--nx-ink);
+}
+.nx-modal-panel input:focus,
+.nx-modal-panel select:focus {
+  outline: 2px solid var(--nx-forest);
+  outline-offset: 1px;
+}
+.nx-modal-panel label.is-invalid input,
+.nx-modal-panel label.is-invalid select {
+  border-color: #b3261e;
+}
+body.nx-modal-open {
+  overflow: hidden;
+}
+
+/* ===== CRO: inline product CTA in resource/news articles ===== */
+.inline-product-cta {
+  margin: 32px 0;
+  padding: 26px 28px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--nx-forest-deep) 0%, var(--nx-forest) 100%);
+  color: var(--nx-cream);
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+}
+.inline-product-cta-copy {
+  font-family: var(--nx-serif);
+  font-size: clamp(19px, 2.4vw, 23px);
+  line-height: 1.4;
+  margin: 0;
+  color: #fff;
+}
+.inline-product-cta-meta {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(246, 243, 236, 0.88);
+}
+.inline-product-cta .button,
+.inline-product-cta a.button {
+  background: var(--nx-cream);
+  color: var(--nx-forest-deep);
+  border-color: var(--nx-cream);
+}
+.inline-product-cta .button:hover,
+.inline-product-cta a.button:hover {
+  background: #fff;
+  color: var(--nx-forest-deep);
+}

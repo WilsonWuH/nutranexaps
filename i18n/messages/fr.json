@@ -20405,6 +20405,23 @@
     "Need Phosphatidylserine (PS) for your formulation?": "Besoin de phosphatidylsérine (PS) pour votre formulation ?",
     "Need Sunflower Phosphatidylserine for your formulation?": "Besoin de phosphatidylsérine de tournesol pour votre formulation ?",
     "Need Bulk Phosphatidylserine (PS)?": "Besoin de phosphatidylsérine (PS) en vrac ?",
-    "Need Bulk Sunflower Phosphatidylserine?": "Besoin de phosphatidylsérine de tournesol en vrac ?"
+    "Need Bulk Sunflower Phosphatidylserine?": "Besoin de phosphatidylsérine de tournesol en vrac ?",
+    "Need Recommendation": "Besoin d'une recommandation",
+    "Name, business email and product grade are required.": "Le nom, l'adresse e-mail professionnelle et la qualité du produit sont obligatoires.",
+    "Message & Required Quantity": "Message et quantité requise",
+    "Tell us your target quantity, destination country, and required documents (COA, sample, specification).": "Indiquez votre quantité cible, votre pays de destination et les documents requis (COA, échantillon, spécification).",
+    "Need a full qualification pack (COA, TDS, SDS, allergen, GMO, Halal, Kosher)? List the documents in your message and our team will send the complete set.": "Besoin d'un dossier de qualification complet (COA, TDS, SDS, allergènes, OGM, Halal, Kasher) ? Listez les documents dans votre message et notre équipe enverra le dossier complet.",
+    "Download Sample COA": "Télécharger le COA d'échantillon",
+    "Enter your business email and select the grade. The sample COA downloads immediately, and our team follows up with the current controlled documents.": "Saisissez votre adresse e-mail professionnelle et sélectionnez la qualité. Le COA d'échantillon se télécharge immédiatement et notre équipe vous fera suivre avec les documents contrôlés à jour.",
+    "Target Grade": "Qualité cible",
+    "Download COA": "Télécharger le COA",
+    "We use your email only to send the COA and related documents.": "Nous utilisons votre e-mail uniquement pour vous envoyer le COA et les documents associés.",
+    "Looking for Bulk Phosphatidylserine (20% / 50% / 70%) with Full EU/US Compliance Documents?": "Vous cherchez de la phosphatidylsérine en vrac (20 % / 50 % / 70 %) avec les documents de conformité UE/US complets ?",
+    "MOQ 25kg · Free Sample · Batch COA": "MOQ 25 kg · Échantillon gratuit · COA de lot",
+    "Get Factory Quote": "Obtenir un devis d'usine",
+    "Three quick fields and our team replies with current pricing, sample options and documents.": "Trois champs rapides et notre équipe répond avec les tarifs actuels, les options d'échantillon et les documents.",
+    "Request a Quote & Sample": "Demander un devis et un échantillon",
+    "Get Quote & Sample": "Obtenir devis et échantillon",
+    "Close": "Fermer"
   }
 }

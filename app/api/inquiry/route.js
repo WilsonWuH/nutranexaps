@@ -73,6 +73,20 @@ export async function POST(request) {
     body.Name = name || "Website visitor";
     body.Company = company || "Not provided";
     body.Consent = "Yes";
+  } else if (formMode === "Simple Contact") {
+    // 4-field contact form: name, business email and product grade only.
+    const grade = clean(body["Product / Grade"], 200);
+    if (!name || !validEmail(email) || !grade) {
+      return Response.json({ success: false, error: "validation_failed" }, { status: 400 });
+    }
+  } else if (formMode === "Lead Magnet") {
+    // COA download modal: business email and target grade only.
+    const grade = clean(body["Target Grade"] || body["Product / Grade"], 200);
+    if (!validEmail(email) || !grade) {
+      return Response.json({ success: false, error: "validation_failed" }, { status: 400 });
+    }
+    body.Name = name || "Sample COA download";
+    body.Consent = "Yes";
   } else if (!name || !validEmail(email) || !company || !country || consent !== "Yes") {
     return Response.json({ success: false, error: "validation_failed" }, { status: 400 });
   }
@@ -83,7 +97,7 @@ export async function POST(request) {
     payload[clean(key, 100)] = Array.isArray(value) ? value.map((item) => clean(item, 300)).join(", ") : clean(value);
   }
   payload["Submitted Time"] = new Date().toISOString();
-  payload._subject = `[Nutranexa B2B Inquiry] ${clean(body["Product Interest"], 80) || clean(body.Application, 80) || "PS ingredient request"} - ${name}`;
+  payload._subject = `[Nutranexa B2B Inquiry] ${clean(body["Product / Grade"], 80) || clean(body["Target Grade"], 80) || clean(body["Product Interest"], 80) || clean(body.Application, 80) || "PS ingredient request"} - ${clean(body.Name, 80) || name || "Website visitor"}`;
   payload._template = "table";
   payload._captcha = "false";
 

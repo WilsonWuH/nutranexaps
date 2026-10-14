@@ -98,7 +98,7 @@
           <a class="nx-btn" href="/contact/?request=quote&amp;product=Phosphatidylserine+50%25&amp;assay=50%25" data-analytics-event="quote_click" data-source-page="ps50-hero" data-product="Phosphatidylserine 50%">Get Current Price</a>
           <a class="nx-btn ghost" href="/contact/?request=quote&amp;product=Phosphatidylserine+50%25&amp;assay=50%25&amp;documents=Sample%2C+COA%2C+Specification" data-analytics-event="sample_request" data-source-page="ps50-hero" data-product="Phosphatidylserine 50%">Request Sample</a>
         </div>
-        <p class="nx-hero-tertiary">Or review batch evidence first: <a class="nx-textlink" href="/assets/images/doc-coa-ps-50.webp" target="_blank" rel="noopener" data-analytics-event="coa_download" data-source-page="ps50-hero">Download Sample COA ↓</a></p>
+        <p class="nx-hero-tertiary">Or review batch evidence first: <button type="button" class="nx-textlink nx-coa-lead" data-coa-href="/assets/images/doc-coa-ps-50.webp" data-analytics-event="coa_download" data-source-page="ps50-hero">Download Sample COA ↓</button></p>
       </div>
       <div class="nx-hero-card"><img src="/assets/images/logo-nutranexa-icon.png" alt="" width="28" height="28"><span><strong>Phosphatidylserine</strong><small>PS 50% · Soy / Sunflower</small></span></div>
     </div>
@@ -106,7 +106,7 @@
 
   <section class="nx-section nx-procure">
     <div class="nx-shell">
-      <div class="nx-section-head"><div><h2>Procurement Snapshot</h2><p class="nx-section-sub">What buyers need before requesting a quotation for PS 50%.</p></div><a class="nx-textlink" href="/assets/images/doc-coa-ps-50.webp" target="_blank" rel="noopener" data-analytics-event="coa_download" data-source-page="ps50-procure">Download Sample COA ↓</a></div>
+      <div class="nx-section-head"><div><h2>Procurement Snapshot</h2><p class="nx-section-sub">What buyers need before requesting a quotation for PS 50%.</p></div><button type="button" class="nx-textlink nx-coa-lead" data-coa-href="/assets/images/doc-coa-ps-50.webp" data-analytics-event="coa_download" data-source-page="ps50-procure">Download Sample COA ↓</button></div>
       <div class="nx-commercial-box">
       <h3>Commercial Information</h3>
       <dl class="nx-commercial-grid"><div><dt>Assay</dt><dd>50%</dd></div><div><dt>Source</dt><dd>Soy / Sunflower</dd></div><div><dt>Appearance</dt><dd>Light-yellow to yellow fine powder</dd></div><div><dt>Packaging</dt><dd>25 kg/drum</dd></div><div><dt>MOQ</dt><dd>25 kg</dd></div><div><dt>Shelf Life</dt><dd>24 months</dd></div><div><dt>Sample</dt><dd>Available</dd></div><div><dt>COA</dt><dd>Available</dd></div></dl>
@@ -302,6 +302,26 @@
     <a class="nx-mobile-whatsapp" href="https://wa.me/8613645700210" data-analytics-event="whatsapp_click" data-source-page="sticky-mobile">WhatsApp</a>
     <a class="nx-mobile-quote" href="/contact/?request=quote" data-analytics-event="quote_click" data-source-page="sticky-mobile">Get Quote</a>
   </div>
+  <div class="nx-modal" id="nx-coa-lead-modal" hidden="">
+  <div class="nx-modal-backdrop" data-coa-close=""></div>
+  <div class="nx-modal-panel" role="dialog" aria-modal="true" aria-labelledby="nx-coa-lead-title">
+    <button type="button" class="nx-modal-close" data-coa-close="" aria-label="Close">×</button>
+    <h2 id="nx-coa-lead-title">Download Sample COA</h2>
+    <p class="nx-modal-lead">Enter your business email and select the grade. The sample COA downloads immediately, and our team follows up with the current controlled documents.</p>
+    <form class="coa-lead-form" data-form-mode="Lead Magnet" novalidate="">
+      <input type="hidden" name="Form Mode" value="Lead Magnet">
+      <input type="hidden" name="Product Interest" value="Sample COA download">
+      <input type="hidden" name="Consent" value="Yes">
+      <input type="hidden" name="Form Started" value="">
+      <label class="hidden-field">Company website <input name="_honey" tabindex="-1" autocomplete="off"></label>
+      <label>Business Email *<input required="" type="email" name="Email" autocomplete="email" placeholder="name@company.com"></label>
+      <label>Target Grade *<select required="" name="Target Grade"><option value="">Select grade</option><option value="PS 20%">PS 20%</option><option value="PS 50%">PS 50%</option><option value="PS 70%">PS 70%</option></select></label>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <button class="button primary" type="submit">Download COA</button>
+      <p class="form-note">We use your email only to send the COA and related documents.</p>
+    </form>
+  </div>
+</div>
   <script>window.NUTRANEXA_I18N={"required":"Please complete all required fields before submitting.","submitting":"Submitting...","sendError":"We could not send your inquiry. Please email us directly or contact us on WhatsApp.","retryError":"We could not send your inquiry. Please try again.","success":"Submitted successfully. Redirecting to the confirmation page..."};</script><script src="/assets/site.js" defer=""></script>
 
 </body></html>

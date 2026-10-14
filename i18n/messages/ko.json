@@ -20475,6 +20475,23 @@
     "Need Phosphatidylserine (PS) for your formulation?": "포스파티딜세린(PS)가 제형에 필요하신가요?",
     "Need Sunflower Phosphatidylserine for your formulation?": "해바라기 유래 포스파티딜세린가 제형에 필요하신가요?",
     "Need Bulk Phosphatidylserine (PS)?": "포스파티딜세린(PS) 대량 구매가 필요하신가요?",
-    "Need Bulk Sunflower Phosphatidylserine?": "해바라기 유래 포스파티딜세린 대량 구매가 필요하신가요?"
+    "Need Bulk Sunflower Phosphatidylserine?": "해바라기 유래 포스파티딜세린 대량 구매가 필요하신가요?",
+    "Need Recommendation": "추천 필요",
+    "Name, business email and product grade are required.": "이름, 비즈니스 이메일, 제품 등급은 필수 항목입니다.",
+    "Message & Required Quantity": "메시지 및 필요 수량",
+    "Tell us your target quantity, destination country, and required documents (COA, sample, specification).": "목표 수량, 목적지 국가, 필요한 서류(COA, 샘플, 스펙)를 알려주세요.",
+    "Need a full qualification pack (COA, TDS, SDS, allergen, GMO, Halal, Kosher)? List the documents in your message and our team will send the complete set.": "전체 자격 검증 패키지(COA, TDS, SDS, 알레르기, GMO, 할랄, 코셔)가 필요하신가요? 메시지에 서류를 적어주시면 완전한 세트를 보내드립니다.",
+    "Download Sample COA": "샘플 COA 다운로드",
+    "Enter your business email and select the grade. The sample COA downloads immediately, and our team follows up with the current controlled documents.": "비즈니스 이메일을 입력하고 등급을 선택하세요. 샘플 COA가 즉시 다운로드되고, 당사팀이 최신 관리 서류를 후속 발송합니다.",
+    "Target Grade": "목표 등급",
+    "Download COA": "COA 다운로드",
+    "We use your email only to send the COA and related documents.": "이메일은 COA 및 관련 서류 발송 목적으로만 사용됩니다.",
+    "Looking for Bulk Phosphatidylserine (20% / 50% / 70%) with Full EU/US Compliance Documents?": "완전한 EU/US 규제 서류를 갖춘 대량 포스파티딜세린(20% / 50% / 70%)을 찾고 계신가요?",
+    "MOQ 25kg · Free Sample · Batch COA": "MOQ 25kg · 무료 샘플 · 배치 COA",
+    "Get Factory Quote": "공장 견적 받기",
+    "Three quick fields and our team replies with current pricing, sample options and documents.": "빠른 세 가지 필드만 입력하시면 현재 가격, 샘플 옵션, 서류를 안내해 드립니다.",
+    "Request a Quote & Sample": "견적 및 샘플 요청",
+    "Get Quote & Sample": "견적 및 샘플 받기",
+    "Close": "닫기"
   }
 }
