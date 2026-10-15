@@ -54,6 +54,14 @@ await fs.cp(path.join(root, "assets"), path.join(outDir, "assets"), { recursive:
 
 for (const directory of pageDirectories) {
   const source = path.join(root, directory);
+  // The default locale (en) lives at the site root since the duplicate /en/
+  // tree was removed, so some locale directories may not exist. Skip them
+  // instead of crashing the Cloudflare build with ENOENT.
+  try {
+    await fs.access(source);
+  } catch {
+    continue;
+  }
   await fs.cp(source, path.join(outDir, directory), { recursive: true });
 }
 
