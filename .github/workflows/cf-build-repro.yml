@@ -1,0 +1,38 @@
+# Reproduce the Cloudflare Pages build on a clean Linux runner so the
+# failure logs are visible. CF builds this repo on Linux; local Windows
+# builds succeed, so this workflow mirrors the CF environment.
+name: cf-build-repro
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/cf-build-repro.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      matrix:
+        node-version: [22]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: Install dependencies (npm ci)
+        run: npm ci
+
+      - name: Build (same command as CF Pages)
+        run: npm run build
+
+      - name: Report artifact size
+        if: always()
+        run: |
+          echo "public/site size:"; du -sh public/site 2>/dev/null || echo "missing"
+          echo ".next size:"; du -sh .next 2>/dev/null || echo "missing"
