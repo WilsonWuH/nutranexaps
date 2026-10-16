@@ -58,6 +58,20 @@ Under [section 26(1) of the SFCR (SOR/2018-108)](https://laws-lois.justice.gc.ca
 
 This changes how a buyer runs supplier qualification. Instead of asking only "what documents do you send," the Canadian buyer should ask "what will my licensed import operation need from you so the declaration and my preventive control plan hold together." The supplier's export documentation — invoice, packing list, bill of lading, batch COA, current specification, source and allergen statements, and wood packaging records — becomes the evidence base for the importer's file, as covered in the [export documentation and ISPM-15 review](/resources/phosphatidylserine-export-documentation-ispm15-review-us-eu/).
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Who Must Hold the SFC Licence
 
 The licence holder is the person who imports the food, not the person who makes it: typically a Canadian supplement or food company, a distributor, a contract manufacturer importing on a customer's behalf, or — in narrow cases — a CFIA-recognized non-resident importer.
@@ -161,6 +175,20 @@ Steps 2, 3, and 4 are contract and filing work. A supplier can support them with
 Nutranexa's verified public facts support the document layer of this article, not the Canadian licence itself. The company was founded in 2013, operates a 110,000+ m2 campus, primarily serves Europe and North America, and references R&D cooperation with East China University of Science and Technology. Public [product pages](/products/phosphatidylserine/) cover [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/), and the PS MOQ is 25 kg with 25 kg net per drum.
 
 None of these facts substitute for the buyer's Canadian licence. They give the licensed importer what a PCP and traceability file need: a named product, current specification, batch-specific COA data, and source clarity. Buyers should confirm current files with the Nutranexa export team for each quotation and handle all Canadian licensing through their own licensed import entity.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## Conclusion
 

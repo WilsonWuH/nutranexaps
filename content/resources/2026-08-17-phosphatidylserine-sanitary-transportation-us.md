@@ -71,6 +71,20 @@ FDA's rule page adds the related exemptions: shippers, receivers, or carriers wi
 
 The revenue threshold is a rolling three-year average of less than $500,000, adjusted for inflation from a 2011 baseline, so a small buyer can grow into coverage over time. Review it annually.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Where Sealed PS Drums Fit: The Completely Enclosed Question
 
 The core buyer question is whether sealed PS drums count as food completely enclosed by a container. In practice, bulk PS is packed into a food-grade liner inside a sealed drum, typically 25 kg net per drum, closed and secured for shipment. That keeps the powder out of contact with the surrounding environment, exactly the condition the exclusion describes.
@@ -120,6 +134,20 @@ Nutranexa is a functional food ingredient manufacturer founded in 2013, with a 1
 ## How Sanitary Transport Fits the Rest of the Import File
 
 The sanitary transportation rule is one of several FSMA and customs layers on a US PS import. Before arrival, the [ISF filing](/resources/phosphatidylserine-isf-filing-checklist-us/), [prior notice](/resources/phosphatidylserine-prior-notice-checklist-us/), and [FSVP importer controls](/resources/phosphatidylserine-fsvp-importer-checklist-us/) handle the entry and supplier-verification side; the [customs broker handoff](/resources/phosphatidylserine-customs-broker-handoff-us/) routes entry documents at the port. The ocean leg is outside this rule, which is why [marine cargo insurance](/resources/phosphatidylserine-marine-cargo-insurance-us-canada/) stays a separate commercial decision. The domestic truck leg is where this rule can apply, and the [packaging declaration review](/resources/phosphatidylserine-packaging-declaration-review-us-eu/) already flags transport-condition ownership. Finally, the [purchase order specification review](/resources/phosphatidylserine-purchase-order-spec-review-us-eu/) is where buyers lock in who arranges and pays for each leg.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

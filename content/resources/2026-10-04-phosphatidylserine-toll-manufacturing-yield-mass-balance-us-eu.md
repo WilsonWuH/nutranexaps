@@ -76,6 +76,20 @@ Ask for the numbers in this order, because each one constrains the next. Charged
 
 Mass yield is output mass divided by input mass. Active yield is output activity divided by input activity — kilograms of PS on an assay basis, the number that drives your label claim and dosing cost. A toller reporting 95 percent mass yield and 88 percent active yield is saying something specific: material survived, potency did not.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Where Phospholipid Yield Actually Disappears
 
 Phospholipid processing has a characteristic loss profile that a manufacturer should be able to map step by step.
@@ -103,6 +117,20 @@ Three commercial structures are common, and each shifts risk differently. A per-
 Whichever structure you choose, settle four things in writing: the yield basis and the test method that establishes it; responsibility for raw material losses caused by the manufacturer's process versus those inherent to the input; ownership and disposition of off-spec and downgraded material; and the treatment of rework, so recycled material is neither double-counted in the buyer's favour nor quietly omitted. The clause that most often goes missing is the notification threshold — define the excursion level at which the manufacturer must notify you and open a deviation, rather than reporting it in the next monthly summary.
 
 To audit claims without re-running a batch, bring the batch records for a defined period, the corresponding CoAs, and your own purchase and receipt records, then reconcile them lot by lot. The receipt record is the independent anchor — the only numbers the manufacturer did not write. Then probe the edges: where the wash and rinse streams went, how the previous campaign's filter cake or cyclone catch was classified, and the reconciliation for a batch that yielded notably high rather than at target, because an unusually high yield is as diagnostic as a low one.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

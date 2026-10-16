@@ -57,6 +57,20 @@ Every duty question begins with the Harmonized Tariff Schedule. Phosphatidylseri
 
 A large share of the world's phosphatidylserine and phospholipid intermediates is produced in China, which places many US-bound shipments inside the Section 301 tariff framework on top of the ordinary duty rate. The applicable percentage depends on the tariff action list covering the specific code and has changed multiple times through exclusions and reviews, so the number that matters is the current rate for your exact code at entry time — not a rate quoted in a two-year-old supplier deck. Three habits keep the baseline under control: verify origin documentation supports the country claimed, including whether substantial transformation of intermediates genuinely occurs where the certificate says; keep exclusion and review tracking on a calendar, because Section 301 exclusions expire; and model landed cost across origin alternatives, since sunflower-derived PS from a non-Chinese origin may carry a higher ingredient price but a materially different duty profile. Tariff-adjusted comparison, not invoice comparison, is the only fair way to rank suppliers. It also changes negotiation dynamics: when both sides can see the duty layer transparently, conversations move from quoted price to true landed cost, and suppliers with better origin or classification positions can defend a higher invoice price on objective grounds rather than relationship goodwill.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Trade remedy signals importers should monitor
 
 Antidumping and countervailing duty cases rarely arrive without warning. Petitions are preceded by industry organizing, Federal Register notices open investigation windows, and preliminary determinations create the retroactive liability dates that catch unprepared importers. For a specialty ingredient category, the practical monitoring stack is light: watch the Federal Register and CBP trade remedies pages for headings related to your classification, ask your broker to flag new ADD/CVD cases in your product space, and review CBP's e-Allegations-guided industry news indirectly through trade counsel newsletters. The most important date discipline concerns new investigations: once a petition is accepted, entries made after the preliminary determination can face retroactive duties, so importers with concentrated single-origin supply should know in advance what they would do — reroute origin, draw down safety stock, or price pass-through — rather than deciding mid-crisis.
@@ -70,6 +84,20 @@ Because duty scales with declared value, valuation structure is a legitimate pla
 ### Building tariff risk into supplier contracts
 
 Tariff risk allocation should be written, not improvised. Useful clauses in PS purchase agreements include a price-adjustment mechanism tied to specific official tariff changes, with a threshold below which the supplier absorbs routine movement; an obligation for the supplier to provide origin certificates and process documentation that substantiate the claimed origin; a change-of-origin notification duty covering shifts in the supplier's own feedstock or production location; and a cooperation clause requiring documentation support if an importer pursues an exclusion, refund, or classification protest. Importers running annual volume commitments should especially protect the middle of the term — a twelve-month fixed price without tariff language effectively asks the buyer to underwrite all trade policy risk. Pair the contract work with a quarterly review of the duty lines in your landed cost model so margin erosion is visible long before it reaches the P&L.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

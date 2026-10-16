@@ -62,6 +62,20 @@ A full-service contract manufacturer offers a turnkey service: it sources ingred
 
 Full-service pricing bundles everything: ingredient procurement margin, formulation amortization, processing, packaging, often inventory carrying. It looks expensive per unit but caps the brand's fixed costs and staffing needs — appropriate for brands without technical teams or when speed-to-market outweighs unit economics. Tolling bills only the conversion step, which looks attractively low — until you total the brand's own costs: ingredient financing (PS is bought in drum quantities and sits in your warehouse), freight to the toller, quality testing, stability programs, and the internal expertise to direct all of it. Brands that switch to tolling purely on quoted unit price often find the total landed cost is comparable. Compare on total cost of ownership at your realistic annual volume, not on the converter's line rate.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Quality and Release Responsibility Under Each Model
 
 Under 21 CFR Part 111 in the US, the brand marketing the product is responsible for finished specifications and for verifying the manufacturer's work — and in practice, responsibility allocation tracks the model. With full-service OEMs, your leverage lies in the quality agreement: audit rights, batch-record access, change notification, and the right to verify release testing. With tolling, those duties are yours to execute: you approve the master manufacturing record, qualify the toller's process, own incoming testing of the PS lots, and perform or commission finished-product release. EU practice is similar in spirit — the food business operator placing the product on the market carries the compliance burden, so tolling shifts more HACCP and documentation work onto the brand or must be contractually pinned down. A well-run toll relationship gives a capable brand tighter control; a brand without QA depth outsourcing release responsibility is the classic failure mode.
@@ -75,6 +89,20 @@ Phosphatidylserine is unforgiving of handling errors, and each model handles it 
 Choose full-service when: you lack in-house QA and formulation staff; you want speed and a single accountable partner; your volumes do not yet justify ingredient warehousing; or your product needs equipment-intensive formats like softgels or gummies. Choose tolling when: you already hold a qualified PS supply and technical team; product ownership and process IP matter strategically; you run multiple SKUs from one premix; or your margin model depends on controlling ingredient cost directly. Whatever the model, audit against the same checklist: PS or phospholipid handling experience with verifiable references; oxidation-control practices in blending and hold steps; analytical capability for PS assay and peroxide value; documentation quality that survives inspection; change-notification and traceability terms in the quality agreement; and capacity headroom across seasonal peaks. The best brands revisit the model decision annually — the right answer at 20,000 units is often wrong at 2 million.
 
 ![Technician in a white coat monitoring a powder blending vessel control panel inside a dietary supplement production hall](/assets/images/phosphatidylserine-full-service-vs-toll-manufacturer-us-eu-detail.webp)
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

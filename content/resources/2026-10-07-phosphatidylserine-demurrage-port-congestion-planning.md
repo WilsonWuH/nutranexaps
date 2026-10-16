@@ -47,6 +47,20 @@ Congestion risk begins upstream of the port. Carriers blank (cancel) sailings wh
 
 At the destination port, dwell accumulates through distinct failure points: terminal backlog from vessel bunching, chassis shortages that prevent pickup, labor actions or weather closures, and — most relevant to food ingredients — customs and FDA examination holds. An exam hold commonly adds three to ten days. The exam is routine; the cost consequence comes from documentation readiness, because inconsistent paperwork both raises the probability of an intensive exam and lengthens the hold.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Congestion Hotspots and Seasonal Windows for US and EU Importers
 
 Every import lane has a congestion calendar; plan against it rather than discover it. On US West Coast lanes, Los Angeles and Long Beach are the structural hotspot, with pressure points at Chinese New Year (the pre-holiday export surge), mid-year labor contract risk, and the Q4 retail peak from August through October. East Coast lanes through Newark, Savannah, and Houston carry different exposures — Panama Canal restrictions showed how a distant chokepoint can reroute capacity between coasts overnight.
@@ -78,6 +92,20 @@ The structural answer to port congestion is to stop letting the port set your pr
 Routing carries the same logic. Direct services avoid the transshipment hub that generates much of the exposure; dual-port routing — qualifying two destination ports with comparable inland legs — turns a single-port backlog from a stoppage into a routing decision; split shipments across sailings trade a small freight premium for a smoother arrival cadence. Finally, track the data: per-lane on-time performance and historical dwell at your destination terminals turn next year's booking negotiations from opinion into evidence — and forwarders respond to numbers.
 
 ![Warehouse dock with forklift unloading fiber drums from a container while receiving staff check delivery papers](/assets/images/resource-ps-phosphatidylserine-demurrage-port-congestion-planning-detail.webp)
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

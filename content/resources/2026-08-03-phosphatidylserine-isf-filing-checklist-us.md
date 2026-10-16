@@ -86,6 +86,20 @@ If your team is importing phosphatidylserine into the United States by ocean fre
 
 ## Why ISF Is a Separate Import Task
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### The 10+2 rule is advance cargo-security data, not an entry or FDA filing
 
 The ISF rule, published as an interim final rule in 2008 and in force since January 26, 2009, requires importers and vessel operating carriers to provide advance electronic data on non-bulk cargo shipments arriving in the United States by vessel. CBP program materials describe the initiative as "10+2": ten importer data elements plus two carrier requirements, the vessel stow plan and container status messages.
@@ -178,6 +192,20 @@ The practical fix is narrow and repeatable: **assign an ISF owner at order confi
 For buyers evaluating Nutranexa, several verified site facts make ISF preparation easier without changing who owns the filing. The site states that the company was founded in 2013, operates a 110,000+ m2 campus, and primarily serves Europe and North America, and it provides visible paths for [Manufacturing](/manufacturing/), [Quality & R&D](/quality-rd/), and sales follow-up. The verified PS baseline of **25 kg MOQ** and **25 kg net per drum** supports early packaging and quantity confirmation, which feeds the invoice and stuffing details. Buyers should still confirm the exact legal identity, current address, and shipment-specific stuffing plan directly before any ISF transmission.
 
 Related resources that belong in the same import file include the [prior notice checklist](/resources/phosphatidylserine-prior-notice-checklist-us/), the [FSVP importer checklist](/resources/phosphatidylserine-fsvp-importer-checklist-us/), the [FDA food facility registration review](/resources/phosphatidylserine-fda-food-facility-registration-us/), and the [first sample shipment checklist](/resources/phosphatidylserine-sample-shipment-checklist-us-eu/). Each answers a different question, which is exactly why they should not be collapsed into one filing.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## Sources
 

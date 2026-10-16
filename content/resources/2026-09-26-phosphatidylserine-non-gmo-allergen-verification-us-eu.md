@@ -68,6 +68,20 @@ Non-GMO status is a supply-chain property, not a test result on a single lot. Te
 
 For buyers, the practical requirement is to match the evidence to the claim on your label. A "made with non-GMO ingredients" claim carries a lower documentation burden than a certified non-GMO seal, which binds you to the certification body's standards, audits, and fee structure. Decide the claim first, then buy the evidence chain that supports exactly that claim.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Soy Allergen Obligations in the US and EU
 
 In the United States, soy is one of the nine major food allergens under the FASTER Act amendments to the Food Allergen Labeling and Consumer Protection Act. A dietary supplement whose PS derives from soy must declare soy in the ingredient statement unless an exemption applies — and the relevant question for a refined phospholipid is whether soy protein residues remain at levels that trigger the requirement. FDA has signalled through guidance that highly refined derivatives may be evaluated case by case, but the burden of the evaluation sits with the brand, documented in the ingredient file, not in a supplier's silence.
@@ -87,6 +101,20 @@ The trade-offs are commercial and technical, not just regulatory. Sunflower PS t
 ## Building the Evidence File Before Your Label Prints
 
 Assemble the file as a set of named documents: signed non-GMO declaration covering the full chain; IP certificates or scheme membership for the feedstock; allergen matrix of the manufacturing facility; specification and COA showing allergen and GM-related tests where applicable; processing description supporting any refined-derivative position; and the analytical rationale for any "free from" language. Reconcile each document against the exact claim wording on your label — auditors compare them word by word. Do this before printing, not after an auditor's finding.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

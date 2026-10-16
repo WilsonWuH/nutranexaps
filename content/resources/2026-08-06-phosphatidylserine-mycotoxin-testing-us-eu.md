@@ -61,6 +61,20 @@ Mycotoxins are toxic compounds produced by moulds such as *Aspergillus*, *Penici
 
 For a buyer, mycotoxin review is about evidence: does the supplier test, how, at what quantification limit, and is the result on the batch COA or a separate report? That evidence belongs in the same folder as [COA and specification approval](/resources/phosphatidylserine-coa-specification-certificate-review/), [incoming inspection](/resources/phosphatidylserine-incoming-inspection-warehouse-release/), and [third-party verification](/resources/phosphatidylserine-third-party-testing-us-eu/).
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Where the Risk Actually Sits in a Lecithin-Derived PS Supply Chain
 
 PS is manufactured from lecithin sources such as soy or sunflower lecithin and L-serine through bio-enzymatic conversion. The supply chain starts in the field: soybean and sunflower crops can carry mycotoxin-producing moulds when harvested wet, stored humid, or handled poorly. Contamination enters at the raw-material stage, which is why raw-material control is the first line of defence.
@@ -142,6 +156,20 @@ Nutranexa's verified public facts support the sourcing layer of this review. The
 The published [PS product page](/products/phosphatidylserine/) includes a specification matrix with identity, quality, and oxidation parameters, and the public sample COAs on the [quality and R&D page](/quality-rd/) state QB/T 5821-2023 as the test basis. The published samples do not show mycotoxin rows, so buyers should request the current batch report and confirm which analytes, methods, and limits apply to the quoted product route and source.
 
 Need current PS specifications and COA evidence for your mycotoxin review? [Request the specification and COA sample](/contact/) with your source preference, target assay, and destination market.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## Conclusion
 

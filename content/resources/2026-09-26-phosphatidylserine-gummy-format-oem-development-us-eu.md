@@ -64,6 +64,20 @@ The commercial case is strong. Gummy formats dominate new cognitive-health launc
 
 Four challenges dominate. Dispersion and phase behaviour: PS in powder form must disperse uniformly through the gel mass without forming fatty pockets or hazing; the order of addition, pre-dispersion carriers, and slurry preparation matter as much as the gelling system. Water activity and migration: phospholipids interact with water and with the gel network, and over shelf life this drives moisture migration, weeping, or sandiness — the texture failures consumers notice first. Heat load: gummy cooking and depositing run hot, and phospholipids are oxidation-prone; processes that keep cook temperatures and hold times gentle protect both assay and sensory profile. Taste and mouthfeel: at functional PS loadings, the ingredient itself contributes texture and flavour, so acid blend, sweetener system, and flavour house selection need to be designed around PS rather than applied as a standard fruit base. A capable OEM solves these with controlled experiments — matrix trials varying gelling agent, water activity targets, and PS dispersion technique — not with a single heroic formulation attempt.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Stability, Analytical, and Label-Claim Considerations
 
 Stability is where PS gummies are won or lost. The development program should include accelerated stability at real-world humidity, because gummies are moisture-sensitive dosage forms and phospholipid oxidation accelerates with heat and oxygen exposure. Analytical method matters more than brands expect: the HPLC method that assays bulk PS powder does not always extract PS cleanly from a gel matrix, so the OEM must validate a gummy-specific assay with proper extraction — otherwise stability data is noise. Packaging and coating decisions compound the picture: oil or wax coating layers designed for other actives can interact with phospholipids, while uncoated gummies need moisture-barrier packaging and desiccant strategy consistent with the water-activity target. Finally, label claims: declare per-gummy amounts achievable within overage and stability margins, and let the stability data — not optimism — set the expiry date. A PS gummy labelled at 300 mg that assays at 260 mg at month twelve is a compliance failure in the US and EU alike.
@@ -77,6 +91,20 @@ A disciplined path has five stages. Feasibility: small-lab matrix trials confirm
 ## Selecting and Contracting the Gummy OEM
 
 OEM selection for a PS gummy is a technical fit question before a price question. Evidence to request: prior phospholipid or fat-soluble-active gummy work, water-activity and texture analytical capability in-house, method development capacity for matrix-specific PS assay, and stability chambers running both real-time and accelerated conditions. Process capability: low-oxidation handling — nitrogen protection or controlled atmosphere where relevant, gentle cook and hold parameters, and coating options that do not fight the ingredient. Quality structure: 21 CFR Part 111 compliance for US supply, EU food-supplement expectations where applicable, and willingness to sign a quality agreement with change-notification terms for the matrix, flavour suppliers, and coating materials. Commercial terms: who owns the formulation and its improvements, minimum order quantities matched to a realistic demand curve, and development-phase milestones with defined acceptance criteria before bulk commitment. One warning sign outweighs all marketing decks: an OEM who quotes your PS gummy in a day, at standard pricing, with no questions about dose, matrix, or stability, has not understood the ingredient.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

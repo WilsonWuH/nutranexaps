@@ -59,6 +59,20 @@ In the United States, pet supplements generally live under the AAFCO model and s
 
 In the EU, pet food is governed by Regulation (EC) No 767/2009 and the broader feed hygiene framework (Regulation (EC) No 183/2005). There is no pet equivalent of the human novel food list; the operative questions are whether the ingredient is a feed material or a feed additive (an additive positioning would fall under the authorization regime of Regulation (EC) No 1831/2003), whether labeling rules are met, and whether the supply chain satisfies feed hygiene requirements. Cats and dogs are non-food-producing animals, which simplifies some hygiene burdens, but your supplier should still confirm which of its certifications cover pet food use. Ask early: not every human-food PS producer will answer feed questionnaires, and the ones that do will save you months.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Sourcing Specifications and Quality Considerations for Pet Applications
 
 Chemically, the PS you buy for a dog chew is the same soy- or sunflower-derived powder you buy for a human capsule — typically an enzymatically converted phospholipid complex standardized to a declared PS content. What changes is the emphasis. Palatability matters enormously in pet formats, so sensory data — odor, taste contribution, color in the finished chew — moves up the priority list; a supplier who provides retained samples for palatability trials is worth its weight in gold. Particle size and flowability drive the same uniformity questions as in human powders, and moisture and water activity limits matter for chew stability just as for capsules.
@@ -78,6 +92,20 @@ Extend your existing supplier questionnaire rather than writing a new one — mo
 Pet formulas express doses per kilogram of body weight, and published animal research on PS is thinner than the human literature, so most brands position it as a supportive active alongside better-studied ingredients. Practical notes: PS powder disperses well in fat-containing chew bases; it is heat-sensitive, so cold-process steps protect the declared content; and stability testing should use the finished chew or topper matrix, not the raw powder alone, since fat-containing matrices can oxidize.
 
 Work with your contract manufacturer on overages justified by stability data, and have the supplier confirm compatibility with your excipients early. Above all, avoid any disease-claim language — "supports cognitive health in senior dogs" is the register pet regulators and retailers accept; anything that reads as treatment of cognitive dysfunction invites regulatory attention in both the US and EU.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

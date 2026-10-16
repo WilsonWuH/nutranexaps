@@ -68,6 +68,20 @@ A workable SQA for PS typically covers: the named manufacturing site(s) and a pr
 
 The specification annex is where quality agreements earn their keep. Three governance points matter. First, version control: the spec in force is the one attached to the agreement, and any revision follows the change-notification procedure, not an email from a salesperson. Second, method agreement: when your incoming lab result disagrees with the supplier's COA, the dispute is often methodological — different HPLC methods for phospholipid assay, different handling of water content, different sampling plans. The SQA should name the release methods or a mutually accepted arbitration method. Third, acceptance criteria ownership: buyers importing PS into formulations with tight sensory or performance windows (colour, dispersion, peroxide value limits, pH of dispersion) should set those tighter limits in the annex rather than accepting a generic industry spec that permits a range wider than their product tolerates.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Change Control and Prior-Notification Clauses
 
 Change notification is the heart of the agreement. The structure that works is a change matrix: a list of change categories, each classified as either "notify before implementation" or "notify within X days of implementation." Changes that deserve prior notification for a PS supply include: change of manufacturing site or contract manufacturing use; change of raw material source or supplier of the lecithin feedstock; change of enzyme preparation or immobilisation system; change of process parameters that affect the impurity or solvent-residue profile; change of packaging materials in product contact; change of release testing laboratory or critical method; and change of ownership or management of the quality unit.
@@ -83,6 +97,20 @@ When an incoming result fails or drifts, the SQA defines the mechanism: timefram
 ## Audits, Document Access, and Enforcement
 
 The agreement should grant audit rights proportionate to risk: full on-site audits at a defined frequency, for-cause audits after significant events, and remote or document-based audits in between — plus access to the documents your customers will ask for: site master file summaries, certification copies, method validation summaries, and change notifications. Enforcement provisions matter as much as rights: a cure period for breaches, suspension of orders while a critical deviation is open, termination rights tied to quality events (repeated unnotified changes, falsified documentation, loss of certification), and a statement that quality-agreement obligations survive contract renewal cycles. One practical test of any SQA: if a supplier changes their drum liner resin tomorrow, how many clauses, and whose signatures, does that change touch? A well-drafted agreement answers in one sentence.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

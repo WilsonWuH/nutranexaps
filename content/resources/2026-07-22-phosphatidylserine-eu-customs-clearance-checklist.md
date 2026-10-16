@@ -71,6 +71,20 @@ For a clean handoff, keep the customs file connected to?but separate from?the [p
 
 ## Why Customs Clearance Needs Its Own PS File
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Customs, food compliance, and quality approval are separate decisions
 
 Customs release, food-law readiness, and internal QA release may happen around the same shipment, but they do not answer the same question. Customs needs declaration data and supporting documents. Food and regulatory teams need to confirm the intended market route and any applicable restrictions or official controls. QA needs the approved specification, current batch COA, receiving criteria, and document status.
@@ -175,6 +189,20 @@ The best prevention is a short pre-arrival review built around evidence, ownersh
 Nutranexa presents separate commercial paths for general, soy, and sunflower phosphatidylserine, which helps buyers maintain route-specific identity. The company states that it was founded in 2013, operates a 110,000+ m2 campus, focuses exports primarily on Europe and North America, and supports R&D cooperation. Its site also provides manufacturing, packaging, dispatch, specification, and COA context that buyers can use during preliminary supplier review.
 
 For logistics planning, the published PS baseline is a 25 kg MOQ and 25 kg net per drum. These are useful inquiry facts, not substitutes for the final quotation, invoice, packing list, or transport record. Buyers should request current documents for the exact order and connect them to [manufacturing evidence](/manufacturing/), [Quality & R&D](/quality-rd/), [packaging and dispatch examples](/cases/), and their internal customs master data.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## Sources
 

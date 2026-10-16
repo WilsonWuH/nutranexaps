@@ -54,6 +54,20 @@ Phosphatidylserine concentrates the classic peak-season risks into a single high
 
 Four windows shape the year. Golden Week in early October closes Chinese factories and ports for a week, so exports pile up in late September and restart in a rush mid-month. Q4 retail season runs from October through December, when US and EU importers compete for space on transpacific and Asia-Europe loops and transit reliability drops. Chinese New Year is the largest disruption: factories wind down one to two weeks before the holiday and restart slowly for two to three weeks after, so January shipments must effectively be booked and produced in December, and the pre-CNY rush starts as early as late November. Finally, European year-end inventory builds and any regional events — port labor actions, Panama or Red Sea routing changes — add volatility that is impossible to schedule but certain to recur. The practical takeaway is to reverse-engineer each window from your production start date backward, marking booking cutoffs, factory ex-factory dates, and vessel cutoffs on the same timeline as your fill schedule.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## How Much Buffer to Add to Lead Times
 
 In off-peak weeks, a booked container on a reliable service is a planning anchor. In peak weeks, treat published transit times as a floor, not a promise. A workable rule is to add two to three weeks of buffer for Q4 sailings and three to four weeks for anything ex-factory between mid-December and mid-February, then confirm the buffer against the specific carrier service your forwarder proposes. Work the timeline backward with named milestones: production completion, container stuffing, drayage to port, vessel cutoff, sailing, ocean transit, terminal handling, customs clearance, and delivery to your 3PL. Each handoff is a place where a peak-season backlog inserts delay. For PS specifically, add one more checkpoint: the booking should allow enough slack that if the vessel rolls, the next sailing still lands inside the stability and production window, or the decision point for an air freight switch arrives early enough to act. Importers who plan the buffer per shipment rather than per year consistently avoid the expediting fees that eat margin.
@@ -75,6 +89,20 @@ Even good booking plans need a fallback. Air freight is the highest-value contin
 ## Post-Season Review and Data Capture
 
 The cheapest improvement to next year's peak season is a structured debrief of this year's. Within a month of the last container clearing, assemble the actual dates behind every shipment: ex-factory, gated in at origin, sailed, discharged, cleared, and delivered. Compare them with the plan and identify where the buffer was consumed — was it the factory that stuffed late, the terminal that stacked out, the customs queue, or the 3PL appointment backlog? Feed the findings back into three artifacts. Update the lead-time table so next year's buffers come from your own data instead of industry averages. Update the supplier scorecard, since on-time ex-factory performance is a procurement variable even though the delay surfaced in transport. And update the contingency rules, because the trigger date for an air freight switch is only useful if it reflects the real distribution of delay, not the first bad week. Importers who skip the debrief tend to repeat the same season annually; importers who document it usually find that one or two root causes, a single congested terminal or a single slow documentation step, explain most of the damage.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

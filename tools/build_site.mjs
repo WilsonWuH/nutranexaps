@@ -1027,6 +1027,20 @@ function renderResourceMarkdown(markdown) {
       html.push(`<ol>${items.join("")}</ol>`);
       continue;
     }
+    if (line.startsWith("<!-- Embedded CTA Box:")) {
+      const block = [line];
+      i += 1;
+      while (i < lines.length && !lines[i].trim().endsWith("</aside>")) {
+        block.push(lines[i]);
+        i += 1;
+      }
+      if (i < lines.length) {
+        block.push(lines[i]);
+        i += 1;
+      }
+      html.push(block.join("\n"));
+      continue;
+    }
     const paragraph = [line];
     i += 1;
     while (i < lines.length) {

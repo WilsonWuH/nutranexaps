@@ -57,6 +57,20 @@ Start with the paper, because it is cheap to check and quickly disqualifies weak
 
 Ask for certificates scoped to the exact warehouse and handling site, not a corporate group certificate — multi-site 3PL groups routinely differ between facilities. Also ask how long they have held the certification at that site; a recently certified site with no audit history is a different risk than a facility that has passed three surveillance audits.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Temperature, Warehouse Zones, and Handling Requirements
 
 PS is an oxidation-sensitive phospholipid. Heat and light accelerate peroxide-value growth, so the warehouse environment matters as much as the truck that delivered the goods. In the selection process, require:
@@ -88,6 +102,20 @@ After go-live, keep the relationship under quality governance: an annual audit o
 Rate cards hide the real cost drivers. In addition to pallet storage rates, model inbound handling, put-away fees, pick-and-pack charges, climate-zone premiums, minimum monthly storage (which punishes slow inventory turns), and administrative charges for reports or document requests. A warehouse that looks 20 percent cheaper on storage can cost more in a year once handling and minimums are included.
 
 On contract terms, negotiate for: defined temperature-control service levels with a cure-and-compensation mechanism for failures, clear liability and insurance responsibility for stock value (including whether heat damage claims are excluded), audit rights in the agreement itself, data access and export rights for traceability records, and termination assistance that includes inventory handover. These clauses are standard with mature 3PLs; reluctance to include them is itself a signal.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 ### Q: Do we need a pharma-grade warehouse for PS, or is food grade enough?

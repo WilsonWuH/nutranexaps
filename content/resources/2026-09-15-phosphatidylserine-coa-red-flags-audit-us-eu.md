@@ -64,6 +64,20 @@ The most common defect in PS CoAs is an assay result with no defensible method b
 
 PS assays are genuinely method-sensitive: HPLC-UV, ELSD/CAD detection, and older spectrophotometric phosphorus methods respond differently to the phospholipid class mix and can differ meaningfully. Red flags in this block include a method stated only as "HPLC" or "in-house" with no document number or version; results on a different basis than the specification; assays rounded to suspiciously clean numbers across consecutive lots; and no identified calibration source — without a traceable PS reference standard, the number has no anchor. If the method cannot be produced on request, treat the assay as unverified and test the lot independently before release.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Red Flag 2: Incomplete Impurity, Heavy Metal, and Micro Panels
 
 The contaminant block is where template-driven CoAs fall apart. Frequent patterns: heavy metals listed as "complies" instead of numeric results against limits; micro panels omitting the organisms that matter for your destination market; residual solvents reported only for the solvents the site prefers while the extraction history says otherwise; and "not detected" verdicts without detection limits.
@@ -98,6 +112,20 @@ Sooner or later your incoming test will disagree with the supplier's CoA. A disc
 3. **Escalate to an independent third party.** For persistent gaps — especially assay or heavy metals — send a retained sample to an accredited laboratory both parties accept, with chain of custody.
 4. **Quarantine and document.** The lot stays on hold until resolved, and the investigation goes into your deviation system. If you accept the material, the rationale belongs in the file.
 5. **Feed the result back to supplier management.** A pattern of discrepancies is a scorecard event — and under 21 CFR 111, evidence for why you do, or no longer can, rely on the supplier's CoA in lieu of your own testing.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

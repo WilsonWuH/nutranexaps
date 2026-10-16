@@ -78,6 +78,20 @@ Two consequences follow. First, confirm the specific entry covering your ingredi
 
 The same discipline applies to the specification. If your supplier's dossier was built around one source material and you later switch to another, the authorisation you relied on may no longer describe the material you are buying, so sourcing changes should trigger a regulatory review and not only a specification amendment.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## Supplement Composition and Labelling in Great Britain
 
 Food supplements in Great Britain are regulated under retained food supplements regulations that operate separately for England, Scotland and Wales. They follow much of the pre-exit framework: notification before placing on the market, compositional requirements, and mandatory labelling and nutrition declaration rules that mirror EU food information law without being administered by the EU.
@@ -97,6 +111,20 @@ For a phosphatidylserine product this matters most for claims that go beyond com
 A supplier documentation pack built for an EU filing usually needs reissue rather than reuse. Ask for a fresh specification confirming source material, PS content basis and assay method, cross-referenced to the authorisation you rely on. Ask for an allergen and composition declaration covering the soy origin position and any GB-specific wording, and for a signed, dated statement of the ingredient's regulatory status naming the GB list entry you identified. Ask for certificates — GMP, food safety, organic, halal, kosher — with validity dates in force, because a certificate that lapsed during an EU filing is not evidence for a GB launch, and for CoAs representative of current production with the laboratory's accreditation stated.
 
 Market-neutral declarations are worth requesting explicitly, since one document set serving both the EU and GB files saves a revision cycle on every future change. Then run the launch in order: confirm the GB novel food position with dated evidence, confirm the claims and the dose conditions, design the label around a GB-established operator, complete notification before placing the product on the market, reissue supplier documents against the GB file, and only then commission artwork. If Northern Ireland is in scope, run the EU track in parallel from the start rather than retrofitting it later.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

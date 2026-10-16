@@ -63,6 +63,20 @@ Implementing Regulation 2019/1793 turns that framework into operational lists. I
 
 A 25 kg drum described only as “phosphatidylserine powder” cannot be screened reliably. The importer needs the soy or sunflower source, carrier or matrix, formulation, intended use, and proposed classification. The [manufacturing-process guide](/resources/phosphatidylserine-manufacturing-process-europe/) explains the ingredient route; the [EU customs-clearance checklist](/resources/phosphatidylserine-eu-customs-clearance-checklist/) covers classification and entry documents.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## What the Current 2019/1793 Check Shows for Phosphatidylserine
 
 The latest consolidated version reviewed for this article is dated 18 February 2026 and incorporates Commission Implementing Regulation (EU) 2026/194. A direct search of that consolidated legal text returned no occurrence of “phosphatidylserine,” “lecithin,” “soybean,” or “soya.” The listed China entries visible in the annexes concern other named foods and hazards, not a generic category covering all plant-derived ingredients.
@@ -168,6 +182,20 @@ The supplier supports identity and shipment evidence; the EU importer decides th
 Nutranexa was founded in 2013 and operates a 110,000+ m2 campus. Its website presents PS as a lead ingredient, separates soy and sunflower PS routes, shows available specification and COA evidence, and references R&D cooperation with East China University of Science and Technology. Published commercial information states a 25 kg MOQ and 25 kg net per drum for PS, with primary export focus in Europe and North America. Factory, packaging, and dispatch imagery is also available for buyer review.
 
 Those facts support the identity, supplier, packaging, and lot-data layer. They do not establish a tariff code, decide Regulation 2019/1793 scope, register an importer in TRACES, or replace a BCP decision.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

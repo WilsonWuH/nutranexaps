@@ -76,6 +76,20 @@ California's Proposition 65 is the real constraint for most US brands, because t
 
 This is why buyers should derive their lead limit from dose math, not from copying a neighboring line in someone else's template. If your highest-dose SKU is 300 mg/serving and you want a tenfold margin under the Prop 65 threshold, an ingredient limit around 0.15–0.2 ppm lead is defensible and achievable; specifying 0.02 ppm for a 300 mg dose is measurement theater — most labs cannot certify to it with statistical confidence on a routine basis, and you will spend the contract's life in retest disputes.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## The Method Behind the Number: Why ICP-MS Details Matter
 
 A heavy metals result is only as good as its preparation and method, and phospholipids are a demanding matrix — a fatty, waxy material that does not digest like an aqueous botanical extract. Your specification should state:
@@ -99,6 +113,20 @@ When a brand's screen reports 0.09 ppm lead against a supplier COA of "<0.02," t
 Run the conversation in this order. First, fix your dose and market exposure math — Prop 65 for US SKUs, EU 2023/915 headroom for EU SKUs — and write the limit you can defend, not the limit that looks toughest. Second, ask the supplier for process data: their historical lot results for the last 12–24 months. A limit should sit above their process capability with margin, the same logic buyers apply to assay specs. If their lead results run consistently below 0.05 ppm, a 0.1 ppm limit gives both sides headroom; if they have occasional 0.08 ppm excursions, a 0.05 ppm limit manufactures nonconformances. Third, fix the method: ICP-MS, microwave digestion, stated LOQ, 17025-accredited lab. Fourth, define the failure protocol — retained sample, independent retest, and who pays if the retest confirms versus clears the original. Fifth, put sampling on a schedule: full heavy metals panel per production lot is the norm for a new supplier; periodic verification testing (every fifth or tenth lot, plus annual) is defensible once a track record exists and lowers cost for both sides.
 
 Buyers who present this sequence get better specs and better prices; suppliers respect a limit they can see is derived from dose math and their own capability data, and they price risk accordingly. Buyers who present an arbitrary 0.02 ppm table get a COA written to pass, not to inform.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

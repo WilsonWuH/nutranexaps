@@ -57,6 +57,20 @@ The notification rules you see in the RASFF Window come from Commission Implemen
 
 For an ingredient buyer, the classification tells you where the product was intercepted. A border rejection is a consignment-level event that the exporter can reship or re-test, so it raises questions about that supplier's release controls. An alert means the product reached the market in at least one Member State and had to be pulled back, a stronger signal about the manufacturer's quality system. Information notifications sit in between: they are real findings, but the context, such as whether the product was on sale, determines how much weight to give them.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## How to Search the RASFF Window for a PS Ingredient
 
 The RASFF Window is the public, searchable database maintained by the European Commission, and it is the tool to use for this routine. You can reach it from the Commission's RASFF page, and it lets you filter by product, product category, hazard, notification type, country of origin, and date. A practical search sequence for phosphatidylserine looks like this:
@@ -113,6 +127,20 @@ Nutranexa's sales and quality teams can provide the current PS specification, CO
 Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary manufacturing entity, Shandong Nutranexa Biopharmaceutical Co., Ltd., was founded in 2013 and operates a 110,000+ m2 production campus, with a primary export focus in Europe and North America. For PS, the published baseline is a 25 kg minimum order quantity with 25 kg net per drum. These facts help a European buyer put RASFF screening into scale: a first order can be a single drum, so the monitoring routine should be lightweight but dated and repeatable, and the same drum-level evidence used for [pre-shipment inspection](/resources/phosphatidylserine-pre-shipment-inspection-checklist/) can support a RASFF-related question.
 
 On the document side, Nutranexa provides PS COA and specification evidence, factory and packaging imagery, and dispatch imagery for buyer review, supported by quality and R&D cooperation information. A buyer's RASFF file should hold these verified documents alongside the dated search results, because the alert record and the document trail answer different questions: RASFF shows what authorities have flagged in a category, while the COA and manufacturing evidence show what a specific lot was tested and released against. Neither replaces the other, and both belong in the [repeat-order document review](/resources/phosphatidylserine-repeat-order-document-review/) cycle.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

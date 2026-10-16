@@ -64,6 +64,20 @@ In the United States, a medical food is a food formulated to be consumed or admi
 
 The EU treats FSMP as a distinct legal category under the Food for Specific Groups framework, with composition and information requirements set out in Commission Delegated Regulation (EU) 2016/128. FSMP are intended for the dietary management of people who cannot achieve sufficient intake through normal food, and are classified as nutritionally complete, nutritionally incomplete, or a supplementary stipulated diet. Unlike supplements, FSMP are not notified through food-supplement channels; placement runs through national competent authorities with varying procedures, and labelling must carry mandatory statements on intended use and physician supervision. For PS, the formulation narrative must show why dietary management requires the phospholipid at the proposed dose and why normal foods cannot supply it. Member-state practices differ, so market-by-market review is standard, not optional.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## What the Stricter Categories Demand from the Ingredient Dossier
 
 In both markets, the ingredient evidence bar rises well above supplement practice. Expect to compile: a full specification with identity, purity, and contaminant limits matched to the finished-product risk profile; a stability program showing the PS holds assay and oxidative quality through the claimed shelf life; allergen and processing-aid transparency covering the soy or sunflower raw material chain; and manufacturing documentation — GMP evidence, batch records on request, and change-control commitments. Analytical identity work should go beyond routine COA review, with method summaries and independent verification testing on incoming lots. The formulation rationale document — why PS, why this dose, why this population — is what converts an ingredient spec into a defensible category position, and every claim in it should trace back to a document in the dossier.
@@ -77,6 +91,20 @@ Supplier qualification for these projects mirrors pharmaceutical-style thinking.
 ## Practical Launch Sequence for PS Medical Food and FSMP Projects
 
 A workable sequence: define the target population and the distinctive-requirement rationale first, because it determines dose, format, and market. Select the PS grade on specification, stability data, and documentation scope — not price. Build the formulation with a contract manufacturer experienced in clinical nutrition formats, and lock the quality agreement before pilot production. Run stability from the first pilot batch. File or notify per market — EU procedures vary by member state, while the US path is guidance-based but enforcement-active. Keep the dossier living: change control, annual supplier review, and complaint trending feed it continuously. Projects in this category fail for documentation reasons more often than technical ones.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

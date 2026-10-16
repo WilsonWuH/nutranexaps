@@ -65,6 +65,20 @@ The relevant categories are:
 
 Two points matter for PS buyers. First, structure/function claims do not require FDA pre-approval, but the firm must have the evidence before marketing. Second, a claim that mentions a disease is not a structure/function claim; a supplement bearing a disease claim is regulated as a drug unless the claim is an authorized health claim for which the product qualifies.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## How to Test Whether a PS Claim Is a Structure/Function Claim or a Disease Claim
 
 FDA's rule at 21 CFR 101.93(g) defines a disease as damage to an organ, part, structure, or system of the body such that it does not function properly, or a state of health leading to such dysfunction. The rule lists ten criteria for deciding whether a statement claims to diagnose, mitigate, treat, cure, or prevent disease. The criteria that most often surface in PS label review are:
@@ -156,6 +170,20 @@ When a US brand or contract manufacturer receives a PS quotation and starts clai
 For teams that have not yet selected a PS source, the source decision affects the document set: [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/) have separate specification and COA evidence paths, and the [supplier COA qualification review](/resources/phosphatidylserine-supplier-coa-qualification-us/) explains how US contract manufacturers decide what incoming evidence is required. The [NDI review](/resources/phosphatidylserine-ndi-review-us/) covers the separate question of whether a new dietary ingredient notification is needed before marketing, and the [Supplement Facts label review](/resources/phosphatidylserine-supplement-facts-label-us/) covers the panel itself.
 
 Need current PS specifications, COA samples, source documentation, and manufacturing evidence for your claim file? [Request the specification and document evidence](/contact/) with your target assay, source preference, application, and destination market.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## Conclusion
 

@@ -57,6 +57,20 @@ Customs clearance is often bundled into freight forwarding, but the skill sets d
 
 In the United States, customs brokers must hold a CBP license, and your working relationship starts with a valid power of attorney. Verify the license directly, confirm who the national permit holder is if the office you are dealing with is a branch, and check the bond situation: if you import under a continuous bond, the broker should know how your PS volumes interact with it, and if entry bonds are used, the bond amount must reflect duty and PGA exposure. FDA coordination is the differentiator for food ingredients. Ask candidates how they handle FDA examination notices and whether they can file Prior Notice, respond to may-proceed holds, and arrange private laboratory sampling if CBP or FDA detains a lot. An agent familiar with dietary ingredient entries will already know the difference between an FDA doc review and a physical exam — and will know that a detained container of phosphatidylserine is a clock running against your retest date. Communication discipline is the other half of the capability question. Ask candidates how they notify clients when an entry is flagged, what their escalation path looks like during a hold, and whether they provide entry summaries and supporting documents immediately after clearance rather than on request. The answers reveal how your worst day with them will go, not just your average one.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### EU entry: representation models and AEO status
 
 The EU structure is different. Your import can be cleared under direct representation, where the agent acts in your name and you remain the declarant, or indirect representation, where the agent becomes jointly liable for customs debt — which is why many agents charge more for it or decline it for new clients. Neither model is "better" by default; what matters is that liability, VAT handling, and deferment arrangements are explicit in the contract. Importers without an EU entity also encounter fiscal representation for import VAT postponement, which several member states now allow through Article 23-style licenses or postponed VAT accounting schemes. Finally, ask about Authorized Economic Operator status. An AEO-certified agent typically faces fewer physical examinations and can prioritize clearance during peak congestion — a meaningful advantage for temperature-sensitive phospholipid shipments in summer.
@@ -70,6 +84,20 @@ Clearance fee quotes look similar but rarely are. The common US structure is a p
 ### Selection checklist and red flags
 
 A disciplined selection takes one week. Shortlist three candidates, verify licenses and AEO or equivalent status, request references from food or dietary ingredient importers, and run the normalized fee scenario. Then issue a small test entry before routing a full PS container through. During interviews, watch for red flags: unwillingness to sign a written service agreement, vague answers about who is liable for a classification error, refusal to provide entry documents promptly after clearance, quoted HTS codes on request without seeing your specification, and pressure to route everything under indirect representation "for convenience." A good agent asks you hard questions about your product, your supplier documents, and your bond — because your file quality is their clearance speed. Buyers who treat the agent as part of the compliance chain, and revisit performance annually alongside supplier reviews, avoid the demurrage invoices that surprise less organized importers.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

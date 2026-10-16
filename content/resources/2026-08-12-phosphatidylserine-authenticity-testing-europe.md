@@ -43,6 +43,20 @@ European food law is explicit about adulteration. Article 8 of Regulation (EC) N
 
 The enforcement layer is equally explicit. Regulation (EU) 2017/625, the Official Controls Regulation, brings fraudulent and deceptive practices within the scope of official controls performed by Member State authorities. For cross-border cases, the Commission coordinates the EU Agri-Food Fraud Network (FFN), which links the Commission with the liaison bodies designated by Member States. The IMSOC rules (Commission Implementing Regulation (EU) 2019/1715) define a food fraud notification as a non-compliance notification concerning any suspected intentional action by businesses or individuals for the purpose of deceiving purchasers and gaining undue advantage. In plain terms: fraud is intentional deception for advantage, and adulteration is one of the practices EU food law aims to prevent.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Authenticity is separate from contaminant testing and COA arithmetic
 
 Most PS quality work asks whether a batch meets its specification: assay, moisture, heavy metals, microbiology, and other parameters. Authenticity asks a different question: is the powder actually PS of the declared source and grade, and does the paperwork belong to this batch? A batch can meet every contaminant limit and still be mislabeled, diluted, or substituted. So authenticity review sits alongside, not inside, routine specification review. The [COA and specification review guide](/resources/phosphatidylserine-coa-specification-certificate-review/) explains how to verify that a certificate is complete and consistent; this guide adds the identity and provenance layer on top of it.
@@ -149,6 +163,20 @@ The cheapest time to verify authenticity is before the purchase order, not after
 Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary manufacturing entity, Shandong Nutranexa Biopharmaceutical Co., Ltd., was founded in 2013 and operates a 110,000+ m2 production campus, with a primary export focus in Europe and North America. For PS, the published baseline is a 25 kg minimum order quantity with 25 kg net per drum.
 
 These facts give a buyer a workable basis for the authenticity file. Separate [soy PS](/products/soy-phosphatidylserine/) and [sunflower PS](/products/sunflower-phosphatidylserine/) routes keep the source declaration specific rather than generic. A 25 kg drum baseline keeps lot linkage simple: one drum, one label, one lot reference to reconcile with the COA and packing list. COA and specification evidence, factory and packaging imagery, and dispatch imagery give procurement and quality teams visible records to review. None of this replaces independent verification, and it is not a promise that documents alone prove a batch; it means the evidence a buyer needs to request is available in a controlled form, with the [manufacturing](/manufacturing/) and [quality & R&D](/quality-rd/) pages describing the capability behind it.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

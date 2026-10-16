@@ -50,6 +50,20 @@ The PPWR applies to all packaging placed on the EU market and to all packaging w
 
 The transport-packaging definition matters for an ingredient importer. A 25 kg PS drum is the unit that moves from factory to EU warehouse, so it is the packaging the importer places on the EU market, together with the liner, labels, pallet, and wrapping. "Placed on the market" means made available for the first time on the EU market in the course of commercial activity; that first placing triggers the Regulation's obligations.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### The compliance gate: packaging may only be placed on the market if compliant
 
 The central rule is that packaging may be placed on the EU market only if it complies with the Regulation's sustainability and labelling requirements. That is not a self-assessment that stays on the supplier's desk: conformity must be demonstrable through technical documentation and an EU Declaration of Conformity that the operator placing the packaging on the market can produce when a market surveillance authority asks for it.
@@ -176,6 +190,20 @@ If the file cannot be completed before shipment, hold the order or release decis
 Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary manufacturing entity, Shandong Nutranexa Biopharmaceutical Co., Ltd., was founded in 2013 and operates a 110,000+ m2 production campus, with a primary export focus in Europe and North America. For PS, the published baseline is a 25 kg MOQ with 25 kg net per drum.
 
 Those facts support the review in a practical way. A 25 kg drum baseline keeps the configuration simple: one drum, one liner, one label, one lot reference to reconcile with the [COA](/resources/phosphatidylserine-coa-specification-certificate-review/), packing list, and shipment records. Nutranexa provides PS COA and specification evidence, factory and packaging imagery, and dispatch imagery for buyer review, supported by [Quality & R&D](/quality-rd/) and [manufacturing](/manufacturing/) context. Buyers should request the current packaging configuration, material details, and documentation for the exact quoted route from the sales team, and confirm the importer-side PPWR obligations for the destination member state. Nothing on this page claims any specific Nutranexa packaging is PPWR compliant; that depends on the exact configuration, destination market, and operator role.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

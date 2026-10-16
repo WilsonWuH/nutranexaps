@@ -56,6 +56,20 @@ The [HS code review](/resources/phosphatidylserine-hs-code-review-us-canada/) ex
 
 ## Transaction Value: The Baseline Method for PS Imports
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### What price actually paid or payable means
 
 Under [19 U.S.C. § 1401a(b)(1)](https://www.law.cornell.edu/uscode/text/19/1401a), transaction value is the price actually paid or payable when sold for exportation to the United States, plus the statutory additions in the same section. [19 CFR § 152.103(a)](https://www.law.cornell.edu/cfr/text/19/152.103) adds that the price is considered without regard to how it was derived: it may include discounts, negotiations, formula pricing, or indirect payments.
@@ -166,6 +180,20 @@ Under [19 U.S.C. § 1592](https://www.law.cornell.edu/uscode/text/19/1592), impo
 Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary manufacturing entity, Shandong Nutranexa Biopharmaceutical Co., Ltd., was founded in 2013 and operates a 110,000+ m2 campus, with a primary export focus in Europe and North America. For PS, the published baseline is a 25 kg minimum order quantity with 25 kg net per drum.
 
 Those facts help build a valuation and entry file: the route-specific pages for [Phosphatidylserine](/products/phosphatidylserine/), [Soy Phosphatidylserine](/products/soy-phosphatidylserine/), and [Sunflower Phosphatidylserine](/products/sunflower-phosphatidylserine/) define commercial descriptions that should match the invoice; [Quality & R&D](/quality-rd/) and [Manufacturing](/manufacturing/) provide specification, COA, and imagery context; and sales can confirm current product and packaging details before the broker file is assembled. As with any supplier, the buyer's customs broker and legal team decide the final entered value; this article does not assert any valuation result for Nutranexa shipments.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## Conclusion
 

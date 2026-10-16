@@ -63,6 +63,20 @@ Once the profile is set, the shipping configuration is engineered against it. Fo
 
 USP's storage-and-distribution guidance (General Chapter on the risks and mitigation strategies for storage and transportation of drugs, extended in practice to excipients) and the general quality-system expectation of documented control make this the defensible benchmark for B2B customers; see [USP standards](https://www.usp.org/standards).
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Step 3: Lane Qualification and Ongoing Monitoring
 
 Chamber tests prove the packaging; **lane qualification** proves the route. A lane is defined by origin, destination, mode, season, and service level — "Shanghai to Los Angeles, ocean LCL, summer, port-to-door" is a lane. Qualification uses instrumented shipment(s) on the actual route, recording temperature (and humidity where relevant) from dock to dock, and comparing the profile against both the packaging qualification and the product's transport specification. Practical guidance:
@@ -96,6 +110,20 @@ Despite good packaging, excursions happen: a transshipment delay, a de-vanning b
 ### Costs and Trade-Offs: Right-Sizing the Validation Effort
 
 Cold-chain validation is an investment, and it should be right-sized. Full summer/winter chamber qualification plus multi-shipment lane qualification is clearly warranted for high-value lanes, retail customers with audit programs, and summer-loaded reefer-dependent routes. For shorter, temperate lanes with robust ambient evidence, a risk-based approach — passive protection sized on supplier data, instrumented verification shipments, and annual re-verification — may be proportionate. What is never proportionate is skipping validation entirely and discovering oxidative drift at the shelf-life test point, when the affected inventory is measured in pallets rather than cartons. Align the effort with your quality agreement expectations and, where your customers are EU-based, with the documented food-safety controls expected under an ISO 22000-aligned system ([ISO 22000:2018](https://www.iso.org/standard/71726.html)).
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

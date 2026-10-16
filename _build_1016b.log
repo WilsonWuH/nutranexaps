@@ -1,0 +1,63 @@
+
+> nutranexaps@1.0.0 build
+> npm run generate && node tools/prepare-next.mjs && next build
+
+
+> nutranexaps@1.0.0 generate
+> npm run trust:verify && node tools/build_site.mjs && node tools/localize_site.mjs && npm run identity:verify
+
+
+> nutranexaps@1.0.0 trust:verify
+> node tools/verify_trust_documents.mjs
+
+Trust documents: 7 files reviewed; review date 2026-09-03; no expired dated documents.
+NOTICE: U.S. Food Facility Registration Record: renewal review due in 76 days (2026-12-31)
+Built 361 routes
+[progress] page 40/361
+[progress] page 80/361
+[progress] page 120/361
+[progress] page 160/361
+[progress] page 200/361
+[progress] page 240/361
+[progress] page 280/361
+[progress] page 320/361
+[progress] page 360/361
+Generated 2527 localized pages across 7 translated locales (English stays at the site root). Sitemap URLs: {"sitemap-core.xml":131,"sitemap-products.xml":66,"sitemap-resources-en.xml":216,"sitemap-news-en.xml":108,"sitemap-resources-localized.xml":9,"sitemap-news-localized.xml":7}
+
+> nutranexaps@1.0.0 identity:verify
+> node tools/verify_company_identity.mjs
+
+Company identity verification passed: 5774 HTML files, 5774 Organization nodes, no deprecated company names.
+Prepared Nutranexa static pages for Next.js.
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of D:\Projects\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * D:\Projects\nutranexaps\package-lock.json
+
+▲ Next.js 16.2.9 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 956ms
+  Running TypeScript ...
+  Finished TypeScript in 170ms ...
+  Collecting page data using 5 workers ...
+  Generating static pages using 5 workers (0/4) ...
+  Generating static pages using 5 workers (1/4) 
+  Generating static pages using 5 workers (2/4) 
+  Generating static pages using 5 workers (3/4) 
+✓ Generating static pages using 5 workers (4/4) in 402ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+└ ƒ /api/inquiry
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

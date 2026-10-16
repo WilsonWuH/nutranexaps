@@ -64,6 +64,20 @@ Sunflower phosphatidylserine starts as sunflower lecithin, a gum recovered durin
 
 Sunflower is an annual crop: plantings in spring, harvest from late summer through autumn depending on origin. Lecithin production clusters around the crush season, and processors build inventories through the year from that window. Two volatility layers sit on top. Yield risk: drought or heat stress during flowering cuts oilseed output and, with it, lecithin availability — a variable, not a tail risk, in recent seasons. Geopolitical and trade risk: because supply concentrates in a few origins, export policy, freight disruption, and sanctions dynamics can remove capacity from the world market with little warning. The consequences for PS buyers arrive with a lag: quote validity widens or shortens, lead times stretch after poor harvests, and suppliers allocate scarce raw material toward contracted customers first — spot availability of sunflower PS in a tight season is not guaranteed at any reasonable price.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ## The Soy-Free Claim: What It Delivers and What It Does Not
 
 Sunflower PS exists commercially for one dominant reason: brands want a soy-free label. For allergen labelling, it removes the US major-allergen (soy) declaration from the ingredient — though finished-product allergen analysis and supplier allergen controls still matter for any soy-allergen-conscious claim. In the EU, soy remains a mandatory Annex II allergen when present, so sunflower sourcing simplifies allergen labelling there too. Commercially, soy-free opens channels soy-derived PS cannot touch: allergen-conscious households, paleo-adjacent consumers, "free from" formulations, and retail programmes with clean-label mandates. What it does not deliver is any demonstrated superiority in the phospholipid itself — well-manufactured sunflower PS matches soy PS on identity, assay, and stability. The claim is a marketing and labelling asset, and it should be bought when it earns its premium in your category, not by default.
@@ -77,6 +91,20 @@ Buyers exposed to sunflower PS can structure against volatility. Contract the ba
 Match source to product economics. Premium retail or DTC cognitive SKUs where the "soy-free" badge drives conversion: sunflower PS, contracted annually, with deliberate inventory — the premium is repaid in positioning. Mainstream lines sold on function rather than free-from claims: soy-derived PS delivers identical performance at materially lower cost. Clinical, FSMP, or infant-adjacent formats: source on documentation depth and supply continuity first; both lines can qualify, but origin-chain traceability becomes part of the dossier. Hybrid portfolios: run the flagship on sunflower with a contracted floor, and secondary SKUs on soy — dual-source capability hedges crop shocks and gives negotiating leverage on both lines. Revisit the mix every season: the soy–sunflower price spread moves with harvests.
 
 ![Warehouse worker inspecting sealed steel drums of plant-derived powder stacked in a bright ingredient storage facility](/assets/images/phosphatidylserine-sunflower-supply-seasonality-soy-free-claims-us-eu-detail.webp)
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

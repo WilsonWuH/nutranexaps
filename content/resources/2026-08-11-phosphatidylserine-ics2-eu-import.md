@@ -45,6 +45,20 @@ The legal anchor is the Union Customs Code. Article 127 of Regulation (EU) No 95
 
 Buyers sometimes confuse the ENS with the import declaration used at clearance. The ENS is pre-arrival security-and-safety information filed before the goods are loaded or before arrival; the import declaration, handled through a customs agent or broker with your EORI-linked authorisation, comes later at the border. The ENS also has nothing to do with food-import controls or finished-product rules; it is one independent layer of the import file.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Release 3 brings maritime and land modes into scope
 
 ICS2 has been rolled out in releases. Air, express, and postal consignments came first, and a later release extended the system to goods moved by maritime and inland waterway transport, road, and rail. For an ingredient importer in Europe, the practical consequence is that ocean shipments of phosphatidylserine from China have been inside the system since the maritime phase of the rollout, which ran through 2024 and 2025.
@@ -125,6 +139,20 @@ The best time to prepare ENS data is before the purchase order, not at the conta
 Nutranexa is a functional food ingredient manufacturer focused on phosphatidylserine, soy PS, sunflower PS, and soluble soybean polysaccharide. The primary manufacturing entity, Shandong Nutranexa Biopharmaceutical Co., Ltd., was founded in 2013 and operates a 110,000+ m2 production campus, with a primary export focus in Europe and North America. For PS, the published baseline is a 25 kg minimum order quantity with 25 kg net per drum. These facts help a European buyer build the ENS data package at drum level: net weight per drum is a fixed, verifiable figure, gross weight adds the packaging and pallet weight, and the total is reconciled against the packing list before the forwarder files.
 
 On the document side, Nutranexa provides PS COA and specification evidence, factory and packaging imagery, and dispatch imagery for buyer review, supported by quality and R&D cooperation information. Those files do not make the ENS filing for you, but they give procurement and logistics teams a stable product identity and weight reference that matches the quoted item. The same discipline that keeps the [repeat-order document review](/resources/phosphatidylserine-repeat-order-document-review/) consistent across batches keeps ENS data consistent across bookings: one controlled product description, one source route, and one reconciled weight set.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

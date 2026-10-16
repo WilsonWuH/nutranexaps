@@ -63,6 +63,20 @@ Preparation begins with a map of where the money goes. For soy-derived PS the do
 
 You do not need the supplier's cost sheet to use this map; you need it to know which levers move which numbers. Feedstock-driven cost swings justify index clauses, not fee cuts. Certification overheads argue for consolidating SKUs and specifications, because every format and document variant costs the supplier money. Assay-grade choices are the single biggest price decision most buyers control — buying a higher concentration than the formulation needs is paying for water weight you then discard, while over-specifying purity for a standard gummy format is money left on the table.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Build real leverage: forecasts, volumes and commitment
 
 Suppliers price certainty. The most valuable currency a buyer holds is a credible forward view of demand — rolling twelve-month forecasts, stated seasonal peaks, and realistic growth projections. A buyer who shares a data-backed forecast and consolidates orders into scheduled releases gets better pricing than a buyer who sends spot inquiries each quarter, for the simple reason that the forecast lets the supplier buy lecithin forward, plan campaign production, and quote without padding for uncertainty.
@@ -98,6 +112,20 @@ The guardrail matters most at the moment of maximum pressure. If the only path t
 ### Structuring multi-year agreements and review points
 
 For buyers with stable volumes, the multi-year supply agreement is the strongest negotiation structure available — and the site's long-term supply agreement guide covers the legal architecture. The negotiation-relevant point is the rhythm inside the term. A good structure pairs a committed volume and an index mechanism with defined review points: an annual meeting to revisit volumes, service metrics, and any structural cost changes, plus a mid-term re-opener if feedstock markets move beyond agreed collars. Suppliers accept multi-year commitments more readily when the agreement contains honest exit and adjustment valves; buyers should want those anyway. The alternative — an annual negotiation starting from zero every December — maximizes tension, minimizes trust, and pushes suppliers to quote defensively.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

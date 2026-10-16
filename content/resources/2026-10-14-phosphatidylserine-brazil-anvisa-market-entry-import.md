@@ -57,6 +57,20 @@ Brazil's supplement market has grown steadily on the back of sports nutrition, h
 
 Brazil regulates food supplements through ANVISA, most notably under the framework established by RDC 243/2018 and its related norms, which define what food supplements are, the permitted forms, dose ceilings and floors for listed substances, and labeling obligations. The important strategic point for buyers is that ingredient eligibility is defined by these rules — a substance and dose must fit the framework before any registration or notification conversation starts. For phosphatidylserine, the practical task is to confirm its current status under the applicable lists at the intended daily dose, using ANVISA's published rules and, where ambiguity exists, a Brazilian regulatory consultant. Do not assume that FDA dietary ingredient status or EU novel food clearance says anything about Brazil; the frameworks are independent. Manufacturers of the finished product in Brazil must hold appropriate licensing, and the product route — notification versus registration-type control — depends on the category and claims, so the importer's quality team should map this before committing to a formulation.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Importer localization: RADAR, Siscomex and ANVISA import control
 
 Selling into Brazil means clearing its customs system, which is unforgiving of amateur setups. The importer needs a CNPJ and a RADAR/Siscomex-enabled customs profile with the Receita Federal, and goods under ANVISA surveillance require ANVISA import authorization workflows at entry — shipments can be channeled into documentary or physical checks, and clearance times vary accordingly. For a foreign ingredient supplier, the practical implications are threefold. First, your Brazilian counterpart's capability is part of your quality chain: an experienced food importer with existing ANVISA channels is worth a slightly higher price than a general trader improvising its first regulated food entry. Second, your documentation must arrive complete before the vessel does, because missing declarations extend port dwell in a system where storage and demurrage accumulate quickly. Third, consider whether you will appoint a distributor, a regulatory service firm, or your own entity — each model changes who holds registrations and who bears import risk, and that allocation should be contracted in writing.
@@ -70,6 +84,20 @@ The Brazilian import file builds on the same backbone used for US and EU shipmen
 ### Labeling in Portuguese and Mercosur rules
 
 Brazilian labeling runs on Mercosur harmonized food labeling rules implemented nationally, plus ANVISA's supplement-specific requirements. Portuguese is mandatory for consumer-facing information, nutritional labeling follows Brazilian formats rather than the US Supplement Facts panel, and claims are constrained to what the framework and any authorizations permit — structure-function language that is routine in the US can be impermissible in Brazil without support under the local rules. Artwork lead time is the hidden cost: translating, adapting to local formats, and approving label masters typically adds weeks to a launch plan, and ingredient-level declarations — allergen statements, GMO status, processing aids — must feed that artwork accurately. Buyers should request supplier-controlled declaration texts once, at qualification, and reuse them across markets. Brands that treat Brazilian labeling as a project with its own timeline ship on schedule; brands that treat it as a translation task re-plan their launch at port.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 

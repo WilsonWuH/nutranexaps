@@ -44,6 +44,20 @@ This guide is written for procurement, formulation, and quality teams behind US 
 Most PS sourcing questions assume the ingredient ends up in a capsule, tablet, or powder: a low-moisture, controlled process where the powder's identity, assay, and flow are the main concerns. A gummy changes the boundary conditions. The PS is mixed into a warm, high-sugar, water-containing mass, held at elevated temperature during depositing, then cooled into a gel that retains significant moisture for its whole shelf life. That sequence tests four things at once: heat exposure during syrup preparation and depositing, which can affect assay recovery; moisture equilibration between the powder and the gummy matrix, which changes water activity over time; sensory fit, because a phospholipid powder can bring its own taste, odor, and mouthfeel; and uniformity, because the ingredient must be dispersed consistently so each serving delivers a consistent amount. None of these are answered by the COA alone; they are answered by a formulation plan, samples, and trials with the actual matrix.
 
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Gummies are an established supplement format in the US; dose-form rules vary in the EU
 
 In the United States, the FDA describes dietary supplements as products ingested in many forms, "including tablets, capsules, soft gels, gel caps, powders, bars, gummies, and liquids." Gummy is therefore a recognized supplement format at the federal level. In the EU, food supplements are defined under Directive 2002/46/EC as concentrated sources of nutrients or other substances with a nutritional or physiological effect marketed "in dose form," with examples such as capsules, pastilles, tablets, pills, and sachets of powder. Gummies are not named in the definition, so their classification depends on how the finished product is presented and how the relevant member state interprets "other similar forms." Confirm this early, before formulation and artwork, because it changes which rules apply.
@@ -133,6 +147,20 @@ Record the answers in the [supplier onboarding](/resources/phosphatidylserine-su
 6. Keep lot-level evidence: the [lot traceability checklist](/resources/phosphatidylserine-lot-traceability-checklist/) links the COA, drum labels, and shipment records to the batch used in formulation.
 
 Nutranexa, founded in 2013 and operating a 110,000+ m2 production campus with R&D cooperation with East China University of Science and Technology, supplies PS as a lead product with public specification and COA evidence. Nutranexa does not claim a finished gummy formula: suitability for a specific matrix is confirmed through samples, specification review, and the brand's own stability and sensory work. [Contact the sales team](/contact/) to request current specifications, COA samples, and source documentation for a gummy project.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## Conclusion
 

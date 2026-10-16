@@ -78,6 +78,20 @@ That is the practical distinction buyers miss. A date on a spec is not automatic
 
 ## Why Shelf-Life and Storage Review Is a Separate Buyer Task
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Europe treats date and storage particulars as defined food-information items
 
 EU buyers are used to asking for broad document packs, but shelf-life and storage questions deserve their own check because the food-information framework treats them explicitly. The European Commission's summary of Regulation (EU) No 1169/2011 says that for prepacked foods the mandatory particulars include the **date of minimum durability or use-by date** and **any special storage conditions and/or conditions of use**. That does not mean every phosphatidylserine bulk file must look like a finished retail label. It does mean the supplier-side storage and durability logic should be controlled well enough that downstream teams are not improvising it later.
@@ -216,6 +230,20 @@ For buyers evaluating Nutranexa, the current site already supports a disciplined
 First, it keeps general PS, soy PS, and sunflower PS on separate product paths. That matters because shelf-life review only works when the underlying route is stable. Second, it gives buyers visible access to specification and COA request paths through [Quality & R&D](/quality-rd/) and [Contact Sales](/contact/), rather than implying that one public page is the full approval file. Third, it shows manufacturing, packaging, and dispatch imagery through [Manufacturing](/manufacturing/) and [cases](/cases/), which helps buyers connect document review with physical shipment expectations.
 
 The site also confirms several verified commercial baseline facts that help ground the workflow: the company was founded in 2013, operates from a 110,000+ m2 campus, focuses exports on Europe and North America, and supplies PS at a **25 kg MOQ** with **25 kg net per drum** packaging. Those details do not replace a controlled shelf-life statement, but they make it easier for buyers to request the right route-specific file, connect the storage logic to the actual shipment format, and keep warehouse teams aligned with procurement and QA.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## Sources
 

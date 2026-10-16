@@ -65,6 +65,20 @@ The historical trunk route runs from Chinese consolidation points through Kazakh
 
 Buyers should also be aware that alternative routings exist that avoid the northern corridor entirely, transiting Central Asia, the Caspian region, and Türkiye or the Caucasus before reaching Europe. These middle and southern corridors are longer — often adding a week or more — and capacity is still maturing, but they have become a meaningful option for shippers who prefer not to route through certain transit territories. When you request a rail quotation, ask the forwarder to state the corridor explicitly; "rail" alone does not tell you which risks you are actually carrying.
 
+
+<!-- Embedded CTA Box: Sample & Spec Match -->
+<aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#173b57;font-weight:700;margin:0 0 8px 0;">Factory Direct · Specification Review</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#102a56;">Validating a Phosphatidylserine Grade Before Your First Order?</h3>
+<p style="font-size:15px;color:#45536b;margin:0 0 18px 0;line-height:1.6;">
+Send your current specification, target assay and application. We review grade, source (soy or sunflower), concentration and documentation against your programme, then ship samples with a lot-specific certificate of analysis for validation on your own line.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#102a56;color:#fff;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request Samples &amp; Spec Review →</a>
+<a href="/products/phosphatidylserine/" style="display:inline-block;padding:11px 22px;background:#fff;color:#102a56;border:1px solid #102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">View Product Specifications</a>
+</div>
+</aside>
+
 ### Cost position and when the math works
 
 Rail freight rates are volatile and quoted dynamically, but the structural relationship holds: rail typically costs meaningfully more than sea and far less than air. Whether the premium is justified depends on what delay costs you, not just what freight costs. Buyers should model rail against sea on total landed cost — freight, insurance, duties are usually comparable — and then weigh the softer variables: inventory carrying cost for the extra weeks at sea, the risk of a stockout or air-freight rescue at the end of a slow ocean transit, and the cash-flow effect of faster container turnaround.
@@ -96,6 +110,20 @@ Rail works under the same Incoterms framework as any other mode. FOB-equivalent 
 ### A decision framework for PS buyers
 
 A simple rule set covers most cases. Use sea for baseline replenishment with lead times above about ten weeks. Use rail when the gap between sea arrival and need falls in the two-to-four-week range and the order is palletized container volume. Use air when the gap is smaller than rail can close, or when launch timing dwarfs freight cost. Re-evaluate seasonally: spring and autumn departures carry less thermal risk and often better schedule reliability. And whichever mode wins, keep the packaging specification — nitrogen flush, barrier liners, sealed drums — constant, because it is your primary defense against oxidation in any mode.
+
+
+<!-- Embedded CTA Box: Compliance & Documentation -->
+<aside style="margin:36px 0;padding:26px 28px;background:#102a56;color:#eef2f8;border-radius:3px;font-family:Arial,Helvetica,sans-serif;">
+<p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c69a35;font-weight:700;margin:0 0 8px 0;">Compliance &amp; Documentation</p>
+<h3 style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;margin:0 0 10px 0;color:#fff;">Need COAs, SDS or Market-Specific Compliance Files?</h3>
+<p style="font-size:15px;color:#c3cede;margin:0 0 18px 0;line-height:1.6;">
+Every shipment ships with a certificate of analysis and a safety data sheet, and market documentation is prepared per destination — US, EU and APAC programmes each carry their own declaration set. Ask for the document package behind any grade before committing volume.
+</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+<a href="/contact/" style="display:inline-block;padding:11px 22px;background:#c69a35;color:#102a56;font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">Request the Document Package →</a>
+<a href="/resources/documents-for-ps-ingredients/" style="display:inline-block;padding:11px 22px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);font-weight:700;font-size:14px;text-decoration:none;border-radius:2px;">See the Document Checklist</a>
+</div>
+</aside>
 
 ## FAQ
 
