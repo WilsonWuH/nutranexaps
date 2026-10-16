@@ -73,7 +73,7 @@ The goal is simple: turn one arriving shipment into one controlled inventory eve
 
 This article explains how B2B buyers can structure that workflow. It is written for real procurement and QA teams, not for consumer readers. It focuses on shipment receipt, document matching, lot traceability, and warehouse-release discipline.
 
-Where Nutranexa is mentioned, only verified site facts are used. The current Nutranexa site identifies the company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and visible manufacturing, cleanroom, lab, and equipment imagery. The site shows phosphatidylserine as a lead product, public reference COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501, and document categories such as business license, food production license, food additive item details, FDA food facility registration, Halal, and Kosher. Buyers should still request current lot-specific shipment files and confirm final applicability before release, use, or resale.
+Where Nutranexa is mentioned, only verified site facts are used. The current Nutranexa site identifies the company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and visible manufacturing, cleanroom, lab, and equipment imagery. The site shows phosphatidylserine as a lead product, public reference COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501, and document categories such as business license, food production license, food additive item details, FDA food facility registration, Halal, and Kosher. Buyers should still request current lot-specific shipment files and confirm final applicability before release, use, or resale. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -217,7 +217,7 @@ Buyers can request the exact document pack needed before dispatch, including the
 
 Phosphatidylserine incoming inspection is the bridge between international shipment and controlled inventory. Buyers who manage this step well reduce avoidable delays, release errors, traceability gaps, and confusion between warehouse, QA, and purchasing.
 
-The best receiving workflow is straightforward: quarantine first, match documents to the physical shipment, verify labels and lot numbers, separate damage issues from document issues, define when internal testing applies, and release only the exact lots that have passed review.
+The best receiving workflow is straightforward: quarantine first, match documents to the physical shipment, verify labels and lot numbers, separate damage issues from document issues, define when internal testing applies, and release only the exact lots that have passed review. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

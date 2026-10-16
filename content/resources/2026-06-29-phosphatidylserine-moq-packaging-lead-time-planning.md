@@ -72,7 +72,7 @@ That is why phosphatidylserine MOQ and packaging planning deserves its own procu
 
 This article is written for overseas supplement brands, nutrition companies, contract manufacturers, and ingredient distributors that are preparing a first commercial phosphatidylserine order or comparing suppliers for repeat purchase planning. It explains how to think about MOQ, packaging format, and timing risk in a way that supports procurement, QA, operations, and finance at the same time.
 
-Where relevant, this article uses verified Nutranexa facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 production campus in Yanggu County, Shandong. The current site also shows manufacturing imagery, sample COA visibility for PS 20% sunflower and PS 50%, and document references including business license, food production license, food additive license details, FDA food facility registration, Halal, and Kosher materials. Buyers should still confirm current product-specific packaging, MOQ, certificate scope, and batch-linked files before quotation or shipment.
+Where relevant, this article uses verified Nutranexa facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 production campus in Yanggu County, Shandong. The current site also shows manufacturing imagery, sample COA visibility for PS 20% sunflower and PS 50%, and document references including business license, food production license, food additive license details, FDA food facility registration, Halal, and Kosher materials. Buyers should still confirm current product-specific packaging, MOQ, certificate scope, and batch-linked files before quotation or shipment. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -293,7 +293,7 @@ Send the approved grade, source preference, target application, expected volume,
 
 Phosphatidylserine MOQ and packaging decisions are not small commercial footnotes. They are part of whether the first order works in practice. Buyers who clarify approved grade, order purpose, handling reality, document needs, and timing assumptions before the PO stage usually make better supplier decisions and avoid preventable delays later.
 
-For overseas importers, the strongest process is straightforward: align the internal team on the exact PS item, evaluate MOQ in the context of real inventory risk, confirm packaging against warehouse and QA workflows, and treat lead time as a full approval path rather than a single promised date. That approach creates a more reliable basis for both first orders and repeat business.
+For overseas importers, the strongest process is straightforward: align the internal team on the exact PS item, evaluate MOQ in the context of real inventory risk, confirm packaging against warehouse and QA workflows, and treat lead time as a full approval path rather than a single promised date. That approach creates a more reliable basis for both first orders and repeat business. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

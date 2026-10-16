@@ -33,7 +33,7 @@
 - Cost structure and contract terms that avoid surprises
 
 ## Introduction
-Once phosphatidylserine (PS) clears the port, most buyers stop worrying about it. That is a mistake. The weeks and months a bulk lot spends in a third-party warehouse — waiting for your contract manufacturer's call-off, staged ahead of a retail launch, or distributed direct to customers — are exactly where temperature excursions, lost traceability, and documentation chaos quietly accumulate. A 3PL is not a commodity service for an ingredient like PS: it is an extension of your quality system, and it will be examined as one during customer audits, retail audits, and any recall exercise. This article provides a practical selection framework for US and EU buyers, covering the certifications, temperature controls, traceability, audit rights, and commercial terms that separate a compliant logistics partner from a cheap one.
+Once phosphatidylserine (PS) clears the port, most buyers stop worrying about it. That is a mistake. The weeks and months a bulk lot spends in a third-party warehouse — waiting for your contract manufacturer's call-off, staged ahead of a retail launch, or distributed direct to customers — are exactly where temperature excursions, lost traceability, and documentation chaos quietly accumulate. A 3PL is not a commodity service for an ingredient like PS: it is an extension of your quality system, and it will be examined as one during customer audits, retail audits, and any recall exercise. This article provides a practical selection framework for US and EU buyers, covering the certifications, temperature controls, traceability, audit rights, and commercial terms that separate a compliant logistics partner from a cheap one. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -103,7 +103,7 @@ A: Global 3PL groups can, but quality performance is site-specific. Contract the
 A: Ask them to walk through their last real temperature excursion: how it was detected, who was notified, what the customer received, and how stock was dispositioned. A specific, documented answer indicates a working system; a vague one predicts trouble.
 
 ## Conclusion
-A 3PL sits between your supplier's COA and your customer's audit, and everything that happens in between lands on your quality file. Select warehouse partners the way you select ingredient suppliers: certify first, map the temperature story, test the traceability live, audit before the first pallet, and put service levels and audit rights into the contract. PS is not fragile — but it is unforgiving of careless storage, and your customers will judge the result, not the warehouse.
+A 3PL sits between your supplier's COA and your customer's audit, and everything that happens in between lands on your quality file. Select warehouse partners the way you select ingredient suppliers: certify first, map the temperature story, test the traceability live, audit before the first pallet, and put service levels and audit rights into the contract. PS is not fragile — but it is unforgiving of careless storage, and your customers will judge the result, not the warehouse. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 - U.S. FDA — Dietary Supplements (21 CFR Part 111): https://www.ecfr.gov/current/title-21/part-111

@@ -60,7 +60,7 @@ Stability is the evidence that connects a phosphatidylserine specification to th
 
 This guide explains what US and European buyers should request, how to read a supplier stability summary, and which oxidative indicators deserve the closest review. It is written for importers, supplement manufacturers, distributors, and functional food teams that need to defend a shelf-life claim, not just pass an incoming check.
 
-Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Buyers should still confirm current batch-specific data and market-specific files before purchase or shipment.
+Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Buyers should still confirm current batch-specific data and market-specific files before purchase or shipment. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -142,7 +142,7 @@ Request the protocol or design description, batch information, time points, meth
 
 ## Conclusion
 
-A phosphatidylserine stability review is not about collecting one more PDF. It is about confirming that the trajectory of the material under defined conditions leaves enough margin for your warehouse time, your processing, and your finished-product claim. Buy from suppliers who test the right attributes at the right time points, in the packaging they actually ship, and who can explain their retest or expiry position without hesitation.
+A phosphatidylserine stability review is not about collecting one more PDF. It is about confirming that the trajectory of the material under defined conditions leaves enough margin for your warehouse time, your processing, and your finished-product claim. Buy from suppliers who test the right attributes at the right time points, in the packaging they actually ship, and who can explain their retest or expiry position without hesitation. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

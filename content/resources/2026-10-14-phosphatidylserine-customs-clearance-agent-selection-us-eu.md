@@ -45,7 +45,7 @@ Most phosphatidylserine importers spend weeks qualifying the supplier and days n
 
 This guide is written for sourcing and supply chain managers selecting a clearance agent for US and EU imports of PS ingredients. It covers what licensing and representation actually mean, how FDA and EU regulatory touchpoints affect the entry, how fee structures differ, and the red flags that should end a candidate interview early.
 
-![Wide view of a container port customs inspection yard with gantry cranes and stacked shipping containers at dawn](/assets/images/phosphatidylserine-customs-clearance-agent-selection-us-eu-port.webp)
+![Wide view of a container port customs inspection yard with gantry cranes and stacked shipping containers at dawn](/assets/images/phosphatidylserine-customs-clearance-agent-selection-us-eu-port.webp) Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -91,7 +91,7 @@ A disciplined selection takes one week. Shortlist three candidates, verify licen
 
 ## Conclusion
 
-Selecting a customs clearance agent is a procurement decision with compliance consequences. The strongest candidates combine a verifiable license, genuine food-ingredient experience, transparent fee scenarios, and clear liability terms — and they ask as many questions as you do. For phosphatidylserine specifically, clearance speed is shelf life: every day a container sits in an exam yard is a day subtracted from your retest margin. Build the selection checklist into your import playbook, run a test entry before peak season, and review agent performance annually with the same scorecard discipline you apply to suppliers.
+Selecting a customs clearance agent is a procurement decision with compliance consequences. The strongest candidates combine a verifiable license, genuine food-ingredient experience, transparent fee scenarios, and clear liability terms — and they ask as many questions as you do. For phosphatidylserine specifically, clearance speed is shelf life: every day a container sits in an exam yard is a day subtracted from your retest margin. Build the selection checklist into your import playbook, run a test entry before peak season, and review agent performance annually with the same scorecard discipline you apply to suppliers. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -43,7 +43,7 @@ cognitive health supplement launch
 
 ## Introduction
 
-Phosphatidylserine is one of the most approachable cognitive-health ingredients for a first private-label launch: long history of use, an established science narrative, and a mature supply base. But approachable is not the same as simple. New brand owners routinely stumble on three things — choosing a supply model before understanding its cost structure, underestimating how MOQs shape their cash commitment, and discovering compliance tasks late when they should have started them in week one. This roadmap lays out the launch sequence the way an experienced sourcing team would run it.
+Phosphatidylserine is one of the most approachable cognitive-health ingredients for a first private-label launch: long history of use, an established science narrative, and a mature supply base. But approachable is not the same as simple. New brand owners routinely stumble on three things — choosing a supply model before understanding its cost structure, underestimating how MOQs shape their cash commitment, and discovering compliance tasks late when they should have started them in week one. This roadmap lays out the launch sequence the way an experienced sourcing team would run it. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Step 1: Define the Product Before You Source
 
@@ -134,7 +134,7 @@ For an owned formula, yes — it gives you specification control, direct CoA acc
 
 ## Conclusion
 
-A private-label phosphatidylserine launch rewards brands that front-load decisions: a written product definition, a consciously chosen supply model, a locked ingredient specification, and compliance work started in week one. The budget math is manageable, but the sequencing is unforgiving — the most common failures are self-inflicted: MOQs bought on optimism, claims written before they were substantiated, and production started against an unfinished spec. When you are ready to move from plan to quotation, send us your target format, dose, origin preference, and first-year volume, and Nutranexa will return an ingredient specification, sample offer, and pricing suitable for your first production run.
+A private-label phosphatidylserine launch rewards brands that front-load decisions: a written product definition, a consciously chosen supply model, a locked ingredient specification, and compliance work started in week one. The budget math is manageable, but the sequencing is unforgiving — the most common failures are self-inflicted: MOQs bought on optimism, claims written before they were substantiated, and production started against an unfinished spec. When you are ready to move from plan to quotation, send us your target format, dose, origin preference, and first-year volume, and Nutranexa will return an ingredient specification, sample offer, and pricing suitable for your first production run. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

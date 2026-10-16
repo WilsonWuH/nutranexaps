@@ -33,7 +33,7 @@ phosphatidylserine oxidative stability, peroxide value specification, TOTOX valu
 
 Phosphatidylserine (PS) sits in a demanding spot on a raw-material buyer's risk map: a premium-priced functional phospholipid whose activity and sensory quality depend on a molecule intrinsically prone to oxidation. Unlike mineral salts or crystalline actives, PS powder carries polyunsaturated fatty acyl chains that react with oxygen throughout its life — in production, transit, warehouse, and the finished product on the shelf. For B2B buyers in the US and EU, the question is not whether oxidation occurs, but whether your specification, testing program, and contract terms will detect it before it reaches a customer. This guide covers the test panel buyers should require, trend-data acceptance rules, and the procurement levers that turn lab findings into enforceable controls.
 
-![QA laboratory with analyst examining lipid oxidation test results for phosphatidylserine powder samples](/assets/images/resource-ps-phosphatidylserine-oxidative-stability-testing-main.webp)
+![QA laboratory with analyst examining lipid oxidation test results for phosphatidylserine powder samples](/assets/images/resource-ps-phosphatidylserine-oxidative-stability-testing-main.webp) Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Why Phosphatidylserine Is Unusually Oxidation-Sensitive
 
@@ -109,7 +109,7 @@ A tiered approach works well: full panel on the first three lots from a new supp
 
 ## Conclusion
 
-Oxidative stability is the defining quality risk of bulk PS — and one of the most controllable. Buyers who specify the complete panel with defined methods and units, monitor trends rather than single numbers, and anchor these requirements in purchase orders and quality agreements convert a chemistry problem into a routine procurement control. The incremental testing cost is trivial next to a rejected container or a consumer complaint file. The specification you write is the cheapest insurance that PS integrity survives from the supplier's reactor to your customer's label.
+Oxidative stability is the defining quality risk of bulk PS — and one of the most controllable. Buyers who specify the complete panel with defined methods and units, monitor trends rather than single numbers, and anchor these requirements in purchase orders and quality agreements convert a chemistry problem into a routine procurement control. The incremental testing cost is trivial next to a rejected container or a consumer complaint file. The specification you write is the cheapest insurance that PS integrity survives from the supplier's reactor to your customer's label. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -32,7 +32,7 @@
 - Comparing MOQs, lead times, and cost drivers
 
 ## Introduction
-Before a contract manufacturer can quote your phosphatidylserine product, they need one decision from you: the dosage form. That single choice drives the excipient system, the equipment line, the minimum order quantity, the testing plan, and even the regulatory documents you must collect for the US and EU markets. Many brands default to capsules without checking whether a tablet or powder stick pack would serve their positioning better — or cost less per serving. This article walks through the three most common formats for PS, the technical constraints that decide feasibility, and the practical questions an OEM will ask before quoting.
+Before a contract manufacturer can quote your phosphatidylserine product, they need one decision from you: the dosage form. That single choice drives the excipient system, the equipment line, the minimum order quantity, the testing plan, and even the regulatory documents you must collect for the US and EU markets. Many brands default to capsules without checking whether a tablet or powder stick pack would serve their positioning better — or cost less per serving. This article walks through the three most common formats for PS, the technical constraints that decide feasibility, and the practical questions an OEM will ask before quoting. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -84,7 +84,7 @@ A: Both are supplied as powders on carriers, but carrier type, particle size, an
 A: At minimum: raw material spec, current COA, allergen statement, GMO statement, and your target formula and serving. Adding a stability basis and your market list prevents rework later.
 
 ## Conclusion
-The dosage form is not a packaging detail — it is the single biggest lever on your PS product's cost, timeline, and compliance workload. Capsules remain the pragmatic default for 100 mg servings, tablets reward brands with volume and patience, and stick packs open drink-mix positioning. Whichever you choose, arrive at the OEM with a complete document pack and a raw material partner who can keep it current. That preparation, more than any negotiating tactic, is what turns a first quote into a smooth first production run.
+The dosage form is not a packaging detail — it is the single biggest lever on your PS product's cost, timeline, and compliance workload. Capsules remain the pragmatic default for 100 mg servings, tablets reward brands with volume and patience, and stick packs open drink-mix positioning. Whichever you choose, arrive at the OEM with a complete document pack and a raw material partner who can keep it current. That preparation, more than any negotiating tactic, is what turns a first quote into a smooth first production run. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 - U.S. FDA — Dietary Supplements: https://www.fda.gov/food/dietary-supplements

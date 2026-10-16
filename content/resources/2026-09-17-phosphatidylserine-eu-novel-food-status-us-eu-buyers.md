@@ -43,7 +43,7 @@ PS sourcing US EU regulatory comparison
 
 ## Introduction
 
-For a US supplement brand, phosphatidylserine is a familiar ingredient with an established place on the market. The first time most buyers confront the EU question is when a European distributor, retailer, or contract manufacturer asks a single short question: what is the novel food status of this ingredient? The answer determines whether the material can be lawfully placed on the EU market, how it must be labeled, and how long market entry will take. Yet status is not a checkbox on a certificate of analysis — it is a classification judgment built on the ingredient's composition, process, and documented history. This guide explains the framework, why PS status is more nuanced than many suppliers suggest, and exactly what to request from a supplier before committing to an EU launch.
+For a US supplement brand, phosphatidylserine is a familiar ingredient with an established place on the market. The first time most buyers confront the EU question is when a European distributor, retailer, or contract manufacturer asks a single short question: what is the novel food status of this ingredient? The answer determines whether the material can be lawfully placed on the EU market, how it must be labeled, and how long market entry will take. Yet status is not a checkbox on a certificate of analysis — it is a classification judgment built on the ingredient's composition, process, and documented history. This guide explains the framework, why PS status is more nuanced than many suppliers suggest, and exactly what to request from a supplier before committing to an EU launch. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## The EU Novel Food Framework in Brief
 
@@ -118,7 +118,7 @@ Authorization applications are realistically prepared and owned by the ingredien
 
 ## Conclusion
 
-Phosphatidylserine's EU novel food status is not a label on a drum — it is an ingredient-specific judgment that depends on source, process, composition, and documented history of use. For US and EU buyers, the reliable path is procedural: ask for the supplier's written regulatory position, verify that safety and history evidence matches the material you are actually purchasing, and close the status question before formulation and artwork lock in your dependence on the ingredient. Brands that treat status as a sourcing criterion, rather than a post-purchase surprise, launch in Europe on schedule and without regulatory debt.
+Phosphatidylserine's EU novel food status is not a label on a drum — it is an ingredient-specific judgment that depends on source, process, composition, and documented history of use. For US and EU buyers, the reliable path is procedural: ask for the supplier's written regulatory position, verify that safety and history evidence matches the material you are actually purchasing, and close the status question before formulation and artwork lock in your dependence on the ingredient. Brands that treat status as a sourcing criterion, rather than a post-purchase surprise, launch in Europe on schedule and without regulatory debt. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

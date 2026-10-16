@@ -44,7 +44,7 @@ Both routes put a PS product on a store page; they differ in unit economics, dif
 
 This guide compares the two routes specifically for phosphatidylserine — a premium, supply-constrained cognitive ingredient where the route decision matters more than for commodity supplements — and closes with a decision checklist.
 
-![E-commerce supplement brand workspace with product pouches, capsules and a laptop showing a storefront](/assets/images/resource-ps-phosphatidylserine-custom-formula-vs-white-label-us-eu-warehouse.webp)
+![E-commerce supplement brand workspace with product pouches, capsules and a laptop showing a storefront](/assets/images/resource-ps-phosphatidylserine-custom-formula-vs-white-label-us-eu-warehouse.webp) Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -100,7 +100,7 @@ A: Upfront, yes. At scale, not necessarily: custom products built on raw materia
 
 ## Conclusion
 
-For phosphatidylserine, the white-label-versus-custom decision is less about budget than about what the product needs to become. White-label ODM routes a proven formula to market in weeks with minimums a founder can survive, and wins the testing phase; custom formulation buys dose control, format differentiation, better long-term margin and formula IP, and wins the growth phase. The disciplined path most e-commerce brands should consider runs through both: validate demand on a negotiated, semi-exclusive white-label base, then invest the margin it generates into a custom formula that owns its claims, its stability data and its supply chain. Whichever route you choose, put the commercial terms in writing — exclusivity, IP, data ownership, transferability — because in eighteen months those clauses, not the label design, will decide what your brand actually controls.
+For phosphatidylserine, the white-label-versus-custom decision is less about budget than about what the product needs to become. White-label ODM routes a proven formula to market in weeks with minimums a founder can survive, and wins the testing phase; custom formulation buys dose control, format differentiation, better long-term margin and formula IP, and wins the growth phase. The disciplined path most e-commerce brands should consider runs through both: validate demand on a negotiated, semi-exclusive white-label base, then invest the margin it generates into a custom formula that owns its claims, its stability data and its supply chain. Whichever route you choose, put the commercial terms in writing — exclusivity, IP, data ownership, transferability — because in eighteen months those clauses, not the label design, will decide what your brand actually controls. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

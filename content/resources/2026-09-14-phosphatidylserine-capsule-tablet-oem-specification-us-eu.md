@@ -34,7 +34,7 @@ This article is an original resource published in the Nutranexa Resource Center 
 
 ## Introduction
 
-Handing a phosphatidylserine formulation to an OEM without a specification set is an invitation to rework. The raw material behaves differently from commodity powders - it is a phospholipid, often used at low inclusion rates, sensitive to heat and oxidation, and carrying allergen and claim implications that reach the finished label. Whether the project is a two-piece capsule or a compressed tablet, the buyer's job is to define, in writing, what enters the plant, how the blend must perform, what the finished unit must weigh and deliver, and how long it must last. This guide sets out those specification layers for US and EU projects in the order they should be agreed.
+Handing a phosphatidylserine formulation to an OEM without a specification set is an invitation to rework. The raw material behaves differently from commodity powders - it is a phospholipid, often used at low inclusion rates, sensitive to heat and oxidation, and carrying allergen and claim implications that reach the finished label. Whether the project is a two-piece capsule or a compressed tablet, the buyer's job is to define, in writing, what enters the plant, how the blend must perform, what the finished unit must weigh and deliver, and how long it must last. This guide sets out those specification layers for US and EU projects in the order they should be agreed. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Why OEM Specifications Come Before the Formulation
 
@@ -131,7 +131,7 @@ In the US, truthful structure/function statements with the customary disclaimer 
 
 ## Conclusion
 
-A successful PS capsule or tablet project is decided at the specification stage, not on the production floor. Incoming material parameters gate what enters the plant; premix design and blend uniformity determine what the process can deliver; excipient compatibility determines which dosage form is realistic; weight and content uniformity targets define what each unit must prove; and stability plus a claim plan determine what the label may say and for how long. Buyers who fix this chain with their OEM and ingredient supplier before the first trial batch launch faster, fail less, and carry a file that stands up to audit.
+A successful PS capsule or tablet project is decided at the specification stage, not on the production floor. Incoming material parameters gate what enters the plant; premix design and blend uniformity determine what the process can deliver; excipient compatibility determines which dosage form is realistic; weight and content uniformity targets define what each unit must prove; and stability plus a claim plan determine what the label may say and for how long. Buyers who fix this chain with their OEM and ingredient supplier before the first trial batch launch faster, fail less, and carry a file that stands up to audit. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

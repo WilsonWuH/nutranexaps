@@ -62,7 +62,7 @@ Two buyers can pay the same FOB price for identical phosphatidylserine powder an
 
 ![Customs brokerage office with tariff schedule books and bulk ingredient shipment files being reviewed next to a laptop](/assets/images/resource-ps-phosphatidylserine-import-duties-landed-cost-us-eu-main.webp)
 
-For a material typically bought in 25 kg drums at a few hundred dollars per kilogram of finished formulation value, duty and tax errors are not rounding errors. This article walks through the variables that move the number and gives a landed cost structure you can put in a spreadsheet.
+For a material typically bought in 25 kg drums at a few hundred dollars per kilogram of finished formulation value, duty and tax errors are not rounding errors. This article walks through the variables that move the number and gives a landed cost structure you can put in a spreadsheet. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -153,7 +153,7 @@ A: Product cost at the quoted incoterm, plus freight and insurance, plus duty an
 
 The quoted price of phosphatidylserine is not the paid price. Classification, origin, entry fees and import VAT decide the difference, and two of those — classification of blends and origin-based additional duties — move with trade policy and your own specification decisions.
 
-The buyers who land PS predictably cheapest are not the ones who negotiate hardest on FOB; they are the ones whose landed cost model is checked by a broker before booking and reconciled after the first entry. Build the spreadsheet once, re-verify the tariff inputs every order, and the border stops being a surprise line item.
+The buyers who land PS predictably cheapest are not the ones who negotiate hardest on FOB; they are the ones whose landed cost model is checked by a broker before booking and reconciled after the first entry. Build the spreadsheet once, re-verify the tariff inputs every order, and the border stops being a surprise line item. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

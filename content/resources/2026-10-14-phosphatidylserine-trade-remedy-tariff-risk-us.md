@@ -45,7 +45,7 @@ Duty rates are not weather. Importers sometimes treat tariffs as an external for
 
 This guide is written for US importers of PS ingredients who want a disciplined, repeatable way to assess tariff risk. It covers classification hygiene, the Section 301 baseline that applies to many Chinese-origin ingredients, how to monitor for antidumping and countervailing duty actions before they surprise you, which mitigation options are realistic, and the contract clauses that allocate tariff risk fairly between buyer and supplier.
 
-![Panoramic view of container gantry cranes and a tariff assessment yard at a commercial seaport under morning haze](/assets/images/phosphatidylserine-trade-remedy-tariff-risk-us-container.webp)
+![Panoramic view of container gantry cranes and a tariff assessment yard at a commercial seaport under morning haze](/assets/images/phosphatidylserine-trade-remedy-tariff-risk-us-container.webp) Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -91,7 +91,7 @@ Tariff risk allocation should be written, not improvised. Useful clauses in PS p
 
 ## Conclusion
 
-Tariff and trade remedy risk is manageable for importers who treat it as a standing process rather than a shock event. Classification memos, current-rate verification, a light but regular monitoring routine, honest valuation planning, and explicit contract clauses together cover most of the exposure a phosphatidylserine buyer will realistically face. None of it is complicated; all of it requires calendar discipline. Importers who build this into procurement reviews compete on formulation and service while competitors absorb surprise duty invoices — and suppliers with clean origin documentation become measurably more valuable partners.
+Tariff and trade remedy risk is manageable for importers who treat it as a standing process rather than a shock event. Classification memos, current-rate verification, a light but regular monitoring routine, honest valuation planning, and explicit contract clauses together cover most of the exposure a phosphatidylserine buyer will realistically face. None of it is complicated; all of it requires calendar discipline. Importers who build this into procurement reviews compete on formulation and service while competitors absorb surprise duty invoices — and suppliers with clean origin documentation become measurably more valuable partners. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

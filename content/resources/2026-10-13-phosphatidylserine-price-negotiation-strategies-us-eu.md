@@ -49,7 +49,7 @@ Phosphatidylserine buyers ask two questions about price. The first is "what shou
 
 This guide sets out a negotiation method built for ingredient sourcing specifically. Phosphatidylserine is not a commodity with a screen price; it is a converted specialty phospholipid whose costs trace back to lecithin feedstock markets, enzyme processing, concentration grade, and certification overheads. That structure makes it negotiable — but only if you know where the supplier's costs sit and bring something it values in exchange. The sections below walk through preparation, leverage, the levers beyond the headline price, and the guardrails that keep a hard-nosed negotiation from turning into a quality problem.
 
-![Procurement manager reviewing phosphatidylserine supplier quotes and cost spreadsheets in a modern office](/assets/images/resource-ps-price-negotiation-main.webp)
+![Procurement manager reviewing phosphatidylserine supplier quotes and cost spreadsheets in a modern office](/assets/images/resource-ps-price-negotiation-main.webp) Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -119,7 +119,7 @@ With an index-linked clause, quarterly adjustments happen administratively and m
 
 ## Conclusion
 
-Phosphatidylserine negotiation rewards the same qualities as good sourcing generally: preparation grounded in cost structure, leverage built from credible forecasts and commitments, and a habit of trading value instead of demanding concessions. The strongest deals combine a tiered volume structure, an index mechanism with collars, sensible non-price trades on payment, freight, and packaging, and explicit guardrails that keep specification and audit rights untouchable. Buyers who negotiate this way end up with suppliers who answer emails faster, document better, and allocate fairly in tight markets — which is worth more than the last two percent of any discount. Take this framework into your next RFQ round and make the market map work for you.
+Phosphatidylserine negotiation rewards the same qualities as good sourcing generally: preparation grounded in cost structure, leverage built from credible forecasts and commitments, and a habit of trading value instead of demanding concessions. The strongest deals combine a tiered volume structure, an index mechanism with collars, sensible non-price trades on payment, freight, and packaging, and explicit guardrails that keep specification and audit rights untouchable. Buyers who negotiate this way end up with suppliers who answer emails faster, document better, and allocate fairly in tight markets — which is worth more than the last two percent of any discount. Take this framework into your next RFQ round and make the market map work for you. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

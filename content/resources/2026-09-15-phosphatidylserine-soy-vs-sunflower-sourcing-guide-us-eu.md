@@ -40,7 +40,7 @@
 
 ## Introduction
 
-Few ingredient choices cascade through a supplement program the way the phosphatidylserine (PS) origin decision does. Pick soy-derived PS and you inherit a major-allergen declaration on every label, exposure to soybean price cycles, and a GMO-adjacent conversation with retail partners. Pick sunflower-derived PS and you typically avoid the allergen statement, but you pay a premium and depend on a more concentrated supply base. Neither is universally better — the right answer depends on your market, label claims, margin structure, and risk tolerance. This guide breaks the decision down the way a sourcing team should: origin and extraction route, allergen labeling in the US and EU, spec differences, supply chain realities, and the price mechanics behind quoted per-kilogram numbers.
+Few ingredient choices cascade through a supplement program the way the phosphatidylserine (PS) origin decision does. Pick soy-derived PS and you inherit a major-allergen declaration on every label, exposure to soybean price cycles, and a GMO-adjacent conversation with retail partners. Pick sunflower-derived PS and you typically avoid the allergen statement, but you pay a premium and depend on a more concentrated supply base. Neither is universally better — the right answer depends on your market, label claims, margin structure, and risk tolerance. This guide breaks the decision down the way a sourcing team should: origin and extraction route, allergen labeling in the US and EU, spec differences, supply chain realities, and the price mechanics behind quoted per-kilogram numbers. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -123,7 +123,7 @@ For meaningful volumes, yes. A qualified backup origin protects against sunflowe
 
 ## Conclusion
 
-The soy-versus-sunflower fork shapes your label, cost structure, and supply risk for the life of the product. Sunflower PS buys allergen-free positioning and cleaner flavor at a premium driven by a thinner raw material base; soy PS delivers deeper supply and lower cost at the price of a mandatory soy declaration and GMO-adjacent documentation. Write the origin requirement, assay grade, form, documentation scope, and premium tolerance into your RFQ before you issue it. When you are ready to compare origins on real numbers, send us your target assay, form, and annual volume, and we will return side-by-side quotations with full documentation packs for both soy and sunflower phosphatidylserine.
+The soy-versus-sunflower fork shapes your label, cost structure, and supply risk for the life of the product. Sunflower PS buys allergen-free positioning and cleaner flavor at a premium driven by a thinner raw material base; soy PS delivers deeper supply and lower cost at the price of a mandatory soy declaration and GMO-adjacent documentation. Write the origin requirement, assay grade, form, documentation scope, and premium tolerance into your RFQ before you issue it. When you are ready to compare origins on real numbers, send us your target assay, form, and annual volume, and we will return side-by-side quotations with full documentation packs for both soy and sunflower phosphatidylserine. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

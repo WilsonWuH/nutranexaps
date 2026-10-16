@@ -44,7 +44,7 @@ Yet many US and EU ingredient buyers negotiate supply agreements rarely enough t
 
 This guide breaks the agreement into its working parts and identifies, clause by clause, what a technically competent buyer should insist on, what is reasonably negotiable, and what belongs on paper rather than in handshake assumptions.
 
-![alt text](/assets/images/resource-ps-supply-agreement-main.webp)
+![alt text](/assets/images/resource-ps-supply-agreement-main.webp) For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -126,7 +126,7 @@ A: Advance change notification with the right to approve affected lots. Nearly e
 
 ## Conclusion
 
-A supply agreement is not paperwork for its own sake; it is a pre-negotiated playbook for the moments when the market is not calm. For phosphatidylserine, where production capacity is concentrated and reformulation is slow and expensive, the clauses that matter are precise: an honest pricing mechanism with notice periods, volume commitments paired with genuine capacity reservation and surge mechanics, advance change control anchored to your quality agreement, and a force majeure clause that allocates constrained supply fairly and lets you leave if the interruption outlasts your patience. Negotiate those points while the relationship is strong, keep the annexes under document control, and review performance against the letter of the agreement every year. The best time to build the playbook is the quarter when you do not need it.
+A supply agreement is not paperwork for its own sake; it is a pre-negotiated playbook for the moments when the market is not calm. For phosphatidylserine, where production capacity is concentrated and reformulation is slow and expensive, the clauses that matter are precise: an honest pricing mechanism with notice periods, volume commitments paired with genuine capacity reservation and surge mechanics, advance change control anchored to your quality agreement, and a force majeure clause that allocates constrained supply fairly and lets you leave if the interruption outlasts your patience. Negotiate those points while the relationship is strong, keep the annexes under document control, and review performance against the letter of the agreement every year. The best time to build the playbook is the quarter when you do not need it. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

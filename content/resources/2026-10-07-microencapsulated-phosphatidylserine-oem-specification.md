@@ -33,7 +33,7 @@ microencapsulated phosphatidylserine, encapsulated phospholipid powder, spray dr
 
 Standard phosphatidylserine powder has two practical weaknesses: it oxidizes, and it does not always behave politely in a blender, a tablet press, or a stick-pack line. Microencapsulation — coating or embedding PS in a food-grade carrier matrix — exists to fix both. Done well, it delivers a free-flowing, low-dusting, taste-neutral powder with slower oxidation kinetics. Done poorly, it delivers an expensive dilution: a low-payload powder whose coating adds cost while failing to protect the phospholipid. For OEM buyers, the difference lies almost entirely in the specification. This guide covers the process routes, the specification parameters, fit-for-use logic by finished format, and the payload economics that determine whether an encapsulated grade is the better deal.
 
-![Spray drying tower production hall where phosphatidylserine emulsion is converted into microencapsulated powder](/assets/images/resource-ps-microencapsulated-phosphatidylserine-oem-specification-main.webp)
+![Spray drying tower production hall where phosphatidylserine emulsion is converted into microencapsulated powder](/assets/images/resource-ps-microencapsulated-phosphatidylserine-oem-specification-main.webp) For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## What Microencapsulation Changes in a PS Raw Material
 
@@ -108,7 +108,7 @@ It changes your label and cross-contact controls, so it must be decided before, 
 
 ## Conclusion
 
-Microencapsulated PS is best treated as its own raw-material category: payload on a defined as-is basis, surface oil, particle size, moisture and water activity, dispersibility, and a named carrier with complete declarations. Buyers who anchor these parameters in the purchase order, compare grades on cost per gram of actual PS, and validate fit-for-use in their own finished format capture the benefits encapsulation promises — protection, flow, taste neutrality — without paying for the ones it only advertises. The specification you write is the product.
+Microencapsulated PS is best treated as its own raw-material category: payload on a defined as-is basis, surface oil, particle size, moisture and water activity, dispersibility, and a named carrier with complete declarations. Buyers who anchor these parameters in the purchase order, compare grades on cost per gram of actual PS, and validate fit-for-use in their own finished format capture the benefits encapsulation promises — protection, flow, taste neutrality — without paying for the ones it only advertises. The specification you write is the product. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

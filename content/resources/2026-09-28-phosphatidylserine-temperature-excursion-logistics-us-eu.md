@@ -32,7 +32,7 @@
 - Documentation that protects your disposition decision
 
 ## Introduction
-Most phosphatidylserine shipped between continents arrives exactly as it left: sealed, documented, and within specification. The exceptions tend to share one cause — unplanned heat. PS is a phospholipid, and phospholipids oxidize; a container sitting on a summer tarmac or a pallet waiting a week in a hot cross-dock can push oxidative markers toward your specification limit even though the supplier did nothing wrong. Because the damage only shows in testing, an excursion handled casually becomes a dispute nobody can win. This article maps where transit excursions actually occur, the controls that meaningfully reduce exposure, and a response protocol that lets you disposition an affected lot with evidence, not guesswork.
+Most phosphatidylserine shipped between continents arrives exactly as it left: sealed, documented, and within specification. The exceptions tend to share one cause — unplanned heat. PS is a phospholipid, and phospholipids oxidize; a container sitting on a summer tarmac or a pallet waiting a week in a hot cross-dock can push oxidative markers toward your specification limit even though the supplier did nothing wrong. Because the damage only shows in testing, an excursion handled casually becomes a dispute nobody can win. This article maps where transit excursions actually occur, the controls that meaningfully reduce exposure, and a response protocol that lets you disposition an affected lot with evidence, not guesswork. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -88,7 +88,7 @@ A: Only after quarantine, testing against the origin baseline, and a documented 
 A: Any route with long terminal dwell and hot-season departures — Mediterranean exits in July and August, US Gulf arrivals in summer, and inland trucking legs during heat waves. Shorter total transit does not compensate for a week parked in the sun.
 
 ## Conclusion
-Phosphatidylserine forgives a well-planned shipment and punishes a casual one. The chemistry is unforgiving but the management is simple: know your baseline, shrink the dwell, protect the pack, log the journey, and run a fixed five-step protocol when the logger says something went wrong. Buyers who institutionalize this routine stop arguing about damaged lots and start preventing them — and their supplier relationships, insurance conversations, and customer audits all get easier at the same time.
+Phosphatidylserine forgives a well-planned shipment and punishes a casual one. The chemistry is unforgiving but the management is simple: know your baseline, shrink the dwell, protect the pack, log the journey, and run a fixed five-step protocol when the logger says something went wrong. Buyers who institutionalize this routine stop arguing about damaged lots and start preventing them — and their supplier relationships, insurance conversations, and customer audits all get easier at the same time. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 - U.S. FDA — FSVP Final Rule for Importers of Food for Humans and Animals: https://www.fda.gov/food/food-safety-modernization-act-fsma/fsma-final-rule-foreign-supplier-verification-programs-fsvp-importers-food-humans-and-animals

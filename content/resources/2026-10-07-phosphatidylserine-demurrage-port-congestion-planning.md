@@ -33,7 +33,7 @@ demurrage and detention charges, port congestion planning, container free time n
 
 A container of phosphatidylserine is a poor candidate for improvisation at the port: it is a high-value, moisture-sensitive ingredient whose COA was issued against a specific lot, and every day parked in a terminal adds demurrage charges, delays production, and stretches the retest clock quality teams live by. Yet demurrage and detention remain among the most underestimated costs in ingredient importing. Ports do not congest randomly: it follows schedule reliability, exam rates, labor events, and seasonal export surges, all of which can be anticipated. This guide breaks down the three charge types buyers confuse, maps dwell-time risk on a PS import lane, and provides a pre-shipment checklist and inventory strategy that make port delay a managed cost line.
 
-![Aerial view of a congested container terminal with stacked containers and gantry cranes](/assets/images/resource-ps-phosphatidylserine-demurrage-port-congestion-planning-main.webp)
+![Aerial view of a congested container terminal with stacked containers and gantry cranes](/assets/images/resource-ps-phosphatidylserine-demurrage-port-congestion-planning-main.webp) For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Demurrage, Detention, and Storage: Three Charges Buyers Confuse
 
@@ -95,7 +95,7 @@ Occasionally, yes — and that comparison should be made explicitly. Safety stoc
 
 ## Conclusion
 
-Demurrage and detention are not random surcharges but the priced consequence of congestion patterns, exam risk, and paperwork readiness — all plannable. Buyers who negotiate free time at booking, pre-file documentation before departure, reserve drayage against realistic windows, and hold a calibrated buffer on congested lanes routinely spend less on port delay than buyers who treat each container as it comes. For a high-value ingredient like phosphatidylserine, the logistics plan is part of the quality system: build the checklist into every shipment and review lane data annually; congestion becomes one managed cost line among many.
+Demurrage and detention are not random surcharges but the priced consequence of congestion patterns, exam risk, and paperwork readiness — all plannable. Buyers who negotiate free time at booking, pre-file documentation before departure, reserve drayage against realistic windows, and hold a calibrated buffer on congested lanes routinely spend less on port delay than buyers who treat each container as it comes. For a high-value ingredient like phosphatidylserine, the logistics plan is part of the quality system: build the checklist into every shipment and review lane data annually; congestion becomes one managed cost line among many. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

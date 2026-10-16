@@ -61,7 +61,7 @@ Phosphatidylserine has spent most of its commercial life in capsules, and the sp
 
 ![Beverage developer comparing prototype functional drink samples on a tasting bench in a product development laboratory](/assets/images/resource-ps-phosphatidylserine-rtd-beverage-formulation-stability-us-eu-main.webp)
 
-RTD is nonetheless one of the most attractive formats for cognition-positioned products in the US and EU, and brands that brief their OEM with the right questions reach a stable product at the first or second pilot instead of the sixth. This article walks through the decisions in order: format, grade, process, stability protocol, regulatory checkpoints, and the written OEM brief that holds them together.
+RTD is nonetheless one of the most attractive formats for cognition-positioned products in the US and EU, and brands that brief their OEM with the right questions reach a stable product at the first or second pilot instead of the sixth. This article walks through the decisions in order: format, grade, process, stability protocol, regulatory checkpoints, and the written OEM brief that holds them together. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -129,7 +129,7 @@ A: In the US, substantiated structure/function claims with the required disclaim
 
 ## Conclusion
 
-Beverages are the highest-reward and highest-risk format for phosphatidylserine: consumer-friendly dosing on one side, oxidation, heat and sensory drift on the other. The gap closes with decisions made before the first pilot — a grade selected against beverage-relevant data, a thermal process chosen with PS in mind, a stability protocol that tests chemistry and taste together in the real package, and an OEM brief that fixes the variables in writing. Brands that run this sequence launch on the second pilot; brands that improvise learn the same lessons one failed fill at a time.
+Beverages are the highest-reward and highest-risk format for phosphatidylserine: consumer-friendly dosing on one side, oxidation, heat and sensory drift on the other. The gap closes with decisions made before the first pilot — a grade selected against beverage-relevant data, a thermal process chosen with PS in mind, a stability protocol that tests chemistry and taste together in the real package, and an OEM brief that fixes the variables in writing. Brands that run this sequence launch on the second pilot; brands that improvise learn the same lessons one failed fill at a time. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -52,7 +52,7 @@ Ask three phosphatidylserine suppliers for "food grade PS" and you may receive t
 
 ![Laboratory technician comparing phosphatidylserine specification documents between two ingredient grades](/assets/images/phosphatidylserine-grade-selection-gmp-vs-food-grade-us-eu-grade-comparison.webp)
 
-Grade selection is therefore not a quality question in the abstract — it is a fit question. This article sets out what each designation means in manufacturing practice, where the specifications genuinely differ, what drives the price gap, and how to decide with the finished product's category and market in view.
+Grade selection is therefore not a quality question in the abstract — it is a fit question. This article sets out what each designation means in manufacturing practice, where the specifications genuinely differ, what drives the price gap, and how to decide with the finished product's category and market in view. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -106,7 +106,7 @@ A: The novel food framework attaches to the food and its authorisation status, n
 
 ## Conclusion
 
-Grade selection for phosphatidylserine is a fit exercise: map the finished product's regulatory category and market evidence demands first, then buy the cheapest grade whose specification and documentation meet them. Buyers who write the minimum specification before requesting quotes avoid both paying for unclaimed grade features and discovering audit gaps after launch. Nutranexa supplies phosphatidylserine in food and GMP-controlled grades with transparent specifications and full COA packages, and will help you match the grade to your product category and market.
+Grade selection for phosphatidylserine is a fit exercise: map the finished product's regulatory category and market evidence demands first, then buy the cheapest grade whose specification and documentation meet them. Buyers who write the minimum specification before requesting quotes avoid both paying for unclaimed grade features and discovering audit gaps after launch. Nutranexa supplies phosphatidylserine in food and GMP-controlled grades with transparent specifications and full COA packages, and will help you match the grade to your product category and market. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

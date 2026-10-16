@@ -49,7 +49,7 @@ Most phosphatidylserine shipped from Asian production sites to Europe travels tw
 
 This guide is for sourcing managers and importers weighing that trade-off. Rail is not automatically better than sea, and it introduces its own risks — summer heat on the steppes, dwell time during gauge changes, and route geopolitics that ocean freight never faces. But for buyers who understand what changes on rail, it is a legitimate tool for replenishment planning, peak-season bridging, and new-product launch timing. The sections below cover how the corridors actually operate, what rail costs relative to the alternatives, and which documents and packaging decisions must be settled before the first container leaves the plant.
 
-![Freight train containers crossing a vast landscape on the China to Europe rail corridor](/assets/images/resource-ps-rail-freight-main.webp)
+![Freight train containers crossing a vast landscape on the China to Europe rail corridor](/assets/images/resource-ps-rail-freight-main.webp) Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -117,7 +117,7 @@ Yes, but the transport document differs. Rail uses a consignment note under the 
 
 ## Conclusion
 
-Rail freight will not replace ocean for baseline phosphatidylserine supply, and it should not — sea remains the cost backbone of ingredient logistics. But for the recurring middle problem of ingredient buying, where sea is too slow and air too expensive, the China–Europe corridors offer a credible third path. The buyers who use rail well do three things: they book scheduled block-train services with the corridor stated in writing, they adapt payment and insurance structures to rail's document set, and they treat summer heat as a packaging and scheduling problem to be engineered around. Put those three disciplines into your next RFQ and rail becomes a predictable tool rather than a gamble.
+Rail freight will not replace ocean for baseline phosphatidylserine supply, and it should not — sea remains the cost backbone of ingredient logistics. But for the recurring middle problem of ingredient buying, where sea is too slow and air too expensive, the China–Europe corridors offer a credible third path. The buyers who use rail well do three things: they book scheduled block-train services with the corridor stated in writing, they adapt payment and insurance structures to rail's document set, and they treat summer heat as a packaging and scheduling problem to be engineered around. Put those three disciplines into your next RFQ and rail becomes a predictable tool rather than a gamble. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

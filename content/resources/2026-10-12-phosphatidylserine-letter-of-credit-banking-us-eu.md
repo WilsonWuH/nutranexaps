@@ -41,7 +41,7 @@ Most phosphatidylserine orders move on familiar terms: a deposit by wire, the ba
 
 For a US or EU brand buying PS internationally, an LC protects both sides: the supplier is paid against compliant documents, and the buyer does not release funds before goods ship as agreed. But an LC is also a document machine: if your paperwork does not match the credit exactly, your payment security quietly disappears. This guide explains when an LC is worth using, how it works under UCP 600, the discrepancies that trip up ingredient shipments, and how to manage currency exposure.
 
-![Ingredient warehouse with packaged raw material drums ready for export](/assets/images/resource-ps-phosphatidylserine-letter-of-credit-banking-us-eu-cover.webp)
+![Ingredient warehouse with packaged raw material drums ready for export](/assets/images/resource-ps-phosphatidylserine-letter-of-credit-banking-us-eu-cover.webp) For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -107,7 +107,7 @@ Map the options against order size and relationship maturity. A sensible progres
 
 ## Conclusion
 
-Letters of credit turn a trust problem into a paperwork problem — progress, as long as you manage the paperwork with the same rigor you apply to phosphatidylserine specifications. Use an LC where the cash at risk or the newness of the relationship justifies it, draft the document list with your quality team so a compliant presentation tells you what you need to know, and address FX at contract signature rather than at payment date. Handled this way, an LC is a precise tool for the orders that genuinely need it, while mature relationships run on cheaper terms. Nutranexa supports US and EU buyers with clean, LC-compatible documentation and can coordinate with your bank's requirements from the first order.
+Letters of credit turn a trust problem into a paperwork problem — progress, as long as you manage the paperwork with the same rigor you apply to phosphatidylserine specifications. Use an LC where the cash at risk or the newness of the relationship justifies it, draft the document list with your quality team so a compliant presentation tells you what you need to know, and address FX at contract signature rather than at payment date. Handled this way, an LC is a precise tool for the orders that genuinely need it, while mature relationships run on cheaper terms. Nutranexa supports US and EU buyers with clean, LC-compatible documentation and can coordinate with your bank's requirements from the first order. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

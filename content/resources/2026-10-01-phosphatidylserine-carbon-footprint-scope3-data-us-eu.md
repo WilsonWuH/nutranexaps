@@ -61,7 +61,7 @@ Somewhere in the last two reporting cycles, "ask the supplier for carbon data" m
 
 ![Procurement manager and sustainability analyst reviewing supplier carbon footprint data on a spreadsheet in an office](/assets/images/resource-ps-phosphatidylserine-carbon-footprint-scope3-data-us-eu-main.webp)
 
-Phosphatidylserine sits in an awkward spot for this exercise: a specialized lipid made through enzyme-driven processing, whose footprint depends heavily on the upstream crop, the energy mix of the plant and the allocation choices buried in the calculation. Buyers who request "the carbon footprint" receive answers they cannot compare; buyers who request the right set of numbers receive data they can defend to auditors and customers. This article defines that request.
+Phosphatidylserine sits in an awkward spot for this exercise: a specialized lipid made through enzyme-driven processing, whose footprint depends heavily on the upstream crop, the energy mix of the plant and the allocation choices buried in the calculation. Buyers who request "the carbon footprint" receive answers they cannot compare; buyers who request the right set of numbers receive data they can defend to auditors and customers. This article defines that request. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -132,7 +132,7 @@ A: Only with care. Under the EU Empowering Consumers Directive, unsubstantiated 
 
 ## Conclusion
 
-Supplier carbon data is becoming a standard procurement input, and phosphatidylserine buyers are better off collecting it deliberately than under deadline. A one-page request — footprint per kg, boundary, allocation, data tier, verification — yields numbers that can be compared, defended and tracked; anything vaguer yields placeholder rows in an inventory that increasingly faces assurance. Normalize for functional unit and boundary before ranking suppliers, weigh the result in the sourcing matrix alongside quality and price, and keep external claims as specific as the data behind them. The buyers who build this muscle now will find every future reporting cycle cheaper than the last.
+Supplier carbon data is becoming a standard procurement input, and phosphatidylserine buyers are better off collecting it deliberately than under deadline. A one-page request — footprint per kg, boundary, allocation, data tier, verification — yields numbers that can be compared, defended and tracked; anything vaguer yields placeholder rows in an inventory that increasingly faces assurance. Normalize for functional unit and boundary before ranking suppliers, weigh the result in the sourcing matrix alongside quality and price, and keep external claims as specific as the data behind them. The buyers who build this muscle now will find every future reporting cycle cheaper than the last. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

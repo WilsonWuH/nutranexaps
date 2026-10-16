@@ -68,7 +68,7 @@ A phosphatidylserine tender looks like a pricing exercise until the responses ar
 
 For US and European buyers, that shift is not pedantry. Under US dietary supplement GMP and EU food law, the buyer owns supplier verification, traceability, and specification control, and a tender response is the cheapest place to collect that evidence. For suppliers, the same document set is the difference between being shortlisted and being filtered out by a compliance screen before a human reads the price.
 
-This guide covers both sides: what buyers should require and how to score it, and how suppliers build a defensible pack once rather than per enquiry.
+This guide covers both sides: what buyers should require and how to score it, and how suppliers build a defensible pack once rather than per enquiry. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -146,7 +146,7 @@ A: Yes for the core pack — specification, dossier, certificates, logistics she
 
 A phosphatidylserine tender is a test of documentation discipline on both sides. Buyers who specify what they need, in what order, and how they will score it get comparable bids and a defensible award. Suppliers who maintain a current, honest, complete pack spend less time on paperwork and get shortlisted more often.
 
-Price still matters. But in a specification-sensitive category it is the last comparison, not the first. The responses that survive the screen are the ones that let a quality reviewer reconstruct the product on paper before a kilogram ships.
+Price still matters. But in a specification-sensitive category it is the last comparison, not the first. The responses that survive the screen are the ones that let a quality reviewer reconstruct the product on paper before a kilogram ships. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -45,7 +45,7 @@ Most phosphatidylserine market-entry plans stop at the United States and Europe,
 
 This guide is written for sourcing managers and brand owners evaluating Brazil for the first time. It explains how ANVISA treats food supplements, what importer localization requires, which ingredient documents to demand from your PS supplier, and where labeling plans most often stall. The consistent theme: verify current status in official sources rather than assuming US or EU permissions transfer, because they do not.
 
-![Wide interior view of a modern Brazilian supplement distribution warehouse with racked drums and pallets](/assets/images/phosphatidylserine-brazil-anvisa-market-entry-import-warehouse.webp)
+![Wide interior view of a modern Brazilian supplement distribution warehouse with racked drums and pallets](/assets/images/phosphatidylserine-brazil-anvisa-market-entry-import-warehouse.webp) For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -91,7 +91,7 @@ Brazilian labeling runs on Mercosur harmonized food labeling rules implemented n
 
 ## Conclusion
 
-Brazil rewards importers who respect its system's orderliness. The ANVISA supplement framework, customs localization, and Mercosur labeling rules are demanding but knowable, and they lean on the same ingredient documentation disciplined buyers already maintain — specifications, COAs, declarations, and traceability. The winning sequence is to verify ingredient status at the target dose, qualify an experienced Brazilian importer or regulatory partner, align supplier documents to local review expectations, and run labeling as a dedicated workstream. Phosphatidylserine suppliers who can support that file with clean, consistent documentation give their brand clients a genuine head start in a large market where many competitors have not yet looked.
+Brazil rewards importers who respect its system's orderliness. The ANVISA supplement framework, customs localization, and Mercosur labeling rules are demanding but knowable, and they lean on the same ingredient documentation disciplined buyers already maintain — specifications, COAs, declarations, and traceability. The winning sequence is to verify ingredient status at the target dose, qualify an experienced Brazilian importer or regulatory partner, align supplier documents to local review expectations, and run labeling as a dedicated workstream. Phosphatidylserine suppliers who can support that file with clean, consistent documentation give their brand clients a genuine head start in a large market where many competitors have not yet looked. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

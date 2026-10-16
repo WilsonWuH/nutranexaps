@@ -67,7 +67,7 @@ Buyers who understand that structure negotiate differently. Instead of pressing 
 
 ![Procurement and finance teams building a phosphatidylserine landed cost model across supplier quotations](/assets/images/resource-phosphatidylserine-cost-structure-price-drivers-us-eu.webp)
 
-No price figures appear here, and none should be inferred. This article explains the model that produces them, so procurement can build a comparison that actually holds.
+No price figures appear here, and none should be inferred. This article explains the model that produces them, so procurement can build a comparison that actually holds. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -161,7 +161,7 @@ A: Agree quantity bands, validity matched to the decision timeline, a transparen
 
 Phosphatidylserine pricing is not arbitrary. It is the arithmetic of an enzymatic conversion, a purification train with real yield losses, a certificate programme, a packaging configuration, and a freight market, quoted through an Incoterms rule that decides who bears what.
 
-Buyers working with that structure do better than buyers pressing the same variable every year: specify what you need, commit volume you can forecast, standardise where it does not hurt the brand, compare on one landed basis — then ask for a price mechanism rather than a price number.
+Buyers working with that structure do better than buyers pressing the same variable every year: specify what you need, commit volume you can forecast, standardise where it does not hurt the brand, compare on one landed basis — then ask for a price mechanism rather than a price number. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -32,7 +32,7 @@
 - Sensory validation, stability, and cost trade-offs
 
 ## Introduction
-Phosphatidylserine (PS) has a well-earned reputation among formulators: it works, but it tastes bitter. In a capsule, that characteristic note never reaches the consumer. In a gummy, chewable tablet, or drink mix, it can be the difference between a repeat purchase and a returned product. For brands working with US or EU contract manufacturers, taste is not a cosmetic detail — it is a formulation risk that needs to be engineered out deliberately, with the ingredient supplier and the OEM involved from the beginning. This article explains why PS tastes the way it does, which formats are most exposed, the masking technologies that actually get used at commercial scale, and how to validate the result before you commit to a production batch.
+Phosphatidylserine (PS) has a well-earned reputation among formulators: it works, but it tastes bitter. In a capsule, that characteristic note never reaches the consumer. In a gummy, chewable tablet, or drink mix, it can be the difference between a repeat purchase and a returned product. For brands working with US or EU contract manufacturers, taste is not a cosmetic detail — it is a formulation risk that needs to be engineered out deliberately, with the ingredient supplier and the OEM involved from the beginning. This article explains why PS tastes the way it does, which formats are most exposed, the masking technologies that actually get used at commercial scale, and how to validate the result before you commit to a production batch. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -99,7 +99,7 @@ A: Move to a format with a physical barrier — a softgel or two-piece capsule �
 A: Use a small trained panel with a defined intensity scale for bitterness and aftertaste, run at multiple time points including accelerated stability. This is standard at capable OEMs and gives you objective, repeatable data rather than one-off impressions.
 
 ## Conclusion
-PS bitterness is manageable — but only if it is treated as a formulation requirement from the brief onward. Match the masking strategy to the dosage format, prefer pre-encapsulated grades when dose and format leave little room, validate taste alongside chemical stability over shelf life, and put the whole approach in writing with your OEM before the first pilot batch. Brands that do this ship cognitive-health products that consumers actually finish; brands that treat taste as a final-tweak problem fund second reformulation cycles.
+PS bitterness is manageable — but only if it is treated as a formulation requirement from the brief onward. Match the masking strategy to the dosage format, prefer pre-encapsulated grades when dose and format leave little room, validate taste alongside chemical stability over shelf life, and put the whole approach in writing with your OEM before the first pilot batch. Brands that do this ship cognitive-health products that consumers actually finish; brands that treat taste as a final-tweak problem fund second reformulation cycles. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 - U.S. FDA — Dietary Supplements: https://www.fda.gov/food/dietary-supplements

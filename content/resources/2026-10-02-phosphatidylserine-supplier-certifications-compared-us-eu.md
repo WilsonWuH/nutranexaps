@@ -61,7 +61,7 @@ A phosphatidylserine supplier's qualification file usually opens with a page of 
 
 ![Procurement specialist reviewing a folder of supplier certification documents at a desk in a modern office](/assets/images/resource-ps-phosphatidylserine-supplier-certifications-compared-us-eu-docs.webp)
 
-Certificates are evidence, and each type is evidence of something specific. Read them as four separate layers — what the scheme audits, what regulatory regime it touches, which site it covers and when it expires — and they become one of the fastest pre-audit filters available to a PS buyer. This article unpacks each layer and ends with a verification checklist.
+Certificates are evidence, and each type is evidence of something specific. Read them as four separate layers — what the scheme audits, what regulatory regime it touches, which site it covers and when it expires — and they become one of the fastest pre-audit filters available to a PS buyer. This article unpacks each layer and ends with a verification checklist. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -119,7 +119,7 @@ A: HACCP is the hazard analysis methodology underlying all modern food safety st
 
 ## Conclusion
 
-Certifications are the fastest pre-audit filter a phosphatidylserine buyer has — if each certificate is read as evidence of a specific layer. FSSC 22000 tells you the site passed a GFSI-benchmarked food safety audit; ISO 22000 alone tells you less; HACCP tells you a hazard analysis exists; none of them proves your US cGMP or EU documentation obligations are covered — you establish that by asking directly. Verify scope and validity, weight the layers separately, and confirm with your own audit where volumes justify it.
+Certifications are the fastest pre-audit filter a phosphatidylserine buyer has — if each certificate is read as evidence of a specific layer. FSSC 22000 tells you the site passed a GFSI-benchmarked food safety audit; ISO 22000 alone tells you less; HACCP tells you a hazard analysis exists; none of them proves your US cGMP or EU documentation obligations are covered — you establish that by asking directly. Verify scope and validity, weight the layers separately, and confirm with your own audit where volumes justify it. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

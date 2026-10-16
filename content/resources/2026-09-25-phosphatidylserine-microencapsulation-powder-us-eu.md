@@ -52,7 +52,7 @@ Plain phosphatidylserine powder is a demanding ingredient. It carries a characte
 
 ![Microencapsulation spray-drying equipment producing phosphatidylserine powder in an ingredient plant](/assets/images/phosphatidylserine-microencapsulation-powder-us-eu-microencapsulation-line.webp)
 
-But encapsulation is not a binary attribute. Two powders both labelled "microencapsulated PS" can behave very differently in a bar, a beverage, or a sachet, because the wall system, the loading ratio, and the process discipline behind them differ. This article explains what the technology actually delivers, which specification parameters to demand, and how to evaluate suppliers before committing a formulation.
+But encapsulation is not a binary attribute. Two powders both labelled "microencapsulated PS" can behave very differently in a bar, a beverage, or a sachet, because the wall system, the loading ratio, and the process discipline behind them differ. This article explains what the technology actually delivers, which specification parameters to demand, and how to evaluate suppliers before committing a formulation. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -110,7 +110,7 @@ A: Cool, dry conditions in barrier packaging with nitrogen flush and desiccant, 
 
 ## Conclusion
 
-Microencapsulation turns phosphatidylserine from a difficult phospholipid into a workable food ingredient — but only when the wall system, loading ratio, and oxidation controls are specified and verified, not just claimed. Buyers who ask for the second layer of the specification, test candidates in the real matrix, and score suppliers on process transparency end up with formats that survive sensory panels and shelf-life studies alike. Nutranexa supplies microencapsulated PS powder with both specification layers documented, method-referenced COAs, and application support for functional food and supplement formats.
+Microencapsulation turns phosphatidylserine from a difficult phospholipid into a workable food ingredient — but only when the wall system, loading ratio, and oxidation controls are specified and verified, not just claimed. Buyers who ask for the second layer of the specification, test candidates in the real matrix, and score suppliers on process transparency end up with formats that survive sensory panels and shelf-life studies alike. Nutranexa supplies microencapsulated PS powder with both specification layers documented, method-referenced COAs, and application support for functional food and supplement formats. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

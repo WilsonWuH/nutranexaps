@@ -52,7 +52,7 @@ Supplier selection for phosphatidylserine is usually decided on quality: specifi
 
 ![Financial analyst reviewing supplier financial documents and supply records in an office](/assets/images/phosphatidylserine-supplier-financial-stability-assessment-us-eu-financial-review.webp)
 
-PS is a specialised phospholipid with limited production capacity, enzymatic conversion steps, and qualification cycles that run months from first sample to approved material. When a PS supplier fails, buyers do not simply switch orders — they lose a qualified material, restart requalification, and spend quarters explaining supply gaps to retail customers. This article sets out how to assess financial stability before signing, and which contract terms limit the damage if the assessment is later proven right.
+PS is a specialised phospholipid with limited production capacity, enzymatic conversion steps, and qualification cycles that run months from first sample to approved material. When a PS supplier fails, buyers do not simply switch orders — they lose a qualified material, restart requalification, and spend quarters explaining supply gaps to retail customers. This article sets out how to assess financial stability before signing, and which contract terms limit the damage if the assessment is later proven right. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -104,7 +104,7 @@ A: Commonly one to three months of demand, sized to your requalification timelin
 
 ## Conclusion
 
-For a specialised ingredient like phosphatidylserine, the cheapest insurance in a long-term supply agreement is a financial-viability assessment done before signature and a contract that prices failure realistically: security sized to requalification, payment discipline, warm second sources, and exit triggers that do not require an insolvency filing to exercise. Buyers who treat financial stability as part of supplier qualification — not a finance afterthought — avoid the scenario where quality was perfect and supply still disappeared. Nutranexa supports long-term PS partnerships with transparent corporate information, audited references on request, and contract terms built for multi-year supply.
+For a specialised ingredient like phosphatidylserine, the cheapest insurance in a long-term supply agreement is a financial-viability assessment done before signature and a contract that prices failure realistically: security sized to requalification, payment discipline, warm second sources, and exit triggers that do not require an insolvency filing to exercise. Buyers who treat financial stability as part of supplier qualification — not a finance afterthought — avoid the scenario where quality was perfect and supply still disappeared. Nutranexa supports long-term PS partnerships with transparent corporate information, audited references on request, and contract terms built for multi-year supply. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

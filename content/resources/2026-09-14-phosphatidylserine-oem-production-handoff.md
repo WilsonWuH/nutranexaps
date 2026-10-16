@@ -60,7 +60,7 @@ Moving phosphatidylserine from an approved raw material into a running productio
 
 This guide describes the handoff that should happen between an ingredient supplier and an OEM or brand manufacturing team: what to lock down before scale-up, how PS behaves in blending and in each dosage form, which documents should travel with the material, and how to verify a pilot batch. It is written for supplement brands, contract manufacturers, and R&D teams in the US and Europe.
 
-Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Buyers should still confirm current batch-specific data and market-specific files before production.
+Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Buyers should still confirm current batch-specific data and market-specific files before production. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -143,7 +143,7 @@ At minimum: specification, batch COA with actual values, source and allergen sta
 
 ## Conclusion
 
-A phosphatidylserine OEM handoff succeeds when the material's lipid reality is planned for: flow and caking are characterized, blend uniformity is measured with a PS-specific method, the dosage form route matches the grade, and the document package reaches the quality unit before production starts. Brands that treat the handoff as a technical package reach commercial batches with fewer surprises, and suppliers who can support that conversation become easier to qualify.
+A phosphatidylserine OEM handoff succeeds when the material's lipid reality is planned for: flow and caking are characterized, blend uniformity is measured with a PS-specific method, the dosage form route matches the grade, and the document package reaches the quality unit before production starts. Brands that treat the handoff as a technical package reach commercial batches with fewer surprises, and suppliers who can support that conversation become easier to qualify. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

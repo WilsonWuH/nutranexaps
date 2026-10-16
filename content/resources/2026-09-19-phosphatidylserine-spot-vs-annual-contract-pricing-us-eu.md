@@ -81,7 +81,7 @@ Most buyers start on spot: it suits sampling, pilots, and launches where forecas
 
 This guide explains the price drivers behind a bulk phosphatidylserine quote, compares spot and contract structures, and sets out hybrids and clauses worth settling before signature. Terms must be confirmed against current offers.
 
-![Business negotiation meeting for a bulk phosphatidylserine annual supply agreement](/assets/images/phosphatidylserine-spot-vs-annual-contract-pricing-us-eu-overview.webp)
+![Business negotiation meeting for a bulk phosphatidylserine annual supply agreement](/assets/images/phosphatidylserine-spot-vs-annual-contract-pricing-us-eu-overview.webp) For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -211,7 +211,7 @@ Spot buying and annual contracting are not competing answers to one question. Th
 
 For recurring, predictable demand, a properly drafted annual agreement lowers administrative cost, delivers priority treatment when supply tightens, and reduces surprises. Where demand is uncertain, hybrids usually win: a framework agreement covering mechanisms, with call-offs sized to reality and a deliberate spot share.
 
-Either way, the outcome depends less on the headline number than on the clauses beneath it: a defined price mechanism, locked specification version, explicit lead times, and a clear acceptance process.
+Either way, the outcome depends less on the headline number than on the clauses beneath it: a defined price mechanism, locked specification version, explicit lead times, and a clear acceptance process. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

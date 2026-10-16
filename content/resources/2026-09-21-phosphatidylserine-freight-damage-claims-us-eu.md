@@ -68,7 +68,7 @@ Damage to a phosphatidylserine shipment is rarely dramatic. There is no crushed 
 
 That last case is the expensive one, because PS is hygroscopic and oxidatively sensitive: a powder that absorbed moisture in transit may meet assay and still fail peroxide value, or pass release and lose shelf life. Without arrival data the cause is unprovable, and an unprovable cause is an unrecoverable claim.
 
-This guide covers the whole chain: what damages PS powder in transit, the packaging and loading requirements worth writing into a purchase order, the inspection sequence at receiving, the evidence carriers and insurers need, and the notice windows that decide whether a claim survives.
+This guide covers the whole chain: what damages PS powder in transit, the packaging and loading requirements worth writing into a purchase order, the inspection sequence at receiving, the evidence carriers and insurers need, and the notice windows that decide whether a claim survives. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -150,7 +150,7 @@ A: Treat it as a quality decision, not a cosmetic one. If liner and closure inte
 
 Freight damage on a phosphatidylserine shipment is decided twice: once in the packaging specification and loading plan, and again in the first hour after the container is opened. The first decision determines whether damage happens; the second determines whether it can be recovered.
 
-Buyers who specify packaging, require loading photographs, and give notice immediately recover their losses. Buyers who sign a clean delivery receipt and open drums later absorb the cost themselves.
+Buyers who specify packaging, require loading photographs, and give notice immediately recover their losses. Buyers who sign a clean delivery receipt and open drums later absorb the cost themselves. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

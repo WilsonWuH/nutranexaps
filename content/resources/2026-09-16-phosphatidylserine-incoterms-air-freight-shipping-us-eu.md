@@ -43,7 +43,7 @@ bulk powder import logistics
 
 ## Introduction
 
-Most phosphatidylserine buyers spend weeks negotiating assay grade and documentation, then treat shipping as an afterthought. That is a mistake. The Incoterm on your purchase order determines who books the freight, who insures the cargo, and who faces customs when a shipment is examined. Transport mode swings landed cost and delivery timing more than buyers expect — especially when a production slot at your contract manufacturer depends on a fixed date. This guide covers the Incoterms 2020 options that appear on real PS purchase orders, the air-versus-ocean decision with illustrative numbers, and the arrival rules that apply in the US and EU.
+Most phosphatidylserine buyers spend weeks negotiating assay grade and documentation, then treat shipping as an afterthought. That is a mistake. The Incoterm on your purchase order determines who books the freight, who insures the cargo, and who faces customs when a shipment is examined. Transport mode swings landed cost and delivery timing more than buyers expect — especially when a production slot at your contract manufacturer depends on a fixed date. This guide covers the Incoterms 2020 options that appear on real PS purchase orders, the air-versus-ocean decision with illustrative numbers, and the arrival rules that apply in the US and EU. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Why PS Shipments Deserve a Logistics Plan
 
@@ -126,7 +126,7 @@ CIF covers carriage and minimum insurance to the destination port, but import cl
 
 ## Conclusion
 
-Incoterms and transport mode are commercial decisions with regulatory consequences, and for a high-value, production-critical ingredient like phosphatidylserine they deserve the same rigor as your specification review. FCA with buyer-arranged carriage keeps costs and risk visible; air freight buys calendar certainty for a few dollars per kilogram; ocean buys economy for planned programs. Write the Incoterm, mode expectation, and document list directly into your RFQ so quotes are comparable before you compare prices. When you are ready to plan your next PS shipment, send us your destination, volume, and target delivery window, and our desk will quote the ingredient and the logistics plan together.
+Incoterms and transport mode are commercial decisions with regulatory consequences, and for a high-value, production-critical ingredient like phosphatidylserine they deserve the same rigor as your specification review. FCA with buyer-arranged carriage keeps costs and risk visible; air freight buys calendar certainty for a few dollars per kilogram; ocean buys economy for planned programs. Write the Incoterm, mode expectation, and document list directly into your RFQ so quotes are comparable before you compare prices. When you are ready to plan your next PS shipment, send us your destination, volume, and target delivery window, and our desk will quote the ingredient and the logistics plan together. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -49,7 +49,7 @@ Southeast Asia has quietly become one of the fastest-growing destinations for co
 
 This guide is written for sourcing managers, importers, and brand owners who already understand phosphatidylserine as an ingredient and now need to answer a practical question: what must be true about the ingredient and its documentation before finished products can legally enter Indonesia, Malaysia, Thailand, Vietnam, or Singapore? The short answer is that the ingredient itself is rarely the obstacle. The obstacle is the document trail behind it — registrations, certificates, and declarations that national authorities will ask the importer or registration holder to produce. Getting that trail right starts at the supplier qualification stage, months before the first shipment.
 
-![Phosphatidylserine supplement ingredient drums in a clean tropical warehouse prepared for ASEAN import registration](/assets/images/resource-ps-sea-market-entry-main.webp)
+![Phosphatidylserine supplement ingredient drums in a clean tropical warehouse prepared for ASEAN import registration](/assets/images/resource-ps-sea-market-entry-main.webp) For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -117,7 +117,7 @@ For markets with formal registration — Indonesia, Malaysia, and Vietnam — a 
 
 ## Conclusion
 
-Southeast Asia rewards preparation. The regulatory regimes differ, but they draw on the same underlying ingredient documentation — specifications, COAs, safety substantiation, halal and allergen declarations — that disciplined buyers already demand for US and EU business. The winning approach is to treat ASEAN as five sequenced projects built on one master document pack, to make halal and local-language labeling first-class requirements in supplier selection rather than afterthoughts, and to respect the tropical-climate storage realities that make oxidation control a commercial issue for phosphatidylserine. Suppliers who can support that documentation set are worth premium attention; ask for it explicitly in your next RFQ.
+Southeast Asia rewards preparation. The regulatory regimes differ, but they draw on the same underlying ingredient documentation — specifications, COAs, safety substantiation, halal and allergen declarations — that disciplined buyers already demand for US and EU business. The winning approach is to treat ASEAN as five sequenced projects built on one master document pack, to make halal and local-language labeling first-class requirements in supplier selection rather than afterthoughts, and to respect the tropical-climate storage realities that make oxidation control a commercial issue for phosphatidylserine. Suppliers who can support that documentation set are worth premium attention; ask for it explicitly in your next RFQ. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

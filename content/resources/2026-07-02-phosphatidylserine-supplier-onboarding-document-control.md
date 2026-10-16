@@ -70,7 +70,7 @@ That is why phosphatidylserine supplier onboarding deserves its own workflow. If
 
 The better approach is simple: define the item first, request documents second, and compare suppliers only after the file set is coherent. This article explains how to do that for supplement ingredient sourcing, private-label programs, contract-manufacturing review, and distributor onboarding.
 
-Where Nutranexa is mentioned, only verified site facts are used. The current independent website states that the company was founded in 2013, operates on a 110,000+ m2 campus, positions phosphatidylserine as its lead ingredient, and references R&D cooperation with East China University of Science and Technology. The site also shows public COA samples plus buyer-facing request paths for specifications, Halal, Kosher, and production-related documents. Buyers should still request the latest controlled files and confirm exact product applicability before purchase or launch.
+Where Nutranexa is mentioned, only verified site facts are used. The current independent website states that the company was founded in 2013, operates on a 110,000+ m2 campus, positions phosphatidylserine as its lead ingredient, and references R&D cooperation with East China University of Science and Technology. The site also shows public COA samples plus buyer-facing request paths for specifications, Halal, Kosher, and production-related documents. Buyers should still request the latest controlled files and confirm exact product applicability before purchase or launch. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -264,7 +264,7 @@ Phosphatidylserine supplier onboarding works best when buyers treat it as a cont
 
 The practical workflow is simple: choose the source early, request the current specification, read the COA for process quality, confirm certificate scope, check MOQ and packaging assumptions, and build one internal approval folder before the PO is issued.
 
-For buyers reviewing Nutranexa, the current site provides useful early-stage support through verified company facts, dedicated PS product paths, visible quality context, and document request options. Final commercial approval should still depend on the latest controlled files matched to the exact product, source, and market under review.
+For buyers reviewing Nutranexa, the current site provides useful early-stage support through verified company facts, dedicated PS product paths, visible quality context, and document request options. Final commercial approval should still depend on the latest controlled files matched to the exact product, source, and market under review. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

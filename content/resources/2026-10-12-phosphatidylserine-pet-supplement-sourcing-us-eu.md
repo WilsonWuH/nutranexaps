@@ -41,7 +41,7 @@ The pet supplement market has been quietly borrowing the human cognitive-health 
 
 Selling PS into pet products changes three things at once: the regulatory frame shifts from dietary supplements to feed or animal food rules, the specification conversation adds palatability and species considerations, and the documentation pack your supplier must provide looks different from the one built for a human NDI or novel food file. This guide maps those differences for US and EU buyers, so you can qualify phosphatidylserine supply for pet applications with the same rigor you apply to your human lines.
 
-![Senior dog resting calmly beside a bowl of pet supplement chews at home](/assets/images/resource-ps-phosphatidylserine-pet-supplement-sourcing-us-eu-cover.webp)
+![Senior dog resting calmly beside a bowl of pet supplement chews at home](/assets/images/resource-ps-phosphatidylserine-pet-supplement-sourcing-us-eu-cover.webp) For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -99,7 +99,7 @@ Work with your contract manufacturer on overages justified by stability data, an
 
 ## Conclusion
 
-Phosphatidylserine gives pet brands a credible cognitive- and calm-positioned active, but the pet opportunity rewards buyers who respect that this is a different compliance universe: feed rules instead of supplement rules, palatability alongside purity, and a documentation pack that answers feed questionnaires as readily as supplement audits. Qualify your PS supply once, thoroughly, for both frames — specification, origin, certifications, and pet-specific statements — and the same ingredient can serve your human and pet portfolios without compromise. Nutranexa supplies phosphatidylserine with complete US/EU documentation and supports brands bringing PS into pet nutrition, from first samples through commercial supply.
+Phosphatidylserine gives pet brands a credible cognitive- and calm-positioned active, but the pet opportunity rewards buyers who respect that this is a different compliance universe: feed rules instead of supplement rules, palatability alongside purity, and a documentation pack that answers feed questionnaires as readily as supplement audits. Qualify your PS supply once, thoroughly, for both frames — specification, origin, certifications, and pet-specific statements — and the same ingredient can serve your human and pet portfolios without compromise. Nutranexa supplies phosphatidylserine with complete US/EU documentation and supports brands bringing PS into pet nutrition, from first samples through commercial supply. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

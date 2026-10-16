@@ -40,7 +40,7 @@ Trade show season compresses a year of supplier discovery into three or four day
 
 The buyers who get real value from ingredient expos treat them as a structured qualification stage, not a networking event. Before the doors open, they know which PS suppliers they need to meet, what documents to request, and what answers will move a supplier onto — or off of — the shortlist. This guide walks through that process from a US/EU buyer's perspective: building the target list, running effective meetings, and converting show-floor conversations into qualified phosphatidylserine supply.
 
-![Phosphatidylserine ingredient supplier exhibition booth at a trade show](/assets/images/resource-ps-phosphatidylserine-trade-show-supplier-meetings-cover.webp)
+![Phosphatidylserine ingredient supplier exhibition booth at a trade show](/assets/images/resource-ps-phosphatidylserine-trade-show-supplier-meetings-cover.webp) Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -109,7 +109,7 @@ None of these flags is a final verdict, but each one should raise the level of d
 
 ## Conclusion
 
-Trade shows reward preparation more than charisma. A buyer who arrives with a classified target list, a question set that exposes the real supply chain behind phosphatidylserine offers, and a follow-up process that converts conversations into documents will leave the hall with qualified candidates rather than a bag of brochures. Treat the show as the first stage of supplier qualification, hold every verbal claim against written evidence afterward, and the exhibition budget becomes one of the most efficient line items in your sourcing program. For help assembling the document pack from any supplier you meet, the Nutranexa team supports US and EU buyers with full specification and regulatory documentation for PS ingredients.
+Trade shows reward preparation more than charisma. A buyer who arrives with a classified target list, a question set that exposes the real supply chain behind phosphatidylserine offers, and a follow-up process that converts conversations into documents will leave the hall with qualified candidates rather than a bag of brochures. Treat the show as the first stage of supplier qualification, hold every verbal claim against written evidence afterward, and the exhibition budget becomes one of the most efficient line items in your sourcing program. For help assembling the document pack from any supplier you meet, the Nutranexa team supports US and EU buyers with full specification and regulatory documentation for PS ingredients. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

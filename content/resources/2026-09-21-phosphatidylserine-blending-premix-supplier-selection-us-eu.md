@@ -71,7 +71,7 @@ Outsourcing a phosphatidylserine blend looks like the simplest decision in a sup
 
 Both failures share a root cause: blending was treated as a commodity service rather than a controlled operation with validated parameters, documented segregation, and statistical release criteria. PS makes this matter more than a robust mineral premix would — it is hygroscopic, oxidatively sensitive, often a minority component, and it responds badly to over-mixing, segregation, and moisture pickup.
 
-This guide sets out what US and EU buyers should verify before awarding blending work: the quality system, allergen-control design, uniformity evidence, equipment fit, scale-up path, and per-batch release documents.
+This guide sets out what US and EU buyers should verify before awarding blending work: the quality system, allergen-control design, uniformity evidence, equipment fit, scale-up path, and per-batch release documents. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -159,7 +159,7 @@ A: No, not on their own. Pilot work is screening. Require commercial-scale unifo
 
 Selecting a phosphatidylserine blending or premix partner is a quality decision with a commercial shape. The questions that predict success are not about price per kilogram of blended powder; they are whether the site can show you its allergen matrix, its uniformity protocol, its scale-up logic, and a complete release file.
 
-Ask for those four artefacts up front. Partners who have them will answer in a day. Partners who need to invent them will tell you more by hesitating than by any certificate they send.
+Ask for those four artefacts up front. Partners who have them will answer in a day. Partners who need to invent them will tell you more by hesitating than by any certificate they send. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

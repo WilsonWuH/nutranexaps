@@ -52,7 +52,7 @@ Phosphatidylserine has an ingredient-chain problem that is easy to underestimate
 
 ![Soybeans and golden phospholipid powder in laboratory glassware on a clean lab bench](/assets/images/resource-ps-non-gmo-soybeans.webp)
 
-Buyers discover the gap late. The formulation is final, the label says "non-GMO" or omits a soy statement, and only then does a retail auditor ask for the identity-preserved chain of custody — which the ingredient file does not contain. This article walks through how non-GMO status is actually proven for soy-derived PS, what US and EU allergen rules require, and where sunflower-derived PS changes the compliance equation.
+Buyers discover the gap late. The formulation is final, the label says "non-GMO" or omits a soy statement, and only then does a retail auditor ask for the identity-preserved chain of custody — which the ingredient file does not contain. This article walks through how non-GMO status is actually proven for soy-derived PS, what US and EU allergen rules require, and where sunflower-derived PS changes the compliance equation. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -108,7 +108,7 @@ A: Sunflower is not on the US major-allergen or EU Annex II lists, so the soy de
 
 ## Conclusion
 
-Non-GMO and allergen status for phosphatidylserine are documentation outcomes, not marketing statements. Soy-derived PS can absolutely support both a non-GMO claim and a compliant label — but only with identity-preserved sourcing, scheme certification where the claim requires it, and a written allergen position backed by analysis. Where the claim demands it, sunflower-derived PS removes the soy allergen conversation entirely at a documented premium. Nutranexa supplies both soy-derived and sunflower-derived phosphatidylserine with complete non-GMO declarations, identity-preservation documentation, and facility allergen matrices — matched to whatever claim your market requires.
+Non-GMO and allergen status for phosphatidylserine are documentation outcomes, not marketing statements. Soy-derived PS can absolutely support both a non-GMO claim and a compliant label — but only with identity-preserved sourcing, scheme certification where the claim requires it, and a written allergen position backed by analysis. Where the claim demands it, sunflower-derived PS removes the soy allergen conversation entirely at a documented premium. Nutranexa supplies both soy-derived and sunflower-derived phosphatidylserine with complete non-GMO declarations, identity-preservation documentation, and facility allergen matrices — matched to whatever claim your market requires. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -33,7 +33,7 @@ This article is an original resource published in the Nutranexa Resource Center 
 
 ## Introduction
 
-Comparing phosphatidylserine quotations looks simple until three suppliers return prices per kilogram that differ by thirty percent for what appears to be the same powder. In practice, most of that gap comes from what each quote does and does not include: the assay basis behind the unit price, testing and documentation inclusions, packaging format, minimum order quantity, payment terms, and the Incoterm the price is built on. This guide walks US and EU procurement teams through a line-by-line method for dismantling a PS quote, normalizing every offer to a single comparison basis, and building a side-by-side matrix that reflects true landed cost rather than the headline number.
+Comparing phosphatidylserine quotations looks simple until three suppliers return prices per kilogram that differ by thirty percent for what appears to be the same powder. In practice, most of that gap comes from what each quote does and does not include: the assay basis behind the unit price, testing and documentation inclusions, packaging format, minimum order quantity, payment terms, and the Incoterm the price is built on. This guide walks US and EU procurement teams through a line-by-line method for dismantling a PS quote, normalizing every offer to a single comparison basis, and building a side-by-side matrix that reflects true landed cost rather than the headline number. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## What a Complete PS Quotation Should Contain
 
@@ -144,7 +144,7 @@ Border re-testing, demurrage from document delays, safety stock from long lead t
 
 ## Conclusion
 
-A phosphatidylserine quotation bundles product definition, quality scope, commercial terms, and logistics assumptions - and the cheapest-looking bundle is rarely the cheapest once unpacked. By fixing a single comparison basis, normalizing prices to PS content and landed cost, pricing the testing, packaging, and documentation you will actually need, and scoring delivery reliability alongside price, procurement teams move from comparing numbers to comparing offers - and carry a matrix that stands up to internal review.
+A phosphatidylserine quotation bundles product definition, quality scope, commercial terms, and logistics assumptions - and the cheapest-looking bundle is rarely the cheapest once unpacked. By fixing a single comparison basis, normalizing prices to PS content and landed cost, pricing the testing, packaging, and documentation you will actually need, and scoring delivery reliability alongside price, procurement teams move from comparing numbers to comparing offers - and carry a matrix that stands up to internal review. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

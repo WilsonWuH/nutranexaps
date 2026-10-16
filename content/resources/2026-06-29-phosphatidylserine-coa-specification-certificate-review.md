@@ -72,7 +72,7 @@ That is why phosphatidylserine COA review should not be treated as an isolated Q
 
 This guide explains how overseas buyers should review the three document layers that matter most before purchase-order approval: the specification sheet, the COA, and the supporting certificate set.
 
-Where Nutranexa is mentioned, only verified site facts are used. The current Nutranexa site identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., established on December 25, 2013, and states a 110,000+ m2 campus in Yanggu County, Shandong. It presents phosphatidylserine as a lead product, shows PS 20% sunflower and PS 50% sample COA visibility, and lists buyer-requestable files such as Halal, Kosher, food production license, and FDA food facility registration materials. Buyers should still confirm the latest product-specific, batch-specific, and market-specific files before quotation or shipment.
+Where Nutranexa is mentioned, only verified site facts are used. The current Nutranexa site identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., established on December 25, 2013, and states a 110,000+ m2 campus in Yanggu County, Shandong. It presents phosphatidylserine as a lead product, shows PS 20% sunflower and PS 50% sample COA visibility, and lists buyer-requestable files such as Halal, Kosher, food production license, and FDA food facility registration materials. Buyers should still confirm the latest product-specific, batch-specific, and market-specific files before quotation or shipment. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -230,7 +230,7 @@ The current site shows company identity, 2013 establishment, a 110,000+ m2 campu
 
 Phosphatidylserine document review is not about collecting the largest number of files. It is about deciding whether the supplier's specification, COA, and certificate package describe one commercially usable product in a clear and consistent way. Buyers who review those files in sequence usually spot approval risk earlier and compare suppliers more effectively.
 
-For overseas procurement teams, the practical method is straightforward: define the exact PS item first, review the specification as the product anchor, read the COA for traceability and logic rather than headline numbers alone, and request only the certificate files that match the real approval path. That process creates a stronger basis for quotation signoff, supplier qualification, and later shipment review.
+For overseas procurement teams, the practical method is straightforward: define the exact PS item first, review the specification as the product anchor, read the COA for traceability and logic rather than headline numbers alone, and request only the certificate files that match the real approval path. That process creates a stronger basis for quotation signoff, supplier qualification, and later shipment review. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

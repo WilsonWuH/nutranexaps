@@ -43,7 +43,7 @@
 
 Most phosphatidylserine (PS) buyers discover their single-source risk at the worst possible moment: a capacity crunch, a failed incoming test, a customs delay, or an abrupt price revision leaves finished-goods production exposed with no qualified alternative. Switching suppliers, or adding a second source, is not a purchasing transaction — it is a mini qualification project that touches specifications, regulatory files, production scheduling, and your quality system. Done badly, a supplier transition creates two problems at once: interrupted supply and a documentation trail that fails customer or auditor scrutiny. Done well, it can be completed in one to two quarters with zero disruption to finished product. This guide walks US and EU supplement and functional-food buyers through the full sequence: deciding whether to switch or dual-source, aligning specifications between the two suppliers, running the qualification and bridging work, and managing inventory overlap so that no customer order ever depends on an unqualified lot.
 
-![Two pharmaceutical-grade raw material drums beside a supplier qualification checklist in a blending facility](/assets/images/resource-phosphatidylserine-supplier-switching-dual-sourcing-us-eu.webp)
+![Two pharmaceutical-grade raw material drums beside a supplier qualification checklist in a blending facility](/assets/images/resource-phosphatidylserine-supplier-switching-dual-sourcing-us-eu.webp) Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -113,7 +113,7 @@ A structured remote audit (live facility video, real-time document review, inter
 
 ## Conclusion
 
-Switching or dual-sourcing a phosphatidylserine supplier is a controlled qualification project, not a purchase-order change. The buyers who do it cleanly share three habits: they reconcile specifications line by line before ordering anything, they maintain bridge inventory so qualification delays never touch customer shipments, and they treat the regulatory file — US dietary-ingredient posture, EU documentation, allergen statements — as part of the switch itself. With a 10–16 week plan, a formal bridging batch, and a written steady-state split, you reduce single-source risk without ever letting a customer feel the transition.
+Switching or dual-sourcing a phosphatidylserine supplier is a controlled qualification project, not a purchase-order change. The buyers who do it cleanly share three habits: they reconcile specifications line by line before ordering anything, they maintain bridge inventory so qualification delays never touch customer shipments, and they treat the regulatory file — US dietary-ingredient posture, EU documentation, allergen statements — as part of the switch itself. With a 10–16 week plan, a formal bridging batch, and a written steady-state split, you reduce single-source risk without ever letting a customer feel the transition. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

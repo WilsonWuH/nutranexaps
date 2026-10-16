@@ -52,7 +52,7 @@ Brands exploring phosphatidylserine for cognitive and neurological support event
 
 ![Regulatory affairs specialist reviewing pharmaceutical-style documentation in a bright quality office beside a laboratory window](/assets/images/phosphatidylserine-medical-food-fsmp-review-us-eu-overview.webp)
 
-The US "medical food" and the EU "food for special medical purposes" (FSMP) are related but not equivalent categories, and the difference changes what you must prove about the formulation — and about every kilogram of PS you buy. This article maps both frameworks and translates them into concrete supplier qualification requirements.
+The US "medical food" and the EU "food for special medical purposes" (FSMP) are related but not equivalent categories, and the difference changes what you must prove about the formulation — and about every kilogram of PS you buy. This article maps both frameworks and translates them into concrete supplier qualification requirements. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -98,7 +98,7 @@ A: Yes. Facility registration, preventive controls or HACCP, contaminant limits,
 
 ## Conclusion
 
-Medical foods and FSMP are demanding but realistic categories for phosphatidylserine — demanding because the argument shifts from "supported by studies" to "required by the patient population's condition," and every link in the ingredient chain must carry documentation weight. The US and EU frameworks differ in logic and procedure, so plan the market strategy before the formulation. A PS producer that delivers specification depth, stability evidence, traceability, and contractual change control turns your dossier into a submission package. Nutranexa supplies soy- and sunflower-derived PS with clinical-grade documentation and supports regulatory teams with the ingredient evidence their files require.
+Medical foods and FSMP are demanding but realistic categories for phosphatidylserine — demanding because the argument shifts from "supported by studies" to "required by the patient population's condition," and every link in the ingredient chain must carry documentation weight. The US and EU frameworks differ in logic and procedure, so plan the market strategy before the formulation. A PS producer that delivers specification depth, stability evidence, traceability, and contractual change control turns your dossier into a submission package. Nutranexa supplies soy- and sunflower-derived PS with clinical-grade documentation and supports regulatory teams with the ingredient evidence their files require. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

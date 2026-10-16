@@ -52,7 +52,7 @@ Softgels are the most consumer-friendly delivery format for phosphatidylserine �
 
 ![Softgel encapsulation line filling phosphatidylserine suspension in a contract manufacturing facility](/assets/images/resource-phosphatidylserine-softgel-encapsulation-oem-us-eu.webp)
 
-Most PS softgel problems trace back to decisions made before any equipment ran: which raw material form was purchased, which carrier oil was chosen, and what the supplier's specification actually guaranteed. This article walks through those decisions in the order an OEM project meets them.
+Most PS softgel problems trace back to decisions made before any equipment ran: which raw material form was purchased, which carrier oil was chosen, and what the supplier's specification actually guaranteed. This article walks through those decisions in the order an OEM project meets them. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -106,7 +106,7 @@ A: At minimum: specification with stated assay basis, lot COAs with method citat
 
 ## Conclusion
 
-A PS softgel succeeds or fails at its interfaces: the raw material form against the fill design, the fill design against the encapsulation equipment, the packaged product against its shelf-life claim, and — most invisibly — the documents travelling between supplier, filler, and brand. Buyers who bring the form choice, the rheology targets, and the documentation list into the OEM conversation before the pilot get accurate quotations and boring batches.
+A PS softgel succeeds or fails at its interfaces: the raw material form against the fill design, the fill design against the encapsulation equipment, the packaged product against its shelf-life claim, and — most invisibly — the documents travelling between supplier, filler, and brand. Buyers who bring the form choice, the rheology targets, and the documentation list into the OEM conversation before the pilot get accurate quotations and boring batches. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

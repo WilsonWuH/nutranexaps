@@ -42,7 +42,7 @@ FDA disease claim vs structure function
 
 ## Introduction
 
-Label claims are the most visible compliance surface on any phosphatidylserine product — and the easiest to get wrong. The ingredient itself may arrive with clean specifications and full documentation, yet a single sentence on the label can convert a lawful structure-function claim into an unapproved disease claim. For US brands, the review of claim language is not a marketing formality; it is a regulatory control point that procurement and quality teams share with brand and legal. This guide walks through the label elements every PS product needs, the notification mechanics behind structure-function claims, and a practical review workflow for claim language that arrives from suppliers, agencies, or co-packers.
+Label claims are the most visible compliance surface on any phosphatidylserine product — and the easiest to get wrong. The ingredient itself may arrive with clean specifications and full documentation, yet a single sentence on the label can convert a lawful structure-function claim into an unapproved disease claim. For US brands, the review of claim language is not a marketing formality; it is a regulatory control point that procurement and quality teams share with brand and legal. This guide walks through the label elements every PS product needs, the notification mechanics behind structure-function claims, and a practical review workflow for claim language that arrives from suppliers, agencies, or co-packers. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## The Anatomy of a Compliant US PS Label
 
@@ -130,7 +130,7 @@ No. The notification is made once per product bearing the claim, within 30 days 
 
 ## Conclusion
 
-A compliant phosphatidylserine label is the product of three checks that happen in order: the mandatory label elements are present and correctly formatted, every claim sentence is classified and stays on the structure-function side of the line, and a substantiation file exists that matches the claim text, the dose, and the form in the bottle. None of these checks is difficult; each is commonly skipped under launch pressure. Brands that build the review into the artwork workflow and verify supplier claim language rather than inheriting it ship products that hold up to FDA scrutiny, FTC review, and retailer audits alike.
+A compliant phosphatidylserine label is the product of three checks that happen in order: the mandatory label elements are present and correctly formatted, every claim sentence is classified and stays on the structure-function side of the line, and a substantiation file exists that matches the claim text, the dose, and the form in the bottle. None of these checks is difficult; each is commonly skipped under launch pressure. Brands that build the review into the artwork workflow and verify supplier claim language rather than inheriting it ship products that hold up to FDA scrutiny, FTC review, and retailer audits alike. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

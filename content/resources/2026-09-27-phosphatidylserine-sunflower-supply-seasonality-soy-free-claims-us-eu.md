@@ -52,7 +52,7 @@ Buyers comparing soy-derived and sunflower-derived phosphatidylserine usually st
 
 ![Sunflower heads ripening in a vast field under summer light seen from a low angle](/assets/images/phosphatidylserine-sunflower-supply-seasonality-soy-free-claims-us-eu-overview.webp)
 
-This article explains where sunflower lecithin comes from, what the harvest calendar does to PS availability and cost, what a soy-free claim is genuinely worth in the US and EU, and how to structure sourcing so a single bad crop does not strand your SKU.
+This article explains where sunflower lecithin comes from, what the harvest calendar does to PS availability and cost, what a soy-free claim is genuinely worth in the US and EU, and how to structure sourcing so a single bad crop does not strand your SKU. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -94,7 +94,7 @@ A: Technically straightforward, administratively less so: label and allergen dec
 
 ## Conclusion
 
-Sunflower phosphatidylserine is a marketing claim built on a byproduct market. That is not a criticism — it is the framework buyers need: the premium and the volatility both trace to sunflower lecithin's seasonal, origin-concentrated supply chain, and the soy-free claim's value is commercial, not chemical. Buyers who contract base volumes across the harvest cycle, hold sensible inventory for claim-critical SKUs, and keep a qualified alternate source turn crop risk into a managed variable. Nutranexa produces both soy- and sunflower-derived PS under the same quality system, with transparent lecithin-origin disclosure, allocation priority for contracted customers, and documentation packs that support either claim strategy.
+Sunflower phosphatidylserine is a marketing claim built on a byproduct market. That is not a criticism — it is the framework buyers need: the premium and the volatility both trace to sunflower lecithin's seasonal, origin-concentrated supply chain, and the soy-free claim's value is commercial, not chemical. Buyers who contract base volumes across the harvest cycle, hold sensible inventory for claim-critical SKUs, and keep a qualified alternate source turn crop risk into a managed variable. Nutranexa produces both soy- and sunflower-derived PS under the same quality system, with transparent lecithin-origin disclosure, allocation priority for contracted customers, and documentation packs that support either claim strategy. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -36,7 +36,7 @@ Cluster: PS quality / documents / COA spec audit. Angle: many PS suppliers ship 
 
 ## Introduction
 
-A lot lands at your warehouse, the drum looks fine, and then your QA reviewer flags one line on the Certificate of Analysis: "Retest date: 2028-03." Not an expiry date — a retest date. If your specification sheet says "shelf life: 24 months" and your supplier's COA says "retest: 36 months, subject to re-qualification," you have a documentation mismatch that will surface in your next customer audit. Retest periods are standard practice in the phospholipid industry, but most buyers have never written a procedure for them. This article explains what a retest period actually commits a supplier to, what data should sit behind it, how to re-qualify an aging lot of phosphatidylserine powder, and how to write the term into your specification and quality agreement so the decision path is clear before the material is 30 months old.
+A lot lands at your warehouse, the drum looks fine, and then your QA reviewer flags one line on the Certificate of Analysis: "Retest date: 2028-03." Not an expiry date — a retest date. If your specification sheet says "shelf life: 24 months" and your supplier's COA says "retest: 36 months, subject to re-qualification," you have a documentation mismatch that will surface in your next customer audit. Retest periods are standard practice in the phospholipid industry, but most buyers have never written a procedure for them. This article explains what a retest period actually commits a supplier to, what data should sit behind it, how to re-qualify an aging lot of phosphatidylserine powder, and how to write the term into your specification and quality agreement so the decision path is clear before the material is 30 months old. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Why PS Suppliers Use Retest Periods Instead of Expiry Dates
 
@@ -128,7 +128,7 @@ A: There is no universal rule. Many buyers allow one re-qualification cycle of 1
 
 ## Conclusion
 
-A retest date on a phosphatidylserine COA is not a loophole and not a liability — it is a defined decision point. Treat it like any other specification parameter: confirm the stability data behind the claim at vendor qualification, mirror the term in your own spec sheet, define the re-qualification panel and disposition rules before you need them, and settle cost allocation in the quality agreement. Buyers who manage retest periods procedurally extend usable inventory safely and pass audits cleanly; buyers who ignore the date write off stock or ship oxidative defects to their customers.
+A retest date on a phosphatidylserine COA is not a loophole and not a liability — it is a defined decision point. Treat it like any other specification parameter: confirm the stability data behind the claim at vendor qualification, mirror the term in your own spec sheet, define the re-qualification panel and disposition rules before you need them, and settle cost allocation in the quality agreement. Buyers who manage retest periods procedurally extend usable inventory safely and pass audits cleanly; buyers who ignore the date write off stock or ship oxidative defects to their customers. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -44,7 +44,7 @@
 
 Phosphatidylserine is not the most fragile ingredient in a warehouse, but it is far from bulletproof: elevated temperatures accelerate peroxide-value growth and color drift, and repeated cycling between warm and cool conditions does more damage than a single modest excursion. The trouble for buyers is that transport damage is invisible at the dock — a lot can arrive sealed, dry, and undented, yet with its oxidative clock quietly advanced. That is why serious importers do not rely on "keep cool" labels; they validate the shipping configuration the way they would validate a process: define the required temperature profile, design thermal packaging for the lane's worst case, test it, monitor real shipments, and keep the documentation that proves all of it. This guide covers that validation chain for PS raw material and finished goods moving on US and EU lanes: what temperature profile to specify, how thermal packaging is qualified, what a lane qualification actually involves, and which documents must exist before the first commercial container ships.
 
-![Temperature-controlled container with data loggers being loaded in a refrigerated warehouse dock](/assets/images/resource-phosphatidylserine-cold-chain-transport-validation-us-eu.webp)
+![Temperature-controlled container with data loggers being loaded in a refrigerated warehouse dock](/assets/images/resource-phosphatidylserine-cold-chain-transport-validation-us-eu.webp) For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -121,7 +121,7 @@ Re-qualify when the route, mode, season coverage, service level, or packaging co
 
 ## Conclusion
 
-Cold-chain validation for phosphatidylserine is a chain of four deliverables: a numeric transport temperature profile derived from stability data, a chamber-qualified thermal packaging configuration, instrumented lane qualification with ongoing logger coverage, and a documentation pack with a pre-agreed excursion decision tree. Together they convert PS's quiet oxidative risk into a measured, contractual, and auditable quantity. Buyers who build this chain ship with confidence across seasons and continents — and when something goes wrong, they have data instead of opinions.
+Cold-chain validation for phosphatidylserine is a chain of four deliverables: a numeric transport temperature profile derived from stability data, a chamber-qualified thermal packaging configuration, instrumented lane qualification with ongoing logger coverage, and a documentation pack with a pre-agreed excursion decision tree. Together they convert PS's quiet oxidative risk into a measured, contractual, and auditable quantity. Buyers who build this chain ship with confidence across seasons and continents — and when something goes wrong, they have data instead of opinions. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

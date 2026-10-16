@@ -60,7 +60,7 @@ A toll manufacturer's quotation shows a batch size, a toll fee and a lead time. 
 
 Yield and mass balance make the rest of the arrangement checkable. Mass balance asks whether the books close: does material in equal material out plus accounted loss? Yield asks how efficiently the process converted input into saleable output, turning a toll relationship into something a buyer can verify with arithmetic rather than trust.
 
-![Process engineer reviewing batch record sheets and yield reconciliation tables at a control desk in an ingredient manufacturing plant](/assets/images/resource-ps-phosphatidylserine-toll-manufacturing-yield-mass-balance-us-eu-docs.webp)
+![Process engineer reviewing batch record sheets and yield reconciliation tables at a control desk in an ingredient manufacturing plant](/assets/images/resource-ps-phosphatidylserine-toll-manufacturing-yield-mass-balance-us-eu-docs.webp) For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -124,7 +124,7 @@ A: Ask for an itemised loss breakdown by process step rather than a single balan
 
 ## Conclusion
 
-Yield is the one part of a toll manufacturing quotation a buyer can verify rather than accept. Ask for the reconciliation in full form — charged input by lot and assay, theoretical and actual output, valued side streams, step-by-step losses and sample draws — and check it against an independent record. Chart active yield across a run of batches so drift shows up before a shortage does. Then contract the yield basis, the notification threshold and the disposition of off-spec material, so the number in the monthly report is a measurement rather than a negotiation.
+Yield is the one part of a toll manufacturing quotation a buyer can verify rather than accept. Ask for the reconciliation in full form — charged input by lot and assay, theoretical and actual output, valued side streams, step-by-step losses and sample draws — and check it against an independent record. Chart active yield across a run of batches so drift shows up before a shortage does. Then contract the yield basis, the notification threshold and the disposition of off-spec material, so the number in the monthly report is a measurement rather than a negotiation. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

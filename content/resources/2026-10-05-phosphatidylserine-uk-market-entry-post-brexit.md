@@ -60,7 +60,7 @@ Teams that have completed an EU launch for a phosphatidylserine product often as
 
 The failure mode is predictable. A brand finalises artwork using its EU declarations, orders packaging, agrees a launch window with a UK distributor, and then learns that the ingredient's novel food status must be confirmed against the GB list, that the claim wording it used is not on the GB register, or that the food business operator address on the pack does not satisfy GB requirements. The reprint and delay cost more than the compliance work.
 
-![Regulatory affairs specialist reviewing a UK food supplement compliance file with artwork proofs and declaration documents on a desk](/assets/images/resource-ps-phosphatidylserine-uk-market-entry-post-brexit-docs.webp)
+![Regulatory affairs specialist reviewing a UK food supplement compliance file with artwork proofs and declaration documents on a desk](/assets/images/resource-ps-phosphatidylserine-uk-market-entry-post-brexit-docs.webp) For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -122,7 +122,7 @@ A: Food supplement notification obligations operate in Great Britain and separat
 
 ## Conclusion
 
-A Great Britain launch for a phosphatidylserine product is not a relabelled EU launch. It is a separate compliance file built against a separate novel food list, a separate claims register and a separate labelling requirement — with Northern Ireland running on EU rules alongside it. The work is finite and predictable: check the GB novel food entry for your exact ingredient, confirm the claims and the dose conditions they impose, design the pack around a GB-established operator, complete notification, and ask your supplier to reissue documents against the GB file rather than recycle EU versions. Done in that order it costs a few weeks; done after printing it costs a reprint and a delay.
+A Great Britain launch for a phosphatidylserine product is not a relabelled EU launch. It is a separate compliance file built against a separate novel food list, a separate claims register and a separate labelling requirement — with Northern Ireland running on EU rules alongside it. The work is finite and predictable: check the GB novel food entry for your exact ingredient, confirm the claims and the dose conditions they impose, design the pack around a GB-established operator, complete notification, and ask your supplier to reissue documents against the GB file rather than recycle EU versions. Done in that order it costs a few weeks; done after printing it costs a reprint and a delay. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

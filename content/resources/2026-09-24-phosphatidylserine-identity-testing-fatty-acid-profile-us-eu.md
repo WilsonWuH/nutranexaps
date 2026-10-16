@@ -52,7 +52,7 @@ Phosphatidylserine is bought on two claims at once: a content claim — the assa
 
 ![Laboratory analyst running HPLC chromatography to verify phosphatidylserine identity and composition](/assets/images/resource-phosphatidylserine-identity-testing-fatty-acid-profile-us-eu.webp)
 
-The good news is that PS is chemically honest. Its fatty acid chains and companion phospholipids carry a readable fingerprint of the starting lecithin, and the chromatography that confirms the assay also exposes inconsistency. This article explains what that fingerprint looks like and how to read the reports that claim to have run it.
+The good news is that PS is chemically honest. Its fatty acid chains and companion phospholipids carry a readable fingerprint of the starting lecithin, and the chromatography that confirms the assay also exposes inconsistency. This article explains what that fingerprint looks like and how to read the reports that claim to have run it. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -102,7 +102,7 @@ A: On the first commercial lot from any new supplier or site, then periodically 
 
 ## Conclusion
 
-Phosphatidylserine identity is verifiable without a laboratory of your own. It requires knowing that fatty acid profiles fingerprint the botanical source, that HPLC resolves PS from its companion phospholipids, and that a trustworthy COA is internally consistent — methods cited, bases stated, numbers that cohere. Buyers who read certificates as auditors, verify the first lot independently, and contract for change-control notification turn source claims from promises into controls.
+Phosphatidylserine identity is verifiable without a laboratory of your own. It requires knowing that fatty acid profiles fingerprint the botanical source, that HPLC resolves PS from its companion phospholipids, and that a trustworthy COA is internally consistent — methods cited, bases stated, numbers that cohere. Buyers who read certificates as auditors, verify the first lot independently, and contract for change-control notification turn source claims from promises into controls. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

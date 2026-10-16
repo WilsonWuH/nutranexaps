@@ -73,7 +73,7 @@
 
 Most phosphatidylserine sourcing decisions are made on assay, price, and documentation. Far fewer are made on whether the powder actually runs on the buyer's press or encapsulator — and that is where programmes lose weeks after the purchase order is signed.
 
-Phosphatidylserine is a phospholipid powder with low bulk density, a pronounced tendency to take up moisture, and surface behaviour that makes it stick to tooling under the wrong conditions. None of those traits are defects; all of them are manageable. What matters for a US or EU buyer is whether the supplier can describe them with numbers and support the description with data — which this guide covers, from material properties to the tableting controls your quality unit should expect.
+Phosphatidylserine is a phospholipid powder with low bulk density, a pronounced tendency to take up moisture, and surface behaviour that makes it stick to tooling under the wrong conditions. None of those traits are defects; all of them are manageable. What matters for a US or EU buyer is whether the supplier can describe them with numbers and support the description with data — which this guide covers, from material properties to the tableting controls your quality unit should expect. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -185,7 +185,7 @@ No. Supplier data is a screening input and a qualification signal. Your own comp
 
 Excipient compatibility is where a phosphatidylserine specification meets reality. Assay and price tell you what you are buying; particle size, density, moisture, and peroxide value tell you how it will behave on your equipment.
 
-The practical test is simple: can the supplier describe its material's behaviour with numbers, and does the data package hold up under audit? If so, formulation work starts from evidence.
+The practical test is simple: can the supplier describe its material's behaviour with numbers, and does the data package hold up under audit? If so, formulation work starts from evidence. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

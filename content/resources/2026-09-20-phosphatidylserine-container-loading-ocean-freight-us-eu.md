@@ -72,7 +72,7 @@
 
 A full container of phosphatidylserine can arrive with every drum sealed, every document in order, and still carry avoidable damage — crushed bottom-layer drums, moisture-affected product near the container walls, or a lot that spent an unplanned week in a hot terminal. The difference is usually loading discipline, and loading discipline is something a buyer can specify and verify.
 
-Bulk PS is a low-density, hygroscopic powder shipped in fiber drums on pallets, which makes the container a quality-relevant environment: stacking height decides whether bottom drums deform, dunnage decides whether pallets shift, desiccant strategy decides whether condensation reaches the packaging, and a logger decides whether anyone can prove what happened. This guide walks the loading operation in the order it happens — packaging, stowage, moisture control, instrumentation, inspection, receipt — for a buyer who wants the requirements in writing before booking.
+Bulk PS is a low-density, hygroscopic powder shipped in fiber drums on pallets, which makes the container a quality-relevant environment: stacking height decides whether bottom drums deform, dunnage decides whether pallets shift, desiccant strategy decides whether condensation reaches the packaging, and a logger decides whether anyone can prove what happened. This guide walks the loading operation in the order it happens — packaging, stowage, moisture control, instrumentation, inspection, receipt — for a buyer who wants the requirements in writing before booking. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -181,7 +181,7 @@ Photograph before unloading, keep the seal number and logger data, segregate aff
 
 Container loading is the last point at which a phosphatidylserine shipment can be protected cheaply. Packaging, pallet height, stowage, dunnage, desiccant, and logger placement can all be written into a purchase contract, verified with a photographed checklist, and reviewed at destination against data.
 
-Buyers who specify these requirements reduce arrival damage and create the evidence that turns any dispute into a document review.
+Buyers who specify these requirements reduce arrival damage and create the evidence that turns any dispute into a document review. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

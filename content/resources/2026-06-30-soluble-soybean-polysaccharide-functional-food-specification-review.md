@@ -70,7 +70,7 @@ Before choosing a soluble soybean polysaccharide supplier, a serious team should
 
 This article is written for food brands, nutrition companies, distributors, importers, contract manufacturers, and QA or sourcing teams that are evaluating soluble soybean polysaccharide for functional food applications. It explains how to review the ingredient through an application-first lens and how to compare supplier readiness using specification logic, document support, and communication quality.
 
-Where Nutranexa is mentioned, only verified site facts are used. Nutranexa states that the company was founded in 2013, operates on a 110,000+ m2 campus, positions phosphatidylserine as its lead ingredient, and presents R&D cooperation plus visible quality-document workflows. The current site also shows soluble soybean polysaccharide as part of the broader ingredient portfolio and directs buyers to request current specifications, COA files, and other supporting documents before quotation or shipment. Product-specific scope and current document applicability should still be confirmed directly.
+Where Nutranexa is mentioned, only verified site facts are used. Nutranexa states that the company was founded in 2013, operates on a 110,000+ m2 campus, positions phosphatidylserine as its lead ingredient, and presents R&D cooperation plus visible quality-document workflows. The current site also shows soluble soybean polysaccharide as part of the broader ingredient portfolio and directs buyers to request current specifications, COA files, and other supporting documents before quotation or shipment. Product-specific scope and current document applicability should still be confirmed directly. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -233,7 +233,7 @@ The site shows a document-oriented workflow by inviting buyers to request curren
 
 Soluble soybean polysaccharide supplier selection should be handled as a structured B2B review, not as a simple price inquiry. The right process starts with the intended functional food application, defines the commercial item clearly, checks the specification with real use in mind, and tests whether the supplier can support document review without confusion.
 
-For buyers, the core questions are simple: which application is this for, what specification points matter most, which files are current, and can the supplier connect technical review, QA review, and quotation support in one coherent process?
+For buyers, the core questions are simple: which application is this for, what specification points matter most, which files are current, and can the supplier connect technical review, QA review, and quotation support in one coherent process? When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

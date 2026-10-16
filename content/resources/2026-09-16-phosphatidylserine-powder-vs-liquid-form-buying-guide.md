@@ -43,7 +43,7 @@ phosphatidylserine specification buying guide
 
 ## Introduction
 
-Buyers comparing phosphatidylserine offers usually sort by origin and assay first — soy or sunflower, 50% or 70% — and only then notice the quotes differ in something more consequential: physical form. The same PS molecule arrives as a free-flowing powder or as a viscous paste, and that difference decides your capsule weights, your blending behavior, your gummy process, and how much of your production line's tolerance the ingredient will consume. Choose the wrong form and no assay certificate saves you. This guide compares the two commercial forms, explains the physical specifications that actually predict manufacturing performance, and closes with the spec lines to write into your next RFQ.
+Buyers comparing phosphatidylserine offers usually sort by origin and assay first — soy or sunflower, 50% or 70% — and only then notice the quotes differ in something more consequential: physical form. The same PS molecule arrives as a free-flowing powder or as a viscous paste, and that difference decides your capsule weights, your blending behavior, your gummy process, and how much of your production line's tolerance the ingredient will consume. Choose the wrong form and no assay certificate saves you. This guide compares the two commercial forms, explains the physical specifications that actually predict manufacturing performance, and closes with the spec lines to write into your next RFQ. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## The Two Commercial Forms of PS
 
@@ -146,7 +146,7 @@ Yes. The carrier is part of the ingredient and must be declared where labeling r
 
 ## Conclusion
 
-The powder-versus-paste decision is a manufacturing decision, and it should be made with your production line's requirements on the table — not after the ingredient has arrived. Powder PS with a well-written particle-size, bulk-density, and flowability spec runs cleanly through capsules, tablets, and dry blends; paste PS is the technically correct choice for softgels, gummies, and fat-based matrices. The properties that matter are mundane and measurable, which is exactly why they belong in your RFQ alongside assay and price. Send Nutranexa your dosage format, target dose, and line constraints, and we will recommend the form, grade, and physical specification — with first-article samples for your pilot trial — before you commit a single production batch.
+The powder-versus-paste decision is a manufacturing decision, and it should be made with your production line's requirements on the table — not after the ingredient has arrived. Powder PS with a well-written particle-size, bulk-density, and flowability spec runs cleanly through capsules, tablets, and dry blends; paste PS is the technically correct choice for softgels, gummies, and fat-based matrices. The properties that matter are mundane and measurable, which is exactly why they belong in your RFQ alongside assay and price. Send Nutranexa your dosage format, target dose, and line constraints, and we will recommend the form, grade, and physical specification — with first-article samples for your pilot trial — before you commit a single production batch. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

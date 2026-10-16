@@ -70,7 +70,7 @@ For phosphatidylserine procurement, a good quotation depends on the quality of t
 
 This guide is written for importers, distributors, supplement manufacturers, and functional food teams that want a more reliable way to source bulk phosphatidylserine. It explains what buyers should prepare before requesting a quotation, how QA and procurement teams should qualify a supplier, and how to compare offers for US and European projects without relying on unsupported claims.
 
-Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. The site also states that Nutranexa supports phosphatidylserine projects with manufacturing context, sample COA visibility, and document-request workflows. Buyers should still confirm current batch-specific and market-specific files before purchase or shipment.
+Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. The site also states that Nutranexa supports phosphatidylserine projects with manufacturing context, sample COA visibility, and document-request workflows. Buyers should still confirm current batch-specific and market-specific files before purchase or shipment. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -337,7 +337,7 @@ No. The supplier can provide source, composition, and quality documents, but the
 
 A strong phosphatidylserine sourcing process starts before the first quotation arrives. Buyers who define grade, source, application, market, quantity, and document requirements upfront get better answers and make faster internal decisions. They also reduce the risk of comparing mismatched offers that look similar only because they share the same product name.
 
-For US and European procurement teams, the safest path is simple: send a structured RFQ, involve QA early, and qualify the supplier on document control and execution readiness as well as price. That approach creates a better basis for sample approval, commercial negotiation, and repeat purchase planning.
+For US and European procurement teams, the safest path is simple: send a structured RFQ, involve QA early, and qualify the supplier on document control and execution readiness as well as price. That approach creates a better basis for sample approval, commercial negotiation, and repeat purchase planning. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

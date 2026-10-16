@@ -40,7 +40,7 @@ Scheduled for publication on the Nutranexa resources hub on 2026-10-09. Target a
 
 ## Introduction
 
-Phosphatidylserine is rarely sold as a single standard material. Suppliers typically offer the same botanical extract at 20%, 50%, or 70% concentration, each carried on a different matrix, and each priced in a way that can mislead buyers who compare only the invoice cost per kilogram. For purchasing and formulation teams in the United States and Europe, choosing the wrong concentration grade surfaces later as a reformulation project, a label rework, or a cost per serving that no longer supports the retail price. This guide compares the three common grades, explains what the numbers actually mean, and sets out a practical framework for matching grade to format and comparing supplier quotes fairly.
+Phosphatidylserine is rarely sold as a single standard material. Suppliers typically offer the same botanical extract at 20%, 50%, or 70% concentration, each carried on a different matrix, and each priced in a way that can mislead buyers who compare only the invoice cost per kilogram. For purchasing and formulation teams in the United States and Europe, choosing the wrong concentration grade surfaces later as a reformulation project, a label rework, or a cost per serving that no longer supports the retail price. This guide compares the three common grades, explains what the numbers actually mean, and sets out a practical framework for matching grade to format and comparing supplier quotes fairly. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -96,7 +96,7 @@ A grade-aware RFQ prevents most downstream surprises. Ask each supplier to state
 
 ## Conclusion
 
-Concentration grade is one of the few sourcing decisions that touches procurement, formulation, quality, and regulatory at the same time, which is why it should be made deliberately rather than inherited from a previous quote. Compare grades on cost per active point, confirm the assay basis and carrier on every certificate of analysis, and match the grade to the format before specifications are frozen. Buyers in the United States and Europe who apply this framework tend to negotiate cleaner quotes, avoid mid-project reformulations, and defend their label declarations with confidence. Nutranexa supplies soy and sunflower-derived phosphatidylserine at multiple concentrations and can review your format and target claim against the grade that fits it best.
+Concentration grade is one of the few sourcing decisions that touches procurement, formulation, quality, and regulatory at the same time, which is why it should be made deliberately rather than inherited from a previous quote. Compare grades on cost per active point, confirm the assay basis and carrier on every certificate of analysis, and match the grade to the format before specifications are frozen. Buyers in the United States and Europe who apply this framework tend to negotiate cleaner quotes, avoid mid-project reformulations, and defend their label declarations with confidence. Nutranexa supplies soy and sunflower-derived phosphatidylserine at multiple concentrations and can review your format and target claim against the grade that fits it best. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

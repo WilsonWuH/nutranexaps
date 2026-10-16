@@ -60,7 +60,7 @@ Almost every phosphatidylserine RFQ contains the same four-line table: lead, ars
 
 ![Quality manager reviewing heavy metals specification tables with a supplier document pack on a laboratory desk](/assets/images/resource-ps-phosphatidylserine-heavy-metals-spec-negotiation-us-eu-lab.webp)
 
-Heavy metals are not a reason to avoid phosphatidylserine — a well-run phospholipid process produces consistently clean material — but they are the single most common source of specification friction between PS buyers and suppliers. This article gives buyers the regulatory floor in the US and EU, the method questions that make results comparable, and a negotiation sequence that ends with a spec both sides can actually meet and defend.
+Heavy metals are not a reason to avoid phosphatidylserine — a well-run phospholipid process produces consistently clean material — but they are the single most common source of specification friction between PS buyers and suppliers. This article gives buyers the regulatory floor in the US and EU, the method questions that make results comparable, and a negotiation sequence that ends with a spec both sides can actually meet and defend. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -124,7 +124,7 @@ A: Strict enough to keep finished products under regulatory and Proposition 65 e
 
 ## Conclusion
 
-Heavy metals specifications for phosphatidylserine fail in two directions: too loose and they transfer risk to your brand; arbitrarily tight and they generate disputes, retests and supplier friction without adding safety. The fix is a derivation, not a template — regulatory floor for your markets, Proposition 65 dose math for the US, headroom for the EU, method details that make results comparable, and limits calibrated to the supplier's demonstrated process capability. Buyers who negotiate this way end up with specs that pass audits, hold up in disputes and cost less to administer.
+Heavy metals specifications for phosphatidylserine fail in two directions: too loose and they transfer risk to your brand; arbitrarily tight and they generate disputes, retests and supplier friction without adding safety. The fix is a derivation, not a template — regulatory floor for your markets, Proposition 65 dose math for the US, headroom for the EU, method details that make results comparable, and limits calibrated to the supplier's demonstrated process capability. Buyers who negotiate this way end up with specs that pass audits, hold up in disputes and cost less to administer. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

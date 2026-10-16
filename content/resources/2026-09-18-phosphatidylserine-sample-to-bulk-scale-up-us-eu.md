@@ -44,7 +44,7 @@
 
 A phosphatidylserine sample that performs beautifully in a 20 kg pilot tells you almost nothing about how 500 kg of the same powder will behave on a commercial blender, a capsule filler, or a gabling line. PS is a phospholipid powder with real processing personality: it is compressible but cohesive, sensitive to heat and shear, prone to flow changes with humidity, and its assay must be built into batch calculations with the correct basis. Scale-up failures between the sample stage and commercial bulk rarely come from the ingredient being "bad" — they come from unstaged expectations: skipping a pilot at intermediate scale, treating the first commercial lot as routine production, and not scaling the documentation alongside the batch size. This guide lays out the sample-to-bulk pathway for PS finished products in OEM programs: what each stage proves, what parameters to watch, what documents the contract manufacturer must produce at each gate, and how to avoid the classic failure points that turn a promising launch into a delayed one.
 
-![Laboratory technician preparing phosphatidylserine powder samples in a formulation lab](/assets/images/resource-phosphatidylserine-sample-to-bulk-scale-up-us-eu.webp)
+![Laboratory technician preparing phosphatidylserine powder samples in a formulation lab](/assets/images/resource-phosphatidylserine-sample-to-bulk-scale-up-us-eu.webp) For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -118,7 +118,7 @@ Overage is a quality-policy decision, not a default. Set it from a documented ca
 
 ## Conclusion
 
-Sample-to-bulk scale-up for phosphatidylserine products is a staged proof problem: the sample proves the formula, the pilot proves the process, and the first-article lot proves the system at commercial scale — with documents scaling at every step. Brands that define each gate's deliverables before starting, watch PS-specific risks (oxidation, segregation, assay basis), and resist the temptation to skip the pilot reach commercial production with releasable lots and a clean audit trail. Those that compress the pathway usually donate the saved weeks back, plus interest, in deviations and rework.
+Sample-to-bulk scale-up for phosphatidylserine products is a staged proof problem: the sample proves the formula, the pilot proves the process, and the first-article lot proves the system at commercial scale — with documents scaling at every step. Brands that define each gate's deliverables before starting, watch PS-specific risks (oxidation, segregation, assay basis), and resist the temptation to skip the pilot reach commercial production with releasable lots and a clean audit trail. Those that compress the pathway usually donate the saved weeks back, plus interest, in deviations and rework. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

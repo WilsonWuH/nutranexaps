@@ -60,7 +60,7 @@ Quality agreements, COAs, incoterms — procurement teams prepare all of it for 
 
 ![Finance and procurement managers discussing payment terms over a quotation document in a bright meeting room](/assets/images/resource-ps-phosphatidylserine-payment-terms-first-order-us-eu-meeting.webp)
 
-Payment terms in ingredient trade are not exotic — a short ladder of standard structures covers nearly every situation. What separates a well-structured first order from a risky one is how each payment milestone is tied to a verifiable event: production completed, goods inspected, documents issued, container cleared. This article walks the ladder and shows where US and EU buyers typically land with a new PS supplier.
+Payment terms in ingredient trade are not exotic — a short ladder of standard structures covers nearly every situation. What separates a well-structured first order from a risky one is how each payment milestone is tied to a verifiable event: production completed, goods inspected, documents issued, container cleared. This article walks the ladder and shows where US and EU buyers typically land with a new PS supplier. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -114,7 +114,7 @@ A: 30/70 deposit-plus-balance is the baseline; split balances and documentary co
 
 ## Conclusion
 
-Payment terms for a first phosphatidylserine order are a risk-allocation exercise, and the buyer controls more of it than the quotation suggests. Structure the cash flow so that money moves only as fast as verification: a deposit sized to the supplier's real need, a balance released against independent quality results rather than a document copy, and — when order value justifies it — a letter of credit that makes the bank carry the shipment risk. Buyers who negotiate this way lose less sleep and less cash on first orders, and arrive at the second order with terms that reflect a proven relationship instead of a repaired dispute.
+Payment terms for a first phosphatidylserine order are a risk-allocation exercise, and the buyer controls more of it than the quotation suggests. Structure the cash flow so that money moves only as fast as verification: a deposit sized to the supplier's real need, a balance released against independent quality results rather than a document copy, and — when order value justifies it — a letter of credit that makes the bank carry the shipment risk. Buyers who negotiate this way lose less sleep and less cash on first orders, and arrive at the second order with terms that reflect a proven relationship instead of a repaired dispute. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

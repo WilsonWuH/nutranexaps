@@ -52,7 +52,7 @@ Walk the supplement aisles of any US or European retailer and count the gummies:
 
 ![Golden gummies moving along a stainless steel production line in a modern supplement manufacturing facility](/assets/images/resource-ps-gummy-production-line.webp)
 
-The problem is chemistry, not manufacturing capacity. PS is an amphiphilic phospholipid — part water-loving, part fat-loving — designed by nature to sit in membranes, not to dissolve cleanly in a pectin or gelatin matrix held together with sugar, acid, and water. Rushed PS gummy projects fail in predictable ways: assay drift, off-flavour development, texture collapse, and label claims that stop matching the product halfway through shelf life. This article maps the real challenges, the development path that solves them, and the OEM selection criteria that keep the project on schedule.
+The problem is chemistry, not manufacturing capacity. PS is an amphiphilic phospholipid — part water-loving, part fat-loving — designed by nature to sit in membranes, not to dissolve cleanly in a pectin or gelatin matrix held together with sugar, acid, and water. Rushed PS gummy projects fail in predictable ways: assay drift, off-flavour development, texture collapse, and label claims that stop matching the product halfway through shelf life. This article maps the real challenges, the development path that solves them, and the OEM selection criteria that keep the project on schedule. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -98,7 +98,7 @@ A: Negotiate it explicitly. Brand ownership gives freedom to move manufacturers;
 
 ## Conclusion
 
-PS gummies are a legitimate, growing opportunity — and a genuine formulation project. The phospholipid's dispersion behaviour, heat sensitivity, oxidation risk, and taste contribution demand a development path with feasibility work, pilot batches, and matrix-specific stability and analytical methods, executed by an OEM with demonstrated phospholipid capability and contract terms that clarify formulation ownership. Brands that respect the chemistry launch on schedule; brands that treat a PS gummy like a vitamin gummy pay for it in reformulation. Nutranexa supplies phosphatidylserine powder and granulation formats optimised for dispersion in gummy matrices, supports OEM development teams with technical documentation and stability guidance, and coordinates directly with your contract manufacturer through scale-up.
+PS gummies are a legitimate, growing opportunity — and a genuine formulation project. The phospholipid's dispersion behaviour, heat sensitivity, oxidation risk, and taste contribution demand a development path with feasibility work, pilot batches, and matrix-specific stability and analytical methods, executed by an OEM with demonstrated phospholipid capability and contract terms that clarify formulation ownership. Brands that respect the chemistry launch on schedule; brands that treat a PS gummy like a vitamin gummy pay for it in reformulation. Nutranexa supplies phosphatidylserine powder and granulation formats optimised for dispersion in gummy matrices, supports OEM development teams with technical documentation and stability guidance, and coordinates directly with your contract manufacturer through scale-up. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

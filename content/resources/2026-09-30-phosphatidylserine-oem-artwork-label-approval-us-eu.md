@@ -63,7 +63,7 @@ A phosphatidylserine product can clear formulation, testing and stability and st
 
 ![Brand manager and regulatory specialist reviewing printed supplement label proofs together at a meeting table with magnifier](/assets/images/resource-ps-phosphatidylserine-oem-artwork-label-approval-us-eu-main.webp)
 
-The fix is procedural: treat the label as a controlled document with two approval gates before design, a defined artwork cycle, and change control that survives the first market expansion. This article lays out that workflow from the brand side, with the OEM-side handoffs most guides leave out.
+The fix is procedural: treat the label as a controlled document with two approval gates before design, a defined artwork cycle, and change control that survives the first market expansion. This article lays out that workflow from the brand side, with the OEM-side handoffs most guides leave out. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -150,7 +150,7 @@ A: Any post-release revision — even cosmetic. The impact assessment determines
 
 ## Conclusion
 
-Label failures in outsourced PS production are process failures: claims approved after design, mandatory particulars discovered at proof, versions drifting between brand and printer. The workflow that prevents them is short — a claims matrix and particulars checklist before design, a four-step artwork cycle with named approvals, physical proof review, and version control the OEM's line clearance actually uses. The approval log you start with your first label is the artefact that makes your fiftieth audit boring.
+Label failures in outsourced PS production are process failures: claims approved after design, mandatory particulars discovered at proof, versions drifting between brand and printer. The workflow that prevents them is short — a claims matrix and particulars checklist before design, a four-step artwork cycle with named approvals, physical proof review, and version control the OEM's line clearance actually uses. The approval log you start with your first label is the artefact that makes your fiftieth audit boring. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

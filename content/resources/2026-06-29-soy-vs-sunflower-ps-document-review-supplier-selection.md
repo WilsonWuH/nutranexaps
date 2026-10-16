@@ -70,7 +70,7 @@ This matters especially in export projects. Procurement wants a workable quotati
 
 This article is written for overseas buyers comparing phosphatidylserine suppliers at the specification and approval stage. It explains how to compare soy phosphatidylserine and sunflower phosphatidylserine using buyer-focused criteria: source fit, application context, specification review, COA interpretation, certificate matching, and supplier execution readiness.
 
-Where Nutranexa is mentioned, only verified public facts are used. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and phosphatidylserine as its lead ingredient. The current site also references R&D cooperation, public COA sample visibility, and buyer-requestable Halal, Kosher, and production-document review. Current batch files, product-specific scope, and destination-market relevance should still be confirmed directly before quotation or shipment.
+Where Nutranexa is mentioned, only verified public facts are used. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus and phosphatidylserine as its lead ingredient. The current site also references R&D cooperation, public COA sample visibility, and buyer-requestable Halal, Kosher, and production-document review. Current batch files, product-specific scope, and destination-market relevance should still be confirmed directly before quotation or shipment. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -226,7 +226,7 @@ State the approved source, target application, destination market, expected volu
 
 Soy phosphatidylserine versus sunflower phosphatidylserine should not be settled by a short product summary or a single price line. For serious B2B buyers, it is a structured supplier-selection exercise. The right source is the one that fits the target market, moves cleanly through internal approval, and is supported by coherent specifications, usable COA evidence, and source-consistent documents.
 
-The practical method is simple: define the exact source first, connect it to the intended supplement or functional food application, review the specification carefully, check the COA logic, and compare how well each supplier supports document control and commercial execution.
+The practical method is simple: define the exact source first, connect it to the intended supplement or functional food application, review the specification carefully, check the COA logic, and compare how well each supplier supports document control and commercial execution. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

@@ -78,7 +78,7 @@ Phosphatidylserine stays in sports nutrition briefs because it sits credibly in 
 
 Most buyer frustration is not about whether the ingredient works. It is about friction discovered late: assay never converted into real input weight, powder that will not flow on a high-speed filler, or claims written before checking the target market. This review covers input selection, dosage form, dose arithmetic, stability, and claim review from the buyer's side. Confirm batch-specific values against current lot files.
 
-![Sports nutrition manufacturing scene with bulk phospholipid capsules and powder for phosphatidylserine formulations](/assets/images/phosphatidylserine-sports-nutrition-formulation-review-us-eu-overview.webp)
+![Sports nutrition manufacturing scene with bulk phospholipid capsules and powder for phosphatidylserine formulations](/assets/images/phosphatidylserine-sports-nutrition-formulation-review-us-eu-overview.webp) Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -215,7 +215,7 @@ Ask for kilograms rather than grams, so you can run your real process at real sp
 
 Phosphatidylserine can strengthen a sports nutrition portfolio, but failures here are usually mundane: dose calculated against the wrong assay, powder that will not flow at production speed, film that admits moisture, or claim language written before the register check.
 
-Working through input selection, dosage form behaviour, dose arithmetic, stability control, and claim review in that order turns these into routine buyer checks. Doing it before requesting bulk quotation also gets better answers, because a specific brief attracts a specific response.
+Working through input selection, dosage form behaviour, dose arithmetic, stability control, and claim review in that order turns these into routine buyer checks. Doing it before requesting bulk quotation also gets better answers, because a specific brief attracts a specific response. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

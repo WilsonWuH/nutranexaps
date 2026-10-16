@@ -60,7 +60,7 @@ Two phosphatidylserine suppliers can send you passing COAs for twelve consecutiv
 
 ![Quality manager reviewing statistical control charts with a supplier engineer in a manufacturing facility meeting room](/assets/images/resource-ps-phosphatidylserine-supplier-process-capability-cpk-review-us-eu-main.webp)
 
-Capability analysis is the tool that separates these two. It asks not "did this batch pass" but "how much margin does the process have against the specification, and is that margin stable over time." This article gives US and EU buyers a practical review method: what data to request, which indices to read, what thresholds to demand, and where the review fits in the annual supplier evaluation.
+Capability analysis is the tool that separates these two. It asks not "did this batch pass" but "how much margin does the process have against the specification, and is that margin stable over time." This article gives US and EU buyers a practical review method: what data to request, which indices to read, what thresholds to demand, and where the review fits in the annual supplier evaluation. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -129,7 +129,7 @@ A: Only on paper, which is why capability must be calculated against the specifi
 
 ## Conclusion
 
-Capability review turns supplier quality from a historical record into a forecast. A pack of trend data, real control charts, and Cpk and Ppk values against your own specification takes a competent supplier days to produce and reveals more about next year's supply risk than two years of passing COAs. Set thresholds in the quality agreement, add capability to the annual scorecard, and grade the response when thresholds slip. Buyers who do this stop discovering capability problems from failed lots — and start seeing them in the charts, several lots early, while there is still time to act.
+Capability review turns supplier quality from a historical record into a forecast. A pack of trend data, real control charts, and Cpk and Ppk values against your own specification takes a competent supplier days to produce and reveals more about next year's supply risk than two years of passing COAs. Set thresholds in the quality agreement, add capability to the annual scorecard, and grade the response when thresholds slip. Buyers who do this stop discovering capability problems from failed lots — and start seeing them in the charts, several lots early, while there is still time to act. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

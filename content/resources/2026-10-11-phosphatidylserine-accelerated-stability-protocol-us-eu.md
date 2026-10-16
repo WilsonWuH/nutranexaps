@@ -43,7 +43,7 @@ US and EU buyers increasingly close this gap by commissioning their own stabilit
 
 This guide walks through how to design that protocol: what ICH-style conditions mean for a sensitive lipid powder, which attributes to track and when to pull samples, how to interpret accelerated results without over-extrapolating them, and how a retention sample program ties the whole effort together.
 
-![Phosphatidylserine powder samples in foil bags on a laboratory bench beside a climate stability chamber](/assets/images/resource-ps-phosphatidylserine-accelerated-stability-protocol-us-eu-lab.webp)
+![Phosphatidylserine powder samples in foil bags on a laboratory bench beside a climate stability chamber](/assets/images/resource-ps-phosphatidylserine-accelerated-stability-protocol-us-eu-lab.webp) Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -107,7 +107,7 @@ A: No. It complements it. You still need the supplier's study design and data fo
 
 ## Conclusion
 
-Accelerated stability testing converts shelf-life claims from printed assurances into owned evidence. Design the protocol in writing before the first sample enters the chamber, run the accelerated and long-term arms in parallel, test the commercial packaging system rather than exposed powder, and read the results as a directional screen rather than a clock conversion. Pair the study with a disciplined retention sample program and every lot gains a physical reference point that settles disputes and anchors trends. For an ingredient where oxidation quietly erodes value in storage, that combination is among the cheapest quality insurance a procurement team can buy.
+Accelerated stability testing converts shelf-life claims from printed assurances into owned evidence. Design the protocol in writing before the first sample enters the chamber, run the accelerated and long-term arms in parallel, test the commercial packaging system rather than exposed powder, and read the results as a directional screen rather than a clock conversion. Pair the study with a disciplined retention sample program and every lot gains a physical reference point that settles disputes and anchors trends. For an ingredient where oxidation quietly erodes value in storage, that combination is among the cheapest quality insurance a procurement team can buy. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

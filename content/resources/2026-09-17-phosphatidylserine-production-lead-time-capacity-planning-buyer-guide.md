@@ -42,7 +42,7 @@ PS ingredient procurement timeline
 
 ## Introduction
 
-Phosphatidylserine rarely fails buyers at the quality stage anymore — specifications are mature and documentation practices are well established. Where PS projects stall is time. A launch date built on an optimistic lead-time assumption collides with raw-material production queues, third-party testing, and freight windows, and suddenly the marketing calendar is driving the quality decisions it should never drive. Lead-time and capacity planning for PS is not exotic: it is the disciplined application of a timeline you can actually observe, with buffers sized to the risks you can name. This guide walks through the stages, the drivers, and the planning mechanics that keep PS supply ahead of production schedules.
+Phosphatidylserine rarely fails buyers at the quality stage anymore — specifications are mature and documentation practices are well established. Where PS projects stall is time. A launch date built on an optimistic lead-time assumption collides with raw-material production queues, third-party testing, and freight windows, and suddenly the marketing calendar is driving the quality decisions it should never drive. Lead-time and capacity planning for PS is not exotic: it is the disciplined application of a timeline you can actually observe, with buffers sized to the risks you can name. This guide walks through the stages, the drivers, and the planning mechanics that keep PS supply ahead of production schedules. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## The PS Lead-Time Timeline, Stage by Stage
 
@@ -132,7 +132,7 @@ Many suppliers offer allocation or reservation arrangements against committed fo
 
 ## Conclusion
 
-Phosphatidylserine supply planning rewards buyers who treat lead time as an observed, stage-by-stage reality rather than a number from a quotation template. Map the six stages, confirm current figures with the supplier in writing, size safety stock against named risks, and enter the production calendar early for peak-season launches. Combine that with a rolling forecast the supplier can actually plan against and a qualified second source for critical volumes, and PS supply stops being a launch risk and becomes what it should be: a solved procurement problem.
+Phosphatidylserine supply planning rewards buyers who treat lead time as an observed, stage-by-stage reality rather than a number from a quotation template. Map the six stages, confirm current figures with the supplier in writing, size safety stock against named risks, and enter the production calendar early for peak-season launches. Combine that with a rolling forecast the supplier can actually plan against and a qualified second source for critical volumes, and PS supply stops being a launch risk and becomes what it should be: a solved procurement problem. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

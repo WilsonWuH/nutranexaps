@@ -65,7 +65,7 @@ Sunflower phosphatidylserine is bought for what it is not: not soy-derived, not 
 
 Commercial sunflower PS is not extracted from sunflower: it is built enzymatically from sunflower lecithin, as phospholipase D transfers the phosphatidyl group from phosphatidylcholine to L-serine. What buyers care about — residual enzyme, residual substrate, solvent use, allergen carryover, batch consistency — follows from how that conversion and its downstream purification are run.
 
-This guide walks the route and the questions worth asking at each step.
+This guide walks the route and the questions worth asking at each step. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -141,7 +141,7 @@ A: PS assay by the declared method, residual phosphatidylcholine, moisture, pero
 
 Sunflower phosphatidylserine is a manufactured phospholipid, not an extracted one, and the buyers who get the best out of it treat the manufacturing route as part of the specification. Phospholipase D conversion is well established and repeatable; the variables that matter come after the reaction — inactivation, washing, drying and packing.
 
-The verification list is short and cheap to request: a process description, ten lots of results, claim documentation supported by testing, and a change-notification commitment. Suppliers running a controlled process answer it in a day.
+The verification list is short and cheap to request: a process description, ten lots of results, claim documentation supported by testing, and a change-notification commitment. Suppliers running a controlled process answer it in a day. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

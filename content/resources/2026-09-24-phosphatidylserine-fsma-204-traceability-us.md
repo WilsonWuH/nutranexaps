@@ -52,7 +52,7 @@ The FDA's Food Traceability Final Rule — FSMA Section 204, codified at 21 CFR 
 
 ![Warehouse receiving team scanning barcode labels on inbound phosphatidylserine drums for traceability records](/assets/images/resource-phosphatidylserine-fsma-204-traceability-us.webp)
 
-For an imported ingredient, the rule reaches two parties at once: the importer holding the ingredient in the United States, and the foreign manufacturer whose lot-level records make the importer's data complete. A buyer who waits until 2027 to raise this with an overseas supplier will find that documentation redesign takes longer than the calendar allows. This article sets out what the rule demands and what to request from suppliers now.
+For an imported ingredient, the rule reaches two parties at once: the importer holding the ingredient in the United States, and the foreign manufacturer whose lot-level records make the importer's data complete. A buyer who waits until 2027 to raise this with an overseas supplier will find that documentation redesign takes longer than the calendar allows. This article sets out what the rule demands and what to request from suppliers now. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -106,7 +106,7 @@ A: Records may be paper, but must be produced legibly within 24 hours of an FDA 
 
 ## Conclusion
 
-FSMA 204 turns traceability from a quality habit into a legal record set with a deadline, and for imported phosphatidylserine the decisive work sits between importer and manufacturer: who assigns the lot code, which documents carry it, and whether the data can be assembled within 24 hours of a request. Buyers who screen now and mock-trace before anyone forces a real one will pass 20 January 2028 calmly.
+FSMA 204 turns traceability from a quality habit into a legal record set with a deadline, and for imported phosphatidylserine the decisive work sits between importer and manufacturer: who assigns the lot code, which documents carry it, and whether the data can be assembled within 24 hours of a request. Buyers who screen now and mock-trace before anyone forces a real one will pass 20 January 2028 calmly. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -60,7 +60,7 @@ An allergen statement tells you what is in the drum. It says nothing about what 
 
 The realistic hazard is therefore not the composition of the PS itself but carryover from the previous campaign. That is controlled by three things: how the schedule is sequenced, how the line is cleaned between products, and how cleaning is verified before the next batch is released. None of those three appears in a one-page declaration, and none is answered by asking a supplier whether it is "allergen free".
 
-![QA analyst swabbing stainless steel processing equipment for allergen residue during a cleaning validation in a powder ingredient plant](/assets/images/resource-ps-phosphatidylserine-allergen-cross-contact-cleaning-validation-us-eu-lab.webp)
+![QA analyst swabbing stainless steel processing equipment for allergen residue during a cleaning validation in a powder ingredient plant](/assets/images/resource-ps-phosphatidylserine-allergen-cross-contact-cleaning-validation-us-eu-lab.webp) Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -126,7 +126,7 @@ A: After initial validation, re-verify at trigger events — a new allergen-bear
 
 ## Conclusion
 
-Allergen control for a phosphatidylserine purchase programme is a documentation and plant-verification exercise, not a labelling exercise. The declaration you receive should be the cover page of a file containing a changeover matrix, a parameterised cleaning procedure, acceptance criteria with a derivation, a sampling plan with recovery data and repeat-run results — plus a verification cadence and a failure protocol. Buyers who ask for that file at supplier qualification, rather than after a positive screen, end up with a defensible label and a supplier relationship grounded in data.
+Allergen control for a phosphatidylserine purchase programme is a documentation and plant-verification exercise, not a labelling exercise. The declaration you receive should be the cover page of a file containing a changeover matrix, a parameterised cleaning procedure, acceptance criteria with a derivation, a sampling plan with recovery data and repeat-run results — plus a verification cadence and a failure protocol. Buyers who ask for that file at supplier qualification, rather than after a positive screen, end up with a defensible label and a supplier relationship grounded in data. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

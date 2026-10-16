@@ -63,7 +63,7 @@ A supplier audit for phosphatidylserine is not a search for a dramatic failure. 
 
 ![Supplier quality auditor walking a phosphatidylserine production floor with plant QA staff during an on-site audit](/assets/images/phosphatidylserine-supplier-audit-checklist-us-eu-overview.webp)
 
-For US buyers, supplier verification is an explicit obligation under dietary supplement GMP; for EU buyers, the operator carries traceability one step back and one forward, with hygiene duties set by Regulation (EC) No 852/2004. An audit turns those obligations into observed practice.
+For US buyers, supplier verification is an explicit obligation under dietary supplement GMP; for EU buyers, the operator carries traceability one step back and one forward, with hygiene duties set by Regulation (EC) No 852/2004. An audit turns those obligations into observed practice. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -141,7 +141,7 @@ A: Request the allergen matrix, test it against the production schedule and clea
 
 An audit works when it is built as exercises rather than a tour: walk the flow, pull the record, run the trace, read the CAPA, test the laboratory. Suppliers with mature systems answer quickly because the evidence already exists.
 
-For phosphatidylserine the highest-value checks are tied to the material's real risks — allergen changeover between soy and sunflower, oxidative history at release, and change control on the raw phospholipid source — which is why the checklist ends with a sample, an independent test and a repeat visit.
+For phosphatidylserine the highest-value checks are tied to the material's real risks — allergen changeover between soy and sunflower, oxidative history at release, and change control on the raw phospholipid source — which is why the checklist ends with a sample, an independent test and a repeat visit. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

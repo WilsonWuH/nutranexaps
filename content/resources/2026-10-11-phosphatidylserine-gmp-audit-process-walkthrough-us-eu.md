@@ -44,7 +44,7 @@ That matters more for PS than for many ingredients. The manufacturing route is c
 
 This guide walks through a PS production site in process order, stage by stage, with the observations and questions that separate an informed GMP audit from a guided tour.
 
-![Auditors in hairnets and lab coats walking a stainless steel ingredient production line](/assets/images/resource-ps-phosphatidylserine-gmp-audit-process-walkthrough-us-eu-factory.webp)
+![Auditors in hairnets and lab coats walking a stainless steel ingredient production line](/assets/images/resource-ps-phosphatidylserine-gmp-audit-process-walkthrough-us-eu-factory.webp) Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -108,7 +108,7 @@ A: No. FSSC 22000, BRCGS or IFS certificates confirm a management system baselin
 
 ## Conclusion
 
-A phosphatidylserine GMP audit earns its cost when it follows the process rather than the checklist. Walk the line in production order — lecithin intake and storage, enzyme conversion, purification and concentration, drying, powder handling and packing — and at each stage ask what could fail here, what record would show it, and what you can observe right now. Prepare remotely so your on-site hours go to observation, trace at least one batch record end to end for data integrity, and convert findings into dated, owned corrective actions rather than polite observations. Buyers who audit this way return from site visits with something certificates cannot provide: a working mental model of how their PS is actually made, and where the next problem would show itself first.
+A phosphatidylserine GMP audit earns its cost when it follows the process rather than the checklist. Walk the line in production order — lecithin intake and storage, enzyme conversion, purification and concentration, drying, powder handling and packing — and at each stage ask what could fail here, what record would show it, and what you can observe right now. Prepare remotely so your on-site hours go to observation, trace at least one batch record end to end for data integrity, and convert findings into dated, owned corrective actions rather than polite observations. Buyers who audit this way return from site visits with something certificates cannot provide: a working mental model of how their PS is actually made, and where the next problem would show itself first. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

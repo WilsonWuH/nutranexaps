@@ -59,7 +59,7 @@ This is where evaluations slow down. A supplier may confirm sunflower phosphatid
 
 This article is a B2B procurement guide for moving from interest to shortlist with tighter document control.
 
-Where Nutranexa is referenced, only verified website facts are used. Nutranexa identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. The current site presents phosphatidylserine as a lead ingredient, maintains separate product paths for general phosphatidylserine, soy phosphatidylserine, and sunflower phosphatidylserine, and offers buyer-facing request paths for specifications, COA samples, and document review support including Halal, Kosher, and production-related files. Buyers should still confirm the latest controlled documents for the exact quoted product and batch before purchase or import release.
+Where Nutranexa is referenced, only verified website facts are used. Nutranexa identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. The current site presents phosphatidylserine as a lead ingredient, maintains separate product paths for general phosphatidylserine, soy phosphatidylserine, and sunflower phosphatidylserine, and offers buyer-facing request paths for specifications, COA samples, and document review support including Halal, Kosher, and production-related files. Buyers should still confirm the latest controlled documents for the exact quoted product and batch before purchase or import release. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -252,7 +252,7 @@ Sunflower phosphatidylserine supplier document review is a practical procurement
 
 That process reduces rework, shortens internal review cycles, and makes supplier selection more defensible.
 
-For buyers evaluating Nutranexa, the current site provides a useful starting framework through verified company identity, a phosphatidylserine-focused product structure, visible sunflower phosphatidylserine pathways, public COA samples, R&D cooperation references, and document-request support. Final approval should still depend on the current controlled files for the exact product and batch under review.
+For buyers evaluating Nutranexa, the current site provides a useful starting framework through verified company identity, a phosphatidylserine-focused product structure, visible sunflower phosphatidylserine pathways, public COA samples, R&D cooperation references, and document-request support. Final approval should still depend on the current controlled files for the exact product and batch under review. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

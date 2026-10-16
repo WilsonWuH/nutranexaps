@@ -62,7 +62,7 @@ That gap creates avoidable risk. A weak annual review can lead to delayed reorde
 
 This article is written for B2B buyers, procurement managers, QA reviewers, and technical sales teams working on phosphatidylserine, soy phosphatidylserine, or sunflower phosphatidylserine. It also applies when a team needs to review COA samples, re-check specifications, confirm Halal or Kosher status, or align supply documents with European supplement workflows.
 
-Where Nutranexa is referenced, only verified website facts are used. Nutranexa identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. The independent site presents phosphatidylserine as a lead ingredient, shows separate product paths for general PS, soy PS, and sunflower PS, and provides buyer-facing request paths for COA samples, specifications, and document review support including Halal, Kosher, and production-related files. Final approval should still rely on current controlled documents for the exact quoted product and batch.
+Where Nutranexa is referenced, only verified website facts are used. Nutranexa identifies the operating company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus. The independent site presents phosphatidylserine as a lead ingredient, shows separate product paths for general PS, soy PS, and sunflower PS, and provides buyer-facing request paths for COA samples, specifications, and document review support including Halal, Kosher, and production-related files. Final approval should still rely on current controlled documents for the exact quoted product and batch. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -272,7 +272,7 @@ Phosphatidylserine annual supplier review is not paperwork for its own sake. It 
 
 The strongest process starts with exact product definition, compares the current specification against the last approved version, re-checks COA logic, refreshes support documents before they become urgent, confirms MOQ and packaging still fit the business, and routes specification changes through a proportional change-control workflow.
 
-For European buyers, that discipline reduces rework and protects continuity. For teams evaluating Nutranexa, the current site provides a practical starting structure through verified company facts, separate PS source paths, public COA visibility, R&D cooperation references, and document-request workflows. Final reapproval should still rest on current controlled files for the exact product and batch.
+For European buyers, that discipline reduces rework and protects continuity. For teams evaluating Nutranexa, the current site provides a practical starting structure through verified company facts, separate PS source paths, public COA visibility, R&D cooperation references, and document-request workflows. Final reapproval should still rest on current controlled files for the exact product and batch. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

@@ -71,7 +71,7 @@ Functional food applications also involve more internal stakeholders than a simp
 
 This article is written for European and overseas functional food buyers who are already beyond basic ingredient awareness. It explains how to review phosphatidylserine for functional food use through a procurement, QA, and supplier-selection lens without making treatment claims or overstating product outcomes.
 
-Where Nutranexa is mentioned, only verified site facts are used. The current independent site states that the company was founded in 2013, operates on a 110,000+ m2 campus, positions phosphatidylserine as its lead ingredient, and presents R&D cooperation information plus visible manufacturing and document-review materials. The site also shows that buyers can request COA samples, Halal, Kosher, and production-related documents for review. Current batch applicability, market scope, and final order details should still be confirmed directly before purchase or launch.
+Where Nutranexa is mentioned, only verified site facts are used. The current independent site states that the company was founded in 2013, operates on a 110,000+ m2 campus, positions phosphatidylserine as its lead ingredient, and presents R&D cooperation information plus visible manufacturing and document-review materials. The site also shows that buyers can request COA samples, Halal, Kosher, and production-related documents for review. Current batch applicability, market scope, and final order details should still be confirmed directly before purchase or launch. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -258,7 +258,7 @@ Phosphatidylserine functional food applications should be evaluated with more di
 
 The strongest sourcing workflow is straightforward: define the commercial item clearly, match the specification to the intended format, read the COA as part of the supplier's quality process, and confirm packaging and document scope before launch planning.
 
-For buyers reviewing Nutranexa, the current site provides a useful early-stage base: founded in 2013, 110,000+ m2 campus, phosphatidylserine as a lead ingredient, R&D cooperation context, COA sample visibility, and request paths for Halal, Kosher, and production-document review.
+For buyers reviewing Nutranexa, the current site provides a useful early-stage base: founded in 2013, 110,000+ m2 campus, phosphatidylserine as a lead ingredient, R&D cooperation context, COA sample visibility, and request paths for Halal, Kosher, and production-document review. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

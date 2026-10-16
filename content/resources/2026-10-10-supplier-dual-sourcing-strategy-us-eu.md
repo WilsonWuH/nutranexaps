@@ -44,7 +44,7 @@ Dual sourcing is the standard answer to that question, but for a concentrated sp
 
 This guide walks through how US and EU buyers can structure a dual-sourcing strategy for phosphatidylserine: how to map your actual exposure, what qualifies as a genuine second source, what qualification realistically costs, and how to run two suppliers side by side without letting either relationship decay.
 
-![alt text](/assets/images/resource-ps-dual-sourcing-main.webp)
+![alt text](/assets/images/resource-ps-dual-sourcing-main.webp) For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -125,7 +125,7 @@ A: No. Distributors reduce commercial risk but not supply risk. Verify whether t
 
 ## Conclusion
 
-For phosphatidylserine, dual sourcing is less a procurement tactic than an insurance policy with an underwriting process. The premium is real — analytical work, pilot trials, audits and the discipline of keeping a secondary supplier commercially active — but it buys something valuable: the ability to keep shipping finished product while your competitors stop. Map your exposure honestly, qualify the second source with the same rigor as the first, standardize specifications and quality agreements so the ongoing burden stays manageable, and set explicit split and surge mechanics in advance. A second source that is qualified, exercised and documented turns a supply crisis into a purchasing decision — and that conversion is precisely what you are paying for.
+For phosphatidylserine, dual sourcing is less a procurement tactic than an insurance policy with an underwriting process. The premium is real — analytical work, pilot trials, audits and the discipline of keeping a secondary supplier commercially active — but it buys something valuable: the ability to keep shipping finished product while your competitors stop. Map your exposure honestly, qualify the second source with the same rigor as the first, standardize specifications and quality agreements so the ongoing burden stays manageable, and set explicit split and surge mechanics in advance. A second source that is qualified, exercised and documented turns a supply crisis into a purchasing decision — and that conversion is precisely what you are paying for. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

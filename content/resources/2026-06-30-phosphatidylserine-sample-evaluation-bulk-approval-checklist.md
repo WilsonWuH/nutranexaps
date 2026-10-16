@@ -72,7 +72,7 @@ That is why phosphatidylserine sample evaluation needs its own procurement check
 
 This article explains how to evaluate a phosphatidylserine sample in a way that supports commercial decision-making. It is written for B2B buyers, not consumer readers, and it focuses on practical approval logic rather than marketing claims.
 
-Where Nutranexa is mentioned, only verified website facts are used. The current site identifies the company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Nutranexa presents phosphatidylserine as a lead ingredient, references cooperation with East China University of Science and Technology, shows factory, cleanroom, and equipment imagery, and publicly displays sample COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501. The site also shows reviewable document categories including business license, food production license, food additive item details, FDA food facility registration, Halal, and Kosher materials. Buyers should still request current, product-specific, and batch-specific files before quotation or shipment.
+Where Nutranexa is mentioned, only verified website facts are used. The current site identifies the company as Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Nutranexa presents phosphatidylserine as a lead ingredient, references cooperation with East China University of Science and Technology, shows factory, cleanroom, and equipment imagery, and publicly displays sample COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501. The site also shows reviewable document categories including business license, food production license, food additive item details, FDA food facility registration, Halal, and Kosher materials. Buyers should still request current, product-specific, and batch-specific files before quotation or shipment. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -192,7 +192,7 @@ Send the intended source, target assay, dosage form or food application, target 
 
 Phosphatidylserine sample evaluation is the stage that determines whether sourcing can proceed with confidence. Buyers who control this step well reduce confusion later around product identity, source selection, application fit, document readiness, and first-order approval.
 
-The best process is structured: tie the sample to the intended commercial concept, review the specification and COA as a connected set, test for the real application, ask what changes between sample and bulk supply, and define exactly what must be true before the first PO is released.
+The best process is structured: tie the sample to the intended commercial concept, review the specification and COA as a connected set, test for the real application, ask what changes between sample and bulk supply, and define exactly what must be true before the first PO is released. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

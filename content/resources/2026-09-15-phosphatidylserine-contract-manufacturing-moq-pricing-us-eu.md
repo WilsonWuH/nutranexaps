@@ -40,7 +40,7 @@
 
 ## Introduction
 
-A phosphatidylserine brand owner who asks a contract manufacturer "what's your price?" will get a number — and it will be wrong for their business if they do not understand the mechanics behind it. PS is one of the higher-cost actives in the nootropic category: the raw material share of unit cost is unusually large, MOQ floors are set by ingredient economics rather than machine time alone, and small differences in tier structure swing landed cost per bottle by double-digit percentages. This guide explains the commercial side of contracting PS production — why MOQs exist, how tier ladders are built, where the money goes in a per-unit price, how format changes the equation, the negotiation levers that work, and the hidden costs that ambush first-time brands at invoice time.
+A phosphatidylserine brand owner who asks a contract manufacturer "what's your price?" will get a number — and it will be wrong for their business if they do not understand the mechanics behind it. PS is one of the higher-cost actives in the nootropic category: the raw material share of unit cost is unusually large, MOQ floors are set by ingredient economics rather than machine time alone, and small differences in tier structure swing landed cost per bottle by double-digit percentages. This guide explains the commercial side of contracting PS production — why MOQs exist, how tier ladders are built, where the money goes in a per-unit price, how format changes the equation, the negotiation levers that work, and the hidden costs that ambush first-time brands at invoice time. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -136,7 +136,7 @@ Usually, provided your forecast is honest and the contract includes rolling fore
 
 ## Conclusion
 
-PS manufacturing quotes are arithmetic, not mystery: MOQs come from ingredient lots, changeovers, and fixed batch costs; price comes from the raw material line, conversion format, and packaging; margin hides in the unitemized parts of the buildup. Start your next RFQ with the structure above — dose, format, assay grade, origin, annual forecast, packaging — and require every shortlisted CM to quote on an identical frame. Send Nutranexa your product concept and forecast, and we will return a fully itemized quotation with MOQ tiers, ingredient cost transparency, and a documentation pack built for your target markets.
+PS manufacturing quotes are arithmetic, not mystery: MOQs come from ingredient lots, changeovers, and fixed batch costs; price comes from the raw material line, conversion format, and packaging; margin hides in the unitemized parts of the buildup. Start your next RFQ with the structure above — dose, format, assay grade, origin, annual forecast, packaging — and require every shortlisted CM to quote on an identical frame. Send Nutranexa your product concept and forecast, and we will return a fully itemized quotation with MOQ tiers, ingredient cost transparency, and a documentation pack built for your target markets. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

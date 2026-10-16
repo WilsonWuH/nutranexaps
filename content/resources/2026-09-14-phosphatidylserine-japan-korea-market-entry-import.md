@@ -34,7 +34,7 @@ This article is an original resource published in the Nutranexa Resource Center 
 
 ## Introduction
 
-Japan and South Korea are sophisticated, high-value markets for phosphatidylserine, but they process ingredient imports through their own regulatory systems, in their own languages, on their own timelines. A PS shipment that clears EU or US customs without friction can still be held in Yokohama or Incheon if the importer's paperwork does not match what the local framework expects: the right food import notification in Japan, the correct ingredient pathway and declaration in Korea, and documentation that survives port-side review. This guide describes both frameworks at a working level, lists the documents to prepare before shipping, and shows where local verification matters most.
+Japan and South Korea are sophisticated, high-value markets for phosphatidylserine, but they process ingredient imports through their own regulatory systems, in their own languages, on their own timelines. A PS shipment that clears EU or US customs without friction can still be held in Yokohama or Incheon if the importer's paperwork does not match what the local framework expects: the right food import notification in Japan, the correct ingredient pathway and declaration in Korea, and documentation that survives port-side review. This guide describes both frameworks at a working level, lists the documents to prepare before shipping, and shows where local verification matters most. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## How Japan and Korea Treat Phosphatidylserine as an Ingredient
 
@@ -131,7 +131,7 @@ Plan conservatively: a first consignment may face document review or port-side t
 
 ## Conclusion
 
-Japan and Korea reward preparation. The frameworks differ - MHLW import notification under the Food Sanitation Act on one side, MFDS declaration with a separate health functional food track on the other - but the playbook is the same: identify the pathway early, confirm ingredient status through a licensed local partner, assemble a consistent, translation-ready document pack, and plan the first shipment with room for review. A complete, coherent document set turns a potentially slow first import into a routine one.
+Japan and Korea reward preparation. The frameworks differ - MHLW import notification under the Food Sanitation Act on one side, MFDS declaration with a separate health functional food track on the other - but the playbook is the same: identify the pathway early, confirm ingredient status through a licensed local partner, assemble a consistent, translation-ready document pack, and plan the first shipment with room for review. A complete, coherent document set turns a potentially slow first import into a routine one. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

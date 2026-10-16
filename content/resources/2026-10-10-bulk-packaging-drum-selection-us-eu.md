@@ -44,7 +44,7 @@ Packaging choices also ripple through operations: drum weight and dimensions dri
 
 This guide covers bulk packaging selection for phosphatidylserine powder from the buyer's side: the common formats, what each protects against, the specifications worth writing into your PO, and the handling practices that preserve quality between your receiving dock and your production floor.
 
-![alt text](/assets/images/resource-ps-bulk-packaging-main.webp)
+![alt text](/assets/images/resource-ps-bulk-packaging-main.webp) Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -124,7 +124,7 @@ A: Reseal the liner promptly with minimal headspace, keep the drum closed and on
 
 ## Conclusion
 
-Bulk packaging is the quiet variable in phosphatidylserine quality: invisible on the quotation, decisive in the warehouse. Specify the full packaging system — not just the drum — in your purchase orders, demand liner construction details and food-contact declarations as part of the documentation pack, favor high-barrier liners and nitrogen flush for a lipid this sensitive, and make packaging condition part of your receiving inspection rather than an afterthought. Then align packaging size with your actual consumption rate and resealing practice, because the best drum in the world cannot protect powder in a half-open drum sitting on a dock. Buyers who manage packaging with the same rigor as assay and identity typically see the return where it matters: peroxide values that hold, sensory profiles that stay consistent, and retest dates that mean what they say.
+Bulk packaging is the quiet variable in phosphatidylserine quality: invisible on the quotation, decisive in the warehouse. Specify the full packaging system — not just the drum — in your purchase orders, demand liner construction details and food-contact declarations as part of the documentation pack, favor high-barrier liners and nitrogen flush for a lipid this sensitive, and make packaging condition part of your receiving inspection rather than an afterthought. Then align packaging size with your actual consumption rate and resealing practice, because the best drum in the world cannot protect powder in a half-open drum sitting on a dock. Buyers who manage packaging with the same rigor as assay and identity typically see the return where it matters: peroxide values that hold, sensory profiles that stay consistent, and retest dates that mean what they say. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

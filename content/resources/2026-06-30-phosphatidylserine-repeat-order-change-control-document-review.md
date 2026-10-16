@@ -71,7 +71,7 @@ This is why phosphatidylserine repeat-order document review deserves a separate 
 
 For overseas supplement brands, contract manufacturers, distributors, and functional food importers, this is especially important because the purchase decision often sits across several teams: sourcing, QA, regulatory, planning, finance, and logistics. If one team assumes "same as last time" while another team sees a document change too late, the shipment can stall.
 
-Where relevant, this article uses verified Nutranexa facts from the current website only. Nutranexa identifies itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Its public site also shows factory, cleanroom, lab, and equipment imagery; R&D cooperation references with East China University of Science and Technology; sample COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501; and public document references including business license, food production license, food additive license details, FDA food facility registration, Halal, and Kosher files. Buyers should still request current, transaction-specific documents before quotation, PO release, or shipment.
+Where relevant, this article uses verified Nutranexa facts from the current website only. Nutranexa identifies itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. Its public site also shows factory, cleanroom, lab, and equipment imagery; R&D cooperation references with East China University of Science and Technology; sample COA visibility for PS 20% sunflower model PP201 and PS 50% model PP501; and public document references including business license, food production license, food additive license details, FDA food facility registration, Halal, and Kosher files. Buyers should still request current, transaction-specific documents before quotation, PO release, or shipment. Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -262,7 +262,7 @@ Repeat phosphatidylserine purchasing should be faster than first-order sourcing,
 
 That approach reduces avoidable delays without turning every purchase into a full requalification project. It also improves supplier accountability because changes are identified early, recorded clearly, and resolved before the order reaches the warehouse, customs broker, or contract manufacturer.
 
-For teams buying PS repeatedly, document discipline is not bureaucracy. It is how repeat business stays reliable.
+For teams buying PS repeatedly, document discipline is not bureaucracy. It is how repeat business stays reliable. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

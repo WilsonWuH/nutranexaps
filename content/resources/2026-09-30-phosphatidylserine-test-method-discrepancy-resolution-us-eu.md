@@ -63,7 +63,7 @@ A quarantined lot of phosphatidylserine with a disputed assay is one of the most
 
 ![Quality control chemist reviewing chromatography printouts and a supplier COA side by side at a laboratory bench](/assets/images/resource-ps-phosphatidylserine-test-method-discrepancy-resolution-us-eu-main.webp)
 
-Discrepancies have a small set of causes — different methods, different sample basis, sample identity, or a genuinely non-conforming lot. A protocol that walks those causes in order turns a weeks-long argument into a two-week investigation with a documented outcome.
+Discrepancies have a small set of causes — different methods, different sample basis, sample identity, or a genuinely non-conforming lot. A protocol that walks those causes in order turns a weeks-long argument into a two-week investigation with a documented outcome. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -163,7 +163,7 @@ A: When the delivered lot fails the agreed referee method on a properly document
 
 A COA-versus-lab discrepancy on phosphatidylserine is an investigation, not an argument. Align the numbers first — method, basis, unit — then test sample identity, then run the retention-versus-delivered retest under an agreed referee method. One structured round resolves most disputes and tells you whether the answer is a specification amendment, a sampling fix, or a rejected lot.
 
-The buyers who resolve these fastest are the ones who wrote the method, the basis and the referee clause into the specification before the first dispute — the cheapest time to do it is today.
+The buyers who resolve these fastest are the ones who wrote the method, the basis and the referee clause into the specification before the first dispute — the cheapest time to do it is today. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

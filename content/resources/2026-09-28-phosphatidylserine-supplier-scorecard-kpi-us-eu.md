@@ -32,7 +32,7 @@
 - Common pitfalls when scoring PS suppliers
 
 ## Introduction
-Qualifying a phosphatidylserine (PS) supplier answers one question: is this source acceptable today? A supplier scorecard answers a different and more important question: is this source still performing six months and twenty lots later? For US and EU buyers of specialty phospholipid ingredients, most quality problems do not appear during qualification. They appear slowly, through drifting assay results, incomplete documentation packs, missed ship dates, and slower answers to technical questions. A lightweight quarterly scorecard catches that drift before it becomes a line-down event at your contract manufacturer or a customs hold at the border. This article defines the KPI categories, a starting weighting model, and how to convert scores into sourcing actions.
+Qualifying a phosphatidylserine (PS) supplier answers one question: is this source acceptable today? A supplier scorecard answers a different and more important question: is this source still performing six months and twenty lots later? For US and EU buyers of specialty phospholipid ingredients, most quality problems do not appear during qualification. They appear slowly, through drifting assay results, incomplete documentation packs, missed ship dates, and slower answers to technical questions. A lightweight quarterly scorecard catches that drift before it becomes a line-down event at your contract manufacturer or a customs hold at the border. This article defines the KPI categories, a starting weighting model, and how to convert scores into sourcing actions. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -88,7 +88,7 @@ A: No. A scorecard is continuous monitoring between audits; an audit verifies th
 A: COA-to-verification match rate. PS specifications are sensitive to assay and oxidative markers, so systematic agreement between supplier certificates and your own verification is the cleanest signal of a controlled process.
 
 ## Conclusion
-A phosphatidylserine supplier scorecard is a small investment with an outsized payoff: one analyst-hour per quarter per supplier, in exchange for early warning on quality drift, documentation gaps, and delivery risk. Define four KPI categories, set written thresholds, score quarterly, review annually, and — most importantly — let the scores change how you allocate volume. Your FSVP or Part 111 obligations will feel far less abstract when the evidence is already organized.
+A phosphatidylserine supplier scorecard is a small investment with an outsized payoff: one analyst-hour per quarter per supplier, in exchange for early warning on quality drift, documentation gaps, and delivery risk. Define four KPI categories, set written thresholds, score quarterly, review annually, and — most importantly — let the scores change how you allocate volume. Your FSVP or Part 111 obligations will feel far less abstract when the evidence is already organized. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 - U.S. FDA — Dietary Supplements: https://www.fda.gov/food/dietary-supplements

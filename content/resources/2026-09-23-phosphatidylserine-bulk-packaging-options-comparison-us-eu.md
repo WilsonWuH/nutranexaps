@@ -67,7 +67,7 @@ PS powder is hygroscopic and the polyunsaturated chains in the molecule oxidise 
 
 ![Warehouse comparison of phosphatidylserine fibre drums, foil barrier bags and palletised bulk packaging configurations](/assets/images/resource-phosphatidylserine-bulk-packaging-options-comparison-us-eu.webp)
 
-This guide sets out the configurations in common use, what each protects against, how they behave on a pallet and in a container, and what receiving should check first.
+This guide sets out the configurations in common use, what each protects against, how they behave on a pallet and in a container, and what receiving should check first. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -161,7 +161,7 @@ Bulk phosphatidylserine packaging is a stability decision expressed in cardboard
 
 Buyers who put those answers in the purchase specification are quoted accurately and rarely meet a moisture problem in production. Those who accept a supplier default discover the difference at goods-in or, worse, at blend uniformity testing.
 
-Nutranexa supplies phosphatidylserine in fibre drums with liners, foil barrier bags, and bag-in-drum hybrids, and states the full configuration in the quotation so it transfers directly into your receiving procedure.
+Nutranexa supplies phosphatidylserine in fibre drums with liners, foil barrier bags, and bag-in-drum hybrids, and states the full configuration in the quotation so it transfers directly into your receiving procedure. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

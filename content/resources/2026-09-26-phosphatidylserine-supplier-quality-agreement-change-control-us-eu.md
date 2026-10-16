@@ -52,7 +52,7 @@ Most phosphatidylserine buyers have a supply agreement and a specification sheet
 
 ![QA manager and supplier representative reviewing a quality agreement and specification documents across a meeting table](/assets/images/resource-ps-quality-agreement-review.webp)
 
-For a specialised ingredient like PS, silent change is expensive. Your label, your customer approvals, your retail audit files, and your regulatory position can all depend on details the supplier controls — the soy or sunflower origin, the enzyme system used in conversion, the solvent residue profile, the packaging materials in contact with the powder. This article sets out what a PS quality agreement should contain, with particular attention to change control: the clause set that obliges a supplier to tell you before the material changes, not after.
+For a specialised ingredient like PS, silent change is expensive. Your label, your customer approvals, your retail audit files, and your regulatory position can all depend on details the supplier controls — the soy or sunflower origin, the enzyme system used in conversion, the solvent residue profile, the packaging materials in contact with the powder. This article sets out what a PS quality agreement should contain, with particular attention to change control: the clause set that obliges a supplier to tell you before the material changes, not after. For non-GMO and European programmes, our [sunflower phosphatidylserine](/products/sunflower-phosphatidylserine/) page covers the specification and documentation set buyers typically request.
 
 ## Main Content
 
@@ -104,7 +104,7 @@ A: Commonly 60 to 90 days for changes affecting product characteristics or compl
 
 ## Conclusion
 
-A phosphatidylserine supply relationship held together only by a price agreement and a COA is one unnotified change away from a compliance problem. A quality agreement with a real change-control matrix, specification governance, discrepancy handling, and enforceable audit rights converts the supplier's quality system from a black box into an extension of your own. Suppliers who resist such agreements are telling you something; suppliers who operate under them daily are, too. Nutranexa signs and operates under customer quality agreements as standard practice, provides structured change notifications for every PS supply program, and supports customer audits with complete documentation access.
+A phosphatidylserine supply relationship held together only by a price agreement and a COA is one unnotified change away from a compliance problem. A quality agreement with a real change-control matrix, specification governance, discrepancy handling, and enforceable audit rights converts the supplier's quality system from a black box into an extension of your own. Suppliers who resist such agreements are telling you something; suppliers who operate under them daily are, too. Nutranexa signs and operates under customer quality agreements as standard practice, provides structured change notifications for every PS supply program, and supports customer audits with complete documentation access. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

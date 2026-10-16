@@ -65,7 +65,7 @@ Two phosphatidylserine lots can carry identical assay results and behave nothing
 
 Peroxide value is the marker most buyers recognise and the one most often misread. It measures only the first stage and rises then falls as hydroperoxides break down, so a low value can mean fresh material or material already past its peak. The second number — p-anisidine value — tells you which.
 
-This guide explains how to read both, what oxidation does downstream, and which controls slow it down.
+This guide explains how to read both, what oxidation does downstream, and which controls slow it down. Where supplier qualification is the next step, our [manufacturing overview](/manufacturing/) documents the facility, process controls and batch records behind each lot.
 
 ## Main Content
 
@@ -145,7 +145,7 @@ A: Match the COA lot to the drum label, check seal integrity, then test peroxide
 
 Oxidation is the failure mode that separates a phosphatidylserine specification that works from one that merely looks complete. Peroxide value shows where the material sits early in the reaction; anisidine value shows how far it has already gone.
 
-The controls are worth insisting on: a stated method, both markers reported, nitrogen-flushed barrier packaging, a declared antioxidant system, real-time data behind the shelf-life claim, and a re-test at receipt.
+The controls are worth insisting on: a stated method, both markers reported, nitrogen-flushed barrier packaging, a declared antioxidant system, real-time data behind the shelf-life claim, and a re-test at receipt. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

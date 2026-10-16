@@ -78,7 +78,7 @@ Freight often decides whether a phosphatidylserine quotation was genuinely compe
 
 Bulk phosphatidylserine moves as a low-density powder in cartons or fiber drums, so it becomes volume-limited before it becomes weight-limited. Because the powder is hygroscopic, containerisation shapes quality risk alongside cost. This guide compares LCL and FCL options for procurement, logistics, and QA teams already past supplier qualification, explains where consolidation genuinely pays, and covers documents on both sides of the lane.
 
-![Industrial container terminal yard with palletised export cartons awaiting loading for bulk phosphatidylserine shipments](/assets/images/phosphatidylserine-lcl-fcl-consolidation-shipping-us-eu-overview.webp)
+![Industrial container terminal yard with palletised export cartons awaiting loading for bulk phosphatidylserine shipments](/assets/images/phosphatidylserine-lcl-fcl-consolidation-shipping-us-eu-overview.webp) Buyers preparing this documentation can review our [phosphatidylserine programme](/products/phosphatidylserine/) alongside the grade, source and market detail above.
 
 ## Main Content
 
@@ -193,7 +193,7 @@ It depends on the Incoterm. Under EXW and most FOB arrangements the buyer or nom
 
 Containerisation is both a commercial and a technical decision. LCL preserves flexibility; FCL delivers better cost per kilogram, fewer handling events, and one continuous seal, which matters for a hygroscopic powder.
 
-The right choice rarely comes from comparing freight rates alone. Model total landed cost, identify your real break-even volume, and fix Incoterm, packaging, and document expectations in writing before booking.
+The right choice rarely comes from comparing freight rates alone. Model total landed cost, identify your real break-even volume, and fix Incoterm, packaging, and document expectations in writing before booking. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 

@@ -70,7 +70,7 @@ That is why phosphatidylserine pre shipment inspection deserves its own checklis
 
 This guide explains how to inspect a bulk phosphatidylserine shipment before dispatch using a document-led, buyer-friendly workflow. It is written for supplement brands, ingredient distributors, contract manufacturers, and functional food teams that source internationally and need a practical release process without exaggerated claims or unnecessary complexity.
 
-Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. The site also shows manufacturing images, quality-document pages, and sample COA information for PS 20% sunflower and PS 50% products. Buyers should still confirm current batch-specific documents and current certificate validity before every commercial shipment.
+Where relevant, this article uses verified Nutranexa site facts only. Nutranexa presents itself as the international brand of Shandong Nutranexa Biopharmaceutical Co., Ltd., founded in 2013, with a 110,000+ m2 campus in Yanggu County, Shandong. The site also shows manufacturing images, quality-document pages, and sample COA information for PS 20% sunflower and PS 50% products. Buyers should still confirm current batch-specific documents and current certificate validity before every commercial shipment. Where source selection is part of the decision, our [soy phosphatidylserine](/products/soy-phosphatidylserine/) page documents the extraction, specification and paperwork behind the soy route.
 
 ## Main Content
 
@@ -236,7 +236,7 @@ No. Pre-shipment inspection reduces risk before dispatch, while incoming inspect
 
 Phosphatidylserine pre shipment inspection is a practical control step for buyers who want fewer surprises after dispatch. It helps procurement, QA, and logistics teams confirm that the released shipment matches the approved product, batch data, packaging plan, and document package.
 
-For overseas importers, the best approach is straightforward: define the approved item clearly, verify the current batch COA, match labels and packing list to the order, and require a simple release decision before dispatch. That process is not bureaucratic. It is how professional buyers reduce avoidable shipment errors and protect internal approvals.
+For overseas importers, the best approach is straightforward: define the approved item clearly, verify the current batch COA, match labels and packing list to the order, and require a simple release decision before dispatch. That process is not bureaucratic. It is how professional buyers reduce avoidable shipment errors and protect internal approvals. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## CTA
 

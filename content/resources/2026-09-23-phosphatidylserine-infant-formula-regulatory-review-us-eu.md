@@ -65,7 +65,7 @@ The reason is not that PS is problematic. It is that food intended for infants i
 
 ![Regulatory affairs and QA teams reviewing phosphatidylserine regulatory dossiers and infant nutrition product files](/assets/images/resource-phosphatidylserine-infant-formula-regulatory-review-us-eu.webp)
 
-This review separates three questions buyers routinely conflate: what PS is used for today in adults, what would legally be required in infant or follow-on formula, and what a supplier can honestly document. The answers point in different directions.
+This review separates three questions buyers routinely conflate: what PS is used for today in adults, what would legally be required in infant or follow-on formula, and what a supplier can honestly document. The answers point in different directions. For the specification detail behind these documents, see our [quality and R&D overview](/quality-rd/), including test methods and release criteria.
 
 ## Main Content
 
@@ -145,7 +145,7 @@ Phosphatidylserine is a well-characterised phospholipid with a real commercial r
 
 The right sequence is category, jurisdiction, documentation, then sample. Buyers working in that order either find a viable route quickly — usually maternal positioning — or learn early that the formula route needs authorisation work belonging to the brand owner.
 
-Nutranexa answers these questions plainly: what the material is, what it can be documented to support, and where you need your own advice.
+Nutranexa answers these questions plainly: what the material is, what it can be documented to support, and where you need your own advice. When you are ready to move from checklist to quotation, [contact our team](/contact/) with the grade, source and document set described above.
 
 ## Sources
 
