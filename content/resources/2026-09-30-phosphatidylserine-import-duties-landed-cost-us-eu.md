@@ -37,7 +37,7 @@
 
 ## SEO Metadata
 
-- SEO Title: Phosphatidylserine Import Duties and Landed Cost: US/EU Guide
+- SEO Title: Phosphatidylserine Import Duties & Landed Cost: HS 2923.20, Section 301 & EU Duties | Nutranexa
 - Meta Description: Model the true landed cost of bulk phosphatidylserine — HS 2923.20 classification, MFN and Section 301 duties, US MPF/HMF fees, EU import VAT, and a worked calculation buyers can defend.
 - URL Slug: /resources/phosphatidylserine-import-duties-landed-cost-us-eu/
 - H1: Phosphatidylserine Import Duties and Landed Cost: A US and EU Buyer's Guide

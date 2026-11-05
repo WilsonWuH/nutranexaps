@@ -26,7 +26,7 @@
   - How should a buyer review the acetone-insoluble row on a PS COA?
 - Search Intent: High-intent analytical specification and COA review before supplier qualification, batch approval, first bulk order, and incoming inspection
 - Funnel Stage: Supplier qualification, specification and COA review, sample-to-bulk approval, incoming inspection, and quality-agreement discussion
-- SEO Title: Phosphatidylserine Acetone Insoluble Review | Nutranexa
+- SEO Title: Phosphatidylserine Acetone-Insoluble (AI) Matter: COA Benchmarks & PS-Grade Limits | Nutranexa
 - Meta Description: Review acetone-insoluble matter on a phosphatidylserine COA: what the test measures, lecithin benchmarks, PS-grade limits, and supplier questions.
 - URL Slug: /resources/phosphatidylserine-acetone-insoluble-review-us-eu/
 - H1: Phosphatidylserine Acetone-Insoluble Matter Review for US and EU Buyers

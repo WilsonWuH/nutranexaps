@@ -26,7 +26,7 @@
 
 ## SEO Metadata
 
-- SEO Title: Phosphatidylserine Health Claims Europe | Nutranexa
+- SEO Title: Phosphatidylserine Health Claims Europe: EFSA Rules, Label Wording & Register Status | Nutranexa
 - Meta Description: Review phosphatidylserine health claims for Europe across the EU Register, EFSA evidence, label wording, serving conditions, digital copy, and national checks.
 - URL Slug: /resources/phosphatidylserine-health-claims-europe/
 - H1: Phosphatidylserine Health Claims in Europe: A Pre-Launch Review

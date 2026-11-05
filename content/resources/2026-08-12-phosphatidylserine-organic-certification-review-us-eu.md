@@ -26,7 +26,7 @@
   - Is lecithin allowed as an ingredient in organic products in the US and EU?
 - Search Intent: High-intent document and regulatory review for procurement, formulation, and quality teams deciding whether an organic claim is supportable and which certificates to request before quotation or label approval.
 - Funnel Stage: Quotation review, supplier qualification, finished-product label planning, and regulatory preparation
-- SEO Title: Phosphatidylserine Organic Certification Review | Nutranexa
+- SEO Title: Phosphatidylserine Organic Certification Review: USDA NOP & EU 848/2018 Buyer Checklist | Nutranexa
 - Meta Description: How US and EU buyers review organic phosphatidylserine claims: USDA NOP and EU 2018/848 rules, certificate checks, and proof documents.
 - URL Slug: /resources/phosphatidylserine-organic-certification-review-us-eu/
 - H1: Phosphatidylserine Organic Certification Review: What US and EU Buyers Should Verify

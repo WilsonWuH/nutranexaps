@@ -37,7 +37,7 @@
 
 ## SEO Metadata
 
-- SEO Title: Phosphatidylserine Price Drivers: A Cost Breakdown for Buyers
+- SEO Title: Phosphatidylserine Price Drivers: Full Cost Breakdown for Bulk Buyers | Nutranexa
 - Meta Description: What actually drives phosphatidylserine prices — input source and yield, conversion process, assay and purity grade, batch size, packaging, freight and duties, and certification costs — plus where buyers have negotiating leverage.
 - URL Slug: /resources/phosphatidylserine-cost-structure-price-drivers-us-eu/
 - H1: What Drives Phosphatidylserine Prices: A Cost Structure Breakdown for US and EU Buyers

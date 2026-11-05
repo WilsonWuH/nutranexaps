@@ -113,7 +113,7 @@ const products = [
     eyebrow: "Core ingredient page",
     title: "Phosphatidylserine Manufacturer for Supplement and Functional Food Brands",
     description:
-      "Source export-grade Phosphatidylserine (PS) directly from Shandong Nutranexa factory. Available in 20%, 50%, 70% assays with full COA, TDS, Halal & Kosher certificates. Request wholesale quote today.",
+      "Factory-direct bulk Phosphatidylserine (PS) powder in 20%, 50%, 70% assays. GMP factory, 25kg drums, COA/TDS included, free samples. Get bulk quote in 24h.",
     image: "/assets/images/brand-product-lab.webp",
     imageAlt: "Nutranexa phosphatidylserine ingredient samples in a branded laboratory",
     cta: "Request a Quote",
@@ -143,7 +143,7 @@ const products = [
     eyebrow: "Soy-source PS",
     title: "Soy Phosphatidylserine Supplier for Bulk Source Review",
     description:
-      "Review soy phosphatidylserine for bulk supplement and functional food sourcing with source, grade, specification, and document support.",
+      "Bulk soy phosphatidylserine powder direct from GMP factory. 20%-70% grades, 25kg drums, full COA/TDS documentation, free samples for qualified buyers.",
     image: "/assets/images/product-soy-ps.webp",
     imageAlt: "Soy phosphatidylserine powder product in a clean ingredient bowl",
     cta: "Request Specs",
@@ -255,9 +255,9 @@ const products = [
     slug: "soy-lecithin",
     name: "Soy Lecithin",
     eyebrow: "Selected phospholipid ingredient",
-    title: "Soy Lecithin Supplier: Powder, Liquid & Granules | Nutranexa",
+    title: "Soy Lecithin Bulk Supplier | Powder, Liquid & Granules Manufacturer | Nutranexa",
     description:
-      "Review soybean lecithin in powder, liquid, and granulated forms for food, dietary supplement, bakery, confectionery, dairy, and protein formulation projects.",
+      "Bulk soy lecithin powder, liquid and granules direct from factory. Food-grade, COA included, competitive bulk pricing. Free samples for qualified buyers.",
     image: "/assets/images/news-china-lecithin-july-2026-supply.webp",
     imageAlt: "Illustrative soy lecithin powder and liquid sample prepared for a buyer document review",
     cta: "Request Lecithin Specs",
@@ -829,7 +829,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-gluten-free-statement-us-eu": "PS Gluten-Free Statement Review | Nutranexa",
   "phosphatidylserine-supplement-facts-label-us": "PS Supplement Facts Label Review for US Brands | Nutranexa",
   "phosphatidylserine-sds-review-us-eu": "PS SDS Review for US and EU Buyers | Nutranexa",
-  "phosphatidylserine-health-claims-europe": "Phosphatidylserine Health Claims Europe | Nutranexa",
+  "phosphatidylserine-health-claims-europe": "Phosphatidylserine Health Claims Europe: EFSA Rules, Label Wording & Register Status | Nutranexa",
   "phosphatidylserine-ndi-review-us": "Phosphatidylserine NDI Review for US Supplement Brands | Nutranexa",
   "phosphatidylserine-dioxin-pcb-testing-europe": "PS Dioxin & PCB Testing for Europe | Nutranexa",
   "phosphatidylserine-pesticide-residue-review-europe": "PS Pesticide Residue Review Europe | Nutranexa",
@@ -858,7 +858,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-customs-broker-handoff-us": "PS Customs Broker Handoff Checklist for US Importers | Nutranexa",
   "phosphatidylserine-safety-data-sheet-review-europe": "PS Safety Data Sheet Review for Europe | Nutranexa",
   "phosphatidylserine-food-production-license-review-us-eu": "PS Food Production License Review for US and EU Buyers | Nutranexa",
-  "phosphatidylserine-organic-certification-review-us-eu": "Phosphatidylserine Organic Certification Review | Nutranexa",
+  "phosphatidylserine-organic-certification-review-us-eu": "Phosphatidylserine Organic Certification Review: USDA NOP & EU 848/2018 Buyer Checklist | Nutranexa",
   "phosphatidylserine-halal-certificate-review-us-eu": "PS Halal Certificate Review for US and EU Buyers | Nutranexa",
   "phosphatidylserine-country-of-origin-marking-us": "PS Country of Origin Marking Checklist for US Importers | Nutranexa",
   "phosphatidylserine-isf-filing-checklist-us": "PS ISF Filing Checklist for U.S. Importers | Nutranexa",
@@ -880,7 +880,7 @@ const promotedSeoTitles = {
   "phosphatidylserine-rasff-monitoring-europe": "Phosphatidylserine RASFF Monitoring for EU Buyers | Nutranexa",
   "phosphatidylserine-marine-cargo-insurance-us-canada": "Phosphatidylserine Marine Cargo Insurance Review | Nutranexa",
   "phosphatidylserine-ics2-eu-import": "Phosphatidylserine ICS2 EU Import Guide | Nutranexa",
-  "phosphatidylserine-acetone-insoluble-review-us-eu": "Phosphatidylserine Acetone Insoluble Review | Nutranexa",
+  "phosphatidylserine-acetone-insoluble-review-us-eu": "Phosphatidylserine Acetone-Insoluble (AI) Matter: COA Benchmarks & PS-Grade Limits | Nutranexa",
   "phosphatidylserine-customs-valuation-us": "PS Customs Valuation Review for US Importers | Nutranexa",
   "phosphatidylserine-authenticity-testing-europe": "Phosphatidylserine Authenticity Testing for European Buyers | Nutranexa",
   "phosphatidylserine-banned-substance-screening-us": "Phosphatidylserine Banned Substance Screening for US Sports Nutrition | Nutranexa",
@@ -2113,13 +2113,13 @@ function articleImage(article) {
 
 function productSeoTitle(product) {
   const titles = {
-    phosphatidylserine: "Bulk Phosphatidylserine Powder Supplier | Soy & Sunflower PS | Nutranexa",
-    "soy-phosphatidylserine": "Soy Phosphatidylserine Supplier | Bulk Source & Specs",
+    phosphatidylserine: "Bulk Phosphatidylserine Powder Manufacturer | Factory Price & Free Sample | Nutranexa",
+    "soy-phosphatidylserine": "Soy Phosphatidylserine Bulk Manufacturer | Factory Direct & COA | Nutranexa",
     "sunflower-phosphatidylserine": "Sunflower Phosphatidylserine 20% & 50% Bulk Manufacturer | Non-Soy PS | Nutranexa",
-    "soluble-soybean-polysaccharide": "Soluble Soybean Polysaccharide Supplier | Nutranexa",
-    "soy-lecithin": "Soy Lecithin Supplier: Powder, Liquid & Granules | Nutranexa",
+    "soluble-soybean-polysaccharide": "Soluble Soybean Polysaccharide Supplier | Bulk Manufacturer | Nutranexa",
+    "soy-lecithin": "Soy Lecithin Bulk Supplier | Powder, Liquid & Granules Manufacturer | Nutranexa",
   };
-  return titles[product.slug] || `${product.name} Supplier | Nutranexa`;
+  return titles[product.slug] || `${product.name} Supplier | Bulk Manufacturer | Nutranexa`;
 }
 
 function articleSeoTitle(article) {
@@ -2372,8 +2372,8 @@ function nxHomePage() {
     </div>
   </section>`;
   return layout({
-    title: "Phosphatidylserine (PS) 20% 50% 70% Manufacturer | Bulk Price & COA | Nutranexa",
-    description: "Direct GMP & ISO9001 Phosphatidylserine manufacturer in China. Bulk Soy & Sunflower PS powder (20%, 50%, 70%) in stock. MOQ 25kg, free sample & batch COA available. Get factory quote in 12h.",
+    title: "Phosphatidylserine (PS) 20% 50% 70% Manufacturer | Bulk Price & Free Sample | Nutranexa",
+    description: "Direct GMP & ISO9001 Phosphatidylserine manufacturer in China. Bulk Soy & Sunflower PS powder (20%, 50%, 70%), 25kg drums, COA included. Free samples, factory quote in 24h.",
     route: "/",
     image: "/assets/images/og-nutranexa-premium-ps-v2.png",
     head: '<link rel="preload" as="image" href="/assets/images/product-powder-spoon.webp" type="image/webp" media="(min-width: 861px)" fetchpriority="high">',
@@ -2417,8 +2417,8 @@ function lecithinHub() {
   <section class="form-panel"><div>${sectionIntro("Technical support", "Request a soybean lecithin document package", "Include form, application, target market, annual quantity, and required documents so the team can return the relevant technical files.")}</div>${quoteForm("Soy Lecithin", "", { productType: "lecithin" })}</section>
   <section class="link-panel"><a href="/products/">All products</a><a href="/products/phosphatidylserine/">Phosphatidylserine</a><a href="/products/soy-phosphatidylserine/">Soy PS</a><a href="/applications/functional-foods/">Functional food applications</a><a href="/contact/">Request current specification</a></section>`;
   return layout({
-    title: "Lecithin Ingredients for Food & Nutrition | Nutranexa",
-    description: "Review selected lecithin ingredients, including powdered, liquid, and granulated soybean lecithin, with supplier qualification, current specifications, and document requests.",
+    title: "Lecithin Ingredients Wholesale | Powder, Liquid & Granules | Nutranexa",
+    description: "Bulk soybean lecithin in powder, liquid and granulated forms. Factory-direct supply for food & nutrition applications. COA available, free samples for buyers.",
     route: "/products/lecithin/",
     schema: [breadcrumbJson([["Home", "/"], ["Products", "/products/"], ["Lecithin Ingredients", "/products/lecithin/"]])],
     body,
