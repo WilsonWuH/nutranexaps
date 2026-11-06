@@ -3,7 +3,7 @@
     "locale": "tr",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-06T11:46:03.480Z",
+    "generatedAt": "2026-11-06T11:48:47.659Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25743,6 +25743,18 @@
     "Your supplier manages that risk too. A twelve-month fixed quote means they either hedged it or priced a premium into your unit cost, and knowing which tells you how flexible they can be.": "Tedarikçiniz bu riski de yönetiyor. On iki aylık sabit teklif, ya hedge yaptıkları ya da birim maliyetinize prim fiyatlandırdıkları anlamına gelir ve hangi fiyatı bildikleri anlamına gelir, ne kadar esnek olabileceklerini gösterir.",
     "Your Traceability Plan and the Road to 20 January 2028": "İzlenebilirlik Planınız ve 20 Ocak 2028'e Giden Yol",
     "Your UAE partner maintains the product registration in the emirate's system; keep your dossier synchronized with what they filed, because a specification drift between registration and shipment is a classic detention trigger.": "BAE ortağınız, emirlik sisteminde ürün kaydını sürdürür; Dosyanızı onların dosyalarıyla senkronize tutun, çünkü kayıt ile sevkiyat arasında spesifikasyon kayması klasik bir gözaltı tetikleyicisidir.",
-    "Zero-gap scheduling": "Sıfır boşluklu zamanlama"
+    "Zero-gap scheduling": "Sıfır boşluklu zamanlama",
+    "All Programs →": "Tüm Programlar →",
+    "Allocation, pricing and dual sourcing.": "Tahsis, fiyatlandırma ve çift kaynak kullanımı.",
+    "Distribution program with document packages.": "Belge paketleriyle dağıtım programı.",
+    "FDA compliance and receiving workflow.": "FDA uyumu ve alım iş akışı.",
+    "How buyers source Phosphatidylserine (PS) - pick the program or buyer profile that matches your situation.": "Alıcılar Fosfatidilserin (PS) nasıl temin eder - durumunuza uygun programı veya alıcı profilini seçin.",
+    "How buyers source Soy Phosphatidylserine - pick the program or buyer profile that matches your situation.": "Alıcılar Soya Fosfatidilserini nasıl temin eder - durumunuza uygun programı veya alıcı profilini seçin.",
+    "How buyers source Sunflower Phosphatidylserine - pick the program or buyer profile that matches your situation.": "Alıcılar Sunflower Fosfatidilserini nasıl temin eder - durumunuza uygun programı veya alıcı profilini seçin.",
+    "Novel Food, documents and import workflow.": "Yenilikçi Yiyecek, belgeler ve iç iş akışı.",
+    "Programs and buyers for this product": "Bu ürün için programlar ve alıcılar",
+    "Source, grade and claim-aware documentation.": "Kaynak, derecelendirme ve talep hakkındaki belgeler.",
+    "Specification, samples and retail-ready packaging.": "Teknik özellikler, örnekler ve perakendede hazır ambalaj.",
+    "Verified manufacturer and first-order workflow.": "Doğrulanmış üretici ve birinci sipariş iş akışı."
   }
 }

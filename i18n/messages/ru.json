@@ -3,7 +3,7 @@
     "locale": "ru",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-06T11:42:48.603Z",
+    "generatedAt": "2026-11-06T11:48:44.497Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25671,6 +25671,18 @@
     "Your supplier manages that risk too. A twelve-month fixed quote means they either hedged it or priced a premium into your unit cost, and knowing which tells you how flexible they can be.": "Ваш поставщик тоже берет на себя этот риск. Двенадцатимесячная фиксированная ставка означает, что они либо застраховали стоимость, либо внесли премию в стоимость вашей единицы единицы, и знание чего именно показывает, насколько гибкими они могут быть.",
     "Your Traceability Plan and the Road to 20 January 2028": "Ваш план отслеживаемости и путь до 20 января 2028 года",
     "Your UAE partner maintains the product registration in the emirate's system; keep your dossier synchronized with what they filed, because a specification drift between registration and shipment is a classic detention trigger.": "Ваш партнёр в ОАЭ ведёт регистрацию продукта в системе эмирата; Держите досье синхронизированным с тем, что они подали, потому что смещение спецификаций между регистрацией и отправкой — это классический триггер задержания.",
-    "Zero-gap scheduling": "Планирование с нулевым разрывом"
+    "Zero-gap scheduling": "Планирование с нулевым разрывом",
+    "All Programs →": "Все программы →",
+    "Allocation, pricing and dual sourcing.": "Распределение, ценообразование и двойное снабжение.",
+    "Distribution program with document packages.": "Программа распространения с пакетами документов.",
+    "FDA compliance and receiving workflow.": "Рабочий процесс соответствия требованиям FDA и получения.",
+    "How buyers source Phosphatidylserine (PS) - pick the program or buyer profile that matches your situation.": "Как покупатели находят фосфатидилсерин (PS) — выбирайте программу или профиль покупателя, которые соответствуют вашей ситуации.",
+    "How buyers source Soy Phosphatidylserine - pick the program or buyer profile that matches your situation.": "Как покупатели выбирают соевый фосфатидилсерин — выбирайте программу или профиль покупателя, которые соответствуют вашей ситуации.",
+    "How buyers source Sunflower Phosphatidylserine - pick the program or buyer profile that matches your situation.": "Как покупатели ищут фосфатидилсерин подсолнуха — выбирайте программу или профиль покупателя, которые соответствуют вашей ситуации.",
+    "Novel Food, documents and import workflow.": "Novel Food, документы и рабочий процесс импорта.",
+    "Programs and buyers for this product": "Программы и покупатели этого продукта",
+    "Source, grade and claim-aware documentation.": "Документы с учётом источников, оценки и претензии.",
+    "Specification, samples and retail-ready packaging.": "Спецификации, образцы и готовая к розничной упаковке.",
+    "Verified manufacturer and first-order workflow.": "Проверен рабочий процесс производителя и первого заказа."
   }
 }

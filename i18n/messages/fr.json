@@ -3,7 +3,7 @@
     "locale": "fr",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-06T11:43:26.237Z",
+    "generatedAt": "2026-11-06T11:48:45.771Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25671,6 +25671,18 @@
     "Your supplier manages that risk too. A twelve-month fixed quote means they either hedged it or priced a premium into your unit cost, and knowing which tells you how flexible they can be.": "Votre fournisseur gère aussi ce risque. Un devis fixe de douze mois signifie qu’ils l’ont soit couvert, soit intégré une prime à votre coût unitaire, et savoir lequel vous montre à quel point ils peuvent être flexibles.",
     "Your Traceability Plan and the Road to 20 January 2028": "Votre plan de traçabilité et la route jusqu’au 20 janvier 2028",
     "Your UAE partner maintains the product registration in the emirate's system; keep your dossier synchronized with what they filed, because a specification drift between registration and shipment is a classic detention trigger.": "Votre partenaire aux Émirats Arabes Unis maintient l’enregistrement des produits dans le système de l’émirat ; Gardez votre dossier synchronisé avec ce qu’ils ont déposé, car une différence de spécification entre l’enregistrement et l’expédition est un déclencheur classique de détention.",
-    "Zero-gap scheduling": "Ordonnancement à zéro gap"
+    "Zero-gap scheduling": "Ordonnancement à zéro gap",
+    "All Programs →": "Tous les programmes →",
+    "Allocation, pricing and dual sourcing.": "Attribution, tarification et double approvisionnement.",
+    "Distribution program with document packages.": "Programme de distribution avec paquets de documents.",
+    "FDA compliance and receiving workflow.": "Conformité FDA et flux de réception.",
+    "How buyers source Phosphatidylserine (PS) - pick the program or buyer profile that matches your situation.": "Comment les acheteurs se procurent en phosphatidylsérine (PS) - choisissez le programme ou le profil d’acheteur qui correspond à votre situation.",
+    "How buyers source Soy Phosphatidylserine - pick the program or buyer profile that matches your situation.": "Comment les acheteurs s’approvisionnent en phosphatidylserine de soja - choisissez le programme ou le profil d’acheteur qui correspond à votre situation.",
+    "How buyers source Sunflower Phosphatidylserine - pick the program or buyer profile that matches your situation.": "Comment les acheteurs s’approvisionnent en phosphatidylserine de tournesol - choisissez le programme ou le profil d’acheteur qui correspond à votre situation.",
+    "Novel Food, documents and import workflow.": "Nourriture nouvelle, documents et flux de travail d’importation.",
+    "Programs and buyers for this product": "Programmes et acheteurs pour ce produit",
+    "Source, grade and claim-aware documentation.": "Documentation de source, de note et de réclamation.",
+    "Specification, samples and retail-ready packaging.": "Spécifications, échantillons et emballages prêts à la vente.",
+    "Verified manufacturer and first-order workflow.": "Fabricant vérifié et flux de travail de premier ordre."
   }
 }

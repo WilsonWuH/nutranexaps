@@ -3,7 +3,7 @@
     "locale": "ar",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-06T11:44:47.496Z",
+    "generatedAt": "2026-11-06T11:48:45.171Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25671,6 +25671,18 @@
     "Your supplier manages that risk too. A twelve-month fixed quote means they either hedged it or priced a premium into your unit cost, and knowing which tells you how flexible they can be.": "المورد الخاص بك يدير هذا الخطر أيضا. عرض سعر ثابت لمدة اثني عشر شهرا يعني أنهم إما تحوطوا أو وضعوا سعرا إضافيا في تكلفة وحدتك، ومعرفة أيهما يخبرك بمدى مرونتهم.",
     "Your Traceability Plan and the Road to 20 January 2028": "خطة التتبع الخاصة بك والطريق حتى 20 يناير 2028",
     "Your UAE partner maintains the product registration in the emirate's system; keep your dossier synchronized with what they filed, because a specification drift between registration and shipment is a classic detention trigger.": "شريكك الإماراتي يحافظ على تسجيل المنتج في نظام الإمارة؛ حافظ على مزامنة ملفك مع ما قدموه، لأن انحراف المواصفات بين التسجيل والشحن هو سبب كلاسيكي للاحتجاز.",
-    "Zero-gap scheduling": "جدولة الفجوة الصفرية"
+    "Zero-gap scheduling": "جدولة الفجوة الصفرية",
+    "All Programs →": "جميع البرامج →",
+    "Allocation, pricing and dual sourcing.": "التخصيص، التسعير، والتوريد المزدوج.",
+    "Distribution program with document packages.": "برنامج توزيع مع حزم المستندات.",
+    "FDA compliance and receiving workflow.": "الامتثال لإدارة الغذاء والدواء وسير عمل الاستقبال.",
+    "How buyers source Phosphatidylserine (PS) - pick the program or buyer profile that matches your situation.": "كيف يحصل المشترون على فوسفاتيديلسيرين (PS) - اختر البرنامج أو ملف المشتري الذي يتناسب مع وضعك.",
+    "How buyers source Soy Phosphatidylserine - pick the program or buyer profile that matches your situation.": "كيف يحصل المشترون على فوسفاتيديلسيرين الصويا - اختر البرنامج أو ملف المشتري الذي يتناسب مع وضعك.",
+    "How buyers source Sunflower Phosphatidylserine - pick the program or buyer profile that matches your situation.": "كيف يحصل المشترون على فوسفاتيديلسيرين عباد الشمس - اختر البرنامج أو ملف المشتري الذي يتناسب مع وضعك.",
+    "Novel Food, documents and import workflow.": "طعام جديد، مستندات، وسير عمل الاستيراد.",
+    "Programs and buyers for this product": "البرامج والمشترون لهذا المنتج",
+    "Source, grade and claim-aware documentation.": "المصدر، التصنيف، والمستندات الواعية بالمطالبات.",
+    "Specification, samples and retail-ready packaging.": "المواصفات، العينات، والتغليف الجاهز للبيع بالتجزئة.",
+    "Verified manufacturer and first-order workflow.": "تم التحقق من الشركة المصنعة وسير العمل في الطلب الأول."
   }
 }

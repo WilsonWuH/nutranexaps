@@ -3,7 +3,7 @@
     "locale": "es",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-06T11:41:33.045Z",
+    "generatedAt": "2026-11-06T11:48:43.936Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25671,6 +25671,18 @@
     "Your supplier manages that risk too. A twelve-month fixed quote means they either hedged it or priced a premium into your unit cost, and knowing which tells you how flexible they can be.": "Tu proveedor también gestiona ese riesgo. Un presupuesto fijo a doce meses significa que o bien lo cubrieron o pusieron un precio premium en tu coste unitario, y saber cuál te dice lo flexibles que pueden ser.",
     "Your Traceability Plan and the Road to 20 January 2028": "Tu plan de trazabilidad y el camino hasta el 20 de enero de 2028",
     "Your UAE partner maintains the product registration in the emirate's system; keep your dossier synchronized with what they filed, because a specification drift between registration and shipment is a classic detention trigger.": "Tu socio en los EAU mantiene el registro del producto en el sistema del emirato; Mantén tu expediente sincronizado con lo que presentaron, porque una diferencia de especificación entre el registro y el envío es un disparador clásico de detención.",
-    "Zero-gap scheduling": "Planificación de vacíos cero"
+    "Zero-gap scheduling": "Planificación de vacíos cero",
+    "All Programs →": "Todos los programas →",
+    "Allocation, pricing and dual sourcing.": "Asignación, precios y doble aprovisionamiento.",
+    "Distribution program with document packages.": "Programa de distribución con paquetes de documentos.",
+    "FDA compliance and receiving workflow.": "Cumplimiento de la FDA y flujo de trabajo de recepción.",
+    "How buyers source Phosphatidylserine (PS) - pick the program or buyer profile that matches your situation.": "Cómo obtienen los compradores la fosfatidilserina (PS): elige el programa o perfil de comprador que se adapte a tu situación.",
+    "How buyers source Soy Phosphatidylserine - pick the program or buyer profile that matches your situation.": "Cómo obtienen los compradores fosfatidilserina de soja: elige el programa o perfil de comprador que se adapte a tu situación.",
+    "How buyers source Sunflower Phosphatidylserine - pick the program or buyer profile that matches your situation.": "Cómo obtienen los compradores la fosfatidilserina de girasol: elige el programa o perfil de comprador que se adapte a tu situación.",
+    "Novel Food, documents and import workflow.": "Comida novedosa, documentos y flujo de trabajo de importación.",
+    "Programs and buyers for this product": "Programas y compradores de este producto",
+    "Source, grade and claim-aware documentation.": "Documentación relacionada con la fuente, la calificación y la reclamación.",
+    "Specification, samples and retail-ready packaging.": "Especificaciones, muestras y embalaje listo para la venta al público.",
+    "Verified manufacturer and first-order workflow.": "Fabricante verificado y flujo de trabajo de primer orden."
   }
 }

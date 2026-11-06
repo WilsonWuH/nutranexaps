@@ -3,7 +3,7 @@
     "locale": "ko",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-06T11:45:23.683Z",
+    "generatedAt": "2026-11-06T11:48:46.991Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25743,6 +25743,18 @@
     "Your supplier manages that risk too. A twelve-month fixed quote means they either hedged it or priced a premium into your unit cost, and knowing which tells you how flexible they can be.": "공급업체도 그 위험을 관리합니다. 12개월 고정 견적은 헤지했거나 단가에 프리미엄을 산정했다는 뜻이며, 어느 쪽인지 알면 얼마나 유연한지 알 수 있습니다.",
     "Your Traceability Plan and the Road to 20 January 2028": "추적 계획과 2028년 1월 20일까지의 여정",
     "Your UAE partner maintains the product registration in the emirate's system; keep your dossier synchronized with what they filed, because a specification drift between registration and shipment is a classic detention trigger.": "UAE 파트너는 토후국 시스템에서 제품 등록을 유지하며; 서류를 그들이 제출한 내용과 동기화하세요. 등록과 출하 사이의 사양 차이는 전형적인 구금 트리거입니다.",
-    "Zero-gap scheduling": "제로 갭 스케줄링"
+    "Zero-gap scheduling": "제로 갭 스케줄링",
+    "All Programs →": "모든 프로그램 →",
+    "Allocation, pricing and dual sourcing.": "배분, 가격 책정, 이중 소싱.",
+    "Distribution program with document packages.": "문서 패키지가 포함된 배포 프로그램.",
+    "FDA compliance and receiving workflow.": "FDA 준수 및 수령 워크플로우.",
+    "How buyers source Phosphatidylserine (PS) - pick the program or buyer profile that matches your situation.": "구매자가 인산티딜세린(PS)을 어떻게 조달하는지 - 본인의 상황에 맞는 프로그램이나 구매자 프로필을 선택하세요.",
+    "How buyers source Soy Phosphatidylserine - pick the program or buyer profile that matches your situation.": "구매자가 대두 포스파티딜세린을 어떻게 조달하는지 - 자신의 상황에 맞는 프로그램이나 구매자 프로필을 선택하세요.",
+    "How buyers source Sunflower Phosphatidylserine - pick the program or buyer profile that matches your situation.": "구매자가 해바라기 인산지세린 조달 방법 - 자신의 상황에 맞는 프로그램이나 구매자 프로필을 선택하세요.",
+    "Novel Food, documents and import workflow.": "Novel Food, 문서 및 수입 워크플로우.",
+    "Programs and buyers for this product": "이 제품의 프로그램 및 구매자",
+    "Source, grade and claim-aware documentation.": "출처, 등급 및 청구 인식 문서.",
+    "Specification, samples and retail-ready packaging.": "사양, 샘플 및 소매용 포장.",
+    "Verified manufacturer and first-order workflow.": "제조사 및 1차 주문 워크플로우가 검증되었습니다."
   }
 }
