@@ -76,6 +76,28 @@ const megaNav = [
       },
     ],
   },
+  {
+    label: "Solutions",
+    href: "/solutions/",
+    columns: [
+      {
+        title: "Market Entry",
+        links: [
+          ["EU Market Entry", "/solutions/eu-market-entry/", "Novel Food, documents and import workflow"],
+          ["US Market Entry", "/solutions/us-market-entry/", "FDA compliance and receiving workflow"],
+        ],
+      },
+      {
+        title: "Supply & Programs",
+        links: [
+          ["OEM & Private Label", "/solutions/oem-private-label-program/", "Specification to retail-ready packaging"],
+          ["Bulk Annual Supply", "/solutions/bulk-supply-program/", "Allocation, pricing and dual sourcing"],
+          ["Custom Formulation", "/solutions/custom-formulation-support/", "Specification design around your product"],
+        ],
+      },
+    ],
+  },
+  { label: "Who We Serve", href: "/who-we-serve/" },
   { label: "Applications", href: "/applications/" },
   { label: "Manufacturing", href: "/manufacturing/" },
   { label: "Quality", href: "/quality-rd/" },
@@ -409,6 +431,263 @@ const applications = [
       ["Private-label supplements", "Align source, target assay, format, documents, and market requirements with the finished-product team."],
       ["Functional food concepts", "Review processing, stability, packaging, and permitted positioning before a formulation trial."],
       ["Co-development projects", "Share the product brief, destination market, target volume, and document list for supplier-side review."],
+    ],
+  },
+];
+// ===== Solutions axis: buyer-problem view (b2b-website-studio three-axis model) =====
+const solutions = [
+  {
+    slug: "eu-market-entry",
+    title: "EU Market Entry for Phosphatidylserine Importers",
+    seoTitle: "Phosphatidylserine EU Market Entry: Compliance & Import Program | Nutranexa",
+    description: "Bring phosphatidylserine into the EU market with a documentation-first program: Novel Food status, food-contact documents, import checks and a compliance-aware sourcing route.",
+    problem: "EU buyers must clear Novel Food, food-contact, labeling and border-control questions before a PS import program can run reliably. The decision is rarely about the powder itself - it is about the document package, the supplier file and the import workflow.",
+    decision: ["Does the PS grade carry the right regulatory status for the destination market?", "Which documents must travel with each shipment - COA, TDS, MSDS, source and allergen statements?", "Who owns border checks, sampling and customs classification?", "What evidence protects the buyer when a claim or certificate is questioned?"],
+    products: [
+      ["/products/phosphatidylserine-20/", "PS 20%", "Value-focused grade for daily nutrition programs entering the EU."],
+      ["/products/phosphatidylserine-50/", "PS 50%", "Concentrated grade for supplement and functional food buyers."],
+      ["/products/sunflower-phosphatidylserine/", "Sunflower PS", "Non-soy positioning route for EU label differentiation."],
+    ],
+    steps: [
+      ["01", "Market and status review", "Confirm destination-market rules, permitted positioning and the document list that must travel with the shipment."],
+      ["02", "Grade and source selection", "Match assay, source and specification to the finished product and its labeling requirements."],
+      ["03", "Document package assembly", "Collect specification, COA samples, certificate files and source statements before the first order."],
+      ["04", "Import and border workflow", "Plan classification, official controls and receiving checks with your broker before shipment."],
+      ["05", "First shipment and review", "Confirm receiving inspection results and keep the supplier file current for repeat orders."],
+    ],
+    limits: "Regulatory positions are market- and product-specific. Nutranexa supplies ingredient documents and production evidence; final market clearance and label approval remain with the importer and their local advisors.",
+    articles: [
+      ["/resources/phosphatidylserine-eu-novel-food-status-us-eu-buyers/", "EU Novel Food status for PS"],
+      ["/resources/phosphatidylserine-eu-official-controls-import-sampling/", "EU official controls and import sampling"],
+      ["/resources/phosphatidylserine-multilingual-mandatory-food-information-europe/", "Multilingual food information rules"],
+      ["/resources/phosphatidylserine-import-duties-landed-cost-us-eu/", "Import duties and landed cost model"],
+    ],
+  },
+  {
+    slug: "us-market-entry",
+    title: "US Market Entry for Phosphatidylserine Buyers",
+    seoTitle: "Phosphatidylserine US Import Program: FDA Compliance | Nutranexa",
+    description: "Source PS for the US supplement market with a compliance-aware program: facility registration, NDI review, label rules, prior notice and a documented receiving workflow.",
+    problem: "US buyers carry the burden of dietary-supplement compliance: facility registration, NDI review where applicable, structure/function label rules, prior notice and receiving checks. Ingredient sourcing decisions must be made with that workflow in mind.",
+    decision: ["Is the supplier's food facility registration available and current?", "Which label and claim rules apply to the finished supplement?", "Who manages prior notice and entry documentation?", "What specification and COA evidence supports the finished product?"],
+    products: [
+      ["/products/phosphatidylserine-50/", "PS 50%", "Common grade for concentrated supplement formulations."],
+      ["/products/phosphatidylserine-70/", "PS 70%", "High-concentration grade for premium positioning."],
+      ["/products/soy-phosphatidylserine/", "Soy PS", "Standard source route with full specification review."],
+    ],
+    steps: [
+      ["01", "Compliance scoping", "Confirm the finished product's regulatory route, label rules and claim boundaries with your own advisors."],
+      ["02", "Supplier qualification", "Review the manufacturing file, quality system evidence and document availability before quotation."],
+      ["03", "Specification alignment", "Lock the controlled specification, grade and packaging that match the finished-product brief."],
+      ["04", "Shipment documentation", "Coordinate COA, TDS, MSDS, certificate files and entry documents with the shipment."],
+      ["05", "Receiving and release", "Run incoming inspection and keep the batch file for your own compliance records."],
+    ],
+    limits: "Nutranexa does not provide legal or regulatory advice. US market entry decisions and finished-product compliance remain the buyer's responsibility.",
+    articles: [
+      ["/resources/phosphatidylserine-ndi-review-us/", "NDI review for PS"],
+      ["/resources/phosphatidylserine-fda-food-facility-registration-us/", "FDA food facility registration"],
+      ["/resources/phosphatidylserine-structure-function-claims-us/", "Structure/function claim rules"],
+      ["/resources/phosphatidylserine-prior-notice-checklist-us/", "Prior notice checklist"],
+    ],
+  },
+  {
+    slug: "oem-private-label-program",
+    title: "OEM and Private-Label Phosphatidylserine Program",
+    seoTitle: "Phosphatidylserine OEM & Private Label Program | Nutranexa",
+    description: "Run a private-label PS program from specification to retail-ready packaging: grade selection, sample approval, artwork coordination and documented production handoff.",
+    problem: "Brands and OEM buyers lose weeks when the ingredient specification, sample approval, packaging and document package are not aligned before production. A structured program removes that ambiguity.",
+    decision: ["Which grade, source and specification match the target product?", "What sample approval sequence is required before production?", "Who owns artwork, packaging and retail format decisions?", "Which documents must accompany the finished product?"],
+    products: [
+      ["/products/phosphatidylserine-20/", "PS 20%", "Entry grade for value-focused private-label programs."],
+      ["/products/phosphatidylserine-50/", "PS 50%", "Concentrated grade for mid-range supplement brands."],
+      ["/products/soy-lecithin/", "Soy Lecithin", "Complementary phospholipid for blended formulations."],
+    ],
+    steps: [
+      ["01", "Program brief", "Share target format, market, annual volume, packaging concept and document needs."],
+      ["02", "Grade and spec confirmation", "Lock the controlled specification and confirm packaging compatibility before sampling."],
+      ["03", "Sample approval", "Approve the pre-production sample against the finished-product brief."],
+      ["04", "Artwork and packaging", "Coordinate print, packaging format and retail requirements."],
+      ["05", "Production and handoff", "Confirm batch documentation, packaging and shipment planning."],
+    ],
+    limits: "MOQ, lead time and packaging options are confirmed per program. Certificate coverage is product-specific and must be verified for the quoted construction.",
+    articles: [
+      ["/resources/phosphatidylserine-oem-scale-up-pilot-to-production/", "OEM scale-up: pilot to production"],
+      ["/resources/phosphatidylserine-capsule-tablet-oem-specification-us-eu/", "Capsule and tablet OEM specification"],
+      ["/resources/phosphatidylserine-oem-artwork-label-approval-us-eu/", "Artwork and label approval"],
+      ["/resources/phosphatidylserine-private-label-brand-launch-us-eu/", "Private-label brand launch guide"],
+    ],
+  },
+  {
+    slug: "bulk-supply-program",
+    title: "Bulk Annual Supply Program for PS Distributors",
+    seoTitle: "Bulk Phosphatidylserine Annual Supply Program | Nutranexa",
+    description: "Structure a stable annual PS supply: volume allocation, price and lead-time planning, dual sourcing and a repeat-order document workflow that keeps your file current.",
+    problem: "Distributors and volume buyers carry supply risk when allocation, price and documentation are not planned together. A documented annual program reduces both stock risk and audit work.",
+    decision: ["What annual volume and allocation should be reserved?", "How are price, lead time and capacity planning handled across seasons?", "Is a dual-source structure needed for continuity?", "Which documents repeat orders require?"],
+    products: [
+      ["/products/phosphatidylserine/", "PS All Grades", "20%, 50% and 70% routes for allocation planning."],
+      ["/products/soluble-soybean-polysaccharide/", "SSPS", "Complementary soluble fiber for bundle programs."],
+      ["/products/lecithin/", "Lecithin", "Powder, liquid and granulated routes for combined shipments."],
+    ],
+    steps: [
+      ["01", "Demand review", "Share target volume, seasonality and destination markets for allocation planning."],
+      ["02", "Program structure", "Confirm grade mix, packaging, price framework and lead-time expectations."],
+      ["03", "Contract and documentation", "Align quality agreement, certificate files and repeat-order document review."],
+      ["04", "Execution and monitoring", "Track batches, COAs and shipment performance against the program."],
+      ["05", "Annual review", "Re-confirm volumes, prices, documents and any source or spec changes."],
+    ],
+    limits: "Volume, price and allocation terms are confirmed by written agreement. Availability of specific grades is confirmed per quotation.",
+    articles: [
+      ["/resources/phosphatidylserine-annual-volume-forecast-supplier-allocation/", "Annual volume forecast and allocation"],
+      ["/resources/phosphatidylserine-long-term-supply-agreement-us-eu/", "Long-term supply agreement guide"],
+      ["/resources/supplier-dual-sourcing-strategy-us-eu/", "Dual sourcing strategy"],
+      ["/resources/phosphatidylserine-repeat-order-document-review/", "Repeat-order document review"],
+    ],
+  },
+  {
+    slug: "custom-formulation-support",
+    title: "Custom PS Formulation and Specification Support",
+    seoTitle: "Custom Phosphatidylserine Formulation Support | Nutranexa",
+    description: "Develop a PS specification around your finished product: assay selection, source and carrier review, format testing guidance and a documented qualification path.",
+    problem: "Formulation teams often start from a finished-product concept and need the ingredient specification to follow - not the other way around. Source, assay, carrier and processing choices must be qualified together.",
+    decision: ["Which assay and source combination fits the target format?", "What carrier, particle and flow properties are required?", "Which finished-product tests confirm processing suitability?", "Which documents support the target market?"],
+    products: [
+      ["/products/phosphatidylserine-20/", "PS 20%", "Flexible grade for value-oriented formulations."],
+      ["/products/phosphatidylserine-70/", "PS 70%", "High-assay grade for concentrated formulas."],
+      ["/products/sunflower-phosphatidylserine/", "Sunflower PS", "Source-differentiated route for non-soy positioning."],
+    ],
+    steps: [
+      ["01", "Formulation brief", "Share the finished-product concept, target market, format and volume expectations."],
+      ["02", "Specification design", "Review assay, source, carrier and document options against the concept."],
+      ["03", "Sample evaluation", "Evaluate samples against the finished-product brief before commitment."],
+      ["04", "Process confirmation", "Confirm processing, stability and packaging suitability with testing."],
+      ["05", "Production handoff", "Lock the controlled specification for production and repeat orders."],
+    ],
+    limits: "Formulation and processing suitability are confirmed through finished-product testing. Nutranexa supplies ingredient data and samples; final product validation remains with the buyer.",
+    articles: [
+      ["/resources/phosphatidylserine-concentration-grades-compared-us-eu/", "Concentration grades compared"],
+      ["/resources/phosphatidylserine-soy-vs-sunflower-sourcing-guide-us-eu/", "Soy vs sunflower sourcing guide"],
+      ["/resources/phosphatidylserine-microencapsulation-powder-us-eu/", "Microencapsulation and powder handling"],
+      ["/resources/phosphatidylserine-oxidative-stability-testing/", "Oxidative stability testing"],
+    ],
+  },
+];
+
+// ===== ICP axis: buyer profiles (b2b-website-studio three-axis model) =====
+const whoWeServe = [
+  {
+    slug: "supplement-brands",
+    title: "For Supplement Brands",
+    seoTitle: "Phosphatidylserine for Supplement Brands | Nutranexa",
+    description: "Source PS for branded supplement programs with source choice, grade selection, COA evidence, claim-aware communication and private-label support.",
+    priorities: ["Source and grade that support brand positioning", "Complete document package for claim review", "Stable supply for repeat orders", "Sample and specification support before launch"],
+    needs: "Brand teams need an ingredient route that matches their positioning story - soy or sunflower, standard or concentrated - plus the documents their compliance team needs before launch.",
+    products: [
+      ["/products/phosphatidylserine-50/", "PS 50%", "Concentrated grade for branded supplement formulas."],
+      ["/products/sunflower-phosphatidylserine/", "Sunflower PS", "Non-soy positioning for differentiated labels."],
+      ["/products/phosphatidylserine-20/", "PS 20%", "Value-focused grade for daily nutrition products."],
+    ],
+    solutions: [
+      ["/solutions/oem-private-label-program/", "OEM and private-label program"],
+      ["/solutions/custom-formulation-support/", "Custom formulation support"],
+    ],
+    flow: ["Share target format, positioning and volume", "Receive grade options with document evidence", "Approve samples against the finished-product brief", "Confirm production, packaging and shipment plan"],
+    questions: ["Which source supports your label positioning?", "What document package does your compliance team require?", "What volume and launch timeline are you planning?"],
+    articles: [
+      ["/resources/phosphatidylserine-structure-function-claims-us/", "Structure/function claim rules"],
+      ["/resources/phosphatidylserine-soy-vs-sunflower-sourcing-guide-us-eu/", "Soy vs sunflower sourcing guide"],
+    ],
+  },
+  {
+    slug: "ingredient-distributors",
+    title: "For Ingredient Distributors",
+    seoTitle: "Phosphatidylserine for Ingredient Distributors | Nutranexa",
+    description: "Build a PS distribution program with allocation planning, document packages, repeat-order workflow and multi-market support from a direct manufacturer.",
+    priorities: ["Volume allocation and price framework", "Complete distributor document package", "Multi-market document coverage", "Predictable lead times and batch consistency"],
+    needs: "Distributors carry their customers' compliance expectations. A direct manufacturer relationship with a stable document workflow reduces that operational load.",
+    products: [
+      ["/products/phosphatidylserine/", "PS All Grades", "20%, 50% and 70% routes for portfolio coverage."],
+      ["/products/lecithin/", "Lecithin", "Complementary phospholipid for combined programs."],
+      ["/products/soluble-soybean-polysaccharide/", "SSPS", "Soluble fiber bundle option for food customers."],
+    ],
+    solutions: [
+      ["/solutions/bulk-supply-program/", "Bulk annual supply program"],
+      ["/solutions/eu-market-entry/", "EU market entry support"],
+    ],
+    flow: ["Review portfolio and target markets together", "Confirm allocation, price framework and lead times", "Align the distributor document package", "Run repeat-order document review for each cycle"],
+    questions: ["Which markets do you serve?", "What annual volume and allocation do you need?", "Which document package do your customers expect?"],
+    articles: [
+      ["/resources/phosphatidylserine-distributor-document-pack/", "Distributor document pack"],
+      ["/resources/phosphatidylserine-supplier-scorecard-kpi-us-eu/", "Supplier scorecard KPIs"],
+    ],
+  },
+  {
+    slug: "functional-food-manufacturers",
+    title: "For Functional Food Manufacturers",
+    seoTitle: "Phosphatidylserine for Functional Food Manufacturing | Nutranexa",
+    description: "Add PS to functional food and dairy programs with food-grade documentation, processing guidance and application testing support from a licensed manufacturer.",
+    priorities: ["Food-grade compliance evidence", "Processing and stability guidance", "Bulk packaging for production lines", "Application support for beverage and powder systems"],
+    needs: "Food manufacturers need the ingredient to survive their process - heat, moisture, blending - with documents that satisfy their market's food-contact rules.",
+    products: [
+      ["/products/phosphatidylserine-20/", "PS 20%", "Grade for nutrition powder and dairy-adjacent formats."],
+      ["/products/soluble-soybean-polysaccharide/", "SSPS", "Soluble fiber for acid protein beverage stabilization."],
+      ["/products/soy-lecithin/", "Soy Lecithin", "Emulsification and dispersion support."],
+    ],
+    solutions: [
+      ["/solutions/custom-formulation-support/", "Custom formulation support"],
+      ["/solutions/bulk-supply-program/", "Bulk supply program"],
+    ],
+    flow: ["Share application, process conditions and target market", "Review grade and specification options", "Run bench evaluation against your process", "Confirm production packaging and document package"],
+    questions: ["Which process conditions must the ingredient survive?", "What market documentation do you need?", "What packaging format fits your line?"],
+    articles: [
+      ["/resources/phosphatidylserine-functional-food-applications/", "PS in functional food applications"],
+      ["/resources/phosphatidylserine-rtd-beverage-formulation-stability-us-eu/", "RTD beverage formulation stability"],
+    ],
+  },
+  {
+    slug: "oem-odm-buyers",
+    title: "For OEM and ODM Buyers",
+    seoTitle: "Phosphatidylserine OEM ODM Sourcing | Nutranexa",
+    description: "Qualify a PS OEM partner with specification design, sample approval, artwork coordination and documented production handoff for your finished product.",
+    priorities: ["Specification and sample control", "Packaging and artwork coordination", "Documented production handoff", "Clear MOQ and lead-time terms"],
+    needs: "OEM and ODM buyers need the supplier to match their finished product - not force a catalog grade. Specification, samples and packaging must move together.",
+    products: [
+      ["/products/phosphatidylserine-50/", "PS 50%", "Mid-concentration grade for OEM programs."],
+      ["/products/phosphatidylserine-70/", "PS 70%", "High-assay grade for premium finished products."],
+      ["/products/sunflower-phosphatidylserine/", "Sunflower PS", "Source-differentiated route for branded programs."],
+    ],
+    solutions: [
+      ["/solutions/oem-private-label-program/", "OEM and private-label program"],
+      ["/solutions/custom-formulation-support/", "Custom formulation support"],
+    ],
+    flow: ["Share the finished-product brief and target market", "Review specification and packaging options", "Approve pre-production samples", "Confirm production, documents and shipment"],
+    questions: ["What finished product are you building?", "What sample approval sequence do you need?", "Which documents must travel with production?"],
+    articles: [
+      ["/resources/phosphatidylserine-oem-production-handoff/", "OEM production handoff"],
+      ["/resources/phosphatidylserine-sample-to-bulk-scale-up-us-eu/", "Sample to bulk scale-up"],
+    ],
+  },
+  {
+    slug: "first-time-importers",
+    title: "For First-Time Importers",
+    seoTitle: "First Phosphatidylserine Import: Verification & Documents | Nutranexa",
+    description: "Import PS for the first time with a verified manufacturer, a step-by-step document workflow, clear payment terms and a company-verification path before your first order.",
+    priorities: ["Verified manufacturer credentials", "Step-by-step document workflow", "Clear payment and shipment terms", "A named contact for the first order"],
+    needs: "First-time buyers need proof before product: who the manufacturer is, what documents arrive with the shipment, and how the first order actually runs.",
+    products: [
+      ["/products/phosphatidylserine/", "PS All Grades", "Start with the main product overview."],
+      ["/products/phosphatidylserine-20/", "PS 20%", "Lowest-commitment grade for a first order."],
+    ],
+    solutions: [
+      ["/solutions/us-market-entry/", "US market entry program"],
+      ["/solutions/eu-market-entry/", "EU market entry program"],
+    ],
+    flow: ["Verify the company and manufacturing credentials", "Share target market and intended application", "Review specification, samples and document list", "Confirm payment terms, shipment and first order"],
+    questions: ["Which country are you importing into?", "What application is the PS for?", "Which documents does your market require?"],
+    articles: [
+      ["/resources/documents-for-ps-ingredients/", "PS ingredient documents checklist"],
+      ["/resources/phosphatidylserine-payment-terms-first-order-us-eu/", "First-order payment terms"],
+      ["/company-verification/", "Verify our company"],
     ],
   },
 ];
@@ -1589,6 +1868,22 @@ function footer(optimizeLogo = false) {
         <a href="/products/">All Products</a>
       </div>
       <div>
+        <h2>Solutions</h2>
+        <a href="/solutions/eu-market-entry/">EU Market Entry</a>
+        <a href="/solutions/us-market-entry/">US Market Entry</a>
+        <a href="/solutions/oem-private-label-program/">OEM &amp; Private Label</a>
+        <a href="/solutions/bulk-supply-program/">Bulk Supply Program</a>
+        <a href="/solutions/custom-formulation-support/">Custom Formulation</a>
+      </div>
+      <div>
+        <h2>Who We Serve</h2>
+        <a href="/who-we-serve/supplement-brands/">Supplement Brands</a>
+        <a href="/who-we-serve/ingredient-distributors/">Ingredient Distributors</a>
+        <a href="/who-we-serve/functional-food-manufacturers/">Food Manufacturers</a>
+        <a href="/who-we-serve/oem-odm-buyers/">OEM / ODM Buyers</a>
+        <a href="/who-we-serve/first-time-importers/">First-Time Importers</a>
+      </div>
+      <div>
         <h2>Applications</h2>
         <a href="/applications/dietary-supplements/">Capsules &amp; Tablets</a>
         <a href="/applications/functional-foods/">Powder Blends</a>
@@ -2309,6 +2604,22 @@ function nxHomePage() {
             ${sourceCol("sunflower", "Sunflower-Derived PS", "/products/sunflower-phosphatidylserine/", "/assets/images/product-sunflower-ps.webp", "Sunflower seeds and sunflowers beside PS powder", "object-position:50% 12%")}
           </div>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-apps" id="buyer-paths">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Find Your Path as a PS Buyer</h2><p class="nx-section-sub">Start from your sourcing problem or your buyer type &mdash; both routes lead to the matching grades, documents and next steps.</p></div><a class="nx-textlink" href="/who-we-serve/">All Buyer Profiles &rarr;</a></div>
+      <div class="nx-app-grid">
+        <a class="nx-app-card" href="/solutions/eu-market-entry/"><span class="nx-app-label"><h3>Entering the EU Market</h3><p>Novel Food status, document package and import workflow for PS.</p></span></a>
+        <a class="nx-app-card" href="/solutions/us-market-entry/"><span class="nx-app-label"><h3>Entering the US Market</h3><p>FDA compliance, label rules and receiving workflow for supplements.</p></span></a>
+        <a class="nx-app-card" href="/solutions/oem-private-label-program/"><span class="nx-app-label"><h3>OEM / Private Label</h3><p>From specification and samples to retail-ready packaging.</p></span></a>
+        <a class="nx-app-card" href="/solutions/bulk-supply-program/"><span class="nx-app-label"><h3>Bulk Annual Supply</h3><p>Allocation, pricing and dual sourcing for volume buyers.</p></span></a>
+        <a class="nx-app-card" href="/who-we-serve/supplement-brands/"><span class="nx-app-label"><h3>Supplement Brands</h3><p>Source, grade and claim-aware documentation for branded programs.</p></span></a>
+        <a class="nx-app-card" href="/who-we-serve/ingredient-distributors/"><span class="nx-app-label"><h3>Ingredient Distributors</h3><p>Distribution program with document packages and allocation.</p></span></a>
+        <a class="nx-app-card" href="/who-we-serve/functional-food-manufacturers/"><span class="nx-app-label"><h3>Functional Food Makers</h3><p>Food-grade PS with processing guidance for food systems.</p></span></a>
+        <a class="nx-app-card" href="/who-we-serve/first-time-importers/"><span class="nx-app-label"><h3>First-Time Importers</h3><p>Verified manufacturer, documents and first-order workflow.</p></span></a>
       </div>
     </div>
   </section>
@@ -3541,6 +3852,314 @@ function applicationPage(app) {
   });
 }
 
+// ===== Solutions axis rendering (b2b-website-studio three-axis model) =====
+function solutionsHub() {
+  const cards = solutions
+    .map(
+      (s) => `<a class="nx-app-card" href="/solutions/${s.slug}/"><span class="nx-app-label"><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p></span></a>`,
+    )
+    .join("");
+  const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><span aria-current="page">Solutions</span></div></nav>
+  <section class="nx-hero nx-phero">
+    <img class="nx-hero-bg" src="/assets/images/dietary-supplement-application.webp" alt="Phosphatidylserine sourcing program review with documents and samples" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
+      <div class="nx-hero-copy">
+        <p class="nx-hero-eyebrow">Solutions</p>
+        <h1>Phosphatidylserine Programs Built Around Your Sourcing Problem</h1>
+        <p class="nx-hero-lead">Market entry, OEM launch, bulk supply and formulation support &mdash; each program pairs the right PS grades with the document package and workflow your team needs.</p>
+        <div class="nx-hero-actions">
+          <a class="nx-btn" href="/who-we-serve/">Find Your Buyer Profile</a>
+          <a class="nx-btn ghost" href="/contact/">Discuss Your Program</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-apps">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Program paths</h2><p class="nx-section-sub">Five buyer-problem programs. Each lists the grades, steps, evidence limits and reading that apply.</p></div><a class="nx-textlink" href="/products/">View PS Grades &rarr;</a></div>
+      <div class="nx-app-grid">${cards}</div>
+      <p class="nx-note">Not sure which program fits? <a href="/who-we-serve/">Start from your buyer profile</a> or <a href="/company-verification/">verify our company</a> first.</p>
+    </div>
+  </section>
+
+  <section class="nx-final-cta">
+    <div class="nx-shell nx-final-grid">
+      <div><h2>Scope Your PS Program</h2><p>Tell us your target market, format and volume &mdash; we will map the grades, documents and steps for your situation.</p></div>
+      <div class="nx-final-actions">
+        <a class="nx-btn light" href="/contact/?program=solutions">Discuss Your Program &rarr;</a>
+      </div>
+    </div>
+  </section>`;
+  return layout({
+    title: "PS Solutions: Market Entry, OEM, Bulk Supply & Formulation Programs | Nutranexa",
+    description: "Phosphatidylserine programs for EU/US market entry, OEM private label, bulk annual supply and custom formulation support - with documents, steps and evidence limits.",
+    route: "/solutions/",
+    schema: [breadcrumbJson([["Home", "/"], ["Solutions", "/solutions/"]])],
+    body,
+  });
+}
+
+function solutionPage(s) {
+  const route = `/solutions/${s.slug}/`;
+  const decisionHtml = s.decision.map((d) => `<li>${esc(d)}</li>`).join("");
+  const productsHtml = s.products
+    .map(
+      ([href, name, why]) =>
+        `<a class="nx-step-card" href="${href}"><h3>${esc(name)}</h3><p>${esc(why)}</p></a>`,
+    )
+    .join("");
+  const stepsHtml = s.steps
+    .map(
+      ([num, title, text]) =>
+        `<article class="nx-step-card"><span class="nx-step-number">${num}</span><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`,
+    )
+    .join("");
+  const articlesHtml = s.articles
+    .map(([href, label]) => `<a class="nx-step-card" href="${href}"><h3>${esc(label)}</h3><p>Buyer guide from the Nutranexa resource library.</p></a>`)
+    .join("");
+  const icpLinks = {
+    "eu-market-entry": [["/who-we-serve/first-time-importers/", "First-time importers"], ["/who-we-serve/supplement-brands/", "Supplement brands"], ["/who-we-serve/ingredient-distributors/", "Ingredient distributors"]],
+    "us-market-entry": [["/who-we-serve/first-time-importers/", "First-time importers"], ["/who-we-serve/supplement-brands/", "Supplement brands"], ["/who-we-serve/oem-odm-buyers/", "OEM/ODM buyers"]],
+    "oem-private-label-program": [["/who-we-serve/oem-odm-buyers/", "OEM/ODM buyers"], ["/who-we-serve/supplement-brands/", "Supplement brands"], ["/who-we-serve/functional-food-manufacturers/", "Functional food manufacturers"]],
+    "bulk-supply-program": [["/who-we-serve/ingredient-distributors/", "Ingredient distributors"], ["/who-we-serve/functional-food-manufacturers/", "Functional food manufacturers"]],
+    "custom-formulation-support": [["/who-we-serve/supplement-brands/", "Supplement brands"], ["/who-we-serve/functional-food-manufacturers/", "Functional food manufacturers"], ["/who-we-serve/oem-odm-buyers/", "OEM/ODM buyers"]],
+  };
+  const icpHtml = (icpLinks[s.slug] || [])
+    .map(([href, label]) => `<a class="nx-step-card" href="${href}"><h3>${esc(label)}</h3><p>See how this program maps to this buyer type.</p></a>`)
+    .join("");
+  const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><a href="/solutions/">Solutions</a><span>&rsaquo;</span><span aria-current="page">${esc(s.title)}</span></div></nav>
+  <section class="nx-hero nx-phero">
+    <img class="nx-hero-bg" src="/assets/images/dietary-supplement-application.webp" alt="${esc(s.title)} program context" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
+      <div class="nx-hero-copy">
+        <p class="nx-hero-eyebrow">Solution program</p>
+        <h1>${esc(s.title)}</h1>
+        <p class="nx-hero-lead">${esc(s.description)}</p>
+        <div class="nx-hero-actions">
+          <a class="nx-btn" href="/contact/?program=${encodeURIComponent(s.slug)}">Discuss This Program</a>
+          <a class="nx-btn ghost" href="/products/phosphatidylserine/">View PS Grades</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-relevance">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>The problem this program addresses</h2><p class="nx-section-sub">${esc(s.problem)}</p></div></div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-decision">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Decisions this program helps you make</h2></div></div>
+      <ul class="check-list">${decisionHtml}</ul>
+    </div>
+  </section>
+
+  <section class="nx-section nx-formats">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Products this program uses</h2><p class="nx-section-sub">Grades matched to the program - confirm the controlled specification before quotation.</p></div></div>
+      <div class="nx-process-grid">${productsHtml}</div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-relevance">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>How the program runs</h2><p class="nx-section-sub">Five steps from first brief to repeat orders. Each step confirms documents before the next one starts.</p></div></div>
+      <div class="nx-process-grid two">${stepsHtml}</div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-decision">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Scope and evidence limits</h2></div></div>
+      <p>${esc(s.limits)}</p>
+      <p class="nx-note">Evidence: <a href="/quality-rd/">Quality &amp; R&amp;D</a> &middot; <a href="/manufacturing/">Manufacturing</a> &middot; <a href="/company-verification/">Company verification</a></p>
+    </div>
+  </section>
+
+  <section class="nx-section nx-formats">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Reading for this program</h2><p class="nx-section-sub">Guides that document each step in more detail.</p></div></div>
+      <div class="nx-process-grid">${articlesHtml}</div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-science-links">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Who this program serves</h2></div></div>
+      <div class="nx-process-grid">${icpHtml}</div>
+    </div>
+  </section>
+
+  <section class="nx-final-cta">
+    <div class="nx-shell nx-final-grid">
+      <div><h2>Start your ${esc(s.title.toLowerCase())} review</h2><p>Share target market, format, volume and document needs - we will reply with the matching grade, document package and next steps.</p></div>
+      <div class="nx-final-actions">
+        <a class="nx-btn light" href="/contact/?program=${encodeURIComponent(s.slug)}">Discuss This Program &rarr;</a>
+      </div>
+    </div>
+  </section>`;
+  return layout({
+    title: s.seoTitle || `${s.title} | Nutranexa`,
+    description: s.description,
+    route,
+    schema: [breadcrumbJson([["Home", "/"], ["Solutions", "/solutions/"], [s.title, route]])],
+    body,
+  });
+}
+
+// ===== ICP axis rendering (b2b-website-studio three-axis model) =====
+function whoWeServeHub() {
+  const cards = whoWeServe
+    .map(
+      (b) => `<a class="nx-app-card" href="/who-we-serve/${b.slug}/"><span class="nx-app-label"><h3>${esc(b.title)}</h3><p>${esc(b.description)}</p></span></a>`,
+    )
+    .join("");
+  const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><span aria-current="page">Who We Serve</span></div></nav>
+  <section class="nx-hero nx-phero">
+    <img class="nx-hero-bg" src="/assets/images/dietary-supplement-application.webp" alt="Ingredient buyers reviewing phosphatidylserine programs" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
+      <div class="nx-hero-copy">
+        <p class="nx-hero-eyebrow">Who we serve</p>
+        <h1>Find How Nutranexa Works With Buyers Like You</h1>
+        <p class="nx-hero-lead">Supplement brands, distributors, food manufacturers, OEM buyers and first-time importers - each with a tailored grade path, program and document workflow.</p>
+        <div class="nx-hero-actions">
+          <a class="nx-btn" href="/solutions/">View Programs</a>
+          <a class="nx-btn ghost" href="/contact/">Talk to Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-apps">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Buyer profiles</h2><p class="nx-section-sub">Five buyer types with different priorities - each page maps the matching products, programs and questions.</p></div><a class="nx-textlink" href="/solutions/">View Programs &rarr;</a></div>
+      <div class="nx-app-grid">${cards}</div>
+    </div>
+  </section>
+
+  <section class="nx-final-cta">
+    <div class="nx-shell nx-final-grid">
+      <div><h2>Not Sure Where You Fit?</h2><p>Send your target market, product format and volume - we will route you to the right program and document package.</p></div>
+      <div class="nx-final-actions">
+        <a class="nx-btn light" href="/contact/?buyer=who-we-serve">Talk to Sales &rarr;</a>
+      </div>
+    </div>
+  </section>`;
+  return layout({
+    title: "Who We Serve: Supplement Brands, Distributors & OEM Buyers | Nutranexa",
+    description: "Nutranexa serves supplement brands, ingredient distributors, functional food manufacturers, OEM/ODM buyers and first-time PS importers with tailored programs and documents.",
+    route: "/who-we-serve/",
+    schema: [breadcrumbJson([["Home", "/"], ["Who We Serve", "/who-we-serve/"]])],
+    body,
+  });
+}
+
+function icpPage(b) {
+  const route = `/who-we-serve/${b.slug}/`;
+  const prioritiesHtml = b.priorities.map((p) => `<li>${esc(p)}</li>`).join("");
+  const productsHtml = b.products
+    .map(
+      ([href, name, why]) => `<a class="nx-step-card" href="${href}"><h3>${esc(name)}</h3><p>${esc(why)}</p></a>`,
+    )
+    .join("");
+  const solutionsHtml = b.solutions
+    .map(
+      ([href, label]) => `<a class="nx-step-card" href="${href}"><h3>${esc(label)}</h3><p>Program built for this buyer type.</p></a>`,
+    )
+    .join("");
+  const flowHtml = b.flow
+    .map(
+      (step, i) => `<article class="nx-step-card"><span class="nx-step-number">${String(i + 1).padStart(2, "0")}</span><h3>${esc(step)}</h3></article>`,
+    )
+    .join("");
+  const questionsHtml = b.questions.map((q) => `<li>${esc(q)}</li>`).join("");
+  const articlesHtml = b.articles
+    .map(([href, label]) => `<a class="nx-step-card" href="${href}"><h3>${esc(label)}</h3><p>Reading for this buyer type.</p></a>`)
+    .join("");
+  const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><a href="/who-we-serve/">Who We Serve</a><span>&rsaquo;</span><span aria-current="page">${esc(b.title)}</span></div></nav>
+  <section class="nx-hero nx-phero">
+    <img class="nx-hero-bg" src="/assets/images/dietary-supplement-application.webp" alt="${esc(b.title)} buyer context" width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="nx-hero-scrim" aria-hidden="true"></div>
+    <div class="nx-shell nx-hero-inner">
+      <div class="nx-hero-copy">
+        <p class="nx-hero-eyebrow">Who we serve</p>
+        <h1>${esc(b.title)}</h1>
+        <p class="nx-hero-lead">${esc(b.description)}</p>
+        <div class="nx-hero-actions">
+          <a class="nx-btn" href="/contact/?buyer=${encodeURIComponent(b.slug)}">Start a Conversation</a>
+          <a class="nx-btn ghost" href="/products/phosphatidylserine/">View PS Grades</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-relevance">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>What ${esc(b.title.replace(/^For /, "")).toLowerCase()} need from a PS supplier</h2><p class="nx-section-sub">${esc(b.needs)}</p></div></div>
+      <ul class="check-list">${prioritiesHtml}</ul>
+    </div>
+  </section>
+
+  <section class="nx-section nx-formats">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Matching products</h2><p class="nx-section-sub">The routes that usually fit this buyer type - confirm grade and specification per quotation.</p></div></div>
+      <div class="nx-process-grid">${productsHtml}</div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-relevance">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Programs for you</h2></div></div>
+      <div class="nx-process-grid">${solutionsHtml}</div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-formats">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>How we work together</h2><p class="nx-section-sub">From first contact to repeat orders.</p></div></div>
+      <div class="nx-process-grid two">${flowHtml}</div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-decision">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Questions we will ask you</h2></div></div>
+      <ul class="check-list">${questionsHtml}</ul>
+      <p class="nx-note">Evidence: <a href="/quality-rd/">Quality &amp; R&amp;D</a> &middot; <a href="/manufacturing/">Manufacturing</a> &middot; <a href="/company-verification/">Company verification</a></p>
+    </div>
+  </section>
+
+  <section class="nx-section nx-science-links">
+    <div class="nx-shell">
+      <div class="nx-section-head"><div><h2>Reading for you</h2></div></div>
+      <div class="nx-process-grid">${articlesHtml}</div>
+    </div>
+  </section>
+
+  <section class="nx-final-cta">
+    <div class="nx-shell nx-final-grid">
+      <div><h2>Talk to sales as ${esc(b.title.replace(/^For /, ""))}</h2><p>Tell us your market, format and volume - we will reply with the matching program, document package and sample options.</p></div>
+      <div class="nx-final-actions">
+        <a class="nx-btn light" href="/contact/?buyer=${encodeURIComponent(b.slug)}">Start a Conversation &rarr;</a>
+      </div>
+    </div>
+  </section>`;
+  return layout({
+    title: b.seoTitle || `${b.title} | Nutranexa`,
+    description: b.description,
+    route,
+    schema: [breadcrumbJson([["Home", "/"], ["Who We Serve", "/who-we-serve/"], [b.title, route]])],
+    body,
+  });
+}
+
+
 function manufacturingPage() {
   const nxIcon = {
     drum: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"/><ellipse cx="12" cy="7.5" rx="7" ry="2"/><path d="M5 12.5h14"/></svg>',
@@ -4342,6 +4961,10 @@ await add("/benefits/", benefitsHub());
 for (const item of psBenefitItems) await add(`/benefits/${item.slug}/`, benefitPage(item));
 await add("/applications/", applicationsHub());
 for (const app of applications) await add(`/applications/${app.slug}/`, applicationPage(app));
+await add("/solutions/", solutionsHub());
+for (const s of solutions) await add(`/solutions/${s.slug}/`, solutionPage(s));
+await add("/who-we-serve/", whoWeServeHub());
+for (const b of whoWeServe) await add(`/who-we-serve/${b.slug}/`, icpPage(b));
 await add("/science/", scienceHubPage());
 await add("/science/how-ps-works/", howPsWorksPage());
 await add("/science/research-library/", researchLibraryPage());
