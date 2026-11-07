@@ -77,7 +77,7 @@ Before the first production-intent batch is scheduled, confirm with the supplier
 
 ![A production supervisor reviewing a phosphatidylserine specification sheet beside a stainless steel blending line inside a supplement manufacturing facility](/assets/images/resource-ps-scaleup-grade-lock.webp)
 
-If your team built a handoff pack during supplier qualification, the scale-up stage should extend it rather than replace it. Our earlier guide on the [contract manufacturer handoff checklist](/resources/phosphatidylserine-contract-manufacturer-handoff-checklist/) explains how to keep one approved product record across sourcing, QA and production teams — the same discipline applies when batch size changes.
+If your team built a handoff pack during supplier qualification, the scale-up stage should extend it rather than replace it. Our earlier guide on the [contract manufacturer handoff checklist](/resources/phosphatidylserine-contract-manufacturer-handoff/) explains how to keep one approved product record across sourcing, QA and production teams — the same discipline applies when batch size changes.
 
 <!-- Embedded CTA Box: Sample & Spec Match -->
 <aside style="margin:36px 0;padding:24px 28px;background:#f5f8fc;border:1px solid #d7e0ec;border-left:4px solid #102a56;border-radius:3px;font-family:Arial,Helvetica,sans-serif;color:#1a2433;">

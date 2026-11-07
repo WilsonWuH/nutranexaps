@@ -3,7 +3,7 @@
     "locale": "ar",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-07T12:50:14.503Z",
+    "generatedAt": "2026-11-07T13:04:39.439Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25732,6 +25732,17 @@
     "What documents are checked when clearing PS powder through Singapore Customs?": "ما هي المستندات التي يتم فحصها عند تفريغ مسحوق PS عبر الجمارك السنغافورية؟",
     "whose grade, assay, and document set are already organized for distributor and regulator review.": "حيث تم تنظيم مجموعة التصنيف والاختبار والمستندات بالفعل لمراجعة الموزعين والمنظمين.",
     "Why Singapore Matters as a Market and Regional Hub": "لماذا تعتبر سنغافورة مهمة كسوق ومركز إقليمي",
-    "with consistent allergen documentation allows a clean soy-free claim to carry through from raw material to retail label.": "مع توثيق المواد المسببة للحساسية باستمرار، يسمح بالحصول على مطالبة خالية من الصويا من المواد الخام إلى ملصق التجزئة."
+    "with consistent allergen documentation allows a clean soy-free claim to carry through from raw material to retail label.": "مع توثيق المواد المسببة للحساسية باستمرار، يسمح بالحصول على مطالبة خالية من الصويا من المواد الخام إلى ملصق التجزئة.",
+    "Allocation, document packages and repeat-order workflow for a distribution portfolio.": "تخصيص الكميات وحزم الوثائق وآلية الطلبات المتكررة لمحفظة توزيع.",
+    "Ask about this guide for your buyer profile": "استفسر عن هذا الدليل بما يناسب ملفك",
+    "Buyer fit": "الفئة المناسبة من المشترين",
+    "Food-grade evidence and processing guidance for beverage, dairy and powder lines.": "أدلة المطابقة الغذائية وإرشادات المعالجة لخطوط المشروبات والألبان والمساحيق.",
+    "Functional Food Manufacturers": "مصنعو الأغذية الوظيفية",
+    "Grades, source options and claim-aware documents for a branded supplement program.": "الدرجات وخيارات المصدر والوثائق المتوافقة مع الادعاءات لبرنامج مكملات ذي علامة تجارية.",
+    "Specification design, sample approval and packaging coordination for finished products.": "تصميم المواصفات واعتماد العينات وتنسيق التعبئة للمنتجات النهائية.",
+    "This guide is written for the buyer profiles below. Open your profile for the matching grades, documents and next steps, or tell us your requirements directly.": "أُعدّ هذا الدليل لفئات المشترين أدناه. افتح ملفك للاطلاع على الدرجات والوثائق والخطوات التالية المناسبة، أو أرسل لنا متطلباتك مباشرةً.",
+    "Verified manufacturer credentials, documents and a clear first-order workflow.": "بيانات موثّقة للشركة المصنّعة والوثائق وآلية واضحة لأول طلب.",
+    "View buyer path": "عرض مسار المشتري",
+    "Who this guide is for": "لمن هذا الدليل"
   }
 }

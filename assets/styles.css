@@ -7007,3 +7007,74 @@ body.nx-modal-open {
   background: #fff;
   color: var(--nx-forest-deep);
 }
+
+/* Resource article buyer fit ------------------------------------------------ */
+.nx-buyer-fit {
+  margin: 34px 0 30px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--soft);
+}
+.nx-buyer-fit .eyebrow {
+  margin: 0 0 6px;
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.nx-buyer-fit h2 {
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  margin: 0 0 10px;
+}
+.nx-buyer-fit-intro {
+  color: var(--muted);
+  margin: 0 0 20px;
+  font-size: 0.94rem;
+}
+.nx-buyer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+}
+.nx-buyer-card {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  font-weight: 400;
+}
+.nx-buyer-card:hover {
+  text-decoration: none;
+  border-color: var(--green);
+}
+.nx-buyer-card-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.nx-buyer-card-copy {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.nx-buyer-card-link {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--green-dark);
+}
+.nx-buyer-card-link::after,
+.nx-buyer-fit-cta a::after {
+  content: " \2192";
+}
+.nx-buyer-fit-cta {
+  margin: 18px 0 0;
+  font-size: 0.9rem;
+}
+@media (max-width: 640px) {
+  .nx-buyer-fit { padding: 20px; }
+}

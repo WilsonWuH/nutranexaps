@@ -221,7 +221,11 @@ document.querySelectorAll(".quote-form").forEach((form) => {
     "First-Time Importer": "Tell us your destination country, intended application and first-order questions - we will walk you through the documents.",
   };
   const messageField = form.querySelector('textarea[name="Message"]');
-  if (messageField && inquiryPrefill.buyer && buyerPlaceholders[inquiryPrefill.buyer]) {
+  // Localized pages already ship a translated placeholder. Swapping in the
+  // English buyer prompt there would replace it with untranslated text, so the
+  // buyer-context prompt is applied on the English site only.
+  const pageLocale = (document.documentElement.lang || "en").toLowerCase();
+  if (pageLocale === "en" && messageField && inquiryPrefill.buyer && buyerPlaceholders[inquiryPrefill.buyer]) {
     messageField.placeholder = buyerPlaceholders[inquiryPrefill.buyer];
   }
 

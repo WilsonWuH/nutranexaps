@@ -539,7 +539,7 @@ const solutions = [
     limits: "Volume, price and allocation terms are confirmed by written agreement. Availability of specific grades is confirmed per quotation.",
     articles: [
       ["/resources/phosphatidylserine-annual-volume-forecast-supplier-allocation/", "Annual volume forecast and allocation"],
-      ["/resources/phosphatidylserine-long-term-supply-agreement-us-eu/", "Long-term supply agreement guide"],
+      ["/resources/long-term-supply-agreement-us-eu/", "Long-term supply agreement guide"],
       ["/resources/supplier-dual-sourcing-strategy-us-eu/", "Dual sourcing strategy"],
       ["/resources/phosphatidylserine-repeat-order-document-review/", "Repeat-order document review"],
     ],
@@ -1375,6 +1375,10 @@ async function loadPromotedArticles() {
       seoTitle: promotedSeoTitles[slug] || metaValue(markdown, "SEO Title"),
       description: conciseMeta(metaValue(markdown, "Meta Description")),
       primaryKeyword: metaValue(markdown, "Primary Keyword"),
+      audienceText: ["ICP focus", "Audience", "Target readers", "Target reader", "Best-fit audience", "buyer type"]
+        .map((label) => metaValue(markdown, label))
+        .filter(Boolean)
+        .join(" | "),
       published: name.slice(0, 10),
       publishedAt,
       image: `/assets/images/resource-${slug}.webp`,
@@ -4904,6 +4908,105 @@ function inlineProductCta() {
 </aside>`;
 }
 
+// ---------------------------------------------------------------------------
+// Buyer fit: every resource article declares which buyer profiles it serves so
+// the content layer links back into the Who We Serve layer (2 clicks to inquiry).
+// The mapping is derived at build time from each article's own ICP / Audience
+// metadata plus its topic, so no markdown files need to be edited by hand.
+// ---------------------------------------------------------------------------
+const buyerFitLabels = {
+  "supplement-brands": "Supplement Brands",
+  "ingredient-distributors": "Ingredient Distributors",
+  "functional-food-manufacturers": "Functional Food Manufacturers",
+  "oem-odm-buyers": "OEM / ODM Buyers",
+  "first-time-importers": "First-Time Importers",
+};
+
+const buyerFitBlurbs = {
+  "supplement-brands": "Grades, source options and claim-aware documents for a branded supplement program.",
+  "ingredient-distributors": "Allocation, document packages and repeat-order workflow for a distribution portfolio.",
+  "functional-food-manufacturers": "Food-grade evidence and processing guidance for beverage, dairy and powder lines.",
+  "oem-odm-buyers": "Specification design, sample approval and packaging coordination for finished products.",
+  "first-time-importers": "Verified manufacturer credentials, documents and a clear first-order workflow.",
+};
+
+// Values must match the buyer prefill keys in assets/site.js.
+const buyerFitContact = {
+  "supplement-brands": "Supplement Brand",
+  "ingredient-distributors": "Ingredient Distributor",
+  "functional-food-manufacturers": "Functional Food Manufacturer",
+  "oem-odm-buyers": "OEM/ODM Buyer",
+  "first-time-importers": "First-Time Importer",
+};
+
+const buyerFitSignals = [
+  ["supplement-brands", /supplement brand|brand owner|branded supplement|nutrition brand|private.label|sports nutrition|nutraceutical brand/i],
+  ["ingredient-distributors", /distributor|wholesal|ingredient trader|reseller|portfolio|allocation/i],
+  ["functional-food-manufacturers", /functional food|beverage|dairy|food manufacturer|food processor|formulation r&d|food technolog|rtd|ready.to.mix/i],
+  ["oem-odm-buyers", /\boem\b|\bodm\b|contract manufactur|toll.blend|finished.product|private.label|co.manufactur/i],
+  ["first-time-importers", /first.time import|first order|new importer|importer|new.to.import|import workflow|customs clearance|first shipment/i],
+];
+
+// Topic rules cover compliance / document guides that carry no audience field.
+const buyerFitTopicRules = [
+  [/first.order|first.time|import.guide|prior.notice|customs|hs.code|import.duty|incoterm|payment.terms|company.verification|verification|importer/i, "first-time-importers"],
+  [/distributor|allocation|portfolio|annual.supply|repeat.order|volume.agreement/i, "ingredient-distributors"],
+  [/oem|odm|contract.manufactur|private.label|artwork|sample.approval|scale.up|production.hando/i, "oem-odm-buyers"],
+  [/beverage|dairy|functional.food|rtd|emulsion|solubility|heat.stability|processing|application|formulation|ssp|polysaccharide|lecithin/i, "functional-food-manufacturers"],
+  [/brand|label.claim|structure.function|claim|positioning|nutraceutical|capsule|tablet|softgel/i, "supplement-brands"],
+];
+
+function articleBuyerProfiles(article) {
+  const topic = `${article.slug} ${article.title} ${article.primaryKeyword || ""}`.toLowerCase();
+  const audience = article.audienceText || "";
+  const picks = [];
+  const push = (slug) => { if (slug && !picks.includes(slug)) picks.push(slug); };
+
+  // 1) strongest signal: what the article is actually about
+  for (const [pattern, slug] of buyerFitTopicRules) {
+    if (pattern.test(topic)) push(slug);
+    if (picks.length >= 2) break;
+  }
+
+  // 2) fill from the author's ICP / Audience notes, in the order they were listed
+  const audienceHits = buyerFitSignals
+    .map(([slug, pattern]) => ({ slug, at: audience.search(pattern) }))
+    .filter((hit) => hit.at >= 0)
+    .sort((a, b) => a.at - b.at);
+  for (const hit of audienceHits) {
+    if (picks.length >= 3) break;
+    push(hit.slug);
+  }
+
+  // 3) compliance and document guides without any audience note still belong
+  //    to first-time importers and supplement brand compliance teams
+  if (!picks.length) {
+    push("first-time-importers");
+    push("supplement-brands");
+  }
+
+  // 4) every article links to at least two buyer paths, so the content layer
+  //    always closes the loop into the Who We Serve pages
+  if (picks.length < 2) {
+    const complianceTopic = /document|certificate|coa|specification|compliance|regulation|novel.food|allergen|gmo|heavy.metal|microbiolog|shelf.life|audit|inspection|traceab|residual.solvent|claim/i.test(topic);
+    push(complianceTopic ? "supplement-brands" : "first-time-importers");
+  }
+  if (picks.length < 2) {
+    for (const slug of Object.keys(buyerFitLabels)) {
+      if (picks.length >= 2) break;
+      push(slug);
+    }
+  }
+  return picks.slice(0, 3);
+}
+
+function buyerFitSection(article) {
+  const profiles = articleBuyerProfiles(article);
+  const cards = profiles.map((slug) => `<a class="nx-buyer-card" href="/who-we-serve/${slug}/"><span class="nx-buyer-card-title">${esc(buyerFitLabels[slug])}</span><span class="nx-buyer-card-copy">${esc(buyerFitBlurbs[slug])}</span><span class="nx-buyer-card-link">View buyer path</span></a>`).join("");
+  const buyerQuery = encodeURIComponent(buyerFitContact[profiles[0]]);
+  return `<section class="nx-buyer-fit" aria-labelledby="buyer-fit-heading"><p class="eyebrow">Buyer fit</p><h2 id="buyer-fit-heading">Who this guide is for</h2><p class="nx-buyer-fit-intro">This guide is written for the buyer profiles below. Open your profile for the matching grades, documents and next steps, or tell us your requirements directly.</p><div class="nx-buyer-grid">${cards}</div><p class="nx-buyer-fit-cta"><a href="/contact/?buyer=${buyerQuery}">Ask about this guide for your buyer profile</a></p></section>`;
+}
+
 function articlePage(article) {
   const route = `/resources/${article.slug}/`;
   const isSspArticle = article.slug.startsWith("soluble-soybean-polysaccharide");
@@ -4922,6 +5025,7 @@ function articlePage(article) {
   const body = `<article class="article-page">
   <header><p class="eyebrow">${article.pillar ? "Pillar guide" : "Resource article"}</p><h1>${esc(article.title)}</h1><p>${esc(article.description)}</p>${article.published ? `<p class="article-date">Published <time datetime="${esc(article.published)}">${esc(new Date(`${article.published}T00:00:00Z`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }))}</time></p>` : ""}<div class="article-actions"><a class="button secondary" href="${productRoute}">${productLabel}</a><a class="button primary" href="/contact/">Request Specifications</a></div><img class="article-hero-image" src="${articleImage(article)}" alt="${esc(article.imageAlt)}" width="1536" height="1024" loading="eager"></header>
   <div class="article-body">${articleContent}
+  ${buyerFitSection(article)}
   ${recommendedSteps}
   <div class="bottom-cta"><h2>Contact sales for product documents</h2><p>Share source preference, application, country, and annual quantity.</p><a class="button primary" href="/contact/">Contact Sales</a></div>
   ${inlineProductCta()}</div>
