@@ -3,7 +3,7 @@
     "locale": "ko",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-07T13:04:41.252Z",
+    "generatedAt": "2026-11-07T14:48:53.353Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25815,6 +25815,9 @@
     "This guide is written for the buyer profiles below. Open your profile for the matching grades, documents and next steps, or tell us your requirements directly.": "이 가이드는 아래 구매자 유형을 위해 작성되었습니다. 해당 프로필에서 맞는 등급·서류·다음 단계를 확인하거나, 필요 사항을 바로 문의해 주세요.",
     "Verified manufacturer credentials, documents and a clear first-order workflow.": "검증된 제조사 정보, 서류, 명확한 첫 주문 절차.",
     "View buyer path": "구매자 경로 보기",
-    "Who this guide is for": "이 가이드가 필요한 구매자"
+    "Who this guide is for": "이 가이드가 필요한 구매자",
+    "All guides →": "모든 가이드 →",
+    "More guides for this buyer profile": "이 구매자 유형을 위한 추가 가이드",
+    "Selected from our resource library for the sourcing questions this buyer type asks most.": "이 구매자 유형이 가장 자주 묻는 조달 질문을 기준으로 자료실에서 선정한 가이드입니다."
   }
 }

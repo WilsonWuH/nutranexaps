@@ -3907,7 +3907,7 @@ function solutionsHub() {
     <div class="nx-shell nx-final-grid">
       <div><h2>Scope Your PS Program</h2><p>Tell us your target market, format and volume &mdash; we will map the grades, documents and steps for your situation.</p></div>
       <div class="nx-final-actions">
-        <a class="nx-btn light" href="/contact/?program=solutions">Discuss Your Program &rarr;</a>
+        <a class="nx-btn light" href="/contact/">Discuss Your Program &rarr;</a>
       </div>
     </div>
   </section>`;
@@ -4066,7 +4066,7 @@ function whoWeServeHub() {
     <div class="nx-shell nx-final-grid">
       <div><h2>Not Sure Where You Fit?</h2><p>Send your target market, product format and volume - we will route you to the right program and document package.</p></div>
       <div class="nx-final-actions">
-        <a class="nx-btn light" href="/contact/?buyer=who-we-serve">Talk to Sales &rarr;</a>
+        <a class="nx-btn light" href="/contact/">Talk to Sales &rarr;</a>
       </div>
     </div>
   </section>`;
@@ -4079,7 +4079,7 @@ function whoWeServeHub() {
   });
 }
 
-function icpPage(b) {
+function icpPage(b, relatedArticles = []) {
   const route = `/who-we-serve/${b.slug}/`;
   const prioritiesHtml = b.priorities.map((p) => `<li>${esc(p)}</li>`).join("");
   const productsHtml = b.products
@@ -4101,6 +4101,13 @@ function icpPage(b) {
   const articlesHtml = b.articles
     .map(([href, label]) => `<a class="nx-step-card" href="${href}"><h3>${esc(label)}</h3><p>Reading for this buyer type.</p></a>`)
     .join("");
+  const featuredGuideRoutes = new Set(b.articles.map(([href]) => href));
+  const extraGuides = relatedArticles
+    .filter((a) => !featuredGuideRoutes.has(`/resources/${a.slug}/`))
+    .slice(0, 8);
+  const relatedGuidesHtml = extraGuides.length
+    ? `<section class="nx-section nx-relevance"><div class="nx-shell"><div class="nx-section-head"><div><h2>More guides for this buyer profile</h2><p class="nx-section-sub">Selected from our resource library for the sourcing questions this buyer type asks most.</p></div><a class="nx-textlink" href="/resources/">All guides &rarr;</a></div><div class="nx-related-guides">${extraGuides.map((a) => `<a class="nx-related-guide" href="/resources/${a.slug}/">${esc(a.title)}</a>`).join("")}</div></div></section>`
+    : "";
   const body = `<nav class="nx-breadcrumb" aria-label="Breadcrumb"><div class="nx-shell"><a href="/">Home</a><span>&rsaquo;</span><a href="/who-we-serve/">Who We Serve</a><span>&rsaquo;</span><span aria-current="page">${esc(b.title)}</span></div></nav>
   <section class="nx-hero nx-phero">
     <img class="nx-hero-bg" src="/assets/images/dietary-supplement-application.webp" alt="${esc(b.title)} buyer context" width="1600" height="900" fetchpriority="high" decoding="async">
@@ -4111,7 +4118,7 @@ function icpPage(b) {
         <h1>${esc(b.title)}</h1>
         <p class="nx-hero-lead">${esc(b.description)}</p>
         <div class="nx-hero-actions">
-          <a class="nx-btn" href="/contact/?buyer=${encodeURIComponent(b.slug)}">Start a Conversation</a>
+          <a class="nx-btn" href="/contact/?buyer=${encodeURIComponent(buyerFitContact[b.slug])}">Start a Conversation</a>
           <a class="nx-btn ghost" href="/products/phosphatidylserine/">View PS Grades</a>
         </div>
       </div>
@@ -4161,11 +4168,13 @@ function icpPage(b) {
     </div>
   </section>
 
+  ${relatedGuidesHtml}
+
   <section class="nx-final-cta">
     <div class="nx-shell nx-final-grid">
       <div><h2>Talk to sales as ${esc(b.title.replace(/^For /, ""))}</h2><p>Tell us your market, format and volume - we will reply with the matching program, document package and sample options.</p></div>
       <div class="nx-final-actions">
-        <a class="nx-btn light" href="/contact/?buyer=${encodeURIComponent(b.slug)}">Start a Conversation &rarr;</a>
+        <a class="nx-btn light" href="/contact/?buyer=${encodeURIComponent(buyerFitContact[b.slug])}">Start a Conversation &rarr;</a>
       </div>
     </div>
   </section>`;
@@ -5082,8 +5091,15 @@ await add("/applications/", applicationsHub());
 for (const app of applications) await add(`/applications/${app.slug}/`, applicationPage(app));
 await add("/solutions/", solutionsHub());
 for (const s of solutions) await add(`/solutions/${s.slug}/`, solutionPage(s));
+const guidesByBuyer = new Map();
+for (const article of articles) {
+  for (const slug of articleBuyerProfiles(article)) {
+    if (!guidesByBuyer.has(slug)) guidesByBuyer.set(slug, []);
+    guidesByBuyer.get(slug).push(article);
+  }
+}
 await add("/who-we-serve/", whoWeServeHub());
-for (const b of whoWeServe) await add(`/who-we-serve/${b.slug}/`, icpPage(b));
+for (const b of whoWeServe) await add(`/who-we-serve/${b.slug}/`, icpPage(b, guidesByBuyer.get(b.slug) || []));
 await add("/science/", scienceHubPage());
 await add("/science/how-ps-works/", howPsWorksPage());
 await add("/science/research-library/", researchLibraryPage());

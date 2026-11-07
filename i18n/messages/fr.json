@@ -3,7 +3,7 @@
     "locale": "fr",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-07T13:04:39.988Z",
+    "generatedAt": "2026-11-07T14:48:52.307Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25743,6 +25743,9 @@
     "This guide is written for the buyer profiles below. Open your profile for the matching grades, documents and next steps, or tell us your requirements directly.": "Ce guide s'adresse aux profils d'acheteurs ci-dessous. Ouvrez votre profil pour les grades, documents et étapes suivantes correspondants, ou envoyez-nous directement vos besoins.",
     "Verified manufacturer credentials, documents and a clear first-order workflow.": "Identité vérifiée du fabricant, documents et processus clair pour la première commande.",
     "View buyer path": "Voir le parcours acheteur",
-    "Who this guide is for": "À qui s'adresse ce guide"
+    "Who this guide is for": "À qui s'adresse ce guide",
+    "All guides →": "Tous les guides →",
+    "More guides for this buyer profile": "Autres guides pour ce profil d'acheteur",
+    "Selected from our resource library for the sourcing questions this buyer type asks most.": "Sélectionnés dans notre bibliothèque de ressources selon les questions d'achat les plus fréquentes de ce profil."
   }
 }

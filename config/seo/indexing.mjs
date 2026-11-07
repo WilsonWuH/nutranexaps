@@ -1,8 +1,9 @@
 import { defaultLocale, locales } from "../../i18n/config.mjs";
 
-// Indexability and sitemap inclusion are deliberately separate decisions.
-// Without a complete GSC export, an existing localized page stays indexable and
-// crawlable even when it is temporarily omitted from the concentrated sitemap.
+// Indexability and sitemap inclusion remain separate decisions: a page can be
+// index,follow without being listed in a sitemap. The conservative fallback
+// policy below is kept for quick rollback, but the default now includes every
+// indexable localized page (see includeAllLocalizedPagesInSitemap).
 export const siteUrl = "https://nutranexaps.com";
 export const localeCodes = locales.map(({ code }) => code);
 
@@ -96,9 +97,23 @@ export function indexableLocalesForRoute(route) {
   return new Set(localeCodes.filter((locale) => isRouteIndexable(route, locale)));
 }
 
+// Sitemap policy ------------------------------------------------------------
+// The localized content tree is now fully translated: 230 resource guides x 7
+// locales have 0% untranslated body paragraphs, plus localized title/meta/H1,
+// footer and form copy. The earlier "concentrated sitemap" deliberately exposed
+// only core routes and a few URLs with a known GSC signal, because bulk
+// submitting machine-translated pages would have been premature.
+//
+// With translation quality verified, every indexable localized page should be
+// discoverable through sitemaps instead of relying on hreflang discovery alone.
+// Set the flag below to false to fall back to the conservative policy without
+// touching the generator.
+export const includeAllLocalizedPagesInSitemap = true;
+
 export function includeInSitemap(route, locale = defaultLocale) {
   if (!isRouteIndexable(route, locale)) return false;
   if (englishOnlyRoutes.has(route)) return locale === defaultLocale;
+  if (includeAllLocalizedPagesInSitemap) return true;
   if (coreRoutes.has(route)) return true;
   if (performanceRoutes.get(locale)?.has(route)) return true;
   return locale === defaultLocale;

@@ -3,7 +3,7 @@
     "locale": "ar",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-07T13:04:39.439Z",
+    "generatedAt": "2026-11-07T14:48:51.786Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25743,6 +25743,9 @@
     "This guide is written for the buyer profiles below. Open your profile for the matching grades, documents and next steps, or tell us your requirements directly.": "أُعدّ هذا الدليل لفئات المشترين أدناه. افتح ملفك للاطلاع على الدرجات والوثائق والخطوات التالية المناسبة، أو أرسل لنا متطلباتك مباشرةً.",
     "Verified manufacturer credentials, documents and a clear first-order workflow.": "بيانات موثّقة للشركة المصنّعة والوثائق وآلية واضحة لأول طلب.",
     "View buyer path": "عرض مسار المشتري",
-    "Who this guide is for": "لمن هذا الدليل"
+    "Who this guide is for": "لمن هذا الدليل",
+    "All guides →": "جميع الأدلة →",
+    "More guides for this buyer profile": "المزيد من الأدلة لهذا النوع من المشترين",
+    "Selected from our resource library for the sourcing questions this buyer type asks most.": "مختارة من مكتبة المصادر لدينا لتغطية أكثر أسئلة التوريد التي يطرحها هذا النوع من المشترين."
   }
 }

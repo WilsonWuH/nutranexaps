@@ -7078,3 +7078,25 @@ body.nx-modal-open {
 @media (max-width: 640px) {
   .nx-buyer-fit { padding: 20px; }
 }
+
+/* Buyer profile related guides --------------------------------------------- */
+.nx-related-guides {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+.nx-related-guide {
+  display: block;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+.nx-related-guide:hover {
+  border-color: var(--green);
+  color: var(--green-dark);
+  text-decoration: none;
+}

@@ -3,7 +3,7 @@
     "locale": "ru",
     "sourceLocale": "en",
     "provider": "bing-public",
-    "generatedAt": "2026-11-07T13:04:38.812Z",
+    "generatedAt": "2026-11-07T14:48:51.284Z",
     "humanReviewRequired": true
   },
   "messages": {
@@ -25743,6 +25743,9 @@
     "This guide is written for the buyer profiles below. Open your profile for the matching grades, documents and next steps, or tell us your requirements directly.": "Это руководство подготовлено для указанных ниже типов покупателей. Откройте свой профиль, чтобы увидеть подходящие марки, документы и дальнейшие шаги, или сразу сообщите нам свои требования.",
     "Verified manufacturer credentials, documents and a clear first-order workflow.": "Подтверждённые данные производителя, документы и понятный порядок первого заказа.",
     "View buyer path": "Открыть профиль покупателя",
-    "Who this guide is for": "Для кого это руководство"
+    "Who this guide is for": "Для кого это руководство",
+    "All guides →": "Все руководства →",
+    "More guides for this buyer profile": "Другие руководства для этого типа покупателей",
+    "Selected from our resource library for the sourcing questions this buyer type asks most.": "Подборка из нашей библиотеки материалов по вопросам закупок, которые чаще всего задаёт этот тип покупателей."
   }
 }
