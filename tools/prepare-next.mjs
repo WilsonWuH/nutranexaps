@@ -23,6 +23,8 @@ const pageDirectories = [
   "quality-rd",
   "resources",
   "science",
+  "solutions",
+  "who-we-serve",
   "thank-you",
   ...locales.map((locale) => locale.code),
 ];
