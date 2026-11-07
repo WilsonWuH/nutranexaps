@@ -149,6 +149,13 @@ document.addEventListener("click", (event) => {
 });
 
 const inquiryParams = new URLSearchParams(window.location.search);
+const buyerProgramMap = {
+  "eu-market-entry": "First-Time Importer",
+  "us-market-entry": "First-Time Importer",
+  "oem-private-label-program": "OEM/ODM Buyer",
+  "bulk-supply-program": "Ingredient Distributor",
+  "custom-formulation-support": "Functional Food Manufacturer",
+};
 const inquiryPrefill = {
   product: inquiryParams.get("product"),
   source: inquiryParams.get("source"),
@@ -157,6 +164,7 @@ const inquiryPrefill = {
   sample: inquiryParams.get("sample"),
   application: inquiryParams.get("application"),
   request: inquiryParams.get("request"),
+  buyer: inquiryParams.get("buyer") || buyerProgramMap[inquiryParams.get("program")] || null,
 };
 
 const setFormValue = (form, name, value) => {
@@ -201,6 +209,21 @@ document.querySelectorAll(".quote-form").forEach((form) => {
   setFormValue(form, "Sample Needed", inquiryPrefill.sample);
   setFormValue(form, "Application", inquiryPrefill.application);
   setFormValue(form, "Request Type", inquiryPrefill.request === "qualification-pack" ? "Qualification Pack" : inquiryPrefill.request);
+
+  // Buyer-context message prompt: when a visitor arrives from a solution or
+  // buyer-profile page (?buyer= / ?program=), swap the message placeholder for
+  // that buyer type's guided prompt. No new form fields are added.
+  const buyerPlaceholders = {
+    "Supplement Brand": "Tell us your target format, positioning and annual volume - we will reply with matching grades and documents.",
+    "Ingredient Distributor": "Tell us your target markets, annual volume and the document package your customers expect.",
+    "Functional Food Manufacturer": "Tell us your application, process conditions and packaging format for your production line.",
+    "OEM/ODM Buyer": "Tell us your finished-product brief, packaging concept and sample approval needs.",
+    "First-Time Importer": "Tell us your destination country, intended application and first-order questions - we will walk you through the documents.",
+  };
+  const messageField = form.querySelector('textarea[name="Message"]');
+  if (messageField && inquiryPrefill.buyer && buyerPlaceholders[inquiryPrefill.buyer]) {
+    messageField.placeholder = buyerPlaceholders[inquiryPrefill.buyer];
+  }
 
   const status = form.querySelector(".form-status");
   const submit = form.querySelector('button[type="submit"]');

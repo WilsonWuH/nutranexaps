@@ -4582,7 +4582,7 @@ function contactQuickForm() {
     <label>Name *<input required name="Name" autocomplete="name" placeholder="Your full name"></label>
     <label>Business Email *<input required type="email" name="Email" autocomplete="email" placeholder="name@company.com"></label>
     <label class="form-full">Product / Grade *<select required name="Product / Grade"><option value="">Select grade</option>${gradeOptions}</select></label>
-    <label class="form-full">Message &amp; Required Quantity<textarea name="Message" rows="4" placeholder="Tell us your target quantity, destination country, and required documents (COA, sample, specification)."></textarea></label>
+    <label class="form-full">Message &amp; Required Quantity<textarea name="Message" rows="4" data-default-placeholder="Tell us your target quantity, destination country, and required documents (COA, sample, specification)." placeholder="Tell us your target quantity, destination country, and required documents (COA, sample, specification)."></textarea></label>
   </div>
   <button class="button primary" type="submit">Get Quote &amp; Sample</button>
   <p class="form-status" role="status" aria-live="polite">Name, business email and product grade are required.</p>
