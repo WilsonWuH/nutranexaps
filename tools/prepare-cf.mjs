@@ -12,7 +12,7 @@ import { locales } from "../i18n/config.mjs";
 const root = process.cwd();
 const outDir = path.join(root, "out");
 
-const pageDirectories = [
+const explicitPageDirectories = [
   "about",
   "applications",
   "benefits",
@@ -27,8 +27,35 @@ const pageDirectories = [
   "resources",
   "science",
   "thank-you",
-  ...locales.map((locale) => locale.code),
 ];
+
+// Cloudflare Pages deploys out/ as a plain static tree (no rewrites, no
+// Functions). Any root directory containing an index.html is therefore a
+// published section and MUST be copied, or every URL under it silently falls
+// back to the homepage. Discovering them here prevents new axes from being
+// omitted the way /solutions/ and /who-we-serve/ were after the three-axis
+// upgrade. The explicit list and the locale list stay as a safety net for
+// directories that exist without their own index.html.
+const ignoredDirectories = new Set([
+  ".git", ".github", ".next", ".vercel", ".playwright-cli",
+  "assets", "config", "content", "i18n", "node_modules", "out", "public", "tmp", "tools",
+]);
+const discoveredPageDirectories = [];
+for (const entry of await fs.readdir(root, { withFileTypes: true })) {
+  if (!entry.isDirectory() || entry.name.startsWith(".") || ignoredDirectories.has(entry.name)) continue;
+  try {
+    await fs.access(path.join(root, entry.name, "index.html"));
+  } catch {
+    continue;
+  }
+  discoveredPageDirectories.push(entry.name);
+}
+
+const pageDirectories = [...new Set([
+  ...explicitPageDirectories,
+  ...locales.map((locale) => locale.code),
+  ...discoveredPageDirectories,
+])].sort();
 
 const redirects = `# Migrated from next.config.mjs redirects()
 /inquiry /contact/ 301
