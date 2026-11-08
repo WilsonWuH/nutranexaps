@@ -47,6 +47,19 @@ for (const directory of pageDirectories) {
   await fs.cp(source, path.join(siteDir, directory), { recursive: true });
 }
 
+// Static fallback for the two newest top-level sections. Their rewrite rules
+// were added after the production Functions bundle was built, so a stale
+// rewrite manifest sends /solutions/ and /who-we-serve/ URLs to the homepage
+// even though the HTML is deployed under /site/. Publishing the same pages at
+// the output root lets the static layer serve them without depending on a
+// manifest rebuild. Locale variants already work because /<locale>/:path*
+// has existed since the first deploy.
+for (const section of ["solutions", "who-we-serve"]) {
+  const source = path.join(root, section);
+  if (!existsSync(source)) continue;
+  await fs.cp(source, path.join(publicDir, section), { recursive: true });
+}
+
 const rootFiles = await fs.readdir(root);
 for (const file of rootFiles.filter((name) => name === "robots.txt" || /^sitemap(?:-[a-z-]+)?\.xml$/.test(name))) {
   await fs.copyFile(path.join(root, file), path.join(publicDir, file));

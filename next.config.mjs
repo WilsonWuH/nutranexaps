@@ -3,12 +3,24 @@ import path from "node:path";
 import { locales } from "./i18n/config.mjs";
 
 function collectHtmlRewrites(directory) {
-  if (!fs.existsSync(directory)) return [];
-
-  const sections = fs.readdirSync(directory, { withFileTypes: true })
-    .filter((entry) => entry.isDirectory())
-    .map((entry) => entry.name)
-    .sort();
+  // Sections are declared explicitly as well as discovered on disk. Some
+  // deployment pipelines evaluate next.config.mjs before prepare-next.mjs has
+  // populated public/site, or reuse a cached rewrite manifest. In both cases a
+  // purely dynamic section list drops newly added sections and their URLs fall
+  // back to the homepage. Keep the list in sync with pageDirectories in
+  // tools/prepare-next.mjs.
+  const knownSections = [
+    "about", "applications", "benefits", "cases", "company-verification",
+    "contact", "manufacturing", "news", "privacy", "products", "quality-rd",
+    "resources", "science", "solutions", "who-we-serve", "thank-you",
+    ...locales.map((locale) => locale.code),
+  ];
+  const discovered = fs.existsSync(directory)
+    ? fs.readdirSync(directory, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => entry.name)
+    : [];
+  const sections = [...new Set([...discovered, ...knownSections])].sort();
 
   // Every generated page is stored as <section>/<path>/index.html. Two rules
   // per top-level section preserve those routes while staying below Vercel's
