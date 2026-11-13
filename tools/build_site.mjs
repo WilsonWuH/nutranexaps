@@ -2505,15 +2505,15 @@ function nxHomePage() {
     )
     .join("");
   const appCards = [
-    ["/applications/dietary-supplements/", "/assets/images/dietary-supplement-application.webp", "PS softgel capsules on a formulation bench", "Capsules", "Dietary supplements", "40% 62%"],
-    ["/applications/dietary-supplements/", "/assets/images/dietary-supplement-application.webp", "Pressed PS tablets in formulation trays", "Tablets", "Functional formulations", "78% 66%"],
-    ["/applications/functional-foods/", "/assets/images/product-powder-spoon.webp", "Fine phosphatidylserine powder on a spoon", "Powder Blends", "Nutrition powders", "50% 50%"],
-    ["/applications/functional-foods/", "/assets/images/functional-food-application.webp", "Functional food and beverage development bench with PS powder samples", "Functional Foods", "Fortified foods &amp; beverages", "30% 62%"],
-    ["/applications/healthy-aging/", "/assets/images/news-mfgm-phospholipid-cognition-trial-2025.webp", "Senior woman at a table with nutrition powder and sachets", "Healthy Aging Nutrition", "Life stage support", "50% 22%"],
+    ["/applications/dietary-supplements/", "/assets/images/home-formulation-capsules.webp", "Amber softgel capsules in a glass dish beside a plain supplement bottle", "Capsules", "Dietary supplements", "50% 50%"],
+    ["/applications/dietary-supplements/", "/assets/images/home-formulation-tablets.webp", "Pressed nutritional tablets on a stainless steel formulation tray", "Tablets", "Functional formulations", "50% 50%"],
+    ["/applications/functional-foods/", "/assets/images/home-formulation-powder-blends.webp", "Fine nutritional powder in a glass mixing bowl with a measuring scoop", "Powder Blends", "Nutrition powders", "50% 50%"],
+    ["/applications/functional-foods/", "/assets/images/home-formulation-functional-foods.webp", "Fortified smoothie, yogurt, granola bar and nutritional powder", "Functional Foods", "Fortified foods &amp; beverages", "50% 50%"],
+    ["/applications/healthy-aging/", "/assets/images/home-formulation-healthy-aging.webp", "Healthy aging breakfast nutrition with a smoothie, yogurt and softgel capsules", "Healthy Aging Nutrition", "Life stage support", "50% 50%"],
   ]
     .map(
       ([href, image, alt, title, sub, pos]) =>
-        `<a class="nx-app-card" href="${href}"><span class="nx-app-media"><img src="${image}" alt="${esc(alt)}" width="700" height="700" loading="lazy" decoding="async" style="object-position:${pos}"></span><span class="nx-app-label"><h3>${title}</h3><p>${sub}</p></span></a>`,
+        `<a class="nx-app-card" href="${href}"><span class="nx-app-media"><img src="${image}" alt="${esc(alt)}" width="900" height="675" loading="lazy" decoding="async" style="object-position:${pos}"></span><span class="nx-app-label"><h3>${title}</h3><p>${sub}</p></span></a>`,
     )
     .join("");
   const docEvent = (href) =>
